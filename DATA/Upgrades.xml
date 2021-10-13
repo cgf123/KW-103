@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Tags />
+	<Includes>
+	</Includes>
+
+	<!-- ////////////////////////////////////////////////////////////////////// UPGRADES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+	<!-- Upgrades for LUA scripts -->
+	<UpgradeTemplate id="Upgrade_Transporting"
+		Type="OBJECT"	/>		
+	
+	<UpgradeTemplate id="Upgrade_Raged"
+		Type="OBJECT"	/>	
+	
+	<UpgradeTemplate id="Upgrade_Reflector"
+		Type="OBJECT"	/>
+		
+	<UpgradeTemplate id="Upgrade_SigGenArmor"
+		Type="OBJECT"	/>		
+		
+	<UpgradeTemplate id="Upgrade_AlienControlCenter"
+		DisplayName="NAME:ALIENControlCenter"
+		Type="PLAYER" />		
+	
+	<UpgradeTemplate id="Upgrade_GDICommandPost"
+		DisplayName="NAME:GDICommandPost"
+		Type="PLAYER" />		
+
+	<UpgradeTemplate id="Upgrade_NODOperationsCenter"
+		DisplayName="NAME:NODOperationsCenter"
+		Type="PLAYER" />				
+	
+	<UpgradeTemplate id="Upgrade_MiniMCV_GDI"
+		DisplayName="NAME:GDIWarFactory"
+		Type="PLAYER" />
+
+	<UpgradeTemplate id="Upgrade_MiniMCV_ALIEN"
+		DisplayName="NAME:ALIENGateway"
+		Type="PLAYER" />
+
+	<UpgradeTemplate id="Upgrade_MiniMCV_NOD"
+		DisplayName="NAME:NODDropZone"
+		Type="PLAYER" />	
+		
+	<UpgradeTemplate id="Upgrade_MCVBuilt"
+		Type="PLAYER" />		
+		
+	<UpgradeTemplate id="Upgrade_UnPackUpgraded"
+		Type="OBJECT"
+		BuildCost="0"
+		BuildTime="0.0s"
+		SkirmishAIHeuristic="IGNORE"
+		WaypointQueueable="true">
+		<GameDependency 
+			ForbiddenModelConditions="UNPACKING"/>
+	</UpgradeTemplate>		
+	<!-- -->
+	
+	<!-- -->
+	<UpgradeTemplate id="Upgrade_RedeemerSCPBLeft"
+		Type="OBJECT"
+		BuildCost="0"
+		BuildTime="3.0s">
+	</UpgradeTemplate>	
+	<UpgradeTemplate id="Upgrade_RedeemerSCPBRight"
+		Type="OBJECT"
+		BuildCost="0"
+		BuildTime="3.0s">
+	</UpgradeTemplate>	
+	<!-- -->
+	
+	<UpgradeTemplate id="BasePurchasableUpgrade"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled" />	
+		
+	<UpgradeTemplate id="Upgrade_GDIArmoryRailgunTech"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:GDIRailGuns"
+		AcquireHint="UpgradePrereq:GDIRailGuns"
+		TypeDescription="UpgradeType:GDIRailGuns"
+		Description="UpgradeDesc:GDIRailGuns"
+		Type="PLAYER"
+		BuildTime="90.0s"
+		BuildCost="3000"
+		ResearchSound="AudioEvent:GDI_RailCannon_Upgrade"
+		IconImage="Button_UpgradeRailGun"
+	/>
+	
+	<UpgradeTemplate id="Upgrade_ZoneTrooperAutoInjectors"		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ZoneTrooperAutoInjectors"
+		AcquireHint="UpgradePrereq:ZoneTrooperAutoInjectors"
+		TypeDescription="UpgradeType:ZoneTrooperAutoInjectors"
+		Description="UpgradeDesc:ZoneTrooperAutoInjectors"
+		Type="PLAYER"
+		BuildCost="500"
+		BuildTime="15s"
+		ResearchSound="AudioEvent:GDI_PowerPacks_Upgrade"
+		IconImage="Button_UpgradeAutoInjectors">
+		<GameDependency>
+			<RequiredObject>GDIMedicalBay</RequiredObject>
+		</GameDependency>
+	</UpgradeTemplate>	
+	
+	<UpgradeTemplate id="Upgrade_ZoneRaiderAutoInjectors"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ZoneRaiderAutoInjectors"
+		AcquireHint="UpgradePrereq:ZoneRaiderAutoInjectors"
+		TypeDescription="UpgradeType:ZoneRaiderAutoInjectors"
+		Description="UpgradeDesc:ZoneRaiderAutoInjectors"
+		Type="PLAYER"
+		BuildCost="500"
+		BuildTime="15s"
+		ResearchSound="AudioEvent:GDI_PowerPacks_Upgrade"
+		IconImage="Button_UpgradeAutoInjectors">
+		<GameDependency>
+			<RequiredObject>ZOCOMMedicalBay</RequiredObject>
+		</GameDependency>
+	</UpgradeTemplate>	
+		
+	<UpgradeTemplate id="Upgrade_BlackHandSecretShrinePurifyingFlame"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:BlackHandPurifyingFlame"
+		AcquireHint="UpgradePrereq:BlackHandPurifyingFlame"
+		TypeDescription="UpgradeType:BlackHandPurifyingFlame"
+		Description="UpgradeDesc:BlackHandPurifyingFlame"
+		Type="PLAYER"
+		BuildTime="90.0s"
+		BuildCost="2500"
+		ResearchSound="Multisound:NOD_PurifyingFlame_UpgradeMS"
+		IconImage="Button_Upgrade_PurifyingFlame">
+	</UpgradeTemplate>		
+		
+	<UpgradeTemplate id="Upgrade_BlackHandBlackDisciplesUpgrade"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:BlackHandBlackDisciples"
+		AcquireHint="UpgradePrereq:BlackHandBlackDisciples"
+		TypeDescription="UpgradeType:BlackHandBlackDisciples"
+		Description="UpgradeDesc:BlackHandBlackDisciples"
+		Type="PLAYER"
+		BuildCost="1000"
+		BuildTime="30.0s"
+		ResearchSound="AudioEvent:NOD_BlackDisciples_Upgrade"
+		IconImage="Button_Upgrade_BlackConfessors"
+	/>	
+		
+	<UpgradeTemplate id="Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:MarkedOfKaneTechCenterSuperChargedParticleBeam"
+		AcquireHint="UpgradePrereq:MarkedOfKaneSuperChargedParticleBeam"
+		TypeDescription="UpgradeType:MarkedOfKaneSuperChargedParticleBeam"
+		Description="UpgradeDesc:MarkedOfKaneSuperChargedParticleBeam"
+		Type="PLAYER"
+		BuildTime="60.0s"
+		BuildCost="2000"
+		ResearchSound="AudioEvent:NOD_Enlightened_SuperChargedParticleBeamUpgrade"
+		IconImage="Button_Upgrade_SuperCharBeam">
+	</UpgradeTemplate>
+	
+	<UpgradeTemplate id="Upgrade_TravelerEngines"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+	
+		DisplayName="UpgradeName:TravelerEngines"
+		AcquireHint="UpgradePrereq:TravelerEngines"
+		TypeDescription="UpgradeType:TravelerEngines"
+		Description="UpgradeDesc:TravelerEngines"
+		Type="PLAYER"
+		BuildCost="1500"
+		BuildTime="45s"
+		ResearchSound="AudioEvent:ALI_TravelerEngines_Upgrade"
+		IconImage="Button_Upgrade_TravelerEngines"
+	/>	
+		
+	<UpgradeTemplate id="Upgrade_NODTechCenterTibCoreMissiles"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:NODTibCoreMissiles"
+		AcquireHint="UpgradePrereq:NODTibCoreMissiles"
+		TypeDescription="UpgradeType:NODTibCoreMissiles"
+		Description="UpgradeDesc:NODTibCoreMissiles"
+		Type="PLAYER"
+		BuildTime="75.0s"
+		BuildCost="2500"
+		ResearchSound="AudioEvent:NOD_TiberiumCoreMissile_Upgrade"
+		IconImage="Button_Upgrade_TibCoreMissiles">
+	</UpgradeTemplate>
+
+	<UpgradeTemplate id="Upgrade_AlienReactorForcefieldGenerator"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ALIENForcefieldGenerators"
+		AcquireHint="UpgradePrereq:ALIENForcefieldGenerators"
+		TypeDescription="UpgradeType:ALIENForcefieldGenerators"
+		Description="UpgradeDesc:ALIENForcefieldGenerators"
+		Type="PLAYER"
+		BuildTime="75.0s"
+		BuildCost="2500"
+		ResearchSound="AudioEvent:ALI_ForcefieldGenerator_Upgrade"
+		IconImage="Button_UpgradeForcefieldGenerator"
+	/>	
+	
+	<UpgradeTemplate id="Upgrade_AlienRazorDronesUpgrade"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="NAME:UpgradeRazorDronesUpgrade_103"
+		AcquireHint="UpgradePrereq:ALIENRazorDronesUpgrade_103"
+		TypeDescription="UPGRADETYPE:ALIENBlueShardWeapon"
+		Description="UpgradeDesc:ALIENRazorDronesUpgrade_103"
+		Type="PLAYER"
+		BuildTime="15.0s"
+		BuildCost="500"
+		ResearchSound="AudioEvent:ALI_ConversionReserves_Upgrade"
+		IconImage="Button_Upgrade_DisintegratorModule"
+	/>		
+	
+	<UpgradeTemplate id="Upgrade_AlienMinorForcefieldGenerator"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ALIENMinorForcefieldGenerators"
+		AcquireHint="UpgradePrereq:ALIENMinorForcefieldGenerators"
+		TypeDescription="UpgradeType:ALIENMinorForcefieldGenerators"
+		Description="UpgradeDesc:ALIENMinorForcefieldGenerators"
+		Type="PLAYER"
+		BuildTime="60.0s"
+		BuildCost="1500"
+		ResearchSound="AudioEvent:ALI_AttenudatedForcefield_Upgrade"
+		IconImage="Button_Upgrade_AttForcefields" />
+	
+	<UpgradeTemplate id="Upgrade_Reaper17MinorForcefieldGenerator"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ALIENMinorForcefieldGenerators"
+		AcquireHint="UpgradePrereq:ALIENMinorForcefieldGenerators"
+		TypeDescription="UpgradeType:ALIENMinorForcefieldGenerators"
+		Description="UpgradeDesc:ALIENMinorForcefieldGenerators"
+		Type="PLAYER"
+		BuildTime="60.0s"
+		BuildCost="1500"
+		ResearchSound="AudioEvent:ALI_AttenudatedForcefield_Upgrade"
+		IconImage="Button_Upgrade_AttForcefields" />				
+	
+	<UpgradeTemplate id="Upgrade_NODDozerBlades"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ScorpionDozerBlades"
+		AcquireHint="UpgradePrereq:ScorpionDozerBlades"
+		TypeDescription="UpgradeType:ScorpionDozerBlades"
+		Description="UpgradeDesc:ScorpionDozerBlades"
+		Type="PLAYER"
+		BuildCost="1500"
+		BuildTime="45s"
+		ResearchSound="AudioEvent:NOD_OperationsCenter_DozerBladeUpgrade"
+		IconImage="Button_UpgradeDozerBlades"
+	/>
+
+	<UpgradeTemplate id="Upgrade_Traveler59AdvancedArticulators"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:Traveler59AdvancedArticulators"
+		AcquireHint="UpgradePrereq:Traveler59AdvancedArticulators"
+		TypeDescription="UpgradeType:Traveler59AdvancedArticulators"
+		Description="UpgradeDesc:Traveler59AdvancedArticulators"
+		Type="PLAYER"
+		BuildCost="1000"
+		BuildTime="40s"
+		ResearchSound="AudioEvent:ALI_AdvancedArticulators_Upgrade"
+		IconImage="Button_Upgrade_AdvArticulators"
+	/>			
+	
+	
+	<UpgradeTemplate id="Upgrade_AlienShockTrooperPlasmaDiskLauncher"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ALIENPlasmaDiscLauncher"
+		AcquireHint="UpgradePrereq:ALIENPlasmaDiscLauncher"
+		TypeDescription="UpgradeType:ALIENPlasmaDiscLauncher"
+		Description="UpgradeDesc:ALIENPlasmaDiscLauncher"
+		Type="PLAYER"
+		BuildTime="45.0s"
+		BuildCost="1500"
+		ResearchSound="AudioEvent:ALI_PlasmaDiscLaunchers_Upgrade"
+		IconImage="Button_UpgradePlasmaDiscLauncher">
+	</UpgradeTemplate>	
+
+	<UpgradeTemplate id="Upgrade_AlienShockTrooperBlinkPack"		
+	
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ALIENBlinkPack"
+		AcquireHint="UpgradePrereq:ALIENBlinkPack"
+		TypeDescription="UpgradeType:ALIENBlinkPack"
+		Description="UpgradeDesc:ALIENBlinkPack"
+		Type="PLAYER"
+		BuildTime="15.0s"
+		BuildCost="500"
+		ResearchSound="ALI_ShockTrooper_BlinkPackUpgrade"
+		IconImage="Button_AbilityBlinkPack">
+	</UpgradeTemplate>
+
+	<UpgradeTemplate id="Upgrade_MarkedOfKaneCyberneticLegs"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UPGRADE:MarkedOfKaneCyberneticLegs"
+		AcquireHint="UpgradePrereq:MarkedOfKaneCyberneticLegs"
+		TypeDescription="UpgradeType:MarkedOfKaneCyberneticLegs"
+		Description="UpgradeDesc:MarkedOfKaneCyberneticLegs"
+		Type="PLAYER"
+		BuildCost="1000"
+		BuildTime="45.0s"
+		ResearchSound="AudioEvent:NOD_CyberneticLegs_Upgrade"
+		IconImage="Button_Upgrade_CyberneticLegs">
+		<GameDependency>
+			<RequiredObject>MarkedOfKaneSecretShrine</RequiredObject>
+		</GameDependency>
+	</UpgradeTemplate>	
+	
+	<UpgradeTemplate id="Upgrade_NODConfessorUpgrade"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:NODConfessor"
+		AcquireHint="UpgradePrereq:NODConfessor"
+		TypeDescription="UpgradeType:NODConfessor"
+		Description="UpgradeDesc:NODConfessor" 
+		Type="PLAYER"
+		BuildCost="1000"
+		BuildTime="30.0s"
+		ResearchSound="AudioEvent:NOD_Confessor_Upgrade"
+		IconImage="Button_UpgradeConfessor"
+	/>	
+	
+	<UpgradeTemplate id="Upgrade_TiberiumInfusion"		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:NODTiberiumInfusion"
+		AcquireHint="UpgradePrereq:NODTiberiumInfusion"
+		TypeDescription="UpgradeType:NODTiberiumInfusion"
+		Description="UpgradeDesc:NODTiberiumInfusion"
+		Type="PLAYER"
+		BuildCost="1000"
+		BuildTime="20s"
+		ResearchSound="AudioEvent:NOD_TiberiumUpgrade"
+		IconImage="Button_UpgradeTiberiumInfusion"
+	/>	
+	
+	<UpgradeTemplate id="Upgrade_MOKTiberiumInfusion"		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:NODTiberiumInfusion"
+		AcquireHint="UpgradePrereq:NODTiberiumInfusion"
+		TypeDescription="UpgradeType:NODTiberiumInfusion"
+		Description="UpgradeDesc:NODTiberiumInfusion"
+		Type="PLAYER"
+		BuildCost="500"
+		BuildTime="15s"
+		ResearchSound="AudioEvent:NOD_TiberiumUpgrade"
+		IconImage="Button_UpgradeTiberiumInfusion"
+	/>	
+	
+	<UpgradeTemplate id="Upgrade_AlienShardLaunchers"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ALIENShardLaunchers"
+		AcquireHint="UpgradePrereq:ALIENShardLaunchers"
+		TypeDescription="UpgradeType:ALIENShardLaunchers"
+		Description="UpgradeDesc:ALIENShardLaunchers"
+		Type="PLAYER"
+		BuildTime="75.0s"
+		BuildCost="2500"
+		ResearchSound="AudioEvent:ALI_Stalker_ShardLauncherUpgrade"
+		IconImage="Button_Upgrade_ShardLaunchers">
+	</UpgradeTemplate>	
+	
+	<UpgradeTemplate id="Upgrade_AlienBlueShardWeapon"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ALIENBlueShardWeapon"
+		AcquireHint="UpgradePrereq:ALIENBlueShardWeapon"
+		TypeDescription="UpgradeType:ALIENBlueShardWeapon"
+		Description="UpgradeDesc:ALIENBlueShardWeapon"
+		Type="PLAYER"
+		BuildTime="45.0s"
+		BuildCost="2000"
+		ResearchSound="AudioEvent:ALI_Stalker_BlueShardUpgrade"
+		IconImage="Button_Upgrade_BlueShards">
+	</UpgradeTemplate>	
+
+	<UpgradeTemplate id="Upgrade_Reaper17ConversionReserves"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:Reaper17ConversionReserves"
+		AcquireHint="UpgradePrereq:Reaper17ConversionReserves"
+		TypeDescription="UpgradeType:Reaper17ConversionReserves"
+		Description="UpgradeDesc:Reaper17ConversionReserves"
+		Type="PLAYER"
+		BuildTime="30.0s"
+		BuildCost="1000"
+		ResearchSound="AudioEvent:ALI_ConversionReserves_Upgrade"
+		IconImage="Button_Upgrade_ConversionReserves"
+	/>	
+	
+	<UpgradeTemplate id="Upgrade_GDIAPAmmo"	
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:GDIAPAmmo"
+		AcquireHint="UpgradePrereq:GDIAPAmmo"
+		TypeDescription="UpgradeType:GDIAPAmmo"
+		Description="UpgradeDesc:GDIAPAmmo"
+		Type="PLAYER"
+		BuildTime="60.0s"
+		BuildCost="1500"
+		ResearchSound="AudioEvent:GDI_CommandPost_APammoUpgrade"
+		IconImage="Button_Upgrade_APAmmo">
+	</UpgradeTemplate>	
+	
+	<UpgradeTemplate id="Upgrade_GDIHardpoints"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+
+		DisplayName="UpgradeName:GDIHardpoints"
+		AcquireHint="UpgradePrereq:GDIHardpoints"
+		TypeDescription="UpgradeType:GDIHardpoints"
+		Description="UpgradeDesc:GDIHardpoints"
+		Type="PLAYER"
+		BuildTime="60.0s"
+		BuildCost="2500"
+		ResearchSound="AudioEvent:GDI_Airfield_hardPointsUpgrade"
+		IconImage="Button_Upgrade_Hardpoints">
+	</UpgradeTemplate>		
+	
+	<UpgradeTemplate id="Upgrade_CeramicArmor"		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:CeramicArmor"
+		AcquireHint="UpgradePrereq:GDIRailGuns"
+		TypeDescription="UpgradeType:CeramicArmor"
+		Description="UpgradeDesc:CeramicArmor"
+		Type="PLAYER"
+		BuildCost="1500"
+		BuildTime="45s"
+		ResearchSound="AudioEvent:GDI_Hammerhead_CeramicArmorUpgraded"
+		IconImage="Button_Upgrade_CeramicArmor">		
+		<GameDependency>
+			<RequiredObject>ZOCOMArmory</RequiredObject>
+		</GameDependency>
+	</UpgradeTemplate>
+	
+	<UpgradeTemplate id="Upgrade_GDITungstenAAShells"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:GDITungstenAAShells"
+		AcquireHint="UpgradePrereq:GDITungstenAAShells"
+		TypeDescription="UpgradeType:GDITungstenAAShells"
+		Description="UpgradeDesc:GDITungstenAAShells"
+		Type="PLAYER"
+		BuildTime="45.0s"
+		BuildCost="1500"
+		ResearchSound="AudioEvent:GDI_Slingshot_TungstenShellUpgrade"
+		IconImage="Button_Upgrade_TungstenShells">
+	</UpgradeTemplate>	
+	
+	<UpgradeTemplate id="Upgrade_AdaptiveArmor"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UPGRADE:AdaptiveArmor"
+		AcquireHint="UpgradePrereq:GDIAPAmmo"
+		TypeDescription="UpgradeType:AdaptiveArmor"
+		Description="UpgradeDesc:AdaptiveArmor"
+		Type="PLAYER"
+		BuildCost="1000"
+		BuildTime="30.0s"
+		ResearchSound="AudioEvent:GDI_TechCenter_adaptiveArmorUpgrade"
+		IconImage="Button_AbilityAdaptiveArmor"> 
+	</UpgradeTemplate>	
+	
+	
+	<UpgradeTemplate id="Upgrade_NodTechCenterChargedParticleBeam"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:NodChargedParticleBeam"
+		AcquireHint="UpgradePrereq:NodChargedParticleBeam"
+		TypeDescription="UpgradeType:NodChargedParticleBeam"
+		Description="UpgradeDesc:NodChargedParticleBeam"
+		Type="PLAYER"
+		BuildTime="45.0s"
+		BuildCost="1500"
+		ResearchSound="AudioEvent:NOD_Awakened_ChargedParticleBeamGunAvailable"
+		IconImage="Button_Upgrade_ChargedPartBeam">
+	</UpgradeTemplate>	
+	
+	<UpgradeTemplate id="Upgrade_Unfinished"
+		DisplayName="UpgradeName:Unfinished_103"
+		Type="PLAYER">
+	</UpgradeTemplate>		
+	
+	
+	
+	<!-- Pitbull Mortar enable/disable switches -->
+	<UpgradeTemplate
+		id="Upgrade_SelectLoad_03"
+		Type="OBJECT"
+		DisplayName="NAME:MortarEnable_103"
+		Description="UPGRADE:SelectLoadOut03Description"
+		SkirmishAIHeuristic="IGNORE">
+		<GameDependency
+			ForbiddenModelConditions="FIRING_OR_RELOADING_A"
+			RequiredObjectStatusAny="WEAPON_UPGRADED_01"/>
+	</UpgradeTemplate>
+
+	<UpgradeTemplate
+		id="Upgrade_SelectLoad_04"
+		Type="OBJECT"
+		DisplayName="NAME:MortarDisable_103"
+		Description="UPGRADE:SelectLoadOut04Description"
+		SkirmishAIHeuristic="IGNORE">
+		<GameDependency
+			ForbiddenModelConditions="FIRING_OR_RELOADING_A"
+			RequiredObjectStatusAny="WEAPON_UPGRADED_01"/>		
+	</UpgradeTemplate>
+	
+	
+</AssetDeclaration>

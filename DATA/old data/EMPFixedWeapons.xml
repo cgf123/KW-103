@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="us-ascii" ?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<!-- EMP FIXES-->
+	
+	<WeaponTemplate
+		id="NODEMPBlastWarhead1"
+		Name="NODEMPBlastWarhead1"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS SELF"
+		AttackRange="300.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="500"
+		ClipSize="1"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="false">
+		<Nuggets>
+			<ParalyzeNugget
+				Radius="50.0"
+				DurationSeconds="5s"
+				ParalyzeType="EMP"
+				ParalyzeFX="FX_NODBuggyEmpHit">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">
+					<ExcludeThing>AlienMCV</ExcludeThing>
+				</SpecialObjectFilter>
+			</ParalyzeNugget>
+		</Nuggets>
+	</WeaponTemplate>
+	
+	<WeaponTemplate
+		id="NODImprovedEMPBlastWarhead1"
+		Name="NODImprovedEMPBlastWarhead1"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS SELF"
+		AttackRange="350.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="500"
+		ClipSize="1"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="false">
+		<Nuggets>
+			<ParalyzeNugget
+				Radius="75.0"
+				DurationSeconds="7.5s"
+				ParalyzeType="EMP"
+				ParalyzeFX="FX_NODBuggyEmpHit">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">
+					<ExcludeThing>AlienMCV</ExcludeThing>
+				</SpecialObjectFilter>
+			</ParalyzeNugget>
+		</Nuggets>
+	</WeaponTemplate>
+
+	<!-- Used by Cyborg member as a dummy weapon for the firing FX -->	
+	<WeaponTemplate
+		id="NODCyborgEMPCannon"
+		Name="NODCyborgEMPCannon"
+		AttackRange="375.0"
+		WeaponSpeed="400"
+		MinWeaponSpeed="750"
+		MaxWeaponSpeed="750"
+		AcceptableAimDelta="10d"
+		ClipSize="1"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true"
+		AntiMask="ANTI_GROUND"
+		FireFX="FX_NODSilent1sEMPMuzzle"
+		FireVeteranFX="FX_NODSilent1sEMPMuzzle"
+ 		>
+		<ClipReloadTime 
+			MinSeconds="2s"
+			MaxSeconds="2s" />
+	</WeaponTemplate>
+
+	<!-- Used by Cyborg squad as actual EMP weapon -->	
+	<WeaponTemplate
+		id="NODCyborgEMPCannon1"
+		Name="NODCyborgEMPCannon1"
+		AttackRange="375.0"
+		WeaponSpeed="400"
+		MinWeaponSpeed="750"
+		MaxWeaponSpeed="750"
+		AcceptableAimDelta="10d"
+		ClipSize="1"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true"
+		AntiMask="ANTI_GROUND"
+ 		>
+		<ClipReloadTime
+			MinSeconds="2s"
+			MaxSeconds="2s" />
+		<Nuggets>
+			<ProjectileNugget
+				WarheadTemplate="NODEMPBlastWarhead1"
+				ProjectileTemplate="NODEMPBlastProjectile1">
+			</ProjectileNugget>
+		</Nuggets>	
+	</WeaponTemplate>
+	
+	<!-- Used by Cyborg member as a dummy weapon for the firing FX -->
+	<WeaponTemplate
+		id="NODImprovedCyborgEMPCannon"
+		Name="NODImprovedCyborgEMPCannon"
+		AttackRange="375.0"
+		WeaponSpeed="400"
+		MinWeaponSpeed="750"
+		MaxWeaponSpeed="750"
+		AcceptableAimDelta="10d"
+		ClipSize="1"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true"
+		AntiMask="ANTI_GROUND"
+		FireFX="FX_NODSilent1sEMPMuzzle"
+		FireVeteranFX="FX_NODSilent1sEMPMuzzle"
+ 		>
+		<ClipReloadTime
+			MinSeconds="2s"
+			MaxSeconds="2s" />
+	</WeaponTemplate>
+
+	<!-- Used by Cyborg squad as actual EMP weapon -->		
+	<WeaponTemplate
+		id="NODImprovedCyborgEMPCannon1"
+		Name="NODImprovedCyborgEMPCannon1"
+		AttackRange="375.0"
+		WeaponSpeed="400"
+		MinWeaponSpeed="750"
+		MaxWeaponSpeed="750"
+		AcceptableAimDelta="10d"
+		ClipSize="1"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true"
+		AntiMask="ANTI_GROUND"
+ 		>
+		<ClipReloadTime 
+			MinSeconds="2s"
+			MaxSeconds="2s" />
+		<Nuggets>
+			<ProjectileNugget
+				WarheadTemplate="NODImprovedEMPBlastWarhead1"
+				ProjectileTemplate="NODEMPBlastProjectile1">
+			</ProjectileNugget>
+		</Nuggets>
+	</WeaponTemplate>	
+	
+	
+</AssetDeclaration>

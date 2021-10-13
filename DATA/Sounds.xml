@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags />
+
+	<!-- Compared the originals, these Mecha sounds have high MinVolume, and are PLAYER VOICE rather than WORLD SHROUDED EVERYONE -->
+	<AudioEvent
+		id="ALI_Mechapede_BodySpawned2_new"
+		Volume="50%"
+		VolumeShift="-9.999999%"
+		PerFileVolumeShift="0%"
+		MinVolume="50%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="NORMAL"
+		Type="PLAYER VOICE"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-5"
+			High="5" />
+		<Sound
+			Weight="1000">AUMecha_create2a</Sound>
+		<Sound
+			Weight="1000">AUMecha_create2b</Sound>
+		<Sound
+			Weight="1000">AUMecha_create2c</Sound>
+		<Sound
+			Weight="1000">AUMecha_create2d</Sound>
+		<Sound
+			Weight="1000">AUMecha_create2e</Sound>
+		<Sound
+			Weight="1000">AUMecha_create2f</Sound>
+	</AudioEvent>
+
+	<AudioEvent
+		id="ALI_Mechapede_BodySpawned1_new"
+		Volume="95%"
+		VolumeShift="-9.999999%"
+		PerFileVolumeShift="0%"
+		MinVolume="95%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="NORMAL"
+		Type="PLAYER VOICE"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-5"
+			High="5" />
+		<Sound
+			Weight="1000">AUMecha_sounDiea</Sound>
+		<Sound
+			Weight="1000">AUMecha_sounDieb</Sound>
+		<Sound
+			Weight="1000">AUMecha_sounDiec</Sound>
+		<Sound
+			Weight="1000">AUMecha_sounDied</Sound>
+		<Sound
+			Weight="1000">AUMecha_sounDiee</Sound>
+		<Sound
+			Weight="1000">AUMecha_sounDief</Sound>
+		<Sound
+			Weight="1000">AUMecha_sounDieg</Sound>
+	</AudioEvent>
+
+	<Multisound
+		id="ALI_Mechapede_BodySpawnedMS_new"
+		Control="">
+		<Subsound
+			Weight="1000">ALI_Mechapede_BodySpawned1_new</Subsound>
+		<Subsound
+			Weight="1000">ALI_Mechapede_BodySpawned2_new</Subsound>
+	</Multisound>	
+	
+	<!-- ########################### REDUCED DELAYS ON PACK/UNPACK FOR THESE UNITS ################### -->
+	
+	<AudioEvent
+		id="GDI_Rig_VoicePackedUp_new"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Delay
+			Low="1000"
+			High="1000" />
+		<Sound
+			Weight="1000">GURig_VoiCreateb</Sound>
+	</AudioEvent>
+
+
+	<AudioEvent
+		id="GDI_MCV_VoicePackedUp_new"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Delay
+			Low="2000"
+			High="2000" />
+		<Sound
+			Weight="1000">GUMCV_VoiCreateb</Sound>
+	</AudioEvent>
+	
+	
+	<AudioEvent
+		id="NOD_MCV_VoicePackedUp_new"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Delay
+			Low="2000"
+			High="2000" />
+		<Sound
+			Weight="1000">NuMCV_VoiCreateb</Sound>
+	</AudioEvent>
+
+	<!-- Added Purifier attack-move voices -->
+	<AudioEvent
+		id="NOD_Purifier_VoiceMoveAttack_new"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Sound
+			Weight="1000">NUPurif_voiMovAtta</Sound>
+		<Sound
+			Weight="1000">NUPurif_voiMovAttb</Sound>
+		<Sound
+			Weight="1000">NUPurif_voiMovAttc</Sound>
+		<Sound
+			Weight="1000">NUPurif_voiMovAttd</Sound>	
+		<Sound
+			Weight="1000">NUPurif_voicCreac</Sound>			
+	</AudioEvent>
+	
+	<AudioEvent
+		id="NOD_Purifier_VoiceAttack_new"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Sound
+			Weight="1000">NUPurif_voicAttaa</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttab</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttac</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttad</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttae</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttaf</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttag</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttah</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttai</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicCreab</Sound>					
+	</AudioEvent>		
+	
+</AssetDeclaration>	

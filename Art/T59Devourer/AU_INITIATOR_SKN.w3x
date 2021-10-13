@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<W3DContainer
+		id="AU_INITIATOR_SKN"
+		Hierarchy="AU_DEVOURER_SKL">
+		<SubObject
+			SubObjectID="OBBOX"
+			BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>AU_DEVOURER_SKN.OBBOX</CollisionBox>
+			</RenderObject>
+		</SubObject>
+		<SubObject
+			SubObjectID="AU_DEVOURER_UPGR01"
+			BoneIndex="1">
+			<RenderObject>
+				<Mesh>AU_DEVOURER_SKN.AU_DEVOURER_UPGR01</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject
+			SubObjectID="AU_DEVOURER"
+			BoneIndex="1">
+			<RenderObject>
+				<Mesh>AU_INITIATOR_SKN.AU_INITIATOR</Mesh>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>
+</AssetDeclaration>

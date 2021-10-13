@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<!-- PHASE EMP FIX:
+	This fix works by creating a dummy object (via FireOnObjectsNugget) which spawns on the phased objects. The dummy uses its lifetime as a 'timer', after which it applies a
+	debuff/override attributemodifier to remove the phase attributemodifier. Thus Phase always lasts the intended amount, and is unaffected by the 
+	Phased object being EMP'd.
+	
+	The problem with FireOnObjectsNugget is that it does not allow specifying if dummy can spawn on non-allies. As a workaround, the dummy's attach update prevents attaching to 
+	non-allies, and also has a suicide weapon which kills it quickly if it does not find a suitable ally parent. The triggers/objectstatus for the suicide weapon are done partly
+	by LUA script.
+	
+	Note this fix does not work on Mechapedes because the dummy's debuff weapon seemed unreliable on squad-based units.
+	-->
+	
+	<GameObject
+		id="PhaseDummy"
+		SelectPortrait="Portrait_NeutralSensorPod"
+		ButtonImage="Portrait_NeutralSensorPod"
+		Side="ALIEN"
+		EditorSorting="UNIT"
+		TransportSlotCount="0"
+		CommandSet="EmptyCommandSet"
+		IsTrainable="false"
+		KindOf="PRELOAD NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY IGNORED_IN_GUI"
+		RadarPriority="UNIT"
+		EditorName="PhaseDummy">
+		<DisplayName>Name:GDIOrcaSensorPod</DisplayName>
+		<ArmorSet
+			Armor="GDIOrcaSensorPodArmor"
+			DamageFX="NormalDamageFX" />
+		<LocomotorSet
+			Locomotor="HumanLocomotor"
+			Condition="NORMAL"
+			Speed="0.0" /> 
+		<Behaviors>
+			<Physics
+				id="ModuleTag_Physics" />
+				
+			<!-- Lasts for entire duration of phase, FADED type death -->
+			<LifetimeUpdate
+				id="ModuleTag_LifeTime"
+				DeathType="FADED"
+				MinLifetime="20s"
+				MaxLifetime="20s" />
+				
+			<!-- Phase SP initially applies the attributemodifier. This dummy can only attach to objects which have been affected by the initial phasing (OUT_OF_PHASE)
+				 After attach, the parents gain RIDERLESS status in addition. -->
+			<AttachUpdate
+				id="ModuleTag_Attach"
+				Range="10.0"
+				CloseEnoughRange="1.0"
+				Flags="UNCONTAINED_ONLY ONE_ATTACH_PER_PARENT"
+				ParentStatus="RIDERLESS"
+				CanAttachToHordeMembers="false"
+				Teleport="true"
+				UseGeometry="false" >
+				<ObjectFilter
+					Relationship="ALLIES"
+					StatusBitFlags="OUT_OF_PHASE"
+					Rule="ANY"
+					Exclude="AIRCRAFT INFANTRY"
+					Include="VEHICLE">
+					<IncludeThing>AlienMCV</IncludeThing>
+					<IncludeThing>AlienMCVUnpacking</IncludeThing>
+					<IncludeThing>Reaper17MCV</IncludeThing>
+					<IncludeThing>Reaper17MCVUnpacking</IncludeThing>
+					<IncludeThing>Traveler59MCV</IncludeThing>
+					<IncludeThing>Traveler59MCVUnpacking</IncludeThing>			
+					<ExcludeThing>Viceroid</ExcludeThing>
+					<!-- Doesn't work correctly for Mechas, so exclude them -->
+					<ExcludeThing>AlienMillipedeBody</ExcludeThing>
+					<ExcludeThing>AlienMillipedeHead</ExcludeThing>					
+					<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
+					<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>	
+					<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>
+				</ObjectFilter>
+			</AttachUpdate>
+			
+			<!-- If we don't find suitable parent within this delay time, kill ourselves -->
+			<FireWeaponUpdate 
+				id="ModuleTag_FireWeaponUpdate">
+				<FireWeaponNugget
+					OneShot="true"
+					FireDelay="1s"
+					WeaponName="PhaseDummySuicideWeapon"
+				/>
+			</FireWeaponUpdate>			
+			
+			<!-- The SuicideWeapon's DamageNugget ONLY fires when in WeaponUpgraded01 state -->
+			<!-- Set WeaponUpgraded01 by default -->
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantUpgradeCreate" 
+				UpgradeToGrant="Upgrade_WeaponUpgraded01" />	
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitUpgradeFor01"
+				StatusToSet="WEAPON_UPGRADED_01">
+				<TriggeredBy>Upgrade_WeaponUpgraded01</TriggeredBy>
+			</StatusBitsUpgrade>
+			<!-- But once attached, remove WeaponUpgraded01... so SuicideWeapon cannot trigger -->
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitUpgradeFor02"
+				StatusToSet=""
+				StatusToClear="WEAPON_UPGRADED_01">
+				<TriggeredBy>Upgrade_Attached</TriggeredBy>
+			</StatusBitsUpgrade>			
+			<!-- On fade death, remove phase effects completely -->
+			<FireWeaponWhenDead
+				id="ModuleTag_FireWeaponWhenDead"
+				InitiallyActive="true"
+				DeathWeapon="PhaseDummyDeathWeapon">
+				<DieMuxData
+					DeathTypes="SLAUGHTERED FADED" />
+				<!-- never fire when suicided -->
+				<WeaponFireProbability
+					DeathType="SLAUGHTERED"
+					ChancePercentage="0" />					
+				<!-- always fire when faded -->
+				<WeaponFireProbability
+					DeathType="FADED"
+					ChancePercentage="100" />										
+			</FireWeaponWhenDead>	 			
+			<DestroyDie
+				id="ModuleTag_DestroyDie">
+				<DieMuxData
+					DeathTypes="ALL" 
+				/>
+			</DestroyDie>
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="ModuleTag_AI"
+				AILuaEventsList="PhaseDummyFunctions_103"	
+				AutoAcquireEnemiesWhenIdle="YES" />
+		</AI>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="999999" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="7.0"
+				Height="13.0"></Shape>
+		</Geometry>
+		<VisionInfo
+			VisionRange="1"
+			ShroudClearingRange="1" />
+		<CrusherInfo
+			CrushableLevel="0" />
+	</GameObject>	
+	
+	
+	<!-- ################################################## PHASE FIELD FIX ############################################# -->
+	<!-- Phase SP fires attributemodifier to give some initial phase time, fires the dummy-spawn weapon on all units in area -->
+	<WeaponTemplate
+		id="AlienPhaseFieldWeaponTrigger"
+		Name="AlienPhaseFieldWeaponTrigger"
+		RadiusDamageAffects="ALLIES"
+		ProjectileCollidesWith="ALLIES"
+		AttackRange="50000.0"
+		>
+		<Nuggets>
+		
+			<AttributeModifierNugget
+				Radius="150.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				AttributeModifierName="AttributeModifier_AlienPhaseField">
+				<SpecialObjectFilter
+					Relationship="ALLIES"
+					Rule="ANY"
+					Exclude="AIRCRAFT"					
+					Include="VEHICLE">
+					<IncludeThing>AlienMCV</IncludeThing>
+					<IncludeThing>AlienMCVUnpacking</IncludeThing>
+					<IncludeThing>Reaper17MCV</IncludeThing>
+					<IncludeThing>Reaper17MCVUnpacking</IncludeThing>
+					<IncludeThing>Traveler59MCV</IncludeThing>
+					<IncludeThing>Traveler59MCVUnpacking</IncludeThing>			
+					<ExcludeThing>Viceroid</ExcludeThing>
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>		
+			
+			<AttributeModifierNugget
+				Radius="150.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				AttributeModifierName="AttributeModifier_AlienPhaseFieldSlow">
+				<SpecialObjectFilter
+					Relationship="ALLIES"
+					Rule="ANY"
+					Include="HARVESTER">
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>		
+						
+			
+			<!-- Disable abilities for a while even after phase 
+			<AttributeModifierNugget
+				Radius="150.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				AttributeModifierName="AttributeModifier_PhaseDisableSP">
+				<SpecialObjectFilter
+					Relationship="ALLIES"
+					Rule="NONE">
+					<IncludeThing>AlienMastermind</IncludeThing>
+					<IncludeThing>AlienBlinkMastermind</IncludeThing>
+					<IncludeThing>Traveler59BlinkMastermind</IncludeThing>
+					<IncludeThing>Traveler59Cultist</IncludeThing>					
+					<IncludeThing>Traveler59CultistSquad</IncludeThing>
+					<IncludeThing>GDICommando</IncludeThing>
+					<IncludeThing>NODCommando</IncludeThing>
+					<IncludeThing>BlackHandCommando</IncludeThing>
+					<IncludeThing>ZOCOMCommando</IncludeThing>
+					<IncludeThing>MarkedOfKaneCommando</IncludeThing>					
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>		
+			-->
+
+			<!-- Apply original phase FOR MECHAS ONLY 
+			<AttributeModifierNugget
+				Radius="100.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				AttributeModifierName="AttributeModifier_AlienPhaseField">
+				<SpecialObjectFilter
+					Relationship="ALLIES"
+					Rule="NONE" >
+					<IncludeThing>AlienMillipedeBody</IncludeThing>
+					<IncludeThing>AlienMillipedeHead</IncludeThing>					
+					<IncludeThing>AlienCustomizableVehicle</IncludeThing>
+					<IncludeThing>Reaper17CustomizableVehicle</IncludeThing>	
+					<IncludeThing>Traveler59CustomizableVehicle</IncludeThing>					
+				</SpecialObjectFilter>
+			</AttributeModifierNugget> -->
+		
+			<!-- Apply initial phasing (lasts full duration of phase)
+			<AttributeModifierNugget
+				Radius="100.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				AttributeModifierName="AttributeModifier_AlienPhaseFieldBegin">
+				<SpecialObjectFilter
+					Relationship="ALLIES"
+					Rule="ANY"
+					Exclude="AIRCRAFT INFANTRY"
+					Include="VEHICLE">
+					<IncludeThing>AlienMCV</IncludeThing>
+					<IncludeThing>AlienMCVUnpacking</IncludeThing>
+					<IncludeThing>Reaper17MCV</IncludeThing>
+					<IncludeThing>Reaper17MCVUnpacking</IncludeThing>
+					<IncludeThing>Traveler59MCV</IncludeThing>
+					<IncludeThing>Traveler59MCVUnpacking</IncludeThing>			
+					<ExcludeThing>Viceroid</ExcludeThing>
+					<ExcludeThing>AlienMillipedeBody</ExcludeThing>
+					<ExcludeThing>AlienMillipedeHead</ExcludeThing>					
+					<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
+					<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>	
+					<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>					
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>  -->
+		
+			<!-- Spawn the dummy on all objs in radius.	This crap doesnt like having relationship="allies", so the extra stuff 
+				in the dummy object and LUA script are a workaround for it.
+			<FireOnObjectsNugget
+				Radius="100.0"
+				Weapon="AlienPhaseFieldWeaponDummySpawn">
+				<Filter
+					Rule="NONE"
+					Include="VEHICLE"
+					ForbiddenTargetObjectStatus="IN_STASIS"	>										
+					<IncludeThing>AlienMCV</IncludeThing>
+					<IncludeThing>AlienMCVUnpacking</IncludeThing>
+					<IncludeThing>Reaper17MCV</IncludeThing>
+					<IncludeThing>Reaper17MCVUnpacking</IncludeThing>
+					<IncludeThing>Traveler59MCV</IncludeThing>
+					<IncludeThing>Traveler59MCVUnpacking</IncludeThing>			
+					<ExcludeThing>Viceroid</ExcludeThing>
+					<ExcludeThing>AlienMillipedeBody</ExcludeThing>
+					<ExcludeThing>AlienMillipedeHead</ExcludeThing>					
+					<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
+					<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>	
+					<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>
+				</Filter>
+			</FireOnObjectsNugget>  -->
+			
+		</Nuggets>
+	</WeaponTemplate>		
+	
+	<!-- Creates the dummy object on each unit -->
+	<WeaponTemplate
+		id="AlienPhaseFieldWeaponDummySpawn"
+		Name="AlienPhaseFieldWeaponDummySpawn"
+		RadiusDamageAffects="ALLIES" >
+		<Nuggets>
+			<WeaponOCLNugget WeaponOCL="OCL_PhaseDummy" />	
+		</Nuggets>
+	</WeaponTemplate>			
+	
+	<!-- After lifetime expires, Phase dummy fires this weapon to remove phase completely from unit -->
+	<WeaponTemplate
+		id="PhaseDummyDeathWeapon"
+		Name="PhaseDummyDeathWeapon"
+		RadiusDamageAffects="ALLIES"
+		ProjectileCollidesWith="ALLIES"
+		AttackRange="50000.0"
+		ClipSize="1"
+		FireFX=""
+		>
+		<Nuggets>
+			<!-- Note: Never tested AntiCategory to see if it was doing anything, but everything works fine anyway so
+				didn't bother testing further. Only affects RIDERLESS flagged objects. -->		
+			<AttributeModifierNugget
+				Radius="1.0"
+				PartitionFilterTestType="CIRCLE"
+				AntiCategories="DEBUFF"
+				AttributeModifierName="AttributeModifier_AlienPhaseFieldEnd">
+				<SpecialObjectFilter
+					Relationship="ALLIES"
+					Rule="ANY"
+					StatusBitFlags="RIDERLESS"					
+					Exclude="AIRCRAFT INFANTRY"
+					Include="VEHICLE">										
+					<IncludeThing>AlienMCV</IncludeThing>
+					<IncludeThing>AlienMCVUnpacking</IncludeThing>
+					<IncludeThing>Reaper17MCV</IncludeThing>
+					<IncludeThing>Reaper17MCVUnpacking</IncludeThing>
+					<IncludeThing>Traveler59MCV</IncludeThing>
+					<IncludeThing>Traveler59MCVUnpacking</IncludeThing>			
+					<ExcludeThing>Viceroid</ExcludeThing>
+					<!-- Doesn't work correctly for Mechas, so exclude them -->
+					<ExcludeThing>AlienMillipedeBody</ExcludeThing>
+					<ExcludeThing>AlienMillipedeHead</ExcludeThing>					
+					<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
+					<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>	
+					<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>		
+		</Nuggets>
+	</WeaponTemplate>		
+	
+	<!-- If Phase dummy doesnt find suitable target quick enough, it kills itself with this -->
+	<WeaponTemplate
+		id="PhaseDummySuicideWeapon"
+		Name="PhaseDummySuicideWeapon"
+		AttackRange="20.0"
+		AcceptableAimDelta="180d"
+		RadiusDamageAffects="ALLIES SELF"
+		ClipSize="0"
+		MeleeWeapon="true"
+		ChaseWeapon="true"
+		CanFireWhileMoving="true">
+		<FiringDuration
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />
+		<!--Do enough damage to kill ourselves but ourselves ONLY. -->
+		<Nuggets>
+			<DamageNugget
+				RequiredObjectStatus="WEAPON_UPGRADED_01"
+				OnlyKillOwnerWhenTriggered="true"
+				Damage="999999.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.0s"
+				DamageType="UNRESISTABLE"
+				DamageFXType="NOD_GRENADE"
+				DeathType="SLAUGHTERED" />
+		</Nuggets>
+	</WeaponTemplate>	
+	
+	
+	<!-- PHASE-EMP FIX -->
+	<!-- Original Phase -->
+	<AttributeModifier
+		id="AttributeModifier_AlienPhaseField"
+		Category="NONE"
+		Duration="30s"
+		StartFX="FX_ALI_PhaseGenerator_Begin"
+		EndFX="FX_ALI_PhaseGenerator_End"
+		ObjectStatusToSet="NO_ATTACK OUT_OF_PHASE">
+		<Modifier Type="DAMAGE_MULT" Value="0%"/>
+		<Modifier Type="HEALTH_MULT" Value="10000%" />
+		<Modifier Type="CRUSHER_LEVEL" Value="-500%"/>
+		<Modifier Type="CRUSHABLE_LEVEL" Value="500%"/>	
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="AttributeModifier_AlienPhaseFieldSlow"
+		Category="NONE"
+		Duration="30s">
+		<Modifier Type="SPEED" Value="50%" />
+	</AttributeModifier>		
+	
+	<!-- Disable abilities for extended period -->
+	<AttributeModifier
+		id="AttributeModifier_PhaseDisableSP"
+		Category="NONE"
+		ObjectStatusToSet="CARRYING_FLAG"
+		Duration="45s">
+	</AttributeModifier>			
+	
+	<!-- Begin Phase -->
+	<AttributeModifier
+		id="AttributeModifier_AlienPhaseFieldBegin"
+		Category="DEBUFF"
+		ReplaceInCategoryIfLongest="false"
+		Duration="20s"
+		IgnoreIfAnticategoryActive="true"
+		StartFX="FX_ALI_PhaseGenerator_Begin"
+		EndFX=""
+		ObjectStatusToSet="NO_ATTACK OUT_OF_PHASE">
+		<Modifier Type="DAMAGE_MULT" Value="0%"/>
+		<Modifier Type="HEALTH_MULT" Value="10000%" /> <!--
+		<Modifier Type="SPEED" Value="500%"/>	-->		
+	</AttributeModifier>			
+	<!-- Remove/Anticategory -->
+	<AttributeModifier
+		id="AttributeModifier_AlienPhaseFieldEnd"
+		Category="DEBUFF"
+		ReplaceInCategoryIfLongest="true"		
+		Duration="1.5s"		
+		StartFX="FX_ALI_PhaseGenerator_End"
+		EndFX="" 
+		ObjectStatusToSet="">		
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>		
+		<Modifier Type="HEALTH_MULT" Value="100%" /> <!--
+		<Modifier Type="SPEED" Value="100%"/> -->
+	</AttributeModifier>				
+	
+	<UpgradeTemplate id="Upgrade_Attached"
+		Type="OBJECT"	/>
+	<UpgradeTemplate id="Upgrade_WeaponUpgraded01"
+		Type="OBJECT"	/>		
+	
+	<ObjectCreationList
+		id="OCL_PhaseDummy">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED">
+			<CreateObject>PhaseDummy</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>		
+	
+</AssetDeclaration>

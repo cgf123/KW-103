@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!-- TIB SCAN DUMMY -->
+	<SpecialPowerTemplate
+		id="SpecialPower_TiberiumVibrationScanDummy"
+		Flags="IS_PLAYER_POWER WATER_OK"
+		TargetType="NONE" />	
+
+	<!-- TIB SCAN DUMMY -->
+	<ObjectCreationList
+		id="OCL_AlienTibScanDummy">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED">
+			<CreateObject>AlienTibScanDummy</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>		
+	
+	<ObjectCreationList
+		id="OCL_Reaper17TibScanDummy">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED">
+			<CreateObject>Reaper17TibScanDummy</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	
+	<!-- TIB SCAN OCL WEAPONS -->
+	<WeaponTemplate
+		id="AlienTibScanDummyWeapon"
+		Name="AlienTibScanDummyWeapon">
+		<Nuggets>
+			<WeaponOCLNugget WeaponOCL="OCL_AlienTibScanDummy" />		
+		</Nuggets>
+	</WeaponTemplate>	
+	
+	<WeaponTemplate
+		id="Reaper17TibScanDummyWeapon"
+		Name="Reaper17TibScanDummyWeapon">
+		<Nuggets>
+			<WeaponOCLNugget WeaponOCL="OCL_Reaper17TibScanDummy" />		
+		</Nuggets>
+	</WeaponTemplate>			
+
+
+	<!-- Reveals with radar scan -->
+	<GameObject
+		id="AlienTibScanDummy"
+		SelectPortrait="Portrait_NeutralSensorPod"
+		ButtonImage="Portrait_NeutralSensorPod"
+		Side="RANDOM"
+		KindOf="PRELOAD NO_COLLIDE IGNORE_FOR_VICTORY UNATTACKABLE RESIST_EMP">
+		<DisplayName>Name:AbilityDisruptionPod</DisplayName>
+		<ArmorSet
+			Armor="InvulnerableArmor" />
+		<LocomotorSet
+			Locomotor="GDIRepairDroneLocomotor"
+			Condition="NORMAL"
+			Speed="0.0" /> 
+			
+		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="513BC476" />
+				
+			<LifetimeUpdate
+				id="ModuleTag_LifeTime"
+				MinLifetime="10.5s"
+				MaxLifetime="10.5s" />							
+				
+			<ModelConditionUpgrade
+				id="ModuleTag_AttachedUpgrade"
+				AddConditionFlags="USER_20">
+				<TriggeredBy>Upgrade_StructureLevel1</TriggeredBy>
+			</ModelConditionUpgrade>				
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantLevels" 
+				UpgradeToGrant="Upgrade_StructureLevel1" />	
+
+			<SpecialPower
+				id="ModuleTag_TiberiumVibrationScan"
+				SpecialPowerTemplate="SpecialPower_TiberiumVibrationScanDummy"
+				UpdateModuleStartsAttack="true"
+			/>				
+			<RadarScanMapSpecialAbilityUpdate
+				id="ModuleTag_TiberiumVibrationScanUpdate"
+				SpecialPowerTemplate="SpecialPower_TiberiumVibrationScanDummy"
+				PackTime="10s">
+				<IntersectionFlagsFilter
+					ObjectStatus="HAS_TIBERIUM_UPGRADE" />
+				<IntersectionFlagsFilter
+					KindOf="TIBERIUM_BASED HARVESTER FS_MONEY_STORAGE" />
+				<IntersectionFlagsFilter
+					KindOf="VEHICLE"
+					ObjectStatus="HAS_TIBERIUM_AMMO" />
+				<IntersectionFlagsFilter
+					KindOf="TIBERIUM"
+					UseLocalPlayerFilter="false" />
+			</RadarScanMapSpecialAbilityUpdate>
+						
+			<Physics
+				id="ModuleTag_Physics" />
+			<!-- Slow death with fast sink so it looks instant, but we want to keep the dead object for sometime 
+			 to allow OnDestroyed LUA event to work -->				
+			<SlowDeath
+				id="73542D4A"
+				SinkRate="1000"
+				SinkDelay="0s"
+				DestructionDelay="1s">
+				<DieMuxData
+					ExemptStatus=""
+					RequiredStatus=""
+					DamageAmountRequired="-1"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
+					DeathTypes="ALL"
+					DeathTypesForbidden="" />
+			</SlowDeath>
+			
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="ModuleTag_AI"
+				AILuaEventsList="AlienTibScanDummyFunctions_103"				
+				AutoAcquireEnemiesWhenIdle="YES" >			
+			</AIUpdate>
+		</AI>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="1.0"
+				Height="1.0"></Shape>
+		</Geometry>
+		<VisionInfo
+			VisionRange="9000"
+			ShroudClearingRange="0"
+			VisionSide="100%"
+			VisionRear="100%"
+			VisionBonusTestRadius="100"
+			VisionBonusTestSegments="8"
+			VisionBonusPercentPerFoot="0%"
+			MaxVisionBonusPercent="50%"
+			MinVisionBonusPercent="-50%" />		
+	</GameObject>		
+	
+	<GameObject
+		id="Reaper17TibScanDummy"
+		SelectPortrait="Portrait_NeutralSensorPod"
+		ButtonImage="Portrait_NeutralSensorPod"
+		Side="RANDOM"
+		KindOf="PRELOAD NO_COLLIDE IGNORE_FOR_VICTORY UNATTACKABLE RESIST_EMP">
+		<DisplayName>Name:AbilityDisruptionPod</DisplayName>
+		<ArmorSet
+			Armor="InvulnerableArmor" />
+		<LocomotorSet
+			Locomotor="GDIRepairDroneLocomotor"
+			Condition="NORMAL"
+			Speed="0.0" /> 
+			
+		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="513BC476" />
+				
+			<LifetimeUpdate
+				id="ModuleTag_LifeTime"
+				MinLifetime="10.5s"
+				MaxLifetime="10.5s" />							
+				
+			<ModelConditionUpgrade
+				id="ModuleTag_AttachedUpgrade"
+				AddConditionFlags="USER_20">
+				<TriggeredBy>Upgrade_StructureLevel1</TriggeredBy>
+			</ModelConditionUpgrade>				
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantLevels" 
+				UpgradeToGrant="Upgrade_StructureLevel1" />	
+			
+			<SpecialPower
+				id="ModuleTag_TiberiumVibrationScan"
+				SpecialPowerTemplate="SpecialPower_TiberiumVibrationScanDummy"
+				UpdateModuleStartsAttack="true"
+			/>				
+			<RadarScanMapSpecialAbilityUpdate
+				id="ModuleTag_TiberiumVibrationScanUpdate"
+				SpecialPowerTemplate="SpecialPower_TiberiumVibrationScanDummy"
+				PackTime="10s">
+				<IntersectionFlagsFilter
+					ObjectStatus="HAS_TIBERIUM_UPGRADE" />
+				<IntersectionFlagsFilter
+					KindOf="TIBERIUM_BASED HARVESTER FS_MONEY_STORAGE" />
+				<IntersectionFlagsFilter
+					KindOf="VEHICLE"
+					ObjectStatus="HAS_TIBERIUM_AMMO" />
+				<IntersectionFlagsFilter
+					KindOf="TIBERIUM"
+					UseLocalPlayerFilter="false" />
+			</RadarScanMapSpecialAbilityUpdate>
+						
+			<Physics
+				id="ModuleTag_Physics" />
+			<!-- Slow death with fast sink so it looks instant, but we want to keep the dead object for sometime 
+			 to allow OnDestroyed LUA event to work -->				
+			<SlowDeath
+				id="73542D4A"
+				SinkRate="1000"
+				SinkDelay="0s"
+				DestructionDelay="1s">
+				<DieMuxData
+					ExemptStatus=""
+					RequiredStatus=""
+					DamageAmountRequired="-1"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
+					DeathTypes="ALL"
+					DeathTypesForbidden="" />
+			</SlowDeath>
+			
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="ModuleTag_AI"
+				AILuaEventsList="AlienTibScanDummyFunctions_103"				
+				AutoAcquireEnemiesWhenIdle="YES" >			
+			</AIUpdate>
+		</AI>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="1.0"
+				Height="1.0"></Shape>
+		</Geometry>
+		<VisionInfo
+			VisionRange="9000"
+			ShroudClearingRange="0"
+			VisionSide="100%"
+			VisionRear="100%"
+			VisionBonusTestRadius="100"
+			VisionBonusTestSegments="8"
+			VisionBonusPercentPerFoot="0%"
+			MaxVisionBonusPercent="50%"
+			MinVisionBonusPercent="-50%" />		
+	</GameObject>	
+	
+</AssetDeclaration>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="us-ascii" ?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Tags />
+	<Includes>
+	</Includes>
+	
+	<GameObject
+		id="GenericCrateSpawner"
+		Side="Neutral"
+		EditorSorting="UNIT"
+		CommandSet="EmptyCommandSet"
+		KindOf="IMMOBILE INERT UNATTACKABLE NO_COLLIDE"
+		RadarPriority="NOT_ON_RADAR"
+		EditorName="IonStormSpawner">
+		<DisplayName>IonStormSpawner</DisplayName>
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>
+		</Draws>
+		<Behaviors>
+			<SpawnCrateUpdate
+				id="ModuleTag_SpawnCrateUpdate"
+				CreateFrequency="2s"
+				CrateLifetime="5s">
+				<CrateList>IonStormTemporary</CrateList>
+			</SpawnCrateUpdate>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="1.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="7.0"
+				Height="13.0"/>
+		</Geometry>
+		<VisionInfo
+			VisionRange="0"
+			ShroudClearingRange="0" />
+	</GameObject>
+</AssetDeclaration>	

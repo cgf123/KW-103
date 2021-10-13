@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+	<!-- NEW COLORS -->
+	<MultiplayerColor
+		id="ColorAubn">
+		<RGBColor
+			B="51"
+			G="64"
+			R="92"
+			A="255" />
+		<RGBNightColor
+			B="51"
+			G="64"
+			R="92"
+			A="255" />
+		<LivingWorldColor
+			B="51"
+			G="64"
+			R="92"
+			A="255" />
+		<LivingWorldBannerColor
+			B="51"
+			G="64"
+			R="92"
+			A="255" />
+		<TooltipName>Color:Aubn</TooltipName>
+		<AvailableInMetaGame>True</AvailableInMetaGame>
+	</MultiplayerColor>
+	
+
+	<MultiplayerColor
+		id="ColorBege">
+		<RGBColor
+			B="128"
+			G="179"
+			R="194"
+			A="255" />
+		<RGBNightColor
+			B="128"
+			G="179"
+			R="194"
+			A="255" />
+		<LivingWorldColor
+			B="128"
+			G="179"
+			R="194"
+			A="255" />
+		<LivingWorldBannerColor
+			B="128"
+			G="179"
+			R="194"
+			A="255" />
+		<TooltipName>Color:Bege</TooltipName>
+		<AvailableInMetaGame>True</AvailableInMetaGame>
+	</MultiplayerColor>	
+
+	<MultiplayerColor
+		id="ColorBlck">
+		<RGBColor
+			B="30"
+			G="30"
+			R="30"
+			A="255" />
+		<RGBNightColor
+			B="30"
+			G="30"
+			R="30"
+			A="255" />
+		<LivingWorldColor
+			B="30"
+			G="30"
+			R="30"
+			A="255" />
+		<LivingWorldBannerColor
+			B="30"
+			G="30"
+			R="30"
+			A="255" />
+		<TooltipName>Color:Blck</TooltipName>
+		<AvailableInMetaGame>True</AvailableInMetaGame>
+	</MultiplayerColor>	
+	
+	<MultiplayerColor
+		id="ColorBluu">
+		<RGBColor
+			B="215"
+			G="98"
+			R="80"
+			A="255" />
+		<RGBNightColor
+			B="215"
+			G="98"
+			R="80"
+			A="255" />
+		<LivingWorldColor
+			B="215"
+			G="98"
+			R="80"
+			A="255" />
+		<LivingWorldBannerColor
+			B="215"
+			G="98"
+			R="80"
+			A="255" />
+		<TooltipName>Color:Blue</TooltipName>
+		<AvailableInMetaGame>True</AvailableInMetaGame>
+	</MultiplayerColor>
+
+	<MultiplayerColor
+		id="ColorBurg">
+		<RGBColor
+			B="1"
+			G="1"
+			R="125"
+			A="255" />
+		<RGBNightColor
+			B="1"
+			G="1"
+			R="125"
+			A="255" />
+		<LivingWorldColor
+			B="1"
+			G="1"
+			R="125"
+			A="255" />
+		<LivingWorldBannerColor
+			B="1"
+			G="1"
+			R="125"
+			A="255" />
+		<TooltipName>Color:Burg</TooltipName>
+		<AvailableInMetaGame>True</AvailableInMetaGame>
+	</MultiplayerColor>	
+	
+	<MultiplayerColor
+		id="ColorLavb">
+		<RGBColor
+			B="200"
+			G="178"
+			R="128"
+			A="255" />
+		<RGBNightColor
+			B="200"
+			G="178"
+			R="128"
+			A="255" />
+		<LivingWorldColor
+			B="200"
+			G="178"
+			R="128"
+			A="255" />
+		<LivingWorldBannerColor
+			B="200"
+			G="178"
+			R="128"
+			A="255" />
+		<TooltipName>Color:Lavb</TooltipName>
+		<AvailableInMetaGame>True</AvailableInMetaGame>
+	</MultiplayerColor>	
+	
+	<MultiplayerColor
+		id="ColorLime">
+		<RGBColor
+			B="0"
+			G="255"
+			R="186"
+			A="255" />
+		<RGBNightColor
+			B="0"
+			G="255"
+			R="186"
+			A="255" />
+		<LivingWorldColor
+			B="0"
+			G="255"
+			R="186"
+			A="255" />
+		<LivingWorldBannerColor
+			B="0"
+			G="255"
+			R="186"
+			A="255" />
+		<TooltipName>Color:Lime</TooltipName>
+		<AvailableInMetaGame>True</AvailableInMetaGame>
+	</MultiplayerColor>	
+	
+	<MultiplayerColor
+		id="ColorSgrn">
+		<RGBColor
+			B="90"
+			G="255"
+			R="0"
+			A="255" />
+		<RGBNightColor
+			B="90"
+			G="255"
+			R="0"
+			A="255" />
+		<LivingWorldColor
+			B="90"
+			G="255"
+			R="0"
+			A="255" />
+		<LivingWorldBannerColor
+			B="90"
+			G="255"
+			R="0"
+			A="255" />
+		<TooltipName>Color:Sgrn</TooltipName>
+		<AvailableInMetaGame>True</AvailableInMetaGame>
+	</MultiplayerColor>	
+	
+	<MultiplayerColor
+		id="ColorTeal">
+		<RGBColor
+			B="73"
+			G="103"
+			R="0"
+			A="255" />
+		<RGBNightColor
+			B="73"
+			G="103"
+			R="0"
+			A="255" />
+		<LivingWorldColor
+			B="73"
+			G="103"
+			R="0"
+			A="255" />
+		<LivingWorldBannerColor
+			B="73"
+			G="103"
+			R="0"
+			A="255" />
+		<TooltipName>Color:Teal</TooltipName>
+		<AvailableInMetaGame>True</AvailableInMetaGame>
+	</MultiplayerColor>	
+	
+	<MultiplayerColor
+		id="ColorWhit">
+		<RGBColor
+			B="255"
+			G="255"
+			R="255"
+			A="255" />
+		<RGBNightColor
+			B="255"
+			G="255"
+			R="255"
+			A="255" />
+		<LivingWorldColor
+			B="255"
+			G="255"
+			R="255"
+			A="255" />
+		<LivingWorldBannerColor
+			B="255"
+			G="255"
+			R="255"
+			A="255" />
+		<TooltipName>Color:Whit</TooltipName>
+		<AvailableInMetaGame>True</AvailableInMetaGame>
+	</MultiplayerColor>	
+	
+</AssetDeclaration>

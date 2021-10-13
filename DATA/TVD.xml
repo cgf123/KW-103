@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+<!-- 
+==================== INFO ON TIB VEIN MECHANIC =================
+
+1.02:
+1) Support power use triggers Chem Plant's OCLSP, which triggers OCL_TibVeinDetonation AND TibVeinDetonation Weapon.
+2) TibVeinDetonation weapon unpacks via WFSPA after 5s, has 2.1s damage delay.
+3) OCL_TibVeinDetonation spawns the TibVeinDetonation object spawns VeinDetonationChunks objects in set positions using FloodUpdate. Expires in 2s (60frames).
+4) The Chunks constantly fire VeinDetonationRadiusWeapon and expire in 2s (60frame). The weapon has a 3.5s damage delay.
+
+KW XMLs:
+1) Support power use triggers Chem Plant's OCLSP, which triggers OCL_TibVeinDetonationTrigger.
+2) OCL_TibVeinDetonationTrigger spawns the trigger object, which after 3.2s fires VeinDetonationCreationWeapon and after 4s TibVeinDetonationWeapon.
+3) TibVeinDetonation weapon deals some damage in whole area, has no damage delay.
+4) VeinDetonationCreationWeapon deals some tiny damage and triggers OCL_TibVeinDetonation.
+5) OCL_TibVeinDetonation spawns the TibVeinDetonation object, which spawns VeinDetonationChunks in set positions using FloodUpdate. Expires in 2s (60frames).
+4) The Chunks constantly fire VeinDetonationRadiusWeapon and expire in 2s (60frame) lifetime. The weapon has no damage delay.
+
+-->
+
+	<FXParticleSystemTemplate Drawable="EXTIBCLUSTER" ParticleTexture="FXLenzFlare01" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" Shader="W3D_EMISSIVE" SortLevel="4" SystemLifetime="40" Type="DRAWABLE" id="TibVeinGeyserMaster">
+		<Lifetime High="50" Low="60"/>
+		<Size High="25" Low="15"/>
+		<BurstDelay High="8" Low="7"/>
+		<BurstCount High="6" Low="4"/>
+		<InitialDelay High="15" Low="15"/>
+		<Alphas>
+			<Alpha Frame="1" High="1" Low="1" RelativeAge="0"/>
+			<Alpha Frame="2" High="0.2" Low="0.2" RelativeAge="29"/>
+			<Alpha Frame="3" High="0" Low="0" RelativeAge="100"/>
+		</Alphas>
+		<Colors>
+			<Color Frame="1" RelativeAge="0">
+				<Color b="0.592157" g="0.666667" r="0.729412"/>
+			</Color>
+			<Color Frame="2" RelativeAge="100">
+				<Color b="0.592157" g="0.666667" r="0.729412"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default Gravity="-4">
+				<VelocityDamping High="0.85" Low="0.8"/>
+			</Default>
+		</Physics>
+		<Draw>
+			<Default/>
+		</Draw>
+		<Volume>
+			<Cylinder IsHollow="true" Radius="5" RadiusRate="8">
+				<Offset x="0" y="0" z="20"/>
+			</Cylinder>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="0" Low="0"/>
+					<y High="0" Low="0"/>
+					<z High="0" Low="0"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event>
+			<Collision EventFX="FX_NOD_TiberiumGeyser" KillAfterEvent="false" OrientFXToTerrain="false" PerParticle="true">
+				<HeightOffset High="1" Low="1"/>
+			</Collision>
+		</Event>
+		<Update>
+			<Default>
+				<SizeRate High="1" Low="1"/>
+				<SizeRateDamping High="1" Low="0.1"/>
+				<AngleZ High="7" Low="0"/>
+				<AngularRateZ High="0.075" Low="-0.075"/>
+				<AngularDampingXY High="1" Low="1"/>
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>
+
+
+	<!--
+	<FXParticleSystemTemplate ParticleTexture="FXCloudCR01" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" SortLevel="1" SystemLifetime="240" Type="GPU_PARTICLE" id="TibGeyserSteam">
+		<Lifetime High="9" Low="3"/>
+		<Size High="30" Low="25"/>
+		<BurstCount High="6" Low="4"/>
+		<InitialDelay High="6" Low="6"/>
+		<Colors>
+			<Color Frame="2" RelativeAge="10">
+				<Color b="0.266667" g="0.709804" r="0.345098"/>
+			</Color>
+			<Color Frame="3" RelativeAge="100">
+				<Color b="0" g="0" r="0"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default Gravity="-0.05">
+				<VelocityDamping High="0.75" Low="0.3"/>
+				<DriftVelocity x="0.5" y="0.5" z="0"/>
+			</Default>
+		</Physics>
+		<Draw>
+			<Gpu SpeedMultiplier="1"/>
+		</Draw>
+		<Volume>
+			<Cylinder Radius="12">
+				<Offset x="0" y="0" z="30"/>
+			</Cylinder>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="2" Low="-1"/>
+					<y High="1" Low="-3"/>
+					<z High="35" Low="0"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event/>
+		<Update>
+			<Default>
+				<SizeRate High="0.1" Low="0.02"/>
+				<SizeRateDamping High="1.3" Low="0.1"/>
+				<AngleZ High="7" Low="0"/>
+				<AngularDampingXY High="1" Low="1"/>
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>
+	<FXParticleSystemTemplate Drawable="FXLEVELUPRAYS" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" Shader="W3D_EMISSIVE" SystemLifetime="225" Type="DRAWABLE" id="TibGeyserSteam2">
+		<Lifetime High="3" Low="3"/>
+		<Size High="1" Low="1"/>
+		<BurstCount High="1" Low="1"/>
+		<InitialDelay High="6" Low="6"/>
+		<Alphas>
+			<Alpha Frame="1" High="1" Low="1" RelativeAge="0"/>
+			<Alpha Frame="2" High="0.5" Low="0.5" RelativeAge="50"/>
+			<Alpha Frame="3" High="0" Low="0" RelativeAge="100"/>
+		</Alphas>
+		<Colors>
+			<Color Frame="1" RelativeAge="0">
+				<Color b="0.0745098" g="1" r="0"/>
+			</Color>
+			<Color Frame="2" RelativeAge="50">
+				<Color b="0" g="0.501961" r="0.0862745"/>
+			</Color>
+			<Color Frame="3" RelativeAge="100">
+				<Color b="0" g="0" r="0"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default>
+				<VelocityDamping High="1" Low="1"/>
+			</Default>
+		</Physics>
+		<Draw>
+			<RenderObject>
+				<ObjectSet RenderGroup=""/>
+				<ObjectSet RenderGroup=""/>
+				<ObjectSet RenderGroup=""/>
+			</RenderObject>
+		</Draw>
+		<Volume>
+			<Point/>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="0" Low="0"/>
+					<y High="0" Low="0"/>
+					<z High="0" Low="0"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event/>
+		<Update>
+			<RenderObject Rotation="ROTATE_Z">
+				<AngleZ High="3" Low="-3"/>
+				<AngularDamping High="1" Low="1"/>
+				<StartSize>
+					<x High="0.06" Low="0.06"/>
+					<y High="0.06" Low="0.06"/>
+					<z High="0.4" Low="0.4"/>
+				</StartSize>
+				<SizeRate>
+					<x High="-0.01" Low="-0.01"/>
+					<y High="-0.01" Low="-0.01"/>
+					<z High="0.05" Low="0.05"/>
+				</SizeRate>
+				<SizeDamping>
+					<x High="1" Low="1"/>
+					<y High="1" Low="1"/>
+					<z High="1" Low="1"/>
+				</SizeDamping>
+			</RenderObject>
+		</Update>
+	</FXParticleSystemTemplate>
+	-->
+
+	<FXList id="FX_NOD_TiberiumVeinDetonation">
+		<NuggetList>
+			<!--
+			<ParticleSystem
+				Particle="TibVeinGeyserMaster">
+			</ParticleSystem>
+			-->
+			<ParticleSystem
+				Particle="TibVeinDetCracksDecalMaster"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>	
+			<ParticleSystem
+				Particle="TibVeinDetDebris"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TibVeinDetDirt"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TibVeinDetDirtRing"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TibVeinDetDistort"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TibVeinDetDistort2"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TibVeinDetDust"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TibVeinDetDustRing"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TibVeinDetRumble"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+			
+			<ParticleSystem
+				Particle="TibVeinDetRumbleDust"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TibVeinDetShardRing"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TibVeinDetTib"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="0.0" />
+			</ParticleSystem>
+
+			<CameraShakerVolume
+				Radius="5000"
+				Duration="8s"
+				Amplitude="0.9d"/>
+		</NuggetList>
+	</FXList>
+	
+	<FXList id="FX_NOD_TiberiumVeinDetonation1">
+		<NuggetList>
+			<ParticleSystem
+				Particle="TibVeinGeyserMaster">
+			</ParticleSystem>
+		</NuggetList>
+	</FXList>	
+
+  <!-- ##################################### NEW TRIGGER OCL #################################### -->
+  <ObjectCreationList
+		id="OCL_NODVeinDetonationTrigger">
+    <CreateObject
+			Disposition="ON_GROUND_ALIGNED"
+			Options="IGNORE_ALL_OBJECTS"
+			CreateFX="FX_NOD_TiberiumVeinDetonation">
+      <Offset x="0" y="0" z="0"/>
+      <CreateObject>NODVeinDetonationTrigger</CreateObject>
+    </CreateObject>
+  </ObjectCreationList>
+  
+  <ObjectCreationList
+		id="OCL_NODVeinDetonation">
+    <CreateObject
+			Disposition="ON_GROUND_ALIGNED"
+			Options="IGNORE_ALL_OBJECTS"
+			CreateFX="FX_NOD_TiberiumVeinDetonation1">
+      <Offset x="0" y="0" z="0"/>
+      <CreateObject>NODVeinDetonation</CreateObject>
+    </CreateObject>
+  </ObjectCreationList>
+
+  <!-- #################################################### NEW TRIGGER WEAPON ################################# -->
+  <WeaponTemplate
+    id="VeinDetonationCreationWeapon"
+    Name="VeindDetionationCreationWeapon"
+    RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+    AttackRange="50000.0"
+    >
+    <Nuggets>
+			<DamageNugget
+				Damage="100"
+				DelayTimeSeconds="0.0s"
+				DamageTaperOff="-1"
+				Radius="250"
+				DamageType="CANNON"
+				DeathType="DETONATED" >
+				<SpecialObjectFilter
+					RejectStatusBitFlags="AIRBORNE_TARGET"
+					Rule="ALL">
+					<ExcludeThing>GDIHammerhead</ExcludeThing>
+					<ExcludeThing>ZOCOMHammerhead</ExcludeThing>
+					<ExcludeThing>SteelTalonsHammerhead</ExcludeThing>
+				</SpecialObjectFilter>
+			</DamageNugget> 	
+      <WeaponOCLNugget
+			WeaponOCL="OCL_NODVeinDetonation" />
+      <ReportWeaponFiredStatNugget/>
+    </Nuggets>
+  </WeaponTemplate>  
+
+  <WeaponTemplate
+		id="TibVeinDetonation"
+		Name="TibVeinDetonation"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+		AttackRange="50000.0"
+		>
+		<Nuggets>
+			<DamageNugget
+				Damage="60.0"
+				DelayTimeSeconds="0.0s"
+				DamageTaperOff="-1"
+				Radius="250"
+				DamageType="CANNON"
+				DeathType="DETONATED" >
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="TIBERIUM">
+				</SpecialObjectFilter>
+			</DamageNugget> 
+			<ReportWeaponFiredStatNugget/>
+		</Nuggets>
+	</WeaponTemplate>
+  
+	<WeaponTemplate
+    id="VeinDetonationRadiusWeapon"
+    Name="VeinDetonationRadiusWeapon"
+		RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+		AttackRange="50000.0">
+		<Nuggets>
+			<DamageNugget
+				Damage="100"
+				Radius="100"
+				DamageType="CANNON"
+				DeathType="DETONATED" >
+				<DamageScalarDetails Scalar= "0%">
+					<Filter
+						Rule="ALL"
+						Exclude="TIBERIUM" />
+				</DamageScalarDetails>				
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>  
+
+  
+   <!-- ################################################################### NEW TRIGGER OBJECT ################################################# -->
+  <GameObject
+    id="NODVeinDetonationTrigger"
+    Side="NOD"
+    EditorSorting="SYSTEM"
+    CommandSet="EmptyCommandSet"
+    KindOf="NO_COLLIDE IMMOBILE UNATTACKABLE INERT INERT_SHROUD_REVEALER NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY"
+    RadarPriority="STRUCTURE"
+    EditorName="NODVeinDetonationTrigger">
+    <DisplayName>NODVeinDetonationTrigger</DisplayName>
+    <ArmorSet
+			Armor="NoArmor" />
+    <Draws>
+      <ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+        <ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+          <Model
+						Name="" />
+        </ModelConditionState>
+      </ScriptedModelDraw>
+    </Draws>
+    <Behaviors>
+      <DeletionUpdate
+        id="ModuleTag_03"
+		    MinFrames = "80"
+		    MaxFrames = "80"/>
+	  <!--
+		<LifetimeUpdate
+			id="ModuleTag_Lifetime"
+			MinLifetime="3.5s"
+			MaxLifetime="3.5s" />	  
+	-->
+      <FireWeaponUpdate
+        id="ModuleTag_WeaponFiring">
+        <FireWeaponNugget
+          WeaponName = "VeinDetonationCreationWeapon"
+          FireDelay = "1s"
+          OneShot = "true"/>
+      </FireWeaponUpdate>  	  
+	  <FireWeaponUpdate
+        id="ModuleTag_BigDamageBurst">
+        <FireWeaponNugget
+          WeaponName = "TibVeinDetonation"
+          FireDelay = "1s"
+          OneShot = "false"/>
+      </FireWeaponUpdate>
+    </Behaviors>
+    <Body>
+      <ImmortalBody
+				id="ModuleTag_02"
+				MaxHealth = "1.0"
+		    InitialHealth = "1.0" />
+    </Body>
+    <Geometry
+			IsSmall="false">
+      <Shape
+				Type="BOX"
+				MajorRadius="10.0"
+        MinorRadius = "1.0"
+				Height="3.0"/>
+    </Geometry>
+  </GameObject> 
+  
+  <!-- ################################################################################################################### -->
+  <!--
+  <GameObject
+    id="VeinDetonationChunk"
+		Side="NOD"
+		EditorSorting="SYSTEM"
+		CommandSet="EmptyCommandSet"
+		KindOf="NO_COLLIDE IMMOBILE UNATTACKABLE INERT INERT_SHROUD_REVEALER NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY"
+		RadarPriority="STRUCTURE"
+		EditorName="VeinDetonationChunk">
+    <DisplayName>VeinDetonationChunk</DisplayName>
+    <ArmorSet
+			Armor="NoArmor" />
+    <Draws>
+      <ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+        <ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+          <Model
+						Name="" />						
+        </ModelConditionState>
+      </ScriptedModelDraw>
+    </Draws>
+    <Behaviors>
+      <FireWeaponUpdate
+        id="ModuleTag_WeaponFiring">
+        <FireWeaponNugget
+          WeaponName = "VeinDetonationRadiusWeapon"
+          FireDelay = "0s"
+          OneShot = "false"/>
+      </FireWeaponUpdate>
+      <DeletionUpdate
+        id="ModuleTag_03"
+		    MinFrames = "60"
+		    MaxFrames = "60"/>
+    </Behaviors>
+    <Body>
+      <HighlanderBody
+				id="ModuleTag_02"
+				MaxHealth = "1.0"
+		    InitialHealth = "1.0" />
+    </Body>
+    <Geometry
+      IsSmall="true">
+      <Shape
+				Type="CYLINDER"
+				MajorRadius="10.0"
+				Height="12.0"/>
+    </Geometry>
+  </GameObject>
+  -->
+  <!-- ##################################################################################################################################### -->
+  <!-- WRATHED DOESNT SUPPORT FLOODUPDATE!!! 
+  <GameObject
+		id="NODVeinDetonation"
+		Side="NOD"
+		EditorSorting="SYSTEM"
+		CommandSet="EmptyCommandSet"
+		KindOf="NO_COLLIDE IMMOBILE UNATTACKABLE INERT INERT_SHROUD_REVEALER NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY"
+		RadarPriority="STRUCTURE"
+		EditorName="NODVeinDetonation">
+		<DisplayName>NODVeinDetonation</DisplayName>
+		<ArmorSet
+			Armor="NoArmor" />
+    <Draws>
+      <ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+        <ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+          <Model
+						Name="" />
+        </ModelConditionState>
+      </ScriptedModelDraw>
+    </Draws>
+    <Behaviors>
+      <DeletionUpdate
+        id="ModuleTag_03"
+		    MinFrames = "60"
+		    MaxFrames = "60"/>
+      <FloodUpdate
+        id="ModuleTag_FloodCentral"
+        AngleOfFlow = "0"
+        IsDirectionRelative = "false">
+        <DataList
+          UnitType="VeinDetonationChunk"
+          Speed="15" >
+          <ControlPointOffsetOne   x="0.0" y="0.0" z="0.0" />
+          <ControlPointOffsetTwo   x="0.0" y="0.0" z="0.0" />
+          <ControlPointOffsetThree x="0.0" y="200" z="0.0" />
+          <ControlPointOffsetFour  x="0.0" y="200" z="0.0" />
+        </DataList>
+        <DataList
+          UnitType="VeinDetonationChunk"
+          Speed="15" >
+          <ControlPointOffsetOne   x="0.0" y="0.0"  z="0.0" />
+          <ControlPointOffsetTwo   x="0.0" y="0.0"  z="0.0" />
+          <ControlPointOffsetThree x="0.0" y="-200" z="0.0" />
+          <ControlPointOffsetFour  x="0.0" y="-200" z="0.0" />
+        </DataList>
+        <DataList 
+          UnitType="VeinDetonationChunk"
+          Speed="15" >
+          <ControlPointOffsetOne   x="0.0" y="0.0"  z="0.0" />
+          <ControlPointOffsetTwo   x="0.0" y="0.0"  z="0.0" />
+          <ControlPointOffsetThree x="200.0" y="0" z="0.0" />
+          <ControlPointOffsetFour  x="200.0" y="0" z="0.0" />
+        </DataList>
+        <DataList
+          UnitType="VeinDetonationChunk"
+          Speed="15" >
+          <ControlPointOffsetOne   x="0.0" y="0.0"  z="0.0" />
+          <ControlPointOffsetTwo   x="0.0" y="0.0"  z="0.0" />
+          <ControlPointOffsetThree x="-200" y="0" z="0.0" />
+          <ControlPointOffsetFour  x="-200" y="0" z="0.0" />
+        </DataList>
+        <DataList
+          UnitType="VeinDetonationChunk"
+          Speed="15" >
+          <ControlPointOffsetOne   x="0.0" y="0.0" z="0.0" />
+          <ControlPointOffsetTwo   x="0.0" y="0.0" z="0.0" />
+          <ControlPointOffsetThree x="-160.0" y="-160" z="0.0" />
+          <ControlPointOffsetFour  x="-160.0" y="-160" z="0.0" />
+        </DataList>
+        <DataList
+          UnitType="VeinDetonationChunk"
+          Speed="15" >
+          <ControlPointOffsetOne   x="0.0" y="0.0" z="0.0" />
+          <ControlPointOffsetTwo   x="0.0" y="0.0" z="0.0" />
+          <ControlPointOffsetThree x="-160.0" y="160" z="0.0" />
+          <ControlPointOffsetFour  x="-160.0" y="160" z="0.0" />
+        </DataList>
+        <DataList
+          UnitType="VeinDetonationChunk"
+          Speed="15" >
+          <ControlPointOffsetOne   x="0.0" y="0.0" z="0.0" />
+          <ControlPointOffsetTwo   x="0.0" y="0.0" z="0.0" />
+          <ControlPointOffsetThree x="160.0" y="-160" z="0.0" />
+          <ControlPointOffsetFour  x="160.0" y="-160" z="0.0" />
+        </DataList>
+        <DataList
+          UnitType="VeinDetonationChunk"
+          Speed="15" >
+          <ControlPointOffsetOne   x="0.0" y="0.0" z="0.0" />
+          <ControlPointOffsetTwo   x="0.0" y="0.0" z="0.0" />
+          <ControlPointOffsetThree x="160.0" y="160" z="0.0" />
+          <ControlPointOffsetFour  x="160.0" y="160" z="0.0" />
+        </DataList>
+      </FloodUpdate>
+		</Behaviors>
+		<Body>
+			<ImmortalBody
+				id="ModuleTag_02"
+				MaxHealth = "1.0"    
+		    InitialHealth = "1.0" />
+		</Body>
+    <Geometry
+			IsSmall="false">
+      <Shape
+				Type="BOX"
+				MajorRadius="10.0"
+        MinorRadius = "1.0"
+				Height="3.0"/>
+    </Geometry>
+	</GameObject> -->
+</AssetDeclaration>

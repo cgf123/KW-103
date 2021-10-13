@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<GameObject
+		id="GDIOrcaPulseScanPing"
+		Side="GDI"
+		EditorSorting="UNIT"
+		TransportSlotCount="0"
+		CommandSet="EmptyCommandSet"
+		IsTrainable="false"
+		KindOf="INERT"
+		RadarPriority="NOT_ON_RADAR"
+		EditorName="GDIOrcaPulseScanPing">
+		<DisplayName>GDIOrcaPulseScanPing</DisplayName>
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model Name="" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<StealthDetectorUpdate
+				id="ModuleTag_Detect"
+				DetectionRange="500" />
+			<LifetimeUpdate
+				id="ModuleTag_Lifetime"
+				MinLifetime="20s"
+				MaxLifetime="20s" />
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onCreate"
+					FX="FX_GDIOrcaPing" />
+			</FXListBehavior>
+			<AttachUpdate
+				id="ModuleTag_Attach"
+				Range="10.0"
+				Teleport="true"
+				UseGeometry="true"
+				DetachWhenParentHealed="false">
+				<ObjectFilter
+					Rule="ANY"
+					Include="AIRCRAFT"
+					Relationship="SAME_PLAYER">
+					<IncludeThing>GDIOrca</IncludeThing>
+					<IncludeThing>SteelTalonsOrca</IncludeThing>
+					<IncludeThing>ZOCOMOrca</IncludeThing>					
+				</ObjectFilter>
+			</AttachUpdate>						
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100.0"
+				InitialHealth="100.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="7.0"
+				Height="13.0"></Shape>
+		</Geometry>
+		<AudioArraySound>
+			<AudioEntry Sound="AudioEvent:GDI_Orca_PulseScan" AudioType="soundAmbient" />
+		</AudioArraySound>
+		<VisionInfo
+			VisionRange="300"
+			ShroudClearingRange="500"
+			VisionSide="100%"
+			VisionRear="100%"
+			VisionBonusTestRadius="100"
+			VisionBonusTestSegments="8"
+			VisionBonusPercentPerFoot="0%"
+			MaxVisionBonusPercent="50%"
+			MinVisionBonusPercent="-50%" />		
+	</GameObject>
+	
+
+</AssetDeclaration>

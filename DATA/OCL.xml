@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+  <Tags></Tags>  
+ 
+	<ObjectCreationList
+		id="OCL_GDIOrcaPulseScanPing">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="LIKE_EXISTING">
+			<CreateObject>GDIOrcaPulseScanPing</CreateObject>
+		</CreateObject>
+	</ObjectCreationList> 
+ 
+<!-- ########################### ST ZONE DRAFT ################ -->
+
+	<ObjectCreationList
+		id="OCL_ArmorySteelTalonsBuildingDestruction">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS REQUIRES_LIVE_PLAYER"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND"
+			MinHealth="0.3"
+			MaxHealth="0.75"
+			MinHordeDensity="30"
+			MaxHordeDensity="90">
+			<CreateObject>SteelTalonsZoneTrooperSquad</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	<ObjectCreationList
+		id="OCL_ArmorySteelTalonsBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>SteelTalonsZoneTrooperSquad</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	<ObjectCreationList
+		id="OCL_AdvancedSteelTalonsBuildingDestruction">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS REQUIRES_LIVE_PLAYER"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND"
+			MinHealth="0.3"
+			MaxHealth="0.75"
+			MinHordeDensity="30"
+			MaxHordeDensity="90">
+			<CreateObject>SteelTalonsZoneTrooperSquad</CreateObject>
+		</CreateObject>	
+	</ObjectCreationList>
+	<ObjectCreationList
+		id="OCL_AdvancedSteelTalonsBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>SteelTalonsZoneTrooperSquad</CreateObject>
+		</CreateObject>		
+	</ObjectCreationList>	
+	
+	
+	<!-- ############################### BH DRAFT ##################### -->
+
+ 
+	<!-- 4 guys (+ 1 disciple) for drafting -->
+	<ObjectCreationList
+		id="OCL_GenericBlackHandBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND"
+			MinHealth="1.0"
+			MaxHealth="1.0"
+			MinHordeDensity="80.0%"
+			MaxHordeDensity="80.0%">
+			<CreateObject>BlackHandConfessorSquad</CreateObject>
+		</CreateObject>
+	</ObjectCreationList> 
+	
+	<!-- 2 or 3 guys (+ 1 disciple) when destroyed -->
+	<ObjectCreationList
+	id="OCL_GenericBlackHandBuildingDestruction">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS REQUIRES_LIVE_PLAYER"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND"
+			MinHealth="0.3"
+			MaxHealth="0.75"
+			MinHordeDensity="29.5%"
+			MaxHordeDensity="42.9%">
+			<CreateObject>BlackHandConfessorSquad</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+      
+<!-- ###################### MCV SELL ############################# -->
+
+	<ObjectCreationList
+		id="OCL_ConyardGDIBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>GDIRifleSoldierSquad</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>GDIEngineer</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>  
+  
+	<ObjectCreationList
+		id="OCL_ConyardZOCOMBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>ZOCOMRifleSoldierSquad</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>ZOCOMEngineer</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	
+	<ObjectCreationList
+		id="OCL_ConyardSteelTalonsBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>SteelTalonsRifleSoldierSquad</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>SteelTalonsCombatEngineer</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+
+	
+	<ObjectCreationList
+		id="OCL_ConyardNODBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>NODMilitantSquad</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>NODSaboteur</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	
+	<ObjectCreationList
+		id="OCL_ConyardBlackHandBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>BlackHandConfessorSquad</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>BlackHandSaboteur</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+  
+	<ObjectCreationList
+		id="OCL_ConyardMarkedOfKaneBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND"
+			MinHealth="1.0"
+			MaxHealth="1.0"
+			MinHordeDensity="34"
+			MaxHordeDensity="35">
+			<CreateObject>MOKCyborgInfantrySquad</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>MarkedOfKaneSaboteur</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+
+	<ObjectCreationList
+		id="OCL_ConyardAlienBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED">
+			<CreateObject>AlienBuzzers</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED">
+			<CreateObject>AlienAssimilator</CreateObject>
+		</CreateObject>		
+	</ObjectCreationList>
+
+	<ObjectCreationList
+		id="OCL_ConyardTraveler59BuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>AlienBuzzers</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>Traveler59Assimilator</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+
+	<ObjectCreationList
+		id="OCL_ConyardReaper17BuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>AlienBuzzers</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>AlienAssimilator</CreateObject>
+		</CreateObject>	
+	</ObjectCreationList>	
+	
+	<!-- SHADOW SPAWN DELAY -->
+	<ObjectCreationList
+		id="OCL_SpecialPowerRedShadowStrikeTeam">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS DONT_SET_PRODUCER ISSUE_MOVE_AFTER_CREATION IGNORE_COMMANDPOINT_LIMIT FADE_IN"
+			Disposition="LIKE_EXISTING"
+			StartingBusyTime="0.25s"
+			InvulnerableTime="0.25s"
+			FadeTime="60s" 			
+			DisabledWhileBusy="true"				
+			UseUpgradedLocomotor="true">
+			<Offset
+				x="0"
+				y="0"
+				z="130"></Offset>
+			<CreateObject>NODShadowSquad_Veteran</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS DONT_SET_PRODUCER ISSUE_MOVE_AFTER_CREATION IGNORE_COMMANDPOINT_LIMIT FADE_IN"
+			Disposition="LIKE_EXISTING"
+			StartingBusyTime="0.25s"
+			InvulnerableTime="0.25s"
+			FadeTime="60s" 			
+			DisabledWhileBusy="true"				
+			UseUpgradedLocomotor="true">
+			<Offset
+				x="-20"
+				y="50"
+				z="130"></Offset>
+			<CreateObject>NODShadowSquad_Veteran</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+		
+	<ObjectCreationList
+		id="OCL_SpecialPowerRedShadowStrikeTeamMOK">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS DONT_SET_PRODUCER ISSUE_MOVE_AFTER_CREATION IGNORE_COMMANDPOINT_LIMIT FADE_IN"
+			Disposition="LIKE_EXISTING"
+			StartingBusyTime="0.25s"
+			InvulnerableTime="0.25s"
+			FadeTime="60s" 			
+			DisabledWhileBusy="true"			
+			UseUpgradedLocomotor="true">
+			<Offset
+				x="0"
+				y="0"
+				z="130"></Offset>
+			<CreateObject>MarkedOfKaneShadowSquad_Veteran</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS DONT_SET_PRODUCER ISSUE_MOVE_AFTER_CREATION IGNORE_COMMANDPOINT_LIMIT FADE_IN"
+			Disposition="LIKE_EXISTING"
+			StartingBusyTime="0.25s"
+			InvulnerableTime="0.25s"
+			FadeTime="60s" 			
+			DisabledWhileBusy="true"			
+			UseUpgradedLocomotor="true">
+			<Offset
+				x="-20"
+				y="50"
+				z="130"></Offset>
+			<CreateObject>MarkedOfKaneShadowSquad_Veteran</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	<!-- ########################## ST SNIPERS ############################### -->
+	<ObjectCreationList
+		id="OCL_CallSupportSTHunterKillerTeam">
+		<!--
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS DONT_SET_PRODUCER ISSUE_MOVE_AFTER_CREATION MOVE_USES_EVACUATE_AND_EXIT MOVE_TARGET_USES_OFFSET"
+			Disposition="LIKE_EXISTING">
+			<Offset
+				x="0"
+				y="50"
+				z="100"></Offset>
+			<CreateObject>SteelTalonsV35Ox_CallSupportHunterKillerTeam</CreateObject>
+		</CreateObject> -->
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS DONT_SET_PRODUCER ISSUE_MOVE_AFTER_CREATION MOVE_USES_EVACUATE_AND_EXIT MOVE_TARGET_USES_OFFSET"
+			Disposition="LIKE_EXISTING">
+			<Offset
+				x="43"
+				y="-25"
+				z="100"></Offset>
+			<CreateObject>SteelTalonsV35Ox_CallSupportHunterKillerTeam</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS DONT_SET_PRODUCER ISSUE_MOVE_AFTER_CREATION MOVE_USES_EVACUATE_AND_EXIT MOVE_TARGET_USES_OFFSET"
+			Disposition="LIKE_EXISTING">
+			<Offset
+				x="-43"
+				y="-25"
+				z="100"></Offset>
+			<CreateObject>SteelTalonsV35Ox_CallSupportHunterKillerTeam</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	<!-- ########################## OVERLORDS ################################ -->
+	
+	<ObjectCreationList
+		id="OCL_AlienGiantTiberiumRockFiringMechanism">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS ISSUE_MOVE_AFTER_CREATION MOVE_USES_STRAFE_UPDATE MOVE_TARGET_USES_DISPOSITION_OFFSET DONT_SET_PRODUCER"
+			DestinationPlayer=""
+			Disposition="SPAWN_AROUND"
+			DispositionIntensity="100"
+			DispositionAngle="180d"
+			Count="1">
+			<!-- same as the preferred height of the locomotor -->
+			<Offset
+				x="0"
+				y="0"
+				z="700" />
+			<CreateObject>AlienMiniTiberiumRockFiringMechanism_01</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS ISSUE_MOVE_AFTER_CREATION MOVE_USES_STRAFE_UPDATE MOVE_TARGET_USES_DISPOSITION_OFFSET DONT_SET_PRODUCER"
+			DestinationPlayer=""
+			Disposition="SPAWN_AROUND"
+			DispositionIntensity="100"
+			DispositionAngle="180d"
+			Count="1">
+			<!-- same as the preferred height of the locomotor -->
+			<Offset
+				x="0"
+				y="0"
+				z="700" />
+			<CreateObject>AlienMiniTiberiumRockFiringMechanism_02</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS ISSUE_MOVE_AFTER_CREATION MOVE_USES_STRAFE_UPDATE MOVE_TARGET_USES_DISPOSITION_OFFSET DONT_SET_PRODUCER"
+			DestinationPlayer=""
+			Disposition="SPAWN_AROUND"
+			DispositionIntensity="100"
+			DispositionAngle="180d"
+			StartingBusyTime="3s"
+			DisabledWhileBusy="true"			
+			Count="1">
+			<!-- same as the preferred height of the locomotor -->
+			<Offset
+				x="0"
+				y="0"
+				z="700" />
+			<CreateObject>AlienGiantTiberiumRockFiringMechanism</CreateObject>
+		</CreateObject>		
+	</ObjectCreationList>
+	
+	<!-- ****************** -->
+	
+	<!-- SWARM -->
+	<ObjectCreationList
+		id="OCL_AlienBuzzers">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS IGNORE_COMMANDPOINT_LIMIT"
+			Count="5" 
+			Disposition="SPAWN_AROUND"
+			DispositionAngle="51d"
+			DispositionIntensity="80"
+			StartingBusyTime="1.5s"		
+			DisabledWhileBusy="true"							
+			>
+			<CreateObject>AlienBuzzers</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	<ObjectCreationList
+		id="OCL_AlienShockPods">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS IGNORE_COMMANDPOINT_LIMIT"
+			Count="3" 
+			Disposition="SPAWN_AROUND"
+			DispositionAngle="120d"
+			DispositionIntensity="80"
+			StartingBusyTime="1.5s"		
+			DisabledWhileBusy="true"				
+			>
+			<CreateObject>AlienShockTrooperSquad_Veteran</CreateObject>
+		</CreateObject>	
+	</ObjectCreationList>	
+	
+	
+	<ObjectCreationList
+		id="OCL_AlienMCVUnpackingToConyard">
+		<CreateObject
+			Disposition="RELATIVE_ANGLE"
+			Options="USE_CREATORS_HEALTH_PERCENTAGE INHERIT_SCRIPTING_NAME INHERIT_PRICE_PURCHASED TRANSFER_TEMPORARY_SLAVE COPY_PRODUCTION_QUEUE_INDEX INHERIT_MISSION_OBJECTIVE" 
+			JustBuiltFrames="0.1s">
+			<CreateObject>AlienDronePlatform</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	<ObjectCreationList
+		id="OCL_Traveler59MCVUnpackingToConyard">
+		<CreateObject
+			Disposition="RELATIVE_ANGLE"
+			Options="USE_CREATORS_HEALTH_PERCENTAGE INHERIT_SCRIPTING_NAME INHERIT_PRICE_PURCHASED TRANSFER_TEMPORARY_SLAVE COPY_PRODUCTION_QUEUE_INDEX INHERIT_MISSION_OBJECTIVE" 
+			JustBuiltFrames="0.1s">
+			<CreateObject>Traveler59DronePlatform</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	<ObjectCreationList
+		id="OCL_Reaper17MCVUnpackingToConyard">
+		<CreateObject
+			Disposition="RELATIVE_ANGLE"
+			Options="USE_CREATORS_HEALTH_PERCENTAGE INHERIT_SCRIPTING_NAME INHERIT_PRICE_PURCHASED TRANSFER_TEMPORARY_SLAVE COPY_PRODUCTION_QUEUE_INDEX INHERIT_MISSION_OBJECTIVE" 
+			JustBuiltFrames="0.1s">
+			<CreateObject>Reaper17DronePlatform</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	
+	<ObjectCreationList
+		id="OCL_RedemptionSpawn">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED"
+			TempModelCondition="USER_12"
+			TempModelConditionTime="4.9s"		
+			MinHordeDensity="60"
+			MaxHordeDensity="90"			
+			CreateFX="FX_NOD_RedemptionSummon">
+			<CreateObject>NODCyborgInfantrySquad</CreateObject>
+		</CreateObject>	
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED">
+			<CreateObject>NODRedemptionAnimator</CreateObject>
+		</CreateObject>			
+	</ObjectCreationList>	
+	
+	<!-- ########################## AOE MC ################################## -->
+	<ObjectCreationList
+		id="OCL_AOEMCDummy">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED">
+			<CreateObject>AOEMCDummy</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	<!-- ########################## RAGE GEN ################################## -->
+	<ObjectCreationList
+		id="OCL_RageGenDummy">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED">
+			<CreateObject>RageGenDummy</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+
+</AssetDeclaration>

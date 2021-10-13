@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="us-ascii" ?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Tags />
+	<Includes>
+	</Includes>
+	
+	<!-- Scrin aura buff -->
+	<FXList id="FX_ScrinBuff">
+		<NuggetList>
+			<ParticleSystem
+				Particle="FXScrinBuffGlow"
+				OrientToObject = "true">
+				<Offset x="0.0" y="0.0" z="1.0" />
+			</ParticleSystem>
+		</NuggetList>
+	</FXList>		
+	
+	<FXList id="FX_ManipulateStart">
+		<NuggetList>
+			<Sound Value="AudioEvent:ALI_MasterMind_ManipulateStart" />						
+		</NuggetList>
+	</FXList>	
+	
+	<FXList id="FX_CultistManipulateStart">
+		<NuggetList>
+			<Sound Value="AudioEvent:ALI_Cultist_Manipulate" />						
+		</NuggetList>
+	</FXList>			
+	
+	
+	<!-- The metallic sound of heavy infantry armor being crushed... -->
+	<AudioEvent id="Explosion_HeavyInfCrush" inheritFrom="AudioEvent:BaseSoundEffect"
+		Volume = "50"
+		VolumeShift = "-10"
+		PlayPercent = "100"
+		Limit = "3"
+		Priority = "LOW"
+		Type = "WORLD SHROUDED EVERYONE"
+		Control = "INTERRUPT"
+		SubmixSlider = "SOUNDFX" >
+		<PitchShift Low = "-10" High= "10" />
+		<Sound>WUVehic_explMetaa</Sound> <Sound>WUVehic_explMetab</Sound> <Sound>WUVehic_explMetac</Sound> <Sound>WUVehic_explMetad</Sound> 
+		<Sound>WUVehic_explMetae</Sound>
+	</AudioEvent>	
+
+	<!-- Enlightened crush MS to include VoiceDie too because it doesn't play by default... -->
+	<Multisound id="CyborgCrushMS" >
+		<Subsound>Explosion_HeavyInfCrush</Subsound>
+		<Subsound>NOD_Enlightened_VoiceDie</Subsound>
+	</Multisound>	
+	
+	<FXList id="FX_CyborgCrush">
+		<NuggetList>
+			<ParticleSystem
+				Particle="TeraSparkBlastA"
+				OrientToObject="true">
+				<Offset x="0.0" y="0.0" z="-0.0"/>
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="AvatarExplodeBlueSpark"
+				OrientToObject="true">
+				<Offset x="0.0" y="0.0" z="0.0"/>
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TeraDistortBlastA"
+				OrientToObject="true">
+				<Offset x="0.0" y="0.0" z="0.0"/>
+			</ParticleSystem>
+			<Sound Value="Multisound:CyborgCrushMS" />						
+		</NuggetList>
+	</FXList>
+	
+	<FXList id="FX_ZoneInfCrush">
+		<NuggetList>
+			<ParticleSystem
+				Particle="TeraSparkBlastA"
+				OrientToObject="true">
+				<Offset x="0.0" y="0.0" z="-0.0"/>
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="AvatarExplodeBlueSpark"
+				OrientToObject="true">
+				<Offset x="0.0" y="0.0" z="0.0"/>
+			</ParticleSystem>
+			<ParticleSystem
+				Particle="TeraDistortBlastA"
+				OrientToObject="true">
+				<Offset x="0.0" y="0.0" z="0.0"/>
+			</ParticleSystem>
+			<Sound Value="AudioEvent:Explosion_HeavyInfCrush" />			
+		</NuggetList>
+	</FXList>
+<!-- 	<Sound Value="Multisound:VehicleExplosionSmallMS" /> -->	
+
+
+	<FXList id="FX_SChargedParticleBeamFire">
+		<NuggetList>
+			<ParticleSystem
+				Particle="SCParticleBeamCoreWhite"
+				UseTarget="true"
+				OrientToObject="true"
+				Ricochet="true" />
+			<ParticleSystem
+				Particle="SCParticleBeamThreadsWhite"
+				UseTarget="true"
+				OrientToObject="true"
+				Ricochet="true" />
+			<ParticleSystem
+				Particle="SCParticleBeamThreadsWhite"
+				UseTarget="true"
+				OrientToObject="true"
+				Ricochet="true" />
+			<ParticleSystem
+				Particle="ChParticleBeamThreadsWhite"
+				UseTarget="true"
+				OrientToObject="true"
+				Ricochet="true" />
+			<ParticleSystem
+				Particle="SCParticleBeamFireFlashWhite"/>
+			<ParticleSystem
+				Particle="SCParticleBeamFireSmokeWhite"/>
+			<ParticleSystem
+				Particle="ChParticleBeamFireDistort"/>
+
+			<!-- <Sound Value="ZoneTrooperGunFire" /> -->
+		</NuggetList>
+	</FXList>
+
+	
+	
+</AssetDeclaration>	

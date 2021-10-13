@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<W3DHierarchy
+		id="ABTIBERTOWBLD_SKL1">
+		<Pivot
+			Name="ROOTTRANSFORM"
+			Parent="-1">
+			<Translation
+				X="0"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="BOX02">
+			<Translation
+				X="0"
+				Y="0"
+				Z="5.5055" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.329"
+				M11="1.329"
+				M22="1.329" />
+		</Pivot>
+		<Pivot
+			Name="FX">
+			<Translation
+				X="0"
+				Y="0"
+				Z="5.5055" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.329"
+				M11="1.329"
+				M22="1.329" />
+		</Pivot>
+		<Pivot
+			Name="BOX02_L">
+			<Translation
+				X="0"
+				Y="0"
+				Z="5.5055" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.329"
+				M11="1.329"
+				M22="1.329" />
+		</Pivot>
+		<Pivot
+			Name="DOCKSTART">
+			<Translation
+				X="109.7769"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="DOCKACTION">
+			<Translation
+				X="56.86"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="DOCKEND">
+			<Translation
+				X="109.7769"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+	</W3DHierarchy>
+</AssetDeclaration>

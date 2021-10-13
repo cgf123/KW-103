@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<W3DHierarchy
+		id="NBREFINERY_ASK1">
+		<Pivot
+			Name="ROOTTRANSFORM"
+			Parent="-1">
+			<Translation
+				X="0"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_GOOPLEVEL">
+			<Translation
+				X="16.3713"
+				Y="-0.0156"
+				Z="14.3257" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="FXGLOWS01"
+			Parent="1">
+			<Translation
+				X="-16.3713"
+				Y="0.0156"
+				Z="-21.9065" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE07">
+			<Translation
+				X="24.9235"
+				Y="4.8659"
+				Z="31.8163" />
+			<Rotation
+				X="0"
+				Y="-0.1305"
+				Z="0"
+				W="0.9914" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE10">
+			<Translation
+				X="34.1569"
+				Y="-5.1303"
+				Z="31.9754" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE03">
+			<Translation
+				X="24.9235"
+				Y="-5.1303"
+				Z="31.8163" />
+			<Rotation
+				X="0"
+				Y="-0.1305"
+				Z="0"
+				W="0.9914" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE04">
+			<Translation
+				X="19.5108"
+				Y="-5.1303"
+				Z="28.054" />
+			<Rotation
+				X="0"
+				Y="-0.4617"
+				Z="0"
+				W="0.887" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE02">
+			<Translation
+				X="43.6917"
+				Y="4.8659"
+				Z="31.7902" />
+			<Rotation
+				X="0"
+				Y="0.0872"
+				Z="0"
+				W="0.9962" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE06">
+			<Translation
+				X="34.1569"
+				Y="4.8659"
+				Z="31.9754" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE09">
+			<Translation
+				X="18.0695"
+				Y="4.8659"
+				Z="23.2698" />
+			<Rotation
+				X="0"
+				Y="-0.7071"
+				Z="0"
+				W="0.7071" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE08">
+			<Translation
+				X="19.5108"
+				Y="4.8659"
+				Z="28.054" />
+			<Rotation
+				X="0"
+				Y="-0.4617"
+				Z="0"
+				W="0.887" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE01">
+			<Translation
+				X="43.6917"
+				Y="-5.1303"
+				Z="31.7902" />
+			<Rotation
+				X="0"
+				Y="0.0872"
+				Z="0"
+				W="0.9962" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE05">
+			<Translation
+				X="18.0695"
+				Y="-5.1303"
+				Z="23.2698" />
+			<Rotation
+				X="0"
+				Y="-0.7071"
+				Z="0"
+				W="0.7071" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="BIB">
+			<Translation
+				X="16.1048"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="BONE_FR_08">
+			<Translation
+				X="0"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_LIQUIT">
+			<Translation
+				X="16.0953"
+				Y="-0.0004"
+				Z="13.5987" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT01">
+			<Translation
+				X="16.0187"
+				Y="-28.2019"
+				Z="-1.4175" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT02">
+			<Translation
+				X="-16.8214"
+				Y="0.0088"
+				Z="9.4554" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT03">
+			<Translation
+				X="79.2253"
+				Y="-0.0306"
+				Z="27.1275" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT04">
+			<Translation
+				X="51.1844"
+				Y="0"
+				Z="24.8179" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT07">
+			<Translation
+				X="-34.0298"
+				Y="11.1707"
+				Z="6.3367" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT08">
+			<Translation
+				X="-34.0298"
+				Y="-11.1707"
+				Z="6.3367" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT09">
+			<Translation
+				X="-35.6173"
+				Y="0"
+				Z="9.2101" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT10">
+			<Translation
+				X="-17.7098"
+				Y="-56.595"
+				Z="-0.2749" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT11">
+			<Translation
+				X="2.8819"
+				Y="-34.0843"
+				Z="-0.0956" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT12">
+			<Translation
+				X="-40.1567"
+				Y="-34.0687"
+				Z="-0.1496" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT13">
+			<Translation
+				X="-17.7062"
+				Y="-13.9947"
+				Z="-1.2379" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT14">
+			<Translation
+				X="18.8802"
+				Y="39.9334"
+				Z="18.6033" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT15">
+			<Translation
+				X="45.2854"
+				Y="-40.1107"
+				Z="13.1631" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT16">
+			<Translation
+				X="17.6727"
+				Y="43.8146"
+				Z="65.7323" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT17">
+			<Translation
+				X="52.5259"
+				Y="-21.4246"
+				Z="9.4554" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT18">
+			<Translation
+				X="59.7477"
+				Y="-40.1107"
+				Z="13.7561" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT19">
+			<Translation
+				X="-40.1567"
+				Y="34.0199"
+				Z="-0.1496" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT20">
+			<Translation
+				X="-17.7098"
+				Y="11.4936"
+				Z="-0.2749" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT21">
+			<Translation
+				X="2.8819"
+				Y="34.0043"
+				Z="-0.0956" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_OBJECT22">
+			<Translation
+				X="-17.7062"
+				Y="54.0939"
+				Z="-1.2379" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_RF_02">
+			<Translation
+				X="35.7427"
+				Y="0"
+				Z="0.1867" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_RF_03">
+			<Translation
+				X="16.1048"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_RF_04">
+			<Translation
+				X="18.8895"
+				Y="-41.8269"
+				Z="0.7602" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_RF_05">
+			<Translation
+				X="-17.7081"
+				Y="-34.0015"
+				Z="-0.3401" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_RF_06">
+			<Translation
+				X="18.8802"
+				Y="39.9334"
+				Z="-0.8219" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_RF_07">
+			<Translation
+				X="32.9382"
+				Y="45.0857"
+				Z="-0.6281" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="BONE_RF_08">
+			<Translation
+				X="0"
+				Y="68.0233"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1.25"
+				M11="1.25"
+				M22="1.25" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE12">
+			<Translation
+				X="-27.1982"
+				Y="-17.2333"
+				Z="29.0887" />
+			<Rotation
+				X="-0.0653"
+				Y="-0.113"
+				Z="-0.4957"
+				W="0.8586" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE21">
+			<Translation
+				X="-23.2002"
+				Y="24.3769"
+				Z="30.6804" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0.5"
+				W="0.866" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE20">
+			<Translation
+				X="-19.4634"
+				Y="30.7883"
+				Z="27.8147" />
+			<Rotation
+				X="-0.0436"
+				Y="0.0755"
+				Z="0.4981"
+				W="0.8627" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE15">
+			<Translation
+				X="-19.5947"
+				Y="-30.8332"
+				Z="27.8147" />
+			<Rotation
+				X="0.0436"
+				Y="0.0755"
+				Z="-0.4981"
+				W="0.8627" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE18">
+			<Translation
+				X="-28.9681"
+				Y="13.4913"
+				Z="26.2678" />
+			<Rotation
+				X="0.2309"
+				Y="-0.3999"
+				Z="0.4435"
+				W="0.7682" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE17">
+			<Translation
+				X="-27.1842"
+				Y="17.3915"
+				Z="29.0887" />
+			<Rotation
+				X="0.0653"
+				Y="-0.113"
+				Z="0.4957"
+				W="0.8586" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE11">
+			<Translation
+				X="-23.2714"
+				Y="-24.3177"
+				Z="30.6804" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="-0.5"
+				W="0.866" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE13">
+			<Translation
+				X="-29.6171"
+				Y="-14.4328"
+				Z="26.2678" />
+			<Rotation
+				X="-0.2309"
+				Y="-0.3999"
+				Z="-0.4435"
+				W="0.7682" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE14">
+			<Translation
+				X="-31.0845"
+				Y="-11.3362"
+				Z="20.8764" />
+			<Rotation
+				X="-0.3536"
+				Y="-0.6124"
+				Z="-0.3536"
+				W="0.6124" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE19">
+			<Translation
+				X="-30.9428"
+				Y="11.2732"
+				Z="20.8764" />
+			<Rotation
+				X="0.3536"
+				Y="-0.6124"
+				Z="0.3536"
+				W="0.6124" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE16">
+			<Translation
+				X="-18.1715"
+				Y="-33.7392"
+				Z="22.5288" />
+			<Rotation
+				X="-0.3536"
+				Y="-0.6124"
+				Z="-0.3536"
+				W="0.6124" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="B_TUBE22">
+			<Translation
+				X="-17.8972"
+				Y="33.4466"
+				Z="22.5288" />
+			<Rotation
+				X="0.3536"
+				Y="-0.6124"
+				Z="0.3536"
+				W="0.6124" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="BONE_LOWLOD">
+			<Translation
+				X="0"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="REFINERY_L"
+			Parent="55">
+			<Translation
+				X="0"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="BIB_L"
+			Parent="55">
+			<Translation
+				X="0"
+				Y="0"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="DOCKSTART">
+			<Translation
+				X="131.1888"
+				Y="-0.1003"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="DOCKACTION">
+			<Translation
+				X="87.2405"
+				Y="-0.1003"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+		<Pivot
+			Name="DOCKEND">
+			<Translation
+				X="131.1948"
+				Y="-0.1003"
+				Z="0" />
+			<Rotation
+				X="0"
+				Y="0"
+				Z="0"
+				W="1" />
+			<FixupMatrix
+				M00="1"
+				M11="1"
+				M22="1" />
+		</Pivot>
+	</W3DHierarchy>
+</AssetDeclaration>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+
+	<GameObject
+		id="BeamReflectorDummy"
+		SelectPortrait="Portrait_NeutralSensorPod"
+		ButtonImage="Portrait_NeutralSensorPod"
+		Side="GDI"
+		EditorSorting="UNIT"
+		TransportSlotCount="0"
+		CommandSet="EmptyCommandSet"
+		IsTrainable="false"
+		KindOf="PRELOAD NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY IGNORED_IN_GUI"
+		RadarPriority="UNIT"
+		EditorName="GDIOrcaSensorStickyPod_Neutral">
+		<DisplayName>Name:BeamReflectorDummy</DisplayName>
+		<ArmorSet
+			Armor="GDIOrcaSensorPodArmor"
+			DamageFX="NormalDamageFX" />
+		<LocomotorSet
+			Locomotor="HumanLocomotor"
+			Condition="NORMAL"
+			Speed="0.0" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="W3DContainer:GUSensor" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+			<SpotlightDraw
+				id="ModuleTag_Spotlight"
+				AttachToBoneInAnotherModule="GDISENSOR"
+				RefreshTime="2.0s"
+				SweepTime="1.0s">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="W3DMesh:FXspotlight" />
+				</ModelConditionState>
+			</SpotlightDraw>
+		</Draws>
+		<Behaviors>
+		
+			<AttributeModifierAuraUpdate
+					id="ModuleTag_AttributeModifierAuraUpdate"
+					AttributeModifierName="AttributeModifier_BeamDummy"
+			   		RefreshDelay="0.1s"
+			 		Range="550"
+					InitiallyActive="true">
+					<ObjectFilter
+       					Rule="ANY"
+       					Relationship="ALLIES"
+						Include="">
+							<IncludeThing>NodVenom</IncludeThing>
+							<IncludeThing>NodBeamCannon</IncludeThing>
+					</ObjectFilter>
+			</AttributeModifierAuraUpdate>
+		
+			<Physics
+				id="ModuleTag_Physics" />
+			<LifetimeUpdate
+				id="ModuleTag_LifeTime"
+				MinLifetime="4s"
+				MaxLifetime="4s" />
+			<AttachUpdate
+				id="ModuleTag_Attach"
+				Range="10.0"
+				Teleport="true"
+				UseGeometry="true"
+				DetachWhenParentHealed="true">
+				<ObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienCrystalShield</ExcludeThing>
+				</ObjectFilter>
+			</AttachUpdate>
+			<DestroyDie
+				id="ModuleTag_DestroyDie">
+				<DieMuxData
+					DeathTypes="ALL" 
+				/>
+			</DestroyDie>
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="ModuleTag_AI"
+				AutoAcquireEnemiesWhenIdle="YES" />
+		</AI>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="20" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="7.0"
+				Height="13.0"></Shape>
+		</Geometry>
+		<VisionInfo
+			VisionRange="0"
+			ShroudClearingRange="0" />
+		<CrusherInfo
+			CrushableLevel="0" />
+	</GameObject>
+
+</AssetDeclaration>

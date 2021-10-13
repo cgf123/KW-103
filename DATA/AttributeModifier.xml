@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="us-ascii" ?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Tags />
+	<Includes>
+	</Includes>
+
+	<AttributeModifier
+		id="Unit_Veteran"
+		Category="LEVEL" >
+		<Modifier Type="DAMAGE_MULT" Value="115%"/>
+		<Modifier Type="HEALTH_MULT" Value="110%"/>
+	</AttributeModifier>
+	
+	<AttributeModifier
+		id="Unit_Elite"
+		Category="LEVEL" >
+		<Modifier Type="DAMAGE_MULT" Value="125%"/>
+		<Modifier Type="HEALTH_MULT" Value="150%"/>
+	</AttributeModifier>
+	
+	<AttributeModifier
+		id="Unit_Heroic"
+		Category="LEVEL" >
+		<Modifier Type="DAMAGE_MULT" Value="125%"/>
+		<Modifier Type="HEALTH_MULT" Value="150%"/>
+		<Modifier Type="SUPPRESSABILITY" Value="200%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="200%"/>
+	</AttributeModifier>
+    <!--	-->
+	
+	<AttributeModifier
+		id="Modifier_Cover"
+		Category="NONE"
+		ModelConditionsSet="COVER"
+		>
+		<Modifier Type="ARMOR" Value="75%"/>
+		<Modifier Type="SUPPRESSABILITY" Value="9999"/>
+		<Modifier Type="CRUSHABLE_LEVEL" Value="100%"/>		
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="Modifier_NODDozerBlades"
+		Category="NONE">
+		<Modifier Type="ARMOR" Value="85%"/>
+		<!-- 100% means add 1, 200% means add 2 (this is done in code). -->
+		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>
+	</AttributeModifier>
+
+	<AttributeModifier
+		id="Modifier_NODDozerBlades1"
+		Category="NONE">
+		<Modifier Type="ARMOR" Value="85%"/>
+		<!-- 100% means add 1, 200% means add 2 (this is done in code). -->
+		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>
+	</AttributeModifier>
+	
+	<AttributeModifier
+		id="Confessor_Militant_AttributeModifier"
+		Category="BUFF"
+		Duration="1.75s"
+		StartFX="FX_NOD_BlkHndLeadershipBuff"
+		StackingLimit="1"
+		ReplaceInCategoryIfLongest="True"
+		IgnoreIfAnticategoryActive="False">
+		<Modifier
+			Type="RATE_OF_FIRE"
+			Value="150%" />
+		<Modifier
+			Type="SUPPRESSABILITY"
+			Value="100%" />
+		<Modifier
+			Type="ARMOR"
+			Value="100%" />
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="Confessor_Militant_AttributeModifier1"
+		Category="BUFF"
+		Duration="1.5s"
+		StartFX="FX_NOD_BlkHndLeadershipBuff"
+		StackingLimit="1"
+		ReplaceInCategoryIfLongest="True"
+		IgnoreIfAnticategoryActive="False">
+		<Modifier
+			Type="RATE_OF_FIRE"
+			Value="115%" />
+		<Modifier
+			Type="SUPPRESSABILITY"
+			Value="100%" />
+		<Modifier
+			Type="ARMOR"
+			Value="100%" />
+	</AttributeModifier>	
+
+	<AttributeModifier
+		id="AttributeModifier_Leadership"
+		Category="BUFF"
+		StackingLimit="1"
+		StartFX="FX_ScrinBuff"		
+		ReplaceInCategoryIfLongest="True"
+		IgnoreIfAnticategoryActive="False"
+		Duration="1.25s">
+		<Modifier Type="RATE_OF_FIRE" Value="110%"/>
+		<Modifier Type="SUPPRESSABILITY" Value="100"/>
+	</AttributeModifier>
+		
+	<!-- AOEMC -->
+	<AttributeModifier
+		id="AttributeModifier_AOEMCMarker"
+		Category="NONE"
+		Duration="19.0s"
+		ObjectStatusToSet="STEAL_NEXT_UNIT_TRAPPED" >
+	</AttributeModifier>
+
+	<AttributeModifier
+		id="AttributeModifier_AOEMCMarker1"
+		Category="NONE"
+		Duration="19.0s"
+		ObjectStatusToSet="STEAL_NEXT_UNIT_TRAPPED" >
+	</AttributeModifier>		
+	
+	<!-- Rage Gen -->
+	<AttributeModifier
+		id="AttributeModifier_Hallucinate"
+		Category="NONE"
+		Duration="4.5s"
+		ModelConditionsSet="EMOTION_DISSIDENT" >
+	</AttributeModifier>		
+
+	<!-- Confessor Grenades -->
+	<AttributeModifier
+		id="AttributeModifier_Hallucinate1"
+		Category="NONE"
+		Duration="2.5s"
+		ModelConditionsSet="EMOTION_DISSIDENT" >
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="AttributeModifier_Hallucinate2"
+		Category="NONE"
+		Duration="1.0s"
+		ModelConditionsSet="EMOTION_DISSIDENT" >
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="AttributeModifier_ZTCrush"
+		Category="NONE"
+		Duration="2.0s" >
+		<Modifier Type="SPEED" Value="50%"/>
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="ZoneTrooper_AutoInjectors"
+		Category="INNATE_HEALTH">
+		<Modifier Type="HEALTH_MULT" Value="120%"/>		
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="ZoneTrooper_ScannerPack"
+		Category="INNATE_VISION">
+		<Modifier
+			Type="RANGE"
+			Value="100%" />
+		<Modifier
+			Type="VISION"
+			Value="100%" />
+		<Modifier
+			Type="SHROUD_CLEARING"
+			Value="120%" />
+	</AttributeModifier>			
+	
+	<AttributeModifier
+		id="AttributeModifier_RailgunAccelerator"
+		Category="NONE"
+		Duration="15s"
+		StartFX="FX_Steel_RailgunAccelerator"	
+		ModelConditionsSet="USING_WEAPON_C">
+		<Modifier Type="RATE_OF_FIRE" Value="200%"/>
+	</AttributeModifier>
+	
+    <AttributeModifier
+		id="AttributeModifier_AvatarSpeedBuff"
+		Category="INNATE_VISION">
+		<Modifier Type="RANGE" Value="100%"/>
+		<Modifier Type="SHROUD_CLEARING" Value="120%"/>
+        <Modifier Type="SPEED" Value="120%"/>
+	</AttributeModifier>
+
+    <AttributeModifier
+		id="AttributeModifier_MARVSniperBuff"
+		Category="INNATE_VISION">
+		<Modifier Type="VISION" Value="115%"/>
+	</AttributeModifier>
+
+	<!-- ObjectStatus broadcasted from Beamcannons to nearby Venoms, and thereafter from Venoms to nearby Venoms -->
+	<AttributeModifier
+		id="AttributeModifier_BeamDummy"
+		Duration="0.5s"
+		ObjectStatusToSet="GRAB_AND_DROP"
+		Category="NONE">
+	</AttributeModifier>		
+	<!-- ObjectStatus set on potential enemy targets within Venom's reflector range -->
+	<AttributeModifier
+		id="AttributeModifier_BeamDummy1"
+		Duration="0.5s"
+		ObjectStatusToSet="CONTESTED"
+		Category="NONE">
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="AttributeModifier_ChargeDefenses"
+		Category="NONE"
+		StackingLimit="4">
+		<Modifier Type="SHROUD_CLEARING" Value="110%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="120%"/>
+		<Modifier Type="VISION" Value="110%"/>
+		<Modifier Type="RANGE" Value="110%"/>
+	</AttributeModifier>
+	
+	
+	<AttributeModifier
+		id="AttributeModifier_JumpJetInTransit"
+		Category="NONE">
+		<Modifier Type="CRUSHABLE_LEVEL" Value="200%"/>
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="AttributeModifier_HighSpeedTurn"
+		Category="NONE">
+		<Modifier Type="SPEED" Value="50%"/>
+	</AttributeModifier>	
+	
+  <AttributeModifier
+		id="AttributeModifier_Recyclotron"
+		Category="NONE"
+		Duration="1.5s"
+		ObjectStatusToSet="SUICIDE_BOMBER_HAS_TARGET">
+  </AttributeModifier>	
+	
+	<AttributeModifier
+		id="AttributeModifier_TravelerEngines"
+		Category="NONE">		
+		<Modifier Type="SPEED" Value="125%"/>
+	</AttributeModifier>
+	<AttributeModifier
+		id="AttributeModifier_TravelerEnginesLargeShips"
+		Category="NONE">		
+		<Modifier Type="SPEED" Value="130%"/>
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="AttributeModifier_Cloned"
+		Category="NONE"	>
+		<Modifier Type="HEALTH_MULT" Value="1%" />
+		<Modifier Type="DAMAGE_MULT" Value="1%" />
+		<Modifier Type="VISION" Value="100%"/>
+		<Modifier Type="SHROUD_CLEARING" Value="50%" />
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="AttributeModifier_AdaptiveArmor"
+		Category="NONE"
+		Duration="15.0s"
+		ObjectStatusToSet="SWITCHED_WEAPONS"		
+		ModelConditionsSet="USER_8"	>
+		<Modifier Type="SPEED" Value="80%"/>
+		<Modifier Type="ARMOR" Value="80%" />
+		<Modifier Type="RATE_OF_FIRE" Value="100%" />		
+		<Modifier Type="RESIST_EMP" Value="100%"/> <!--
+		<Modifier Type="CRUSHABLE_LEVEL" Value="100%"/>	-->	
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="AttributeModifier_AdaptiveArmor2"
+		Category="NONE"
+		Duration="15.0s"
+		ObjectStatusToSet="SWITCHED_WEAPONS"		
+		ModelConditionsSet="USER_8"	>
+		<Modifier Type="SPEED" Value="80%"/>
+		<Modifier Type="ARMOR" Value="90%" />
+		<Modifier Type="RATE_OF_FIRE" Value="100%" />
+		<Modifier Type="RESIST_EMP" Value="100%"/> <!--
+		<Modifier Type="CRUSHABLE_LEVEL" Value="100%"/>	-->		
+	</AttributeModifier>		
+	
+	<!-- ST Guardian Armor buff -->
+	<AttributeModifier
+		id="AttributeModifier_AdaptiveArmorBuff"
+		Category="NONE">		
+		<Modifier Type="ARMOR" Value="100%"/>
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="AttributeModifier_SigGen"
+		Category="NONE"
+		Duration="5.0s"
+		ModelConditionsSet="USER_8"	>
+		<Modifier Type="RATE_OF_FIRE" Value="75%"/>
+	</AttributeModifier>	
+		
+	<AttributeModifier
+		id="AttributeModifier_InfContained"
+		Duration="3s"		
+		Category="NONE">
+		<Modifier Type="RATE_OF_FIRE" Value="80%"/>
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="AttributeModifier_InfContainedRev"
+		Duration="3s"		
+		Category="NONE">
+		<Modifier Type="RATE_OF_FIRE" Value="125%"/>
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="AttributeModifier_CrushSlow"
+		Duration="0.5s"		
+		Category="NONE">
+		<Modifier Type="SPEED" Value="50%"/>
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="AttributeModifier_CrushSlow2"
+		Duration="0.5s"		
+		Category="NONE">
+		<Modifier Type="SPEED" Value="75%"/>
+	</AttributeModifier>	
+
+	<AttributeModifier
+		id="AttributeModifier_EMPSlow_Generic"
+		Duration="10.0s"		
+		Category="NONE">
+		<Modifier Type="SPEED" Value="50%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
+	</AttributeModifier>	
+	<AttributeModifier
+		id="AttributeModifier_EMPSlow_Grenadier"
+		Duration="7.5s"		
+		Category="NONE">
+		<Modifier Type="SPEED" Value="50%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
+	</AttributeModifier>		
+	<AttributeModifier
+		id="AttributeModifier_EMPSlow_Awakened"
+		Duration="5.0s"		
+		Category="NONE">
+		<Modifier Type="SPEED" Value="50%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
+	</AttributeModifier>
+	<AttributeModifier
+		id="AttributeModifier_EMPSlow_Enlightened"
+		Duration="5.0s"		
+		Category="NONE">
+		<Modifier Type="SPEED" Value="50%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="AttributeModifier_BunkerTruckDeployed"
+		Category="NONE"
+		ObjectStatusToSet="CAN_ATTACK IMMOBILE"
+		ModelConditionsSet="UNPACKING">
+		<Modifier Type="SPEED" Value="0%"/>
+		<Modifier Type="HEALTH_MULT" Value="200%" />
+		<Modifier Type="RESIST_EMP" Value="100%"/>
+		<Modifier Type="CRUSHER_LEVEL" Value="0%"/> <!--
+		<Modifier Type="CRUSHABLE_LEVEL" Value="100%"/> -->
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="Modifier_IonStorm"
+		Category="SPELL"
+		ModelConditionsSet="USER_5"
+		Duration="30s">
+		<Modifier Type="DAMAGE_MULT" Value="125%"/>
+		<Modifier Type="ARMOR" Value="80%"/>
+	</AttributeModifier>		
+	
+	<!-- For T59 Disints -->	
+	<AttributeModifier
+		id="AttributeModifier_AdvancedArticulators"
+		Category="NONE">		
+		<Modifier Type="SPEED" Value="125%"/>
+	</AttributeModifier>
+
+	<!-- For T59 Ravs/Shocks -->
+	<AttributeModifier
+		id="AttributeModifier_AdvancedArticulators2"
+		Category="NONE">		
+		<Modifier Type="SPEED" Value="125%"/>
+	</AttributeModifier>	
+
+	<!-- For T59 Assimilators/Cults -->	
+	<AttributeModifier
+		id="AttributeModifier_AdvancedArticulators3"
+		Category="NONE">		
+		<Modifier Type="SPEED" Value="166%"/>
+	</AttributeModifier>	
+	
+	<!-- For Rockets, Militants, Fanatics -->
+	<AttributeModifier
+		id="AttributeModifier_TiberiumInfusion"
+		Category="NONE">
+		<Modifier Type="HEALTH_MULT" Value="110%"/>
+		<Modifier Type="SPEED" Value="125%"/>
+	</AttributeModifier>
+	
+	<!-- For Confessors -->
+	<AttributeModifier
+		id="AttributeModifier_TiberiumInfusion2"
+		Category="NONE">
+		<Modifier Type="HEALTH_MULT" Value="100%"/>		
+		<Modifier Type="SPEED" Value="125%"/>
+	</AttributeModifier>
+				
+	<!-- For Awakened -->
+	<AttributeModifier
+		id="AttributeModifier_CyberneticLegs1"
+		Category="NONE">		
+		<Modifier Type="SPEED" Value="140%"/>
+	</AttributeModifier>			
+		
+	<!-- For Enlightened/TibTroopers -->
+	<AttributeModifier
+		id="AttributeModifier_CyberneticLegs"
+		Category="NONE">		
+		<Modifier Type="SPEED" Value="160%"/>
+	</AttributeModifier>			
+				
+	<!-- For Saboteurs -->
+	<AttributeModifier
+		id="AttributeModifier_CyberneticLegs2"
+		Category="NONE">		
+		<Modifier Type="SPEED" Value="180%"/>
+	</AttributeModifier>	
+	
+	<!-- Decreased armor when the bunker spawn is firing -->
+	<AttributeModifier
+		id="Modifier_RocketBunkerWeaponFiring"
+		Category="NONE"
+		Duration="2s" >
+		<Modifier Type="ARMOR" Value="120%" />
+	</AttributeModifier>		
+	
+	<!-- ######################################## HANDICAPS ####################################### -->
+	<!-- NOTE: PRODUCTION buff to cancel out BuildTime Multiplier in INI -->
+
+	<AttributeModifier
+		id="HandicapPercent5"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="110%" />			
+	</AttributeModifier>
+
+	<AttributeModifier
+		id="HandicapPercent10"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="115%" />			
+	</AttributeModifier>
+
+	<AttributeModifier
+		id="HandicapPercent15"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="120%" />			
+	</AttributeModifier>
+	
+	<AttributeModifier
+		id="HandicapPercent20"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="125%" />			
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="HandicapPercent25"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="130%" />			
+	</AttributeModifier>		
+
+	<AttributeModifier
+		id="HandicapPercent30"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="135%" />			
+	</AttributeModifier>		
+
+	<AttributeModifier
+		id="HandicapPercent35"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="140%" />			
+	</AttributeModifier>		
+
+	<AttributeModifier
+		id="HandicapPercent40"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="145%" />			
+	</AttributeModifier>		
+
+	<AttributeModifier
+		id="HandicapPercent45"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="150%" />			
+	</AttributeModifier>		
+
+	<AttributeModifier
+		id="HandicapPercent50"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="155%" />			
+	</AttributeModifier>	
+
+	<AttributeModifier
+		id="HandicapPercent55"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="160%" />			
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="HandicapPercent60"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="165%" />			
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="HandicapPercent65"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="170%" />			
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="HandicapPercent70"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="175%" />			
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="HandicapPercent75"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="180%" />			
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="HandicapPercent80"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="185%" />			
+	</AttributeModifier>	
+
+	<AttributeModifier
+		id="HandicapPercent85"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="190%" />			
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="HandicapPercent90"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="DAMAGE_MULT" Value="100%"/>
+		<Modifier Type="HEALTH_MULT" Value="100%"/>
+		<Modifier Type="PRODUCTION" Value="195%" />			
+	</AttributeModifier>		
+	
+	<!-- FUN MODE -->
+	<AttributeModifier
+		id="HandicapPercent95"
+		Category="LEVEL"
+		Duration="0s">
+		<Modifier Type="RECHARGE_TIME" Value="20%" />
+		<Modifier Type="PRODUCTION" Value="4000%" />			
+	</AttributeModifier>	
+	
+</AssetDeclaration>

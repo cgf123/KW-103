@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!-- Build radius for defences -->
+	<GameObject
+		id="MCVBuildDummy"
+		Side="RANDOM"
+		KindOf="PRELOAD NO_COLLIDE IGNORE_FOR_VICTORY PROJECT_BUILDABILITY_FOR_ALLIES UNATTACKABLE RESIST_EMP">
+		<DisplayName>Name:AbilityDisruptionPod</DisplayName>
+		<ArmorSet
+			Armor="InvulnerableArmor" />
+		<LocomotorSet
+			Locomotor="HumanLocomotor"
+			Condition="NORMAL"
+			Speed="0.0" />
+			
+		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="513BC476" />										
+			<Physics
+				id="ModuleTag_Physics" />
+			
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="ModuleTag_AI"			
+				AutoAcquireEnemiesWhenIdle="NO" >			
+			</AIUpdate>
+		</AI>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100" />
+		</Body>
+		<ProjectedBuildabilityInfo
+			Radius="0"
+			BuildPlacementTypes="OTHER_STRUCTURE"
+			StatusToReject=""
+			ModelConditionsToReject="" />
+	</GameObject>	
+	
+	<!-- Build radius for defences -->
+	<GameObject
+		id="MiniMCVBuildDummy"
+		Side="RANDOM"
+		KindOf="PRELOAD NO_COLLIDE IGNORE_FOR_VICTORY PROJECT_BUILDABILITY_FOR_ALLIES UNATTACKABLE RESIST_EMP">
+		<DisplayName>Name:AbilityDisruptionPod</DisplayName>
+		<ArmorSet
+			Armor="InvulnerableArmor" />
+		<LocomotorSet
+			Locomotor="HumanLocomotor"
+			Condition="NORMAL"
+			Speed="0.0" />
+			
+		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="513BC476" />										
+			<Physics
+				id="ModuleTag_Physics" />
+			
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="ModuleTag_AI"			
+				AutoAcquireEnemiesWhenIdle="NO" >			
+			</AIUpdate>
+		</AI>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100" />
+		</Body>
+		<ProjectedBuildabilityInfo
+			Radius="250"
+			BuildPlacementTypes="OTHER_STRUCTURE"
+			StatusToReject=""
+			ModelConditionsToReject="" />
+	</GameObject>	
+		
+	
+</AssetDeclaration>

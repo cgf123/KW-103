@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+
+  <!-- ######## MINIMCV COMMANDS ############ -->
+  <LogicCommand
+		Type="SPECIAL_POWER"
+		id="Command_UnPackSurveyor_new">
+    <SpecialPower>SpecialPower_GrantUnpackUpgrade_GDI</SpecialPower>
+  </LogicCommand>
+  <LogicCommand
+		Type="SPECIAL_POWER"
+		id="Command_UnPackEmissary_new">
+    <SpecialPower>SpecialPower_GrantUnpackUpgrade_NOD</SpecialPower>
+  </LogicCommand>
+  <LogicCommand
+		Type="SPECIAL_POWER"
+		id="Command_UnPackExplorer_new">
+    <SpecialPower>SpecialPower_GrantUnpackUpgrade_ALIEN</SpecialPower>
+  </LogicCommand>
+  
+  <LogicCommand
+		Type="SPECIAL_POWER"
+		id="Command_UnPackSurveyor_AI">
+    <SpecialPower>SpecialPower_GrantUnpackUpgrade</SpecialPower>
+  </LogicCommand>
+  <LogicCommand
+		Type="SPECIAL_POWER"
+		id="Command_UnPackEmissary_AI">
+    <SpecialPower>SpecialPower_GrantUnpackUpgrade</SpecialPower>
+  </LogicCommand>
+  <LogicCommand
+		Type="SPECIAL_POWER"
+		id="Command_UnPackExplorer_AI">
+    <SpecialPower>SpecialPower_GrantUnpackUpgrade</SpecialPower>
+  </LogicCommand>  
+  
+	<!-- Renamed unpack command to fix memory-crash bug on 1.03 maps -->
+	<LogicCommandSet
+		id="GDISurveyorCommandSet">
+		<Cmd>Command_GDICallForTransportVehicle</Cmd>
+		<Cmd>Command_UnPackSurveyor</Cmd>		
+		<Cmd>Command_UnPackSurveyor_AI</Cmd>			
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="GDISurveyorUpgradedCommandSet">
+		<Cmd>Command_GDICallForTransportVehicle</Cmd>
+		<Cmd>Command_UnPackSurveyor_new</Cmd>
+		<Cmd>Command_UnPackSurveyor_AI</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="SteelTalonsSurveyorCommandSet">
+		<Cmd>Command_SteelTalonsCallForTransportVehicle</Cmd>
+		<Cmd>Command_UnPackSurveyor</Cmd>
+		<Cmd>Command_UnPackSurveyor_AI</Cmd>			
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="SteelTalonsSurveyorUpgradedCommandSet">
+		<Cmd>Command_SteelTalonsCallForTransportVehicle</Cmd>
+		<Cmd>Command_UnPackSurveyor_new</Cmd>
+		<Cmd>Command_UnPackSurveyor_AI</Cmd>			
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+
+	<LogicCommandSet
+		id="ZOCOMSurveyorCommandSet">
+		<Cmd>Command_ZOCOMCallForTransportVehicle</Cmd>
+		<Cmd>Command_UnPackSurveyor</Cmd>
+		<Cmd>Command_UnPackSurveyor_AI</Cmd>			
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	<LogicCommandSet
+		id="ZOCOMSurveyorUpgradedCommandSet">
+		<Cmd>Command_ZOCOMCallForTransportVehicle</Cmd>
+		<Cmd>Command_UnPackSurveyor_new</Cmd>
+		<Cmd>Command_UnPackSurveyor_AI</Cmd>			
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>		
+
+	<LogicCommandSet
+		id="NODEmissaryCommandSet">
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+		<Cmd>Command_UnPackEmissary</Cmd>
+		<Cmd>Command_UnPackEmissary_AI</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="NODEmissaryUpgradedCommandSet">
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+		<Cmd>Command_UnPackEmissary_new</Cmd>
+		<Cmd>Command_UnPackEmissary_AI</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="BlackHandEmissaryCommandSet">
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+		<Cmd>Command_UnPackEmissary</Cmd>
+		<Cmd>Command_UnPackEmissary_AI</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	<LogicCommandSet
+		id="BlackHandEmissaryUpgradedCommandSet">
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+		<Cmd>Command_UnPackEmissary_new</Cmd>
+		<Cmd>Command_UnPackEmissary_AI</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>		
+	
+	<LogicCommandSet
+		id="AlienExplorerCommandSet">
+		<Cmd>Command_UnpackExplorer</Cmd>
+		<Cmd>Command_UnpackExplorer_AI</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	<LogicCommandSet
+		id="AlienExplorerUpgradedCommandSet">
+		<Cmd>Command_UnpackExplorer_new</Cmd>
+		<Cmd>Command_UnpackExplorer_AI</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>		
+	
+	<LogicCommandSet
+		id="Traveler59ExplorerCommandSet">
+		<Cmd>Command_UnpackExplorer</Cmd>
+		<Cmd>Command_UnpackExplorer_AI</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>		
+	<LogicCommandSet
+		id="Traveler59ExplorerUpgradedCommandSet">
+		<Cmd>Command_UnpackExplorer_new</Cmd>
+		<Cmd>Command_UnpackExplorer_AI</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>		
+  
+  <!-- ############ -->
+
+	<!-- #### Get rid of the stupid Quads upgrade, add Laser Fences for AI use #### -->
+	<LogicCommandSet
+		id="NODOperationsCenterCommandSet">
+		<Cmd>Command_UpgradeNODDozerBlades</Cmd>
+		<Cmd>Command_SelectObjectsForClone</Cmd>
+		<Cmd>Command_SpawnObjectsForClone</Cmd>
+		<Cmd>Command_CloakingField</Cmd>
+		<Cmd>Command_FireRadarJammingMissile</Cmd>
+		<Cmd>Command_SpecialPowerLaserFencing</Cmd>	
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="MarkedOfKaneOperationsCenterCommandSet">
+		<Cmd>Command_UpgradeNODDozerBlades</Cmd>
+		<Cmd>Command_SelectObjectsForClone</Cmd>
+		<Cmd>Command_SpawnObjectsForClone</Cmd>
+		<Cmd>Command_MarkedOfKaneCloakingField</Cmd>
+		<Cmd>Command_FireRadarJammingMissile</Cmd>
+		<Cmd>Command_SpecialPowerLaserFencing</Cmd>			
+	</LogicCommandSet>	
+
+	<LogicCommandSet
+		id="BlackHandOperationsCenterCommandSet">
+		<Cmd>Command_UpgradeNODDozerBlades</Cmd>
+		<Cmd>Command_SelectObjectsForClone</Cmd>
+		<Cmd>Command_SpawnObjectsForClone</Cmd>
+		<Cmd>Command_FireRadarJammingMissile</Cmd>
+		<Cmd>Command_SpecialPowerLaserFencing</Cmd>			
+	</LogicCommandSet>
+	
+	<!-- Add Sonic fences for AI use -->
+	<LogicCommandSet
+		id="GDICommandPostCommandSet">
+		<Cmd>Command_CommandPostRadarScan</Cmd>
+		<Cmd>Command_PurchaseUpgradeGDIAPAmmo</Cmd>
+		<Cmd>Command_PurchaseUpgradeOrcaSensorPod</Cmd>
+		<Cmd>Command_UpgradeZoneTrooperScannerPack</Cmd>
+		<Cmd>Command_SpecialPowerSonicRepulsionField</Cmd>		
+	</LogicCommandSet>
+
+	<LogicCommandSet
+		id="SteelTalonsCommandPostCommandSet">
+		<Cmd>Command_CommandPostRadarScan</Cmd>
+		<Cmd>Command_PurchaseUpgradeSTAPAmmo</Cmd>		
+		<Cmd>Command_PurchaseUpgradeOrcaSensorPod</Cmd>
+		<Cmd>Command_PurchaseUpgradeAdaptiveArmor</Cmd>		
+		<Cmd>Command_SpecialPowerSonicRepulsionField</Cmd>		
+	</LogicCommandSet>
+	
+	<LogicCommandSet
+		id="ZOCOMCommandPostCommandSet">
+		<Cmd>Command_CommandPostRadarScan</Cmd>
+		<Cmd>Command_PurchaseUpgradeGDIAPAmmo</Cmd>		
+		<!--
+		<Cmd>Command_PurchaseUpgradeOrcaSensorPod</Cmd> -->
+		<Cmd>Command_UpgradeZoneRaiderScannerPack</Cmd>		
+		<Cmd>Command_SpecialPowerSonicRepulsionField</Cmd>		
+	</LogicCommandSet>
+	
+	<!-- Remove Sonic Fence from Tech Centers -->
+	<LogicCommandSet
+		id="GDIArmoryCommandSet">
+		<Cmd>Command_PurchaseUpgradePitbullMortar</Cmd>
+		<Cmd>Command_PurchaseUpgradeTankRailgun</Cmd>
+		<Cmd>Command_PurchaseUpgradeGDITungstenAAShells</Cmd>
+		<Cmd>Command_CommandPostCallHunterKiller</Cmd>
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="SteelTalonsTechCenterCommandSet">
+		<Cmd>Command_PurchaseUpgradePitbullMortar</Cmd>
+		<Cmd>Command_PurchaseUpgradeTankRailgunST</Cmd>
+		<Cmd>Command_PurchaseUpgradeGDITungstenAAShells</Cmd>
+		<Cmd>Command_SpecialPowerRailgunAccelerator</Cmd>
+	</LogicCommandSet>	
+	
+	<!-- ZOCOM Ceramic at T3 -->
+	<LogicCommandSet
+		id="ZOCOMAirTowerCommandSet">
+		<Cmd>Command_ConstructZOCOMOrca</Cmd>
+		<Cmd>Command_ConstructZOCOMHammerhead</Cmd>
+		<Cmd>Command_ConstructZOCOMFireHawk</Cmd>
+		<Cmd>Command_GDIRecallAllAircraft</Cmd>
+		<Cmd>Command_CommandPostCallZOCOMBloodhound</Cmd>
+		<Cmd>Command_ZOCOMCommandPostBombingRun</Cmd>
+		<!--
+		<Cmd>Command_PurchaseUpgradeCeramicArmor</Cmd> -->
+		<Cmd>Command_PurchaseUpgradeGDIHardpoints</Cmd>		
+		<!--
+		<Cmd>Command_PurchaseUpgradeStratofighterBooster</Cmd> -->
+	</LogicCommandSet>
+
+	<LogicCommandSet
+		id="ZOCOMArmoryCommandSet">
+		<Cmd>Command_PurchaseUpgradePitbullMortar</Cmd>
+		<Cmd>Command_PurchaseUpgradeCeramicArmor</Cmd>
+		<Cmd>Command_PurchaseUpgradeGDITungstenAAShells</Cmd>
+		<Cmd>Command_CommandPostCallHunterKiller</Cmd>
+	</LogicCommandSet>	
+	
+	
+	<!-- ST Sniper Drop!! -->
+	<LogicCommandSet
+		id="SteelTalonsAirTowerCommandSet">
+		<Cmd>Command_ConstructSteelTalonsOrca</Cmd>
+		<Cmd>Command_ConstructSteelTalonsHammerhead</Cmd>
+		<Cmd>Command_ConstructSteelTalonsFireHawk</Cmd>
+		<Cmd>Command_GDIRecallAllAircraft</Cmd>
+		<Cmd>Command_CommandPostCallSTBloodhound</Cmd>
+		<Cmd>Command_CommandPostBombingRun</Cmd>
+		<Cmd>Command_CallSupportSTHunterKillerTeam</Cmd>			
+		<Cmd>Command_PurchaseUpgradeGDIHardpoints</Cmd>
+		<Cmd>Command_PurchaseUpgradeStratofighterBooster</Cmd>	
+	</LogicCommandSet>	
+		
+	<!-- ST ZTS !! -->
+	<LogicCommandSet
+		id="SteelTalonsBarracksCommandSet">
+		<Cmd>Command_ConstructSteelTalonsRifleSoldierSquad</Cmd>
+		<Cmd>Command_ConstructSteelTalonsMissileSoldierSquad</Cmd>
+		<Cmd>Command_ConstructSteelTalonsCombatEngineer</Cmd>
+		<Cmd>Command_ConstructSteelTalonsGrenadeSoldierSquad</Cmd>
+		<Cmd>Command_ConstructSteelTalonsZoneTrooperSquad</Cmd>
+	</LogicCommandSet>
+		
+	<!-- T59 Att. Shields !!!! -->
+	<LogicCommandSet
+		id="Traveler59ControlCenterCommandSet">
+		<Cmd>Command_TiberiumVibrationScan</Cmd>
+		<Cmd>Command_SpecialPowerSwarm</Cmd>
+		<Cmd>Command_LightningSpike</Cmd><!--		
+		<Cmd>Command_PurchaseUpgradeMinorForcefieldGenerator</Cmd> -->
+	</LogicCommandSet>
+	
+
+	
+	<!-- DISINT UPGRADE -->
+	  <LogicCommand
+			Type="PLAYER_UPGRADE"
+			id="Command_UpgradeRazorDronesUpgrade">
+		<UpgradeTemplate>Upgrade_AlienRazorDronesUpgrade</UpgradeTemplate>
+	  </LogicCommand>
+
+	<LogicCommandSet
+		id="AlienPortalCommandSet">
+		<Cmd>Command_ConstructAlienBuzzers</Cmd>
+		<Cmd>Command_ConstructAlienRazorDroneSquad</Cmd>
+		<Cmd>Command_ConstructAlienAssimilator</Cmd>
+		<Cmd>Command_ConstructAlienShockTrooperSquad</Cmd>
+		<Cmd>Command_ConstructAlienStalkerSquad</Cmd>
+		<Cmd>Command_ConstructAlienMastermind</Cmd>
+		<Cmd>Command_UpgradeRazorDronesUpgrade</Cmd>
+	</LogicCommandSet>
+	
+	<LogicCommandSet
+		id="Traveler59PortalCommandSet">
+		<Cmd>Command_ConstructAlienBuzzers</Cmd>
+		<Cmd>Command_ConstructTraveler59RazorDroneSquad</Cmd>
+		<Cmd>Command_ConstructTraveler59Assimilator</Cmd>
+		<Cmd>Command_ConstructTraveler59ShockTrooperSquad</Cmd>
+		<Cmd>Command_ConstructTraveler59CultistSquad</Cmd>
+		<Cmd>Command_ConstructTraveler59StalkerSquad</Cmd>
+		<Cmd>Command_ConstructTraveler59BlinkMastermind</Cmd>
+		<Cmd>Command_UpgradeRazorDronesUpgrade</Cmd>		
+	</LogicCommandSet>
+
+	<LogicCommandSet
+		id="Reaper17PortalCommandSet">
+		<Cmd>Command_ConstructAlienBuzzers</Cmd>
+		<Cmd>Command_ConstructAlienRazorDroneSquad</Cmd>
+		<Cmd>Command_ConstructAlienAssimilator</Cmd>
+		<Cmd>Command_ConstructReaper17ShockTrooperSquad</Cmd>
+		<Cmd>Command_ConstructReaper17StalkerSquad</Cmd>
+		<Cmd>Command_UpgradeRazorDronesUpgrade</Cmd>		
+	</LogicCommandSet>	
+	
+	<!-- BATTLE BUSES -->
+	<LogicCommandSet
+	id="NODBunkerTruckCommandSet">
+		<Cmd>Command_MoveToPositionAndEvacuate</Cmd>
+		<Cmd>Command_UnPackNODBunkerTruck</Cmd>
+		<Cmd>Command_Stop</Cmd>
+		<Cmd>Command_AttackMove</Cmd>		
+	</LogicCommandSet>	
+	
+	<LogicCommandSet	
+	id="MarkedOfKaneBunkerTruckCommandSet">
+		<Cmd>Command_MoveToPositionAndEvacuate</Cmd>
+		<Cmd>Command_UnPackNODBunkerTruck</Cmd>
+		<Cmd>Command_Stop</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>	
+
+	<!-- Remove fence bug -->
+	<LogicCommandSet
+		id="NODTechAssemblyPlantCommandSet">
+		<Cmd>Command_UpgradeNODEmpBurst</Cmd>
+		<Cmd>Command_UpgradeNODLaserCapacitor</Cmd>
+		<Cmd>Command_PurchaseUpgradeTibCoreMissiles</Cmd>
+		<Cmd>Command_Redemption</Cmd>
+	</LogicCommandSet>		
+	
+	<LogicCommandSet
+		id="GDICommandoCommandSet">
+		<Cmd>Command_GDICallForTransportInfantry</Cmd>
+		<Cmd>Command_CommandoFireJumpJets</Cmd>
+		<Cmd>Command_CommandoPlaceSatchelCharge_Dispatch</Cmd>
+		<Cmd>Command_CommandoPlaceSatchelCharge</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+	id="ZOCOMCommandoCommandSet">
+		<Cmd>Command_ZOCOMCallForTransportInfantry</Cmd>
+		<Cmd>Command_CommandoFireJumpJets</Cmd>
+		<Cmd>Command_CommandoPlaceSatchelCharge_Dispatch</Cmd>
+		<Cmd>Command_CommandoPlaceSatchelCharge</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>	
+		
+	<!-- BH TRANSPORTS !!!!!!!! -->
+	<LogicCommandSet
+		id="BlackHandConfessorCabalSquadCommandSet">
+		<Cmd>Command_BlackHandConfessorCabalSquadFireGrenade</Cmd>
+		<Cmd>Command_BlackHandConfessorCabalFireGrenade</Cmd>
+		<Cmd>Command_NodCallForTransportInfantry</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>	
+	<LogicCommandSet
+		id="BlackHandCommandoCommandSet">
+		<Cmd>Command_NodCallForTransportInfantry</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="BlackHandSaboteurCommandSet">
+		<Cmd>Command_NODSaboteurPlaceBoobyTrap</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_CaptureBuilding</Cmd>
+		<Cmd>Command_NodCallForTransportInfantry</Cmd>
+	</LogicCommandSet>	
+
+	<LogicCommandSet
+	id="BlackHandFanaticSquadCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportInfantry</Cmd>		
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="BlackHandMilitantSquadCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportInfantry</Cmd>		
+	</LogicCommandSet>
+	<LogicCommandSet
+	id="BlackHandMilitantRocketSquadCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportInfantry</Cmd>		
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="BlackHandBlackHandSquadCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportInfantry</Cmd>				
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="BlackHandAttackBikeCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+	</LogicCommandSet>	
+	<LogicCommandSet
+		id="BlackHandRaiderTankCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="BlackHandScorpionBuggyCommandSet">
+		<Cmd>Command_FireEmpBurst</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="BlackHandBeamCannonCommandSet">
+		<Cmd>Command_ChargeDefenses</Cmd>
+		<Cmd>Command_ReflectorAttack</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="BlackHandMobileArtilleryCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+	</LogicCommandSet>	
+	
+	<!-- BH VENOMS !!!!!!!! -->	
+	<LogicCommandSet
+		id="BlackHandHangarCommandSet">
+		<Cmd>Command_ConstructBlackHandVenom</Cmd>
+		<!--
+		<Cmd>Command_NODBurrowMines</Cmd>	
+		-->
+	</LogicCommandSet>	
+
+	<LogicCommandSet
+		id="BlackHandConstructionYardCommandSet">
+		<Cmd>Command_Construct_BlackHandPowerPlant</Cmd>
+		<Cmd>Command_Construct_BlackHandRefinery</Cmd>
+		<Cmd>Command_Construct_BlackHandHandOfNod</Cmd>
+		<Cmd>Command_Construct_BlackHandDropZone</Cmd>
+		<Cmd>Command_Construct_BlackHandOperationsCenter</Cmd>
+		<Cmd>Command_Construct_BlackHandHangar</Cmd>			
+		<Cmd>Command_Construct_BlackHandSecretShrine</Cmd>
+		<Cmd>Command_Construct_BlackHandTechAssemblyPlant</Cmd>
+		<Cmd>Command_Construct_BlackHandShredderTurretHub</Cmd>
+		<Cmd>Command_Construct_BlackHandLaserCannon</Cmd>
+		<Cmd>Command_Construct_BlackHandRocketBunker</Cmd>
+		<Cmd>Command_Construct_BlackHandTiberiumSilo</Cmd>
+		<Cmd>Command_Construct_BlackHandPropagandaTower</Cmd>
+		<Cmd>Command_Construct_BlackHandObeliskOfLight</Cmd>
+		<Cmd>Command_Construct_BlackHandTempleOfNOD</Cmd>
+		<Cmd>Command_Construct_BlackHandTiberiumLiquidationFacility</Cmd>
+		<Cmd>Command_Construct_BlackHandCrane</Cmd>		
+		<Cmd>Command_Construct_BlackHandEmissary</Cmd>
+		<Cmd>Command_ConstructBlackHandWarmechFacility</Cmd>		
+		<Cmd>Command_PackNODMCV</Cmd>
+	</LogicCommandSet>	
+
+	<LogicCommandSet
+		id="BlackHandCraneCommandSet">
+		<Cmd>Command_Construct_BlackHandPowerPlant</Cmd>
+		<Cmd>Command_Construct_BlackHandRefinery</Cmd>
+		<Cmd>Command_Construct_BlackHandHandOfNod</Cmd>
+		<Cmd>Command_Construct_BlackHandDropZone</Cmd>
+		<Cmd>Command_Construct_BlackHandOperationsCenter</Cmd>		
+		<Cmd>Command_Construct_BlackHandHangar</Cmd>			
+		<Cmd>Command_Construct_BlackHandSecretShrine</Cmd>
+		<Cmd>Command_Construct_BlackHandTechAssemblyPlant</Cmd>
+		<Cmd>Command_Construct_BlackHandTiberiumSilo</Cmd>
+		<Cmd>Command_Construct_BlackHandPropagandaTower</Cmd>
+		<Cmd>Command_Construct_BlackHandTiberiumLiquidationFacility</Cmd>	
+	</LogicCommandSet>	
+	
+	<!-- MOK INFUSION -->
+  <LogicCommand
+		Type="PLAYER_UPGRADE"
+		id="Command_PurchaseUpgradeMOKTiberiumInfusion">
+    <UpgradeTemplate>Upgrade_MOKTiberiumInfusion</UpgradeTemplate>
+  </LogicCommand>	
+	<LogicCommandSet
+		id="MarkedOfKaneSecretShrineCommandSet">
+		<Cmd>Command_PurchaseUpgradeCyberneticLegs</Cmd>
+		<Cmd>Command_PurchaseUpgradeMOKTiberiumInfusion</Cmd>
+		<Cmd>Command_RedShadowStrikeTeam</Cmd>
+	</LogicCommandSet>	
+	
+	<!-- T59 Devourer -->
+	<LogicCommandSet
+	id="Traveler59DevourerTankCommandSet">
+		<Cmd>Command_Uncombine</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>	
+	
+  <LogicCommand
+		Type="UNIT_BUILD"
+		id="Command_ConstructTraveler59DevourerTank">
+	<Object>Traveler59DevourerTank</Object>
+  </LogicCommand>	
+
+	<LogicCommandSet
+		id="Traveler59GatewayCommandSet">
+		<Cmd>Command_ConstructTraveler59GunWalker</Cmd>
+		<Cmd>Command_ConstructTraveler59SeekerTank</Cmd>
+		<Cmd>Command_ConstructTraveler59Harvester</Cmd>
+		<Cmd>Command_ConstructTraveler59DevourerTank</Cmd>		
+		<Cmd>Command_ConstructTraveler59Corrupter</Cmd>
+		<Cmd>Command_ConstructTraveler59AnnihilatorTripod</Cmd>
+		<Cmd>Command_ConstructTraveler59CustomizableVehicle</Cmd>
+		<Cmd>Command_RepairVehicle</Cmd>
+	</LogicCommandSet>
+	
+	<LogicCommandSet
+		id="Traveler59MetaHiveCommandSet">
+		<Cmd>Command_ConstructTraveler59GunWalker</Cmd>
+		<Cmd>Command_ConstructTraveler59SeekerTank</Cmd>
+		<Cmd>Command_ConstructTraveler59Harvester</Cmd>
+		<Cmd>Command_ConstructTraveler59DevourerTank</Cmd>				
+		<Cmd>Command_ConstructTraveler59Corrupter</Cmd>
+		<Cmd>Command_ConstructTraveler59AnnihilatorTripod</Cmd>
+		<Cmd>Command_ConstructTraveler59CustomizableVehicle</Cmd>
+		<Cmd>Command_ConstructTraveler59MetaUnit</Cmd>
+		<Cmd>Command_RepairVehicle</Cmd>
+	</LogicCommandSet>	
+
+	<!-- CFT INSTA-EVAC BUTTON -->
+	<LogicCommandSet
+		id="GDIV35OxCommandSet">
+		<Cmd>Command_MoveToPositionAndEvacuate</Cmd>
+		<Cmd>Command_Evacuate</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>
+
+	<LogicCommandSet
+		id="NODCarryallCommandSet">
+		<Cmd>Command_MoveToPositionAndEvacuate</Cmd>
+		<Cmd>Command_Evacuate</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	
+	<!-- ################### INF USE TRANSPORTS FOR AI ############## -->
+  <LogicCommand
+		Type="GARRISON_BUILDING"
+		id="Command_EnterTransport"
+		Options="NEED_TARGET_ALLY_OBJECT">
+  </LogicCommand>	
+	
+	<LogicCommandSet
+		id="ZOCOMZoneRaiderSquadCommandSet">
+		<Cmd>Command_ZOCOMCallForTransportInfantry</Cmd>
+		<Cmd>Command_ZoneTrooperSquadGetToJumpJetRange</Cmd>
+		<Cmd>Command_ZoneTrooperSquadFireJumpJets</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_Stop</Cmd>
+		<Cmd>Command_EnterTransport</Cmd>		
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="GDIZoneTrooperSquadCommandSet">
+		<Cmd>Command_GDICallForTransportInfantry</Cmd>
+		<Cmd>Command_ZoneTrooperSquadGetToJumpJetRange</Cmd>
+		<Cmd>Command_ZoneTrooperSquadFireJumpJets</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_Stop</Cmd>
+		<Cmd>Command_EnterTransport</Cmd>			
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="GDIMissileSoldierSquadCommandSet">
+		<Cmd>Command_GDICallForTransportInfantry</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_EnterTransport</Cmd>				
+	</LogicCommandSet>
+
+	<LogicCommandSet
+		id="ZOCOMMissileSoldierSquadCommandSet">
+		<Cmd>Command_ZOCOMCallForTransportInfantry</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_EnterTransport</Cmd>				
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="SteelTalonsMissileSoldierSquadCommandSet">
+		<Cmd>Command_SteelTalonsCallForTransportInfantry</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_EnterTransport</Cmd>				
+	</LogicCommandSet>	
+	
+	<!-- vScrin/R17 Rav have same set -->
+	<LogicCommandSet
+  		id="AlienStalkerSquadCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_UseTiberiumAgitation</Cmd>
+		<Cmd>Command_FireTiberiumAgitation</Cmd>
+		<Cmd>Command_EnterTransport</Cmd>			
+	</LogicCommandSet>
+
+	<LogicCommandSet
+  		id="Traveler59StalkerSquadCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_UseTiberiumAgitation</Cmd>
+		<Cmd>Command_FireTiberiumAgitation</Cmd>
+		<Cmd>Command_EnterTransport</Cmd>			
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="AlienShockTrooperSquadCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_UseBlinkPack</Cmd>
+		<Cmd>Command_EnterTransport</Cmd>			
+	</LogicCommandSet>
+
+	<LogicCommandSet
+		id="Traveler59ShockTrooperSquadCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_UseTraveler59BlinkPack</Cmd>
+		<Cmd>Command_EnterTransport</Cmd>			
+	</LogicCommandSet>	
+
+	
+	<LogicCommandSet
+		id="AlienMechapedeCommandSet">
+		<Cmd>Command_AlienMechapedeAddRazorModule</Cmd>
+		<Cmd>Command_AlienMechapedeAddTioxinModule</Cmd>
+		<Cmd>Command_AlienMechapedeAddDiskModule</Cmd>
+		<Cmd>Command_AlienMechapedeAddShardModule</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>	
+	
+	<!-- ######################### BEAM VENOM FIX ############### -->
+				  
+	<LogicCommandSet
+		id="NODBeamCannonCommandSet">
+		<Cmd>Command_ChargeDefenses</Cmd>
+		<Cmd>Command_ReflectorAttack</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+	</LogicCommandSet>
+
+	<LogicCommandSet
+	id="MarkedOfKaneBeamCannonCommandSet">
+		<Cmd>Command_ChargeDefenses</Cmd>
+		<Cmd>Command_ReflectorAttack</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+	</LogicCommandSet>	
+	
+	<!-- ###################################### -->
+	
+  <!-- OBSOLETE -->
+  <!-- This LogicCommand is not linked to a button, so can be used by AI only -->
+  <LogicCommand
+		Type="SPECIAL_POWER"
+		Options="NEED_TARGET_ENEMY_OBJECT"
+		id="Command_UseCultistMindControl">
+    <SpecialPower>SpecialPower_CultistMindControlGetInRange</SpecialPower>
+  </LogicCommand>	
+	
+  <!-- This LogicCommand is the one linked to the button -->
+  <LogicCommand
+  Options="NEED_TARGET_ENEMY_OBJECT"
+    Type="SPECIAL_POWER"
+    id="Command_CultistMindControlGetInRange">
+    <SpecialPower>SpecialPower_CultistMindControlGetInRange</SpecialPower>
+  </LogicCommand>	
+
+	<LogicCommandSet
+  		id="Traveler59CultistSquadCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_CultistMindControlGetInRange</Cmd>
+	</LogicCommandSet>
+	
+	<LogicCommandSet
+	id="AlienBlinkMastermindCommandSet">
+		<Cmd>Command_AlienMastermindSelectObjectsForTeleport</Cmd>
+		<Cmd>Command_AlienMastermindTeleportObjects</Cmd>
+		<Cmd>Command_AlienMastermindManipulatorDevice</Cmd>
+		<Cmd>Command_AlienBlinkMastermindAOEMindControl</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>	
+	
+	<!-- ZOCOM Shockwave -->
+  <LogicCommand
+		Options="NEED_TARGET_POS"
+		Type="SPECIAL_POWER"
+		id="Command_SpaceCommandZOCOMShockwave">
+    <SpecialPower>SpecialPowerZOCOM_SpaceCommandShockwaveArtillery</SpecialPower>
+  </LogicCommand>
+  
+	<LogicCommandSet
+		id="ZOCOMSpaceCommandUplinkCommandSet">
+		<Cmd>Command_SpaceCommandZOCOMRaiderPods</Cmd>
+		<Cmd>Command_SpaceCommandZOCOMShockwave</Cmd>
+	</LogicCommandSet>  
+  
+	<!-- Dummy countermeasures
+	<LogicCommand
+		Type="SPECIAL_POWER"
+		id="Command_ComputerCounterMeasuresDummy">
+		<SpecialPower>SpecialPowerComputerCounterMeasuresDummy</SpecialPower>
+	</LogicCommand>	
+	-->
+  
+	<!-- ###################################### -->
+	
+	<!-- Added new mortar enable/disable buttons -->
+	<LogicCommandSet
+		id="GDIPitbullCommandSet"> 
+		<Cmd>Command_SelectLoadout_03</Cmd>
+		<Cmd>Command_SelectLoadout_04</Cmd>
+		<Cmd>Command_GDICallForTransportVehicle</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>
+
+	<LogicCommandSet
+		id="SteelTalonsPitbullCommandSet">
+		<Cmd>Command_SelectLoadout_03</Cmd>
+		<Cmd>Command_SelectLoadout_04</Cmd> 
+		<Cmd>Command_SteelTalonsCallForTransportVehicle</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>
+
+	<LogicCommandSet
+		id="ZOCOMPitbullCommandSet">
+		<Cmd>Command_SelectLoadout_03</Cmd>
+		<Cmd>Command_SelectLoadout_04</Cmd>	
+		<Cmd>Command_ZOCOMCallForTransportVehicle</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>	
+
+
+	<LogicCommand		
+		Type="SPECIAL_POWER"
+		id="Command_CallSupportSTHunterKillerTeam">
+		<SpecialPower>SpecialPowerCallSupportSTHunterKillerTeam</SpecialPower>
+	 </LogicCommand>
+		
+	<LogicCommandSet
+		id="SteelTalonsRepairAPCCommandSet">
+		<Cmd>Command_RepairVehicleMRT</Cmd>
+		<Cmd>Command_SteelTalonsCallForTransportVehicle</Cmd>
+		<Cmd>Command_APCMinefield</Cmd>
+		<Cmd>Command_Evacuate</Cmd>		
+		<Cmd>Command_Stop</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>	
+
+	<LogicCommand
+		id="Command_RepairVehicleMRT"
+		Type="SPECIAL_POWER"
+		Options="">
+		<SpecialPower>SpecialPower_TargetedRepairVehicleMRT</SpecialPower>
+	</LogicCommand>		
+
+  <!-- Dont change command option from 'need_target_enemy_object' to 'target_pos' - causes them to miss shots -->
+  <LogicCommand
+		Type="SPECIAL_POWER"
+    	Options="NEED_TARGET_ENEMY_OBJECT"
+		id="Command_FireTiberiumAgitation">
+    <SpecialPower>SpecialPower_UseTiberiumAgitation</SpecialPower>
+  </LogicCommand>	
+  
+  <!-- ######################################################### GIVE EVERY UNIT ATTACK MOVE!! ########################################################## -->
+
+	<LogicCommandSet
+		id="GenericCommandSet">
+		<Cmd>Command_Stop</Cmd>
+		<Cmd>Command_AttackMove</Cmd>		
+	</LogicCommandSet>  
+	<LogicCommandSet
+		id="EmptyCommandSet" >
+		<Cmd>Command_AttackMove</Cmd>				
+	</LogicCommandSet>
+	
+	<LogicCommandSet
+		id="GDIMCVCommandSet">
+		<Cmd>Command_UnPackGDIMCV</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="SteelTalonsMCVCommandSet">
+		<Cmd>Command_UnPackGDIMCV</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="ZOCOMMCVCommandSet">
+		<Cmd>Command_UnPackGDIMCV</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="NODMCVCommandSet">
+		<Cmd>Command_UnPackNODMCV</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="AlienMCVCommandSet">
+		<Cmd>Command_UnPackALIENMCV</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	<LogicCommandSet
+		id="Traveler59MCVCommandSet">
+		<Cmd>Command_UnPackALIENMCV</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>
+	<LogicCommandSet
+		id="Reaper17MCVCommandSet">
+		<Cmd>Command_UnPackALIENMCV</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="AlienHarvesterCommandSet">
+		<Cmd>Command_HarvesterReturnToExtractor</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	<LogicCommandSet
+	 id="Traveler59HarvesterCommandSet">
+		<Cmd>Command_HarvesterReturnToExtractor</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="GDIEngineerCommandSet">
+		<Cmd>Command_GDICallForTransportInfantry</Cmd>
+		<Cmd>Command_CaptureBuilding</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	<LogicCommandSet
+	id="ZOCOMEngineerCommandSet">
+		<Cmd>Command_ZOCOMCallForTransportInfantry</Cmd>
+		<Cmd>Command_CaptureBuilding</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	<LogicCommandSet
+		id="AlienAssimilatorCommandSet">
+		<Cmd>Command_CaptureBuilding</Cmd>
+		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	
+</AssetDeclaration>

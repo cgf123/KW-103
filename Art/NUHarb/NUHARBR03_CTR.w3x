@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<W3DContainer
+		id="NUHARBR03"
+		Hierarchy="NUHARBR03">
+		<SubObject
+			SubObjectID="R03"
+			BoneIndex="1">
+			<RenderObject>
+				<Mesh>NUHARBR03.R03</Mesh>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>
+</AssetDeclaration>

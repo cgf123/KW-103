@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Tags />
+	<Includes />
+
+	<!-- ############## BEAMCANNON REFLECTOR FIX ########### -->
+	<!-- Button for Reflector get-in-range 
+	<ButtonSingleStateData
+		id="ButtonStateAbilityReflectorAttackGetInRange" >
+		<State
+			Image="Button_AbilityReflectorAttack"
+			Title="NAME:AbilityReflectorAttack"
+			Description="DESC:AbilityReflectorAttack" />
+	</ButtonSingleStateData>	
+	
+	<UnitAbilityButtonTemplate
+		id="ButtonReflectorAttackGetInRange"
+		LogicCommand="Command_ReflectorAttackGetInRange">
+		<Data>
+			<TargetedSpecialPower
+				StateData="ButtonStateAbilityReflectorAttackGetInRange"
+				ValidTargetCursor="Bombard" />
+		</Data>
+	</UnitAbilityButtonTemplate>	-->
+	
+	<!-- Button for actual Reflector attack SP; same as old but renamed to prevent asset crash 
+	<ButtonSingleStateData
+		id="ButtonStateAbilityReflectorAttack_new" >
+		<State
+			Image="Button_AbilityReflectorAttack"
+			Title="NAME:AbilityReflectorAttack"
+			Description="DESC:AbilityReflectorAttack" />
+	</ButtonSingleStateData>	
+	
+	<UnitAbilityButtonTemplate
+		id="ButtonReflectorAttack_new"
+		LogicCommand="Command_ReflectorAttack_new">
+		<Data>
+			<TargetedSpecialPower
+				StateData="ButtonStateAbilityReflectorAttack_new"
+				ValidTargetCursor="Bombard" />
+		</Data>
+	</UnitAbilityButtonTemplate>		-->
+	
+	<!-- ########### MINIMCV BUTTONS ########## -->
+	
+	<ButtonSingleStateData
+		id="ButtonStateAbilityUnPackSurveyor_new">
+		<State
+			Image="Button_AbilityUnPack"
+			Title="NAME:AbilityUnPackSurveyor"
+			Description="DESC:AbilityUnPackSurveyor" />
+	</ButtonSingleStateData>
+
+	<ButtonSingleStateData
+		id="ButtonStateAbilityUnPackEmissary_new">
+		<State
+			Image="Button_AbilityUnPack"
+			Title="NAME:AbilityUnPackEmissary"
+			Description="DESC:AbilityUnPackEmissary" />
+	</ButtonSingleStateData>
+
+	<ButtonSingleStateData
+		id="ButtonStateAbilityUnPackExplorer_new">
+		<State
+			Image="Button_AbilityUnPack"
+			Title="NAME:AbilityUnPackExplorer"
+			Description="DESC:AbilityUnPackExplorer" />
+	</ButtonSingleStateData>
+	
+	
+	<UnitAbilityButtonTemplate
+		id="ButtonUnPackSurveyor_new"
+		LogicCommand="Command_UnPackSurveyor_new">
+		<Data>
+			<SpecialPower
+				StateData="ButtonStateAbilityUnPackSurveyor_new"/>
+		</Data>
+	</UnitAbilityButtonTemplate>	
+	
+	<UnitAbilityButtonTemplate
+		id="ButtonUnPackEmissary_new"
+		LogicCommand="Command_UnPackEmissary_new">
+		<Data>
+			<SpecialPower
+				StateData="ButtonStateAbilityUnPackEmissary_new"/>
+		</Data>
+	</UnitAbilityButtonTemplate>
+
+	<UnitAbilityButtonTemplate
+		id="ButtonUnPackExplorer_new"
+		LogicCommand="Command_UnPackExplorer_new">
+		<Data>
+			<SpecialPower
+				StateData="ButtonStateAbilityUnPackExplorer_new"/>
+		</Data>
+	</UnitAbilityButtonTemplate>	
+	
+	
+	<!-- ######### PITBULL MORTAR WEAPON TOGGLE SWITCH BUTTONS ########### -->
+	
+	<ButtonSingleStateData
+		id="ButtonStateCommand_SelectLoadout_03" >
+		<State
+			Image="Button_UpgradeMortar"
+			Title="NAME:MortarEnable_103"
+			Description="DESC:MortarEnable_103" />
+	</ButtonSingleStateData>
+
+    <ButtonSingleStateData
+		id="ButtonStateCommand_SelectLoadout_04" >
+		<State
+			Image="Button_AbilityMissileLoadout"
+			Title="NAME:MortarDisable_103"
+			Description="DESC:MortarDisable_103" />
+	</ButtonSingleStateData>	
+	
+	<!--               -->
+	
+	<ObjectUpgradeButton
+		Id="Command_SelectLoadout_03">
+		<State
+			Image="Button_AbilityMissileLoadout"
+			Title="NAME:MortarEnable_103"
+			Description="DESC:MortarEnable_103" />
+	</ObjectUpgradeButton>
+
+	<ObjectUpgradeButton
+		Id="Command_SelectLoadout_04">
+		<State
+			Image="Button_AbilityBombLoadout"
+			Title="NAME:MortarDisable_103"
+			Description="DESC:MortarDisable_103" />
+	</ObjectUpgradeButton>	
+	
+	<!-- ^^^ NOTE: UnitAbilityButtonTemplates simply inherit stuff from the ObjectUpgradeButton AND ButtonSingleStateData assets ^^^-->
+	<UnitAbilityButtonTemplate
+		id="Button_SelectLoadout_03"
+		LogicCommand="Command_SelectLoadout_03">
+		<Data>
+			<ObjectUpgrade
+				StateData="ButtonStateCommand_SelectLoadout_03"/>
+		</Data>
+	</UnitAbilityButtonTemplate>
+
+
+	<UnitAbilityButtonTemplate
+		id="Button_SelectLoadout_04"
+		LogicCommand="Command_SelectLoadout_04">
+		<Data>
+			<ObjectUpgrade
+				StateData="ButtonStateCommand_SelectLoadout_04"/>
+		</Data>
+	</UnitAbilityButtonTemplate>
+	
+	<!-- MRT REPAIR BUTTON -->
+	<ButtonSingleStateData
+		id="ButtonStateAbilityRepairVehicleMRT" >
+		<State
+			Image="Button_AbilityRepairVehicle"
+			Title="Name:AbilityRepairVehicle"
+			Description="DESC:AbilityRepairVehicle" />
+	</ButtonSingleStateData>
+
+	<TargetedSpecialPowerButton
+		Id="Command_RepairVehicleMRT"
+		ValidTargetCursor="Bombard" >
+		<State
+			Image="Button_AbilityRepairVehicle"
+			Title="Name:AbilityRepairVehicle"
+			Description="DESC:AbilityRepairVehicle" />
+	</TargetedSpecialPowerButton>	
+	
+	<UnitAbilityButtonTemplate
+		id="ButtonRepairVehicleMRT"
+		LogicCommand="Command_RepairVehicleMRT">
+		<Data>
+			<TargetedSpecialPower
+				StateData="ButtonStateAbilityRepairVehicle"
+				ValidTargetCursor="Bombard" />
+		</Data>
+	</UnitAbilityButtonTemplate>
+	
+	
+	<!-- Player powers description changes -->
+	 <TargetedPowerButton
+			id="SpecialPower_CloakingField"
+			RadiusCursor="TargetingDecalCloakingField">
+        <State
+			Image="Button_PlayerPowerCloakingField"
+			Title="NAME:PlayerPowerCloakingField"
+			TypeDescription="TYPE:PlayerPowerCloakingField"
+			Description="DESC:PlayerPowerCloakingField_103"/>
+     </TargetedPowerButton>
+	 
+      <TargetedPowerButton
+				id="SpecialPower_LaserFencing"
+				ValidTargetCursor="Bombard">
+        <State
+			Image="Button_PlayerPower_LaserFencing"
+			Title="NAME:PlayerPowerLaserFencing"
+			TypeDescription="TYPE:PlayerPowerLaserFencing"
+			Description="DESC:PlayerPowerLaserFencing_103" />
+      </TargetedPowerButton>
+
+      <TargetedPowerButton
+				id="SpecialPower_SonicRepulsionField"
+				ValidTargetCursor="Bombard">
+        <State
+			Image="Button_PlayerPower_SonicField"
+			Title="NAME:PlayerPowerSonicRepulsionField"
+			TypeDescription="TYPE:PlayerPowerSonicRepulsionField"
+			Description="DESC:PlayerPowerSonicRepulsionField_103" />
+      </TargetedPowerButton>	 
+	  
+	<!-- MOK Infusion -->
+	<ButtonSingleStateData
+		id="ButtonStateUpgradeMOKTiberiumInfusion">
+		<State
+			Image="Button_UpgradeTiberiumInfusion"
+			Title="Name:UpgradeTiberiumInfusion"
+			Description="DESC:UpgradeTiberiumInfusion" />
+	</ButtonSingleStateData>
+	
+	<UnitAbilityButtonTemplate
+		id="ButtonUpgradeMOKTiberiumInfusion"
+		LogicCommand="Command_PurchaseUpgradeMOKTiberiumInfusion">
+		<Data>
+			<PlayerUpgrade
+				StateData="ButtonStateUpgradeMOKTiberiumInfusion"/>
+		</Data>
+	</UnitAbilityButtonTemplate>
+	
+	<!-- ZOCOM Shockwave -->
+	<ButtonSingleStateData
+		id="ButtonStatePlayerPowerZOCOMShockwaveArtillery" >
+		<State
+			Image="Button_PlayerPowerShockwaveArtillery"
+			Title="Name:PlayerPowerShockwaveArtillery"
+			TypeDescription="TYPE:PlayerPowerShockwaveArtillery"
+			Description="Desc:PlayerPowerShockwaveArtillery" />
+	</ButtonSingleStateData>	
+	
+	<PlayerPowerButtonTemplate
+		id="ButtonZOCOMShockwaveArtillery"
+		SpecialPower="SpecialPowerZOCOM_SpaceCommandShockwaveArtillery">
+		<Data>
+			<TargetedPower
+				RadiusCursor="TargetingDecalShockwaveArtillery"
+				StateData="ButtonStatePlayerPowerZOCOMShockwaveArtillery"/>
+		</Data>
+	</PlayerPowerButtonTemplate>	
+	
+	<!-- RazorDrones Upgrade -->
+	<ButtonSingleStateData
+		id="ButtonStateUpgradeRazorDronesUpgrade" >
+		<State
+			Image="Button_Upgrade_DisintegratorModule"
+			Title="NAME:UpgradeRazorDronesUpgrade_103"
+			Description="DESC:UpgradeRazorDronesUpgrade_103" />
+	</ButtonSingleStateData>	
+	
+	<UnitAbilityButtonTemplate
+		id="ButtonUpgradeRazorDronesUpgrade"
+		LogicCommand="Command_UpgradeRazorDronesUpgrade">
+		<Data>
+			<PlayerUpgrade
+				StateData="ButtonStateUpgradeRazorDronesUpgrade"/>
+		</Data>
+	</UnitAbilityButtonTemplate>	
+	
+	<!-- Blue Shards -->
+	<UnitAbilityButtonTemplate
+		id="ButtonUpgradeBlueShardWeapon"
+		LogicCommand="Command_PurchaseUpgradeBlueShardWeapon">
+		<Data>
+			<PlayerUpgrade
+				StateData="ButtonStateUpgradeBlueShardWeapon"/>
+		</Data>
+	</UnitAbilityButtonTemplate>	
+	
+	<ButtonSingleStateData
+		id="ButtonStateUpgradeBlueShardWeapon" >
+		<State
+			Image="Button_Upgrade_BlueShards"
+			Title="NAME:UpgradeBlueShardWeapon"
+			Description="DESC:UpgradeBlueShardWeapon_103" />
+	</ButtonSingleStateData>
+	
+	<!-- R17 Wormhole -->
+	<ButtonSingleStateData
+		id="ButtonState_Reaper17WormHole">
+		<State
+			Image="Button_PlayerPowerMetaWormhole"
+			Title="NAME:PlayerPowerWormHole"
+			TypeDescription="TYPE:PlayerPowerWormhole"
+			Description="DESC:PlayerPowerWormHole" />
+	</ButtonSingleStateData>	
+	
+	<PlayerPowerButtonTemplate
+		id="Button_Reaper17WormHole"
+		SpecialPower="SpecialPower_Reaper17WormHole">
+		<Data>
+			<MultipleTargetsTargetedPower
+				RadiusCursor="TargetingDecalWormhole"
+				StateData="ButtonState_Traveler59WormHole"
+				TargetMarkerTemplate="AlienWormHoleMarker"
+				TargetCount="2"/>
+		</Data>
+	</PlayerPowerButtonTemplate>	
+	
+	<!-- ST Snipers -->
+	<ButtonSingleStateData
+		id="ButtonStatePlayerPowerSTHunterKillerTeam" >
+		<State
+			Image="Button_PlayerPowerSTHunterKillerTeam"
+			Title="NAME:PlayerPowerSTHunterKillerTeam_103"
+			TypeDescription="TYPE:PlayerPowerHunterKillerTeam"
+			Description="DESC:PlayerPowerSTHunterKillerTeam_103" />
+	</ButtonSingleStateData>
+	
+	<PlayerPowerButtonTemplate
+		id="ButtonSTHunterKillerTeam"
+		SpecialPower="SpecialPowerCallSupportSTHunterKillerTeam">
+		<Data>
+			<TargetedPower
+				RadiusCursor="TargetingDecalHunterKillerTeam"
+				StateData="ButtonStatePlayerPowerSTHunterKillerTeam"/>
+		</Data>
+	</PlayerPowerButtonTemplate>
+
+	<!-- Cultist -->
+	<UnitAbilityButtonTemplate
+		id="ButtonCultistMindControl"
+		LogicCommand="Command_CultistMindControlGetInRange">
+		<Data>
+			<TargetedSpecialPower
+				StateData="ButtonStateCultistMindControl"
+		ValidTargetCursor="Bombard" />
+		</Data>
+	</UnitAbilityButtonTemplate>	
+	
+	<!-- Countermeasures -->
+	<UnitAbilityButtonTemplate
+		id="ButtonComputerCounterMeasures"
+		LogicCommand="Command_ComputerCounterMeasures">
+		<Data>
+			<SpecialPower
+				StateData="ButtonStatePlayerPowerComputerCounterMeasures"/>
+		</Data>
+	</UnitAbilityButtonTemplate>	
+	
+	<PlayerPowerButtonTemplate
+		id="ButtonComputerCounterMeasuresSP"
+		SpecialPower="SpecialPowerComputerCounterMeasures">
+		<Data>
+			<Power
+				StateData="ButtonStatePlayerPowerComputerCounterMeasures"/>
+		</Data>
+	</PlayerPowerButtonTemplate>	
+	
+	
+</AssetDeclaration>

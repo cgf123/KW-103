@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags />
+	<Includes>
+	<!--
+		<Include type="all" source="GBIonCa_weapBeama_new.xml" />		-->
+	
+	</Includes>
+
+
+	<AudioEvent
+		id="GDI_IonCannon_BeamSequence_new"
+		Volume="70%"
+		VolumeShift="-20%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="NORMAL"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="700"
+		MaxRange="1400"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="430"
+			High="430" />
+		<Sound
+			Weight="1000">GBIonCa_weapBeama_new</Sound>
+	</AudioEvent>
+	
+	
+	<AudioEvent
+		id="GDI_IonCannon_Crescendo_new"
+		Volume="79.99999%"
+		VolumeShift="-9.999999%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="NORMAL"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="800"
+		MaxRange="1600"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="1150"
+			High="1150" />
+		<Sound
+			Weight="1000">GBIonCa_weapCresa</Sound>
+	</AudioEvent>
+	
+
+	<AudioEvent
+		id="GDI_IonCannon_Laser1_new"
+		Volume="79.99999%"
+		VolumeShift="-9.999999%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="500"
+		MaxRange="1000"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="16"
+			High="16" />
+		<Sound
+			Weight="1000">GBIonCa_weapLasea</Sound>
+	</AudioEvent>
+
+	<AudioEvent
+		id="GDI_IonCannon_Laser2_new"
+		Volume="79.99999%"
+		VolumeShift="-20%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="500"
+		MaxRange="1000"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="66"
+			High="66" />
+		<Sound
+			Weight="1000">GBIonCa_weapLaseb</Sound>
+	</AudioEvent>
+
+	<AudioEvent
+		id="GDI_IonCannon_Laser3_new"
+		Volume="79.99999%"
+		VolumeShift="-20%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="500"
+		MaxRange="1000"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="133"
+			High="133" />
+		<Sound
+			Weight="1000">GBIonCa_weapLasec</Sound>
+	</AudioEvent>
+
+	<AudioEvent
+		id="GDI_IonCannon_Laser4_new"
+		Volume="79.99999%"
+		VolumeShift="-20%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="500"
+		MaxRange="1000"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="200"
+			High="200" />
+		<Sound
+			Weight="1000">GBIonCa_weapLased</Sound>
+	</AudioEvent>
+
+	<AudioEvent
+		id="GDI_IonCannon_Laser5_new"
+		Volume="79.99999%"
+		VolumeShift="-20%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="500"
+		MaxRange="1000"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="240"
+			High="240" />
+		<Sound
+			Weight="1000">GBIonCa_weapLasee</Sound>
+	</AudioEvent>
+
+	<AudioEvent
+		id="GDI_IonCannon_Laser6_new"
+		Volume="79.99999%"
+		VolumeShift="-20%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="500"
+		MaxRange="1000"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="280"
+			High="280" />
+		<Sound
+			Weight="1000">GBIonCa_weapLasef</Sound>
+	</AudioEvent>
+
+
+	<AudioEvent
+		id="GDI_IonCannon_Laser7_new"
+		Volume="85%"
+		VolumeShift="-20%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="500"
+		MaxRange="1000"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="333"
+			High="333" />
+		<Sound
+			Weight="1000">GBIonCa_weapLaseg</Sound>
+	</AudioEvent>
+
+	<AudioEvent
+		id="GDI_IonCannon_Laser8_new"
+		Volume="85%"
+		VolumeShift="-20%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="500"
+		MaxRange="1000"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="383"
+			High="383" />
+		<Sound
+			Weight="1000">GBIonCa_weapLaseh</Sound>
+	</AudioEvent>
+
+
+	<AudioEvent
+		id="GDI_IonCannon_ShockwaveSequence_new"
+		Volume="130%"
+		VolumeShift="-20%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGHEST"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="1000"
+		MaxRange="2500"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="1800"
+			High="1800" />
+		<Sound
+			Weight="1000">GBIonCa_weapShoca</Sound>
+	</AudioEvent>
+
+
+	<AudioEvent
+		id="GDI_IonCannon_SphereSequence_new"
+		Volume="79.99999%"
+		VolumeShift="-20%"
+		PerFileVolumeShift="0%"
+		MinVolume="0%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD SHROUDED EVERYONE"
+		Control=""
+		MinRange="800"
+		MaxRange="1500"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="SOUNDFX">
+		<PitchShift
+			Low="-10"
+			High="10" />
+		<Delay
+			Low="800"
+			High="800" />
+		<Sound
+			Weight="1000">GBIonCa_weapSphea</Sound>
+	</AudioEvent>	
+	
+	
+	<Multisound id="GDI_IonCannon_WeaponFireMS_new" >
+		<Subsound>AudioEvent:GDI_IonCannon_Laser1_new</Subsound>
+		<Subsound>AudioEvent:GDI_IonCannon_Laser2_new</Subsound>
+		<Subsound>AudioEvent:GDI_IonCannon_Laser3_new</Subsound>
+		<Subsound>AudioEvent:GDI_IonCannon_Laser4_new</Subsound>
+		<Subsound>AudioEvent:GDI_IonCannon_Laser5_new</Subsound>
+		<Subsound>AudioEvent:GDI_IonCannon_Laser6_new</Subsound>
+		<Subsound>AudioEvent:GDI_IonCannon_Laser7_new</Subsound>
+		<Subsound>AudioEvent:GDI_IonCannon_Laser8_new</Subsound> 
+		<Subsound>AudioEvent:GDI_IonCannon_BeamSequence_new</Subsound>
+		<Subsound>AudioEvent:GDI_IonCannon_SphereSequence_new</Subsound>
+		<Subsound>AudioEvent:GDI_IonCannon_Crescendo_new</Subsound>
+		<Subsound>AudioEvent:GDI_IonCannon_ShockwaveSequence_new</Subsound>
+	</Multisound>	
+	
+	<!-- //////////////////////////// END ION CANNON ////////////////////////////// -->
+	
+	<!-- ########################### REDUCED DELAYS ON PACK/UNPACK FOR THESE UNITS ################### -->
+	
+	<AudioEvent
+		id="GDI_Rig_VoicePackedUp_new"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Delay
+			Low="1000"
+			High="1000" />
+		<Sound
+			Weight="1000">GURig_VoiCreateb</Sound>
+	</AudioEvent>
+
+
+	<AudioEvent
+		id="GDI_MCV_VoicePackedUp_new"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Delay
+			Low="2000"
+			High="2000" />
+		<Sound
+			Weight="1000">GUMCV_VoiCreateb</Sound>
+	</AudioEvent>
+	
+	
+	<AudioEvent
+		id="NOD_MCV_VoicePackedUp_new"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Delay
+			Low="2000"
+			High="2000" />
+		<Sound
+			Weight="1000">NuMCV_VoiCreateb</Sound>
+	</AudioEvent>
+
+	<!-- Added Purifier attack-move voices -->
+	<AudioEvent
+		id="NOD_Purifier_VoiceMoveAttack_new"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Sound
+			Weight="1000">NUPurif_voiMovAtta</Sound>
+		<Sound
+			Weight="1000">NUPurif_voiMovAttb</Sound>
+		<Sound
+			Weight="1000">NUPurif_voiMovAttc</Sound>
+		<Sound
+			Weight="1000">NUPurif_voiMovAttd</Sound>	
+		<Sound
+			Weight="1000">NUPurif_voicCreab</Sound>			
+	</AudioEvent>
+	
+	<AudioEvent
+		id="NOD_Purifier_VoiceAttack_new"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Sound
+			Weight="1000">NUPurif_voicAttaa</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttab</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttac</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttad</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttae</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttaf</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttag</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttah</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicAttai</Sound>
+		<Sound
+			Weight="1000">NUPurif_voicCreac</Sound>					
+	</AudioEvent>		
+	
+</AssetDeclaration>	

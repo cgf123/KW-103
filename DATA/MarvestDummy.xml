@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<GameObject
+		id="MarvestDummy"
+		SelectPortrait="Portrait_NeutralSensorPod"
+		ButtonImage="Portrait_NeutralSensorPod"
+		Side="NOD"
+		EditorSorting="UNIT"
+		TransportSlotCount="0"
+		CommandSet="EmptyCommandSet"
+		IsTrainable="false"
+		KindOf="PRELOAD NO_COLLIDE UNATTACKABLE NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY IGNORED_IN_GUI"
+		RadarPriority="UNIT"
+		EditorName="RageGenDummy">
+		<DisplayName>Name:AbilityRageGenerator</DisplayName>
+		<ArmorSet
+			Armor="GDIOrcaSensorPodArmor"
+			DamageFX="NormalDamageFX" />
+		<LocomotorSet
+			Locomotor="HumanLocomotor"
+			Condition="NORMAL"
+			Speed="0.0" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<Physics
+				id="ModuleTag_Physics" />
+			<DestroyDie
+				id="ModuleTag_DestroyDie">
+				<DieMuxData
+					DeathTypes="ALL" 
+				/>
+			</DestroyDie>
+			<AttachUpdate
+				id="ModuleTag_Attach"
+				Range="10.0"
+				Teleport="true"
+				UseGeometry="true"
+				DetachWhenParentHealed="false">
+				<ObjectFilter
+					Rule="ANY"
+					Include="METAUNIT"
+					Relationship="SAME_PLAYER">
+					<IncludeThing>GDIMARV</IncludeThing>
+					<IncludeThing>SteelTalonsMARV</IncludeThing>
+					<IncludeThing>ZOCOMMARV</IncludeThing>					
+				</ObjectFilter>
+			</AttachUpdate>	
+			<FireWeaponUpdate
+				id="1957388F"
+				ActiveWhenDisabled=""
+				HeroModeTrigger="False"
+				ChargingModeTrigger="False"
+				AliveOnly="False">
+				<FireWeaponNugget
+					WeaponName="MetaCrushTiberium"
+					FireDelay="1s"
+					FireInterval="0.5s"
+					OneShot="False" />
+			</FireWeaponUpdate>		
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="999999" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="0.1"
+				Height="0.1" />
+		</Geometry>
+	</GameObject>
+
+	
+</AssetDeclaration>

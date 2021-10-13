@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="us-ascii" ?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Tags />
+	<Includes>
+	</Includes>
+
+	<!-- ****************************************************************** OCLs ************************************************************************** -->
+	
+	<ObjectCreationList
+		id="OCL_GDIOrcaSensorStickyPod_Ally">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED">
+			<CreateObject>GDIOrcaSensorStickyPod_Ally</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+
+
+	<ObjectCreationList
+		id="OCL_SpecialPowerRedShadowStrikeTeamMOK">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS DONT_SET_PRODUCER ISSUE_MOVE_AFTER_CREATION IGNORE_COMMANDPOINT_LIMIT"
+			Disposition="LIKE_EXISTING"
+			UseUpgradedLocomotor="true">
+			<Offset
+				x="0"
+				y="0"
+				z="100"></Offset>
+			<CreateObject>MarkedOfKaneShadowSquad_Veteran</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS DONT_SET_PRODUCER ISSUE_MOVE_AFTER_CREATION IGNORE_COMMANDPOINT_LIMIT"
+			Disposition="LIKE_EXISTING"
+			UseUpgradedLocomotor="true">
+			<Offset
+				x="-20"
+				y="50"
+				z="100"></Offset>
+			<CreateObject>MarkedOfKaneShadowSquad_Veteran</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	<!-- MOK Avatar husk + Commandeer MOK Bikes fix -->
+
+	<ObjectCreationList
+		id="MOKAvatarHuskReplace">
+		<CreateObject
+			Options="CLEAR_REMOVEABLES USE_CREATORS_HEALTH_AS_BASE COPY_CREATORS_UPGRADES PRESERVE_LAYER"
+			Disposition="LIKE_EXISTING"
+			TempModelCondition="USER_5"
+			TempModelConditionTime="2.5s"
+			DisabledWhileBusy="true"
+			StartingBusyTime="2.5s"
+			MinHealth="0.5"
+			MaxHealth="0.5">
+			<CreateObject>MarkedOfKaneAvatar</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+
+	<ObjectCreationList
+		id="MOKAvatarDieOCL">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS COPY_CREATORS_UPGRADES PRESERVE_LAYER"
+			Disposition="LIKE_EXISTING"
+			TempModelCondition="USER_2"
+			TempModelConditionTime="4.0s"
+			InvulnerableTime="4s" 
+			MinHealth="0.5"
+			MaxHealth="0.5">
+			<CreateObject>MarkedOfKaneAvatarHusk</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	
+</AssetDeclaration>

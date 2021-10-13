@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+  <Tags></Tags>
+  <Includes>
+
+	<!-- Note: No references because 103base stream takes care of that stuff 
+	<Include type="reference" source="global.xml" /> 
+	<Include type="reference" source="static.xml" />-->
+	<!-- ======================== GLOBALS ======================= -->
+	<Include type="all" source="Weapon.xml" />
+	<Include type="all" source="Armor.xml" />
+	<Include type="all" source="Locomotors.xml" />	
+	<Include type="all" source="AttributeModifier.xml" />		
+	<Include type="all" source="OCL.xml" />	
+	<Include type="all" source="SpecialPowerTemplates.xml" />		
+	<Include type="all" source="LogicCommands.xml" />	
+	<Include type="all" source="Experience.xml" />
+	<Include type="all" source="Upgrades.xml" />
+	<Include type="all" source="Buttons.xml" />		
+	<Include type="all" source="FXList.xml" />	
+	<Include type="all" source="Sounds.xml" />	
+	
+	<Include type="all" source="PlayerSpellbook.xml" />
+	
+	<Include type="all" source="Particles.xml" />	
+	<!-- 
+	<Include type="all" source="AIStates.xml" />		-->
+
+	<Include type="all" source="Metagamestatic.xml" />	
+	<!--
+	<Include type="all" source="MPColors.xml" />	
+	-->
+	
+	
+	<!-- ============================== ART ========================== -->
+	<Include type="all" source="ART:Textures.xml" />		
+
+	<Include type="all" source="ART:Battlebase\GBBTLEBASE.UGRAILMAIN.w3x" />		
+	<Include type="all" source="ART:Battlebase\GBBTLEBASE.UG_RAILBARREL1.w3x" />
+	<Include type="all" source="ART:Battlebase\GBBTLEBASE.UGRAILACCELERATORMAIN.w3x" />		
+	<Include type="all" source="ART:Battlebase\GBBTLEBASE.UG_RAILACCELERATORBARREL1.w3x" />	
+	<Include type="all" source="ART:Battlebase\GBBTLEBASE1_CTR.w3x" />			
+	<Include type="all" source="ART:Battlebase\GBBTLEBASE1_HRC.w3x" />		
+	
+	<Include type="all" source="ART:NODRef\NBREFINERY_ASN_CTR1.w3x" />		
+	<Include type="all" source="ART:NODRef\NBREFINERY_ASK1.w3x" />		
+
+	<!--
+	<Include type="all" source="Art\NBPort\NBPort_AN.w3x" /> 	
+	<Include type="all" source="Art\NBPort\NBPort_D2_NEW.w3x" />	
+	-->
+
+	<Include type="all" source="ART:AlienRef\ABTIBERTOWBLD_SKN1.w3x" />		
+	<Include type="all" source="ART:AlienRef\ABTIBERTOWBLD_SKL1.w3x" />		
+
+	<!--
+	<Include type="all" source="ART:T59Devourer\AU_INITIATOR_SKN.w3x" />		
+	<Include type="all" source="ART:T59Devourer\AU_INITIATOR_SKN.AU_INITIATOR.w3x" />		
+	<Include type="all" source="ART:T59Devourer\AU_INITIATORR.w3x" />		
+	<Include type="all" source="ART:T59Devourer\AU_INITIATORR.AU_INITIATOR.w3x" />		-->	
+	
+	<!-- =========================== NEUTRALS ========================= -->
+	<Include type="all" source="TibFieldHarv.xml" />					
+	<Include type="all" source="RDrones.xml" />			
+	<Include type="all" source="DummyProj.xml" />	 <!--
+	<Include type="all" source="Beacon.xml" />			-->
+	
+	<!-- ============================= GDI ============================== -->
+	<Include type="all" source="GDIMARV.xml" />	
+	<Include type="all" source="STMARV.xml" />	
+	<Include type="all" source="ZOCOMMARV.xml" />	
+	<Include type="all" source="MarvestDummy.xml" />		
+	
+	<Include type="all" source="GDIMCV.xml" />	
+	<Include type="all" source="STMCV.xml" />	
+	<Include type="all" source="ZOCOMMCV.xml" />
+	<Include type="all" source="GDIConyard.xml" />	
+	<Include type="all" source="STConyard.xml" />	
+	<Include type="all" source="ZOCOMConyard.xml" />
+
+	<Include type="all" source="MCVBuildDummy.xml" />	
+
+	<Include type="all" source="GDIRef.xml" />	
+	<Include type="all" source="STRef.xml" />	
+	<Include type="all" source="ZOCOMRef.xml" />		
+	
+	<Include type="all" source="GDIEpicWF.xml" />	
+	<Include type="all" source="STEpicWF.xml" />	
+	<Include type="all" source="ZOCOMEpicWF.xml" />			
+	
+	<Include type="all" source="GDICommandPost.xml" />			
+
+	<Include type="all" source="ZOCOMCommandPost.xml" />				
+	
+	<Include type="all" source="STCommandPost.xml" />			
+	<Include type="all" source="STTechCenter.xml" />		
+	<Include type="all" source="STAirTower.xml" />		
+
+	<Include type="all" source="GDIArmory.xml" />			
+	<Include type="all" source="ZOCOMArmory.xml" />		
+	
+	<Include type="all" source="ZOCOMSpaceCommandUplink.xml" />		
+
+	<Include type="all" source="GDIWarfac.xml" />		
+	<Include type="all" source="ZOCOMWarfac.xml" />	
+	<Include type="all" source="STWarfac.xml" />		
+	
+	<Include type="all" source="AirSupports.xml" />			
+
+	<Include type="all" source="RifleSoldiers.xml" />				
+		
+	<Include type="all" source="GDIRifleSoldierSquads.xml" />			
+	<Include type="all" source="STRifleSoldierSquads.xml" />			
+	<Include type="all" source="ZOCOMRifleSoldierSquads.xml" />			
+
+	<Include type="all" source="GDIFoxhole.xml" />					
+
+	<Include type="all" source="Snipers.xml" />	
+	<Include type="all" source="SniperSquads.xml" />				
+	
+	<Include type="all" source="MissileSoldiers.xml" />				
+	<Include type="all" source="GDIMissileSoldierSquads.xml" />			
+	<Include type="all" source="STMissileSoldierSquads.xml" />			
+	<Include type="all" source="ZOCOMMissileSoldierSquads.xml" />						
+	
+	<Include type="all" source="GDIMissileSoldierMissileProj.xml" />				
+	<Include type="all" source="GDIMammothRocketPodMissileProj.xml" />				
+
+	<Include type="all" source="ZOCOMZRProj.xml" />				
+	<Include type="all" source="ZOCOMOrcaProj.xml" />				
+
+	<Include type="all" source="GDIFirehawk.xml" />			
+	<Include type="all" source="STFirehawk.xml" />			
+	<Include type="all" source="ZOCOMFirehawk.xml" />			
+	<Include type="all" source="FirehawkBombProj.xml" />		
+
+	<Include type="all" source="Orcas.xml" />				
+	<Include type="all" source="OrcaSensorPods.xml" />			
+	<Include type="all" source="OrcaPulseScanPing.xml" />			
+
+	<Include type="all" source="RadarScan.xml" />			
+	
+	<Include type="all" source="GDIV35Ox_Summoned.xml" />				
+	<Include type="all" source="GDIV35Ox_SummonedVehicle.xml" />	
+	<Include type="all" source="STV35Ox_Summoned.xml" />				
+	<Include type="all" source="STV35Ox_SummonedVehicle.xml" />	
+	<Include type="all" source="STV35Ox_CallSupportHunterKillerTeam.xml" />		
+	<Include type="all" source="ZOCOMV35Ox_Summoned.xml" />				
+	<Include type="all" source="ZOCOMV35Ox_SummonedVehicle.xml" />		
+	
+	
+	<Include type="all" source="STTitan.xml" />	
+	<Include type="all" source="STWolverine.xml" />		
+	<Include type="all" source="STMammoth.xml" />	
+	<Include type="all" source="STMRT.xml" />
+
+	<Include type="all" source="GDIJuggernaut.xml" />
+	<Include type="all" source="STBehemoth.xml" />
+
+	<Include type="all" source="GDIPred.xml" />	
+	<Include type="all" source="GDIMammoth.xml" />		
+
+	<Include type="all" source="ZOCOMPred.xml" />	
+	<Include type="all" source="ZOCOMMammoth.xml" />		
+	
+	<Include type="all" source="GDIAPC.xml" />		
+	<Include type="all" source="ZOCOMAPC.xml" />		
+	
+	<Include type="all" source="GDICommando.xml" />			
+	<Include type="all" source="ZOCOMCommando.xml" />				
+
+	<Include type="all" source="GDIHammerhead.xml" />		
+	<Include type="all" source="ZOCOMHammerhead.xml" />		
+	<Include type="all" source="STHammerhead.xml" />		
+	
+	<Include type="all" source="GDIPitbull.xml" />	
+	<Include type="all" source="STPitbull.xml" />	
+	<Include type="all" source="ZOCOMPitbull.xml" />		
+	
+	<Include type="all" source="GDISonicEmitter.xml" />			
+	<Include type="all" source="ZOCOMSonicEmitter.xml" />		
+	
+	<Include type="all" source="GDIWatchtower.xml" />			
+	<Include type="all" source="STWatchtower.xml" />			
+	<Include type="all" source="ZOCOMWatchtower.xml" />			
+
+	<Include type="all" source="GDIAABattery.xml" />			
+	<Include type="all" source="STAABattery.xml" />			
+	<Include type="all" source="ZOCOMAABattery.xml" />			
+
+	<Include type="all" source="GDIGolumCannon.xml" />			
+	<Include type="all" source="STGolumCannon.xml" />			
+	<Include type="all" source="ZOCOMGolumCannon.xml" />				
+	
+	<Include type="all" source="GDIShatt.xml" />			
+	<Include type="all" source="ZOCOMShatt.xml" />		
+	
+	<Include type="all" source="Grenadiers.xml" />			
+	<Include type="all" source="GDIGrenadierSquad.xml" />		
+	<Include type="all" source="STGrenadierSquad.xml" />		
+	<Include type="all" source="ZOCOMGrenadierSquad.xml" />	
+
+	<Include type="all" source="ZOCOMIonCannonControl.xml" />	
+
+	<Include type="all" source="GDIGrenadeSoldierGrenadeProjectile.xml" />			
+	<Include type="all" source="MARVGrenadeSoldierWeaponProjectile.xml" />		
+
+	<Include type="all" source="GDIZoneInf.xml" />		
+	<Include type="all" source="ZOCOMZoneInf.xml" />		
+	<Include type="all" source="STZoneInf.xml" />		
+	
+	<Include type="all" source="GDIDropPod.xml" />			
+	<Include type="all" source="ZOCOMDropPod.xml" />			
+	
+	<Include type="all" source="Slingshots.xml" />		
+	
+	<Include type="all" source="RigBattleBase.xml" />	
+
+	<Include type="all" source="GDIHarv.xml" />	
+	<Include type="all" source="STHarv.xml" />		
+	<Include type="all" source="ZOCOMHarv.xml" />	
+	
+	<Include type="all" source="GDISurveyor.xml" />		
+	<Include type="all" source="STSurveyor.xml" />		
+	<Include type="all" source="ZOCOMSurveyor.xml" />		
+	
+	<Include type="all" source="GDIOutpost.xml" />		
+	<Include type="all" source="STOutpost.xml" />		
+	<Include type="all" source="ZOCOMOutpost.xml" />							
+	
+	<Include type="all" source="GDIEngineer.xml" />	
+	<Include type="all" source="STCombatEngi.xml" />		
+	<Include type="all" source="ZOCOMEngineer.xml" />		
+	
+	<!-- ========================= NOD ======================== -->
+	
+	<Include type="all" source="NODMCV.xml" />	
+	<Include type="all" source="BHMCV.xml" />	
+	<Include type="all" source="MOKMCV.xml" />
+	<Include type="all" source="NODConyard.xml" />	
+	<Include type="all" source="BHConyard.xml" />	
+	<Include type="all" source="MOKConyard.xml" />		
+		
+	<Include type="all" source="NODOutpost.xml" />		
+	<Include type="all" source="BHOutpost.xml" />		
+	<Include type="all" source="MOKOutpost.xml" />				
+	
+	<Include type="all" source="NODRef.xml" />	
+	<Include type="all" source="BHRef.xml" />	
+	<Include type="all" source="MOKRef.xml" />		
+	
+	<Include type="all" source="NODEpicWF.xml" />	
+	<Include type="all" source="BHEpicWF.xml" />	
+	<Include type="all" source="MOKEpicWF.xml" />			
+		
+	<Include type="all" source="TVD.xml" />			
+	<Include type="all" source="NodTibChemPlant.xml" />			
+	<Include type="all" source="BHTibChemPlant.xml" />	
+	<Include type="all" source="MOKTibChemPlant.xml" />		
+
+	<Include type="all" source="NODAttackBikeRocketProjectiles.xml" />		
+
+	<Include type="all" source="NODAttackBike.xml" />			
+	<Include type="all" source="BHAttackBike.xml" />			
+	<Include type="all" source="MOKAttackBike.xml" />			
+	
+	<Include type="all" source="NODStealthTank.xml" />			
+	<Include type="all" source="MOKStealthTank.xml" />				
+
+	<Include type="all" source="NODVertigo.xml" />			
+	<Include type="all" source="MOKVertigo.xml" />				
+	
+	<Include type="all" source="NODCarryallInfantry.xml" />	
+	<Include type="all" source="NODCarryallVehicle.xml" />		
+	
+	<Include type="all" source="MOKSecretShrine.xml" />		
+	
+	<Include type="all" source="BHHangar.xml" />	
+		
+	<Include type="all" source="RageGenDummy.xml" />		
+	<Include type="all" source="NODRedeemer.xml" />	
+	<Include type="all" source="BHRedeemer.xml" />	
+	<Include type="all" source="MOKRedeemer.xml" />	
+	
+	<Include type="all" source="NODReckoner.xml" />	
+	<Include type="all" source="BHReckoner.xml" />	
+	<Include type="all" source="MOKReckoner.xml" />		
+	
+	<Include type="all" source="NODTechCenter.xml" />					
+	<Include type="all" source="MOKTechCenter.xml" />		
+
+	<Include type="all" source="MOKDisruptionTower.xml" />		
+
+	<Include type="all" source="NODBeamTarget.xml" />			
+
+	<Include type="all" source="NODBeamcannon.xml" />			
+	<Include type="all" source="BHBeamcannon.xml" />			
+	<Include type="all" source="MOKBeamcannon.xml" />			
+	
+	<Include type="all" source="Venoms.xml" />			
+
+	<Include type="all" source="NODVoK.xml" />	
+	<Include type="all" source="BHVoK.xml" />	
+	<Include type="all" source="MOKVoK.xml" />	
+	
+	<Include type="all" source="MOKBuggy.xml" /> 
+	<Include type="all" source="BHBuggy.xml" /> 				
+	<Include type="all" source="NODBuggy.xml" /> 					
+		
+	<Include type="all" source="NODFlameTank.xml" />					
+	<Include type="all" source="BHFlameTank.xml" />			
+	
+	<Include type="all" source="MOKTibtrooper.xml" />		
+	<Include type="all" source="MOKTibtrooperSquad.xml" />		
+	
+	<Include type="all" source="Fanatics.xml" />			
+	<Include type="all" source="FanaticSquads.xml" />		
+
+	<Include type="all" source="NODObelisk.xml" />			
+	<Include type="all" source="BHObelisk.xml" />			
+	<Include type="all" source="MOKObelisk.xml" />		
+	
+	<Include type="all" source="NodTurrets/NODShredderTurretHub.xml" />
+	<Include type="all" source="NodTurrets/BHShredderTurretHub.xml" />
+	<Include type="all" source="NodTurrets/MOKShredderTurretHub.xml" />
+	<Include type="all" source="NodTurrets/NODShredderTurretSpawn.xml" />
+	<Include type="all" source="NodTurrets/BHShredderTurretSpawn.xml" />
+	<Include type="all" source="NodTurrets/MOKShredderTurretSpawn.xml" />
+
+	<Include type="all" source="NodTurrets/NODRocketBunkerHub.xml" />
+	<Include type="all" source="NodTurrets/BHRocketBunkerHub.xml" />
+	<Include type="all" source="NodTurrets/MOKRocketBunkerHub.xml" />	
+	<Include type="all" source="NodTurrets/NODRocketBunkerSpawn.xml" />	<!-- This spawn is shared by all the hubs -->
+
+	<Include type="all" source="NodTurrets/NODLaserCannonHub.xml" />
+	<Include type="all" source="NodTurrets/BHLaserCannonHub.xml" />
+	<Include type="all" source="NodTurrets/MOKLaserCannonHub.xml" />		
+	<Include type="all" source="NodTurrets/NODLaserCannonSpawn.xml" />	<!-- This spawn is shared by all the hubs -->
+	
+	<Include type="all" source="NODCyborg.xml" />			
+	<Include type="all" source="NODCyborgSquad.xml" />		
+	<Include type="all" source="MOKAwakened.xml" />		
+	<Include type="all" source="MOKAwakenedSquad.xml" />		
+	<Include type="all" source="MOKEnlightened.xml" />		
+	<Include type="all" source="MOKEnlightenedSquad.xml" />		
+
+	<Include type="all" source="Shadows.xml" />		
+	<Include type="all" source="NODShadowSquad.xml" />		
+	<Include type="all" source="MOKShadowSquad.xml" />				
+	<Include type="all" source="NODShadowSquad_Veteran.xml" />		
+	<Include type="all" source="MOKShadowSquad_Veteran.xml" />			
+
+	<Include type="all" source="NODScorpion.xml" />		
+	<Include type="all" source="BHScorpion.xml" />		
+	<Include type="all" source="MOKScorpion.xml" />			
+
+	<Include type="all" source="Avatars.xml" />		
+	<Include type="all" source="BHPurifier.xml" />			
+	<Include type="all" source="BHMantis.xml" />
+	
+	<Include type="all" source="NODMilitant.xml" />		
+	<Include type="all" source="NODMilitantSquad.xml" />			
+	
+	<Include type="all" source="MilitantRockets.xml" />		
+	<Include type="all" source="MilitantRocketSquads.xml" />		
+	
+	<Include type="all" source="BHConfessor.xml" />		
+	<Include type="all" source="NODConfessor.xml" />		
+	
+	<Include type="all" source="BHConfessorSquad.xml" />		
+	<Include type="all" source="BHDisciple.xml" />	
+
+	<Include type="all" source="NODCommando.xml" />			
+	<Include type="all" source="MOKCommando.xml" />			
+	<Include type="all" source="BHCommando.xml" />			
+	
+	<Include type="all" source="Blackhands.xml" />	
+	<Include type="all" source="NODBlackHandSquad.xml" />	
+	<Include type="all" source="BHBlackHandSquad.xml" />
+
+	<Include type="all" source="NODSpecter.xml" />		
+	<Include type="all" source="BHSpecter.xml" />		
+	<Include type="all" source="MOKSpecter.xml" />			
+	
+	<Include type="all" source="OperationsCenters.xml" />	
+
+	<Include type="all" source="DisruptionPod.xml" />	
+	<Include type="all" source="ShadowBeacon.xml" />
+	
+	<Include type="all" source="NODHarv.xml" />	
+	<Include type="all" source="BHHarv.xml" />		
+	<Include type="all" source="MOKHarv.xml" />	
+	
+
+	<Include type="all" source="NodEmissary.xml" />		
+	<Include type="all" source="BHEmissary.xml" />					
+	<Include type="all" source="MOKEmissary.xml" />			
+	
+	<Include type="all" source="NODSaboteur.xml" />	
+	<Include type="all" source="MOKSaboteur.xml" />		
+	<Include type="all" source="BHSaboteur.xml" />		
+		
+	<!-- ============================ SCRIN ================================ -->
+	
+	<Include type="all" source="AlienMCV.xml" />	
+	<Include type="all" source="R17MCV.xml" />	
+	<Include type="all" source="T59MCV.xml" />
+
+	<Include type="all" source="AlienMCVUnpacking.xml" />	
+	<Include type="all" source="R17MCVUnpacking.xml" />	
+	<Include type="all" source="T59MCVUnpacking.xml" />
+	
+	<Include type="all" source="AlienConyard.xml" />	
+	<Include type="all" source="R17Conyard.xml" />	
+	<Include type="all" source="T59Conyard.xml" />
+
+	<Include type="all" source="AlienTechCenter.xml" />						
+	<Include type="all" source="R17TechCenter.xml" />						
+	<Include type="all" source="T59TechCenter.xml" />						
+	
+	<Include type="all" source="AlienOutpost.xml" />		
+	<Include type="all" source="T59Outpost.xml" />		
+	<Include type="all" source="R17Outpost.xml" />			
+
+	<Include type="all" source="AlienStormColumn.xml" />			
+	<Include type="all" source="R17StormColumn.xml" />		
+	<Include type="all" source="T59StormColumn.xml" />		
+
+	<Include type="all" source="AlienSporePod.xml" />		
+	<Include type="all" source="T59SporePod.xml" />		
+	<Include type="all" source="R17GrowthStimulator.xml" />		
+
+	<Include type="all" source="T59TemporalWormhole.xml" />		
+
+	<Include type="all" source="AlienStasisChamber.xml" />		
+	<Include type="all" source="T59StasisChamber.xml" />		
+	<Include type="all" source="R17StasisChamber.xml" />		
+
+	<Include type="all" source="AlienRef.xml" />	
+	<Include type="all" source="R17Ref.xml" />	
+	<Include type="all" source="T59Ref.xml" />		
+
+	<Include type="all" source="AlienEpicWF.xml" />	
+	<Include type="all" source="R17EpicWF.xml" />	
+	<Include type="all" source="T59EpicWF.xml" />			
+
+	<Include type="all" source="AlienPhotonCannon.xml" />		
+	<Include type="all" source="R17PhotonCannon.xml" />		
+	<Include type="all" source="T59PhotonCannon.xml" />			
+
+	<Include type="all" source="AlienPlasmaMissileBattery.xml" />		
+	<Include type="all" source="R17PlasmaMissileBattery.xml" />		
+	<Include type="all" source="T59PlasmaMissileBattery.xml" />		
+
+
+	<Include type="all" source="TibScanDummy.xml" />	
+	
+	<Include type="all" source="AlienControlCenter.xml" />	
+	<Include type="all" source="R17ControlCenter.xml" />	
+	<Include type="all" source="T59ControlCenter.xml" />			
+	
+	<Include type="all" source="AlienAirfield.xml" />	
+	<Include type="all" source="R17Airfield.xml" />	
+	<Include type="all" source="T59Airfield.xml" />				
+	
+	<Include type="all" source="PhaseDummy.xml" />	
+	
+	<Include type="all" source="IonStormTemp.xml" />		
+	<Include type="all" source="IonStorm.xml" />		
+	<Include type="all" source="PACIonStorm.xml" />		
+	
+	<Include type="all" source="AlienHexapod.xml" />	
+	<Include type="all" source="R17Hexapod.xml" />	
+	<Include type="all" source="T59Hexapod.xml" />	
+
+	<Include type="all" source="AlienMastermind.xml" />	
+	<Include type="all" source="T59Prodigy.xml" />
+	<Include type="all" source="AOEMCDummy.xml" />		
+
+	<Include type="all" source="AlienPAC.xml" />
+	<Include type="all" source="T59PAC.xml" />	
+	<Include type="all" source="AlienDevastator.xml" />
+	<Include type="all" source="T59Devastator.xml" />		
+
+	<Include type="all" source="AlienInvaderFighter.xml" />		
+
+	<Include type="all" source="AlienSeeker.xml" />	
+	<Include type="all" source="R17Seeker.xml" />	
+	<Include type="all" source="T59Seeker.xml" />	
+
+	<Include type="all" source="AlienStormrider.xml" />		
+	<Include type="all" source="T59Stormrider.xml" />		
+	<Include type="all" source="R17Stormrider.xml" />			
+	
+	<Include type="all" source="AlienGunwalker.xml" />				
+	<Include type="all" source="T59Gunwalker.xml" />			
+	<Include type="all" source="R17Shardwalker.xml" />			
+	
+	<Include type="all" source="AlienDevourer.xml" />			
+	<Include type="all" source="R17Devourer.xml" />		
+	<Include type="all" source="T59Devourer.xml" />		
+	
+	<Include type="all" source="AlienTripod.xml" />	
+	<Include type="all" source="T59Tripod.xml" />		
+	<Include type="all" source="R17Tripod.xml" />	
+	
+	<Include type="all" source="T59Cultist.xml" />		
+	<Include type="all" source="T59CultistSquad.xml" />		
+
+	<Include type="all" source="AlienSignalTransmitter.xml" />		
+	<Include type="all" source="R17SignalTransmitter.xml" />		
+	<Include type="all" source="T59SignalTransmitter.xml" />		
+	
+	<Include type="all" source="AlienCrystalShield.xml" />		
+	
+	<Include type="all" source="AlienTibHive.xml" />			
+	<Include type="all" source="AlienLightningSpike.xml" />			
+
+	<Include type="all" source="AlienBuzzers.xml" />			
+
+	<Include type="all" source="AlienBuzzerHive.xml" />			
+	<Include type="all" source="R17BuzzerHive.xml" />			
+	<Include type="all" source="T59BuzzerHive.xml" />			
+
+	<Include type="all" source="Mechapede.xml" />	
+	<Include type="all" source="AlienMechaSquad.xml" />	
+	<Include type="all" source="R17MechaSquad.xml" />		
+	<Include type="all" source="T59MechaSquad.xml" />			
+
+	<Include type="all" source="AlienHarv.xml" />	
+	<Include type="all" source="R17Harv.xml" />		
+	<Include type="all" source="T59Harv.xml" />
+
+	<Include type="all" source="Ravagers.xml" />
+	<Include type="all" source="RavagerSquads.xml" />
+
+	<Include type="all" source="Shocktroopers.xml" />
+	<Include type="all" source="ShocktrooperSquads.xml" />
+
+	<Include type="all" source="RazorDrones.xml" />
+	<Include type="all" source="RazorDroneSquads.xml" />	
+	
+	<Include type="all" source="AlienReconstructionBaseSpawned.xml" />
+	
+	<Include type="all" source="AlienExplorer.xml" />			
+	<Include type="all" source="R17Explorer.xml" />
+	<Include type="all" source="T59Explorer.xml" />		
+			
+	<Include type="all" source="AlienAssimilator.xml" />	
+	<Include type="all" source="T59Assimilator.xml" />		
+	
+  </Includes>
+</AssetDeclaration>

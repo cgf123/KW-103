@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xai="uri:ea.com:eala:asset:instance">
+	<Tags></Tags>
+	<Includes>
+		<Include
+			type="all"
+			source="ART:FX_RPG.w3x" />
+	</Includes>
+	<GameObject
+		id="GDIMissileSoldierMissileProjectile"
+		Side="GDI"
+		EditorSorting="SYSTEM"
+		KindOf="PROJECTILE SMALL_MISSILE DEFLECT_BY_SPECIAL_POWER NO_COLLIDE HIDE_IF_FOGGED"
+		EditorName="GDIMissileSoldierMissileProjectile">
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_ScriptedModelDraw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="W3DContainer:FX_RPG" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="orcamissiletrail"
+						FollowBone="true" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<FXListBehavior
+				id="ModuleTag_FXLists">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_GDI_MissileSoldier_MissileImpactExplosion" />
+			</FXListBehavior>
+			<DestroyDie
+				id="ModuleTag_Die">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</DestroyDie>
+			<BezierProjectile
+				id="ModuleTag_BezierProjectileBehavior"
+				FirstHeightMin="0"
+				FirstHeightMax="0"
+				SecondHeightMin="0"
+				SecondHeightMax="0"
+				FirstPercentIndent="33"
+				SecondPercentIndent="66"
+				GroundHitFX="FX_GDIMissleMiss"
+				MaxDistanceReachedFX="FX_GDIMissleSmallHit"
+				OrientToFlightPath="true"
+				CurveFlattenMinDist="300"
+				SidewaysDrift="20"
+				FlightPathAdjustDistPerSecond="100.0"
+				MaxDistanceToTravel="600.0"
+				DetonateCallsKill="true" 
+				/>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_ActiveBody"
+				MaxHealth="100.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="SPHERE"
+				MajorRadius="0.8"></Shape>
+		</Geometry>
+		<VisionInfo
+			VisionRange="0" />
+	</GameObject>
+	
+	<GameObject
+		id="GDIMissileSoldierMissileProjectile_Veteran"
+		Side="GDI"
+		EditorSorting="SYSTEM"
+		KindOf="PROJECTILE SMALL_MISSILE DEFLECT_BY_SPECIAL_POWER NO_COLLIDE HIDE_IF_FOGGED"
+		EditorName="GDIMissileSoldierMissileProjectile_Veteran">
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_ScriptedModelDraw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="W3DContainer:FX_RPGHeroic" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="OrcaMissileTrailHeroic"
+						FollowBone="true" />	
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<FXListBehavior
+				id="ModuleTag_FXLists">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_GDI_MissileSoldier_MissileImpactExplosion" />
+			</FXListBehavior>
+			<DestroyDie
+				id="ModuleTag_Die">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</DestroyDie>
+			<BezierProjectile
+				id="ModuleTag_BezierProjectileBehavior"
+				FirstHeightMin="0"
+				FirstHeightMax="0"
+				SecondHeightMin="0"
+				SecondHeightMax="0"
+				FirstPercentIndent="33"
+				SecondPercentIndent="66"
+				GroundHitFX="FX_GDIMissleMissHeroic"
+				MaxDistanceReachedFX="FX_GDIMissleSmallHit"
+				OrientToFlightPath="true"
+				CurveFlattenMinDist="300"
+				SidewaysDrift="20"
+				FlightPathAdjustDistPerSecond="100.0"
+				MaxDistanceToTravel="600.0"
+				DetonateCallsKill="true" 
+				/>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_ActiveBody"
+				MaxHealth="100.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="SPHERE"
+				MajorRadius="0.8"></Shape>
+		</Geometry>
+		<VisionInfo
+			VisionRange="0" />
+	</GameObject>	
+	
+</AssetDeclaration>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Tags />
+	<Includes>
+	</Includes>
+
+	<!-- ////////////////////////////////////////////////////////////////////// UPGRADES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+	<UpgradeTemplate id="Upgrade_HighSpeed1"
+		Type="OBJECT"	/>
+	
+	<UpgradeTemplate id="Upgrade_MiniMCV_GDI"
+		DisplayName="NAME:GDIWarFactory"
+		Type="PLAYER" />
+
+	<UpgradeTemplate id="Upgrade_MiniMCV_ALIEN"
+		DisplayName="NAME:ALIENGateway"
+		Type="PLAYER" />
+
+	<UpgradeTemplate id="Upgrade_MiniMCV_NOD"
+		DisplayName="NAME:NODDropZone"
+		Type="PLAYER" />	
+	
+	<UpgradeTemplate id="BasePurchasableUpgrade"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled" />	
+		
+	<!-- Battlebase/Guardian Railguns now ST-Exclusive!!! -->
+	<!--
+	<UpgradeTemplate id="Upgrade_GDIArmoryRailgunTech"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:GDIRailGuns"
+		AcquireHint="UpgradePrereq:GDIRailGuns"
+		TypeDescription="UpgradeType:GDIRailGuns"
+		Description="UpgradeDesc:GDIRailGuns"
+		Type="PLAYER"
+		BuildTime="90.0s"
+		BuildCost="3000"
+		ResearchSound="AudioEvent:GDI_RailCannon_Upgrade"
+		IconImage="Button_UpgradeRailGun"
+	/>		-->
+		
+	
+	<UpgradeTemplate id="Upgrade_BlackHandSecretShrinePurifyingFlame"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:BlackHandPurifyingFlame"
+		AcquireHint="UpgradePrereq:BlackHandPurifyingFlame"
+		TypeDescription="UpgradeType:BlackHandPurifyingFlame"
+		Description="UpgradeDesc:BlackHandPurifyingFlame"
+		Type="PLAYER"
+		BuildTime="60.0s"
+		BuildCost="2500"
+		ResearchSound="Multisound:NOD_PurifyingFlame_UpgradeMS"
+		IconImage="Button_Upgrade_PurifyingFlame">
+	</UpgradeTemplate>		
+		
+	<UpgradeTemplate id="Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:MarkedOfKaneTechCenterSuperChargedParticleBeam"
+		AcquireHint="UpgradePrereq:MarkedOfKaneSuperChargedParticleBeam"
+		TypeDescription="UpgradeType:MarkedOfKaneSuperChargedParticleBeam"
+		Description="UpgradeDesc:MarkedOfKaneSuperChargedParticleBeam"
+		Type="PLAYER"
+		BuildTime="60.0s"
+		BuildCost="2000"
+		ResearchSound="AudioEvent:NOD_Enlightened_SuperChargedParticleBeamUpgrade"
+		IconImage="Button_Upgrade_SuperCharBeam">
+	</UpgradeTemplate>
+		
+	<UpgradeTemplate id="Upgrade_NODTechCenterTibCoreMissiles"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:NODTibCoreMissiles"
+		AcquireHint="UpgradePrereq:NODTibCoreMissiles"
+		TypeDescription="UpgradeType:NODTibCoreMissiles"
+		Description="UpgradeDesc:NODTibCoreMissiles"
+		Type="PLAYER"
+		BuildTime="75.0s"
+		BuildCost="2500"
+		ResearchSound="AudioEvent:NOD_TiberiumCoreMissile_Upgrade"
+		IconImage="Button_Upgrade_TibCoreMissiles">
+	</UpgradeTemplate>
+
+	<UpgradeTemplate id="Upgrade_AlienReactorForcefieldGenerator"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ALIENForcefieldGenerators"
+		AcquireHint="UpgradePrereq:ALIENForcefieldGenerators"
+		TypeDescription="UpgradeType:ALIENForcefieldGenerators"
+		Description="UpgradeDesc:ALIENForcefieldGenerators"
+		Type="PLAYER"
+		BuildTime="90.0s"
+		BuildCost="3000"
+		ResearchSound="AudioEvent:ALI_ForcefieldGenerator_Upgrade"
+		IconImage="Button_UpgradeForcefieldGenerator"
+	/>	
+	
+	
+	<UpgradeTemplate id="Upgrade_NODDozerBlades"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ScorpionDozerBlades"
+		AcquireHint="UpgradePrereq:ScorpionDozerBlades"
+		TypeDescription="UpgradeType:ScorpionDozerBlades"
+		Description="UpgradeDesc:ScorpionDozerBlades"
+		Type="PLAYER"
+		BuildCost="1500"
+		BuildTime="45s"
+		ResearchSound="AudioEvent:NOD_OperationsCenter_DozerBladeUpgrade"
+		IconImage="Button_UpgradeDozerBlades"
+	/>
+
+	<UpgradeTemplate id="Upgrade_Traveler59AdvancedArticulators"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:Traveler59AdvancedArticulators"
+		AcquireHint="UpgradePrereq:Traveler59AdvancedArticulators"
+		TypeDescription="UpgradeType:Traveler59AdvancedArticulators"
+		Description="UpgradeDesc:Traveler59AdvancedArticulators"
+		Type="PLAYER"
+		BuildCost="1000"
+		BuildTime="40s"
+		ResearchSound="AudioEvent:ALI_AdvancedArticulators_Upgrade"
+		IconImage="Button_Upgrade_AdvArticulators"
+	/>			
+	
+	
+	<UpgradeTemplate id="Upgrade_AlienShockTrooperPlasmaDiskLauncher"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ALIENPlasmaDiscLauncher"
+		AcquireHint="UpgradePrereq:ALIENPlasmaDiscLauncher"
+		TypeDescription="UpgradeType:ALIENPlasmaDiscLauncher"
+		Description="UpgradeDesc:ALIENPlasmaDiscLauncher"
+		Type="PLAYER"
+		BuildTime="45.0s"
+		BuildCost="1500"
+		ResearchSound="AudioEvent:ALI_PlasmaDiscLaunchers_Upgrade"
+		IconImage="Button_UpgradePlasmaDiscLauncher">
+	</UpgradeTemplate>	
+
+	<UpgradeTemplate id="Upgrade_MarkedOfKaneCyberneticLegs"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UPGRADE:MarkedOfKaneCyberneticLegs"
+		AcquireHint="UpgradePrereq:MarkedOfKaneCyberneticLegs"
+		TypeDescription="UpgradeType:MarkedOfKaneCyberneticLegs"
+		Description="UpgradeDesc:MarkedOfKaneCyberneticLegs"
+		Type="PLAYER"
+		BuildCost="1500"
+		BuildTime="30.0s"
+		ResearchSound="AudioEvent:NOD_CyberneticLegs_Upgrade"
+		IconImage="Button_Upgrade_CyberneticLegs">
+		<GameDependency>
+			<RequiredObject>MarkedOfKaneSecretShrine</RequiredObject>
+		</GameDependency>
+	</UpgradeTemplate>	
+	
+	<UpgradeTemplate id="Upgrade_AlienBlueShardWeapon"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:ALIENBlueShardWeapon"
+		AcquireHint="UpgradePrereq:ALIENBlueShardWeapon"
+		TypeDescription="UpgradeType:ALIENBlueShardWeapon"
+		Description="UpgradeDesc:ALIENBlueShardWeapon"
+		Type="PLAYER"
+		BuildTime="45.0s"
+		BuildCost="2000"
+		ResearchSound="AudioEvent:ALI_Stalker_BlueShardUpgrade"
+		IconImage="Button_Upgrade_BlueShards">
+	</UpgradeTemplate>	
+
+	<UpgradeTemplate id="Upgrade_Reaper17ConversionReserves"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:Reaper17ConversionReserves"
+		AcquireHint="UpgradePrereq:Reaper17ConversionReserves"
+		TypeDescription="UpgradeType:Reaper17ConversionReserves"
+		Description="UpgradeDesc:Reaper17ConversionReserves"
+		Type="PLAYER"
+		BuildTime="15.0s"
+		BuildCost="500"
+		ResearchSound="AudioEvent:ALI_ConversionReserves_Upgrade"
+		IconImage="Button_Upgrade_ConversionReserves"
+	/>	
+	
+	<UpgradeTemplate id="Upgrade_AdaptiveArmor"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UPGRADE:AdaptiveArmor"
+		AcquireHint="UpgradePrereq:GDIAPAmmo"
+		TypeDescription="UpgradeType:AdaptiveArmor"
+		Description="UpgradeDesc:AdaptiveArmor"
+		Type="PLAYER"
+		BuildCost="1000"
+		BuildTime="30.0s"
+		ResearchSound="AudioEvent:GDI_TechCenter_adaptiveArmorUpgrade"
+		IconImage="Button_AbilityAdaptiveArmor"> 
+	</UpgradeTemplate>	
+	
+	
+	<UpgradeTemplate id="Upgrade_NodTechCenterChargedParticleBeam"
+		
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:NodChargedParticleBeam"
+		AcquireHint="UpgradePrereq:NodChargedParticleBeam"
+		TypeDescription="UpgradeType:NodChargedParticleBeam"
+		Description="UpgradeDesc:NodChargedParticleBeam"
+		Type="PLAYER"
+		BuildTime="30.0s"
+		BuildCost="1000"
+		ResearchSound="AudioEvent:NOD_Awakened_ChargedParticleBeamGunAvailable"
+		IconImage="Button_Upgrade_ChargedPartBeam">
+	</UpgradeTemplate>	
+	
+	
+	
+	<!-- Pitbull Mortar enable/disable switches -->
+	<UpgradeTemplate
+		id="Upgrade_SelectLoad_03"
+		Type="OBJECT"
+		DisplayName="NAME:EnableMortar_103"
+		Description="UPGRADE:SelectLoadOut03Description"
+		SkirmishAIHeuristic="IGNORE">
+		<GameDependency
+			RequiredObjectStatusAny="WEAPON_UPGRADED_01"/>
+	</UpgradeTemplate>
+
+	<UpgradeTemplate
+		id="Upgrade_SelectLoad_04"
+		Type="OBJECT"
+		DisplayName="NAME:DisableMortar_103"
+		Description="UPGRADE:SelectLoadOut04Description"
+		SkirmishAIHeuristic="IGNORE">
+		<GameDependency
+			RequiredObjectStatusAny="WEAPON_UPGRADED_01"/>		
+	</UpgradeTemplate>
+	
+	
+</AssetDeclaration>
