@@ -301,6 +301,10 @@
 	</WeaponTemplate>			
 	
 	<!-- After lifetime expires, Phase dummy fires this weapon to remove phase completely from unit -->
+	<!-- Note: Never tested AntiCategory to see if it was doing anything, but everything works fine anyway so
+		didn't bother testing further. Only affects RIDERLESS flagged objects. -->		
+	<!-- Doesn't work correctly for Mechas, so exclude them -->		
+	<!--
 	<WeaponTemplate
 		id="PhaseDummyDeathWeapon"
 		Name="PhaseDummyDeathWeapon"
@@ -310,9 +314,7 @@
 		ClipSize="1"
 		FireFX=""
 		>
-		<Nuggets>
-			<!-- Note: Never tested AntiCategory to see if it was doing anything, but everything works fine anyway so
-				didn't bother testing further. Only affects RIDERLESS flagged objects. -->		
+		<Nuggets>	
 			<AttributeModifierNugget
 				Radius="1.0"
 				PartitionFilterTestType="CIRCLE"
@@ -331,7 +333,6 @@
 					<IncludeThing>Traveler59MCV</IncludeThing>
 					<IncludeThing>Traveler59MCVUnpacking</IncludeThing>			
 					<ExcludeThing>Viceroid</ExcludeThing>
-					<!-- Doesn't work correctly for Mechas, so exclude them -->
 					<ExcludeThing>AlienMillipedeBody</ExcludeThing>
 					<ExcludeThing>AlienMillipedeHead</ExcludeThing>					
 					<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
@@ -340,9 +341,11 @@
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>		
 		</Nuggets>
-	</WeaponTemplate>		
+	</WeaponTemplate>	
+	-->
 	
 	<!-- If Phase dummy doesnt find suitable target quick enough, it kills itself with this -->
+	<!--
 	<WeaponTemplate
 		id="PhaseDummySuicideWeapon"
 		Name="PhaseDummySuicideWeapon"
@@ -356,7 +359,6 @@
 		<FiringDuration
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
-		<!--Do enough damage to kill ourselves but ourselves ONLY. -->
 		<Nuggets>
 			<DamageNugget
 				RequiredObjectStatus="WEAPON_UPGRADED_01"
@@ -369,30 +371,10 @@
 				DeathType="SLAUGHTERED" />
 		</Nuggets>
 	</WeaponTemplate>	
+	-->
 	
 	
 	<!-- PHASE-EMP FIX -->
-	<!-- Original Phase -->
-	<AttributeModifier
-		id="AttributeModifier_AlienPhaseField"
-		Category="NONE"
-		Duration="30s"
-		StartFX="FX_ALI_PhaseGenerator_Begin"
-		EndFX="FX_ALI_PhaseGenerator_End"
-		ObjectStatusToSet="NO_ATTACK OUT_OF_PHASE">
-		<Modifier Type="DAMAGE_MULT" Value="0%"/>
-		<Modifier Type="HEALTH_MULT" Value="10000%" />
-		<Modifier Type="CRUSHER_LEVEL" Value="-500%"/>
-		<Modifier Type="CRUSHABLE_LEVEL" Value="500%"/>	
-	</AttributeModifier>	
-	
-	<AttributeModifier
-		id="AttributeModifier_AlienPhaseFieldSlow"
-		Category="NONE"
-		Duration="30s">
-		<Modifier Type="SPEED" Value="50%" />
-	</AttributeModifier>		
-	
 	<!-- Disable abilities for extended period -->
 	<AttributeModifier
 		id="AttributeModifier_PhaseDisableSP"
@@ -402,6 +384,7 @@
 	</AttributeModifier>			
 	
 	<!-- Begin Phase -->
+	<!--
 	<AttributeModifier
 		id="AttributeModifier_AlienPhaseFieldBegin"
 		Category="DEBUFF"
@@ -412,10 +395,11 @@
 		EndFX=""
 		ObjectStatusToSet="NO_ATTACK OUT_OF_PHASE">
 		<Modifier Type="DAMAGE_MULT" Value="0%"/>
-		<Modifier Type="HEALTH_MULT" Value="10000%" /> <!--
-		<Modifier Type="SPEED" Value="500%"/>	-->		
-	</AttributeModifier>			
+		<Modifier Type="HEALTH_MULT" Value="10000%" />	
+	</AttributeModifier>
+	-->
 	<!-- Remove/Anticategory -->
+	<!--
 	<AttributeModifier
 		id="AttributeModifier_AlienPhaseFieldEnd"
 		Category="DEBUFF"
@@ -425,9 +409,8 @@
 		EndFX="" 
 		ObjectStatusToSet="">		
 		<Modifier Type="DAMAGE_MULT" Value="100%"/>		
-		<Modifier Type="HEALTH_MULT" Value="100%" /> <!--
-		<Modifier Type="SPEED" Value="100%"/> -->
-	</AttributeModifier>				
+		<Modifier Type="HEALTH_MULT" Value="100%" />
+	-->	
 	
 	<UpgradeTemplate id="Upgrade_Attached"
 		Type="OBJECT"	/>

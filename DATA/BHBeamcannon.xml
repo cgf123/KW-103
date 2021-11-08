@@ -472,9 +472,9 @@
 			<!-- REFLECTORZ !! -->
 			<PassiveAreaEffectBehavior
 				id="ModuleTag_BeamDummy"
-				EffectRadius="525"
+				EffectRadius="625"
 				HealingPercentPerSecond="0"
-				SurveyDelayFrames="2"
+				SurveyDelayFrames="5"
 				NonStackable="True" >
 				<Modifier>AttributeModifier_BeamDummy</Modifier>
 				<AllowFilter 
@@ -1147,7 +1147,7 @@
 				DamagePerSecond="150"
 				TargetAttributeModifierAdd=""
 				SweepFX=""
-				ReflectorExtendDistance="500"
+				ReflectorExtendDistance="550"
 				PreferredTargetBone="ROOTTRANSFORM"	
 				JoinWithOtherBeams="True"
 				DissapateWhenTargetDead="True"

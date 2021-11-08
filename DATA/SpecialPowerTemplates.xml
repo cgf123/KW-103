@@ -68,6 +68,22 @@
 	</SpecialPowerTemplate>	
 	
 	<SpecialPowerTemplate
+		id="NODBeamCannonLaserSpecialPower"
+		Flags="NO_FORBIDDEN_OBJECTS"		
+		TargetType="OBJECT" >
+		<ForbiddenObjectFilter
+			Rule="ANY"
+			StatusBitFlags="AIRBORNE_TARGET"
+			Include="AIRCRAFT INFANTRY">
+			<ExcludeThing>AlienMothership</ExcludeThing>				
+			<ExcludeThing>AlienPlanetaryAssaultCarrier</ExcludeThing>
+			<ExcludeThing>Traveler59PlanetaryAssaultCarrier</ExcludeThing>
+			<ExcludeThing>AlienDevastatorWarship</ExcludeThing>
+			<ExcludeThing>Traveler59DevastatorWarship</ExcludeThing>			
+		</ForbiddenObjectFilter>
+	</SpecialPowerTemplate>
+	
+	<SpecialPowerTemplate
 		id="NODBeamCannonLaserSpecialPower1"
 		TargetType="OBJECT" />	
 		

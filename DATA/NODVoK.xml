@@ -432,8 +432,8 @@
 						Type="ADDITIVE_DECAL"
 						Texture="Decal_LeadershipBuff"
 						AdditionalTexture=""
-						SizeX="925"
-						SizeY="925"
+						SizeX="825"
+						SizeY="825"
 						OffsetX="0"
 						OffsetY="0"
 						OpacityStart="0"
@@ -560,7 +560,7 @@
 				
 			<PassiveAreaEffectBehavior
 				id="ModuleTag_PropagandaHeal"
-				EffectRadius="450"
+				EffectRadius="400"
 				HealingPercentPerSecond="15"
 				SurveyDelayFrames="30"
 				AffectUnderAttack="true"
@@ -568,33 +568,26 @@
 				<AllowFilter Rule="NONE" Relationship="ALLIES" Include="INFANTRY">
 				</AllowFilter>
 			</PassiveAreaEffectBehavior>	
-								
-			<AttributeModifierAuraUpdate
-				id="2F4453FB"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				AttributeModifierName="Confessor_Militant_AttributeModifier"
-				RefreshDelay="1s"
-				Range="450"
-				RequiredConditions=""
-				AntiCategory=""
+									
+			<!-- Split Aura -->
+			<PassiveAreaEffectBehavior
+				id="7FFDED05"
+				EffectRadius="400"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="30"
+				UpgradeRequired=""
+				AntiCategoryMask=""
 				AntiFX=""
-				MaxActiveRank="0"
-				RequiredObjectStatusFlags=""
-				TargetEnemy="False"
-				AllowPowerWhenAttacking="True"
-				InitiallyActive="True"
-				AffectGood="False"
-				AffectEvil="False"
-				RunWhileDead="False"
-				AllowSelf="False"
-				AffectContainedOnly="False"
-				AffectHordeMembersOnly="False">
-				<ObjectFilter
-					Rule="ANY"
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>AttributeModifier_CM11RadioTowerBuff</Modifier>
+				<AllowFilter
+					Rule="NONE"
 					Relationship="ALLIES"
 					Alignment="NONE"
 					Include="INFANTRY"
@@ -602,8 +595,68 @@
 					StatusBitFlags=""
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
-					RejectModelCondition="" />
-			</AttributeModifierAuraUpdate>
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>					
+			
+			<PassiveAreaEffectBehavior
+				id="7FFDED06"
+				EffectRadius="400"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="30"
+				UpgradeRequired=""
+				AntiCategoryMask=""
+				AntiFX=""
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>Confessor_Militant_AttributeModifier</Modifier>
+				<AllowFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="INFANTRY"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>
+
+			<PassiveAreaEffectBehavior
+				id="7FFDED07"
+				EffectRadius="400"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="30"
+				UpgradeRequired=""
+				AntiCategoryMask=""
+				AntiFX=""
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>AttributeModifier_BlackHandLeadership</Modifier>
+				<AllowFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="INFANTRY"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>	
+			
 			<RepairUpdate
 				id="41FDEB2A"
 				RepopThreshold="0.2"

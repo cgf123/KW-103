@@ -233,8 +233,25 @@
 		TypeDescription="UpgradeType:ALIENForcefieldGenerators"
 		Description="UpgradeDesc:ALIENForcefieldGenerators"
 		Type="PLAYER"
-		BuildTime="75.0s"
+		BuildTime="60.0s"
 		BuildCost="2500"
+		ResearchSound="AudioEvent:ALI_ForcefieldGenerator_Upgrade"
+		IconImage="Button_UpgradeForcefieldGenerator"
+	/>	
+	
+	<UpgradeTemplate id="Upgrade_Reaper17ReactorForcefieldGenerator"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+		
+		DisplayName="UpgradeName:Reaper17ForcefieldGenerators"
+		AcquireHint="UpgradePrereq:Reaper17ForcefieldGenerators"
+		TypeDescription="UpgradeType:Reaper17ForcefieldGenerators"
+		Description="UpgradeDesc:Reaper17ForcefieldGenerators"
+		Type="PLAYER"
+		BuildTime="45.0s"
+		BuildCost="2000"
 		ResearchSound="AudioEvent:ALI_ForcefieldGenerator_Upgrade"
 		IconImage="Button_UpgradeForcefieldGenerator"
 	/>	

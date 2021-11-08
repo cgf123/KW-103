@@ -519,6 +519,10 @@
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
 				<RankToReleaseWhenAttacking>2</RankToReleaseWhenAttacking>
+				<OnDeathBehavior
+					RequiredStatus="PARACHUTING">
+					<OCL>OCL_RedemptionSpawn</OCL>
+				</OnDeathBehavior>				
 			</HordeContain>
 			<AttributeModifierUpgrade
 				id="3129F082"
@@ -1574,6 +1578,10 @@
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
 				<RankToReleaseWhenAttacking>2</RankToReleaseWhenAttacking>
+				<OnDeathBehavior
+					RequiredStatus="PARACHUTING">
+					<OCL>OCL_RedemptionSpawn</OCL>
+				</OnDeathBehavior>				
 			</HordeContain>
 			<LevelUpUpgrade
 				id="D0BB7535"
@@ -1893,6 +1901,102 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="513BC476" />
+			<AttributeModifierUpgrade
+				id="AA36A1AA"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterSpeed</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="81C6F752"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterDamage">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterDamage</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="E35F7EC4"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterArmor">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterArmor</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<StancesBehavior
+				id="54CA416E"
+				StanceTemplate="Generic" />
+			<EmotionTrackerUpdate
+				id="2C1462D7"
+				TauntAndPointDistance="0"
+				HeroScanDistance="0"
+				TauntAndPointUpdateDelay="2s"
+				FearScanDistance="0"
+				QuarrelProbability="0%"
+				ImmuneToFearLevel="5"
+				IgnoreVeterancy="False">
+				<TauntAndPointExcluded
+					Rule="NONE"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<AddEmotion>CheerIdle_Base</AddEmotion>
+				<AddEmotion>CheerBusy_Base</AddEmotion>
+			</EmotionTrackerUpdate>
+			<LevelUpUpgrade
+				id="A92BDFEA"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				LevelsToGain="1"
+				LevelCap="4"
+				DoFlash="True">
+				<TriggeredBy>Upgrade_ProductionVeterancy_VETERAN</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="5C3F216A"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				LevelsToGain="2"
+				LevelCap="4"
+				DoFlash="True">
+				<TriggeredBy>Upgrade_ProductionVeterancy_ELITE</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="379F3CE2"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				LevelsToGain="3"
+				LevelCap="4"
+				DoFlash="True">
+				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
+			</LevelUpUpgrade>
+			<TemporarilyDefectUpdate
+				id="3473AFD2"
+				DefectionFrameCount="100" />		
 			<WeaponSetUpdate>
 				<WeaponSlotHardpoint
 					ID="1"

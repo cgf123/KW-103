@@ -718,7 +718,7 @@ DAMAGE TYPES
 			Percent="45" />
 		<Armor
 			Damage="SNIPER"
-			Percent="45"/>		
+			Percent="25"/>		
 		<Armor
 			Damage="GRENADE"
 			Percent="45" />
@@ -1160,7 +1160,7 @@ DAMAGE TYPES
 			Percent="75" />
 		<Armor
 			Damage="GRENADE"
-			Percent="30" />
+			Percent="35" />
 		<Armor
 			Damage="GUN"
 			Percent="25" />
@@ -1185,7 +1185,7 @@ DAMAGE TYPES
 			Percent="37" />
 		<Armor
 			Damage="GRENADE"
-			Percent="15" />
+			Percent="17" />
 		<Armor
 			Damage="GUN"
 			Percent="12" />
@@ -1297,7 +1297,7 @@ DAMAGE TYPES
 			Percent="75" />
 		<Armor
 			Damage="GRENADE"
-			Percent="30" />
+			Percent="35" />
 		<Armor
 			Damage="GUN"
 			Percent="25" />
@@ -1319,7 +1319,7 @@ DAMAGE TYPES
 			Percent="75" />
 		<Armor
 			Damage="GRENADE"
-			Percent="30" />
+			Percent="35" />
 		<Armor
 			Damage="GUN"
 			Percent="25" />
@@ -1339,7 +1339,7 @@ DAMAGE TYPES
 			Percent="75" />
 		<Armor
 			Damage="GRENADE"
-			Percent="30" />
+			Percent="35" />
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -3091,16 +3091,16 @@ DAMAGE TYPES
 			Percent="1" />
 		<Armor
 			Damage="CANNON"
-			Percent="100" />
+			Percent="75" />
 		<Armor
 			Damage="ROCKET"
-			Percent="66" />
+			Percent="50" />
 		<Armor
 			Damage="GRENADE"
 			Percent="100" />
 		<Armor
 			Damage="GUN"
-			Percent="40" />
+			Percent="30" />
 	</ArmorTemplate>
 	
 	<ArmorTemplate
@@ -3240,39 +3240,18 @@ DAMAGE TYPES
 			Percent="1" />
 		<Armor
 			Damage="CANNON"
-			Percent="100" />
+			Percent="75" />
 		<Armor
 			Damage="ROCKET"
-			Percent="66" />
+			Percent="50" />
 		<Armor
 			Damage="GRENADE"
 			Percent="100" />
 		<Armor
 			Damage="GUN"
-			Percent="40" />
+			Percent="30" />
 	</ArmorTemplate>
 	
-	<ArmorTemplate
-		id="AlienReactorArmorShieldBodyEnabled"
-		Default="100"
-		SideDamageScalar="100"
-		RearDamageScalar="100">
-		<Armor
-			Damage="SNIPER"
-			Percent="1" />
-		<Armor
-			Damage="CANNON"
-			Percent="50" />
-		<Armor
-			Damage="ROCKET"
-			Percent="50" />
-		<Armor
-			Damage="GRENADE"
-			Percent="50" />
-		<Armor
-			Damage="GUN"
-			Percent="50" />
-	</ArmorTemplate>	
 	<ArmorTemplate
 		id="AlienRiftGeneratorArmor"
 		Default="100"
@@ -3304,16 +3283,16 @@ DAMAGE TYPES
 			Percent="1" />
 		<Armor
 			Damage="CANNON"
-			Percent="100" />
+			Percent="75" />
 		<Armor
 			Damage="ROCKET"
-			Percent="66" />
+			Percent="50" />
 		<Armor
 			Damage="GRENADE"
 			Percent="100" />
 		<Armor
 			Damage="GUN"
-			Percent="40" />
+			Percent="30" />
 	</ArmorTemplate>
 	
 	<ArmorTemplate

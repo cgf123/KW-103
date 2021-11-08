@@ -54,55 +54,71 @@
 		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>
 	</AttributeModifier>
 	
+
+	<!-- Additional aura buff for BH -->
+	<AttributeModifier
+		id="AttributeModifier_CM11RadioTowerBuff"
+		Category="NONE"
+		StackingLimit="1"	
+		ReplaceInCategoryIfLongest="False"
+		Duration="1.5s">
+		<Modifier
+			Type="RATE_OF_FIRE"
+			Value="125%" />
+	</AttributeModifier>	
+	
+	<!-- Baseline aura buff -->
 	<AttributeModifier
 		id="Confessor_Militant_AttributeModifier"
-		Category="BUFF"
-		Duration="1.75s"
-		StartFX="FX_NOD_BlkHndLeadershipBuff"
+		Category="NONE"
+		Duration="1.5s"
 		StackingLimit="1"
-		ReplaceInCategoryIfLongest="True"
-		IgnoreIfAnticategoryActive="False">
+		ReplaceInCategoryIfLongest="False">
 		<Modifier
 			Type="RATE_OF_FIRE"
-			Value="150%" />
-		<Modifier
-			Type="SUPPRESSABILITY"
-			Value="100%" />
-		<Modifier
-			Type="ARMOR"
-			Value="100%" />
+			Value="125%" />	
 	</AttributeModifier>		
 	
+	<!-- FX for NOD -->
 	<AttributeModifier
-		id="Confessor_Militant_AttributeModifier1"
-		Category="BUFF"
-		Duration="1.5s"
+		id="AttributeModifier_BlackHandLeadership"
+		Category="NONE"
+		Duration="0.5s"
 		StartFX="FX_NOD_BlkHndLeadershipBuff"
 		StackingLimit="1"
-		ReplaceInCategoryIfLongest="True"
-		IgnoreIfAnticategoryActive="False">
-		<Modifier
-			Type="RATE_OF_FIRE"
-			Value="115%" />
-		<Modifier
-			Type="SUPPRESSABILITY"
-			Value="100%" />
-		<Modifier
-			Type="ARMOR"
-			Value="100%" />
+		ReplaceInCategoryIfLongest="False">
 	</AttributeModifier>	
-
+	
+	<!-- FX for Scrin -->
 	<AttributeModifier
 		id="AttributeModifier_Leadership"
-		Category="BUFF"
+		Category="NONE"
+		Duration="0.5s"
+		StartFX="FX_ScrinBuff"	
 		StackingLimit="1"
-		StartFX="FX_ScrinBuff"		
-		ReplaceInCategoryIfLongest="True"
-		IgnoreIfAnticategoryActive="False"
-		Duration="1.25s">
-		<Modifier Type="RATE_OF_FIRE" Value="110%"/>
-		<Modifier Type="SUPPRESSABILITY" Value="100"/>
-	</AttributeModifier>
+		ReplaceInCategoryIfLongest="False">	
+	</AttributeModifier>	
+	
+	<!-- Original Phase -->
+	<AttributeModifier
+		id="AttributeModifier_AlienPhaseField"
+		Category="NONE"
+		Duration="25s"
+		StartFX="FX_ALI_PhaseGenerator_Begin"
+		EndFX="FX_ALI_PhaseGenerator_End"
+		ObjectStatusToSet="NO_ATTACK OUT_OF_PHASE">
+		<Modifier Type="DAMAGE_MULT" Value="0%"/>
+		<Modifier Type="HEALTH_MULT" Value="10000%" />
+		<Modifier Type="CRUSHER_LEVEL" Value="-500%"/>
+		<Modifier Type="CRUSHABLE_LEVEL" Value="500%"/>	
+	</AttributeModifier>	
+	
+	<AttributeModifier
+		id="AttributeModifier_AlienPhaseFieldSlow"
+		Category="NONE"
+		Duration="25s">
+		<Modifier Type="SPEED" Value="50%" />
+	</AttributeModifier>			
 		
 	<!-- AOEMC -->
 	<AttributeModifier
@@ -314,14 +330,14 @@
 	
 	<AttributeModifier
 		id="AttributeModifier_CrushSlow"
-		Duration="0.5s"		
+		Duration="0.75s"		
 		Category="NONE">
 		<Modifier Type="SPEED" Value="50%"/>
 	</AttributeModifier>	
 	
 	<AttributeModifier
 		id="AttributeModifier_CrushSlow2"
-		Duration="0.5s"		
+		Duration="0.75s"		
 		Category="NONE">
 		<Modifier Type="SPEED" Value="75%"/>
 	</AttributeModifier>	
@@ -380,7 +396,7 @@
 	<AttributeModifier
 		id="AttributeModifier_AdvancedArticulators"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="125%"/>
+		<Modifier Type="SPEED" Value="133%"/>
 	</AttributeModifier>
 
 	<!-- For T59 Ravs/Shocks -->

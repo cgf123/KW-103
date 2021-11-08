@@ -833,32 +833,26 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="True"
 				FaceTarget="True" />
-			<AttributeModifierAuraUpdate
-				id="2F4453FB"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				AttributeModifierName="Confessor_Militant_AttributeModifier"
-				RefreshDelay="1s"
-				Range="150"
-				RequiredConditions=""
-				AntiCategory=""
+				
+			<!-- Split Aura -->
+			<PassiveAreaEffectBehavior
+				id="7FFDED05"
+				EffectRadius="150"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="30"
+				UpgradeRequired=""
+				AntiCategoryMask=""
 				AntiFX=""
-				MaxActiveRank="0"
-				RequiredObjectStatusFlags=""
-				TargetEnemy="False"
-				AllowPowerWhenAttacking="True"
-				InitiallyActive="True"
-				AffectGood="False"
-				AffectEvil="False"
-				RunWhileDead="False"
-				AllowSelf="False"
-				AffectContainedOnly="False"
-				AffectHordeMembersOnly="False">
-				<ObjectFilter
-					Rule="ANY"
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>AttributeModifier_CM11RadioTowerBuff</Modifier>
+				<AllowFilter
+					Rule="NONE"
 					Relationship="ALLIES"
 					Alignment="NONE"
 					Include="INFANTRY"
@@ -866,8 +860,68 @@
 					StatusBitFlags=""
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
-					RejectModelCondition="" />
-			</AttributeModifierAuraUpdate>
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>					
+			
+			<PassiveAreaEffectBehavior
+				id="7FFDED06"
+				EffectRadius="150"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="30"
+				UpgradeRequired=""
+				AntiCategoryMask=""
+				AntiFX=""
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>Confessor_Militant_AttributeModifier</Modifier>
+				<AllowFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="INFANTRY"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>
+
+			<PassiveAreaEffectBehavior
+				id="7FFDED07"
+				EffectRadius="150"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="30"
+				UpgradeRequired=""
+				AntiCategoryMask=""
+				AntiFX=""
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>AttributeModifier_BlackHandLeadership</Modifier>
+				<AllowFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="INFANTRY"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>	
+
 			<SpecialPower
 				id="CBFB8DD6"
 				SpecialPowerTemplate="SpecialPower_BlackHandConfessorCabalGetToGrenadeRange"

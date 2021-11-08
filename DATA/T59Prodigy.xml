@@ -1564,31 +1564,23 @@
 			</FireWeaponWhenDead>		
 			
 			<!-- Moved hexa aura -->
-			<AttributeModifierAuraUpdate
-				id="085F251C"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				AttributeModifierName="AttributeModifier_Leadership"
-				RefreshDelay="1.0s"
-				Range="500"
-				RequiredConditions=""
-				AntiCategory=""
+			<PassiveAreaEffectBehavior
+				id="7FFDED07"
+				EffectRadius="500"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="60"
+				UpgradeRequired=""
+				AntiCategoryMask=""
 				AntiFX=""
-				MaxActiveRank="0"
-				RequiredObjectStatusFlags=""
-				TargetEnemy="False"
-				AllowPowerWhenAttacking="True"
-				InitiallyActive="True"
-				AffectGood="False"
-				AffectEvil="False"
-				RunWhileDead="False"
-				AllowSelf="False"
-				AffectContainedOnly="False"
-				AffectHordeMembersOnly="False">
-				<ObjectFilter
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>Confessor_Militant_AttributeModifier</Modifier>
+				<AllowFilter
 					Rule="NONE"
 					Relationship="ALLIES"
 					Alignment="NONE"
@@ -1597,8 +1589,38 @@
 					StatusBitFlags=""
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
-					RejectModelCondition="" />
-			</AttributeModifierAuraUpdate>
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>				
+			
+			<PassiveAreaEffectBehavior
+				id="7FFDED08"
+				EffectRadius="500"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="60"
+				UpgradeRequired=""
+				AntiCategoryMask=""
+				AntiFX=""
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>AttributeModifier_Leadership</Modifier>
+				<AllowFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="INFANTRY"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>	
 			
 			<Physics
 				id="6D41764B"

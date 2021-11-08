@@ -463,8 +463,6 @@
 	<Include type="all" source="R17Airfield.xml" />	
 	<Include type="all" source="T59Airfield.xml" />				
 	
-	<Include type="all" source="PhaseDummy.xml" />	
-	
 	<Include type="all" source="IonStormTemp.xml" />		
 	<Include type="all" source="IonStorm.xml" />		
 	<Include type="all" source="PACIonStorm.xml" />		
