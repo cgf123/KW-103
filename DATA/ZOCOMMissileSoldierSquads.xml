@@ -365,12 +365,24 @@
 				Permanent="True"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				AddConditionFlags=""
+				AddConditionFlags="UPGRADED_ARMOR"
 				RemoveConditionFlags=""
 				AddTempConditionFlag="TOPPLED"
 				TempConditionTime="0s">
-				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
-			</ModelConditionUpgrade>
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</ModelConditionUpgrade>			
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitsArmorStatus"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="SWITCHED_WEAPONS"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</StatusBitsUpgrade>				
 			<AimWeapon
 				id="06370EA6"
 				AimLowThreshold="0"
@@ -675,9 +687,9 @@
 						LeaderIndex="0" />
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
-			</HordeContain>
+			</HordeContain>			
 			
-			<!-- AI use transports! -->
+			<!-- AI use transports!
 			<AISpecialPowerUpdate
 				id="335B0612"
 				CommandButtonName="Command_EnterTransport"
@@ -713,7 +725,8 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />							
+				RandomizeTargetLocation="False" />		
+			 -->
 			
 		</Behaviors>
 		<AI>
@@ -1180,20 +1193,7 @@
 				VeteranUnitsFromVeteranFactory="False"
 				SetBonusModelConditionOnSpeedBonus="False"
 				SecondaryQueue="False"
-				IgnorePreReqs="False" />
-			<ModelConditionUpgrade
-				id="FA82A6FA"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="True"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				AddConditionFlags=""
-				RemoveConditionFlags=""
-				AddTempConditionFlag="TOPPLED"
-				TempConditionTime="0s">
-				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
-			</ModelConditionUpgrade>
+				IgnorePreReqs="False" />		
 			<AimWeapon
 				id="06370EA6"
 				AimLowThreshold="0"
@@ -1553,7 +1553,32 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />								
+				RandomizeTargetLocation="False" />		
+			<ModelConditionUpgrade
+				id="FA82A6FA"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="True"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AddConditionFlags="UPGRADED_ARMOR"
+				RemoveConditionFlags=""
+				AddTempConditionFlag="TOPPLED"
+				TempConditionTime="0s">
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</ModelConditionUpgrade>			
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitsArmorStatus"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="SWITCHED_WEAPONS"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</StatusBitsUpgrade>					
 				
 		</Behaviors>
 		<AI>

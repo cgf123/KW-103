@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+  <!-- ##################################### NEW TRIGGER OCL #################################### -->
+	<ObjectCreationList
+		id="OCL_NODCatalystMissileTrigger">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED">
+			<CreateObject>NODCatalystMissileTrigger</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+
+  <GameObject
+    id="NODCatalystMissileTrigger"
+    Side="NOD"
+    EditorSorting="SYSTEM"
+    CommandSet="EmptyCommandSet"
+    KindOf="NO_COLLIDE IMMOBILE UNATTACKABLE INERT INERT_SHROUD_REVEALER NOT_AUTOACQUIRABLE IGNORE_FOR_VICTORY"
+    RadarPriority="STRUCTURE"
+    EditorName="NODCatalystMissileTrigger">
+    <DisplayName>NODCatalystMissileTrigger</DisplayName>
+    <ArmorSet
+			Armor="NoArmor" />
+    <Draws>
+      <ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+        <ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+          <Model
+						Name="" />
+        </ModelConditionState>
+      </ScriptedModelDraw>
+    </Draws>
+    <Behaviors>
+		<LifetimeUpdate
+			id="ModuleTag_Lifetime"
+			MinLifetime="3.5s"
+			MaxLifetime="3.5s" />	   
+	  <FireWeaponUpdate
+        id="ModuleTag_BigDamageBurst">
+        <FireWeaponNugget
+          WeaponName = "NODCatalystMissileLauncher"
+          FireDelay = "1s"
+          OneShot = "true"/>
+      </FireWeaponUpdate>
+    </Behaviors>
+    <Body>
+      <ImmortalBody
+				id="ModuleTag_02"
+				MaxHealth = "1.0"
+		    InitialHealth = "1.0" />
+    </Body>
+    <Geometry
+			IsSmall="true">
+      <Shape
+		Type="BOX"
+		MajorRadius="10.0"
+		MinorRadius = "1.0"
+		Height="3.0"/>
+    </Geometry>
+  </GameObject> 
+
+</AssetDeclaration>

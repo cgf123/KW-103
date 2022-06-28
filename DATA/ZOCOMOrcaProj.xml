@@ -48,7 +48,7 @@
 				GroundHitFX="FX_GDI_SonicRifleGroundImpact"
 				OrientToFlightPath="true"
 				SidewaysDrift="25"
-				FlightPathAdjustDistPerSecond="100.0"
+				FlightPathAdjustDistPerSecond="25.0"
 				DetonateCallsKill="true" 
 				/>
 		</Behaviors>
@@ -115,7 +115,7 @@
 				GroundHitFX="FX_GDI_SonicRifleGroundImpactHeroic"
 				OrientToFlightPath="true"
 				SidewaysDrift="25"
-				FlightPathAdjustDistPerSecond="100.0"
+				FlightPathAdjustDistPerSecond="25.0"
 				DetonateCallsKill="true" 
 				/>
 		</Behaviors>
@@ -184,7 +184,7 @@
 				GroundHitFX="FX_GDI_SonicRifleGroundImpact"
 				OrientToFlightPath="true"
 				SidewaysDrift="25"
-				FlightPathAdjustDistPerSecond="100.0"
+				FlightPathAdjustDistPerSecond="25.0"
 				DetonateCallsKill="true" 
 				/>
 		</Behaviors>
@@ -251,7 +251,7 @@
 				GroundHitFX="FX_GDI_SonicRifleGroundImpactHeroic"
 				OrientToFlightPath="true"
 				SidewaysDrift="25"
-				FlightPathAdjustDistPerSecond="100.0"
+				FlightPathAdjustDistPerSecond="25.0"
 				DetonateCallsKill="true" 
 				/>
 		</Behaviors>

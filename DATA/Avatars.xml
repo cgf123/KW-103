@@ -4810,10 +4810,16 @@
 			<!-- Bike commandeer boost!! -->
 			<AttributeModifierUpgrade
 				id="Upgrade_avatarstealthdetect"
-				AttributeModifier="AttributeModifier_AvatarSpeedBuff">
-				
+				AttributeModifier="AttributeModifier_AvatarSpeedBuff">				
 				<TriggeredBy>Upgrade_AvatarStealthDetect</TriggeredBy>
 			</AttributeModifierUpgrade>
+			
+			<!-- Flame commandeer boost!! -->
+			<AttributeModifierUpgrade
+				id="Upgrade_avatarflamebuff"
+				AttributeModifier="AttributeModifier_AvatarFlamerBuff">				
+				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
+			</AttributeModifierUpgrade>			
 			
 			<ModelConditionUpgrade
 				id="081018FB"
@@ -9918,10 +9924,16 @@
 			<!-- Bike commandeer boost!! -->
 			<AttributeModifierUpgrade
 				id="Upgrade_avatarstealthdetect"
-				AttributeModifier="AttributeModifier_AvatarSpeedBuff">
-				
+				AttributeModifier="AttributeModifier_AvatarSpeedBuff">				
 				<TriggeredBy>Upgrade_AvatarStealthDetect</TriggeredBy>
 			</AttributeModifierUpgrade>
+
+			<!-- Flame commandeer boost!! -->
+			<AttributeModifierUpgrade
+				id="Upgrade_avatarflamebuff"
+				AttributeModifier="AttributeModifier_AvatarFlamerBuff">				
+				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
+			</AttributeModifierUpgrade>					
 			
 			<ModelConditionUpgrade
 				id="081018FB"

@@ -97,9 +97,9 @@
 		<Draws>
 			<ScriptedModelDraw
 				id="14EA72D8"
-				RecoilDamping="0.4"
-				MaxRecoilDistance="3"
 				InitialRecoilSpeed="2"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
 				RecoilSettleSpeed="0.065"
 				MinLODRequired="LOW"
 				ProjectileBoneFeedbackEnabledSlots=""
@@ -143,7 +143,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NBMCV_SKN"
+						Name="W3DContainer:NBMCV_SKN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -153,17 +153,17 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NBMCV_FP"
+						Name="W3DMesh:NBMCV_FP"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="UNPACKING REALLY4D"
+					ConditionsYes="UNPACKING REALLYDAMAGED"
 					PortraitImage=""
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NBMCV_A"
+						Name="W3DContainer:NBMCV_A"
 						ExtraMesh="False" />
 					<Texture
 						Original="NBConYard"
@@ -218,7 +218,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NBMCV_A"
+						Name="W3DContainer:NBMCV_A"
 						ExtraMesh="False" />
 					<Texture
 						Original="NBConYard"
@@ -231,7 +231,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NBMCV_A"
+						Name="W3DContainer:NBMCV_A"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -241,7 +241,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NBMCV_SKN"
+						Name="W3DContainer:NBMCV_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="NBConYard"
@@ -324,7 +324,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NBMCV_SKN"
+						Name="W3DContainer:NBMCV_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="NBConYard"
@@ -379,7 +379,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NBMCV_SKN"
+						Name="W3DContainer:NBMCV_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="NBConYard"
@@ -1205,7 +1205,7 @@
 		<Body>
 			<ActiveBody
 				id="A5C3EB8A"
-				MaxHealth="5000"
+				MaxHealth="5500"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1398,8 +1398,8 @@
 			CrushDecelerationPercent="0%"
 			CrushWeapon=""
 			CrushRevengeWeapon=""
-			CrusherLevel="1"
-			CrushableLevel="2"
+			CrusherLevel="3"
+			CrushableLevel="3"
 			MountedCrusherLevel="255"
 			MountedCrushableLevel="255"
 			CrushEqualLevelProps="False"

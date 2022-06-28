@@ -561,7 +561,8 @@
 			<PassiveAreaEffectBehavior
 				id="ModuleTag_PropagandaHeal"
 				EffectRadius="400"
-				HealingPercentPerSecond="15"
+				HealingPercentPerSecond="10"
+				HealingPointsPerSecond="0"				
 				SurveyDelayFrames="30"
 				AffectUnderAttack="true"
 				NonStackable="true" >

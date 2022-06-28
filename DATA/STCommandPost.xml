@@ -68,7 +68,7 @@
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
 		BuildCost="1500"
-		RefundValue="0"
+		RefundValue="500"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
 		TransportSlotCount="1"
@@ -1019,7 +1019,7 @@
 			</EngineerContain>
 			<CreateObjectDie
 				id="34FD1923"
-				CreationList="OCL_GenericSteelTalonsBuildingDestruction"
+				CreationList="OCL_ArmorySteelTalonsBuildingDestruction"
 				UpgradeForbidden="  ">
 				<DieMuxData
 					ExemptStatus=""
@@ -1032,7 +1032,7 @@
 			</CreateObjectDie>
 			<CreateObjectDie
 				id="4BF392A4"
-				CreationList="OCL_GenericSteelTalonsBuildingSuicide">
+				CreationList="OCL_ArmorySteelTalonsBuildingSuicide">
 				<DieMuxData
 					ExemptStatus=""
 					RequiredStatus=""

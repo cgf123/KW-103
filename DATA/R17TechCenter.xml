@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="Reaper17Reactor"
-		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE POWERED NOT_AUTOACQUIRABLE COVER FS_TECH_CENTER AUTO_ACQUIRABLE_BY_AI"
+		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE FS_TECHNOLOGY POWERED NOT_AUTOACQUIRABLE COVER FS_TECH_CENTER AUTO_ACQUIRABLE_BY_AI"
 		Description="Desc:Reaper17TechnologyAssembler_103"
 		TypeDescription="Type:Reaper17TechnologyAssembler"
 		RadarPriority="STRUCTURE"
@@ -831,7 +831,7 @@
 				SpecialPowerRadius="-1"
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
-				SpecificUnit="AlienAssimilator"
+				SpecificUnit="Reaper17ShardWalker"
 				UnitKindOf=""
 				AllyUnitInclude=""
 				AllyUnitExclude=""

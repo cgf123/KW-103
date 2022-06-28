@@ -48,7 +48,7 @@
 				SecondPercentIndent="66"
 				CurveFlattenMinDist="300"
 				DetonateCallsKill="true" 
-				FlightPathAdjustDistPerSecond="15"
+				FlightPathAdjustDistPerSecond="25"
 				GroundHitFX="FX_GDI_SonicRifleGroundImpact"
 				OrientToFlightPath="true"/>
 		</Behaviors>
@@ -116,7 +116,7 @@
 				SecondPercentIndent="66"
 				CurveFlattenMinDist="300"
 				DetonateCallsKill="true" 
-				FlightPathAdjustDistPerSecond="15"
+				FlightPathAdjustDistPerSecond="25"
 				GroundHitFX="FX_GDI_SonicRifleGroundImpactHeroic"
 				OrientToFlightPath="true"/>
 		</Behaviors>

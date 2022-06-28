@@ -65,7 +65,7 @@
 		WeaponCategory="CANNON"
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
-		ReinvisibilityDelay="3s"
+		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_VertigoDisruptionPod"
 		CaptureTime="0s"
 		BuildCost="1600"

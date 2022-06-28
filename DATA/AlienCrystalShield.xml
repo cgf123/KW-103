@@ -74,8 +74,8 @@
 			<LifetimeUpdate
 				id="ModuleTag_Lifetime"
 				DeathType="FADED"
-				MinLifetime="18s"
-				MaxLifetime="18s" />
+				MinLifetime="16s"
+				MaxLifetime="16s" />
 		</Behaviors>
 		<Body>
 			<ActiveBody
@@ -110,6 +110,7 @@
 		<Nuggets>
 			<ParalyzeNugget
 				Radius="100"
+				ForbiddenTargetObjectStatus="NO_SHADOW"
 				DurationSeconds="1.25s"
 				ParalyzeType="USER_PARALYZE">
 				<SpecialObjectFilter
@@ -122,6 +123,7 @@
 			</ParalyzeNugget>
 			<AttributeModifierNugget
 				Radius="100"
+				ForbiddenTargetObjectStatus="NO_SHADOW"				
 				PartitionFilterTestType="SPHERE"
 				AttributeModifierName="AttributeModifier_AlienCrystalShield">
 				<SpecialObjectFilter
@@ -143,6 +145,5 @@
 			</TintObjectsNugget>
 		</Nuggets>
 	</WeaponTemplate>	
-	
 	
 </AssetDeclaration>

@@ -1004,6 +1004,7 @@
 		<AI>
 			<SupplyTruckAIUpdate
 				id="12FA48BA"
+				AILuaEventsList="GenericHarvesterFunctions_103"						
 				AutoAcquireEnemiesWhenIdle="YES"
 				StopChaseDistance="500"
 				HoldGroundCloseRangeDistance="0"
@@ -1038,7 +1039,7 @@
 		<Body>
 			<ActiveBody
 				id="A5C3EB8A"
-				MaxHealth="4000"
+				MaxHealth="4100"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

@@ -22,7 +22,7 @@
 			MaxHealth="0.75"
 			MinHordeDensity="30"
 			MaxHordeDensity="90">
-			<CreateObject>SteelTalonsZoneTrooperSquad</CreateObject>
+			<CreateObject>SteelTalonsGrenadeSoldierSquad</CreateObject>
 		</CreateObject>
 	</ObjectCreationList>
 	<ObjectCreationList
@@ -30,7 +30,7 @@
 		<CreateObject
 			Options="IGNORE_ALL_OBJECTS"
 			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
-			<CreateObject>SteelTalonsZoneTrooperSquad</CreateObject>
+			<CreateObject>SteelTalonsGrenadeSoldierSquad</CreateObject>
 		</CreateObject>
 	</ObjectCreationList>	
 	<ObjectCreationList
@@ -437,9 +437,9 @@
 		<CreateObject
 			Options="IGNORE_ALL_OBJECTS"
 			Disposition="ON_GROUND_ALIGNED"
-			TempModelCondition="USER_12"
+			TempModelCondition="USER_12"			
 			TempModelConditionTime="4.9s"		
-			MinHordeDensity="60"
+			MinHordeDensity="90"
 			MaxHordeDensity="90"			
 			CreateFX="FX_NOD_RedemptionSummon">
 			<CreateObject>NODCyborgInfantrySquad</CreateObject>
@@ -450,6 +450,21 @@
 			<CreateObject>NODRedemptionAnimator</CreateObject>
 		</CreateObject>			
 	</ObjectCreationList>	
+	
+	<ObjectCreationList
+	id="BlackHandCustomWarmechDieOCL">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS COPY_CREATORS_UPGRADES PRESERVE_LAYER"
+			Disposition="LIKE_EXISTING"
+			TempModelCondition="USER_2"
+			TempModelConditionTime="4.0s"
+			InvulnerableTime="4s" 		
+			MinHealth="0.5"
+			MaxHealth="0.5">
+			<CreateObject>BlackHandCustomWarmechHusk</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
 	
 	<!-- ########################## AOE MC ################################## -->
 	<ObjectCreationList
@@ -470,5 +485,41 @@
 			<CreateObject>RageGenDummy</CreateObject>
 		</CreateObject>
 	</ObjectCreationList>
+
+	<!-- ############################### MS ########################################### -->
+	<ObjectCreationList
+		id="OCLMotherShipBeam100">
+		<CreateObject
+			Disposition="ON_GROUND_ALIGNED USE_WATER_SURFACE"
+			Options="IGNORE_ALL_OBJECTS">
+			<CreateObject>AlienMotherShipBeamEffect100</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	<ObjectCreationList
+		id="OCLMotherShipBeam75">
+		<CreateObject
+			Disposition="ON_GROUND_ALIGNED USE_WATER_SURFACE"
+			Options="IGNORE_ALL_OBJECTS">
+			<CreateObject>AlienMotherShipBeamEffect75</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	<ObjectCreationList
+		id="OCLMotherShipBeam50">
+		<CreateObject
+			Disposition="ON_GROUND_ALIGNED USE_WATER_SURFACE"
+			Options="IGNORE_ALL_OBJECTS">
+			<CreateObject>AlienMotherShipBeamEffect50</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>
+	<ObjectCreationList
+		id="OCLMotherShipBeam25">
+		<CreateObject
+			Disposition="ON_GROUND_ALIGNED USE_WATER_SURFACE"
+			Options="IGNORE_ALL_OBJECTS">
+			<CreateObject>AlienMotherShipBeamEffect25</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	
 
 </AssetDeclaration>

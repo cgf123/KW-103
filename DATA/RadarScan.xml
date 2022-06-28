@@ -143,6 +143,8 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="513BC476" />		
 			<StealthDetectorUpdate
 				id="D0A7225C"
 				RequiresAllTriggers="False"
@@ -167,8 +169,8 @@
 				UseMetaAOI="False" />
 			<LifetimeUpdate
 				id="6D14780C"
-				MinLifetime="30s"
-				MaxLifetime="30s"
+				MinLifetime="40s"
+				MaxLifetime="40s"
 				DeathType="NONE"
 				WaitForWakeUp="False"
 				ScoreKill="False"

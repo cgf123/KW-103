@@ -7,7 +7,7 @@
 		
 	<GameObject
 		id="ZOCOMZoneRaider"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS INFANTRY PRELOAD ATTACK_NEEDS_LINE_OF_SIGHT PATH_THROUGH_INFANTRY"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS INFANTRY PRELOAD ATTACK_NEEDS_LINE_OF_SIGHT PATH_THROUGH_INFANTRY ARCHER"
 		ReviveText=""
 		RecruitText=""
 		Description="Desc:GDIZoneRaider"
@@ -1568,7 +1568,13 @@
 						Template="ZoneRaiderRocketPods"
 						Upgrade=""
 						ObjectStatus=""
-						IsPlayerUpgradePermanent="False" />					
+						IsPlayerUpgradePermanent="False" />		
+					<Weapon
+						Ordering="SECONDARY_WEAPON"
+						Template="ZoneRaiderRocketPods_Upgraded"
+						Upgrade=""
+						ObjectStatus="WEAPON_UPGRADED_01"
+						IsPlayerUpgradePermanent="False" />							
 					<TurretSettings
 						TurretTurnRate="180"
 						TurretPitchRate="40"

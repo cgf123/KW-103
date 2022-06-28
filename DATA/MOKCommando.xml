@@ -98,7 +98,7 @@
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="90"
+			Speed="95"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<SkirmishAIInformation
@@ -1868,7 +1868,7 @@
 				id="3AE0061F"
 				UpdateDelay="0.5s"
 				Suppressability="1000"
-				SuppressionDuration="1.5s"
+				SuppressionDuration="1.0s"
 				AttributeModifierSuppressed="Modifier_Test_Suppression"
 				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove"
 				IgnoreSuppressionObjectStatus="" />

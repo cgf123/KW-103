@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="NODObelisk"
-		KindOf="SELECTABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS STRUCTURE ATTACK_NEEDS_LINE_OF_SIGHT FS_BASE_DEFENSE POWERED CAN_SEE_THROUGH_STRUCTURE COVER AUTO_ACQUIRABLE_BY_AI LINE_OF_SIGHT_IGNORES_BUILDINGS"
+		KindOf="SELECTABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS STRUCTURE ATTACK_NEEDS_LINE_OF_SIGHT FS_BASE_DEFENSE POWERED CAN_SEE_THROUGH_STRUCTURE COVER AUTO_ACQUIRABLE_BY_AI LINE_OF_SIGHT_IGNORES_BUILDINGS MADE_OF_STONE"
 		Description="Desc:NODObelisk"
 		TypeDescription="Type:NODObelisk"
 		RadarPriority="STRUCTURE"
@@ -891,6 +891,16 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
+			
+			<!--
+			<PowerUpdate
+				id="ModuleTag_backup"
+				UpdatePeriod="1s"
+				ReloadTime="30s"
+				Duration="10s"
+				Type="BACKUP_GENERATOR" />		
+			-->
+			
 		</Behaviors>
 		<AI>
 			<AIUpdate

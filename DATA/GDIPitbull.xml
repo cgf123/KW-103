@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="GDIPitbull"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE MADE_OF_WOOD CAN_BE_FAVORITE_UNIT"
 		Description="Desc:GDIPitbull"
 		TypeDescription="Type:GDIPitbull"
 		RadarPriority="UNIT"
@@ -562,7 +562,7 @@
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />				
 					<TurretSettings
-						TurretTurnRate="360"
+						TurretTurnRate="400"
 						TurretPitchRate="200"
 						MinimumPitch="0d"
 						PitchHeight="50%"
@@ -570,7 +570,7 @@
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
 						MinIdleScanAngle="0"
-						MaxIdleScanAngle="90"
+						MaxIdleScanAngle="45"
 						MaxDeflectionClockwise="180d"
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"
@@ -1631,7 +1631,7 @@
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="360"
+						TurretTurnRate="500"
 						TurretPitchRate="200"
 						MinimumPitch="0d"
 						PitchHeight="50%"

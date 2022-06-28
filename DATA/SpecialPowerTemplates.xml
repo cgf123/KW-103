@@ -37,7 +37,7 @@
 		RequiredConditions=""
 		WaypointModeTerminal="false"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice=""
-		ReachableTargetsCircleDisplayRadius="500">
+		ReachableTargetsCircleDisplayRadius="550">
 		<ObjectFilter
 			Relationship="ENEMIES"
 			Rule="ALL" />
@@ -74,12 +74,13 @@
 		<ForbiddenObjectFilter
 			Rule="ANY"
 			StatusBitFlags="AIRBORNE_TARGET"
+			Exclude="MCV"
 			Include="AIRCRAFT INFANTRY">
 			<ExcludeThing>AlienMothership</ExcludeThing>				
 			<ExcludeThing>AlienPlanetaryAssaultCarrier</ExcludeThing>
 			<ExcludeThing>Traveler59PlanetaryAssaultCarrier</ExcludeThing>
 			<ExcludeThing>AlienDevastatorWarship</ExcludeThing>
-			<ExcludeThing>Traveler59DevastatorWarship</ExcludeThing>			
+			<ExcludeThing>Traveler59DevastatorWarship</ExcludeThing>
 		</ForbiddenObjectFilter>
 	</SpecialPowerTemplate>
 	
@@ -152,7 +153,7 @@
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectWormholeLocation"
 		RadiusCursorRadius="50"
-		Money="-2500" />	
+		Money="-2000" />	
 
 	<SpecialPowerTemplate
 		id="SpecialPower_WormHole"
@@ -162,7 +163,9 @@
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectWormholeLocation"
 		RadiusCursorRadius="50"
-		Money="-2500" />
+		MaxCastRange="100000"			
+		Money="-2000" >	
+	</SpecialPowerTemplate>
 
 	<SpecialPowerTemplate
 		id="SpecialPower_Reaper17WormHole"
@@ -172,7 +175,7 @@
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectWormholeLocation"
 		RadiusCursorRadius="50"
-		Money="-3500" />	
+		Money="-3000" />	
 		
 	<SpecialPowerTemplate
 		id="SpecialPowerCallSupportSTHunterKillerTeam"
@@ -515,7 +518,7 @@
 	<SpecialPowerTemplate
       id="SpecialPowerCallSupportZOCOMAirborne"
       Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-      ReloadTime="60s"
+      ReloadTime="45s"
       ForbiddenObjectRange="110"
       RadiusCursorRadius="110"
       TargetType="LOCATION"
@@ -530,7 +533,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerCallSupportGDIAirborne"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-		ReloadTime="60s"
+		ReloadTime="45s"
 		ForbiddenObjectRange="110"
 		RadiusCursorRadius="110"
 		TargetType="LOCATION"
@@ -616,7 +619,7 @@
 	
 	<SpecialPowerTemplate
 		id="SpecialPowerZOCOM_SpaceCommandShockwaveArtillery"
-		ReloadTime="100s"
+		ReloadTime="120s"
 		RadiusCursorRadius="110"
 		TargetType="LOCATION"
 		InitiateAtLocationSound="AudioEvent:GDI_ShockwaveArtillery_WeaponFire_Stereo"
@@ -666,7 +669,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerLaunchCatalystMissile"
 		Flags="IS_PLAYER_POWER WATER_OK SHARED_SYNC"
-		RadiusCursorRadius="150"
+		RadiusCursorRadius="120"
 		ReloadTime="240s"
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
@@ -710,7 +713,7 @@
 		InitiateAtLocationSound="AudioEvent:ALI_BuzzerSwarm"
 		ReloadTime="90s"
 		Flags="IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS NOT_CLIFF_CELL SHARED_SYNC"
-		Money="-2800"
+		Money="-2500"
 		RadiusCursorRadius="60"
 		ForbiddenObjectRange="80">
 		<ForbiddenObjectFilter
@@ -741,25 +744,13 @@
 	
 	<SpecialPowerTemplate
 		id="SpecialPowerAlienRepairDrones"
-		ReloadTime="105s"
+		ReloadTime="120s"
 		RadiusCursorRadius="100"
 		Money="-1500"
 		Flags="IS_PLAYER_POWER WATER_OK SHARED_SYNC"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		TargetType="LOCATION"
 		InitiateAtLocationSound="AudioEvent:ALI_Repair_Start" />	
-	
-	<SpecialPowerTemplate
-		id="SpecialPower_TemporalWormhole"
-		DisplayName="SPECIALPOWER:TemporalWormhole"
-		Flags="IS_PLAYER_POWER WATER_OK SHARED_SYNC"
-		ReloadTime="300s"
-		TargetType="LOCATION"
-		InitiateAtLocationSound="AudioEvent:ALI_TemporalWormhole_Start"
-		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		RadiusCursorRadius="225"
-		Money="-1200">
-	</SpecialPowerTemplate>	
 
 	<SpecialPowerTemplate
 		id="SpecialPower_PhaseField"
@@ -789,7 +780,7 @@
 		id="SpecialPower_CrystalShield"
 		DisplayName="SPECIALPOWER:CrystalShield"
 		Flags="IS_PLAYER_POWER WATER_OK SHARED_SYNC"
-		ReloadTime="300s"
+		ReloadTime="270s"
 		TargetType="LOCATION"
 		InitiateAtLocationSound="AudioEvent:ALI_StasisShield_Start"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
@@ -799,6 +790,19 @@
 			<RequiredObject>AlienStatisChamber</RequiredObject>
 		</GameDependency>    -->
 	</SpecialPowerTemplate>	
+	
+	<SpecialPowerTemplate
+		id="SpecialPower_TemporalWormhole"
+		DisplayName="SPECIALPOWER:TemporalWormhole"
+		Flags="IS_PLAYER_POWER WATER_OK SHARED_SYNC"
+		ReloadTime="270s"
+		TargetType="LOCATION"
+		InitiateAtLocationSound="AudioEvent:ALI_TemporalWormhole_Start"
+		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+		RadiusCursorRadius="225"
+		Money="-1200">
+	</SpecialPowerTemplate>	
+	
 	
 	<!-- Rav Tib Agitation cooldown/filters -->
 	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="VoiceTiberiumAgitation" -->
@@ -849,12 +853,14 @@
 			<IncludeThing>AlienSporePod</IncludeThing>
 			<IncludeThing>Traveler59SporePod</IncludeThing>
 			<IncludeThing>Reaper17GrowthStimulator</IncludeThing>
-			<!-- Units -->			
+			<!-- R17 Units -->
 			<!--
 			<IncludeThing>AlienDevourerTank</IncludeThing>
-			<IncludeThing>Reaper17DevourerTank</IncludeThing>		
-			-->		
-			<IncludeThing>Reaper17Corrupter</IncludeThing>
+			<IncludeThing>Reaper17DevourerTank</IncludeThing>				
+			-->	
+			<IncludeThing>Reaper17AnnihilatorTripod</IncludeThing>			
+			<!-- Other Units -->			
+			<IncludeThing>Reaper17Corrupter</IncludeThing>			
 			<IncludeThing>Traveler59Corrupter</IncludeThing>
 			<IncludeThing>AlienCorrupter</IncludeThing>		
 			<IncludeThing>MarkedOfKaneTiberiumTrooperSquad</IncludeThing>
@@ -913,11 +919,13 @@
 			<IncludeThing>AlienSporePod</IncludeThing>
 			<IncludeThing>Traveler59SporePod</IncludeThing>
 			<IncludeThing>Reaper17GrowthStimulator</IncludeThing>
-			<!-- Units -->			
+			<!-- R17 Units -->
 			<!--
 			<IncludeThing>AlienDevourerTank</IncludeThing>
-			<IncludeThing>Reaper17DevourerTank</IncludeThing>		
-			-->
+			<IncludeThing>Reaper17DevourerTank</IncludeThing>				
+			-->	
+			<IncludeThing>Reaper17AnnihilatorTripod</IncludeThing>			
+			<!-- Other Units -->	
 			<IncludeThing>Reaper17Corrupter</IncludeThing>
 			<IncludeThing>Traveler59Corrupter</IncludeThing>
 			<IncludeThing>AlienCorrupter</IncludeThing>		
@@ -954,7 +962,7 @@
 		id="SpecialPowerMastermindTeleportObjectSelect"
 		ReloadTime="10s"
 		TargetType="LOCATION"
-		RadiusCursorRadius="75"
+		RadiusCursorRadius="60"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		MaxCastRange="9999997"
 		Flags="NEEDS_OBJECT_FILTER LIMIT_DISTANCE IGNORE_SELF_IN_NEEDED_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
@@ -997,7 +1005,7 @@
 		id="SpecialPowerProdigyTeleportObjectSelect"
 		ReloadTime="10s"
 		TargetType="LOCATION"
-		RadiusCursorRadius="75"
+		RadiusCursorRadius="60"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		MaxCastRange="9999999"
 		Flags="NEEDS_OBJECT_FILTER LIMIT_DISTANCE IGNORE_SELF_IN_NEEDED_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
@@ -1053,9 +1061,10 @@
 			Relationship="ENEMIES NEUTRAL"
 			Include="VEHICLE INFANTRY"
 			Exclude="AIRCRAFT METAUNIT STRUCTURE HUSK">
+			<!--
 			<IncludeThing>GDIBattleBase</IncludeThing>
 			<IncludeThing>SteelTalonsBattleBase</IncludeThing>
-			<IncludeThing>ZOCOMBattleBase</IncludeThing>	
+			<IncludeThing>ZOCOMBattleBase</IncludeThing> -->
 			<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
 			<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
 			<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
@@ -1076,6 +1085,7 @@
 		<ObjectFilter
 			Rule="ANY"
 			Relationship="ENEMIES NEUTRAL"
+			RejectStatusBitFlags="IMMOBILE"			
 			Include="VEHICLE INFANTRY"
 			Exclude="AIRCRAFT METAUNIT STRUCTURE HUSK">
 			<ExcludeThing>SubwayNode</ExcludeThing>
@@ -1121,7 +1131,7 @@
 		Flags="NEEDS_OBJECT_FILTER"
 		PreventConditions="AIRBORNE_TARGET IGNORE_AI_COMMAND">
 		<ObjectFilter
-			Rule="ANY"
+			Rule="ANY"		
 			Relationship="ENEMIES NEUTRAL">
 			<!--
 			<IncludeThing>AlienGunwalker</IncludeThing>			
@@ -1132,10 +1142,11 @@
 			<IncludeThing>Reaper17Stalker</IncludeThing>				
 			<IncludeThing>AlienStalkerSquad</IncludeThing>			
 			<IncludeThing>Traveler59StalkerSquad</IncludeThing>			
-			<IncludeThing>Reaper17StalkerSquad</IncludeThing>				
+			<IncludeThing>Reaper17StalkerSquad</IncludeThing>	
+			<!--
 			<IncludeThing>GDIBattleBase</IncludeThing>
 			<IncludeThing>SteelTalonsBattleBase</IncludeThing>
-			<IncludeThing>ZOCOMBattleBase</IncludeThing>							
+			<IncludeThing>ZOCOMBattleBase</IncludeThing>	-->						
 		</ObjectFilter>
 	</SpecialPowerTemplate>	
 
@@ -1487,7 +1498,7 @@
 <!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="VoiceDisruptionPod" -->
 	<SpecialPowerTemplate
 		id="SpecialPowerDisruptionPod_Dispatch"
-		ReloadTime="30s"
+		ReloadTime="20s"
 		TargetType="OBJECT_OR_LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x38185818"
 		WaypointModeTerminal="false"
@@ -1501,7 +1512,7 @@
 		id="SpecialPowerDisruptionPod_UnTargeted"
 		TargetType="LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x38185818"
-		ReloadTime="30s"
+		ReloadTime="20s"
 		Money="-200">
 	</SpecialPowerTemplate>
 	<SpecialPowerTemplate
@@ -1509,7 +1520,7 @@
 		TargetType="OBJECT"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x38185818"
 		Flags="NO_FORBIDDEN_OBJECTS"
-		ReloadTime="30s"
+		ReloadTime="20s"
 		Money="-200">
 		<ForbiddenObjectFilter
 			Rule="ANY"

@@ -479,12 +479,24 @@
 				Permanent="True"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				AddConditionFlags=""
+				AddConditionFlags="UPGRADED_ARMOR"
 				RemoveConditionFlags=""
 				AddTempConditionFlag="TOPPLED"
 				TempConditionTime="0s">
 				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
 			</ModelConditionUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitsArmorStatus"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="SWITCHED_WEAPONS"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
+			</StatusBitsUpgrade>				
 			<AimWeapon
 				id="06370EA6"
 				AimLowThreshold="0"
@@ -677,7 +689,7 @@
 				GoIdleInStartPreparation="True"
 				FaceTarget="True" />
 			
-			<!-- AI use transports! -->
+			<!-- AI use transports!
 			<AISpecialPowerUpdate
 				id="335B0612"
 				CommandButtonName="Command_EnterTransport"
@@ -713,7 +725,8 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />				
+				RandomizeTargetLocation="False" />
+			-->				
 				
 		</Behaviors>
 		<AI>
@@ -1302,12 +1315,24 @@
 				Permanent="True"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				AddConditionFlags=""
+				AddConditionFlags="UPGRADED_ARMOR"
 				RemoveConditionFlags=""
 				AddTempConditionFlag="TOPPLED"
 				TempConditionTime="0s">
 				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
 			</ModelConditionUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitsArmorStatus"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="SWITCHED_WEAPONS"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
+			</StatusBitsUpgrade>				
 			<AimWeapon
 				id="06370EA6"
 				AimLowThreshold="0"

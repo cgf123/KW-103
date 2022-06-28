@@ -18,9 +18,19 @@
 				id="ModuleTag_Draw">
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
-					<Model Name="" />
+					<Model Name="W3DContainer:FXINVISBONE" />
 				</ModelConditionState>
 			</ScriptedModelDraw>
+			<SpotlightDraw
+				id="ModuleTag_Spotlight"
+				RefreshTime="2.0s"
+				SweepTime="1.0s">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="W3DMesh:FXspotlight" />
+				</ModelConditionState>
+			</SpotlightDraw>			
 		</Draws>
 		<Behaviors>
 			<StealthDetectorUpdate

@@ -195,7 +195,7 @@
 					Include="HARVESTER">
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>		
-						
+
 			
 			<!-- Disable abilities for a while even after phase 
 			<AttributeModifierNugget

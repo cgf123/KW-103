@@ -1205,7 +1205,7 @@
 		<Body>
 			<ActiveBody
 				id="A5C3EB8A"
-				MaxHealth="5000"
+				MaxHealth="5500"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1398,8 +1398,8 @@
 			CrushDecelerationPercent="0%"
 			CrushWeapon=""
 			CrushRevengeWeapon=""
-			CrusherLevel="1"
-			CrushableLevel="2"
+			CrusherLevel="3"
+			CrushableLevel="3"
 			MountedCrusherLevel="255"
 			MountedCrushableLevel="255"
 			CrushEqualLevelProps="False"

@@ -338,6 +338,8 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="513BC476" />
 			<SlowDeath
 				id="1673247C"
 				SinkRate="4"

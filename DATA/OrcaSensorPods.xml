@@ -55,7 +55,7 @@
 			</InvisibilityUpdate>
 			<StealthDetectorUpdate
 				id="ModuleTag_StealthDetect"
-				DetectionRange="350" />
+				DetectionRange="400" />
 			<LifetimeUpdate
 				id="ModuleTag_LifeTime"
 				MinLifetime="120s"
@@ -290,7 +290,7 @@
 			</InvisibilityUpdate>
 			<StealthDetectorUpdate
 				id="ModuleTag_StealthDetect"
-				DetectionRange="350" />
+				DetectionRange="400" />
 			<LifetimeUpdate
 				id="ModuleTag_LifeTime"
 				MinLifetime="120s"
@@ -599,7 +599,7 @@
 		id="GDIOrcaSensorPodWeapon"
 		Name="GDIOrcaSensorPodWeapon"
 		AttackRange="300.0"
-		WeaponSpeed="200"
+		WeaponSpeed="250"
 		MinWeaponSpeed="300"
 		MaxWeaponSpeed="310"
 		FireFX="FX_GDIOrcaSensorPodFire"
@@ -648,7 +648,7 @@
 		id="GDIOrcaSensorStickyPodWeapon"
 		Name="GDIOrcaSensorStickyPodWeapon"
 		AttackRange="300.0"
-		WeaponSpeed="200"
+		WeaponSpeed="250"
 		MinWeaponSpeed="300"
 		MaxWeaponSpeed="310"
 		FireFX="FX_GDIOrcaSensorPodFire"
@@ -700,7 +700,7 @@
 		id="GDIOrcaSensorStickyPodWeapon_Meta"
 		Name="GDIOrcaSensorStickyPodWeapon_Meta"
 		AttackRange="300.0"
-		WeaponSpeed="200"
+		WeaponSpeed="250"
 		MinWeaponSpeed="300"
 		MaxWeaponSpeed="310"
 		FireFX="FX_GDIOrcaSensorPodFire"
@@ -760,7 +760,7 @@
 		id="GDIOrcaSensorStickyPodWeapon_Ally"
 		Name="GDIOrcaSensorStickyPodWeapon_Ally"
 		AttackRange="300.0" 
-		WeaponSpeed="200" 
+		WeaponSpeed="250" 
 		MinWeaponSpeed="300" 
 		MaxWeaponSpeed="310" 
 		FireFX="FX_GDIOrcaSensorPodFire"
@@ -801,7 +801,7 @@
 		id="GDIOrcaSensorStickyPodWeapon_Ally_Meta"
 		Name="GDIOrcaSensorStickyPodWeapon_Ally_Meta"
 		AttackRange="300.0" 
-		WeaponSpeed="200" 
+		WeaponSpeed="250" 
 		MinWeaponSpeed="300" 
 		MaxWeaponSpeed="310" 
 		FireFX="FX_GDIOrcaSensorPodFire"

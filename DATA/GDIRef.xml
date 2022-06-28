@@ -1104,7 +1104,35 @@
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
 					RejectModelCondition="" />
-			</SupplyCenterDockUpdate>
+			</SupplyCenterDockUpdate>			
+			<PassiveAreaEffectBehavior
+				id="7FFDED05"
+				EffectRadius="225"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="2"
+				UpgradeRequired=""
+				AntiCategoryMask=""
+				AntiFX=""
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>Modifier_HarvDock</Modifier>
+				<AllowFilter
+					Rule="NONE"
+					Relationship="SAME_PLAYER"
+					Alignment="NONE"
+					Include="HARVESTER"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>							
 			<ModelConditionUpgrade
 				id="51FB9B65"
 				RequiresAllTriggers="False"

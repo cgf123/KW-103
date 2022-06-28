@@ -102,7 +102,7 @@
 			Locomotor="NODBeamCannonLocomotor" />
 		<SkirmishAIInformation
 			BaseBuildingLocation="FRONT"
-			ConquerMetricsOverrideDPS="150"
+			ConquerMetricsOverrideDPS="160"
 			ConquerMetricsOverrideDamageType="GRENADE"
 			ConquerMetricsOverrideAntiMask="ANTI_GROUND"
 			UnitBuilderStandardCombatUnit="True" />
@@ -644,7 +644,7 @@
 				id="720F4A50">
 				<WeaponSlotTurret
 					ID="1"
-					InterleavedStyle="INTERLEAVE_RANDOM"
+					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
 					WeaponChoiceCriteria="PREFER_MOST_DAMAGE"
 					AllowInterleavedFiring="True">
 					<Weapon
@@ -926,7 +926,7 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="True"
 				FaceTarget="True"
-				DamagePerSecond="150"
+				DamagePerSecond="160"
 				TargetAttributeModifierAdd=""
 				SweepFX=""
 				ReflectorExtendDistance="0"
@@ -1166,7 +1166,7 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="False"
 				FaceTarget="True"
-				DamagePerSecond="150"
+				DamagePerSecond="160"
 				TargetAttributeModifierAdd=""
 				SweepFX=""
 				ReflectorExtendDistance="550"

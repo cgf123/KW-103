@@ -813,18 +813,23 @@
 					<IncludeThing>NODScorpionBuggy</IncludeThing>
 					<IncludeThing>NODEmissary</IncludeThing>
 					<IncludeThing>NODMobileArtillery</IncludeThing>
+					<IncludeThing>NODFlameTank</IncludeThing>
+					<IncludeThing>NODStealthTank</IncludeThing>					
 					<IncludeThing>MarkedOfKaneAttackBike</IncludeThing>
 					<IncludeThing>MarkedOfKaneRaiderTank</IncludeThing>
 					<IncludeThing>MarkedOfKaneScorpionBuggy</IncludeThing>
 					<IncludeThing>MarkedOfKaneMobileArtillery</IncludeThing>
 					<IncludeThing>MarkedOfKaneBeamCannon</IncludeThing>
 					<IncludeThing>MarkedOfKaneEmissary</IncludeThing>
+					<IncludeThing>MarkedOfKaneStealthTank</IncludeThing>						
 					<IncludeThing>BlackHandAttackBike</IncludeThing>
 					<IncludeThing>BlackHandBeamCannon</IncludeThing>
 					<IncludeThing>BlackHandRaiderTank</IncludeThing>
 					<IncludeThing>BlackHandScorpionBuggy</IncludeThing>
 					<IncludeThing>BlackHandEmissary</IncludeThing>
 					<IncludeThing>BlackHandMobileArtillery</IncludeThing>
+					<IncludeThing>BlackHandFlameTank</IncludeThing>
+					<IncludeThing>BlackHandStealthTank</IncludeThing>						
 				</PassengerFilter>
 				<DieMuxData
 					ExemptStatus=""
@@ -854,6 +859,35 @@
 				StatusToClear="UNSELECTABLE">
 				<TriggeredBy>Upgrade_Transporting</TriggeredBy>
 			</StatusBitsUpgrade>				
+			
+			<!-- Empty transport scout exploit fix -->
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantDefault" 
+				UpgradeToGrant="Upgrade_ObjectDefault"  />			
+		
+			<AttributeModifierUpgrade
+				id="AA36A1AB"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="AttributeModifier_TransportEmpty">
+				<TriggeredBy>Upgrade_ObjectDefault</TriggeredBy>
+			</AttributeModifierUpgrade>		
+
+			<RemoveUpgradeUpgrade
+				id="3734843D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				SuppressEvaEventForRemoval="False"
+				RemoveFromAllPlayerObjects="False">
+				<TriggeredBy>Upgrade_Transporting</TriggeredBy>
+				<UpgradeToRemove>Upgrade_ObjectDefault</UpgradeToRemove>
+			</RemoveUpgradeUpgrade>					
 			
 		</Behaviors>
 		<AI>

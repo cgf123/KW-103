@@ -1479,6 +1479,22 @@
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_NodTechCenterChargedParticleBeam</TriggeredBy>
 			</AudioLoopUpgrade>
+			
+			<!-- Temp unattackable -->
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantDefault" 
+				UpgradeToGrant="Upgrade_ObjectDefault"  />			
+		
+			<AttributeModifierUpgrade
+				id="AA36A1AB"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="AttributeModifier_RedemptionSpawn">
+				<TriggeredBy>Upgrade_ObjectDefault</TriggeredBy>
+			</AttributeModifierUpgrade>				
 		</Behaviors>
 		<AI>
 			<AIUpdate

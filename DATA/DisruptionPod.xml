@@ -209,7 +209,7 @@
 				id="3BD7F2F5"
 				Options="STARTS_ACTIVE BROADCAST"
 				UpdatePeriod="1s"
-				BroadcastRange="200"
+				BroadcastRange="300"
 				OpacityMin="40%"
 				OpacityMax="100%">
 				<InvisibilityNugget

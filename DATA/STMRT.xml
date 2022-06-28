@@ -95,7 +95,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="80"
+			Speed="77"
 			Condition="NORMAL"
 			Locomotor="GDIAPCLocomotor" />
 		<SkirmishAIInformation
@@ -519,8 +519,8 @@
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" /> 					
 					<TurretSettings
-						TurretTurnRate="360"
-						TurretPitchRate="200"
+						TurretTurnRate="500"
+						TurretPitchRate="270"
 						MinimumPitch="0d"
 						PitchHeight="50%"
 						ControlledWeaponSlots=""
@@ -1490,7 +1490,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2500"
+				MaxHealth="2600"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

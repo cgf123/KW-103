@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="ZOCOMImprovedSonicTank"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT CAVALRY"
 		Description="Desc:ZOCOMImprovedSonicTank"
 		TypeDescription="Type:ZOCOMImprovedSonicTank"
 		RadarPriority="UNIT"
@@ -879,8 +879,8 @@
 			<LinearDamageUpdate
 				id="3564D7F8"
 				StartDistanceOffset="50"
-				Radius="25"
-				Length="330"
+				Radius="30"
+				Length="340"
 				SweepFXList="FX_TeraSweep_Md"
 				SweepWeapon="ShattererSweepWeapon"
 				Speed="150" />

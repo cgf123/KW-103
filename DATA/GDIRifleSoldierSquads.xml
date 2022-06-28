@@ -718,6 +718,18 @@
 				TempConditionTime="0s">
 				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
 			</ModelConditionUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitsArmorStatus"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="SWITCHED_WEAPONS"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
+			</StatusBitsUpgrade>				
 			<CreateAndEnterObjectSpecialPower
 				id="6D44A823"
 				SpecialPowerTemplate="SpecialPowerCallForTransportGDI"
@@ -1731,6 +1743,18 @@
 				TempConditionTime="0s">
 				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
 			</ModelConditionUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitsArmorStatus"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="SWITCHED_WEAPONS"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
+			</StatusBitsUpgrade>				
 			<CreateAndEnterObjectSpecialPower
 				id="6D44A823"
 				SpecialPowerTemplate="SpecialPowerCallForTransportGDI"

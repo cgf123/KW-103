@@ -91,7 +91,7 @@
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="64"
+			Speed="70"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<SkirmishAIInformation
@@ -1581,11 +1581,11 @@
 		BuildInProximityToSamePlayerStucture="True">
 		<DisplayName>Name:GDISniperTeam</DisplayName>
 		<ArmorSet
-			Armor="GDIRifleSoldierArmor"
+			Armor="GDISniperArmor"
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="64"
+			Speed="70"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<SkirmishAIInformation
@@ -3037,7 +3037,7 @@
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="64"
+			Speed="70"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<SkirmishAIInformation
@@ -4525,11 +4525,11 @@
 		BuildInProximityToSamePlayerStucture="True">
 		<DisplayName>Name:GDISniperTeam</DisplayName>
 		<ArmorSet
-			Armor="GDIRifleSoldierArmor"
+			Armor="GDISniperArmor"
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="64"
+			Speed="70"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<SkirmishAIInformation

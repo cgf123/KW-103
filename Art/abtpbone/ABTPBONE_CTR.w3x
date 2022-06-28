@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<W3DContainer id="ABTPBONE_new" Hierarchy="ABTPBONE_new">
+		<SubObject SubObjectID="OBBOX01" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>ABTPBONE.OBBOX01_new</CollisionBox>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>
+	
+	<W3DContainer id="ABTPBONE_new2" Hierarchy="ABTPBONE_new2">
+		<SubObject SubObjectID="OBBOX01" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>ABTPBONE.OBBOX01_new</CollisionBox>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>	
+	
+	<W3DContainer id="ABTPBONE_new3" Hierarchy="ABTPBONE_new3">
+		<SubObject SubObjectID="OBBOX01" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>ABTPBONE.OBBOX01_new3</CollisionBox>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>	
+	
+	<W3DContainer id="ABTPBONE_new4" Hierarchy="ABTPBONE_new4">
+		<SubObject SubObjectID="OBBOX01" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>ABTPBONE.OBBOX01_new</CollisionBox>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>		
+	
+	<W3DContainer id="ABTPBONE_new5" Hierarchy="ABTPBONE_new5">
+		<SubObject SubObjectID="OBBOX01" BoneIndex="0">
+			<RenderObject>
+				<CollisionBox>ABTPBONE.OBBOX01_new</CollisionBox>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>		
+</AssetDeclaration>

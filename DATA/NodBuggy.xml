@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="NODScorpionBuggy"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE MADE_OF_WOOD CAN_BE_FAVORITE_UNIT"
 		Description="Desc:NODRaiderBuggy"
 		TypeDescription="Type:NODRaiderBuggy"
 		RadarPriority="UNIT"
@@ -734,7 +734,7 @@
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
 						TurretTurnRate="360"
-						TurretPitchRate="120"
+						TurretPitchRate="200"
 						MinimumPitch="-9.999999d"
 						PitchHeight="90%"
 						ControlledWeaponSlots=""

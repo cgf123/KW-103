@@ -22,7 +22,7 @@
 		EditorName="Traveler59CultistSquad"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="9"
+		BuildTime="10"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -72,7 +72,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_Traveler59AdvancedArticulators"
 		CaptureTime="0s"
-		BuildCost="900"
+		BuildCost="1000"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -94,8 +94,8 @@
 		<GameDependency
 			RequiredModelConditionsAny=""
 			ForbiddenModelConditions=""
-			RequiredObjectStatusAny=""> <!--
-			<RequiredObject>Traveler59StasisChamber</RequiredObject> -->
+			RequiredObjectStatusAny="">
+			<RequiredObject>Traveler59StatisChamber</RequiredObject>
 			<RequiredObject>Traveler59ControlCenter</RequiredObject>			
 		</GameDependency>
 		<ArmorSet
@@ -1086,7 +1086,7 @@
 				KillPassengersOnDeath="False"
 				HasObjectStatusOfContainedEntry="True"
 				Enabled="True"
-				Slots="5"
+				Slots="9"
 				ExitBone=""
 				ExitPitchRate="0"
 				HealthRegenPercentPerSec="0"
@@ -1159,9 +1159,10 @@
 					DeathTypesForbidden="" />
 				<InitialPayload
 					Name="Traveler59Cultist"
-					Count="5" />
+					Count="9" />
 				<MeleeBehavior
 					Type="AMOEBA" />
+				<!--
 				<RankInfo
 					RankID="1"
 					UnitType="Traveler59Cultist">
@@ -1185,47 +1186,63 @@
 						X="-20"
 						Y="10" />
 				</RankInfo>
+				-->
 				
-				<!--
+	
 				<RankInfo
 					RankID="1"
 					UnitType="Traveler59Cultist">
 					<Position
-						X="-4"
-						Y="-10"
+						X="20"
+						Y="0"
 						LeaderRank="-1"
 						LeaderIndex="0" />
 					<Position
-						X="-4"
-						Y="15"
+						X="10"
+						Y="-20"
 						LeaderRank="-1"
-						LeaderIndex="0" />						
+						LeaderIndex="0" />
+					<Position
+						X="10"
+						Y="20"
+						LeaderRank="-1"
+						LeaderIndex="0" />
+					<Position
+						X="0"
+						Y="0"
+						LeaderRank="-1"
+						LeaderIndex="0" />
 				</RankInfo>
 				<RankInfo
 					RankID="2"
 					UnitType="Traveler59Cultist">
 					<Position
-						X="10"
-						Y="-15"
+						X="0"
+						Y="-30"
 						LeaderRank="-1"
 						LeaderIndex="0" />
 					<Position
-						X="10"
-						Y="15"
+						X="-10"
+						Y="-20"
+						LeaderRank="-1"
+						LeaderIndex="0" />
+					<Position
+						X="-10"
+						Y="20"
+						LeaderRank="-1"
+						LeaderIndex="0" />
+					<Position
+						X="0"
+						Y="30"
 						LeaderRank="-1"
 						LeaderIndex="0" />
 					<Position
 						X="-20"
-						Y="-10"
-						LeaderRank="-1"
-						LeaderIndex="0" />
-					<Position
-						X="-20"
-						Y="10"
+						Y="0"
 						LeaderRank="-1"
 						LeaderIndex="0" />
 				</RankInfo>
-				-->
+
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
 				<RankToReleaseWhenAttacking>2</RankToReleaseWhenAttacking>
 			</HordeContain>

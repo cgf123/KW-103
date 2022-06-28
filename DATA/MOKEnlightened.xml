@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="MarkedOfKaneImprovedCyborgInfantry"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS INFANTRY PRELOAD ATTACK_NEEDS_LINE_OF_SIGHT PATH_THROUGH_INFANTRY"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS INFANTRY PRELOAD ATTACK_NEEDS_LINE_OF_SIGHT PATH_THROUGH_INFANTRY ARCHER"
 		ReviveText=""
 		RecruitText=""
 		Description="Desc:MarkedOfKaneImprovedCyborgInfantry"
@@ -96,7 +96,7 @@
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="60"
+			Speed="65"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<SkirmishAIInformation
@@ -265,11 +265,16 @@
 					id=""
 					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NUENLIGHTENED_SKN"
+						Name="W3DContainer:NUENLIGHTENEDU_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="NUEnlightened"
 						New="NUEnlightened_UGCL" />
+					<!--
+					<Texture
+						Original="HC_NUEnlightened"
+						New="HC_NUEnlightened_UGCL" /> 
+					-->
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -283,11 +288,16 @@
 					id=""
 					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NUENLIGHTENEDU_SKN"
+						Name="W3DContainer:NUENLIGHTENED_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="NUEnlightened"
 						New="NUEnlightened_UGCL" />
+					<!--
+					<Texture
+						Original="HC_NUEnlightened"
+						New="HC_NUEnlightened_UGCL" />
+					-->
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -1612,6 +1622,42 @@
 				AttributeModifier="AttributeModifier_CyberneticLegs">
 				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>
 			</AttributeModifierUpgrade>
+			
+			<!-- CPB/SCPB subobject fix 
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantDefault" 
+				UpgradeToGrant="Upgrade_ObjectDefault"  />			
+
+			<RemoveUpgradeUpgrade
+				id="3734843D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				SuppressEvaEventForRemoval="False"
+				RemoveFromAllPlayerObjects="False">
+				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
+				<UpgradeToRemove>Upgrade_ObjectDefault</UpgradeToRemove>
+			</RemoveUpgradeUpgrade>		
+			
+			<SubObjectsUpgrade
+				id="0D4DFDE8"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				ShowSubObjects="UGRAIL_01"
+				FadeTimeInSeconds="0.5"
+				WaitBeforeFadeInSeconds="0"
+				RecolorHouse="False"
+				SkipFadeOnCreate="False"
+				HideSubObjectsOnRemove="False"
+				UnHideSubObjectsOnRemove="False">
+				<TriggeredBy>Upgrade_MarkedOfKaneTechCenterSuperChargedParticleBeam</TriggeredBy>
+			</SubObjectsUpgrade>		
+			-->			
 		</Behaviors>
 		<AI>
 			<AIUpdate

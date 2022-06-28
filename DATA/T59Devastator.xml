@@ -1642,17 +1642,6 @@
 				ApplyToContained="False">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
-			<AudioLoopUpgrade
-				id="290C6CF3"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				SoundToPlay="AudioEvent:ALI_ForceField_Begin"
-				KillAfterMS="0">
-				<TriggeredBy>Upgrade_AlienReactorForcefieldGenerator</TriggeredBy>
-			</AudioLoopUpgrade>
 			<AttributeModifierUpgrade
 				id="4FCCDACF"
 				RequiresAllTriggers="False"
@@ -1773,7 +1762,7 @@
 				ShieldTakeDamageFX="FX_AlienShieldHit"
 				ShieldAmount="2500"
 				ShieldArmor="ForcefieldFilterDamageArmor"
-				ShieldRechargeIdleTime="60s"
+				ShieldRechargeIdleTime="50s"
 				ShieldActiveModelCondition="USER_1" />
 		</Body>
 		<Geometry

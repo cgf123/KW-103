@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<W3DContainer
+		id="AUSRIDERR02_new"
+		Hierarchy="AUSRIDERR02">
+		<SubObject
+			SubObjectID="D2"
+			BoneIndex="1">
+			<RenderObject>
+				<Mesh>AUSRIDERR02.D2_new</Mesh>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>
+</AssetDeclaration>

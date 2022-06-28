@@ -342,6 +342,12 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
+			<!-- NEW T4 UPGRADE -->
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantControlCenterUpgradeCreate" 
+				UpgradeToGrant="Upgrade_AlienSignalTransmitter"  />
+			<!--                              -->					
+		
 			<AttributeModifierPoolUpdate
 				id="513BC476" />
 			<FireWeaponWhenDead

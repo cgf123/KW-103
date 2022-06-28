@@ -1310,7 +1310,32 @@
 				InitiallyDisabled="False"
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
-				UseMetaAOI="False" />
+				UseMetaAOI="False" />			
+			<StealthDetectorUpdate
+				id="70ED959D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				DetectionRate="0.4s"
+				DetectionRange="400"
+				PingSound=""
+				LoudPingSound=""
+				IRBeaconParticleSys=""
+				IRParticleSys=""
+				IRBrightParticleSys=""
+				IRGridParticleSys=""
+				IRParticleSysBone=""
+				ExtraRequiredKindOf=""
+				ExtraForbiddenKindOf=""
+				RequiredUpgrade=""
+				InitiallyDisabled="True"
+				CanDetectWhileGarrisoned="False"
+				CanDetectWhileContained="False"
+				UseMetaAOI="False" >
+				<TriggeredBy>Upgrade_ZoneTrooperScannerPack</TriggeredBy>
+			</StealthDetectorUpdate>
 			<AssignSlavesTargetObjectSpecialPower
 				id="F9B1E08D"
 				SpecialPowerTemplate="SpecialPower_TargetedRepairVehicle"
@@ -1506,7 +1531,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="7000"
+				MaxHealth="8000"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1674,6 +1699,7 @@
 			MaxVisionBonusPercent="50%"
 			MinVisionBonusPercent="-50%" />
 		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>
+		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade>			
 		</GameObject>
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->	
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->	
@@ -3197,7 +3223,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="7000"
+				MaxHealth="8000"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -3364,7 +3390,7 @@
 			VisionBonusPercentPerFoot="0%"
 			MaxVisionBonusPercent="50%"
 			MinVisionBonusPercent="-50%" />
-		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>
+		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>		
 		</GameObject>
 		
 		
@@ -4695,7 +4721,32 @@
 				InitiallyDisabled="False"
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
-				UseMetaAOI="False" />
+				UseMetaAOI="False" />			
+			<StealthDetectorUpdate
+				id="70ED959D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				DetectionRate="0.4s"
+				DetectionRange="400"
+				PingSound=""
+				LoudPingSound=""
+				IRBeaconParticleSys=""
+				IRParticleSys=""
+				IRBrightParticleSys=""
+				IRGridParticleSys=""
+				IRParticleSysBone=""
+				ExtraRequiredKindOf=""
+				ExtraForbiddenKindOf=""
+				RequiredUpgrade=""
+				InitiallyDisabled="True"
+				CanDetectWhileGarrisoned="False"
+				CanDetectWhileContained="False"
+				UseMetaAOI="False" >
+				<TriggeredBy>Upgrade_ZoneRaiderScannerPack</TriggeredBy>
+			</StealthDetectorUpdate>
 			<AssignSlavesTargetObjectSpecialPower
 				id="F9B1E08D"
 				SpecialPowerTemplate="SpecialPower_TargetedRepairVehicle"
@@ -4891,7 +4942,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="7000"
+				MaxHealth="8000"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -5058,7 +5109,8 @@
 			VisionBonusPercentPerFoot="0%"
 			MaxVisionBonusPercent="50%"
 			MinVisionBonusPercent="-50%" />
-		</GameObject>
+		<DisplayUpgrade>Upgrade_ZoneRaiderScannerPack</DisplayUpgrade>				
+	</GameObject>
 
 		
 		
@@ -5084,7 +5136,7 @@
 		
 	<GameObject
 		id="GDIRig"
-		KindOf="SELECTABLE CAN_CAST_REFLECTIONS PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_CAST_REFLECTIONS PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE TRANSPORT CAN_BE_FAVORITE_UNIT"
 		ReviveText=""
 		RecruitText=""
 		Description="Desc:GDIRig"
@@ -5184,7 +5236,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="72"
+			Speed="55"
 			Condition="NORMAL"
 			Locomotor="GDIPredatorTankLocomotor" />
 		<Draws>
@@ -6006,7 +6058,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2800"
+				MaxHealth="3200"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -6153,6 +6205,7 @@
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
 		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>
+		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade>			
 	</GameObject>		
 	
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->	
@@ -6174,7 +6227,7 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 	<GameObject
 		id="ZOCOMRig"
-		KindOf="SELECTABLE CAN_CAST_REFLECTIONS PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_CAST_REFLECTIONS PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE TRANSPORT CAN_BE_FAVORITE_UNIT"
 		ReviveText=""
 		RecruitText=""
 		Description="Desc:GDIRig"
@@ -6273,7 +6326,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="72"
+			Speed="55"
 			Condition="NORMAL"
 			Locomotor="GDIPredatorTankLocomotor" />
 		<Draws>
@@ -7095,7 +7148,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2800"
+				MaxHealth="3200"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -7241,6 +7294,7 @@
 			UseCrushAttack="True"
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
+		<DisplayUpgrade>Upgrade_ZoneRaiderScannerPack</DisplayUpgrade>				
 	</GameObject>		
 	
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->	
@@ -7262,7 +7316,7 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 	<GameObject
 		id="SteelTalonsRig"
-		KindOf="SELECTABLE CAN_CAST_REFLECTIONS PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_CAST_REFLECTIONS PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE TRANSPORT CAN_BE_FAVORITE_UNIT"
 		ReviveText=""
 		RecruitText=""
 		Description="Desc:GDIRig"
@@ -7362,7 +7416,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="72"
+			Speed="55"
 			Condition="NORMAL"
 			Locomotor="GDIPredatorTankLocomotor" />
 		<Draws>
@@ -8184,7 +8238,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2800"
+				MaxHealth="3200"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -8330,7 +8384,7 @@
 			UseCrushAttack="True"
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
-		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>	
+		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>			
 	</GameObject>		
 		
 </AssetDeclaration>

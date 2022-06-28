@@ -6,7 +6,7 @@
 	<!-- ************************************************************************* STEEL TALONS *********************************************************************************** -->
 	<GameObject
 		id="SteelTalonsZoneTrooper"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS INFANTRY PRELOAD ATTACK_NEEDS_LINE_OF_SIGHT PATH_THROUGH_INFANTRY"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS INFANTRY PRELOAD ATTACK_NEEDS_LINE_OF_SIGHT PATH_THROUGH_INFANTRY ARCHER"
 		Description="Desc:SteelTalonsZoneTrooper_103"
 		TypeDescription="Type:GDIZoneTrooper"
 		RadarPriority="UNIT"

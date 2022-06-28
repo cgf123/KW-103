@@ -3,7 +3,7 @@
 	<GameObject
 		id="BlackHandCommando"
 		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS INFANTRY PRELOAD STEALTH_GARRISON SCORE CAN_PLACE_CHARGE ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAPTURE PATH_THROUGH_INFANTRY SKIRMISH_AI_DONT_GARRISON IGNORE_FORCE_MOVE SNIPER CAN_BE_FAVORITE_UNIT"
-		Description="Desc:BlackHandCommando_103"
+		Description="Desc:BlackHandCommando"
 		TypeDescription="Type:BlackHandCommando"
 		RadarPriority="UNIT"
 		BuildCompletion="APPEARS_AT_RALLY_POINT"
@@ -98,7 +98,7 @@
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="90"
+			Speed="95"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<SkirmishAIInformation
@@ -1849,7 +1849,7 @@
 				id="3AE0061F"
 				UpdateDelay="0.5s"
 				Suppressability="1000"
-				SuppressionDuration="1.5s"
+				SuppressionDuration="1.0s"
 				AttributeModifierSuppressed="Modifier_Test_Suppression"
 				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove"
 				IgnoreSuppressionObjectStatus="" />
@@ -2058,7 +2058,6 @@
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
 			
-			<!--
 			<LevelUpUpgrade
 				id="D0BB7535"
 				RequiresAllTriggers="False"
@@ -2066,12 +2065,11 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				LevelsToGain="2"
+				LevelsToGain="1"
 				LevelCap="4"
 				DoFlash="False">
 				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
 			</LevelUpUpgrade>
-			-->
 			
 		</Behaviors>
 		<AI>

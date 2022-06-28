@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="MarkedOfKaneAttackBike"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS MADE_OF_WOOD PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE CAN_BE_FAVORITE_UNIT"
 		Description="Desc:NODAttackBike"
 		TypeDescription="Type:NODAttackBike"
 		RadarPriority="UNIT"
@@ -92,7 +92,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="150"
+			Speed="148"
 			Condition="NORMAL"
 			Locomotor="NODAttackBikeLocomotor" />
 		<SkirmishAIInformation
@@ -702,7 +702,7 @@
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
 						MinIdleScanAngle="0"
-						MaxIdleScanAngle="90"
+						MaxIdleScanAngle="45"
 						MaxDeflectionClockwise="180d"
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"
@@ -749,7 +749,7 @@
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
 						MinIdleScanAngle="0"
-						MaxIdleScanAngle="90"
+						MaxIdleScanAngle="45"
 						MaxDeflectionClockwise="180d"
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"

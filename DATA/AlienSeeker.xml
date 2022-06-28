@@ -673,7 +673,7 @@
 						ObjectStatus="WEAPON_UPGRADED_01"
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="360"
+						TurretTurnRate="200"
 						TurretPitchRate="200"
 						MinimumPitch="0d"
 						PitchHeight="50%"
@@ -681,7 +681,7 @@
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
 						MinIdleScanAngle="0"
-						MaxIdleScanAngle="90"
+						MaxIdleScanAngle="45"
 						MaxDeflectionClockwise="180d"
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"
@@ -1014,7 +1014,7 @@
 				ShieldTakeDamageFX="FX_AlienShieldHit"
 				ShieldAmount="400"
 				ShieldArmor="ForcefieldFilterDamageArmor"
-				ShieldRechargeIdleTime="60s"
+				ShieldRechargeIdleTime="40s"
 				ShieldActiveModelCondition="USER_1" />
 		</Body>
 		<Geometry

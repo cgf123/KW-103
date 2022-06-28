@@ -244,8 +244,8 @@
 			</AssignSlavesTargetObjectSpecialPower>
 			<LifetimeUpdate
 				id="BC83457C"
-				MinLifetime="75s"
-				MaxLifetime="75s"
+				MinLifetime="90s"
+				MaxLifetime="90s"
 				DeathType="NONE"
 				WaitForWakeUp="False"
 				ScoreKill="False"

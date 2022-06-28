@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Tags></Tags>
+	<GameObject
+		id="AlienTibAgitationProjectile"
+		EditorSorting="SYSTEM"
+		KindOf="PROJECTILE DEFLECT_BY_SPECIAL_POWER NO_COLLIDE HIDE_IF_FOGGED"
+		EditorName="AlienTibAgitationProjectile">
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>			
+			<ScriptedModelDraw
+				id="ModuleTag_ScriptedModelDraw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="" 
+					/>			
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_AlienTibAgitationHit" />
+			</FXListBehavior>
+			<DestroyDie
+				id="ModuleTag_DestroyDie">
+				<DieMuxData
+					DeathTypes="ALL"
+				/>
+			</DestroyDie>
+			<BezierProjectile
+				id="ModuleTag_BezierProjectileBehavior"
+				FirstHeightMin="0"
+				FirstHeightMax="10"
+				SecondHeightMin="0"
+				SecondHeightMax="10"
+				CurveFlattenMinDist="99999">				
+			</BezierProjectile>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_ActiveBody"
+				MaxHealth="100.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="SPHERE"
+				MajorRadius="0.8">			
+			</Shape>
+		</Geometry>
+		<VisionInfo
+			VisionRange="0" />
+	</GameObject>
+	
+	<GameObject
+		id="AlienTibAgitationProjectile1"
+		EditorSorting="SYSTEM"
+		KindOf="PROJECTILE DEFLECT_BY_SPECIAL_POWER NO_COLLIDE HIDE_IF_FOGGED"
+		EditorName="AlienTibAgitationProjectile">
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>			
+			<ScriptedModelDraw
+				id="ModuleTag_ScriptedModelDraw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="" 
+					/>			
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onDeath"
+					FX="FX_AlienTibAgitationHit" />
+			</FXListBehavior>
+			<DestroyDie
+				id="ModuleTag_DestroyDie">
+				<DieMuxData
+					DeathTypes="ALL"
+				/>
+			</DestroyDie>
+			<BezierProjectile
+				id="ModuleTag_BezierProjectileBehavior"
+				FirstHeightMin="0"
+				FirstHeightMax="10"
+				SecondHeightMin="0"
+				SecondHeightMax="10"
+				CurveFlattenMinDist="99999">				
+			</BezierProjectile>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_ActiveBody"
+				MaxHealth="100.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="SPHERE"
+				MajorRadius="0.8">			
+			</Shape>
+		</Geometry>
+		<VisionInfo
+			VisionRange="0" />
+	</GameObject>	
+</AssetDeclaration>

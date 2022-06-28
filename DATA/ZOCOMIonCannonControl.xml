@@ -67,7 +67,7 @@
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
-		BuildCost="5000"
+		BuildCost="4000"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="1"

@@ -903,6 +903,18 @@
 				TempConditionTime="0s">
 				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
 			</ModelConditionUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitsArmorStatus"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="SWITCHED_WEAPONS"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</StatusBitsUpgrade>				
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate
@@ -1915,6 +1927,18 @@
 				TempConditionTime="0s">
 				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
 			</ModelConditionUpgrade>
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitsArmorStatus"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="SWITCHED_WEAPONS"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_ZOCOMFieldSuits</TriggeredBy>
+			</StatusBitsUpgrade>				
 			<LevelUpUpgrade
 				id="D0BB7535"
 				RequiresAllTriggers="False"

@@ -619,7 +619,7 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="True"
 				FaceTarget="True"
-				SpecialWeapon="NODCatalystMissileLauncher"
+				SpecialWeapon="NODCatalystMissileTrigger"
 				WhichSpecialWeapon="1"
 				BusyForDuration="2s"
 				WeaponSlotID="1"

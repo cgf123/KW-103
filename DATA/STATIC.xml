@@ -53,17 +53,27 @@
 	<Include type="all" source="ART:AlienRef\ABTIBERTOWBLD_SKN1.w3x" />		
 	<Include type="all" source="ART:AlienRef\ABTIBERTOWBLD_SKL1.w3x" />		
 
+	<Include type="all" source="ART:R17Stormrider\AUSRIDER_SKN.AUSRIDER.w3x" />		
+	<Include type="all" source="ART:R17Stormrider\AUSRIDER_SKN.w3x" />				
+
 	<!--
 	<Include type="all" source="ART:T59Devourer\AU_INITIATOR_SKN.w3x" />		
 	<Include type="all" source="ART:T59Devourer\AU_INITIATOR_SKN.AU_INITIATOR.w3x" />		
 	<Include type="all" source="ART:T59Devourer\AU_INITIATORR.w3x" />		
 	<Include type="all" source="ART:T59Devourer\AU_INITIATORR.AU_INITIATOR.w3x" />		-->	
 	
+	<Include type="all" source="art/abtpbone/ABTPBONE.OBBOX01.w3x" />	
+	<Include type="all" source="art/abtpbone/ABTPBONE_CTR.w3x" />	
+	<Include type="all" source="art/abtpbone/ABTPBONE_HRC.w3x" />			
+	
 	<!-- =========================== NEUTRALS ========================= -->
 	<Include type="all" source="TibFieldHarv.xml" />					
 	<Include type="all" source="RDrones.xml" />			
 	<Include type="all" source="DummyProj.xml" />	 <!--
 	<Include type="all" source="Beacon.xml" />			-->
+	
+	<Include type="all" source="MutantMarauder.xml" />			
+	<Include type="all" source="MutantMarauderSquad.xml" />				
 	
 	<!-- ============================= GDI ============================== -->
 	<Include type="all" source="GDIMARV.xml" />	
@@ -171,7 +181,9 @@
 
 	<Include type="all" source="GDIHammerhead.xml" />		
 	<Include type="all" source="ZOCOMHammerhead.xml" />		
-	<Include type="all" source="STHammerhead.xml" />		
+	<Include type="all" source="STHammerhead.xml" />	
+
+	<Include type="all" source="GDIHammerheadDebris_06.xml" />		
 	
 	<Include type="all" source="GDIPitbull.xml" />	
 	<Include type="all" source="STPitbull.xml" />	
@@ -201,6 +213,8 @@
 	<Include type="all" source="ZOCOMGrenadierSquad.xml" />	
 
 	<Include type="all" source="ZOCOMIonCannonControl.xml" />	
+
+	<Include type="all" source="GDIGrenadeSoldierEMPGrenadeProjectile.xml" />			
 
 	<Include type="all" source="GDIGrenadeSoldierGrenadeProjectile.xml" />			
 	<Include type="all" source="MARVGrenadeSoldierWeaponProjectile.xml" />		
@@ -253,10 +267,14 @@
 	<Include type="all" source="BHEpicWF.xml" />	
 	<Include type="all" source="MOKEpicWF.xml" />			
 		
-	<Include type="all" source="TVD.xml" />			
+	<Include type="all" source="TVD.xml" />		
+	<Include type="all" source="CatalystMissile.xml" />		
+	
 	<Include type="all" source="NodTibChemPlant.xml" />			
 	<Include type="all" source="BHTibChemPlant.xml" />	
 	<Include type="all" source="MOKTibChemPlant.xml" />		
+	
+	<Include type="all" source="NODNukeSeed.xml" />		
 
 	<Include type="all" source="NODAttackBikeRocketProjectiles.xml" />		
 
@@ -365,7 +383,9 @@
 	<Include type="all" source="MilitantRocketSquads.xml" />		
 	
 	<Include type="all" source="BHConfessor.xml" />		
-	<Include type="all" source="NODConfessor.xml" />		
+	<Include type="all" source="NODConfessor.xml" />	
+
+	<Include type="all" source="BHConfessorGrenadeProjectile.xml" />		
 	
 	<Include type="all" source="BHConfessorSquad.xml" />		
 	<Include type="all" source="BHDisciple.xml" />	
@@ -431,6 +451,11 @@
 	<Include type="all" source="R17GrowthStimulator.xml" />		
 
 	<Include type="all" source="T59TemporalWormhole.xml" />		
+	
+	<Include type="all" source="AlienTechDummy.xml" />		
+
+	<Include type="all" source="AlienMothership.xml" />		
+	<Include type="all" source="MothershipEffects.xml" />	
 
 	<Include type="all" source="AlienStasisChamber.xml" />		
 	<Include type="all" source="T59StasisChamber.xml" />		
@@ -502,6 +527,10 @@
 	<Include type="all" source="T59Tripod.xml" />		
 	<Include type="all" source="R17Tripod.xml" />	
 	
+	<Include type="all" source="AlienTripodHusk.xml" />	
+	<Include type="all" source="T59TripodHusk.xml" />		
+	<Include type="all" source="R17TripodHusk.xml" />		
+	
 	<Include type="all" source="T59Cultist.xml" />		
 	<Include type="all" source="T59CultistSquad.xml" />		
 
@@ -528,6 +557,8 @@
 	<Include type="all" source="AlienHarv.xml" />	
 	<Include type="all" source="R17Harv.xml" />		
 	<Include type="all" source="T59Harv.xml" />
+
+	<Include type="all" source="AlienTibAgitationProjectile.xml" />
 
 	<Include type="all" source="Ravagers.xml" />
 	<Include type="all" source="RavagerSquads.xml" />

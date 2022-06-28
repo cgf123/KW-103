@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="SteelTalonsAABattery"
-		KindOf="SELECTABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS STRUCTURE ATTACK_NEEDS_LINE_OF_SIGHT FS_BASE_DEFENSE POWERED CAN_SEE_THROUGH_STRUCTURE COVER AUTO_ACQUIRABLE_BY_AI LINE_OF_SIGHT_IGNORES_BUILDINGS AA_STRUCT"
+		KindOf="SELECTABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS STRUCTURE FS_BASE_DEFENSE POWERED CAN_SEE_THROUGH_STRUCTURE COVER AUTO_ACQUIRABLE_BY_AI AA_STRUCT"
 		Description="Desc:GDIAABattery"
 		TypeDescription="Type:GDIAABattery"
 		RadarPriority="STRUCTURE"
@@ -826,7 +826,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="4200"
+				MaxHealth="3700"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

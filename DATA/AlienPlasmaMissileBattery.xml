@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="AlienPlasmaMissileBattery"
-		KindOf="SELECTABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS STRUCTURE ATTACK_NEEDS_LINE_OF_SIGHT FS_BASE_DEFENSE POWERED CAN_SEE_THROUGH_STRUCTURE COVER AUTO_ACQUIRABLE_BY_AI LINE_OF_SIGHT_IGNORES_BUILDINGS AA_STRUCT"
+		KindOf="SELECTABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS STRUCTURE FS_BASE_DEFENSE POWERED CAN_SEE_THROUGH_STRUCTURE COVER AUTO_ACQUIRABLE_BY_AI AA_STRUCT"
 		Description="DESC:ALIENPlasmaMissileBattery"
 		TypeDescription="Type:AlienPlasmaMissileBattery"
 		RadarPriority="STRUCTURE"
@@ -744,7 +744,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="3700"
+				MaxHealth="3300"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

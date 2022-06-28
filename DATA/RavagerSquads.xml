@@ -19,7 +19,7 @@
 		EditorName="AlienStalkerSquad"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="8"
+		BuildTime="5"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -67,7 +67,7 @@
 		UnitTypeIcon="ScrinStalkerpip"
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
-		BuildCost="800"
+		BuildCost="500"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -156,9 +156,25 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name=""
+						Name="ABTPBONE_new4"
 						ExtraMesh="False" />
-				</ModelConditionState>
+					<WeaponFireFXBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />
+					<WeaponRecoilBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />
+					<WeaponMuzzleFlash
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />
+					<WeaponLaunchBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />			
+				</ModelConditionState>				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="FORMATION_PREVIEW"
@@ -301,7 +317,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="450"
+				DetectionRange="200"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -659,23 +675,25 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</SpecialPower>
-			<SpecialAbilityUpdate
-				id="915D536B"
+			<!-- Replaced SAUpdate with WFSAUpdate -->
+		   <WeaponFireSpecialAbilityUpdate
+				id="16D9E43A"
 				GrabPassengerHealGain="0%"
 				SpecialPowerTemplate="TiberiumAgitationGetInRange"
 				StartAbilityRange="350"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
 				PersistentPrepTime="0s"
-				PersistentCount="-1"
-				PackTime="0s"
-				UnpackTime="0s"
+				PersistentCount="1"
+				PackTime="0.2s"
+				UnpackTime="0.4s"
 				PreTriggerUnstealthTime="0s"
-				Options="CHECK_PREVENT_CONDITIONS"
+				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE CHECK_PREVENT_CONDITIONS"
 				PackUnpackVariationFactor="0"
 				ParalyzeDurationWhenCompleted="0s"
 				ParalyzeDurationWhenAborted="0s"
 				SpecialObject=""
+				SpecialObjectAttachToBone=""
 				MaxSpecialObjects="1"
 				EffectDuration="0s"
 				EffectValue="1"
@@ -695,15 +713,27 @@
 				RejectedConditions=""
 				SetObjectStatusOnTrigger=""
 				ClearObjectStatusOnExit=""
+				ContactPointOverride=""
 				TriggerAttributeModifier=""
 				AttributeModifierDuration="0s"
-				ChainedButton="Command_FireTiberiumAgitation"
+				ChainedButton=""
 				RequireAndSpendTiberiumOnCaster="0"
 				DisabledTypesToProcess="HELD"
 				DisabledTypesToContinueSoundsFor="HELD"
-				StartRechargeOnExit="False"
+				StartRechargeOnExit="True"
 				GoIdleInStartPreparation="True"
-				FaceTarget="True" />
+				FaceTarget="True"
+				SpecialWeapon="AlienStalkerTiberiumAgitation1"
+				WhichSpecialWeapon="1"
+				BusyForDuration="0.4s"
+				WeaponSlotID="1"
+				WeaponSlotType="PRIMARY_WEAPON"
+				SkipContinue="False"
+				NeedLivingTargets="False"
+				PlayWeaponPreFireFX="False"
+				OffsetTargetLocationFromObject="False"
+				DestealthClosestObjectMatchingFilter="False" />	
+			<!--  ///////////////////////////////////////////////////////////////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 			<HordeDispatchSpecialPower
 				id="CA58A312"
 				SpecialPowerTemplate="SpecialPower_UseTiberiumAgitation"
@@ -715,7 +745,7 @@
 				WeatherDuration="0"
 				InitiateFX=""
 				TriggerFX=""
-				SetModelCondition=""
+				SetModelCondition="TOPPLED"
 				SetModelConditionTime="0s"
 				GiveLevels="0"
 				ChangeWeather="NORMAL"
@@ -852,6 +882,10 @@
 				AimHighThreshold="0.5"
 				AimNearDistance="0"
 				AimFarDistance="0" />
+				
+			<LaserState
+				id="14BDCE42"
+				LaserId="0" />						
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate
@@ -933,7 +967,7 @@
 			EvaEventPromotedOwner="UnitPromoted" />
 		<VisionInfo
 			VisionRange="375"
-			ShroudClearingRange="400"
+			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"
 			VisionBonusTestRadius="200"
@@ -999,7 +1033,7 @@
 		EditorName="Reaper17StalkerSquad"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="8"
+		BuildTime="5"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -1048,7 +1082,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_AlienBlueShardWeapon"		
 		CaptureTime="0s"
-		BuildCost="800"
+		BuildCost="500"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1137,8 +1171,24 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name=""
+						Name="ABTPBONE_new4"
 						ExtraMesh="False" />
+					<WeaponFireFXBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />
+					<WeaponRecoilBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />
+					<WeaponMuzzleFlash
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />
+					<WeaponLaunchBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />			
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -1282,7 +1332,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="450"
+				DetectionRange="200"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -1521,23 +1571,25 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</SpecialPower>
-			<SpecialAbilityUpdate
-				id="915D536B"
+			<!-- Replaced SAUpdate with WFSAUpdate -->
+		   <WeaponFireSpecialAbilityUpdate
+				id="16D9E43A"
 				GrabPassengerHealGain="0%"
 				SpecialPowerTemplate="TiberiumAgitationGetInRange"
 				StartAbilityRange="350"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
 				PersistentPrepTime="0s"
-				PersistentCount="-1"
-				PackTime="0s"
-				UnpackTime="0s"
+				PersistentCount="1"
+				PackTime="0.2s"
+				UnpackTime="0.4s"
 				PreTriggerUnstealthTime="0s"
-				Options="CHECK_PREVENT_CONDITIONS"
+				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE CHECK_PREVENT_CONDITIONS"
 				PackUnpackVariationFactor="0"
 				ParalyzeDurationWhenCompleted="0s"
 				ParalyzeDurationWhenAborted="0s"
 				SpecialObject=""
+				SpecialObjectAttachToBone=""
 				MaxSpecialObjects="1"
 				EffectDuration="0s"
 				EffectValue="1"
@@ -1557,15 +1609,27 @@
 				RejectedConditions=""
 				SetObjectStatusOnTrigger=""
 				ClearObjectStatusOnExit=""
+				ContactPointOverride=""
 				TriggerAttributeModifier=""
 				AttributeModifierDuration="0s"
-				ChainedButton="Command_FireTiberiumAgitation"
+				ChainedButton=""
 				RequireAndSpendTiberiumOnCaster="0"
 				DisabledTypesToProcess="HELD"
 				DisabledTypesToContinueSoundsFor="HELD"
-				StartRechargeOnExit="False"
+				StartRechargeOnExit="True"
 				GoIdleInStartPreparation="True"
-				FaceTarget="True" />
+				FaceTarget="True"
+				SpecialWeapon="AlienStalkerTiberiumAgitation1"
+				WhichSpecialWeapon="1"
+				BusyForDuration="0.4s"
+				WeaponSlotID="1"
+				WeaponSlotType="PRIMARY_WEAPON"
+				SkipContinue="False"
+				NeedLivingTargets="False"
+				PlayWeaponPreFireFX="False"
+				OffsetTargetLocationFromObject="False"
+				DestealthClosestObjectMatchingFilter="False" />	
+			<!--  ///////////////////////////////////////////////////////////////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 			<HordeDispatchSpecialPower
 				id="CA58A312"
 				SpecialPowerTemplate="SpecialPower_UseTiberiumAgitation"
@@ -1577,7 +1641,7 @@
 				WeatherDuration="0"
 				InitiateFX=""
 				TriggerFX=""
-				SetModelCondition=""
+				SetModelCondition="TOPPLED"
 				SetModelConditionTime="0s"
 				GiveLevels="0"
 				ChangeWeather="NORMAL"
@@ -1844,6 +1908,10 @@
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
 			</HordeContain>
+			
+			<LaserState
+				id="14BDCE42"
+				LaserId="0" />					
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate
@@ -1925,7 +1993,7 @@
 			EvaEventPromotedOwner="UnitPromoted" />
 		<VisionInfo
 			VisionRange="375"
-			ShroudClearingRange="400"
+			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"
 			VisionBonusTestRadius="200"
@@ -1991,7 +2059,7 @@
 		EditorName="Traveler59StalkerSquad"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="8"
+		BuildTime="5"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -2040,7 +2108,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_Traveler59AdvancedArticulators"		
 		CaptureTime="0s"
-		BuildCost="800"
+		BuildCost="500"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -2129,8 +2197,24 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name=""
+						Name="ABTPBONE_new4"
 						ExtraMesh="False" />
+					<WeaponFireFXBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />
+					<WeaponRecoilBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />
+					<WeaponMuzzleFlash
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />
+					<WeaponLaunchBone
+						WeaponSlotID="1"
+						WeaponSlotType="PRIMARY_WEAPON"
+						BoneName="FXBONE01" />			
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -2274,7 +2358,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="450"
+				DetectionRange="200"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -2513,23 +2597,25 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</SpecialPower>
-			<SpecialAbilityUpdate
-				id="915D536B"
+			<!-- Replaced SAUpdate with WFSAUpdate -->
+		   <WeaponFireSpecialAbilityUpdate
+				id="16D9E43A"
 				GrabPassengerHealGain="0%"
 				SpecialPowerTemplate="TiberiumAgitationGetInRange"
 				StartAbilityRange="350"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
 				PersistentPrepTime="0s"
-				PersistentCount="-1"
-				PackTime="0s"
-				UnpackTime="0s"
+				PersistentCount="1"
+				PackTime="0.2s"
+				UnpackTime="0.4s"
 				PreTriggerUnstealthTime="0s"
-				Options="CHECK_PREVENT_CONDITIONS"
+				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE CHECK_PREVENT_CONDITIONS"
 				PackUnpackVariationFactor="0"
 				ParalyzeDurationWhenCompleted="0s"
 				ParalyzeDurationWhenAborted="0s"
 				SpecialObject=""
+				SpecialObjectAttachToBone=""
 				MaxSpecialObjects="1"
 				EffectDuration="0s"
 				EffectValue="1"
@@ -2549,15 +2635,27 @@
 				RejectedConditions=""
 				SetObjectStatusOnTrigger=""
 				ClearObjectStatusOnExit=""
+				ContactPointOverride=""
 				TriggerAttributeModifier=""
 				AttributeModifierDuration="0s"
-				ChainedButton="Command_FireTiberiumAgitation"
+				ChainedButton=""
 				RequireAndSpendTiberiumOnCaster="0"
 				DisabledTypesToProcess="HELD"
 				DisabledTypesToContinueSoundsFor="HELD"
-				StartRechargeOnExit="False"
+				StartRechargeOnExit="True"
 				GoIdleInStartPreparation="True"
-				FaceTarget="True" />
+				FaceTarget="True"
+				SpecialWeapon="AlienStalkerTiberiumAgitation1"
+				WhichSpecialWeapon="1"
+				BusyForDuration="0.4s"
+				WeaponSlotID="1"
+				WeaponSlotType="PRIMARY_WEAPON"
+				SkipContinue="False"
+				NeedLivingTargets="False"
+				PlayWeaponPreFireFX="False"
+				OffsetTargetLocationFromObject="False"
+				DestealthClosestObjectMatchingFilter="False" />	
+			<!--  ///////////////////////////////////////////////////////////////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 			<HordeDispatchSpecialPower
 				id="CA58A312"
 				SpecialPowerTemplate="SpecialPower_UseTiberiumAgitation"
@@ -2569,7 +2667,7 @@
 				WeatherDuration="0"
 				InitiateFX=""
 				TriggerFX=""
-				SetModelCondition=""
+				SetModelCondition="TOPPLED"
 				SetModelConditionTime="0s"
 				GiveLevels="0"
 				ChangeWeather="NORMAL"
@@ -2835,6 +2933,10 @@
 				AttributeModifier="AttributeModifier_AdvancedArticulators2">
 				<TriggeredBy>Upgrade_Traveler59AdvancedArticulators</TriggeredBy>
 			</AttributeModifierUpgrade>
+			
+			<LaserState
+				id="14BDCE42"
+				LaserId="0" />					
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate
@@ -2916,7 +3018,7 @@
 			EvaEventPromotedOwner="UnitPromoted" />
 		<VisionInfo
 			VisionRange="375"
-			ShroudClearingRange="400"
+			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"
 			VisionBonusTestRadius="200"

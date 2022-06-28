@@ -318,16 +318,16 @@
 	<!-- BATTLE BUSES -->
 	<LogicCommandSet
 	id="NODBunkerTruckCommandSet">
-		<Cmd>Command_MoveToPositionAndEvacuate</Cmd>
-		<Cmd>Command_UnPackNODBunkerTruck</Cmd>
+		<Cmd>Command_Evacuate</Cmd>		
+		<!-- <Cmd>Command_UnPackNODBunkerTruck</Cmd> -->
 		<Cmd>Command_Stop</Cmd>
 		<Cmd>Command_AttackMove</Cmd>		
 	</LogicCommandSet>	
 	
 	<LogicCommandSet	
 	id="MarkedOfKaneBunkerTruckCommandSet">
-		<Cmd>Command_MoveToPositionAndEvacuate</Cmd>
-		<Cmd>Command_UnPackNODBunkerTruck</Cmd>
+		<Cmd>Command_Evacuate</Cmd>		
+		<!-- <Cmd>Command_UnPackNODBunkerTruck</Cmd> -->
 		<Cmd>Command_Stop</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>	
@@ -360,6 +360,17 @@
 	</LogicCommandSet>	
 		
 	<!-- BH TRANSPORTS !!!!!!!! -->
+	<LogicCommandSet
+		id="NODFlameTankCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+	</LogicCommandSet>		
+	<LogicCommandSet
+		id="NODStealthTankCommandSet">
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+	</LogicCommandSet>			
+	
 	<LogicCommandSet
 		id="BlackHandConfessorCabalSquadCommandSet">
 		<Cmd>Command_BlackHandConfessorCabalSquadFireGrenade</Cmd>
@@ -761,10 +772,17 @@
   <!-- Dont change command option from 'need_target_enemy_object' to 'target_pos' - causes them to miss shots -->
   <LogicCommand
 		Type="SPECIAL_POWER"
-    	Options="NEED_TARGET_ENEMY_OBJECT"
+    	Options="NEED_TARGET_ENEMY_OBJECT NEED_TARGET_ALLY_OBJECT NEED_TARGET_NEUTRAL_OBJECT"
 		id="Command_FireTiberiumAgitation">
     <SpecialPower>SpecialPower_UseTiberiumAgitation</SpecialPower>
-  </LogicCommand>	
+  </LogicCommand>		
+  
+  <LogicCommand
+		Type="SPECIAL_POWER"
+    		Options="NEED_TARGET_ENEMY_OBJECT NEED_TARGET_ALLY_OBJECT NEED_TARGET_NEUTRAL_OBJECT"
+		id="Command_UseTiberiumAgitation">
+    <SpecialPower>TiberiumAgitationGetInRange</SpecialPower>
+  </LogicCommand>  
   
   <!-- ######################################################### GIVE EVERY UNIT ATTACK MOVE!! ########################################################## -->
 

@@ -91,7 +91,8 @@
 			RequiredModelConditionsAny=""
 			ForbiddenModelConditions=""
 			RequiredObjectStatusAny="">
-			<RequiredObject>Traveler59SignalTransmitter</RequiredObject>
+			<RequiredObject>Traveler59Reactor</RequiredObject>
+			<RequiredObject>AlienTechDummy</RequiredObject>			
 		</GameDependency>
 		<ArmorSet
 			Armor="AlienPlanetaryAssaultCarrierArmor"
@@ -1654,7 +1655,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				SpawnNumberData="8"
-				SpawnReplaceDelayData="8s"
+				SpawnReplaceDelayData="10s"
 				InitialBurst="8"
 				DamageTypesToPropagateToSlaves="ALL"
 				FadeInTime="1s"
@@ -1931,7 +1932,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="250"
+				DetectionRange="200"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -1958,17 +1959,6 @@
 				TempConditionTime="0s">
 				<TriggeredBy>Upgrade_AllFactionUpgrade</TriggeredBy>
 			</ModelConditionUpgrade>
-			<AudioLoopUpgrade
-				id="290C6CF3"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				SoundToPlay="AudioEvent:ALI_ForceField_Begin"
-				KillAfterMS="0">
-				<TriggeredBy>Upgrade_AlienReactorForcefieldGenerator</TriggeredBy>
-			</AudioLoopUpgrade>
 			<AttributeModifierUpgrade
 				id="4FCCDACF"
 				RequiresAllTriggers="False"
@@ -2099,7 +2089,7 @@
 				ShieldTakeDamageFX="FX_AlienShieldHit"
 				ShieldAmount="2500"
 				ShieldArmor="ForcefieldFilterDamageArmor"
-				ShieldRechargeIdleTime="60s"
+				ShieldRechargeIdleTime="50s"
 				ShieldActiveModelCondition="USER_1" />
 		</Body>
 		<Geometry

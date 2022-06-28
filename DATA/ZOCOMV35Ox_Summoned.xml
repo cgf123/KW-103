@@ -1039,7 +1039,36 @@
 				id="ModuleTag_UpgradeWeapon"
 				StatusToClear="UNSELECTABLE">
 				<TriggeredBy>Upgrade_Transporting</TriggeredBy>
-			</StatusBitsUpgrade>				
+			</StatusBitsUpgrade>			
+
+			<!-- Empty transport scout exploit fix -->
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantDefault" 
+				UpgradeToGrant="Upgrade_ObjectDefault"  />			
+		
+			<AttributeModifierUpgrade
+				id="AA36A1AB"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="AttributeModifier_TransportEmpty">
+				<TriggeredBy>Upgrade_ObjectDefault</TriggeredBy>
+			</AttributeModifierUpgrade>		
+
+			<RemoveUpgradeUpgrade
+				id="3734843D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				SuppressEvaEventForRemoval="False"
+				RemoveFromAllPlayerObjects="False">
+				<TriggeredBy>Upgrade_Transporting</TriggeredBy>
+				<UpgradeToRemove>Upgrade_ObjectDefault</UpgradeToRemove>
+			</RemoveUpgradeUpgrade>			
 			
 		</Behaviors>
 		<AI>

@@ -68,7 +68,7 @@
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
 		BuildCost="1500"
-		RefundValue="0"
+		RefundValue="500"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
 		TransportSlotCount="1"
@@ -1020,7 +1020,7 @@
 			</EngineerContain>
 			<CreateObjectDie
 				id="34FD1923"
-				CreationList="OCL_GenericGDIBuildingDestruction"
+				CreationList="OCL_ArmoryGDIBuildingDestruction"
 				UpgradeForbidden="">
 				<DieMuxData
 					ExemptStatus=""
@@ -1033,7 +1033,7 @@
 			</CreateObjectDie>
 			<CreateObjectDie
 				id="4BF392A4"
-				CreationList="OCL_GenericGDIBuildingSuicide">
+				CreationList="OCL_ArmoryGDIBuildingSuicide">
 				<DieMuxData
 					ExemptStatus=""
 					RequiredStatus=""

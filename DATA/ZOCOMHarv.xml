@@ -788,7 +788,7 @@
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="2000"
+						TurretTurnRate="400"
 						TurretPitchRate="200"
 						MinimumPitch="0d"
 						PitchHeight="50%"
@@ -796,7 +796,7 @@
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
 						MinIdleScanAngle="0"
-						MaxIdleScanAngle="90"
+						MaxIdleScanAngle="45"
 						MaxDeflectionClockwise="180d"
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"
@@ -940,6 +940,7 @@
 		<AI>
 			<SupplyTruckAIUpdate
 				id="12FA48BA"
+				AILuaEventsList="GenericHarvesterFunctions_103"						
 				AutoAcquireEnemiesWhenIdle="YES"
 				StopChaseDistance="500"
 				HoldGroundCloseRangeDistance="0"
@@ -985,7 +986,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="4000"
+				MaxHealth="4150"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

@@ -683,7 +683,7 @@
 				id="3564D7F8"
 				StartDistanceOffset="50"
 				Radius="30"
-				Length="350"
+				Length="375"
 				SweepFXList="FX_TeraSweep"
 				SweepWeapon="GDITerrainformingStationSweepWeapon"
 				Speed="150" />

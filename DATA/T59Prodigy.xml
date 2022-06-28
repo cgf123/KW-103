@@ -620,6 +620,18 @@
 					DeathTypes="CATALYST"
 					DeathTypesForbidden="" />
 			</FireWeaponWhenDead>
+			
+			<!-- AUTO HEAL -->
+			<AutoHealBehavior
+				id="Upgrade_AutoInjectors_03"
+				InitiallyActive="true"
+				HealOnlyIfNotInCombat="false"
+				HealOnlyIfNotUnderAttack="false"
+				StartHealingDelay="1s"
+				HealingAmount="10"
+				HealingDelay="1s">
+			</AutoHealBehavior>					
+			
 			<AutoHealBehavior
 				id="C07BF5C0"
 				RequiresAllTriggers="False"
@@ -2104,7 +2116,7 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="True"
 				FaceTarget="False"
-				Radius="80" />
+				Radius="65" />
 			<SpecialPower
 				id="3A88C6D8"
 				SpecialPowerTemplate="SpecialPowerProdigyTeleportObject"

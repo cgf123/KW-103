@@ -350,7 +350,24 @@ KW XMLs:
 					Rule="ALL"
 					Exclude="TIBERIUM">
 				</SpecialObjectFilter>
+				<DamageScalarDetails Scalar= "200%">
+					<Filter
+						Rule="NONE">								
+						<IncludeThing>AlienSporePod</IncludeThing>
+						<IncludeThing>Traveler59SporePod</IncludeThing>
+						<IncludeThing>Reaper17GrowthStimulator</IncludeThing>
+						<IncludeThing>AlienTibHive</IncludeThing>							
+					</Filter>
+				</DamageScalarDetails>									
 			</DamageNugget> 
+			<AttributeModifierNugget
+				PartitionFilterTestType="SPHERE"
+				AttributeModifierName="AttributeModifier_TibVeinSlow"
+				Radius="250" >
+				<SpecialObjectFilter
+					Rule="ALL"  >				
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>				
 			<ReportWeaponFiredStatNugget/>
 		</Nuggets>
 	</WeaponTemplate>
@@ -369,11 +386,20 @@ KW XMLs:
 				<DamageScalarDetails Scalar= "0%">
 					<Filter
 						Rule="ALL"
-						Exclude="TIBERIUM" />
+						Exclude="TIBERIUM" >						
+					</Filter>
 				</DamageScalarDetails>				
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>  
+	
+	<!-- TIBVEIN SLOW -->
+	<AttributeModifier
+		id="AttributeModifier_TibVeinSlow"
+		Category="NONE"
+		Duration="1s">
+		<Modifier Type="SPEED" Value="90%" />
+	</AttributeModifier>	
 
   
    <!-- ################################################################### NEW TRIGGER OBJECT ################################################# -->

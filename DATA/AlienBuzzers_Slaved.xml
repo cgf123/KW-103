@@ -768,7 +768,7 @@
 				FaceTarget="True" />
 			<SlavedUpdate
 				id="4AAAACCD"
-				LeashRange="350"
+				LeashRange="325"
 				GuardMaxRange="0"
 				GuardWanderRange="0"
 				AttackRange="200"
@@ -830,7 +830,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="120"
+				MaxHealth="100"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

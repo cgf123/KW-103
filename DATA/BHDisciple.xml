@@ -72,7 +72,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_BlackHandSecretShrinePurifyingFlame"
 		CaptureTime="0s"
-		BuildCost="150"
+		BuildCost="50"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1803,6 +1803,7 @@
 					DeathTypes="ALL"
 					DeathTypesForbidden="" />
 			</SlowDeath>
+			<!--
 			<SuppressionUpdate
 				id="3AE0061F"
 				UpdateDelay="1s"
@@ -1811,6 +1812,7 @@
 				AttributeModifierSuppressed="Modifier_Test_Suppression"
 				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove"
 				IgnoreSuppressionObjectStatus="" />
+				-->
 			<FindCoverBehavior
 				id="53580964"
 				AttributeModifierInCover="Modifier_Cover"
@@ -1928,7 +1930,7 @@
 		<Body>
 			<ActiveBody
 				id="FADB485A"
-				MaxHealth="350"
+				MaxHealth="375"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

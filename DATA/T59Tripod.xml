@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="Traveler59AnnihilatorTripod"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE CAN_SHOOT_OVER_WALLS VALID_TARGET_FOR_C4 CAN_BE_FAVORITE_UNIT MADE_OF_METAL"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE CAN_SHOOT_OVER_WALLS TIBERIUM_BASED VALID_TARGET_FOR_C4 CAN_BE_FAVORITE_UNIT MADE_OF_METAL"
 		Description="Desc:Traveler59AnnihilatorTripod"
 		TypeDescription="Type:Traveler59AnnihilatorTripod"
 		RadarPriority="UNIT"
@@ -105,6 +105,10 @@
 			Speed="60"
 			Condition="NORMAL"
 			Locomotor="AlienAnnihilatorTripodLocomotor" />
+		<LocomotorSet
+			Speed="60"
+			Condition="NORMAL_UPGRADED"
+			Locomotor="AlienAnnihilatorTripodUpgradedLocomotor" />			
 		<SkirmishAIInformation
 			BaseBuildingLocation="FRONT"
 			ConquerMetricsOverrideDamageType="UNDEFINED"
@@ -2114,17 +2118,6 @@
 				TempConditionTime="0s">
 				<TriggeredBy>Upgrade_AllFactionUpgrade</TriggeredBy>
 			</ModelConditionUpgrade>
-			<AudioLoopUpgrade
-				id="290C6CF3"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				SoundToPlay="AudioEvent:ALI_ForceField_Begin"
-				KillAfterMS="0">
-				<TriggeredBy>Upgrade_AlienReactorForcefieldGenerator</TriggeredBy>
-			</AudioLoopUpgrade>
 			<CreateObjectDie
 				id="36031C5A"
 				CreationList="Traveler59AnnihilatorTripodDieOCL">
@@ -2148,6 +2141,16 @@
 				AttributeModifier="AttributeModifier_TravelerEngines">
 				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy>
 			</AttributeModifierUpgrade>
+			<LocomotorSetUpgrade
+				id="E4F319E6"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				KillLocomotorUpgrade="False">
+				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy>
+			</LocomotorSetUpgrade>			
 			<ModelConditionUpgrade
 				id="468D2D8B"
 				RequiresAllTriggers="False"
@@ -2234,7 +2237,7 @@
 				ShieldTakeDamageFX="FX_AlienShieldHit"
 				ShieldAmount="2500"
 				ShieldArmor="ForcefieldFilterDamageArmor"
-				ShieldRechargeIdleTime="120s"
+				ShieldRechargeIdleTime="50s"
 				ShieldActiveModelCondition="USER_1" />
 		</Body>
 		<ClientBehaviors>

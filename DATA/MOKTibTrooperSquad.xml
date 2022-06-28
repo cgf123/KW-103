@@ -19,7 +19,7 @@
 		EditorName="MarkedOfKaneTibTrooperSquad"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="9"
+		BuildTime="8"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -68,7 +68,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_MarkedOfKaneCyberneticLegs"
 		CaptureTime="0s"
-		BuildCost="900"
+		BuildCost="800"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -98,7 +98,7 @@
 			DamageFX=""
 			Conditions="" />
 		<LocomotorSet
-			Speed="50"
+			Speed="55"
 			Condition="NORMAL"
 			Locomotor="NormalRangedSquadLocomotor" />
 		<SkirmishAIInformation

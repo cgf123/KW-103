@@ -907,14 +907,14 @@
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
 						TurretTurnRate="360"
-						TurretPitchRate="20"
+						TurretPitchRate="60"
 						MinimumPitch="-20d"
 						PitchHeight="98.99999%"
 						ControlledWeaponSlots=""
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
 						MinIdleScanAngle="0"
-						MaxIdleScanAngle="90"
+						MaxIdleScanAngle="45"
 						MaxDeflectionClockwise="180d"
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"
@@ -948,14 +948,14 @@
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
 						TurretTurnRate="360"
-						TurretPitchRate="20"
+						TurretPitchRate="60"
 						MinimumPitch="-20d"
 						PitchHeight="98.99999%"
 						ControlledWeaponSlots=""
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
 						MinIdleScanAngle="0"
-						MaxIdleScanAngle="90"
+						MaxIdleScanAngle="45"
 						MaxDeflectionClockwise="180d"
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"
@@ -1283,7 +1283,7 @@
 		<Body>
 			<ActiveBody
 				id="A5C3EB8A"
-				MaxHealth="2300"
+				MaxHealth="2400"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

@@ -505,7 +505,19 @@
 				AddTempConditionFlag="TOPPLED"
 				TempConditionTime="0s">
 				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
-			</ModelConditionUpgrade>
+			</ModelConditionUpgrade>		
+			<StatusBitsUpgrade
+				id="ModuleTag_StatusBitsArmorStatus"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="SWITCHED_WEAPONS"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_GDICompositeArmor</TriggeredBy>
+			</StatusBitsUpgrade>					
 			<CreateAndEnterObjectSpecialPower
 				id="6D44A823"
 				SpecialPowerTemplate="SpecialPowerCallForTransportGDI"
@@ -767,23 +779,25 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</SpecialPower>
-			<SpecialAbilityUpdate
-				id="086BDEF5"
+			<!-- Replaced SAUpdate with WFSAUpdate -->
+		   <WeaponFireSpecialAbilityUpdate
+				id="16D9E43A"
 				GrabPassengerHealGain="0%"
 				SpecialPowerTemplate="EMPGrenadesGetInRange"
 				StartAbilityRange="300"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
-				PersistentPrepTime="0s"
-				PersistentCount="-1"
-				PackTime="0s"
-				UnpackTime="0s"
+				PersistentPrepTime="0.1s"
+				PersistentCount="2"
+				PackTime="0.5s"
+				UnpackTime="0.9s"
 				PreTriggerUnstealthTime="0s"
-				Options=""
+				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE CHECK_PREVENT_CONDITIONS"
 				PackUnpackVariationFactor="0"
 				ParalyzeDurationWhenCompleted="0s"
 				ParalyzeDurationWhenAborted="0s"
 				SpecialObject=""
+				SpecialObjectAttachToBone=""
 				MaxSpecialObjects="1"
 				EffectDuration="0s"
 				EffectValue="1"
@@ -803,15 +817,27 @@
 				RejectedConditions=""
 				SetObjectStatusOnTrigger=""
 				ClearObjectStatusOnExit=""
+				ContactPointOverride=""
 				TriggerAttributeModifier=""
 				AttributeModifierDuration="0s"
 				ChainedButton="Command_FireEMPGrenades"
 				RequireAndSpendTiberiumOnCaster="0"
 				DisabledTypesToProcess="HELD"
 				DisabledTypesToContinueSoundsFor="HELD"
-				StartRechargeOnExit="False"
+				StartRechargeOnExit="True"
 				GoIdleInStartPreparation="True"
-				FaceTarget="True" />
+				FaceTarget="True"
+				SpecialWeapon="GDIGrenadeSoldierEMPGrenade1"
+				WhichSpecialWeapon="1"
+				BusyForDuration="0.9s"
+				WeaponSlotID="1"
+				WeaponSlotType="PRIMARY_WEAPON"
+				SkipContinue="False"
+				NeedLivingTargets="False"
+				PlayWeaponPreFireFX="False"
+				OffsetTargetLocationFromObject="False"
+				DestealthClosestObjectMatchingFilter="False" />	
+			<!--  ///////////////////////////////////////////////////////////////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->		
 			<HordeDispatchSpecialPower
 				id="CA58A312"
 				SpecialPowerTemplate="SpecialPower_FireEMPGrenades"
@@ -846,7 +872,7 @@
 				AdjustVictim="False"
 				UseDistanceFromCommandCenter="False"
 				ChildModuleHandlesFX="False"
-				MaxMembersToDispatchTo="4">
+				MaxMembersToDispatchTo="2">
 				<AttributeModifierAffects
 					Rule="UNPARSED"
 					Relationship=""

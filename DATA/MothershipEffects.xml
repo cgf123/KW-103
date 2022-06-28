@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+  <Tags></Tags>  
+	<GameObject
+		id="AlienMotherShipBeamEffect100"
+		Side="ALIEN"
+		EditorSorting="UNIT"
+		TransportSlotCount="0"
+		IsTrainable="false"
+		KindOf="NOT_AUTOACQUIRABLE INERT_SHROUD_REVEALER RESIST_EMP"
+		EditorName="AlienMotherShipBeamEffect100">
+		<DisplayName>AlienMotherShipBeamEffect100</DisplayName>
+		<ArmorSet
+			Armor="MagicArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model Name="" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<LifetimeUpdate
+				id="ModuleTag_LifetimeUpdate"
+				MinLifetime="7s"
+				MaxLifetime="7s" />
+
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onCreate"
+					FX="FX_AlienMothershipLaser100" />
+			</FXListBehavior>
+			
+			<FireWeaponUpdate
+				id="1957388F"
+				ActiveWhenDisabled=""
+				HeroModeTrigger="False"
+				ChargingModeTrigger="False"
+				AliveOnly="True">
+				<FireWeaponNugget
+					WeaponName="AlienMothershipCatalystMarkerWeapon"
+					FireDelay="0.0s"
+					FireInterval="0.25s"
+					OneShot="False" />
+				<FireWeaponNugget
+					WeaponName="AlienMothershipCatalystMarkerKiller"
+					FireDelay="0.25s"
+					FireInterval="0.05s"
+					OneShot="False" />					
+			</FireWeaponUpdate>				
+			
+			<DestroyDie
+				id="ModuleTag_Die">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</DestroyDie>	
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="10.0"
+				Height="10.0"/>
+		</Geometry>
+		<ShadowInfo
+			Type="DECAL"
+			SizeX="14"
+			SizeY="14"
+			Texture="ShadowI" />
+		<VisionInfo
+			VisionRange="100"
+			ShroudClearingRange="200" />
+	</GameObject>
+	
+	
+	<GameObject
+		id="AlienMotherShipBeamEffect75"
+		Side="ALIEN"
+		EditorSorting="UNIT"
+		TransportSlotCount="0"
+		IsTrainable="false"
+		KindOf="NOT_AUTOACQUIRABLE INERT_SHROUD_REVEALER RESIST_EMP"
+		EditorName="AlienMotherShipBeamEffect75">
+		<DisplayName>AlienMotherShipBeamEffect75</DisplayName>
+		<ArmorSet
+			Armor="MagicArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model Name="" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<LifetimeUpdate
+				id="ModuleTag_LifetimeUpdate"
+				MinLifetime="7s"
+				MaxLifetime="7s" />
+
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onCreate"
+					FX="FX_AlienMothershipLaser100" />
+			</FXListBehavior>
+			
+			<FireWeaponUpdate
+				id="1957388F"
+				ActiveWhenDisabled=""
+				HeroModeTrigger="False"
+				ChargingModeTrigger="False"
+				AliveOnly="True">
+				<FireWeaponNugget
+					WeaponName="AlienMothershipCatalystMarkerWeapon"
+					FireDelay="0.0s"
+					FireInterval="0.25s"
+					OneShot="False" />
+				<FireWeaponNugget
+					WeaponName="AlienMothershipCatalystMarkerKiller"
+					FireDelay="0.25s"
+					FireInterval="0.05s"
+					OneShot="False" />		
+			</FireWeaponUpdate>					
+			
+			<DestroyDie
+				id="ModuleTag_Die">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</DestroyDie>	
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="10.0"
+				Height="10.0"/>
+		</Geometry>
+		<ShadowInfo
+			Type="DECAL"
+			SizeX="14"
+			SizeY="14"
+			Texture="ShadowI" />
+		<VisionInfo
+			VisionRange="100"
+			ShroudClearingRange="200" />
+	</GameObject>
+
+
+	<GameObject
+		id="AlienMotherShipBeamEffect50"
+		Side="ALIEN"
+		EditorSorting="UNIT"
+		TransportSlotCount="0"
+		IsTrainable="false"
+		KindOf="NOT_AUTOACQUIRABLE INERT_SHROUD_REVEALER RESIST_EMP"
+		EditorName="AlienMotherShipBeamEffect50">
+		<DisplayName>AlienMotherShipBeamEffect50</DisplayName>
+		<ArmorSet
+			Armor="MagicArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model Name="" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<LifetimeUpdate
+				id="ModuleTag_LifetimeUpdate"
+				MinLifetime="7s"
+				MaxLifetime="7s" />
+
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onCreate"
+					FX="FX_AlienMothershipLaser100" />
+			</FXListBehavior>
+			
+			<FireWeaponUpdate
+				id="1957388F"
+				ActiveWhenDisabled=""
+				HeroModeTrigger="False"
+				ChargingModeTrigger="False"
+				AliveOnly="True">
+				<FireWeaponNugget
+					WeaponName="AlienMothershipCatalystMarkerWeapon"
+					FireDelay="0.0s"
+					FireInterval="0.25s"
+					OneShot="False" />
+				<FireWeaponNugget
+					WeaponName="AlienMothershipCatalystMarkerKiller"
+					FireDelay="0.25s"
+					FireInterval="0.05s"
+					OneShot="False" />			
+			</FireWeaponUpdate>					
+			
+			<DestroyDie
+				id="ModuleTag_Die">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</DestroyDie>	
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="10.0"
+				Height="10.0"/>
+		</Geometry>
+		<ShadowInfo
+			Type="DECAL"
+			SizeX="14"
+			SizeY="14"
+			Texture="ShadowI" />
+		<VisionInfo
+			VisionRange="100"
+			ShroudClearingRange="200" />
+	</GameObject>
+
+
+	<GameObject
+		id="AlienMotherShipBeamEffect25"
+		Side="ALIEN"
+		EditorSorting="UNIT"
+		TransportSlotCount="0"
+		IsTrainable="false"
+		KindOf="NOT_AUTOACQUIRABLE INERT_SHROUD_REVEALER RESIST_EMP"
+		EditorName="AlienMotherShipBeamEffect25">
+		<DisplayName>AlienMotherShipBeamEffect25</DisplayName>
+		<ArmorSet
+			Armor="MagicArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model Name="" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<LifetimeUpdate
+				id="ModuleTag_LifetimeUpdate"
+				MinLifetime="7s"
+				MaxLifetime="7s" />
+
+			<FXListBehavior
+				id="ModuleTag_FXList">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onCreate"
+					FX="FX_AlienMothershipLaser100" />
+			</FXListBehavior>
+			
+			<FireWeaponUpdate
+				id="1957388F"
+				ActiveWhenDisabled=""
+				HeroModeTrigger="False"
+				ChargingModeTrigger="False"
+				AliveOnly="True">
+				<FireWeaponNugget
+					WeaponName="AlienMothershipCatalystMarkerWeapon"
+					FireDelay="0.0s"
+					FireInterval="0.25s"
+					OneShot="False" />
+				<FireWeaponNugget
+					WeaponName="AlienMothershipCatalystMarkerKiller"
+					FireDelay="0.25s"
+					FireInterval="0.05s"
+					OneShot="False" />						
+			</FireWeaponUpdate>					
+			
+			<DestroyDie
+				id="ModuleTag_Die">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</DestroyDie>	
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="10.0"
+				Height="10.0"/>
+		</Geometry>
+		<ShadowInfo
+			Type="DECAL"
+			SizeX="14"
+			SizeY="14"
+			Texture="ShadowI" />
+		<VisionInfo
+			VisionRange="100"
+			ShroudClearingRange="200" />
+	</GameObject>	
+	
+	<!-- ============================================== MOTHERSHIP LIMITED LIFETIME WEAPONS =========================================== -->
+
+	<AttributeModifier
+		id="Modifier_MSCatalystInfect"
+		Category="NONE"
+		Duration="0.5s"
+		ObjectStatusToSet="HEALTH_PERCENT_0" 
+		>
+	</AttributeModifier>					
+	
+	<WeaponTemplate
+		id="AlienMotherShipCatalystCannon100"
+		Name="AlienMotherShipCatalystCannon100"
+		AttackRange="30.0"
+		WeaponSpeed="999999.0"
+		AcceptableAimDelta="360d"
+		CanFireWhileMoving="false"	
+		NoVictimNeeded="true"			
+		ClipSize="1"
+		FireSoundPerClip="AudioEvent:ALI_MotherShip_WeaponFire"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+		<PreAttackDelay
+		  MinSeconds="5.3s"
+		  MaxSeconds="5.3s" />
+		<FiringDuration
+				MinSeconds="4s"
+				MaxSeconds="4s" />
+		<ClipReloadTime
+				MinSeconds=".1s"
+				MaxSeconds=".1s" />
+		<Nuggets>
+			<WeaponOCLNugget
+				WeaponOCL="OCL_GenericTreeCrusher" />
+			<WeaponOCLNugget
+				WeaponOCL="OCLMotherShipBeam100" />
+			<DamageNugget
+				Damage="40000"
+				Radius="140"
+				DelayTimeSeconds=".25s"
+				DamageType="CANNON"
+				DamageFXType="ALIEN_LASER"
+				DeathType="CATALYST"/>					
+		</Nuggets>
+	</WeaponTemplate>
+
+	<WeaponTemplate
+		id="AlienMotherShipCatalystCannon75"
+		Name="AlienMotherShipCatalystCannon75"
+		AttackRange="30.0"
+		WeaponSpeed="999999.0"
+		AcceptableAimDelta="360d"
+		HitPercentage="0%"
+		ScatterRadius="0"
+		NoVictimNeeded="true"		
+		CanFireWhileMoving="false"
+		ClipSize="1"
+		FireSoundPerClip="AudioEvent:ALI_MotherShip_WeaponFire"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+		<PreAttackDelay
+		  MinSeconds="5.3s"
+		  MaxSeconds="5.3s" />
+		<FiringDuration
+				MinSeconds="4s"
+				MaxSeconds="4s" />
+		<ClipReloadTime
+				MinSeconds=".1s"
+				MaxSeconds=".1s" />
+		<Nuggets>
+			<WeaponOCLNugget
+				WeaponOCL="OCL_GenericTreeCrusher" />
+			<WeaponOCLNugget
+				WeaponOCL="OCLMotherShipBeam75" />	
+			<DamageNugget
+				Damage="30000"
+				Radius="120"
+				DelayTimeSeconds=".25s"
+				DamageType="CANNON"
+				DamageFXType="ALIEN_LASER"
+				DeathType="CATALYST"/>					
+		</Nuggets>
+	</WeaponTemplate>
+
+	<WeaponTemplate
+		id="AlienMotherShipCatalystCannon50"
+		Name="AlienMotherShipCatalystCannon50"
+		AttackRange="30.0"
+		WeaponSpeed="999999.0"
+		AcceptableAimDelta="360d"
+		HitPercentage="0%"
+		ScatterRadius="0"
+		NoVictimNeeded="true"			
+		CanFireWhileMoving="false"
+		ClipSize="1"
+		FireSoundPerClip="AudioEvent:ALI_MotherShip_WeaponFire"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+		<PreAttackDelay
+		  MinSeconds="5.3s"
+		  MaxSeconds="5.3s" />
+		<FiringDuration
+				MinSeconds="4s"
+				MaxSeconds="4s" />
+		<ClipReloadTime
+				MinSeconds=".1s"
+				MaxSeconds=".1s" />
+		<Nuggets>
+			<WeaponOCLNugget
+				WeaponOCL="OCL_GenericTreeCrusher" />
+			<WeaponOCLNugget
+				WeaponOCL="OCLMotherShipBeam50" />	
+			<DamageNugget
+				Damage="20000"
+				Radius="100"
+				DelayTimeSeconds=".25s"
+				DamageType="CANNON"
+				DamageFXType="ALIEN_LASER"
+				DeathType="CATALYST"/>					
+		</Nuggets>
+	</WeaponTemplate>
+
+	<WeaponTemplate
+		id="AlienMotherShipCatalystCannon25"
+		Name="AlienMotherShipCatalystCannon25"
+		AttackRange="30.0"
+		WeaponSpeed="999999.0"
+		AcceptableAimDelta="360d"
+		HitPercentage="0%"
+		ScatterRadius="0"
+		NoVictimNeeded="true"			
+		CanFireWhileMoving="false"
+		ClipSize="1"
+		FireSoundPerClip="AudioEvent:ALI_MotherShip_WeaponFire"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+		<PreAttackDelay
+		  MinSeconds="5.3s"
+		  MaxSeconds="5.3s" />
+		<FiringDuration
+				MinSeconds="4s"
+				MaxSeconds="4s" />
+		<ClipReloadTime
+				MinSeconds=".1s"
+				MaxSeconds=".1s" />
+		<Nuggets>
+			<WeaponOCLNugget
+				WeaponOCL="OCL_GenericTreeCrusher" />
+			<WeaponOCLNugget
+				WeaponOCL="OCLMotherShipBeam25" />	
+			<DamageNugget
+				Damage="10000"
+				Radius="80"
+				DelayTimeSeconds=".25s"
+				DamageType="CANNON"
+				DamageFXType="ALIEN_LASER"
+				DeathType="CATALYST"/>						
+		</Nuggets>
+	</WeaponTemplate>
+	
+	<!-- Fired by MS Effect objects to mark targets for infection -->
+	<WeaponTemplate
+		id="AlienMothershipCatalystMarkerWeapon"
+		Name="AlienMothershipCatalystMarkerWeapon"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS">
+		<Nuggets>
+			<AttributeModifierNugget
+				Radius="5000.0"
+				PartitionFilterTestType="CIRCLE"
+				AttributeModifierName="Modifier_MSCatalystInfect">
+			</AttributeModifierNugget>					
+		</Nuggets>
+	</WeaponTemplate>		
+
+	<!-- Fired by MS effect objects to kill other MS effects -->
+	<WeaponTemplate
+		id="AlienMothershipCatalystMarkerKiller"
+		Name="AlienMothershipCatalystMarkerKiller"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS">
+		<Nuggets>
+			<DamageNugget
+				Damage="40000"
+				Radius="5000"
+				DamageType="MAGIC" >
+				<SpecialObjectFilter
+					Relationship="SAME_PLAYER"
+					Rule="NONE">
+					<IncludeThing>AlienMotherShipBeamEffect100</IncludeThing>
+					<IncludeThing>AlienMotherShipBeamEffect50</IncludeThing>
+					<IncludeThing>AlienMotherShipBeamEffect75</IncludeThing>
+					<IncludeThing>AlienMotherShipBeamEffect25</IncludeThing>					
+				</SpecialObjectFilter>					
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>	
+
+	<!--Catalyst weapon for continual infection in a radius, this version is for buildings; infantry have another weapon-->
+	<WeaponTemplate
+		id="CatalystBuildingDeathWeapon"
+		Name="CatalystBuildingDeathWeapon"
+		AttackRange="5.0"
+		WeaponSpeed="999999.0"
+		PreAttackFX="FX_AlienCatalystBuildingPreAttack"
+		FireFX="FX_AlienCatalystBuildingExplode"
+		HitPercentage="0%"
+		ScatterRadius="0"
+		CanFireWhileMoving="false"
+		ClipSize="1"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+		<PreAttackDelay
+		  MinSeconds="0.5s"
+		  MaxSeconds="0.5s" />
+		<FiringDuration
+			MinSeconds="3s"
+			MaxSeconds="3s" />
+		<ClipReloadTime
+			MinSeconds="5s"
+			MaxSeconds="5s" />
+		<Nuggets>
+			<TintObjectsNugget
+				Radius="300"
+				PreColorTime="4s"
+				SustainedColorTime="0s"
+				PostColorTime="1s"
+				Frequency="0"
+				Amplitude="0">
+				<Color R="1.3" G="1.3" B="1.5"/>
+			</TintObjectsNugget>
+			<DamageNugget
+				Damage="40000"
+				Radius="300"
+				DelayTimeSeconds="1.5s"
+				DamageType="CANNON"
+				DeathType="CATALYST">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="HEALTH_PERCENT_0">
+					<ExcludeThing>AlienMothership</ExcludeThing>
+				</SpecialObjectFilter>					
+			</DamageNugget>		
+		</Nuggets>
+	</WeaponTemplate>
+
+	<!--Catalyst weapon for continual infection in a radius, this version is for infantry; buildings have another weapon-->
+	<WeaponTemplate
+		id="CatalystInfantryDeathWeapon"
+		Name="CatalystInfantryDeathWeapon"
+		AttackRange="5.0"
+		WeaponSpeed="999999.0"
+		PreAttackFX="FX_AlienCatalystInfantryPreAttack"
+		FireFX="FX_AlienCatalystInfantryExplode"
+		HitPercentage="0%"
+		ScatterRadius="0"
+		CanFireWhileMoving="false"
+		ClipSize="1"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+		<PreAttackDelay
+		  MinSeconds="0.5s"
+		  MaxSeconds="0.5s" />
+		<FiringDuration
+			MinSeconds="3s"
+			MaxSeconds="3s" />
+		<ClipReloadTime
+			MinSeconds="5s"
+			MaxSeconds="5s" />
+		<Nuggets>
+			<TintObjectsNugget
+				Radius="100"
+				PreColorTime="4s"
+				SustainedColorTime="0s"
+				PostColorTime="1s"
+				Frequency="0"
+				Amplitude="0">
+				<Color R="1.3" G="1.3" B="1.5"/>
+			</TintObjectsNugget>
+			<DamageNugget
+				Damage="9999"
+				Radius="100"
+				DelayTimeSeconds="2.5s"
+				DamageType="CANNON"
+				DeathType="CATALYST">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="HEALTH_PERCENT_0">
+					<ExcludeThing>AlienMothership</ExcludeThing>
+				</SpecialObjectFilter>				
+			</DamageNugget>			
+		</Nuggets>
+	</WeaponTemplate>	
+		
+	
+</AssetDeclaration>

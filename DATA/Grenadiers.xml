@@ -1691,12 +1691,14 @@
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
+					<!--
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIGrenadeSoldierGrenade_Garrison"
 						Upgrade=""
 						ObjectStatus="INSIDE_GARRISON"
-						IsPlayerUpgradePermanent="False" />						
+						IsPlayerUpgradePermanent="False" />		
+					-->
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<Physics
@@ -2039,7 +2041,7 @@
 				FaceTarget="True"
 				SpecialWeapon="GDIGrenadeSoldierEMPGrenade"
 				WhichSpecialWeapon="1"
-				BusyForDuration="0.5s"
+				BusyForDuration="0.4s"
 				WeaponSlotID="1"
 				WeaponSlotType="PRIMARY_WEAPON"
 				SkipContinue="False"
@@ -3946,12 +3948,14 @@
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
+					<!--
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIGrenadeSoldierGrenade_Garrison"
 						Upgrade=""
 						ObjectStatus="INSIDE_GARRISON"
-						IsPlayerUpgradePermanent="False" />						
+						IsPlayerUpgradePermanent="False" />		
+					-->					
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<Physics
@@ -4294,7 +4298,7 @@
 				FaceTarget="True"
 				SpecialWeapon="GDIGrenadeSoldierEMPGrenade"
 				WhichSpecialWeapon="1"
-				BusyForDuration="0.5s"
+				BusyForDuration="0.4s"
 				WeaponSlotID="1"
 				WeaponSlotType="PRIMARY_WEAPON"
 				SkipContinue="False"
@@ -5963,12 +5967,14 @@
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
+					<!--
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIGrenadeSoldierGrenade_Garrison"
 						Upgrade=""
 						ObjectStatus="INSIDE_GARRISON"
-						IsPlayerUpgradePermanent="False" />						
+						IsPlayerUpgradePermanent="False" />		
+					-->					
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<Physics

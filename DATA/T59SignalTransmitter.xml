@@ -342,6 +342,49 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
+			<!-- NEW T4 UPGRADE -->
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantControlCenterUpgradeCreate" 
+				UpgradeToGrant="Upgrade_AlienSignalTransmitter"  />
+			<!--                              -->					
+		
+			<SpawnBehavior
+				id="CF506A74"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				SpawnNumberData="1"
+				SpawnReplaceDelayData="0.1s"
+				InitialBurst="1"
+				DamageTypesToPropagateToSlaves="ALL"
+				FadeInTime="0s"
+				InitialDelay="0s"
+				IsOneShotData="True"
+				CanReclaimOrphans="False"
+				AggregateHealth="False"
+				ExitByBudding="False"
+				SpawnedRequireSpawner="False"
+				RespectCommandLimit="False"
+				KillSpawnBasedOnModelConditionState="False"
+				ShareUpgrades="False"
+				SpawnInsideBuilding="True"
+				CombineOnCreate="False"
+				KillSpawnsOnDisabled="False"
+				PassExperienceToSpawned="False"
+				KillSpawnsOnCaptured="False">
+				<Die
+					ExemptStatus=""
+					RequiredStatus=""
+					DamageAmountRequired="-1"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
+					DeathTypes="ALL"
+					DeathTypesForbidden="" />
+				<SpawnTemplate>AlienTechDummy</SpawnTemplate>
+			</SpawnBehavior>				
+		
 			<AttributeModifierPoolUpdate
 				id="513BC476" />
 			<FireWeaponWhenDead

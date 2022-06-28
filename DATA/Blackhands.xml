@@ -1803,6 +1803,7 @@
 					DeathTypes="ALL"
 					DeathTypesForbidden="" />
 			</SlowDeath>
+			<!--
 			<SuppressionUpdate
 				id="3AE0061F"
 				UpdateDelay="1s"
@@ -1810,7 +1811,7 @@
 				SuppressionDuration="5s"
 				AttributeModifierSuppressed="Modifier_Test_Suppression"
 				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove"
-				IgnoreSuppressionObjectStatus="" />
+				IgnoreSuppressionObjectStatus="" /> -->
 			<FindCoverBehavior
 				id="53580964"
 				AttributeModifierInCover="Modifier_Cover"
@@ -3879,6 +3880,7 @@
 					DeathTypes="ALL"
 					DeathTypesForbidden="" />
 			</SlowDeath>
+			<!--
 			<SuppressionUpdate
 				id="3AE0061F"
 				UpdateDelay="1s"
@@ -3886,7 +3888,7 @@
 				SuppressionDuration="5s"
 				AttributeModifierSuppressed="Modifier_Test_Suppression"
 				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove"
-				IgnoreSuppressionObjectStatus="" />
+				IgnoreSuppressionObjectStatus="" /> -->
 			<FindCoverBehavior
 				id="53580964"
 				AttributeModifierInCover="Modifier_Cover"

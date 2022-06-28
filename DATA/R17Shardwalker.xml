@@ -88,11 +88,11 @@
 		BuildInProximityToSamePlayerStucture="True">
 		<DisplayName>NAME:Reaper17ShardWalker</DisplayName>
 		<ArmorSet
-			Armor="AlienGunWalkerArmor"
+			Armor="Reaper17ShardWalkerArmor"
 			DamageFX="InfantryAlienDamageFX"
 			Conditions="" />
 		<ArmorSet
-			Armor="AlienGunWalkerArmorShieldBodyEnabled"
+			Armor="Reaper17ShardWalkerArmorShieldBodyEnabled"
 			DamageFX="VehicleDamageFX"
 			Conditions="SHIELDBODY_ENABLED" />
 		<LocomotorSet
@@ -1429,7 +1429,7 @@
 				ShieldTakeDamageFX="FX_AlienShieldHit"
 				ShieldAmount="400"
 				ShieldArmor="ForcefieldFilterDamageArmor"
-				ShieldRechargeIdleTime="60s"
+				ShieldRechargeIdleTime="40s"
 				ShieldActiveModelCondition="USER_1" />
 		</Body>
 		<Geometry

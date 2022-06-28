@@ -821,7 +821,7 @@
 			MinVisionBonusPercent="-50%" />
 		<ProjectedBuildabilityInfo
 			Radius="300"
-			BuildPlacementTypes="MAIN_STRUCTURE"
+			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE"
 			StatusToReject=""
 			ModelConditionsToReject="STRUCTURE_UNPACKING" />
 	</GameObject>
@@ -1648,7 +1648,7 @@
 			MinVisionBonusPercent="-50%" />
 		<ProjectedBuildabilityInfo
 			Radius="300"
-			BuildPlacementTypes="MAIN_STRUCTURE"
+			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE"
 			StatusToReject=""
 			ModelConditionsToReject="STRUCTURE_UNPACKING" />
 	</GameObject>	

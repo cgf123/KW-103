@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="BlackHandStealthTank"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE MADE_OF_WOOD CAN_BE_FAVORITE_UNIT"
 		ReviveText=""
 		RecruitText=""
 		Description="Desc:BlackHandStealthTank"
@@ -1065,7 +1065,7 @@
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
 						MinIdleScanAngle="0"
-						MaxIdleScanAngle="90"
+						MaxIdleScanAngle="45"
 						MaxDeflectionClockwise="180d"
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"
@@ -1214,6 +1214,82 @@
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
 				UseMetaAOI="False" />
+				
+			<CreateAndEnterObjectSpecialPower
+				id="6D44A823"
+				SpecialPowerTemplate="SpecialPowerCallForTransportNOD"
+				AntiCategory=""
+				AntiFX=""
+				AttributeModifier=""
+				AttributeModifierRange="0"
+				AttributeModifierFX=""
+				WeatherDuration="0"
+				InitiateFX=""
+				TriggerFX="FX_NodCallForTransportFlare"
+				SetModelCondition="TOPPLED"
+				SetModelConditionTime="0s"
+				GiveLevels="0"
+				ChangeWeather="NORMAL"
+				OnTriggerRechargeSpecialPower=""
+				BurnDecayModifier="0"
+				MaxDistanceFromCommandCenter="0"
+				UpdateModuleStartsAttack="False"
+				StartsPaused="False"
+				ReEnableAntiCategory="False"
+				AttributeModifierAffectsSelf="False"
+				AttributeModifierWeatherBased="False"
+				TargetEnemy="False"
+				TargetAllSides="False"
+				DisableDuringAnimDuration="False"
+				IdleWhenStartingPower="True"
+				AffectGood="False"
+				AffectEvil="False"
+				AffectAllies="True"
+				AvailableAtStart="True"
+				AdjustVictim="False"
+				UseDistanceFromCommandCenter="False"
+				ChildModuleHandlesFX="True"
+				OCL="OCL_NodCallForTransportVehicle"
+				CreateLocation="CREATE_ABOVE_LOCATION"
+				MaxCreateCount="0"
+				NumberToSpawn="1"
+				DestinationOCL=""
+				RegisterObjectsWithSpecialAbilityUpdate="False">
+				<AttributeModifierAffects
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<RequirementsFilterMP
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<RequirementsFilterStrategic
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<FXOffset
+					x="25"
+					y="0"
+					z="0" />
+			</CreateAndEnterObjectSpecialPower>				
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -1252,7 +1328,7 @@
 		<Body>
 			<ActiveBody
 				id="A5C3EB8A"
-				MaxHealth="1875"
+				MaxHealth="1950"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1373,7 +1449,7 @@
 			CrushDecelerationPercent="0%"
 			CrushWeapon=""
 			CrushRevengeWeapon=""
-			CrusherLevel="1"
+			CrusherLevel="0"
 			CrushableLevel="2"
 			MountedCrusherLevel="255"
 			MountedCrushableLevel="255"

@@ -677,7 +677,7 @@
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
 			</HordeContain>
 					
-			<!-- AI use transports! -->
+			<!-- AI use transports!
 			<AISpecialPowerUpdate
 				id="335B0612"
 				CommandButtonName="Command_EnterTransport"
@@ -713,7 +713,8 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />										
+				RandomizeTargetLocation="False" />	
+			-->				
 				
 		</Behaviors>
 		<AI>

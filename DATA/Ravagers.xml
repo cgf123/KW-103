@@ -67,7 +67,7 @@
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
-		BuildCost="266"
+		BuildCost="166"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1065,7 +1065,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="200"
+				MaxHealth="120"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1272,7 +1272,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_AlienBlueShardWeapon"
 		CaptureTime="0s"
-		BuildCost="266"
+		BuildCost="166"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -2311,7 +2311,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="200"
+				MaxHealth="120"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -2526,7 +2526,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_Traveler59AdvancedArticulators"
 		CaptureTime="0s"
-		BuildCost="266"
+		BuildCost="166"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -3710,7 +3710,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="200"
+				MaxHealth="120"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

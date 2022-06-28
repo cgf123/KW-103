@@ -159,8 +159,8 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="AUSRIDER_SKN"
-						ExtraMesh="False" />
+						Name="AUSRIDER_SKN_new"
+						ExtraMesh="False" />					
 					<WeaponFireFXBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
@@ -179,7 +179,27 @@
 					<Model
 						Name="AUSRIDER_FP"
 						ExtraMesh="False" />
-				</ModelConditionState>
+				</ModelConditionState>				
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED USER_5 USER_6 USER_2"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="AUSRIDERION"
+						ExtraMesh="False" />
+					<Texture
+						Original="AUSRider"
+						New="AURprSRiderBlue" />
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFire01"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DAMAGED USER_5 USER_6"
@@ -191,7 +211,7 @@
 						ExtraMesh="False" />
 					<Texture
 						Original="AUSRider"
-						New="AUSRider_K" />
+						New="AURprSRider" />
 					<ParticleSysBone
 						BoneName="FX_Flame_03"
 						FXParticleSystemTemplate="AlienFlyingDamageFire01"
@@ -200,6 +220,40 @@
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED USER_5 USER_6 USER_2"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="AUSRIDERION"
+						ExtraMesh="False" />
+					<Texture
+						Original="AUSRider"
+						New="AURprSRiderBlue_D" />
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFire01"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFireGlow01"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFireGlow02"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED USER_5 USER_6"
@@ -211,7 +265,7 @@
 						ExtraMesh="False" />
 					<Texture
 						Original="AUSRider"
-						New="AUSRiderD_K" />
+						New="AURprSRider_D" />
 					<ParticleSysBone
 						BoneName="FX_Flame_03"
 						FXParticleSystemTemplate="AlienFlyingDamageFire01"
@@ -233,7 +287,27 @@
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
-				</ModelConditionState>
+				</ModelConditionState>	
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED USER_5 USER_2"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="AUSRIDERION"
+						ExtraMesh="False" />
+					<Texture
+						Original="AUSRider"
+						New="AURprSRiderBlue" />						
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFire01"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DAMAGED USER_5"
@@ -243,6 +317,9 @@
 					<Model
 						Name="AUSRIDERION"
 						ExtraMesh="False" />
+					<Texture
+						Original="AUSRider"
+						New="AURprSRider" />						
 					<ParticleSysBone
 						BoneName="FX_Flame_03"
 						FXParticleSystemTemplate="AlienFlyingDamageFire01"
@@ -251,6 +328,40 @@
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED USER_5 USER_2"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="AUSRIDERION"
+						ExtraMesh="False" />
+					<Texture
+						Original="AUSRider"
+						New="AURprSRiderBlue_D" />
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFire01"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFireGlow01"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFireGlow02"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED USER_5"
@@ -262,7 +373,7 @@
 						ExtraMesh="False" />
 					<Texture
 						Original="AUSRider"
-						New="AUSRider_D" />
+						New="AURprSRider_D" />
 					<ParticleSysBone
 						BoneName="FX_Flame_03"
 						FXParticleSystemTemplate="AlienFlyingDamageFire01"
@@ -287,12 +398,32 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED USER_2"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="AUSRIDER_SKN_new"
+						ExtraMesh="False" />
+					<Texture
+						Original="AURprSRider"
+						New="AURprSRiderBlue_D" />						
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFire01"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>				
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="DAMAGED"
 					PortraitImage=""
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="AUSRIDER_SKN"
+						Name="AUSRIDER_SKN_new"
 						ExtraMesh="False" />
 					<ParticleSysBone
 						BoneName="FX_Flame_03"
@@ -304,16 +435,50 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED USER_2"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="AUSRIDER_SKN_new"
+						ExtraMesh="False" />
+					<Texture
+						Original="AURprSRider"
+						New="AURprSRiderBlue_D" />
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFire01"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFireGlow01"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Flame_03"
+						FXParticleSystemTemplate="AlienFlyingDamageFireGlow02"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>				
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED"
 					PortraitImage=""
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="AUSRIDER_SKN"
+						Name="AUSRIDER_SKN_new"
 						ExtraMesh="False" />
 					<Texture
-						Original="AUSRider"
-						New="AUSRider_D" />
+						Original="AURprSRider"
+						New="AURprSRider_D" />
 					<ParticleSysBone
 						BoneName="FX_Flame_03"
 						FXParticleSystemTemplate="AlienFlyingDamageFire01"
@@ -348,6 +513,26 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_5 USER_6 USER_2"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="AUSRIDERION"
+						ExtraMesh="False" />
+					<Texture
+						Original="AUSRider"
+						New="AURprSRiderBlue" />
+					<ParticleSysBone
+						BoneName="FX_WEAPON_01"
+						FXParticleSystemTemplate="AlienIonHullContrail"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>				
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_5 USER_6"
 					PortraitImage=""
 					ButtonImage=""
@@ -357,7 +542,7 @@
 						ExtraMesh="False" />
 					<Texture
 						Original="AUSRider"
-						New="AUSRider_K" />
+						New="AURprSRider" />
 					<ParticleSysBone
 						BoneName="FX_WEAPON_01"
 						FXParticleSystemTemplate="AlienIonHullContrail"
@@ -366,6 +551,26 @@
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_5 USER_2"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="AUSRIDERION"
+						ExtraMesh="False" />
+					<Texture
+						Original="AUSRider"
+						New="AURprSRiderBlue" />						
+					<ParticleSysBone
+						BoneName="FX_WEAPON_01"
+						FXParticleSystemTemplate="AlienIonHullContrail"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_5"
@@ -385,17 +590,40 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6 USER_2"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="AUSRIDER_SKN_new"
+						ExtraMesh="False" />
+					<Texture
+						Original="AURprSRider"
+						New="AURprSRiderBlue" />
+				</ModelConditionState>				
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_6"
 					PortraitImage=""
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="AUSRIDER_SKN"
+						Name="AUSRIDER_SKN_new"
+						ExtraMesh="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_2"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="AUSRIDER_SKN_new"
 						ExtraMesh="False" />
 					<Texture
-						Original="AUSRider"
-						New="AUSRider_K" />
-				</ModelConditionState>
+						Original="AURprSRider"
+						New="AURprSRiderBlue" />
+				</ModelConditionState>				
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="JUST_BUILT"
@@ -1217,7 +1445,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="3800"
+				MaxHealth="3750"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1320,7 +1548,7 @@
 			LocalPlayerOnly="False" />
 		<VisionInfo
 			VisionRange="350"
-			ShroudClearingRange="400"
+			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"
 			VisionBonusTestRadius="100"

@@ -19,7 +19,7 @@
 		EditorName="MarkedOfKaneTibTrooper"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="1.5"
+		BuildTime="1.33"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -68,7 +68,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_MarkedOfKaneCyberneticLegs"		
 		CaptureTime="0s"
-		BuildCost="150"
+		BuildCost="133"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -92,7 +92,7 @@
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="60"
+			Speed="65"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<SkirmishAIInformation
@@ -1549,6 +1549,7 @@
 					DeathTypes="ALL"
 					DeathTypesForbidden="" />
 			</SlowDeath>
+			<!--
 			<SuppressionUpdate
 				id="3AE0061F"
 				UpdateDelay="1s"
@@ -1557,6 +1558,7 @@
 				AttributeModifierSuppressed="Modifier_Test_Suppression"
 				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove"
 				IgnoreSuppressionObjectStatus="" />
+			-->
 			<FindCoverBehavior
 				id="53580964"
 				AttributeModifierInCover="Modifier_Cover"

@@ -19,7 +19,7 @@
 		EditorName="GDIGolumCannon"
 		EditorSorting="STRUCTURE"
 		BountyValue="0"
-		BuildTime="12"
+		BuildTime="10"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="-8"
 		EnergyBonus="0"
@@ -67,7 +67,7 @@
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
-		BuildCost="1200"
+		BuildCost="1000"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -832,13 +832,39 @@
 				IRParticleSys=""
 				IRBrightParticleSys=""
 				IRGridParticleSys=""
+				IRParticleSysBone=""
 				ExtraRequiredKindOf=""
 				ExtraForbiddenKindOf=""
 				RequiredUpgrade=""
 				InitiallyDisabled="False"
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
-				UseMetaAOI="False" />
+				UseMetaAOI="False" />			
+			<StealthDetectorUpdate
+				id="70ED959D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				DetectionRate="0.4s"
+				DetectionRange="400"
+				PingSound=""
+				LoudPingSound=""
+				IRBeaconParticleSys=""
+				IRParticleSys=""
+				IRBrightParticleSys=""
+				IRGridParticleSys=""
+				IRParticleSysBone=""
+				ExtraRequiredKindOf=""
+				ExtraForbiddenKindOf=""
+				RequiredUpgrade=""
+				InitiallyDisabled="True"
+				CanDetectWhileGarrisoned="False"
+				CanDetectWhileContained="False"
+				UseMetaAOI="False" >
+				<TriggeredBy>Upgrade_ZoneTrooperScannerPack</TriggeredBy>
+			</StealthDetectorUpdate>
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotTurret
@@ -1024,7 +1050,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="5000"
+				MaxHealth="4400"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1186,6 +1212,7 @@
 			VisionBonusPercentPerFoot="0%"
 			MaxVisionBonusPercent="50%"
 			MinVisionBonusPercent="-50%" />
-		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>			
+		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>		
+		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade>			
 	</GameObject>
 </AssetDeclaration>

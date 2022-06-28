@@ -19,7 +19,7 @@
 		EditorName="SteelTalonsGolumCannon"
 		EditorSorting="STRUCTURE"
 		BountyValue="0"
-		BuildTime="12"
+		BuildTime="10"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="-8"
 		EnergyBonus="0"
@@ -67,7 +67,7 @@
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
-		BuildCost="1200"
+		BuildCost="1000"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1033,7 +1033,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="5000"
+				MaxHealth="4400"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

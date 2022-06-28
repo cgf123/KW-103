@@ -933,13 +933,13 @@
 		id="AlienAnnihilatorTripodLocomotor"
 		Name="AlienAnnihilatorTripodLocomotor"
 		Surfaces="GROUND RUBBLE CRUSHABLE_OBSTACLE" 
-		TurnTimeSeconds="3.5s" 
-		TurnTimeDamagedSeconds="3.5s" 
+		TurnTimeSeconds="2.5s" 
+		TurnTimeDamagedSeconds="2.5s" 
 		MaxSpeedDamaged="75%"
 		AccelerationSeconds="1.0s"
 		BrakingSeconds="0.01s"
-		SlowTurnRadius="0.0" 
-		FastTurnRadius="30.0" 
+		SlowTurnRadius="5.0" 
+		FastTurnRadius="15.0" 
 		BehaviorZ="NO_MOTIVE_FORCE"	
 		Appearance="TREADS" 
 		
@@ -952,13 +952,37 @@
 		ClampOrientationToPathTangent="false"
 		ReorientIfTurnTooSharp="true"
 		/>
+		
+	<LocomotorTemplate
+		id="AlienAnnihilatorTripodUpgradedLocomotor"
+		Name="AlienAnnihilatorTripodUpgradedLocomotor"
+		Surfaces="GROUND RUBBLE CRUSHABLE_OBSTACLE" 
+		TurnTimeSeconds="2.25s" 
+		TurnTimeDamagedSeconds="2.25s" 
+		MaxSpeedDamaged="75%"
+		AccelerationSeconds="1.0s"
+		BrakingSeconds="0.01s"
+		SlowTurnRadius="5.0" 
+		FastTurnRadius="15.0" 
+		BehaviorZ="NO_MOTIVE_FORCE"	
+		Appearance="TREADS" 
+		
+		PitchStiffness="0.5"
+		RollStiffness="0.25"
+		PitchDamping="0.8"
+		RollDamping="0.3"
+		ForwardAccelerationPitchFactor="0.3"
+		LateralAccelerationRollFactor="0.0"
+		ClampOrientationToPathTangent="false"
+		ReorientIfTurnTooSharp="true"
+		/>		
 
 	<LocomotorTemplate
 		id="NODAvatarLocomotor"
 		Name="NODAvatarLocomotor"
 		Surfaces="GROUND RUBBLE CRUSHABLE_OBSTACLE" 
-		TurnTimeSeconds="3.0s" 
-		TurnTimeDamagedSeconds="3.0s" 
+		TurnTimeSeconds="2.0s" 
+		TurnTimeDamagedSeconds="2.0s" 
 		MaxSpeedDamaged="75%"
 		FastTurnRadius="5.0" 
 		SlowTurnRadius="0.0" 
@@ -1013,7 +1037,7 @@
 		AccelerationSeconds="1.0s"
 		BrakingSeconds="0.01s"
 		SlowTurnRadius="5.0" 
-		FastTurnRadius="20.0" 
+		FastTurnRadius="15.0" 
 		BehaviorZ="NO_MOTIVE_FORCE"	
 		Appearance="TREADS" 
 		
@@ -1253,7 +1277,7 @@
 			
 		TakeOffAndLandingSpeed="6.0"
 		TakeOffAndLandingSlowDownDelta="35.0"
-		TakeOffAndLandingSlowDownTime="1.5s"
+		TakeOffAndLandingSlowDownTime="1.25s"
 
 		RudderCorrectionDegree="0.169"
 		RudderCorrectionRate="0.027"
@@ -1560,6 +1584,30 @@
 		RollStiffness="0.1"
 		RollDamping="0.3"
 		/>		
+		
+
+	<LocomotorTemplate
+		id="AlienMothershipLocomotor"
+		Name="AlienMothershipLocomotor"
+		Surfaces="AIR" 
+		TurnTimeSeconds="14.0s" 
+		TurnTimeDamagedSeconds="14.0s" 
+		AccelerationSeconds="1.5s"
+		BrakingSeconds="1.5s"
+		Lift="10%"
+		LiftDamaged="80%"
+		SlowTurnRadius="0.0" 
+		FastTurnRadius="40.0" 		
+		MinTurnSpeed="10%"
+		PreferredHeight="130"
+		AllowMotiveForceWhileAirborne="true"
+		BehaviorZ="SURFACE_RELATIVE_HEIGHT"	
+		Appearance="HOVER"
+		Apply2DFrictionWhenAirborne="true"
+		AirborneTargetingHeight="30"
+		LocomotorWorksWhenDead="true"
+		/>
+		
 		
 		
 	<!-- REPAIR DRONES -->

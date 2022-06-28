@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="NODFlameTank"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE ANTI_GARRISON CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE ANTI_GARRISON CAN_BE_FAVORITE_UNIT CAVALRY"
 		ReviveText=""
 		RecruitText=""
 		Description="Desc:NODFlameTank"
@@ -1362,6 +1362,82 @@
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_BlackHandSecretShrinePurifyingFlame</TriggeredBy>
 			</AudioLoopUpgrade>
+			
+			<CreateAndEnterObjectSpecialPower
+				id="6D44A823"
+				SpecialPowerTemplate="SpecialPowerCallForTransportNOD"
+				AntiCategory=""
+				AntiFX=""
+				AttributeModifier=""
+				AttributeModifierRange="0"
+				AttributeModifierFX=""
+				WeatherDuration="0"
+				InitiateFX=""
+				TriggerFX="FX_NodCallForTransportFlare"
+				SetModelCondition="TOPPLED"
+				SetModelConditionTime="0s"
+				GiveLevels="0"
+				ChangeWeather="NORMAL"
+				OnTriggerRechargeSpecialPower=""
+				BurnDecayModifier="0"
+				MaxDistanceFromCommandCenter="0"
+				UpdateModuleStartsAttack="False"
+				StartsPaused="False"
+				ReEnableAntiCategory="False"
+				AttributeModifierAffectsSelf="False"
+				AttributeModifierWeatherBased="False"
+				TargetEnemy="False"
+				TargetAllSides="False"
+				DisableDuringAnimDuration="False"
+				IdleWhenStartingPower="True"
+				AffectGood="False"
+				AffectEvil="False"
+				AffectAllies="True"
+				AvailableAtStart="True"
+				AdjustVictim="False"
+				UseDistanceFromCommandCenter="False"
+				ChildModuleHandlesFX="True"
+				OCL="OCL_NodCallForTransportVehicle"
+				CreateLocation="CREATE_ABOVE_LOCATION"
+				MaxCreateCount="0"
+				NumberToSpawn="1"
+				DestinationOCL=""
+				RegisterObjectsWithSpecialAbilityUpdate="False">
+				<AttributeModifierAffects
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<RequirementsFilterMP
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<RequirementsFilterStrategic
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<FXOffset
+					x="25"
+					y="0"
+					z="0" />
+			</CreateAndEnterObjectSpecialPower>			
 		</Behaviors>
 		<AI>
 			<AIUpdate

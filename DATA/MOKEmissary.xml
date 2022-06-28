@@ -522,7 +522,7 @@
 
 			<CommandSetUpgrade
 				id="ModuleTag_CommandSetUpgrade"
-				CommandSet="MarkedOfKaneEmissaryUpgradedCommandSet"
+				CommandSet="NODEmissaryUpgradedCommandSet"
 				Permanent="False">				
 				<TriggeredBy>Upgrade_MiniMCV_NOD</TriggeredBy>
 			</CommandSetUpgrade>

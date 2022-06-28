@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<W3DCollisionBox id="ABTPBONE.OBBOX01_new" JoypadPickingOnly="false">
+		<Center X="0.000000" Y="0.000000" Z="28.288055"/>
+		<Extent X="16.250000" Y="16.250000" Z="16.250000"/>
+	</W3DCollisionBox>
+	
+	<W3DCollisionBox id="ABTPBONE.OBBOX01_new3" JoypadPickingOnly="false">
+		<Center X="0.000000" Y="0.000000" Z="0.0"/>
+		<Extent X="100.00000" Y="100.00000" Z="25.0000"/>
+	</W3DCollisionBox>	
+</AssetDeclaration>

@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="BlackHandBunkerTruck"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT WEAPON_SALVAGER"
 		Description="Desc:BlackHandBunkerTruck"
 		TypeDescription="Type:BlackHandBunkerTruck"
 		RadarPriority="UNIT"
@@ -1021,7 +1021,7 @@
 				KillPassengersOnDeath="False"
 				HasObjectStatusOfContainedEntry="True"
 				Enabled="True"
-				Slots="2"
+				Slots="3"
 				ExitPitchRate="0"
 				HealthRegenPercentPerSec="0"
 				ExitDelay="0"
@@ -1095,9 +1095,11 @@
 				<OpenContainUpgradeOverride
 					UpgradeTriggeredBy="Upgrade_DeployNODBunkerTruck"
 					ObjectStatusOfContained="CAN_ATTACK UNSELECTABLE ENCLOSED" />
+				<!--
 				<TransportContainUpgradeOverride
 					UpgradeTriggeredBy="Upgrade_DeployNODBunkerTruck"
 					AdditionalSlots="1" /> 
+				-->
 			</HordeTransportContain>
 			
 			<AttributeModifierAuraUpdate
@@ -1561,7 +1563,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2200"
+				MaxHealth="2400"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

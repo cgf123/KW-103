@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="AlienHarvester"
-		KindOf="SELECTABLE CAN_CAST_REFLECTIONS HARVESTER PRELOAD SCORE IGNORES_SELECT_ALL MOVE_FOR_NOONE VEHICLE HEALED_BY_TIBERIUM CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_CAST_REFLECTIONS HARVESTER PRELOAD SCORE IGNORES_SELECT_ALL MOVE_FOR_NOONE VEHICLE HEALED_BY_TIBERIUM TIBERIUM_BASED CAN_BE_FAVORITE_UNIT"
 		Description="Desc:AlienHarvester"
 		TypeDescription="Type:AlienHarvester"
 		RadarPriority="UNIT"
@@ -854,7 +854,7 @@
 		<AI>
 			<SupplyTruckAIUpdate
 				id="12FA48BA"
-				AILuaEventsList=""				
+				AILuaEventsList="GenericHarvesterFunctions_103"				
 				AutoAcquireEnemiesWhenIdle="NO"
 				StopChaseDistance="500"
 				HoldGroundCloseRangeDistance="0"

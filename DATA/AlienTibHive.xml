@@ -67,7 +67,7 @@
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
 		BuildCost="1000"
-		RefundValue="0"
+		RefundValue="500"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
 		TransportSlotCount="0"
@@ -96,225 +96,100 @@
 			UnitBuilderStandardCombatUnit="False" />
 		<Draws>
 			<ScriptedModelDraw
-				id="50DF2C46"
-				RecoilDamping="0.4"
-				MaxRecoilDistance="3"
-				InitialRecoilSpeed="2"
-				RecoilSettleSpeed="0.065"
-				MinLODRequired="LOW"
-				ProjectileBoneFeedbackEnabledSlots=""
-				TrackMarks=""
-				DependencySharedModelFlags=""
-				HighDetailLODThreshold="0"
-				LowDetailLODThreshold="0"
-				WadingParticleSys=""
-				AlphaCameraFadeOuterRadius="0"
-				AlphaCameraFadeInnerRadius="0"
-				AlphaCameraAtInnerRadius="100%"
-				StaticSortLevelWhileFading="-1"
-				BirthFadeTime="0"
-				OkToChangeModelColor="True"
-				AnimationsRequirePower="True"
-				UseYAxisForTurretRotation="False"
-				TrackMarksOnlyWhenCorneringQuickly="False"
-				UseProducerTexture="False"
-				NoRotate="False"
-				UseFiringArcRotation="False"
-				Selectable="True"
-				RandomTextureFixedRandomIndex="False"
-				ParticlesAttachedToAnimatedBones="False"
-				ParticleBonesCheckDrawable="False"
-				ShadowForceDisable="False"
-				SwitchModelLODMode="False"
-				StaticModelLODMode="False"
-				ShowShadowWhileContained="False"
-				UseStandardModelNames="False"
-				UseDefaultAnimation="False"
-				BirthFadeAdditive="False"
-				ZWriteDisableOverride="False"
-				MultiPlayerOnly="False"
-				AffectedByStealth="True"
-				InvertStealthOpacity="False"
-				HighDetailOnly="False"
-				SetAnimsToLastFrameOnConstructionComplete="True">
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="ABTIBBHIVE"
-						ExtraMesh="False" />
+						Name="W3DContainer:ABTibBHive" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="STRUCTURE_UNPACKING">
 					<Model
-						Name="ABTIBBHIVEBLD_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:ABTibBHiveBld_SKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="RUBBLE"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="RUBBLE">
 					<Model
-						Name="ABTIBBHIVE_D3SN"
-						ExtraMesh="False" />
+						Name="W3DContainer:ABTibBHive_D3SN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="REALLYDAMAGED">
 					<Model
-						Name="ABTIBBHIVE_D2SN"
-						ExtraMesh="False" />
+						Name="W3DContainer:ABTibBHive_D2SN" />
 					<ParticleSysBone
 						BoneName="FXBone01"
 						FXParticleSystemTemplate="AlienDamageFire01"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone01"
 						FXParticleSystemTemplate="AlienDamageFireGlow01"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone01"
 						FXParticleSystemTemplate="AlienDamageFireGlow02"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone02"
 						FXParticleSystemTemplate="AlienDamageFire01"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone02"
 						FXParticleSystemTemplate="AlienDamageFireGlow01"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone02"
 						FXParticleSystemTemplate="AlienDamageFireGlow02"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone03"
 						FXParticleSystemTemplate="AlienDamageFire01"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone03"
 						FXParticleSystemTemplate="AlienDamageFireGlow01"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone03"
 						FXParticleSystemTemplate="AlienDamageFireGlow02"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="DAMAGED">
 					<Model
-						Name="ABTIBBHIVE"
-						ExtraMesh="False" />
+						Name="W3DContainer:ABTibBHive" />
 					<Texture
-						Original="Asset not found in stream: [21E727DA:CF86DD51]"
+						Original="ABTibBHive"
 						New="ABTibHiveD" />
 					<ParticleSysBone
 						BoneName="FXBone01"
 						FXParticleSystemTemplate="AlienDamageFire01"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone03"
 						FXParticleSystemTemplate="AlienDamageFire01"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 				</ModelConditionState>
+
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					ConditionsYes="STRUCTURE_UNPACKING">
 					<Animation
-						AnimationName="ABTIBBHIVEBLD_AAN"
-						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationName="ABTibBHiveBld_AAN"
+						AnimationMode="ONCE" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE"
 					StateName="STATE_Rubble"
-					Flags="START_FRAME_LAST"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="ABTIBBHIVE_D3AN"
-						AnimationMode="MANUAL"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationName="ABTibBHive_D3AN"
+						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_Rubble" and Prev ~= "TRANS_IntoRubble" then
@@ -326,27 +201,10 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED"
 					StateName="STATE_ReallyDamaged"
-					Flags="START_FRAME_LAST"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="ABTIBBHIVE_D2AN"
-						AnimationMode="MANUAL"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationName="ABTibBHive_D2AN"
+						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" then
@@ -356,173 +214,64 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_IntoReallyDamaged"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="TRANS_IntoReallyDamaged">
 					<Animation
-						AnimationName="ABTIBBHIVE_D2AN"
+						AnimationName="ABTibBHive_D2AN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_IntoRubble"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="TRANS_IntoRubble">
 					<Animation
-						AnimationName="ABTIBBHIVE_D3AN"
+						AnimationName="ABTibBHive_D3AN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 			</ScriptedModelDraw>
+			
+			<!-- draw door -->
 			<ScriptedModelDraw
-				id="A649EBC1"
-				RecoilDamping="0.4"
-				MaxRecoilDistance="3"
-				InitialRecoilSpeed="2"
-				RecoilSettleSpeed="0.065"
-				MinLODRequired="LOW"
-				ProjectileBoneFeedbackEnabledSlots=""
-				TrackMarks=""
-				DependencySharedModelFlags=""
-				HighDetailLODThreshold="0"
-				LowDetailLODThreshold="0"
-				WadingParticleSys=""
-				AlphaCameraFadeOuterRadius="0"
-				AlphaCameraFadeInnerRadius="0"
-				AlphaCameraAtInnerRadius="100%"
-				StaticSortLevelWhileFading="-1"
-				BirthFadeTime="0"
-				OkToChangeModelColor="True"
-				AnimationsRequirePower="True"
-				UseYAxisForTurretRotation="False"
-				TrackMarksOnlyWhenCorneringQuickly="False"
-				UseProducerTexture="False"
-				NoRotate="False"
-				UseFiringArcRotation="False"
-				Selectable="True"
-				RandomTextureFixedRandomIndex="False"
-				ParticlesAttachedToAnimatedBones="False"
-				ParticleBonesCheckDrawable="False"
-				ShadowForceDisable="False"
-				SwitchModelLODMode="False"
-				StaticModelLODMode="False"
-				ShowShadowWhileContained="False"
-				UseStandardModelNames="False"
-				UseDefaultAnimation="False"
-				BirthFadeAdditive="False"
-				ZWriteDisableOverride="False"
-				MultiPlayerOnly="False"
-				AffectedByStealth="True"
-				InvertStealthOpacity="False"
-				HighDetailOnly="False"
-				SetAnimsToLastFrameOnConstructionComplete="True">
+				id="ModuleTag_DrawDoor"
+				OkToChangeModelColor="true">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="ABTIBBHIVEDR_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:ABTibBHiveDr_SKN" />
 					<ParticleSysBone
 						BoneName="none"
 						FXParticleSystemTemplate="TibInfestationBugsSpew"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="none"
 						FXParticleSystemTemplate="TibInfestationBugsSpewGlow"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"
-					Flags="RESTART_ANIM_WHEN_COMPLETE DO_NOT_PLAY_WHEN_UNPOWERED"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="RESTART_ANIM_WHEN_COMPLETE DO_NOT_PLAY_WHEN_UNPOWERED">
 					<Animation
-						AnimationName="ABTIBBHIVEDR_OPN"
+						AnimationName="ABTibBHiveDr_OPN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="15"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="30"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationPriority="30" 
+						AnimationBlendTime="15" />
 					<Animation
-						AnimationName="ABTIBBHIVEDR_CLS"
+						AnimationName="ABTibBHiveDr_CLS"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="15"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="10"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationPriority="10" 
+						AnimationBlendTime="15" />
 					<FXEvent
 						Frame="29"
-						FrameStep="0"
-						FrameStop="0"
+						FireWhenSkipped="true"
 						Effect="FX_AlienTiberiumInfestation"
-						Bone="ABBHiveB"
-						FireWhenSkipped="True" />
+						Bone="ABBHiveB" />
+
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE"
-					StateName="STATE_Rubble"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False" />
+					StateName="STATE_Rubble">
+				</AnimationState>			
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
@@ -746,7 +495,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="1800"
+				MaxHealth="1600"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

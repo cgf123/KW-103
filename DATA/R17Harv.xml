@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="Reaper17Harvester"
-		KindOf="SELECTABLE CAN_CAST_REFLECTIONS HARVESTER PRELOAD SCORE IGNORES_SELECT_ALL MOVE_FOR_NOONE VEHICLE HEALED_BY_TIBERIUM CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_CAST_REFLECTIONS HARVESTER PRELOAD SCORE IGNORES_SELECT_ALL MOVE_FOR_NOONE VEHICLE HEALED_BY_TIBERIUM TIBERIUM_BASED CAN_BE_FAVORITE_UNIT"
 		Description="Desc:Reaper17Harvester"
 		TypeDescription="Type:Reaper17Harvester"
 		RadarPriority="UNIT"
@@ -1025,6 +1025,7 @@
 		<AI>
 			<SupplyTruckAIUpdate
 				id="12FA48BA"
+				AILuaEventsList="GenericHarvesterFunctions_103"		
 				AutoAcquireEnemiesWhenIdle="NO"
 				StopChaseDistance="500"
 				HoldGroundCloseRangeDistance="0"
@@ -1085,7 +1086,7 @@
 				ShieldTakeDamageFX="FX_AlienShieldHit"
 				ShieldAmount="200"
 				ShieldArmor="ForcefieldFilterDamageArmor"
-				ShieldRechargeIdleTime="60s"
+				ShieldRechargeIdleTime="40s"
 				ShieldActiveModelCondition="USER_1" />
 		</Body>
 		<Geometry

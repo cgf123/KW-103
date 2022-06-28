@@ -3,7 +3,7 @@
 
 	<GameObject
 		id="NODVenom"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS AIRCRAFT PRELOAD NO_COLLIDE SCORE ATTACK_NEEDS_LINE_OF_SIGHT PRODUCED_AT_HELIPAD BEAM_TARGET_REFLECTOR VEHICLE ASSAULT_AIRCRAFT LINE_OF_SIGHT_IGNORES_BUILDINGS CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS AIRCRAFT PRELOAD NO_COLLIDE SCORE ATTACK_NEEDS_LINE_OF_SIGHT PRODUCED_AT_HELIPAD BEAM_TARGET_REFLECTOR VEHICLE ASSAULT_AIRCRAFT LINE_OF_SIGHT_IGNORES_BUILDINGS MADE_OF_WOOD CAN_BE_FAVORITE_UNIT"
 		Description="Desc:NODVenom"
 		TypeDescription="Type:NODVenom"
 		RadarPriority="UNIT"
@@ -892,8 +892,7 @@
 				NonStackable="True" >
 				<Modifier>AttributeModifier_BeamDummy1</Modifier>
 				<AllowFilter 
-					Rule="ALL" 
-					Relationship="ENEMIES"					
+					Rule="ALL" 				
 					Include="VEHICLE STRUCTURE INFANTRY HORDE" >
 				</AllowFilter>
 			</PassiveAreaEffectBehavior>
@@ -1646,7 +1645,7 @@
 
 	<GameObject
 		id="MarkedOfKaneVenom"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS AIRCRAFT PRELOAD NO_COLLIDE SCORE ATTACK_NEEDS_LINE_OF_SIGHT PRODUCED_AT_HELIPAD BEAM_TARGET_REFLECTOR VEHICLE ASSAULT_AIRCRAFT LINE_OF_SIGHT_IGNORES_BUILDINGS CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS AIRCRAFT PRELOAD NO_COLLIDE SCORE ATTACK_NEEDS_LINE_OF_SIGHT PRODUCED_AT_HELIPAD BEAM_TARGET_REFLECTOR VEHICLE ASSAULT_AIRCRAFT LINE_OF_SIGHT_IGNORES_BUILDINGS MADE_OF_WOOD CAN_BE_FAVORITE_UNIT"
 		Description="Desc:MarkedOfKaneVenom"
 		TypeDescription="Type:MarkedOfKaneVenom"
 		RadarPriority="UNIT"
@@ -1856,7 +1855,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NUVenom_UGCP_SKN"
+						Name="NUVenom_UGSP_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="NuVenom"
@@ -1890,7 +1889,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NUVenom_UGCP_SKN"
+						Name="NUVenom_UGSP_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="NuVenom"
@@ -2072,6 +2071,7 @@
 				</ModelConditionState>
 				
 
+				<!-- SHOW SCPB GUN TURRET -->				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_1 USER_5"
@@ -2079,14 +2079,13 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NUVenom_UGCP_SKN"
+						Name="NUVenom_UGSP_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="NuVenom"
 						New="NuVenom_K" />						
 				</ModelConditionState>
 
-				<!-- SHOW SCPB GUN TURRET (Note: Called 'UGCP' even though it's SUPER charged particle beam...) -->				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_1"
@@ -2094,7 +2093,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NUVenom_UGCP_SKN"
+						Name="NUVenom_UGSP_SKN"
 						ExtraMesh="False" />
 				</ModelConditionState>				
 				
@@ -2567,8 +2566,7 @@
 				NonStackable="True" >
 				<Modifier>AttributeModifier_BeamDummy1</Modifier>
 				<AllowFilter 
-					Rule="ALL" 
-					Relationship="ENEMIES"					
+					Rule="ALL" 				
 					Include="VEHICLE STRUCTURE INFANTRY HORDE" >
 				</AllowFilter>
 			</PassiveAreaEffectBehavior>
@@ -2978,7 +2976,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				HideSubObjects="B_WEAPONA_FX"
+				HideSubObjects="B_WEAPONB_FX"
 				FadeTimeInSeconds="0.5"
 				WaitBeforeFadeInSeconds="0"
 				RecolorHouse="False"
@@ -3345,7 +3343,7 @@
 
 	<GameObject
 		id="BlackHandVenom"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS AIRCRAFT PRELOAD NO_COLLIDE SCORE ATTACK_NEEDS_LINE_OF_SIGHT PRODUCED_AT_HELIPAD BEAM_TARGET_REFLECTOR VEHICLE ASSAULT_AIRCRAFT LINE_OF_SIGHT_IGNORES_BUILDINGS CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS AIRCRAFT PRELOAD NO_COLLIDE SCORE ATTACK_NEEDS_LINE_OF_SIGHT PRODUCED_AT_HELIPAD BEAM_TARGET_REFLECTOR VEHICLE ASSAULT_AIRCRAFT LINE_OF_SIGHT_IGNORES_BUILDINGS MADE_OF_WOOD CAN_BE_FAVORITE_UNIT"
 		Description="Desc:BlackHandVenom_103"
 		TypeDescription="Type:NODVenom"
 		RadarPriority="UNIT"
@@ -3559,7 +3557,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NUVENOM_UGSP_SKN"
+						Name="NUVenom_UGCP_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="NuVenom"
@@ -3593,7 +3591,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NUVENOM_UGSP_SKN"
+						Name="NUVenom_UGCP_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="NuVenom"
@@ -3774,22 +3772,22 @@
 				</ModelConditionState>
 				
 
+				<!-- SHOW CPB GUN TURRET -->	
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_5 USER_1">
 					<Model
-						Name="NUVENOM_UGSP_SKN" />
+						Name="NUVenom_UGCP_SKN" />
 					<Texture
 						Original="NuVenom"
 						New="NuVenom_K" />						
 				</ModelConditionState>
-				
-				<!-- SHOW CPB GUN TURRET (Note: Called 'UGSP' even though it's charged particle beam...) -->				
+							
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_1">
 					<Model
-						Name="NUVENOM_UGSP_SKN" />
+						Name="NUVenom_UGCP_SKN" />
 				</ModelConditionState>				
 				
 				<ModelConditionState
@@ -4398,8 +4396,7 @@
 				NonStackable="True" >
 				<Modifier>AttributeModifier_BeamDummy1</Modifier>
 				<AllowFilter 
-					Rule="ALL" 
-					Relationship="ENEMIES"					
+					Rule="ALL" 				
 					Include="VEHICLE STRUCTURE INFANTRY HORDE" >
 				</AllowFilter>
 			</PassiveAreaEffectBehavior>
@@ -4921,7 +4918,7 @@
 			</ModelConditionUpgrade>
 			<SubObjectsUpgrade
 				id="ModuleTag_HideMuzzleFlashChargedParticleModel"
-				HideSubObjects="B_WEAPONB_FX">
+				HideSubObjects="B_WEAPONA_FX">
 				<TriggeredBy>Upgrade_NodTechCenterChargedParticleBeam</TriggeredBy>
 			</SubObjectsUpgrade>			
 			

@@ -17,7 +17,11 @@
 		Type="OBJECT"	/>
 		
 	<UpgradeTemplate id="Upgrade_SigGenArmor"
-		Type="OBJECT"	/>		
+		Type="OBJECT"	/>	
+
+	<UpgradeTemplate id="Upgrade_AlienSignalTransmitter"
+		DisplayName="NAME:ALIENSignalTransmitter"
+		Type="PLAYER" />			
 		
 	<UpgradeTemplate id="Upgrade_AlienControlCenter"
 		DisplayName="NAME:ALIENControlCenter"
@@ -87,11 +91,28 @@
 		TypeDescription="UpgradeType:GDIRailGuns"
 		Description="UpgradeDesc:GDIRailGuns"
 		Type="PLAYER"
-		BuildTime="90.0s"
+		BuildTime="75.0s"
 		BuildCost="3000"
 		ResearchSound="AudioEvent:GDI_RailCannon_Upgrade"
 		IconImage="Button_UpgradeRailGun"
 	/>
+	
+	<UpgradeTemplate id="Upgrade_NODTechCenterLaserCapacitor"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+
+		DisplayName="UpgradeName:NODLaserCapacitor"
+		AcquireHint="UpgradePrereq:NODLaserCapacitor"
+		TypeDescription="UpgradeType:NODLaserCapacitor"
+		Description="UpgradeDesc:NODLaserCapacitor"
+		Type="PLAYER"
+		BuildTime="60.0s"
+		BuildCost="2500"
+		ResearchSound="AudioEvent:NOD_LaserCapacitor_Upgrade"
+		IconImage="Button_UpgradeLaserCannon">
+	</UpgradeTemplate>	
 	
 	<UpgradeTemplate id="Upgrade_ZoneTrooperAutoInjectors"		
 		LocalPlayerProductionStartedEvaEvent="None"
@@ -215,7 +236,7 @@
 		TypeDescription="UpgradeType:NODTibCoreMissiles"
 		Description="UpgradeDesc:NODTibCoreMissiles"
 		Type="PLAYER"
-		BuildTime="75.0s"
+		BuildTime="60.0s"
 		BuildCost="2500"
 		ResearchSound="AudioEvent:NOD_TiberiumCoreMissile_Upgrade"
 		IconImage="Button_Upgrade_TibCoreMissiles">
@@ -251,7 +272,7 @@
 		Description="UpgradeDesc:Reaper17ForcefieldGenerators"
 		Type="PLAYER"
 		BuildTime="45.0s"
-		BuildCost="2000"
+		BuildCost="1500"
 		ResearchSound="AudioEvent:ALI_ForcefieldGenerator_Upgrade"
 		IconImage="Button_UpgradeForcefieldGenerator"
 	/>	
@@ -318,7 +339,7 @@
 		TypeDescription="UpgradeType:ScorpionDozerBlades"
 		Description="UpgradeDesc:ScorpionDozerBlades"
 		Type="PLAYER"
-		BuildCost="1500"
+		BuildCost="1000"
 		BuildTime="45s"
 		ResearchSound="AudioEvent:NOD_OperationsCenter_DozerBladeUpgrade"
 		IconImage="Button_UpgradeDozerBlades"
@@ -355,7 +376,7 @@
 		TypeDescription="UpgradeType:ALIENPlasmaDiscLauncher"
 		Description="UpgradeDesc:ALIENPlasmaDiscLauncher"
 		Type="PLAYER"
-		BuildTime="45.0s"
+		BuildTime="30.0s"
 		BuildCost="1500"
 		ResearchSound="AudioEvent:ALI_PlasmaDiscLaunchers_Upgrade"
 		IconImage="Button_UpgradePlasmaDiscLauncher">
@@ -428,8 +449,8 @@
 		TypeDescription="UpgradeType:NODTiberiumInfusion"
 		Description="UpgradeDesc:NODTiberiumInfusion"
 		Type="PLAYER"
-		BuildCost="1000"
-		BuildTime="20s"
+		BuildCost="750"
+		BuildTime="15s"
 		ResearchSound="AudioEvent:NOD_TiberiumUpgrade"
 		IconImage="Button_UpgradeTiberiumInfusion"
 	/>	
@@ -462,7 +483,7 @@
 		TypeDescription="UpgradeType:ALIENShardLaunchers"
 		Description="UpgradeDesc:ALIENShardLaunchers"
 		Type="PLAYER"
-		BuildTime="75.0s"
+		BuildTime="60.0s"
 		BuildCost="2500"
 		ResearchSound="AudioEvent:ALI_Stalker_ShardLauncherUpgrade"
 		IconImage="Button_Upgrade_ShardLaunchers">
@@ -480,8 +501,8 @@
 		TypeDescription="UpgradeType:ALIENBlueShardWeapon"
 		Description="UpgradeDesc:ALIENBlueShardWeapon"
 		Type="PLAYER"
-		BuildTime="45.0s"
-		BuildCost="2000"
+		BuildTime="30.0s"
+		BuildCost="1500"
 		ResearchSound="AudioEvent:ALI_Stalker_BlueShardUpgrade"
 		IconImage="Button_Upgrade_BlueShards">
 	</UpgradeTemplate>	
@@ -498,8 +519,8 @@
 		TypeDescription="UpgradeType:Reaper17ConversionReserves"
 		Description="UpgradeDesc:Reaper17ConversionReserves"
 		Type="PLAYER"
-		BuildTime="30.0s"
-		BuildCost="1000"
+		BuildTime="15.0s"
+		BuildCost="500"
 		ResearchSound="AudioEvent:ALI_ConversionReserves_Upgrade"
 		IconImage="Button_Upgrade_ConversionReserves"
 	/>	

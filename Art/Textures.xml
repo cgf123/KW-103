@@ -13,6 +13,19 @@
 		id="AU_Initiator_SPM"
 		File="T59Devourer\AU_Devourer_SPM.dds" />		
 
+	<Texture
+		id="AURprSRider"
+		File="R17Stormrider\AUSRider.dds" />		
+	<Texture
+		id="AURprSRider_D"
+		File="R17Stormrider\AUSRider_D.dds" />		
+
+	<Texture
+		id="AURprSRiderBlue"
+		File="R17Stormrider\AUSRiderBlue.dds" />		
+	<Texture
+		id="AURprSRiderBlue_D"
+		File="R17Stormrider\AUSRiderBlue_D.dds" />			
 
 	<!-- PACKED IMAGES -->
 	<Texture id="Portrait_NBPort" File="NBPort\Portrait_NBPort.tga" OutputFormat="A8R8G8B8" GenerateMipMaps="false" AllowAutomaticResize="false"/>

@@ -307,8 +307,8 @@
 			<Shape
 				Type="CYLINDER"
 				ContactPointGeneration="NONE"
-				MajorRadius="1"
-				MinorRadius="1"
+				MajorRadius="0"
+				MinorRadius="0"
 				Height="160"
 				FrontAngle="0d"
 				Active="True"

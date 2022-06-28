@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="AlienAnnihilatorTripod"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE CAN_SHOOT_OVER_WALLS VALID_TARGET_FOR_C4 CAN_BE_FAVORITE_UNIT MADE_OF_METAL"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE CAN_SHOOT_OVER_WALLS TIBERIUM_BASED VALID_TARGET_FOR_C4 CAN_BE_FAVORITE_UNIT MADE_OF_METAL"
 		Description="Desc:AlienAnnihilatorTripod"
 		TypeDescription="Type:AlienAnnihilatorTripod"
 		RadarPriority="UNIT"
@@ -2153,7 +2153,7 @@
 				ShieldTakeDamageFX="FX_AlienShieldHit"
 				ShieldAmount="2500"
 				ShieldArmor="ForcefieldFilterDamageArmor"
-				ShieldRechargeIdleTime="60s"
+				ShieldRechargeIdleTime="50s"
 				ShieldActiveModelCondition="USER_1" />
 		</Body>
 		<ClientBehaviors>

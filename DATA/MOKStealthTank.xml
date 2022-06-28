@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="MarkedOfKaneStealthTank"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE MADE_OF_WOOD CAN_BE_FAVORITE_UNIT"
 		Description="Desc:MarkedOfKaneStealthTank"
 		TypeDescription="Type:MarkedOfKaneStealthTank"
 		RadarPriority="UNIT"
@@ -19,7 +19,7 @@
 		EditorName="MarkedOfKaneStealthTank"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="15"
+		BuildTime="12"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -68,7 +68,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_NODTechCenterTibCoreMissiles"
 		CaptureTime="0s"
-		BuildCost="1500"
+		BuildCost="1200"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1060,7 +1060,7 @@
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
 						MinIdleScanAngle="0"
-						MaxIdleScanAngle="90"
+						MaxIdleScanAngle="45"
 						MaxDeflectionClockwise="180d"
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"
@@ -1194,6 +1194,82 @@
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
 			</AudioLoopUpgrade>
+			
+			<CreateAndEnterObjectSpecialPower
+				id="6D44A823"
+				SpecialPowerTemplate="SpecialPowerCallForTransportNOD"
+				AntiCategory=""
+				AntiFX=""
+				AttributeModifier=""
+				AttributeModifierRange="0"
+				AttributeModifierFX=""
+				WeatherDuration="0"
+				InitiateFX=""
+				TriggerFX="FX_NodCallForTransportFlare"
+				SetModelCondition="TOPPLED"
+				SetModelConditionTime="0s"
+				GiveLevels="0"
+				ChangeWeather="NORMAL"
+				OnTriggerRechargeSpecialPower=""
+				BurnDecayModifier="0"
+				MaxDistanceFromCommandCenter="0"
+				UpdateModuleStartsAttack="False"
+				StartsPaused="False"
+				ReEnableAntiCategory="False"
+				AttributeModifierAffectsSelf="False"
+				AttributeModifierWeatherBased="False"
+				TargetEnemy="False"
+				TargetAllSides="False"
+				DisableDuringAnimDuration="False"
+				IdleWhenStartingPower="True"
+				AffectGood="False"
+				AffectEvil="False"
+				AffectAllies="True"
+				AvailableAtStart="True"
+				AdjustVictim="False"
+				UseDistanceFromCommandCenter="False"
+				ChildModuleHandlesFX="True"
+				OCL="OCL_NodCallForTransportVehicle"
+				CreateLocation="CREATE_ABOVE_LOCATION"
+				MaxCreateCount="0"
+				NumberToSpawn="1"
+				DestinationOCL=""
+				RegisterObjectsWithSpecialAbilityUpdate="False">
+				<AttributeModifierAffects
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<RequirementsFilterMP
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<RequirementsFilterStrategic
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<FXOffset
+					x="25"
+					y="0"
+					z="0" />
+			</CreateAndEnterObjectSpecialPower>			
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -1231,7 +1307,7 @@
 		<Body>
 			<ActiveBody
 				id="A5C3EB8A"
-				MaxHealth="1875"
+				MaxHealth="1800"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1349,11 +1425,11 @@
 			CrushDecelerationPercent="0%"
 			CrushWeapon=""
 			CrushRevengeWeapon=""
-			CrusherLevel="1"
+			CrusherLevel="0"
 			CrushableLevel="2"
 			MountedCrusherLevel="255"
 			MountedCrushableLevel="255"
-			CrushEqualLevelProps="False"
+			CrushEqualLevelProps="True"
 			UseCrushAttack="True"
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />

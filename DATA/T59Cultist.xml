@@ -68,7 +68,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_Traveler59AdvancedArticulators"
 		CaptureTime="0s"
-		BuildCost="180"
+		BuildCost="110"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1720,7 +1720,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="250"
+				MaxHealth="195"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

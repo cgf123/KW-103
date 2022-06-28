@@ -71,7 +71,7 @@
 				MaxHealth="100" />
 		</Body>
 		<ProjectedBuildabilityInfo
-			Radius="250"
+			Radius="0"
 			BuildPlacementTypes="OTHER_STRUCTURE"
 			StatusToReject=""
 			ModelConditionsToReject="" />
