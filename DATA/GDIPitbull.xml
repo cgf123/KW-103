@@ -1631,7 +1631,7 @@
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="500"
+						TurretTurnRate="400"
 						TurretPitchRate="200"
 						MinimumPitch="0d"
 						PitchHeight="50%"

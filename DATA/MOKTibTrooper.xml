@@ -1583,6 +1583,10 @@
 				TempConditionTime="0s">
 				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>
 			</ModelConditionUpgrade>
+			
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantDefault" 
+				UpgradeToGrant="Upgrade_ObjectDefault"  />					
 			<StatusBitsUpgrade
 				id="A7D958E9"
 				RequiresAllTriggers="False"
@@ -1593,8 +1597,9 @@
 				StatusToSet="DOES_CONTAIN_TIBERIUM"
 				StatusToClear=""
 				ApplyToContained="False">
-				<TriggeredBy>Upgrade_MarkedOfKaneFaction</TriggeredBy>
+				<TriggeredBy>Upgrade_ObjectDefault</TriggeredBy>
 			</StatusBitsUpgrade>
+			
 			<AttributeModifierUpgrade
 				id="A4D28635"
 				RequiresAllTriggers="False"

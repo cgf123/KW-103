@@ -557,6 +557,69 @@
 						UseWeaponTiming="False"
 						FadingIn="False" />
 				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="PREATTACK_B"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
+					<Animation
+						AnimationName="NBOBELISKCRSTL"
+						AnimationMode="ONCE"
+						Distance="0"
+						AnimationBlendTime="5"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
+					<ParticleSysBone
+						BoneName="FX_Weapon"
+						FXParticleSystemTemplate="NODObeliskFireDistort"
+						PersistID="0"
+						FollowBone="False"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Weapon"
+						FXParticleSystemTemplate="NODObeliskFireGlow"
+						PersistID="0"
+						FollowBone="False"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FIRING_B"
+					Flags="START_FRAME_LAST"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
+					<Animation
+						AnimationName="NBOBELISKCRSTL"
+						AnimationMode="MANUAL"
+						Distance="0"
+						AnimationBlendTime="5"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
+				</AnimationState>				
 			</ScriptedModelDraw>
 			<SpotlightDraw
 				id="F591F97E"
@@ -900,7 +963,9 @@
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />		
 			-->
-			
+			<StancesBehavior
+				id="54CA416E"
+				StanceTemplate="Generic" />					
 		</Behaviors>
 		<AI>
 			<AIUpdate

@@ -1253,10 +1253,9 @@
 					RejectModelCondition="" />
 			</TemporaryOwnerSpecialPower>
 			
-									
-			<!-- Added dispatch for vs epics and non-epics 
-			<SpecialPowerDispatchSpecialPower
-				id="AE2D95B9"
+			
+			<SpecialPower
+				id="E5B8EB54"
 				SpecialPowerTemplate="SpecialPower_AOEMindControl"
 				AntiCategory=""
 				AntiFX=""
@@ -1273,7 +1272,7 @@
 				OnTriggerRechargeSpecialPower=""
 				BurnDecayModifier="0"
 				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="False"
+				UpdateModuleStartsAttack="True"
 				StartsPaused="False"
 				ReEnableAntiCategory="False"
 				AttributeModifierAffectsSelf="False"
@@ -1288,8 +1287,15 @@
 				AvailableAtStart="True"
 				AdjustVictim="False"
 				UseDistanceFromCommandCenter="False"
-				ChildModuleHandlesFX="False"
-				RequireAllPowersToFunction="False">
+				ChildModuleHandlesFX="False">
+				<!-- 
+				OCL=""
+				CreateLocation="CREATE_AT_LOCATION"
+				MaxCreateCount="0"
+				NumberToSpawn="1"
+				DestinationOCL=""
+				RegisterObjectsWithSpecialAbilityUpdate="False" 
+				-->
 				<AttributeModifierAffects
 					Rule="UNPARSED"
 					Relationship=""
@@ -1320,16 +1326,96 @@
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
 					RejectModelCondition="" />
-				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_AOEMindControl_Others" />
-				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_AOEMindControl_Metaunit" />				
-			</SpecialPowerDispatchSpecialPower>			-->			
-			
-			
-			<OCLSpecialPower
-				id="E5B8EB54"
+			</SpecialPower>
+			<DominateEnemySpecialPower
+				id="5C6A16A6"
+				GrabPassengerHealGain="0%"
 				SpecialPowerTemplate="SpecialPower_AOEMindControl"
+				StartAbilityRange="1E+07"
+				AbilityAbortRange="1E+07"
+				PreparationTime="0s"
+				PersistentPrepTime="0s"
+				PersistentCount="-1"
+				PackTime="0s"
+				UnpackTime="0s"
+				PreTriggerUnstealthTime="0s"
+				Options="CHECK_CHAINED_COMMAND"
+				PackUnpackVariationFactor="0"
+				ParalyzeDurationWhenCompleted="0s"
+				ParalyzeDurationWhenAborted="0s"
+				SpecialObject=""
+				MaxSpecialObjects="1"
+				EffectDuration="0s"
+				EffectValue="1"
+				EffectRange="0"
+				FleeRangeAfterCompletion="0"
+				DisableFXParticleSystem=""
+				PackSound=""
+				UnpackSound=""
+				PrepSoundLoop=""
+				TriggerSound=""
+				ActiveLoopSound=""
+				AwardXPForTriggering="0"
+				SkillPointsForTriggering="-1"
+				UnpackingVariation="0"
+				FreezeAfterTriggerDuration="0s"
+				RequiredConditions=""
+				RejectedConditions=""
+				SetObjectStatusOnTrigger=""
+				ClearObjectStatusOnExit=""
+				TriggerAttributeModifier=""
+				AttributeModifierDuration="0s"
+				ChainedButton="Command_AlienBlinkMastermindAOEMindControlEMP"
+				RequireAndSpendTiberiumOnCaster="0"
+				DisabledTypesToProcess="HELD"
+				DisabledTypesToContinueSoundsFor="HELD"
+				StartRechargeOnExit="False"
+				GoIdleInStartPreparation="True"
+				FaceTarget="True"
+				DominateRadius="75"
+				TriggerFX="FX_AlienAOEMindControlHit"
+				DominatedFX="FX_AlienAOEMindControlDominatedHit"
+				FiringFX="FX_AlienAOEMindControlFire"
+				PermanentlyConvert="False">
+				<AttributeModifierAffects
+					Rule="ALL"
+					Relationship="ENEMIES NEUTRAL"
+					Alignment="NONE"
+					Include=""
+					Exclude="CIVILIAN_BUILDING METAUNIT MADE_OF_METAL FS_BASE_DEFENSE HUSK AIRCRAFT STRUCTURE SUPER_WEAPON BRIDGE BRIDGE_SEGMENT BRIDGE_ENDCAP BRIDGE_GATEHOUSE CRATE TIBERIUM TIBERIUM_FIELD CAN_TOPPLE SIMPLE_OBJECT_PROP OPTIMIZED_PROP WALL_HUB WALL_SEGMENT"
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="">
+					<ExcludeThing>SubwayNode</ExcludeThing>
+					<ExcludeThing>AlienMastermind</ExcludeThing>
+					<ExcludeThing>BlackHandCommando</ExcludeThing>
+					<ExcludeThing>MarkedOfKaneCommando</ExcludeThing>
+					<ExcludeThing>ZOCOMCommando</ExcludeThing>
+					<ExcludeThing>GDICommando</ExcludeThing>
+					<ExcludeThing>NODCommando</ExcludeThing>
+					<ExcludeThing>Viceroid</ExcludeThing>
+					<ExcludeThing>AlienWormHole</ExcludeThing>
+					<ExcludeThing>AlienMothership</ExcludeThing>
+					<ExcludeThing>Traveler59BlinkMastermind</ExcludeThing>
+					<ExcludeThing>Traveler59Cultist</ExcludeThing>
+					<ExcludeThing>Traveler59CultistSquad</ExcludeThing>
+					<ExcludeThing>ABTower</ExcludeThing>		
+					<!--
+					<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
+					<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
+					<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
+					<ExcludeThing>AlienMillipedeBody</ExcludeThing>				
+					-->					
+					<IncludeThing>GDIBattleBase</IncludeThing>
+					<IncludeThing>SteelTalonsBattleBase</IncludeThing>
+					<IncludeThing>ZOCOMBattleBase</IncludeThing>	
+				</AttributeModifierAffects>
+			</DominateEnemySpecialPower>
+
+			<OCLSpecialPower
+				id="E5B8EB55"
+				SpecialPowerTemplate="SpecialPower_AOEMindControl_Metaunit"
 				AntiCategory=""
 				AntiFX=""
 				AttributeModifier=""
@@ -1397,160 +1483,8 @@
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
 					RejectModelCondition="" />
-			</OCLSpecialPower>
+			</OCLSpecialPower>			
 			
-			<!--
-			<SpecialPower
-				id="552594FC"
-				SpecialPowerTemplate="SpecialPower_AOEMindControl"
-				AntiCategory=""
-				AntiFX=""
-				AttributeModifier=""
-				AttributeModifierRange="0"
-				AttributeModifierFX=""
-				WeatherDuration="0"
-				InitiateFX=""
-				TriggerFX=""
-				SetModelCondition="TOPPLED"
-				SetModelConditionTime="0s"
-				GiveLevels="0"
-				ChangeWeather="NORMAL"
-				OnTriggerRechargeSpecialPower=""
-				BurnDecayModifier="0"
-				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="False"
-				StartsPaused="False"
-				ReEnableAntiCategory="False"
-				AttributeModifierAffectsSelf="False"
-				AttributeModifierWeatherBased="False"
-				TargetEnemy="False"
-				TargetAllSides="False"
-				DisableDuringAnimDuration="False"
-				IdleWhenStartingPower="False"
-				AffectGood="False"
-				AffectEvil="False"
-				AffectAllies="True"
-				AvailableAtStart="True"
-				AdjustVictim="False"
-				UseDistanceFromCommandCenter="False"
-				ChildModuleHandlesFX="False">
-				<AttributeModifierAffects
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterMP
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterStrategic
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-			</SpecialPower>	-->
-				
-			<DominateEnemySpecialPower
-				id="5C6A16A6"
-				GrabPassengerHealGain="0%"
-				SpecialPowerTemplate="SpecialPower_AOEMindControl"
-				StartAbilityRange="1E+07"
-				AbilityAbortRange="1E+07"
-				PreparationTime="0s"
-				PersistentPrepTime="0s"
-				PersistentCount="-1"
-				PackTime="0s"
-				UnpackTime="0s"
-				PreTriggerUnstealthTime="0s"
-				Options=""
-				PackUnpackVariationFactor="0"
-				ParalyzeDurationWhenCompleted="0s"
-				ParalyzeDurationWhenAborted="0s"
-				SpecialObject=""
-				MaxSpecialObjects="1"
-				EffectDuration="0s"
-				EffectValue="1"
-				EffectRange="0"
-				FleeRangeAfterCompletion="0"
-				DisableFXParticleSystem=""
-				PackSound=""
-				UnpackSound=""
-				PrepSoundLoop=""
-				TriggerSound=""
-				ActiveLoopSound=""
-				AwardXPForTriggering="0"
-				SkillPointsForTriggering="-1"
-				UnpackingVariation="0"
-				FreezeAfterTriggerDuration="0s"
-				RequiredConditions=""
-				RejectedConditions=""
-				SetObjectStatusOnTrigger=""
-				ClearObjectStatusOnExit=""
-				TriggerAttributeModifier=""
-				AttributeModifierDuration="0s"
-				ChainedButton=""
-				RequireAndSpendTiberiumOnCaster="0"
-				DisabledTypesToProcess="HELD"
-				DisabledTypesToContinueSoundsFor="HELD"
-				StartRechargeOnExit="False"
-				GoIdleInStartPreparation="True"
-				FaceTarget="True"
-				DominateRadius="50"
-				TriggerFX="FX_AlienAOEMindControlHit"
-				DominatedFX="FX_AlienAOEMindControlDominatedHit"
-				FiringFX="FX_AlienAOEMindControlFire"
-				PermanentlyConvert="False">
-				<AttributeModifierAffects
-					Rule="ALL"
-					Relationship="ENEMIES NEUTRAL"
-					Alignment="NONE"
-					Include=""
-					Exclude="CIVILIAN_BUILDING METAUNIT MADE_OF_METAL FS_BASE_DEFENSE HUSK AIRCRAFT STRUCTURE SUPER_WEAPON BRIDGE BRIDGE_SEGMENT BRIDGE_ENDCAP BRIDGE_GATEHOUSE CRATE TIBERIUM TIBERIUM_FIELD CAN_TOPPLE SIMPLE_OBJECT_PROP OPTIMIZED_PROP WALL_HUB WALL_SEGMENT"
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="">
-					<ExcludeThing>SubwayNode</ExcludeThing>
-					<ExcludeThing>AlienMastermind</ExcludeThing>
-					<ExcludeThing>BlackHandCommando</ExcludeThing>
-					<ExcludeThing>MarkedOfKaneCommando</ExcludeThing>
-					<ExcludeThing>ZOCOMCommando</ExcludeThing>
-					<ExcludeThing>GDICommando</ExcludeThing>
-					<ExcludeThing>NODCommando</ExcludeThing>
-					<ExcludeThing>Viceroid</ExcludeThing>
-					<ExcludeThing>AlienWormHole</ExcludeThing>
-					<ExcludeThing>AlienMothership</ExcludeThing>
-					<ExcludeThing>Traveler59BlinkMastermind</ExcludeThing>
-					<ExcludeThing>Traveler59Cultist</ExcludeThing>
-					<ExcludeThing>Traveler59CultistSquad</ExcludeThing>
-					<ExcludeThing>ABTower</ExcludeThing>		
-					<!--
-					<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
-					<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
-					<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
-					<ExcludeThing>AlienMillipedeBody</ExcludeThing>				
-					-->					
-					<IncludeThing>GDIBattleBase</IncludeThing>
-					<IncludeThing>SteelTalonsBattleBase</IncludeThing>
-					<IncludeThing>ZOCOMBattleBase</IncludeThing>	
-				</AttributeModifierAffects>
-			</DominateEnemySpecialPower>
 			
 			<FireWeaponWhenDead
 				id="DDED328A"
@@ -2308,7 +2242,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="1125"
+				MaxHealth="1250"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

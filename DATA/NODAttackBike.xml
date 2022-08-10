@@ -92,7 +92,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="148"
+			Speed="150"
 			Condition="NORMAL"
 			Locomotor="NODAttackBikeLocomotor" />
 		<SkirmishAIInformation

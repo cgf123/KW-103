@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="Traveler59EradicatorHexapod"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS SALVAGER PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT GARRISONABLE_UNTIL_DESTROYED LARGE_RECTANGLE_PATHFIND VEHICLE CAN_SHOOT_OVER_WALLS UNIQUE_UNIT CAN_BE_FAVORITE_UNIT METAUNIT USE_STRICT_PATHING"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS SALVAGER PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT GARRISONABLE_UNTIL_DESTROYED LARGE_RECTANGLE_PATHFIND VEHICLE TIBERIUM_BASED CAN_SHOOT_OVER_WALLS UNIQUE_UNIT CAN_BE_FAVORITE_UNIT METAUNIT USE_STRICT_PATHING"
 		Description="Desc:Traveler59EradicatorHexapod"
 		TypeDescription="Type:AlienEradicatorHexapod"
 		RadarPriority="UNIT"
@@ -19,7 +19,7 @@
 		EditorName="Traveler59EradicatorHexapod"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="60"
+		BuildTime="55"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -67,7 +67,7 @@
 		UnitTypeIcon=""
 		ReinvisibilityDelay="7s"
 		CaptureTime="0s"
-		BuildCost="6000"
+		BuildCost="5500"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="1"

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<GameObject
+		id="Traveler59Corrupter"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAVALRY TIBERIUM_BASED ANTI_GARRISON CAN_BE_FAVORITE_UNIT CAN_HEAL_ALLIES"
+		Description="Desc:Traveler59Corrupter"
+		TypeDescription="Type:Traveler59Corrupter"
+		RadarPriority="UNIT"
+		Side="Traveler59"
+		EditorName="Traveler59Corrupter"
+		EditorSorting="UNIT"
+		BuildTime="10"
+		CommandSet="Traveler59CorrupterCommandSet"
+		SelectPortrait="Portrait_ALIENCorrupter"
+		ButtonImage="Portrait_ALIENCorrupter"
+		VoicePriority="192"
+		ShockwaveResistance="100"
+		CommandPoints="100"
+		ProductionQueueType="VEHICLE"
+		UnitCategory="VEHICLE"
+		WeaponCategory="BLAST"
+		ReinvisibilityDelay="7s"
+		BuildCost="1000"
+		TransportSlotCount="1">
+		<DisplayName>NAME:ALIENCorrupter</DisplayName>
+		<GameDependency>
+			<RequiredObject>Traveler59ControlCenter</RequiredObject>
+		</GameDependency>
+		<ArmorSet
+			Armor="AlienCorrupterArmor"
+			DamageFX="InfantryDamageFX" />
+		<LocomotorSet
+			Speed="70"
+			Locomotor="AlienCorrupterLocomotor" />
+		<SkirmishAIInformation
+			ConquerMetricsOverrideDPS="400"
+			ConquerMetricsOverrideDamageType="GRENADE"
+			UnitBuilderStandardCombatUnit="True" />
+		<Draws>
+			<ScriptedModelDraw
+				id="0x50DF2C46"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				OkToChangeModelColor="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="W3DContainer:AUCORRUPT_SKN" />
+					<WeaponFireFXBone
+						BoneName="FX_WEAPON_01" />
+					<WeaponLaunchBone
+						BoneName="FX_WEAPON_01" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterAmbientCloud"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterAmbientDistort"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Jaw_U"
+						FXParticleSystemTemplate="AlienCorrupterAmbientDrip2"
+						FollowBone="True" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<Model
+						Name="W3DMesh:AUCORRUPT_FP" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="W3DContainer:AUCORRUPT_SKN" />
+					<WeaponFireFXBone
+						BoneName="FX_WEAPON_01" />
+					<WeaponLaunchBone
+						BoneName="FX_WEAPON_01" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterAmbientCloud"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterDamagedSpurt"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterDamagedSpurt2"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterDamagedSpurt3"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterAmbientDistort"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Jaw_U"
+						FXParticleSystemTemplate="AlienCorrupterAmbientDrip2"
+						FollowBone="True" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="W3DContainer:AUCORRUPT_SKN" />
+					<WeaponFireFXBone
+						BoneName="FX_WEAPON_01" />
+					<WeaponLaunchBone
+						BoneName="FX_WEAPON_01" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterAmbientCloud"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterDamagedSpurt"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterDamagedSpurt2"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Abdomin03"
+						FXParticleSystemTemplate="AlienCorrupterDamagedSpurt3"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Bone03"
+						FXParticleSystemTemplate="AlienCorrupterDamagedSpurt4"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Bone03"
+						FXParticleSystemTemplate="AlienCorrupterDamagedSpurt5"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Bone03"
+						FXParticleSystemTemplate="AlienCorrupterDamagedSpurt6"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Abdomin02"
+						FXParticleSystemTemplate="AlienCorrupterAmbientDistort"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="Jaw_U"
+						FXParticleSystemTemplate="AlienCorrupterAmbientDrip2"
+						FollowBone="True" />
+				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW" />
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT"
+					StateName="STATE_bored"
+					Flags="RESTART_ANIM_WHEN_COMPLETE">
+					<Animation
+						AnimationName="AUCORRUPT_IBFA"
+						AnimationMode="ONCE"
+						AnimNickName="ATNB"
+						AnimationPriority="15"
+						AnimationMustCompleteBlend="True" />
+					<Animation
+						AnimationName="AUCORRUPT_BIFA"
+						AnimationMode="ONCE"
+						AnimNickName="ATNB"
+						AnimationPriority="5"
+						AnimationMustCompleteBlend="True" />
+					<Animation
+						AnimationName="AUCORRUPT_BIFB"
+						AnimationMode="ONCE"
+						AnimNickName="ATNB"
+						AnimationPriority="5"
+						AnimationMustCompleteBlend="True" />
+					<Animation
+						AnimationName="AUCORRUPT_BIFC"
+						AnimationMode="ONCE"
+						AnimNickName="ATNB"
+						AnimationPriority="5"
+						AnimationMustCompleteBlend="True" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev == "STATE_Selected" or Prev == "ATNB" or Prev == "STATE_Run" then CurDrawableSetTransitionAnimState("TRANS_SelectedToIdle") end;
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Animation
+						AnimationName="AUCORRUPT_DIEA"
+						AnimationMode="ONCE" />
+					<Animation
+						AnimationName="AUCORRUPT_DIEB"
+						AnimationMode="ONCE" />
+					<Animation
+						AnimationName="AUCORRUPT_DIEC"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="AFFECTED_BY_EMP">
+					<Animation
+						AnimationName="AUCORRUPT_IBFA"
+						AnimationMode="MANUAL"
+						AnimationBlendTime="15" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="MOVING FIRING_OR_PREATTACK_A"
+					StateName="STATE_Run"
+					Flags="RANDOMSTART">
+					<Animation
+						AnimationName="AUCORRUPT_RUNA"
+						AnimationMode="LOOP"
+						Distance="65" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FIRING_OR_PREATTACK_A"
+					FrameForPristineBonePositions="5">
+					<Animation
+						AnimationName="AUCORRUPT_ATKA"
+						AnimationMode="LOOP" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="TURN_LEFT_HIGH_SPEED"
+					StateName="STATE_Run"
+					Flags="RANDOMSTART">
+					<Animation
+						AnimationName="AUCORRUPT_RUNA"
+						AnimationMode="LOOP"
+						Distance="65" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="TURN_RIGHT_HIGH_SPEED"
+					StateName="STATE_Run"
+					Flags="RANDOMSTART">
+					<Animation
+						AnimationName="AUCORRUPT_RUNA"
+						AnimationMode="LOOP"
+						Distance="65" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="TURN_LEFT"
+					StateName="STATE_Run"
+					Flags="RANDOMSTART">
+					<Animation
+						AnimationName="AUCORRUPT_TRNL"
+						AnimationMode="LOOP"
+						Distance="65" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="TURN_RIGHT"
+					StateName="STATE_Run"
+					Flags="RANDOMSTART">
+					<Animation
+						AnimationName="AUCORRUPT_TRNR"
+						AnimationMode="LOOP"
+						Distance="65" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="MOVING"
+					StateName="STATE_Run"
+					Flags="RANDOMSTART">
+					<Animation
+						AnimationName="AUCORRUPT_RUNA"
+						AnimationMode="LOOP"
+						Distance="65" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="SELECTED"
+					StateName="STATE_Selected"
+					Flags="RESTART_ANIM_WHEN_COMPLETE">
+					<Animation
+						AnimationName="AUCORRUPT_IDLA"
+						AnimationMode="ONCE"
+						AnimationPriority="15" />
+					<Animation
+						AnimationName="AUCORRUPT_AIFA"
+						AnimationMode="ONCE"
+						AnimationPriority="5" />
+					<Animation
+						AnimationName="AUCORRUPT_AIFB"
+						AnimationMode="ONCE"
+						AnimationPriority="5" />
+					<Animation
+						AnimationName="AUCORRUPT_AIFC"
+						AnimationMode="ONCE"
+						AnimationPriority="5" />
+					<Script>
+            Prev = CurDrawablePrevAnimationState();
+            if Prev == "STATE_bored" then CurDrawableSetTransitionAnimState("TRANS_boredToAttention") end;
+          </Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_boredToAttention">
+					<Animation
+						AnimationName="AUCORRUPT_BATA"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_attentionToBored">
+					<Animation
+						AnimationName="AUCORRUPT_ABTA"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_IdleToSelected">
+					<Animation
+						AnimationName="AUCORRUPT_BATA"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_SelectedToIdle">
+					<Animation
+						AnimationName="AUCORRUPT_ABTA"
+						AnimationMode="ONCE" />
+				</AnimationState>
+			</ScriptedModelDraw>
+			<ScriptedModelDraw
+				id="0xD01B969B"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT" />
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="COMBINED_PARENT">
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="AUBuzzerCombine"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="AUBuzzerCombineGlow"
+						FollowBone="True" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+			<StreamDraw
+				id="0xA1F85686"
+				ArcHeightFactor="0.0625"
+				UVWorldSize="100"
+				TubeRadius="1.25"
+				HitFx="FX_BulletHitGDI">
+				<FXShader
+					ShaderName="Stream.fx">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXCorrupterStream</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXCorrupterStream</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ParticleSystems>
+					<ParticleSys>AlienCorrupterStreamDrip</ParticleSys>
+					<ParticleSys>AlienCorrupterStreamDistort</ParticleSys>
+				</ParticleSystems>
+			</StreamDraw>
+		</Draws>
+		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="0x513BC476" />
+			<SquishCollide
+				id="0x8CCB269A" />
+			<FireWeaponWhenDead
+				id="0xDDED328F"
+				DeathWeapon="CatalystInfantryDeathWeapon"
+				InitiallyActive="True">
+				<DieMuxData
+					DeathTypes="CATALYST" />
+			</FireWeaponWhenDead>
+			<AutoHealBehavior
+				id="0xC07BF5C0"
+				HealingAmount="100"
+				HealingDelay="0.5s"
+				StartHealingDelay="1s">
+				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
+			</AutoHealBehavior>
+			<AttributeModifierUpgrade
+				id="0xAA36A1AA"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterSpeed</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="0x81C6F752"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterDamage">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterDamage</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="0xE35F7EC4"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterArmor">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterArmor</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<StancesBehavior
+				id="0x54CA416E"
+				StanceTemplate="Generic" />
+			<LevelUpUpgrade
+				id="0xA92BDFEA"
+				LevelsToGain="1"
+				LevelCap="4">
+				<TriggeredBy>Upgrade_ProductionVeterancy_VETERAN</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="0x5C3F216A"
+				LevelsToGain="2"
+				LevelCap="4">
+				<TriggeredBy>Upgrade_ProductionVeterancy_ELITE</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="0x379F3CE2"
+				LevelsToGain="3"
+				LevelCap="4">
+				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
+			</LevelUpUpgrade>
+			<InvisibilityUpdate
+				id="0x3BD7F2F5"
+				UpdatePeriod="0.5s">
+				<InvisibilityNugget
+					ForbiddenConditions="PREATTACK_A FIRING_A FIRING_OR_PREATTACK_A RELOADING_A PREATTACK_B FIRING_B FIRING_OR_PREATTACK_B RELOADING_B PREATTACK_C FIRING_C FIRING_OR_PREATTACK_C RELOADING_C USING_WEAPON_A USING_WEAPON_B USING_WEAPON_C"
+					ForbiddenStatus="IS_FIRING_WEAPON USING_ABILITY IS_AIMING_WEAPON SPECIAL_ABILITY_PACKING_UNPACKING_OR_USING" />
+				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
+			</InvisibilityUpdate>
+			<StealthUpgrade
+				id="0xF2B9DFBE">
+				<TriggeredBy>Upgrade_CloakingFieldInvisibility</TriggeredBy>
+			</StealthUpgrade>
+			<TemporarilyDefectUpdate
+				id="0x3473AFD2"
+				DefectionFrameCount="300" />
+			<WeaponSetUpdate
+				id="0x720F4A50">
+				<WeaponSlotHardpoint
+					ID="1">
+					<Weapon
+						Template="AlienCorrupterTioxinBlastCannon" />
+				</WeaponSlotHardpoint>
+			</WeaponSetUpdate>
+			<StreamState
+				id="0x1B082F9E" />
+			<Physics
+				id="0x6D41764B" />
+			<SlowDeath
+				id="0x73542D4A"
+				SinkRate="2.4"
+				SinkDelay="4s"
+				DestructionDelay="7s">
+				<Sound
+					List="ALI_Corrupter_SoundDie" />
+				<DieMuxData
+					DeathTypes="ALL" />
+			</SlowDeath>
+			<UncombineSpecialPower
+				id="0x5AEEEB46"
+				SpecialPowerTemplate="SpecialPowerUncombineWithUnit">
+				<AttributeModifierAffects
+					Rule="UNPARSED" />
+				<RequirementsFilterMP
+					Rule="UNPARSED" />
+				<RequirementsFilterStrategic
+					Rule="UNPARSED" />
+			</UncombineSpecialPower>
+			<StatusBitsUpgrade
+				id="0xA7D958E9"
+				StatusToSet="DOES_CONTAIN_TIBERIUM">
+				<TriggeredBy>Upgrade_Traveler59Faction</TriggeredBy>
+			</StatusBitsUpgrade>
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="0x12FA48BA"
+				AutoAcquireEnemiesWhenIdle="YES">
+				<UnitAITargetChooserData
+					TargetingCompareList="DefaultTargetingCompareList" />
+			</AIUpdate>
+		</AI>
+		<Body>
+			<ActiveBody
+				id="0xB313F576"
+				MaxHealth="3000" />
+		</Body>
+		<Geometry
+			IsSmall="True">
+			<Shape
+				Type="BOX"
+				ContactPointGeneration="VEHICLE"
+				MajorRadius="20"
+				MinorRadius="10"
+				Height="30" />
+		</Geometry>
+		<AudioArrayVoice>
+			<AudioEntry
+				Sound="AudioEvent:ALI_Corrupter_SoundAttack"
+				AudioType="voiceAttack" />
+			<AudioEntry
+				Sound="AudioEvent:ALI_Corrupter_SoundCreate"
+				AudioType="voiceCreated" />
+			<AudioEntry
+				Sound="AudioEvent:ALI_Corrupter_SoundMove"
+				AudioType="voiceGuard" />
+			<AudioEntry
+				Sound="AudioEvent:ALI_Corrupter_SoundMove"
+				AudioType="voiceMove" />
+			<AudioEntry
+				Sound="AudioEvent:ALI_Corrupter_SoundSelect"
+				AudioType="voiceSelect" />
+			<NamedEntry
+				Sound="AudioEvent:ALI_Buzzers_SoundSplit"
+				Name="UncombineWithUnit" />
+		</AudioArrayVoice>
+		<AudioArraySound>
+			<AudioEntry
+				Sound="AudioEvent:ALI_Corrupter_MoveStart"
+				AudioType="soundMoveStart" />
+		</AudioArraySound>
+		<EvaEvents
+			EvaEventDieOwner="UnitLost"
+			EvaEventDamagedOwner="UnitUnderAttack"
+			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
+			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"
+			EvaEventSecondDamageFarFromFirstScanRange="600"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventAmbushed="UnitAmbushed"
+			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted"
+			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
+			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventProductionStarted="UnitConstructionStarted"
+			EvaEventBuildOnHold="BuildOnHold"
+			EvaEventBuildCancelled="BuildCancelled"
+			EvaEventPromotedOwner="UnitPromoted" />
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="350"
+			ShroudClearingRange="400"
+			VisionBonusTestRadius="200"
+			VisionBonusPercentPerFoot="1%"
+			MaxVisionBonusPercent="300%" />
+		<CrusherInfo
+			CrusherLevel="1"
+			CrushableLevel="2" />
+	</GameObject>
+</AssetDeclaration>

@@ -412,10 +412,10 @@
 				VisionOverrideSide="0"
 				ForbiddenCoverStatus=""
 				UseSlowHordeMovement="True"
-				SpawnBannerCarrierImmediately="True"
+				SpawnBannerCarrierImmediately="False"
 				BannerCarrierByUpgradeOnly="False"
 				DestroyHordeOnBannerDeath="True"
-				ExitBannerCarrierWithHorde="False"
+				ExitBannerCarrierWithHorde="True"
 				FollowTheLeader="True">
 				<PassengerFilter
 					Rule="NONE"

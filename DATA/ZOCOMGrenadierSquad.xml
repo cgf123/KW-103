@@ -655,7 +655,7 @@
 				id="16D9E43A"
 				GrabPassengerHealGain="0%"
 				SpecialPowerTemplate="EMPGrenadesGetInRange"
-				StartAbilityRange="300"
+				StartAbilityRange="285"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
 				PersistentPrepTime="0.1s"

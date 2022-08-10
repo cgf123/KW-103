@@ -1171,7 +1171,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="250"
+				DetectionRange="500"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -1184,7 +1184,8 @@
 				InitiallyDisabled="False"
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
-				UseMetaAOI="False" />		
+				UseMetaAOI="False" />	
+			<!--
 			<StealthDetectorUpdate
 				id="70ED959D"
 				RequiresAllTriggers="False"
@@ -1209,7 +1210,8 @@
 				CanDetectWhileContained="False"
 				UseMetaAOI="False" >
 				<TriggeredBy>Upgrade_ZoneTrooperScannerPack</TriggeredBy>
-			</StealthDetectorUpdate>				
+			</StealthDetectorUpdate>		
+			-->
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -1385,7 +1387,9 @@
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
 		<DisplayUpgrade>Upgrade_GDITungstenAAShells</DisplayUpgrade>
+		<!--
 		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade>
+		-->
 	</GameObject>
 	
 	
@@ -2557,7 +2561,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="250"
+				DetectionRange="500"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -2571,6 +2575,7 @@
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
 				UseMetaAOI="False" />		
+			<!--
 			<StealthDetectorUpdate
 				id="70ED959D"
 				RequiresAllTriggers="False"
@@ -2595,7 +2600,8 @@
 				CanDetectWhileContained="False"
 				UseMetaAOI="False" >
 				<TriggeredBy>Upgrade_ZoneTrooperScannerPack</TriggeredBy>
-			</StealthDetectorUpdate>					
+			</StealthDetectorUpdate>
+			-->
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -3942,7 +3948,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="250"
+				DetectionRange="500"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -3956,6 +3962,7 @@
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
 				UseMetaAOI="False" />		
+			<!--
 			<StealthDetectorUpdate
 				id="70ED959D"
 				RequiresAllTriggers="False"
@@ -3980,7 +3987,8 @@
 				CanDetectWhileContained="False"
 				UseMetaAOI="False" >
 				<TriggeredBy>Upgrade_ZoneRaiderScannerPack</TriggeredBy>
-			</StealthDetectorUpdate>					
+			</StealthDetectorUpdate>		
+			-->
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -4156,7 +4164,9 @@
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
 		<DisplayUpgrade>Upgrade_GDITungstenAAShells</DisplayUpgrade>
+		<!--
 		<DisplayUpgrade>Upgrade_ZoneRaiderScannerPack</DisplayUpgrade>		
+		-->
 	</GameObject>
 	
 	

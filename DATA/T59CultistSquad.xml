@@ -1086,7 +1086,7 @@
 				KillPassengersOnDeath="False"
 				HasObjectStatusOfContainedEntry="True"
 				Enabled="True"
-				Slots="9"
+				Slots="10"
 				ExitBone=""
 				ExitPitchRate="0"
 				HealthRegenPercentPerSec="0"
@@ -1159,7 +1159,7 @@
 					DeathTypesForbidden="" />
 				<InitialPayload
 					Name="Traveler59Cultist"
-					Count="9" />
+					Count="10" />
 				<MeleeBehavior
 					Type="AMOEBA" />
 				<!--
@@ -1192,6 +1192,11 @@
 				<RankInfo
 					RankID="1"
 					UnitType="Traveler59Cultist">
+					<Position
+						X="10"
+						Y="0"
+						LeaderRank="-1"
+						LeaderIndex="0" />					
 					<Position
 						X="20"
 						Y="0"

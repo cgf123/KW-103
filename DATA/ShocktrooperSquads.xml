@@ -2541,7 +2541,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				AttributeModifier="AttributeModifier_AdvancedArticulators2">
+				AttributeModifier="AttributeModifier_AdvancedArticulators1">
 				<TriggeredBy>Upgrade_Traveler59AdvancedArticulators</TriggeredBy>
 			</AttributeModifierUpgrade>
 			

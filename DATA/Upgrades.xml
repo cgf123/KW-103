@@ -358,7 +358,7 @@
 		Description="UpgradeDesc:Traveler59AdvancedArticulators"
 		Type="PLAYER"
 		BuildCost="1000"
-		BuildTime="40s"
+		BuildTime="30s"
 		ResearchSound="AudioEvent:ALI_AdvancedArticulators_Upgrade"
 		IconImage="Button_Upgrade_AdvArticulators"
 	/>			
@@ -553,7 +553,7 @@
 		TypeDescription="UpgradeType:GDIHardpoints"
 		Description="UpgradeDesc:GDIHardpoints"
 		Type="PLAYER"
-		BuildTime="60.0s"
+		BuildTime="75.0s"
 		BuildCost="2500"
 		ResearchSound="AudioEvent:GDI_Airfield_hardPointsUpgrade"
 		IconImage="Button_Upgrade_Hardpoints">

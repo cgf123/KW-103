@@ -914,7 +914,7 @@
 			IsRotatingWithObject="True"
 			LocalPlayerOnly="False" />
 		<VisionInfo
-			VisionRange="350"
+			VisionRange="400"
 			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"

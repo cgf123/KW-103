@@ -451,7 +451,7 @@
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		RadiusCursorRadius="110"
-		Money="-3000" >
+		Money="-2500" >
 		<ForbiddenObjectFilter
 			Rule="ANY">
 			<IncludeThing>AlienCrystalShield</IncludeThing>
@@ -465,7 +465,7 @@
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		RadiusCursorRadius="110"
-		Money="-3000" >
+		Money="-2500" >
 		<ForbiddenObjectFilter
 			Rule="ANY">
 			<IncludeThing>AlienCrystalShield</IncludeThing>
@@ -863,8 +863,8 @@
 			<IncludeThing>Reaper17Corrupter</IncludeThing>			
 			<IncludeThing>Traveler59Corrupter</IncludeThing>
 			<IncludeThing>AlienCorrupter</IncludeThing>		
-			<IncludeThing>MarkedOfKaneTiberiumTrooperSquad</IncludeThing>
-			<IncludeThing>MarkedOfKaneTiberiumTrooper</IncludeThing>
+			<IncludeThing>MarkedOfKaneTibTrooperSquad</IncludeThing>
+			<IncludeThing>MarkedOfKaneTibTrooper</IncludeThing>
 			<!-- PPs -->
 			<IncludeThing>NodPowerPlant</IncludeThing>
 			<IncludeThing>BlackHandPowerPlant</IncludeThing>
@@ -929,8 +929,8 @@
 			<IncludeThing>Reaper17Corrupter</IncludeThing>
 			<IncludeThing>Traveler59Corrupter</IncludeThing>
 			<IncludeThing>AlienCorrupter</IncludeThing>		
-			<IncludeThing>MarkedOfKaneTiberiumTrooperSquad</IncludeThing>
-			<IncludeThing>MarkedOfKaneTiberiumTrooper</IncludeThing>
+			<IncludeThing>MarkedOfKaneTibTrooperSquad</IncludeThing>
+			<IncludeThing>MarkedOfKaneTibTrooper</IncludeThing>
 			<!-- PPs -->
 			<IncludeThing>NodPowerPlant</IncludeThing>
 			<IncludeThing>BlackHandPowerPlant</IncludeThing>
@@ -1379,9 +1379,33 @@
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0xA7C0FAF3"
 		WaypointModeTerminal="false" >
 		<ObjectFilter
-			Rule="ANY"
+			Rule="ALL"
 			Relationship="ENEMIES NEUTRAL"
-			Include="METAUNIT MADE_OF_METAL">	
+			Exclude="HUSK CIVILIAN_BUILDING FS_BASE_DEFENSE AIRCRAFT STRUCTURE SUPER_WEAPON BRIDGE BRIDGE_SEGMENT BRIDGE_ENDCAP BRIDGE_GATEHOUSE CRATE TIBERIUM TIBERIUM_FIELD CAN_TOPPLE SIMPLE_OBJECT_PROP OPTIMIZED_PROP WALL_HUB WALL_SEGMENT">
+			<ExcludeThing>SubwayNode</ExcludeThing>
+			<ExcludeThing>AlienMastermind</ExcludeThing>
+			<ExcludeThing>BlackHandCommando</ExcludeThing>
+			<ExcludeThing>MarkedOfKaneCommando</ExcludeThing>
+			<ExcludeThing>ZOCOMCommando</ExcludeThing>
+			<ExcludeThing>GDICommando</ExcludeThing>
+			<ExcludeThing>NODCommando</ExcludeThing>
+			<ExcludeThing>Viceroid</ExcludeThing>
+			<ExcludeThing>AlienWormHole</ExcludeThing>
+			<ExcludeThing>AlienMothership</ExcludeThing>
+			<ExcludeThing>Traveler59BlinkMastermind</ExcludeThing>
+			<ExcludeThing>Traveler59Cultist</ExcludeThing>
+			<ExcludeThing>Traveler59CultistSquad</ExcludeThing>
+			<ExcludeThing>ABTower</ExcludeThing>					
+			<!--
+			<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
+			<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
+			<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
+			<ExcludeThing>AlienMillipedeBody</ExcludeThing>
+			-->			
+			<!-- removed base defence references, added FS_BASE_DEFENSE to exclude instead -->
+			<IncludeThing>GDIBattleBase</IncludeThing>
+			<IncludeThing>SteelTalonsBattleBase</IncludeThing>
+			<IncludeThing>ZOCOMBattleBase</IncludeThing>			
 		</ObjectFilter>
 	</SpecialPowerTemplate>	
 	

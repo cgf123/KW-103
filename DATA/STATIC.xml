@@ -519,6 +519,10 @@
 	<Include type="all" source="T59Gunwalker.xml" />			
 	<Include type="all" source="R17Shardwalker.xml" />			
 	
+	<Include type="all" source="AlienCorrupter.xml" />				
+	<Include type="all" source="T59Corrupter.xml" />			
+	<Include type="all" source="R17Corrupter.xml" />			
+	
 	<Include type="all" source="AlienDevourer.xml" />			
 	<Include type="all" source="R17Devourer.xml" />		
 	<Include type="all" source="T59Devourer.xml" />		

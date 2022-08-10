@@ -687,14 +687,32 @@
 		<Cmd>Command_CultistMindControlGetInRange</Cmd>
 	</LogicCommandSet>
 	
+  <LogicCommand
+		Options="NEED_TARGET_POS"
+		Type="SPECIAL_POWER"
+		id="Command_AlienBlinkMastermindAOEMindControlEMP">
+    <SpecialPower>SpecialPower_AOEMindControl_Metaunit</SpecialPower>
+  </LogicCommand>	
+	
 	<LogicCommandSet
 	id="AlienBlinkMastermindCommandSet">
 		<Cmd>Command_AlienMastermindSelectObjectsForTeleport</Cmd>
 		<Cmd>Command_AlienMastermindTeleportObjects</Cmd>
 		<Cmd>Command_AlienMastermindManipulatorDevice</Cmd>
-		<Cmd>Command_AlienBlinkMastermindAOEMindControl</Cmd>
+		<Cmd>Command_AlienBlinkMastermindAOEMindControl</Cmd>	
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>	
+	
+	<LogicCommandSet
+	id="Traveler59BlinkMastermindCommandSet">
+		<Cmd>Command_Traveler59ProdigySelectObjectsForTeleport</Cmd>
+		<Cmd>Command_Traveler59ProdigyTeleportObjects</Cmd>
+		<Cmd>Command_UseTraveler59BlinkPack</Cmd>
+		<Cmd>Command_AlienProdigyManipulatorDevice</Cmd>
+		<Cmd>Command_AlienBlinkMastermindAOEMindControl</Cmd>
+		<Cmd>Command_AlienBlinkMastermindAOEMindControlEMP</Cmd>		
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>		
 	
 	<!-- ZOCOM Shockwave -->
   <LogicCommand

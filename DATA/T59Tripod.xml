@@ -105,10 +105,11 @@
 			Speed="60"
 			Condition="NORMAL"
 			Locomotor="AlienAnnihilatorTripodLocomotor" />
+		<!--
 		<LocomotorSet
 			Speed="60"
 			Condition="NORMAL_UPGRADED"
-			Locomotor="AlienAnnihilatorTripodUpgradedLocomotor" />			
+			Locomotor="AlienAnnihilatorTripodUpgradedLocomotor" />	-->	
 		<SkirmishAIInformation
 			BaseBuildingLocation="FRONT"
 			ConquerMetricsOverrideDamageType="UNDEFINED"
@@ -2141,6 +2142,7 @@
 				AttributeModifier="AttributeModifier_TravelerEngines">
 				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy>
 			</AttributeModifierUpgrade>
+			<!--
 			<LocomotorSetUpgrade
 				id="E4F319E6"
 				RequiresAllTriggers="False"
@@ -2150,7 +2152,8 @@
 				WaypointModeTerminal="True"
 				KillLocomotorUpgrade="False">
 				<TriggeredBy>Upgrade_TravelerEngines</TriggeredBy>
-			</LocomotorSetUpgrade>			
+			</LocomotorSetUpgrade>		
+			-->
 			<ModelConditionUpgrade
 				id="468D2D8B"
 				RequiresAllTriggers="False"

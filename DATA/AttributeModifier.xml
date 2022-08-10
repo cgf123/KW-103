@@ -318,7 +318,7 @@
 	<AttributeModifier
 		id="AttributeModifier_TravelerEngines"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="125%"/>
+		<Modifier Type="SPEED" Value="130%"/>
 	</AttributeModifier>
 	<AttributeModifier
 		id="AttributeModifier_TravelerEnginesLargeShips"
@@ -474,8 +474,15 @@
 		Category="NONE">		
 		<Modifier Type="SPEED" Value="133%"/>
 	</AttributeModifier>
+	
+	<!-- For T59 Shocks -->	
+	<AttributeModifier
+		id="AttributeModifier_AdvancedArticulators1"
+		Category="NONE">		
+		<Modifier Type="SPEED" Value="133%"/>
+	</AttributeModifier>	
 
-	<!-- For T59 Ravs/Shocks -->
+	<!-- For T59 Ravs -->
 	<AttributeModifier
 		id="AttributeModifier_AdvancedArticulators2"
 		Category="NONE">		
@@ -509,7 +516,7 @@
 	<AttributeModifier
 		id="AttributeModifier_CyberneticLegs1"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="160%"/>
+		<Modifier Type="SPEED" Value="166%"/>
 	</AttributeModifier>			
 		
 	<!-- For Enlightened/TibTroopers -->

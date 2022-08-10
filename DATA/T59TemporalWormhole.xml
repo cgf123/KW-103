@@ -83,8 +83,8 @@
 			<LifetimeUpdate
 				id="ModuleTag_Lifetime"
 				DeathType="FADED"
-				MinLifetime="22s"
-				MaxLifetime="22s" />
+				MinLifetime="24s"
+				MaxLifetime="24s" />
 		</Behaviors>
 		<Body>
 			<ActiveBody
@@ -118,7 +118,7 @@
 			<AttributeModifierNugget
 				Radius="125.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetObjectStatus="IN_STASIS OUT_OF_PHASE"
 				AttributeModifierName="AttributeModifier_TemporalWormhole">
 				<SpecialObjectFilter
 					Rule="ALL">

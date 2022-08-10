@@ -520,7 +520,7 @@
 						IsPlayerUpgradePermanent="False" /> 					
 					<TurretSettings
 						TurretTurnRate="500"
-						TurretPitchRate="270"
+						TurretPitchRate="200"
 						MinimumPitch="0d"
 						PitchHeight="50%"
 						ControlledWeaponSlots=""
