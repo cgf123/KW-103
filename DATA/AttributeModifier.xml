@@ -175,6 +175,20 @@
 		ObjectStatusToSet="STEAL_NEXT_UNIT_TRAPPED" >
 	</AttributeModifier>		
 	
+	<!-- -->
+	<AttributeModifier
+		id="AttributeModifier_BeamDebuff"
+		Category="NONE"
+		Duration="0.5s" >
+	</AttributeModifier>		
+
+	<AttributeModifier
+		id="AttributeModifier_BeamDebuffHeavy"
+		Category="NONE"
+		Duration="0.5s" >
+	</AttributeModifier>			
+	
+	
 	<!-- Rage Gen -->
 	<AttributeModifier
 		id="AttributeModifier_Hallucinate"

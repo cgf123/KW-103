@@ -663,5 +663,26 @@
 			RequiredObjectStatusAny="WEAPON_UPGRADED_01"/>		
 	</UpgradeTemplate>
 	
+	<!-- Beam Debuff -->
+	
+	<UpgradeTemplate
+		id="Upgrade_SelectBeamCombine"
+		DisplayName="NAME:AbilityBeamCombine_103"
+		Description="UPGRADE:SelectLoadOut03Description"
+		Type="OBJECT"
+		SkirmishAIHeuristic="IGNORE">
+		<GameDependency
+			RequiredObjectStatusAny="WEAPON_UPGRADED_02" />
+	</UpgradeTemplate>
+
+	<UpgradeTemplate
+		id="Upgrade_SelectBeamDebuff"
+		DisplayName="NAME:AbilityBeamDebuff_103"
+		Description="UPGRADE:SelectLoadOut04Description"
+		Type="OBJECT"
+		SkirmishAIHeuristic="IGNORE">
+		<GameDependency
+			RequiredObjectStatusAny="WEAPON_UPGRADED_01" />
+	</UpgradeTemplate>	
 	
 </AssetDeclaration>

@@ -11323,25 +11323,61 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODBeamCannonLaser1"
 		Name="NODBeamCannonLaser1"
-		AttackRange="600.0"
-		WeaponSpeed="999999.0"	
-		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
-		ClipSize="1">
+		AttackRange="600"
+		WeaponSpeed="999999"
+		PreferredTargetBone="ROOTTRANSFORM"
+		PreAttackFX="FX_NOD_BeamCannon_BeamWeaponPowerUpSwell"
+		ForbiddenFiringObjectStatus="WEAPON_UPGRADED_01"
+		PreAttackType="PER_CLIP"
+		ReAcquireDetailType="PER_ATTACK">
 		<PreAttackDelay
-			MinSeconds="0.0s"
-			MaxSeconds="0.0s" />			
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
-			MinSeconds="0.1s"
-			MaxSeconds="0.1s" />
-		<Nuggets>		
-			<LuaEventNugget
-				EventName="OnBeamTargetInit"
-				Radius="1.0"
-				SendToEnemies="true"
-				SendToAllies="true"
-				SendToNeutral="true" />		
+			MinSeconds="0.01s"
+			MaxSeconds="0.01s" />
+		<Nuggets>
+			<DamageNugget
+				Damage="1"
+				DamageType="GRENADE"
+				DamageFXType="NOD_LASER" />
+			<AttributeModifierNugget
+				PartitionFilterTestType="CIRCLE"
+				AttributeModifierName="AttributeModifier_BeamDebuff">
+				<SpecialObjectFilter
+					Rule="ALL"
+					RejectStatusBitFlags="AIRBORNE_TARGET">
+					<IncludeThing>AlienMothership</IncludeThing>
+					<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
+					<IncludeThing>Traveler59PlanetaryAssaultCarrier</IncludeThing>
+					<IncludeThing>AlienDevastatorWarship</IncludeThing>
+					<IncludeThing>Traveler59DevastatorWarship</IncludeThing>
+				</SpecialObjectFilter>
+			</AttributeModifierNugget>
+			<AttributeModifierNugget
+				PartitionFilterTestType="CIRCLE"
+				AttributeModifierName="AttributeModifier_BeamDebuffHeavy">
+				<SpecialObjectFilter
+					Rule="ANY"
+					Include="TIBERIUM_BASED"
+					RejectStatusBitFlags="AIRBORNE_TARGET" />
+			</AttributeModifierNugget>
+			<TintObjectsNugget
+				Radius="50"
+				PreColorTime="0s"
+				PostColorTime="0s"
+				SustainedColorTime="1.5s"
+				Frequency="0.3">
+				<Color
+					R="0.1"
+					G="0.1"
+					B="0.9" />
+			</TintObjectsNugget>
+			<ActivateLaserNugget
+				Lifetime="0.5s"
+				HitGroundFX="FX_NODSpitfireHit" />
 		</Nuggets>
-	</WeaponTemplate>	
+	</WeaponTemplate>
 	
 	<WeaponTemplate
 		id="NODScorpionBuggyGatling"

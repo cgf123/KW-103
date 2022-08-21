@@ -66,24 +66,26 @@
 			<IncludeThing>BlackHandOBELISK</IncludeThing>
 		</ObjectFilter>
 	</SpecialPowerTemplate>	
-	
+
 	<SpecialPowerTemplate
 		id="NODBeamCannonLaserSpecialPower"
-		Flags="NO_FORBIDDEN_OBJECTS"		
-		TargetType="OBJECT" >
+		TargetType="OBJECT"
+		Flags="NO_FORBIDDEN_OBJECTS"
+		PreventConditions="WEAPON_UPGRADED_02"
+		RequiredConditions="WEAPON_UPGRADED_01">
 		<ForbiddenObjectFilter
 			Rule="ANY"
-			StatusBitFlags="AIRBORNE_TARGET"
+			Include="INFANTRY AIRCRAFT"
 			Exclude="MCV"
-			Include="AIRCRAFT INFANTRY">
-			<ExcludeThing>AlienMothership</ExcludeThing>				
+			StatusBitFlags="AIRBORNE_TARGET">
+			<ExcludeThing>AlienMothership</ExcludeThing>
 			<ExcludeThing>AlienPlanetaryAssaultCarrier</ExcludeThing>
 			<ExcludeThing>Traveler59PlanetaryAssaultCarrier</ExcludeThing>
 			<ExcludeThing>AlienDevastatorWarship</ExcludeThing>
 			<ExcludeThing>Traveler59DevastatorWarship</ExcludeThing>
 		</ForbiddenObjectFilter>
 	</SpecialPowerTemplate>
-	
+
 	<SpecialPowerTemplate
 		id="NODBeamCannonLaserSpecialPower1"
 		TargetType="OBJECT" />	

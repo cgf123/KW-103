@@ -102,7 +102,7 @@
 			Locomotor="NODBeamCannonLocomotor" />
 		<SkirmishAIInformation
 			BaseBuildingLocation="FRONT"
-			ConquerMetricsOverrideDPS="160"
+			ConquerMetricsOverrideDPS="150"
 			ConquerMetricsOverrideDamageType="GRENADE"
 			ConquerMetricsOverrideAntiMask="ANTI_GROUND"
 			UnitBuilderStandardCombatUnit="True" />
@@ -320,27 +320,38 @@
 				</ModelConditionState>
 			</TruckDraw>
 			<LaserDraw
-				id="9FE06199"
-				Texture1_UTile="1"
+				id="0x6FE92FE4"
 				Texture1_VTile="0.5"
-				Texture2_UTile="1"
 				Texture2_VTile="0.03"
-				Texture1_UScrollRate="0"
 				Texture1_VScrollRate="0.2"
-				Texture2_UScrollRate="0"
 				Texture2_VScrollRate="1"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
-				LaserWidth="20"
-				WeaponSlotID="-1"
-				LaserStateID="1"
-				UseDistortionShader="False">
+				LaserWidth="15">
 				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueName=""
-					TechniqueIndex="0">
+					ShaderName="Laser.fx">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXBlueLaser</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXLaserOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_01"
+					RequiredStatus="WEAPON_UPGRADED_02" />
+			</LaserDraw>
+			<LaserDraw
+				id="0xA1CBB39A"
+				Texture1_VTile="0.5"
+				Texture2_VTile="0.03"
+				Texture1_VScrollRate="0.2"
+				Texture2_VScrollRate="1"
+				LaserWidth="20">
+				<FXShader
+					ShaderName="Laser.fx">
 					<Constants>
 						<Texture
 							Name="Texture1">
@@ -354,67 +365,19 @@
 				</FXShader>
 				<ObjectStatusValidation
 					ForbiddenStatus="WEAPON_UPGRADED_03"
-					RequiredStatus="" />
+					RequiredStatus="WEAPON_UPGRADED_01" />
 			</LaserDraw>
 			<LaserDraw
-				id="5FC0AD86"
-				Texture1_UTile="1"
+				id="0xFB10ADE9"
 				Texture1_VTile="0.5"
-				Texture2_UTile="1"
-				Texture2_VTile="0.01"
-				Texture1_UScrollRate="0"
-				Texture1_VScrollRate="0.2"
-				Texture2_UScrollRate="0"
-				Texture2_VScrollRate="1"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="1"
-				LaserWidth="50"
-				WeaponSlotID="-1"
-				LaserStateID="0"
-				UseDistortionShader="True">
-				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueName=""
-					TechniqueIndex="0">
-					<Constants>
-						<Texture
-							Name="Texture1">
-							<Value>FXRailgunCoreDistortion</Value>
-						</Texture>
-						<Texture
-							Name="Texture2">
-							<Value>FXRailGunCoreMask</Value>
-						</Texture>
-					</Constants>
-				</FXShader>
-				<ObjectStatusValidation
-					ForbiddenStatus="WEAPON_UPGRADED_03"
-					RequiredStatus="" />
-			</LaserDraw>
-			<LaserDraw
-				id="B74F5F65"
-				Texture1_UTile="1"
-				Texture1_VTile="0.5"
-				Texture2_UTile="1"
 				Texture2_VTile="0.03"
-				Texture1_UScrollRate="0"
 				Texture1_VScrollRate="0.2"
-				Texture2_UScrollRate="0"
 				Texture2_VScrollRate="1"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
 				LaserWidth="20"
 				WeaponSlotID="1"
-				LaserStateID="1"
-				UseDistortionShader="False">
+				LaserStateID="1">
 				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueName=""
-					TechniqueIndex="0">
+					ShaderName="Laser.fx">
 					<Constants>
 						<Texture
 							Name="Texture1">
@@ -427,31 +390,20 @@
 					</Constants>
 				</FXShader>
 				<ObjectStatusValidation
-					ForbiddenStatus=""
+					ForbiddenStatus="WEAPON_UPGRADED_02"
 					RequiredStatus="WEAPON_UPGRADED_03" />
 			</LaserDraw>
 			<LaserDraw
-				id="E5D4C885"
-				Texture1_UTile="1"
+				id="0xFD73908D"
 				Texture1_VTile="0.5"
-				Texture2_UTile="1"
 				Texture2_VTile="0.03"
-				Texture1_UScrollRate="0"
 				Texture1_VScrollRate="0.2"
-				Texture2_UScrollRate="0"
 				Texture2_VScrollRate="1"
-				Texture1_NumFrames="1"
-				Texture1_FrameRate="30"
-				Texture2_NumFrames="1"
-				Texture2_FrameRate="30"
 				LaserWidth="20"
 				WeaponSlotID="1"
-				LaserStateID="2"
-				UseDistortionShader="False">
+				LaserStateID="2">
 				<FXShader
-					ShaderName="Laser.fx"
-					TechniqueName=""
-					TechniqueIndex="0">
+					ShaderName="Laser.fx">
 					<Constants>
 						<Texture
 							Name="Texture1">
@@ -464,7 +416,6 @@
 					</Constants>
 				</FXShader>
 				<ObjectStatusValidation
-					ForbiddenStatus=""
 					RequiredStatus="WEAPON_UPGRADED_03" />
 			</LaserDraw>
 		</Draws>
@@ -651,14 +602,14 @@
 						Ordering="PRIMARY_WEAPON"
 						Template="NODBeamCannonLaser"
 						Upgrade=""
-						ObjectStatus=""
-						IsPlayerUpgradePermanent="False" /> <!--
+						ObjectStatus="WEAPON_UPGRADED_01"
+						IsPlayerUpgradePermanent="False" /> 
 					<Weapon
 						Ordering="SECONDARY_WEAPON"
 						Template="NODBeamCannonLaser1"
 						Upgrade=""
-						ObjectStatus=""
-						IsPlayerUpgradePermanent="False" /> -->					
+						ObjectStatus="WEAPON_UPGRADED_02"
+						IsPlayerUpgradePermanent="False" />			
 					<TurretSettings
 						TurretTurnRate="200"
 						TurretPitchRate="40"
@@ -873,7 +824,7 @@
 				PackTime="0.1s"
 				UnpackTime="0.1s"
 				PreTriggerUnstealthTime="0s"
-				Options="UPDATE_REQUIRES_LINE_OF_SIGHT"
+				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE UPDATE_REQUIRES_LINE_OF_SIGHT"
 				PackUnpackVariationFactor="0"
 				ParalyzeDurationWhenCompleted="0s"
 				ParalyzeDurationWhenAborted="0s"
@@ -906,7 +857,7 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="True"
 				FaceTarget="True"
-				DamagePerSecond="160"
+				DamagePerSecond="150"
 				TargetAttributeModifierAdd=""
 				SweepFX=""
 				ReflectorExtendDistance="0"
@@ -1144,7 +1095,7 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="False"
 				FaceTarget="True"
-				DamagePerSecond="160"
+				DamagePerSecond="150"
 				TargetAttributeModifierAdd=""
 				SweepFX=""
 				ReflectorExtendDistance="550"
@@ -1258,6 +1209,37 @@
 				ApplyToContained="False">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
+			
+			<GrantUpgradeCreate
+				id="0x6F52F9B4"
+				UpgradeToGrant="Upgrade_SelectBeamCombine" />
+			<RemoveUpgradeUpgrade
+				id="0x3BD10897">
+				<TriggeredBy>Upgrade_SelectBeamCombine</TriggeredBy>
+				<UpgradeToRemove>Upgrade_SelectBeamDebuff</UpgradeToRemove>
+			</RemoveUpgradeUpgrade>
+			<RemoveUpgradeUpgrade
+				id="0x75A721C3">
+				<TriggeredBy>Upgrade_SelectBeamDebuff</TriggeredBy>
+				<UpgradeToRemove>Upgrade_SelectBeamCombine</UpgradeToRemove>
+			</RemoveUpgradeUpgrade>
+			<StatusBitsUpgrade
+				id="0x500A5647"
+				StatusToSet="WEAPON_UPGRADED_01"
+				StatusToClear="WEAPON_UPGRADED_02">
+				<TriggeredBy>Upgrade_SelectBeamCombine</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="0x748F853F"
+				StatusToSet="WEAPON_UPGRADED_02"
+				StatusToClear="WEAPON_UPGRADED_01">
+				<TriggeredBy>Upgrade_SelectBeamDebuff</TriggeredBy>
+			</StatusBitsUpgrade>
+			<StatusBitsUpgrade
+				id="0x1F159A60"
+				StatusToSet="WEAPON_UPGRADED_03">
+				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
+			</StatusBitsUpgrade>				
 		</Behaviors>
 		<AI>
 			<AIUpdate

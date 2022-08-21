@@ -429,13 +429,6 @@
 		<Cmd>Command_NodCallForTransportVehicle</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
-		id="BlackHandBeamCannonCommandSet">
-		<Cmd>Command_ChargeDefenses</Cmd>
-		<Cmd>Command_ReflectorAttack</Cmd>
-		<Cmd>Command_AttackMove</Cmd>
-		<Cmd>Command_NodCallForTransportVehicle</Cmd>
-	</LogicCommandSet>
-	<LogicCommandSet
 		id="BlackHandMobileArtilleryCommandSet">
 		<Cmd>Command_AttackMove</Cmd>
 		<Cmd>Command_NodCallForTransportVehicle</Cmd>
@@ -644,11 +637,12 @@
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>	
 	
-	<!-- ######################### BEAM VENOM FIX ############### -->
-				  
+	<!-- ######################### BEAM VENOM FIX ############### --> 
+				 				  
 	<LogicCommandSet
 		id="NODBeamCannonCommandSet">
-		<Cmd>Command_ChargeDefenses</Cmd>
+		<Cmd>Command_SelectBeamCombine</Cmd>
+		<Cmd>Command_SelectBeamDebuff</Cmd>
 		<Cmd>Command_ReflectorAttack</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 		<Cmd>Command_NodCallForTransportVehicle</Cmd>
@@ -656,11 +650,33 @@
 
 	<LogicCommandSet
 	id="MarkedOfKaneBeamCannonCommandSet">
-		<Cmd>Command_ChargeDefenses</Cmd>
+		<Cmd>Command_SelectBeamCombine</Cmd>
+		<Cmd>Command_SelectBeamDebuff</Cmd>
 		<Cmd>Command_ReflectorAttack</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 		<Cmd>Command_NodCallForTransportVehicle</Cmd>
 	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="BlackHandBeamCannonCommandSet">
+		<Cmd>Command_SelectBeamCombine</Cmd>
+		<Cmd>Command_SelectBeamDebuff</Cmd>
+		<Cmd>Command_ReflectorAttack</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+	</LogicCommandSet>	
+
+	<LogicCommand
+		id="Command_SelectBeamCombine"
+		Type="OBJECT_UPGRADE">
+		<UpgradeTemplate>Upgrade_SelectBeamCombine</UpgradeTemplate>
+	</LogicCommand>
+
+	<LogicCommand
+		id="Command_SelectBeamDebuff"
+		Type="OBJECT_UPGRADE">
+		<UpgradeTemplate>Upgrade_SelectBeamDebuff</UpgradeTemplate>
+	</LogicCommand>
 	
 	<!-- ###################################### -->
 	

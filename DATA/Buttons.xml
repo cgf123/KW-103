@@ -359,5 +359,40 @@
 		</Data>
 	</PlayerPowerButtonTemplate>	
 	
+	<!-- Beam debuff -->
+
+	<ButtonSingleStateData
+		id="ButtonStateUpgradeBeamCombine">
+		<State
+			Image="Button_AbilityChargeDefenses"
+			Title="Name:AbilityBeamCombine_103"
+			Description="DESC:AbilityBeamCombine_103" />
+	</ButtonSingleStateData>
+
+	<ButtonSingleStateData
+		id="ButtonStateUpgradeBeamDebuff">
+		<State
+			Image="Button_AbilityBeamDebuff"
+			Title="Name:AbilityBeamDebuff_103"
+			Description="DESC:AbilityBeamDebuff_103" />
+	</ButtonSingleStateData>
+
+	<UnitAbilityButtonTemplate
+		id="ButtonUpgradeBeamCombine"
+		LogicCommand="Command_SelectBeamCombine">
+		<Data>
+			<ObjectUpgrade
+				StateData="ButtonStateUpgradeBeamCombine" />
+		</Data>
+	</UnitAbilityButtonTemplate>
+
+	<UnitAbilityButtonTemplate
+		id="ButtonUpgradeBeamDebuff"
+		LogicCommand="Command_SelectBeamDebuff">
+		<Data>
+			<ObjectUpgrade
+				StateData="ButtonStateUpgradeBeamDebuff" />
+		</Data>
+	</UnitAbilityButtonTemplate>		
 	
 </AssetDeclaration>
