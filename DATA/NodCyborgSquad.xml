@@ -432,7 +432,7 @@
 					StartRechargeOnExit="True"
 					GoIdleInStartPreparation="True"
 					FaceTarget="True"
-					SpecialWeapon="NODCyborgEMPCannon1"
+					SpecialWeapon="NODCyborgEMPCannon2"
 					WhichSpecialWeapon="1"
 					BusyForDuration="0.0s"
 					WeaponSlotID="1"

@@ -428,12 +428,22 @@
 		<Cmd>Command_AttackMove</Cmd>
 		<Cmd>Command_NodCallForTransportVehicle</Cmd>
 	</LogicCommandSet>
+
+	<!-- BH BOMBARD!! -->
+  <LogicCommand
+		Options="NEED_TARGET_ALLY_OBJECT"
+		Type="SPECIAL_POWER"
+		id="Command_CommandoBombard">
+    <SpecialPower>SpecialPower_CommandoBombard</SpecialPower>
+  </LogicCommand>
+	
 	<LogicCommandSet
 		id="BlackHandMobileArtilleryCommandSet">
 		<Cmd>Command_AttackMove</Cmd>
 		<Cmd>Command_NodCallForTransportVehicle</Cmd>
+		<Cmd>Command_CommandoBombard</Cmd>				
 	</LogicCommandSet>	
-	
+		
 	<!-- BH VENOMS !!!!!!!! -->	
 	<LogicCommandSet
 		id="BlackHandHangarCommandSet">
@@ -668,6 +678,19 @@
 
 	<LogicCommand
 		id="Command_SelectBeamCombine"
+		Type="SPECIAL_POWER">
+		<SpecialPower>SpecialPower_SelectBeamCombine</SpecialPower>
+	</LogicCommand>
+
+	<LogicCommand
+		id="Command_SelectBeamDebuff"
+		Type="SPECIAL_POWER">
+		<SpecialPower>SpecialPower_SelectBeamDebuff</SpecialPower>
+	</LogicCommand>
+
+	<!--
+	<LogicCommand
+		id="Command_SelectBeamCombine"
 		Type="OBJECT_UPGRADE">
 		<UpgradeTemplate>Upgrade_SelectBeamCombine</UpgradeTemplate>
 	</LogicCommand>
@@ -677,6 +700,7 @@
 		Type="OBJECT_UPGRADE">
 		<UpgradeTemplate>Upgrade_SelectBeamDebuff</UpgradeTemplate>
 	</LogicCommand>
+	-->
 	
 	<!-- ###################################### -->
 	

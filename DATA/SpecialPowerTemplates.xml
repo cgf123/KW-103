@@ -70,9 +70,10 @@
 	<SpecialPowerTemplate
 		id="NODBeamCannonLaserSpecialPower"
 		TargetType="OBJECT"
-		Flags="NO_FORBIDDEN_OBJECTS"
-		PreventConditions="WEAPON_UPGRADED_02"
-		RequiredConditions="WEAPON_UPGRADED_01">
+		Flags="NO_FORBIDDEN_OBJECTS">
+		<!--
+		<GameDependency
+			RequiredObjectStatusAny="WEAPON_UPGRADED_01" />	-->
 		<ForbiddenObjectFilter
 			Rule="ANY"
 			Include="INFANTRY AIRCRAFT"
@@ -88,7 +89,41 @@
 
 	<SpecialPowerTemplate
 		id="NODBeamCannonLaserSpecialPower1"
-		TargetType="OBJECT" />	
+		TargetType="OBJECT">
+	</SpecialPowerTemplate>
+
+	<!--
+	<SpecialPowerTemplate
+		id="NODBeamCannonLaserSpecialPower1"
+		TargetType="OBJECT"
+		Flags="NO_FORBIDDEN_OBJECTS">
+		<ForbiddenObjectFilter
+			Rule="ANY"
+			Include="INFANTRY AIRCRAFT"
+			Exclude="MCV"
+			StatusBitFlags="AIRBORNE_TARGET">
+			<ExcludeThing>AlienMothership</ExcludeThing>
+			<ExcludeThing>AlienPlanetaryAssaultCarrier</ExcludeThing>
+			<ExcludeThing>Traveler59PlanetaryAssaultCarrier</ExcludeThing>
+			<ExcludeThing>AlienDevastatorWarship</ExcludeThing>
+			<ExcludeThing>Traveler59DevastatorWarship</ExcludeThing>
+		</ForbiddenObjectFilter>
+	</SpecialPowerTemplate>
+	-->
+	
+	<SpecialPowerTemplate
+		id="SpecialPower_SelectBeamCombine"
+		TargetType="NONE">
+		<GameDependency
+			RequiredObjectStatusAny="WEAPON_UPGRADED_02" />
+	</SpecialPowerTemplate>
+
+	<SpecialPowerTemplate
+		id="SpecialPower_SelectBeamDebuff"
+		TargetType="NONE" >
+		<GameDependency
+			RequiredObjectStatusAny="WEAPON_UPGRADED_01" />
+	</SpecialPowerTemplate>
 		
 	<SpecialPowerTemplate
 		id="SpecialPowerComputerCounterMeasures"
@@ -251,7 +286,7 @@
 		RequiredTargetObjectStatus="CAN_SPOT_FOR_BOMBARD"
 		DisallowedTargetObjectStatus="IN_STASIS"
 		DisallowedTargetModelStates="TRANSPORT_MOVING"
-		ReloadTime="10s"
+		ReloadTime="5s"
 		RadiusCursorRadius="50"
 		TargetType="LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x933DCB8B"
@@ -276,7 +311,7 @@
 		RequiredTargetObjectStatus="CAN_SPOT_FOR_BOMBARD"
 		DisallowedTargetObjectStatus="IN_STASIS"
 		DisallowedTargetModelStates="TRANSPORT_MOVING"
-		ReloadTime="10s"
+		ReloadTime="5s"
 		RadiusCursorRadius="50"
 		TargetType="LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x933DCB8B"
@@ -303,7 +338,7 @@
 		RequiredTargetObjectStatus=""
 		DisallowedTargetObjectStatus="IN_STASIS AIRBORNE_TARGET"
 		DisallowedTargetModelStates="MOVING TRANSPORT_MOVING FLYING"		
-		ReloadTime="10s"
+		ReloadTime="5s"
 		RadiusCursorRadius="100"
 		TargetType="LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x933DCB8B"
@@ -328,6 +363,35 @@
 		</GameDependency>
 
 	</SpecialPowerTemplate>	
+	
+	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateSpotTargetBombard" -->
+	<SpecialPowerTemplate
+		id="SpecialPower_CommandoBombard"
+		Flags="LIMIT_DISTANCE NEEDS_OBJECT_FILTER FIND_REACHABLE_TARGETS WATER_OK TARGET_NEEDS_OBJECT_STATUS"
+		RequiredTargetObjectStatus=""
+		DisallowedTargetObjectStatus="IN_STASIS AIRBORNE_TARGET"
+		DisallowedTargetModelStates="TRANSPORT_MOVING FLYING"		
+		ReloadTime="5s"
+		RadiusCursorRadius="100"
+		TargetType="LOCATION"
+		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x933DCB8B"
+		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+		MinCastRange="300"
+		MaxCastRange="50000"
+		ReachableTargetsCircleDisplayRadius="500">
+		<ObjectFilter
+			Relationship="ALLIES"
+			Rule="ANY" >
+			<IncludeThing>BlackHandCommando</IncludeThing>						
+		</ObjectFilter>
+		<GameDependency>
+			<ObjectFilter
+				Relationship="ALLIES">
+			<IncludeThing>BlackHandCommando</IncludeThing>				
+			</ObjectFilter>
+		</GameDependency>
+
+	</SpecialPowerTemplate>		
 	
 	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiatePlaceSatchelCharge_NOD" -->
 	<SpecialPowerTemplate
@@ -591,7 +655,7 @@
 		RadiusCursorRadius="140"
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		Money="-3200"
+		Money="-2800"
 		InitiateAtLocationSound="AudioEvent:GDI_Ox_VoiceReinforcements">
 		<ForbiddenObjectFilter
 			Rule="ANY"

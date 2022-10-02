@@ -359,8 +359,27 @@
 		</Data>
 	</PlayerPowerButtonTemplate>	
 	
+	<!-- BH Bombard -->
+	<ButtonSingleStateData
+		id="ButtonStateCommandoBombard">
+		<State
+			Image="Button_AbilitySpotTargetBombard"
+			Title="NAME:AbilityBombardBeacon"
+			Description="DESC:AbilityBombardBeacon"  />
+	</ButtonSingleStateData>	
+	
+	<UnitAbilityButtonTemplate
+		id="ButtonCommandoBombard"
+		LogicCommand="Command_CommandoBombard">
+		<Data>
+			<TargetedSpecialPower
+				StateData="ButtonStateCommandoBombard"
+				RadiusCursor="TargetingDecalBombardSpottedTarget" />
+		</Data>
+	</UnitAbilityButtonTemplate>	
+	
+	
 	<!-- Beam debuff -->
-
 	<ButtonSingleStateData
 		id="ButtonStateUpgradeBeamCombine">
 		<State
@@ -381,6 +400,25 @@
 		id="ButtonUpgradeBeamCombine"
 		LogicCommand="Command_SelectBeamCombine">
 		<Data>
+			<SpecialPower
+				StateData="ButtonStateUpgradeBeamCombine" />
+		</Data>
+	</UnitAbilityButtonTemplate>
+
+	<UnitAbilityButtonTemplate
+		id="ButtonUpgradeBeamDebuff"
+		LogicCommand="Command_SelectBeamDebuff">
+		<Data>
+			<SpecialPower
+				StateData="ButtonStateUpgradeBeamDebuff" />
+		</Data>
+	</UnitAbilityButtonTemplate>	
+
+	<!--
+	<UnitAbilityButtonTemplate
+		id="ButtonUpgradeBeamCombine"
+		LogicCommand="Command_SelectBeamCombine">
+		<Data>
 			<ObjectUpgrade
 				StateData="ButtonStateUpgradeBeamCombine" />
 		</Data>
@@ -393,6 +431,7 @@
 			<ObjectUpgrade
 				StateData="ButtonStateUpgradeBeamDebuff" />
 		</Data>
-	</UnitAbilityButtonTemplate>		
+	</UnitAbilityButtonTemplate>	
+	-->
 	
 </AssetDeclaration>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<MultiplayerSettings
+		id="MultiplayerSettings">
+		<InitialCreditsVeryLow>500</InitialCreditsVeryLow>
+		<InitialCreditsLow>1000</InitialCreditsLow>
+		<InitialCreditsMedium>1500</InitialCreditsMedium>
+		<InitialCreditsHigh>2000</InitialCreditsHigh>
+		<InitialCreditsVeryHigh>2500</InitialCreditsVeryHigh>
+		<StartCountdownTimer>5</StartCountdownTimer>
+		<MaxBeaconsPerPlayer>3</MaxBeaconsPerPlayer>
+		<GameStatsModeData
+			GameStatsMode="ONLINE_RANKED_1V1_GAME">
+			<AvailableMapName>BAMAP_RH01_4</AvailableMapName>
+			<AvailableMapName>BAMAP_DC08_4</AvailableMapName>
+			<AvailableMapName>BAMAP_DC05_2</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_WILL1</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_BLACK5</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_BASS1</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_BLACK7</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_BLACK9</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_BLACK2</AvailableMapName>
+			<AvailableMapName>Tournament Decision 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Rift 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Tower 1.03</AvailableMapName>
+			<AvailableMapName>Small Town USA 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Arena 1.03</AvailableMapName>
+			<AvailableMapName>Pipeline Problems 1.03</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.03</AvailableMapName>
+			<AvailableMapName>Crosstown Conflict 1.03</AvailableMapName>
+			<AvailableMapName>Forest Arena 1.03</AvailableMapName>
+			<AvailableMapName>Infested Coastline 1.03</AvailableMapName>
+			<AvailableMapName>Mountain Pass 1.03</AvailableMapName>
+			<AvailableMapName>Pipeline Nightmares 1.03</AvailableMapName>
+			<AvailableMapName>Tiberium Zone 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Airstrip 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Alpine 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Badlands 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Stadium 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Towerless 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Undergrounds 1.03</AvailableMapName>
+			<AvailableMapName>Twilight City 1.03</AvailableMapName>
+			<AvailableMapName>Twisted Arena 1.03</AvailableMapName>
+			<AvailableMapName>Twisted Rift 1.03</AvailableMapName>
+			<AvailableMapName>Smashed Decision 1.03</AvailableMapName>
+			<AvailableMapName>Smashed Dustbowl 1.03</AvailableMapName>
+			<AvailableMapName>Smashed Town USA 1.03</AvailableMapName>
+			<AvailableMapName>Vista Valley 1.03</AvailableMapName>
+			<AvailableMapName>Vertical Abyss 1.03</AvailableMapName>
+			<AvailableMapName>Volcano Struggle 1.03</AvailableMapName>
+			<AvailableMapName>Winter Meltdown 1.03</AvailableMapName>
+			<AvailableMapName>Slippery Slope 1.03</AvailableMapName>
+			<AvailableMapName>Tournament LA 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Decision NoPoker 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl NoPoker 1.03</AvailableMapName>
+			<AvailableMapName>Tiki Turmoil 1.03</AvailableMapName>
+			<AvailableMapName>Tiberium Rift 1.03</AvailableMapName>
+			<AvailableMapName>Atacama Road 1.03</AvailableMapName>
+			<AvailableMapName>Sick City 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Galaxy 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Highlands 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Odyssey 1.03</AvailableMapName>
+			<AvailableMapName>Golden Hour 1.03</AvailableMapName>
+			<AvailableMapName>Extraction Plateau 1.03</AvailableMapName>
+			<AvailableMapName>Troops Of Triumph 1.03</AvailableMapName>
+			<AvailableMapName>Battlebase Beaverton 1.03</AvailableMapName>
+			<AvailableMapName>Het Platteland 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Crater 1.03</AvailableMapName>
+			<AvailableMapName>Bambooweeds 1.03</AvailableMapName>
+			<AvailableMapName>Redzone 7 Wyoming 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Decision 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Rift 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Tower 1.02+__18</AvailableMapName>
+			<AvailableMapName>Small Town USA 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Arena 1.02+__18</AvailableMapName>
+			<AvailableMapName>Pipeline Problems 1.02+__18</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.02+__18</AvailableMapName>
+			<AvailableMapName>Crosstown Conflict 1.02+__18</AvailableMapName>
+			<AvailableMapName>Forest Arena 1.02+__18</AvailableMapName>
+			<AvailableMapName>Infested Coastline 1.02+__18</AvailableMapName>
+			<AvailableMapName>Mountain Pass 1.02+__18</AvailableMapName>
+			<AvailableMapName>Pipeline Nightmares 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tiberium Zone 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Airstrip 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Alpine 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Badlands 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Stadium 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Towerless 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Undergrounds 1.02+__18</AvailableMapName>
+			<AvailableMapName>Twilight City 1.02+__18</AvailableMapName>
+			<AvailableMapName>Twisted Arena 1.02+__18</AvailableMapName>
+			<AvailableMapName>Twisted Rift 1.02+__18</AvailableMapName>
+			<AvailableMapName>Smashed Decision 1.02+__18</AvailableMapName>
+			<AvailableMapName>Smashed Dustbowl 1.02+__18</AvailableMapName>
+			<AvailableMapName>Smashed Town USA 1.02+__18</AvailableMapName>
+			<AvailableMapName>Vista Valley 1.02+__18</AvailableMapName>
+			<AvailableMapName>Vertical Abyss 1.02+__18</AvailableMapName>
+			<AvailableMapName>Volcano Struggle 1.02+__18</AvailableMapName>
+			<AvailableMapName>Winter Meltdown 1.02+__18</AvailableMapName>
+			<AvailableMapName>Slippery Slope 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament LA 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Decision NoPoker 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl NoPoker 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tiki Turmoil 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tiberium Rift 1.02+__18</AvailableMapName>
+			<AvailableMapName>Atacama Road 1.02+__18</AvailableMapName>
+			<AvailableMapName>Sick City 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Galaxy 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Highlands 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Odyssey 1.02+__18</AvailableMapName>
+			<AvailableMapName>Golden Hour 1.02+__18</AvailableMapName>
+			<AvailableMapName>Extraction Plateau 1.02+__18</AvailableMapName>
+			<AvailableMapName>Troops Of Triumph 1.02+__18</AvailableMapName>
+			<AvailableMapName>Battlebase Beaverton 1.02+__18</AvailableMapName>
+			<AvailableMapName>Het Platteland 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Crater 1.02+__18</AvailableMapName>
+			<AvailableMapName>Bambooweeds 1.02+__18</AvailableMapName>
+			<AvailableMapName>Redzone 7 Wyoming 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Decision 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Rift 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Tower 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Small Town USA 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Arena 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Pipeline Problems 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Crosstown Conflict 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Forest Arena 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Infested Coastline 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Mountain Pass 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Pipeline Nightmares 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tiberium Zone 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Airstrip 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Alpine 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Badlands 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Stadium 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Towerless 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Undergrounds 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Twilight City 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Twisted Arena 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Twisted Rift 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Smashed Decision 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Smashed Dustbowl 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Smashed Town USA 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Vista Valley 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Vertical Abyss 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Volcano Struggle 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Winter Meltdown 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl NoPoker 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tiki Turmoil 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tiberium Rift 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Atacama Road 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Sick City 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Galaxy 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Highlands 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Odyssey 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Golden Hour 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Extraction Plateau 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Troops Of Triumph 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Battlebase Beaverton 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Het Platteland 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Crater 1.02+__19g</AvailableMapName>
+		</GameStatsModeData>
+		<GameStatsModeData
+			GameStatsMode="ONLINE_CLAN_1V1_GAME">
+			<AvailableMapName>BAMAP_RH01_4</AvailableMapName>
+			<AvailableMapName>BAMAP_DC08_4</AvailableMapName>
+			<AvailableMapName>BAMAP_DC05_2</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_WILL1</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_BLACK5</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_BASS1</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_BLACK7</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_BLACK9</AvailableMapName>
+			<AvailableMapName>MAP_MP_2_BLACK2</AvailableMapName>
+			<AvailableMapName>Tournament Decision 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Rift 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Tower 1.03</AvailableMapName>
+			<AvailableMapName>Small Town USA 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Arena 1.03</AvailableMapName>
+			<AvailableMapName>Pipeline Problems 1.03</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.03</AvailableMapName>
+			<AvailableMapName>Crosstown Conflict 1.03</AvailableMapName>
+			<AvailableMapName>Forest Arena 1.03</AvailableMapName>
+			<AvailableMapName>Infested Coastline 1.03</AvailableMapName>
+			<AvailableMapName>Mountain Pass 1.03</AvailableMapName>
+			<AvailableMapName>Pipeline Nightmares 1.03</AvailableMapName>
+			<AvailableMapName>Tiberium Zone 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Airstrip 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Alpine 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Badlands 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Stadium 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Towerless 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Undergrounds 1.03</AvailableMapName>
+			<AvailableMapName>Twilight City 1.03</AvailableMapName>
+			<AvailableMapName>Twisted Arena 1.03</AvailableMapName>
+			<AvailableMapName>Twisted Rift 1.03</AvailableMapName>
+			<AvailableMapName>Smashed Decision 1.03</AvailableMapName>
+			<AvailableMapName>Smashed Dustbowl 1.03</AvailableMapName>
+			<AvailableMapName>Smashed Town USA 1.03</AvailableMapName>
+			<AvailableMapName>Vista Valley 1.03</AvailableMapName>
+			<AvailableMapName>Vertical Abyss 1.03</AvailableMapName>
+			<AvailableMapName>Volcano Struggle 1.03</AvailableMapName>
+			<AvailableMapName>Winter Meltdown 1.03</AvailableMapName>
+			<AvailableMapName>Slippery Slope 1.03</AvailableMapName>
+			<AvailableMapName>Tournament LA 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Decision NoPoker 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl NoPoker 1.03</AvailableMapName>
+			<AvailableMapName>Tiki Turmoil 1.03</AvailableMapName>
+			<AvailableMapName>Tiberium Rift 1.03</AvailableMapName>
+			<AvailableMapName>Atacama Road 1.03</AvailableMapName>
+			<AvailableMapName>Sick City 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Galaxy 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Highlands 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Odyssey 1.03</AvailableMapName>
+			<AvailableMapName>Golden Hour 1.03</AvailableMapName>
+			<AvailableMapName>Extraction Plateau 1.03</AvailableMapName>
+			<AvailableMapName>Troops Of Triumph 1.03</AvailableMapName>
+			<AvailableMapName>Battlebase Beaverton 1.03</AvailableMapName>
+			<AvailableMapName>Het Platteland 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Crater 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Decision 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Rift 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Tower 1.02+__18</AvailableMapName>
+			<AvailableMapName>Small Town USA 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Arena 1.02+__18</AvailableMapName>
+			<AvailableMapName>Pipeline Problems 1.02+__18</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.02+__18</AvailableMapName>
+			<AvailableMapName>Crosstown Conflict 1.02+__18</AvailableMapName>
+			<AvailableMapName>Forest Arena 1.02+__18</AvailableMapName>
+			<AvailableMapName>Infested Coastline 1.02+__18</AvailableMapName>
+			<AvailableMapName>Mountain Pass 1.02+__18</AvailableMapName>
+			<AvailableMapName>Pipeline Nightmares 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tiberium Zone 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Airstrip 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Alpine 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Badlands 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Stadium 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Towerless 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Undergrounds 1.02+__18</AvailableMapName>
+			<AvailableMapName>Twilight City 1.02+__18</AvailableMapName>
+			<AvailableMapName>Twisted Arena 1.02+__18</AvailableMapName>
+			<AvailableMapName>Twisted Rift 1.02+__18</AvailableMapName>
+			<AvailableMapName>Smashed Decision 1.02+__18</AvailableMapName>
+			<AvailableMapName>Smashed Dustbowl 1.02+__18</AvailableMapName>
+			<AvailableMapName>Smashed Town USA 1.02+__18</AvailableMapName>
+			<AvailableMapName>Vista Valley 1.02+__18</AvailableMapName>
+			<AvailableMapName>Vertical Abyss 1.02+__18</AvailableMapName>
+			<AvailableMapName>Volcano Struggle 1.02+__18</AvailableMapName>
+			<AvailableMapName>Winter Meltdown 1.02+__18</AvailableMapName>
+			<AvailableMapName>Slippery Slope 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament LA 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Decision NoPoker 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl NoPoker 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tiki Turmoil 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tiberium Rift 1.02+__18</AvailableMapName>
+			<AvailableMapName>Atacama Road 1.02+__18</AvailableMapName>
+			<AvailableMapName>Sick City 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Galaxy 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Highlands 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Odyssey 1.02+__18</AvailableMapName>
+			<AvailableMapName>Golden Hour 1.02+__18</AvailableMapName>
+			<AvailableMapName>Extraction Plateau 1.02+__18</AvailableMapName>
+			<AvailableMapName>Troops Of Triumph 1.02+__18</AvailableMapName>
+			<AvailableMapName>Battlebase Beaverton 1.02+__18</AvailableMapName>
+			<AvailableMapName>Het Platteland 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Crater 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Decision 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Rift 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Tower 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Small Town USA 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Arena 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Pipeline Problems 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Crosstown Conflict 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Forest Arena 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Infested Coastline 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Mountain Pass 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Pipeline Nightmares 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tiberium Zone 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Airstrip 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Alpine 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Badlands 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Stadium 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Towerless 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Undergrounds 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Twilight City 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Twisted Arena 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Twisted Rift 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Smashed Decision 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Smashed Dustbowl 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Smashed Town USA 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Vista Valley 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Vertical Abyss 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Volcano Struggle 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Winter Meltdown 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Dustbowl NoPoker 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tiki Turmoil 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tiberium Rift 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Atacama Road 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Sick City 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Galaxy 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Highlands 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Odyssey 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Golden Hour 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Extraction Plateau 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Troops Of Triumph 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Battlebase Beaverton 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Het Platteland 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Crater 1.02+__19g</AvailableMapName>
+		</GameStatsModeData>
+		<GameStatsModeData
+			GameStatsMode="ONLINE_RANKED_2V2_GAME">
+			<AvailableMapName>BAMAP_EW01_4</AvailableMapName>
+			<AvailableMapName>BAMAP_DC06_4</AvailableMapName>
+			<AvailableMapName>BAMAP_DC01_4</AvailableMapName>
+			<AvailableMapName>BAMAP_EW03_04</AvailableMapName>
+			<AvailableMapName>MAP_MP_4_BASS</AvailableMapName>
+			<AvailableMapName>MAP_MP_4_CHUCK2</AvailableMapName>
+			<AvailableMapName>BAMAP_RH01_4</AvailableMapName>
+			<AvailableMapName>BAMAP_DC04_3</AvailableMapName>
+			<AvailableMapName>Wrecktropolis 1.03</AvailableMapName>
+			<AvailableMapName>Unsound Investment 1.03</AvailableMapName>
+			<AvailableMapName>Downtown Dustbowl 1.03</AvailableMapName>
+			<AvailableMapName>End of the Line 1.03</AvailableMapName>
+			<AvailableMapName>Crater of Carnage 1.03</AvailableMapName>
+			<AvailableMapName>Grasslands Landgrab 1.03</AvailableMapName>
+			<AvailableMapName>Oasis Onslaught 1.03</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.03</AvailableMapName>
+			<AvailableMapName>Alpine Valleys 1.03</AvailableMapName>
+			<AvailableMapName>Asteroid Outpost 1.03</AvailableMapName>
+			<AvailableMapName>Battle City 1.03</AvailableMapName>
+			<AvailableMapName>Battle Stadium 1.03</AvailableMapName>
+			<AvailableMapName>Hurricane Lands 1.03</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.03</AvailableMapName>
+			<AvailableMapName>Forgotten Forest 1.03</AvailableMapName>
+			<AvailableMapName>Forgotten Dunes 1.03</AvailableMapName>
+			<AvailableMapName>GDI Space Command 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.03</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.03</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.03</AvailableMapName>
+			<AvailableMapName>Wasteland Dam 1.03</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.03</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.03</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.03</AvailableMapName>
+			<AvailableMapName>Tiberian Forest 1.03</AvailableMapName>
+			<AvailableMapName>Wrecktropolis 1.02+__18</AvailableMapName>
+			<AvailableMapName>Unsound Investment 1.02+__18</AvailableMapName>
+			<AvailableMapName>Downtown Dustbowl 1.02+__18</AvailableMapName>
+			<AvailableMapName>End of the Line 1.02+__18</AvailableMapName>
+			<AvailableMapName>Crater of Carnage 1.02+__18</AvailableMapName>
+			<AvailableMapName>Grasslands Landgrab 1.02+__18</AvailableMapName>
+			<AvailableMapName>Oasis Onslaught 1.02+__18</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.02+__18</AvailableMapName>
+			<AvailableMapName>Alpine Valleys 1.02+__18</AvailableMapName>
+			<AvailableMapName>Asteroid Outpost 1.02+__18</AvailableMapName>
+			<AvailableMapName>Battle City 1.02+__18</AvailableMapName>
+			<AvailableMapName>Battle Stadium 1.02+__18</AvailableMapName>
+			<AvailableMapName>Hurricane Lands 1.02+__18</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.02+__18</AvailableMapName>
+			<AvailableMapName>Forgotten Forest 1.02+__18</AvailableMapName>
+			<AvailableMapName>Forgotten Dunes 1.02+__18</AvailableMapName>
+			<AvailableMapName>GDI Space Command 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.02+__18</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.02+__18</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.02+__18</AvailableMapName>
+			<AvailableMapName>Wasteland Dam 1.02+__18</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.02+__18</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.02+__18</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tiberian Forest 1.02+__18</AvailableMapName>
+			<AvailableMapName>Wrecktropolis 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Unsound Investment 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Downtown Dustbowl 1.02+__19g</AvailableMapName>
+			<AvailableMapName>End of the Line 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Crater of Carnage 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Grasslands Landgrab 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Oasis Onslaught 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Alpine Valleys 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Asteroid Outpost 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Battle City 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Battle Stadium 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Hurricane Lands 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Forgotten Forest 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Forgotten Dunes 1.02+__19g</AvailableMapName>
+			<AvailableMapName>GDI Space Command 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Wasteland Dam 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tiberian Forest 1.02+__19g</AvailableMapName>
+		</GameStatsModeData>
+		<GameStatsModeData
+			GameStatsMode="ONLINE_CLAN_2V2_GAME">
+			<AvailableMapName>BAMAP_EW01_4</AvailableMapName>
+			<AvailableMapName>BAMAP_DC06_4</AvailableMapName>
+			<AvailableMapName>BAMAP_DC01_4</AvailableMapName>
+			<AvailableMapName>BAMAP_EW03_04</AvailableMapName>
+			<AvailableMapName>MAP_MP_4_BASS</AvailableMapName>
+			<AvailableMapName>MAP_MP_4_CHUCK2</AvailableMapName>
+			<AvailableMapName>BAMAP_RH01_4</AvailableMapName>
+			<AvailableMapName>BAMAP_DC04_3</AvailableMapName>
+			<AvailableMapName>Wrecktropolis 1.03</AvailableMapName>
+			<AvailableMapName>Unsound Investment 1.03</AvailableMapName>
+			<AvailableMapName>Downtown Dustbowl 1.03</AvailableMapName>
+			<AvailableMapName>End of the Line 1.03</AvailableMapName>
+			<AvailableMapName>Crater of Carnage 1.03</AvailableMapName>
+			<AvailableMapName>Grasslands Landgrab 1.03</AvailableMapName>
+			<AvailableMapName>Oasis Onslaught 1.03</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.03</AvailableMapName>
+			<AvailableMapName>Alpine Valleys 1.03</AvailableMapName>
+			<AvailableMapName>Asteroid Outpost 1.03</AvailableMapName>
+			<AvailableMapName>Battle City 1.03</AvailableMapName>
+			<AvailableMapName>Battle Stadium 1.03</AvailableMapName>
+			<AvailableMapName>Hurricane Lands 1.03</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.03</AvailableMapName>
+			<AvailableMapName>Forgotten Forest 1.03</AvailableMapName>
+			<AvailableMapName>Forgotten Dunes 1.03</AvailableMapName>
+			<AvailableMapName>GDI Space Command 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.03</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.03</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.03</AvailableMapName>
+			<AvailableMapName>Wasteland Dam 1.03</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.03</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.03</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.03</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.03</AvailableMapName>
+			<AvailableMapName>Tiberian Forest 1.03</AvailableMapName>
+			<AvailableMapName>Wrecktropolis 1.02+__18</AvailableMapName>
+			<AvailableMapName>Unsound Investment 1.02+__18</AvailableMapName>
+			<AvailableMapName>Downtown Dustbowl 1.02+__18</AvailableMapName>
+			<AvailableMapName>End of the Line 1.02+__18</AvailableMapName>
+			<AvailableMapName>Crater of Carnage 1.02+__18</AvailableMapName>
+			<AvailableMapName>Grasslands Landgrab 1.02+__18</AvailableMapName>
+			<AvailableMapName>Oasis Onslaught 1.02+__18</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.02+__18</AvailableMapName>
+			<AvailableMapName>Alpine Valleys 1.02+__18</AvailableMapName>
+			<AvailableMapName>Asteroid Outpost 1.02+__18</AvailableMapName>
+			<AvailableMapName>Battle City 1.02+__18</AvailableMapName>
+			<AvailableMapName>Battle Stadium 1.02+__18</AvailableMapName>
+			<AvailableMapName>Hurricane Lands 1.02+__18</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.02+__18</AvailableMapName>
+			<AvailableMapName>Forgotten Forest 1.02+__18</AvailableMapName>
+			<AvailableMapName>Forgotten Dunes 1.02+__18</AvailableMapName>
+			<AvailableMapName>GDI Space Command 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.02+__18</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.02+__18</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.02+__18</AvailableMapName>
+			<AvailableMapName>Wasteland Dam 1.02+__18</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.02+__18</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.02+__18</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.02+__18</AvailableMapName>
+			<AvailableMapName>Tiberian Forest 1.02+__18</AvailableMapName>
+			<AvailableMapName>Wrecktropolis 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Unsound Investment 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Downtown Dustbowl 1.02+__19g</AvailableMapName>
+			<AvailableMapName>End of the Line 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Crater of Carnage 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Grasslands Landgrab 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Oasis Onslaught 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Heaven and Hell 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Alpine Valleys 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Asteroid Outpost 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Battle City 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Battle Stadium 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Hurricane Lands 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Forgotten Forest 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Forgotten Dunes 1.02+__19g</AvailableMapName>
+			<AvailableMapName>GDI Space Command 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Wasteland Dam 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Ice Arena 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tournament Shaft 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Volcano Valleys 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Wasteland Circles 1.02+__19g</AvailableMapName>
+			<AvailableMapName>Tiberian Forest 1.02+__19g</AvailableMapName>
+		</GameStatsModeData>
+		<ShowRandomPlayerTemplate>True</ShowRandomPlayerTemplate>
+		<ShowRandomStartPos>True</ShowRandomStartPos>
+		<ShowRandomColor>True</ShowRandomColor>
+	</MultiplayerSettings>
+</AssetDeclaration>

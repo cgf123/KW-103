@@ -4188,7 +4188,7 @@
 					DeathTypes="ALL"
 					DeathTypesForbidden="" />
 				<SpawnTemplate>MarvestDummy</SpawnTemplate>
-			</SpawnBehavior>				
+			</SpawnBehavior>	
 			<!-- Sniper vision boost!! -->
 			<AttributeModifierUpgrade
 				id="Upgrade_SniperBoostRL"

@@ -1691,14 +1691,12 @@
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
-					<!--
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIGrenadeSoldierGrenade_Garrison"
 						Upgrade=""
 						ObjectStatus="INSIDE_GARRISON"
 						IsPlayerUpgradePermanent="False" />		
-					-->
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<Physics
@@ -3948,14 +3946,12 @@
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
-					<!--
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIGrenadeSoldierGrenade_Garrison"
 						Upgrade=""
 						ObjectStatus="INSIDE_GARRISON"
-						IsPlayerUpgradePermanent="False" />		
-					-->					
+						IsPlayerUpgradePermanent="False" />				
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<Physics
@@ -5967,14 +5963,12 @@
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
-					<!--
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIGrenadeSoldierGrenade_Garrison"
 						Upgrade=""
 						ObjectStatus="INSIDE_GARRISON"
-						IsPlayerUpgradePermanent="False" />		
-					-->					
+						IsPlayerUpgradePermanent="False" />						
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
 			<Physics

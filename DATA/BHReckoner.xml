@@ -1141,7 +1141,12 @@
 					<IncludeThing>BlackHandMilitantRocket</IncludeThing>	
 					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>MarkedOfKaneMilitantRocket</IncludeThing>		
-					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>				
+					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>		
+					<IncludeThing>NODBlackHand</IncludeThing>		
+					<IncludeThing>NODBlackHandSquad</IncludeThing>		
+					<IncludeThing>BlackHandBlackHand</IncludeThing>		
+					<IncludeThing>BlackHandBlackHandSquad</IncludeThing>		
+					<IncludeThing>BlackHandBlackDisciple</IncludeThing>						
 				</ObjectFilter>
 				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>
 			</AttributeModifierAuraUpdate>				
@@ -1185,7 +1190,12 @@
 					<IncludeThing>BlackHandMilitantRocket</IncludeThing>	
 					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>MarkedOfKaneMilitantRocket</IncludeThing>		
-					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>				
+					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>
+					<IncludeThing>NODBlackHand</IncludeThing>		
+					<IncludeThing>NODBlackHandSquad</IncludeThing>		
+					<IncludeThing>BlackHandBlackHand</IncludeThing>		
+					<IncludeThing>BlackHandBlackHandSquad</IncludeThing>		
+					<IncludeThing>BlackHandBlackDisciple</IncludeThing>						
 				</ObjectFilter>
 				<ConflictsWith>Upgrade_DeployNODBunkerTruck</ConflictsWith>
 			</AttributeModifierAuraUpdate>	

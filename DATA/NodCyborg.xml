@@ -1532,7 +1532,7 @@
 		<Body>
 			<ActiveBody
 				id="FADB485A"
-				MaxHealth="300"
+				MaxHealth="350"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

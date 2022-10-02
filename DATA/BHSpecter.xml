@@ -946,7 +946,7 @@
 			</WeaponSetUpdate>
 			<SpecialPower
 				id="D91EDAFA"
-				SpecialPowerTemplate="SpecialPower_SpotBeaconBombard"
+				SpecialPowerTemplate="SpecialPower_CommandoBombard"
 				AntiCategory=""
 				AntiFX=""
 				AttributeModifier=""
@@ -1012,7 +1012,7 @@
 			<WeaponFireSpecialAbilityUpdate
 				id="E57FD838"
 				GrabPassengerHealGain="0%"
-				SpecialPowerTemplate="SpecialPower_SpotBeaconBombard"
+				SpecialPowerTemplate="SpecialPower_CommandoBombard"
 				StartAbilityRange="100000"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
@@ -1066,7 +1066,7 @@
 				DestealthClosestObjectMatchingFilter="True" />
 			<AISpecialPowerUpdate
 				id="29001BCD"
-				CommandButtonName="Command_SpotBeaconBombard"
+				CommandButtonName="SpecialPower_CommandoBombard"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_SPECIFIC_UNIT"
 				SpecialPowerRadius="200"

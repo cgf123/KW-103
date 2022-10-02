@@ -272,7 +272,7 @@
 		Description="UpgradeDesc:Reaper17ForcefieldGenerators"
 		Type="PLAYER"
 		BuildTime="45.0s"
-		BuildCost="1500"
+		BuildCost="1000"
 		ResearchSound="AudioEvent:ALI_ForcefieldGenerator_Upgrade"
 		IconImage="Button_UpgradeForcefieldGenerator"
 	/>	
@@ -663,8 +663,7 @@
 			RequiredObjectStatusAny="WEAPON_UPGRADED_01"/>		
 	</UpgradeTemplate>
 	
-	<!-- Beam Debuff -->
-	
+	<!-- Beam Debuff -->	
 	<UpgradeTemplate
 		id="Upgrade_SelectBeamCombine"
 		DisplayName="NAME:AbilityBeamCombine_103"
@@ -674,7 +673,6 @@
 		<GameDependency
 			RequiredObjectStatusAny="WEAPON_UPGRADED_02" />
 	</UpgradeTemplate>
-
 	<UpgradeTemplate
 		id="Upgrade_SelectBeamDebuff"
 		DisplayName="NAME:AbilityBeamDebuff_103"

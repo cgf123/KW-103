@@ -19,7 +19,7 @@
 		EditorName="SteelTalonsWolverine"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="8"
+		BuildTime="6"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -68,7 +68,7 @@
 		ReinvisibilityDelay="7s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_GDIAPAmmo"
 		CaptureTime="0s"
-		BuildCost="800"
+		BuildCost="600"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1410,7 +1410,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2000"
+				MaxHealth="1500"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1574,7 +1574,7 @@
 		EditorName="SteelTalonsWolverine_Veteran"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="8"
+		BuildTime="6"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -1623,7 +1623,7 @@
 		ReinvisibilityDelay="7s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_GDIAPAmmo"
 		CaptureTime="0s"
-		BuildCost="800"
+		BuildCost="600"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -2983,7 +2983,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2000"
+				MaxHealth="1500"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

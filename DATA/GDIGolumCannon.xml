@@ -825,7 +825,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="200"
+				DetectionRange="400"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -839,7 +839,8 @@
 				InitiallyDisabled="False"
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
-				UseMetaAOI="False" />			
+				UseMetaAOI="False" />	
+			<!--
 			<StealthDetectorUpdate
 				id="70ED959D"
 				RequiresAllTriggers="False"
@@ -865,6 +866,7 @@
 				UseMetaAOI="False" >
 				<TriggeredBy>Upgrade_ZoneTrooperScannerPack</TriggeredBy>
 			</StealthDetectorUpdate>
+			-->
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotTurret
@@ -1212,7 +1214,7 @@
 			VisionBonusPercentPerFoot="0%"
 			MaxVisionBonusPercent="50%"
 			MinVisionBonusPercent="-50%" />
-		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>		
-		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade>			
+		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade> <!--	
+		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade> -->	
 	</GameObject>
 </AssetDeclaration>

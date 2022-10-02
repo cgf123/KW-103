@@ -23,7 +23,7 @@
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
-		CommandSet="NODBeamCannonCommandSet"
+		CommandSet="MarkedOfKaneBeamCannonCommandSet"
 		SelectPortrait="Portrait_NODBeamCannon"
 		ButtonImage="Portrait_NODBeamCannon"
 		VoicePriority="208"
@@ -318,7 +318,56 @@
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FIRING_OR_PREATTACK_A USER_6"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="NUBEAM_SKN"
+						ExtraMesh="False" />
+					<ParticleSysBone
+						BoneName="FX_Weapon"
+						FXParticleSystemTemplate="BeamConstantFire"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Weapon"
+						FXParticleSystemTemplate="BeamConstantFire02"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>						
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FIRING_OR_PREATTACK_A"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="NUBEAM_SKN"
+						ExtraMesh="False" />
+					<ParticleSysBone
+						BoneName="FX_Weapon"
+						FXParticleSystemTemplate="BeamConstantFireBlue"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Weapon"
+						FXParticleSystemTemplate="BeamConstantFire02"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>				
 			</TruckDraw>
+			<!-- Blue Beam -->
 			<LaserDraw
 				id="0x6FE92FE4"
 				Texture1_VTile="0.5"
@@ -343,6 +392,7 @@
 					ForbiddenStatus="WEAPON_UPGRADED_01"
 					RequiredStatus="WEAPON_UPGRADED_02" />
 			</LaserDraw>
+			<!-- Regular Beam -->			
 			<LaserDraw
 				id="0xA1CBB39A"
 				Texture1_VTile="0.5"
@@ -367,6 +417,43 @@
 					ForbiddenStatus="WEAPON_UPGRADED_03"
 					RequiredStatus="WEAPON_UPGRADED_01" />
 			</LaserDraw>
+			
+			<!-- ????? -->
+			<LaserDraw
+				id="ModuleTag_LaserDistort"
+				UseDistortionShader="true"
+				Texture1_UTile="1"
+				Texture1_VTile=".5"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate=".2"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_UTile="1"
+				Texture2_VTile=".01"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate="1"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="1"
+				LaserWidth="50">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXRailGunCoreDistortion</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXRailGunCoreMask</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+				<ObjectStatusValidation
+					ForbiddenStatus="WEAPON_UPGRADED_03" />		
+			</LaserDraw>
+			
+			<!-- Regular Beam Heroic -->
 			<LaserDraw
 				id="0xFB10ADE9"
 				Texture1_VTile="0.5"
@@ -393,6 +480,7 @@
 					ForbiddenStatus="WEAPON_UPGRADED_02"
 					RequiredStatus="WEAPON_UPGRADED_03" />
 			</LaserDraw>
+			<!-- Reflector Beam Heroic? -->
 			<LaserDraw
 				id="0xFD73908D"
 				Texture1_VTile="0.5"
@@ -433,7 +521,7 @@
 					Relationship="ALLIES"
 					Include="BEAM_TARGET_REFLECTOR">
 				</AllowFilter>
-			</PassiveAreaEffectBehavior>			
+			</PassiveAreaEffectBehavior>		
 		
 			<AttributeModifierPoolUpdate
 				id="513BC476" />
@@ -605,11 +693,11 @@
 						ObjectStatus="WEAPON_UPGRADED_01"
 						IsPlayerUpgradePermanent="False" /> 
 					<Weapon
-						Ordering="SECONDARY_WEAPON"
-						Template="NODBeamCannonLaser1"
+						Ordering="PRIMARY_WEAPON"
+						Template="NODBeamCannonLaserDebuff"
 						Upgrade=""
 						ObjectStatus="WEAPON_UPGRADED_02"
-						IsPlayerUpgradePermanent="False" />			
+						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
 						TurretTurnRate="200"
 						TurretPitchRate="40"
@@ -641,6 +729,9 @@
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
+			<LaserState
+				id="14BDCE42"
+				LaserId="0" />				
 			<Physics
 				id="6D41764B"
 				MaxXRotationVelocity="360"
@@ -747,6 +838,25 @@
 					OrientToObject="True"
 					ForceUseDoFXObj="False" />
 			</FXListBehavior>
+			
+			<!--
+			<SpawnBehavior
+				id="ModuleTag_SpawnSummonPod"
+				SpawnNumberData="1"
+				InitialBurst="1"
+				SpawnReplaceDelayData="0.1s"
+				InitialDelay="0.1s"
+				SpawnInsideBuilding="false"
+				ShareUpgrades="true"					
+				FadeInTime="0s"
+				SpawnedRequireSpawner="true"
+				KillSpawnsOnCaptured="true"			
+				PassExperienceToSpawned="false">
+				<Die
+					DeathTypes="ALL" />					
+				<SpawnTemplate>BeamCannonDummy</SpawnTemplate>				
+			</SpawnBehavior> -->
+			
 			<SpecialPower
 				id="9300F150"
 				SpecialPowerTemplate="NODBeamCannonLaserSpecialPower"
@@ -861,11 +971,244 @@
 				TargetAttributeModifierAdd=""
 				SweepFX=""
 				ReflectorExtendDistance="0"
-				PreferredTargetBone="ROOTTRANSFORM"
+				PreferredTargetBone="ROOTTRANSFORM"				
 				JoinWithOtherBeams="True"
 				DissapateWhenTargetDead="True"
 				LineType="False"
 				TargetSamePlayerOnly="False" />
+				
+			<!-- NEW DEBUFF ABILITY -->
+			<SpecialPower
+				id="9300F148"
+				SpecialPowerTemplate="NODBeamCannonLaserSpecialPower1"
+				AntiCategory=""
+				AntiFX=""
+				AttributeModifier=""
+				AttributeModifierRange="0"
+				AttributeModifierFX=""
+				WeatherDuration="0"
+				InitiateFX=""
+				TriggerFX=""
+				SetModelCondition="TOPPLED"
+				SetModelConditionTime="0s"
+				GiveLevels="0"
+				ChangeWeather="NORMAL"
+				OnTriggerRechargeSpecialPower=""
+				BurnDecayModifier="0"
+				MaxDistanceFromCommandCenter="0"
+				UpdateModuleStartsAttack="True"
+				StartsPaused="False"
+				ReEnableAntiCategory="False"
+				AttributeModifierAffectsSelf="False"
+				AttributeModifierWeatherBased="False"
+				TargetEnemy="False"
+				TargetAllSides="False"
+				DisableDuringAnimDuration="False"
+				IdleWhenStartingPower="False"
+				AffectGood="False"
+				AffectEvil="False"
+				AffectAllies="True"
+				AvailableAtStart="True"
+				AdjustVictim="False"
+				UseDistanceFromCommandCenter="False"
+				ChildModuleHandlesFX="False">
+				<AttributeModifierAffects
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<RequirementsFilterMP
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<RequirementsFilterStrategic
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+			</SpecialPower>		
+			<WeaponFireSpecialAbilityUpdate
+				id="F2F38E0A"
+				GrabPassengerHealGain="0%"
+				SpecialPowerTemplate="NODBeamCannonLaserSpecialPower1"
+				StartAbilityRange="610"
+				AbilityAbortRange="1E+07"
+				PreparationTime="0s"
+				PersistentPrepTime="0s"
+				PersistentCount="9999999"
+				PackTime="0.0s"
+				UnpackTime="0.0s"
+				PreTriggerUnstealthTime="0s"
+				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE UPDATE_REQUIRES_LINE_OF_SIGHT"
+				PackUnpackVariationFactor="0"
+				ParalyzeDurationWhenCompleted="0s"
+				ParalyzeDurationWhenAborted="0s"
+				SpecialObject=""
+				MaxSpecialObjects="1"
+				EffectDuration="0s"
+				EffectValue="1"
+				EffectRange="0"
+				FleeRangeAfterCompletion="0"
+				DisableFXParticleSystem=""
+				PackSound=""
+				UnpackSound=""
+				PrepSoundLoop=""
+				TriggerSound=""
+				ActiveLoopSound=""
+				AwardXPForTriggering="0"
+				SkillPointsForTriggering="-1"
+				UnpackingVariation="0"
+				FreezeAfterTriggerDuration="0s"
+				RequiredConditions=""
+				RejectedConditions=""
+				SetObjectStatusOnTrigger=""
+				ClearObjectStatusOnExit=""
+				TriggerAttributeModifier=""
+				AttributeModifierDuration="0s"
+				ChainedButton=""
+				RequireAndSpendTiberiumOnCaster="0"
+				DisabledTypesToProcess="HELD"
+				DisabledTypesToContinueSoundsFor="HELD"
+				StartRechargeOnExit="False"
+				GoIdleInStartPreparation="True"
+				FaceTarget="True"
+				SpecialWeapon="NODBeamCannonLaserDebuff"
+				WhichSpecialWeapon="1"
+				BusyForDuration="0s"
+				WeaponSlotID="1"
+				WeaponSlotType="SECONDARY_WEAPON"
+				SkipContinue="False"
+				NeedLivingTargets="False"
+				PlayWeaponPreFireFX="False"
+				OffsetTargetLocationFromObject="False"
+				DestealthClosestObjectMatchingFilter="False" />			
+				
+			<SpecialPower
+				id="ModuleTag_SpecialPowerSelectBeamCombine"
+				SpecialPowerTemplate="SpecialPower_SelectBeamCombine"
+				UpdateModuleStartsAttack="true" />				
+			<GiveOrRestoreUpgradeSpecialPower
+				id="06902EC5"
+				GrabPassengerHealGain="0%"
+				SpecialPowerTemplate="SpecialPower_SelectBeamCombine"
+				StartAbilityRange="1E+07"
+				AbilityAbortRange="1E+07"
+				PreparationTime="0s"
+				PersistentPrepTime="0s"
+				PersistentCount="-1"
+				PackTime="0s"
+				UnpackTime="0s"
+				PreTriggerUnstealthTime="0s"
+				Options=""
+				PackUnpackVariationFactor="0"
+				ParalyzeDurationWhenCompleted="0s"
+				ParalyzeDurationWhenAborted="0s"
+				SpecialObject=""
+				SpecialObjectAttachToBone=""
+				MaxSpecialObjects="1"
+				EffectDuration="0s"
+				EffectValue="1"
+				EffectRange="0"
+				FleeRangeAfterCompletion="0"
+				DisableFXParticleSystem=""
+				PackSound=""
+				UnpackSound=""
+				PrepSoundLoop=""
+				TriggerSound=""
+				ActiveLoopSound=""
+				AwardXPForTriggering="0"
+				SkillPointsForTriggering="-1"
+				UnpackingVariation="0"
+				FreezeAfterTriggerDuration="0s"
+				RequiredConditions=""
+				RejectedConditions=""
+				SetObjectStatusOnTrigger=""
+				ClearObjectStatusOnExit=""
+				ContactPointOverride=""
+				TriggerAttributeModifier=""
+				AttributeModifierDuration="0s"
+				ChainedButton=""
+				RequireAndSpendTiberiumOnCaster="0"
+				DisabledTypesToProcess="HELD"
+				DisabledTypesToContinueSoundsFor="HELD"
+				StartRechargeOnExit="False"
+				GoIdleInStartPreparation="True"
+				FaceTarget="True"
+				CommandButton=""
+				UpgradeToGive="Upgrade_SelectBeamCombine"
+				WeaponFlags="" />			
+				
+			<SpecialPower
+				id="ModuleTag_SpecialPowerSelectBeamDebuff"
+				SpecialPowerTemplate="SpecialPower_SelectBeamDebuff"
+				UpdateModuleStartsAttack="true" />						
+			<GiveOrRestoreUpgradeSpecialPower
+				id="06902EC6"
+				GrabPassengerHealGain="0%"
+				SpecialPowerTemplate="SpecialPower_SelectBeamDebuff"
+				StartAbilityRange="1E+07"
+				AbilityAbortRange="1E+07"
+				PreparationTime="0s"
+				PersistentPrepTime="0s"
+				PersistentCount="-1"
+				PackTime="0s"
+				UnpackTime="0s"
+				PreTriggerUnstealthTime="0s"
+				Options=""
+				PackUnpackVariationFactor="0"
+				ParalyzeDurationWhenCompleted="0s"
+				ParalyzeDurationWhenAborted="0s"
+				SpecialObject=""
+				SpecialObjectAttachToBone=""
+				MaxSpecialObjects="1"
+				EffectDuration="0s"
+				EffectValue="1"
+				EffectRange="0"
+				FleeRangeAfterCompletion="0"
+				DisableFXParticleSystem=""
+				PackSound=""
+				UnpackSound=""
+				PrepSoundLoop=""
+				TriggerSound=""
+				ActiveLoopSound=""
+				AwardXPForTriggering="0"
+				SkillPointsForTriggering="-1"
+				UnpackingVariation="0"
+				FreezeAfterTriggerDuration="0s"
+				RequiredConditions=""
+				RejectedConditions=""
+				SetObjectStatusOnTrigger=""
+				ClearObjectStatusOnExit=""
+				ContactPointOverride=""
+				TriggerAttributeModifier=""
+				AttributeModifierDuration="0s"
+				ChainedButton=""
+				RequireAndSpendTiberiumOnCaster="0"
+				DisabledTypesToProcess="HELD"
+				DisabledTypesToContinueSoundsFor="HELD"
+				StartRechargeOnExit="False"
+				GoIdleInStartPreparation="True"
+				FaceTarget="True"
+				CommandButton=""
+				UpgradeToGive="Upgrade_SelectBeamDebuff"
+				WeaponFlags="" />						
+				
 			<SpecialPower
 				id="6540F6F9"
 				SpecialPowerTemplate="SpecialPower_ChargeDefensesTrigger"
@@ -985,6 +1328,8 @@
 				DissapateWhenTargetDead="True"
 				LineType="False"
 				TargetSamePlayerOnly="False" />
+				
+			<!-- ############### REFLECTOR FIX ############## -->	
 			<SpecialPower
 				id="A0B2B001"
 				SpecialPowerTemplate="SpecialPower_ReflectorAttack"
@@ -1099,7 +1444,7 @@
 				TargetAttributeModifierAdd=""
 				SweepFX=""
 				ReflectorExtendDistance="550"
-				PreferredTargetBone="ROOTTRANSFORM"				
+				PreferredTargetBone="ROOTTRANSFORM"
 				JoinWithOtherBeams="True"
 				DissapateWhenTargetDead="True"
 				LineType="False"
@@ -1196,7 +1541,7 @@
 					x="25"
 					y="0"
 					z="0" />
-			</CreateAndEnterObjectSpecialPower>
+			</CreateAndEnterObjectSpecialPower>		
 			<StatusBitsUpgrade
 				id="D305500E"
 				RequiresAllTriggers="False"
@@ -1234,18 +1579,40 @@
 				StatusToSet="WEAPON_UPGRADED_02"
 				StatusToClear="WEAPON_UPGRADED_01">
 				<TriggeredBy>Upgrade_SelectBeamDebuff</TriggeredBy>
-			</StatusBitsUpgrade>
-			<StatusBitsUpgrade
-				id="0x1F159A60"
-				StatusToSet="WEAPON_UPGRADED_03">
-				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
-			</StatusBitsUpgrade>				
+			</StatusBitsUpgrade>		
+			
+			<ModelConditionUpgrade
+				id="9D81B0C9"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AddConditionFlags="USER_6"
+				RemoveConditionFlags=""
+				AddTempConditionFlag=""
+				TempConditionTime="0s">
+				<TriggeredBy>Upgrade_SelectBeamCombine</TriggeredBy>
+			</ModelConditionUpgrade>	
+			<ModelConditionUpgrade
+				id="9D81B0C8"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AddConditionFlags=""
+				RemoveConditionFlags="USER_6"
+				AddTempConditionFlag=""
+				TempConditionTime="0s">
+				<TriggeredBy>Upgrade_SelectBeamDebuff</TriggeredBy>
+			</ModelConditionUpgrade>				
 		</Behaviors>
 		<AI>
 			<AIUpdate
 				id="FADB485A"
 				AutoAcquireEnemiesWhenIdle="YES"
-				AILuaEventsList="NODBeamCannonFunctions_103"				
+				AILuaEventsList="NODBeamCannonFunctions_103"
 				StopChaseDistance="500"
 				HoldGroundCloseRangeDistance="0"
 				MinCowerTime="0s"
@@ -1277,7 +1644,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2800"
+				MaxHealth="2700"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1298,15 +1665,6 @@
 				RemoveUpgradesOnDeath="False"
 				BurningDeathBehavior="False" />
 		</Body>
-		<ClientBehaviors>
-			<ModelConditionAudioLoopClientBehavior
-				id="CAAB2A4E">
-				<ModelConditionSound
-					Sound="AudioEvent:NOD_BeamCannon_BeamWeaponPowerUpSwell"
-					RequiredFlags="PREATTACK_A"
-					ExcludedFlags="DYING" />
-			</ModelConditionAudioLoopClientBehavior>
-		</ClientBehaviors>				
 		<Geometry
 			IsSmall="True">
 			<Shape
@@ -1319,6 +1677,15 @@
 				Active="True"
 				UsedForHealthBox="True" />
 		</Geometry>
+		<ClientBehaviors>
+			<ModelConditionAudioLoopClientBehavior
+				id="CAAB2A4E">
+				<ModelConditionSound
+					Sound="AudioEvent:NOD_BeamCannon_BeamWeaponPowerUpSwell"
+					RequiredFlags="PREATTACK_A"
+					ExcludedFlags="DYING" />
+			</ModelConditionAudioLoopClientBehavior>
+		</ClientBehaviors>		
 		<AudioArrayVoice>
 			<AudioEntry
 				Sound="AudioEvent:NOD_BeamCannon_VoiceAttack"
@@ -1422,4 +1789,6 @@
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
 	</GameObject>
+	
+	
 </AssetDeclaration>

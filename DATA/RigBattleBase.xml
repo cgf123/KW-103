@@ -1296,7 +1296,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="200"
+				DetectionRange="400"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -1310,7 +1310,8 @@
 				InitiallyDisabled="False"
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
-				UseMetaAOI="False" />			
+				UseMetaAOI="False" />	
+			<!--
 			<StealthDetectorUpdate
 				id="70ED959D"
 				RequiresAllTriggers="False"
@@ -1336,6 +1337,7 @@
 				UseMetaAOI="False" >
 				<TriggeredBy>Upgrade_ZoneTrooperScannerPack</TriggeredBy>
 			</StealthDetectorUpdate>
+			-->
 			<AssignSlavesTargetObjectSpecialPower
 				id="F9B1E08D"
 				SpecialPowerTemplate="SpecialPower_TargetedRepairVehicle"
@@ -1698,8 +1700,8 @@
 			VisionBonusPercentPerFoot="0%"
 			MaxVisionBonusPercent="50%"
 			MinVisionBonusPercent="-50%" />
-		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>
-		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade>			
+		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade> <!--
+		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade>	-->	
 		</GameObject>
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->	
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->	
@@ -3013,7 +3015,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="200"
+				DetectionRange="400"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -4707,7 +4709,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="200"
+				DetectionRange="400"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
@@ -4721,7 +4723,8 @@
 				InitiallyDisabled="False"
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
-				UseMetaAOI="False" />			
+				UseMetaAOI="False" />		
+			<!--
 			<StealthDetectorUpdate
 				id="70ED959D"
 				RequiresAllTriggers="False"
@@ -4747,6 +4750,7 @@
 				UseMetaAOI="False" >
 				<TriggeredBy>Upgrade_ZoneRaiderScannerPack</TriggeredBy>
 			</StealthDetectorUpdate>
+			-->
 			<AssignSlavesTargetObjectSpecialPower
 				id="F9B1E08D"
 				SpecialPowerTemplate="SpecialPower_TargetedRepairVehicle"
@@ -5109,7 +5113,8 @@
 			VisionBonusPercentPerFoot="0%"
 			MaxVisionBonusPercent="50%"
 			MinVisionBonusPercent="-50%" />
-		<DisplayUpgrade>Upgrade_ZoneRaiderScannerPack</DisplayUpgrade>				
+		<!--
+		<DisplayUpgrade>Upgrade_ZoneRaiderScannerPack</DisplayUpgrade>	-->		
 	</GameObject>
 
 		
@@ -6204,8 +6209,8 @@
 			UseCrushAttack="True"
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
-		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade>
-		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade>			
+		<DisplayUpgrade>Upgrade_GDIArmoryRailgunTech</DisplayUpgrade> <!--
+		<DisplayUpgrade>Upgrade_ZoneTrooperScannerPack</DisplayUpgrade>	 -->	
 	</GameObject>		
 	
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->	
@@ -7293,8 +7298,8 @@
 			CrushEqualLevelProps="False"
 			UseCrushAttack="True"
 			CrushOnlyWhileCharging="False"
-			CrushAllies="False" />
-		<DisplayUpgrade>Upgrade_ZoneRaiderScannerPack</DisplayUpgrade>				
+			CrushAllies="False" /> <!--
+		<DisplayUpgrade>Upgrade_ZoneRaiderScannerPack</DisplayUpgrade>	-->			
 	</GameObject>		
 	
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->	

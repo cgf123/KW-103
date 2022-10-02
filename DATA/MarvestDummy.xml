@@ -15,8 +15,7 @@
 		EditorName="RageGenDummy">
 		<DisplayName>Name:AbilityRageGenerator</DisplayName>
 		<ArmorSet
-			Armor="GDIOrcaSensorPodArmor"
-			DamageFX="NormalDamageFX" />
+			Armor="InvulnerableArmor" />
 		<LocomotorSet
 			Locomotor="HumanLocomotor"
 			Condition="NORMAL"
@@ -33,6 +32,8 @@
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="513BC476" />		
 			<Physics
 				id="ModuleTag_Physics" />
 			<DestroyDie
@@ -69,6 +70,11 @@
 					OneShot="False" />
 			</FireWeaponUpdate>		
 		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="ModuleTag_AI"
+				AutoAcquireEnemiesWhenIdle="NO" />
+		</AI>		
 		<Body>
 			<ActiveBody
 				id="ModuleTag_Body"

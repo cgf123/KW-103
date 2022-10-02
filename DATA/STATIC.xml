@@ -27,6 +27,8 @@
 	<Include type="all" source="AIStates.xml" />		-->
 
 	<Include type="all" source="Metagamestatic.xml" />	
+	<Include type="all" source="MPSettings.xml" />	
+
 	<!--
 	<Include type="all" source="MPColors.xml" />	
 	-->

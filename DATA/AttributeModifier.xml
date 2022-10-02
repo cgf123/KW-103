@@ -180,44 +180,51 @@
 		id="AttributeModifier_BeamDebuff"
 		Category="NONE"
 		Duration="0.5s" >
+		<Modifier Type="AMOR" Value="145%" />		
 	</AttributeModifier>		
 
 	<AttributeModifier
 		id="AttributeModifier_BeamDebuffHeavy"
 		Category="NONE"
 		Duration="0.5s" >
+		<Modifier Type="ARMOR" Value="145%" />				
 	</AttributeModifier>			
 	
 	
 	<!-- Rage Gen -->
 	<AttributeModifier
-		id="AttributeModifier_Hallucinate"
-		Category="NONE"
-		Duration="4.5s"
-		ModelConditionsSet="EMOTION_DISSIDENT" >
-	</AttributeModifier>		
-	
-	<AttributeModifier
-		id="AttributeModifier_HallucinateInf"
-		Category="NONE"
-		Duration="3.0s"
-		ModelConditionsSet="EMOTION_DISSIDENT" >
-	</AttributeModifier>		
-
-	<!-- Confessor Grenades -->
-	<AttributeModifier
-		id="AttributeModifier_Hallucinate1"
-		Category="NONE"
-		Duration="3.0s"
-		ModelConditionsSet="EMOTION_DISSIDENT" >
-	</AttributeModifier>	
-	
-	<AttributeModifier
-		id="AttributeModifier_Hallucinate2"
+		id="AttributeModifier_Rage"
 		Category="NONE"
 		Duration="1.0s"
+		ObjectStatusToSet="IGNORE_AI_COMMAND"
 		ModelConditionsSet="EMOTION_DISSIDENT" >
-	</AttributeModifier>	
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="AttributeModifier_Hallucinate"
+		Category="NONE"
+		Duration="0.25s"
+		ObjectStatusToSet="IGNORE_AI_COMMAND"
+		ModelConditionsSet="EMOTION_DISSIDENT" >
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="AttributeModifier_RageSlow"
+		Category="NONE"
+		Duration="6.0s"
+		ObjectStatusToSet="CARRYING_FLAG">
+		<Modifier Type="SPEED" Value="60%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="60%"/>
+	</AttributeModifier>		
+	
+	<AttributeModifier
+		id="AttributeModifier_HallucinateSlow"
+		Category="NONE"
+		Duration="2.0s"
+		ObjectStatusToSet="CARRYING_FLAG">
+		<Modifier Type="SPEED" Value="60%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="80%"/>		
+	</AttributeModifier>			
 	
 	<AttributeModifier
 		id="AttributeModifier_ZTCrush"
@@ -301,11 +308,11 @@
 	<AttributeModifier
 		id="AttributeModifier_ChargeDefenses"
 		Category="NONE"
-		StackingLimit="4">
-		<Modifier Type="SHROUD_CLEARING" Value="110%"/>
+		StackingLimit="2">
+		<Modifier Type="SHROUD_CLEARING" Value="120%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="120%"/>
-		<Modifier Type="VISION" Value="110%"/>
-		<Modifier Type="RANGE" Value="110%"/>
+		<Modifier Type="VISION" Value="120%"/>
+		<Modifier Type="RANGE" Value="120%"/>
 	</AttributeModifier>
 	
 	
@@ -383,7 +390,7 @@
 	</AttributeModifier>		
 	
 	<AttributeModifier
-		id="AttributeModifier_SigGen"
+		id="AttributeModifgier_SigGen"
 		Category="NONE"
 		Duration="5.0s"
 		ModelConditionsSet="USER_8"	>
@@ -439,13 +446,15 @@
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
 	</AttributeModifier>		
+	
+	
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Awakened"
-		Duration="5.0s"		
+		Duration="4.0s"		
 		Category="NONE">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
-	</AttributeModifier>
+	</AttributeModifier>		
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Enlightened"
 		Duration="5.0s"		

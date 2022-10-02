@@ -100,7 +100,7 @@
 		<ArmorSet
 			Armor="AlienAnnihilatorTripodArmorShieldBodyEnabled"
 			DamageFX="VehicleDamageFX"
-			Conditions="SHIELDBODY_ENABLED" />
+			Conditions="SHIELDBODY_ENABLED" />					
 		<LocomotorSet
 			Speed="60"
 			Condition="NORMAL"
