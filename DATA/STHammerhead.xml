@@ -1536,7 +1536,22 @@
 					<IncludeThing>BlackHandMilitantRocket</IncludeThing>	
 					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>MarkedOfKaneMilitantRocket</IncludeThing>		
-					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>				
+					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>	
+					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
+					<IncludeThing>NODBlackHand</IncludeThing>		
+					<IncludeThing>NODBlackHandSquad</IncludeThing>		
+					<IncludeThing>BlackHandBlackHand</IncludeThing>		
+					<IncludeThing>BlackHandBlackHandSquad</IncludeThing>		
+					<IncludeThing>BlackHandBlackDisciple</IncludeThing>		
+					<IncludeThing>GDIZoneTrooper</IncludeThing>
+					<IncludeThing>GDIZoneTrooperSquad</IncludeThing>
+					<IncludeThing>GDIZoneTrooperSquad_Veteran</IncludeThing>					
+					<IncludeThing>SteelTalonsZoneTrooper</IncludeThing>
+					<IncludeThing>SteelTalonsZoneTrooperSquad</IncludeThing>
+					<IncludeThing>SteelTalonsZoneTrooperSquad_Veteran</IncludeThing>					
+					<IncludeThing>ZOCOMZoneRaider</IncludeThing>
+					<IncludeThing>ZOCOMZoneRaiderSquad</IncludeThing>	
+					<IncludeThing>ZOCOMZoneRaiderSquad_Veteran</IncludeThing>			
 				</ObjectFilter>
 			</AttributeModifierAuraUpdate>								
 			

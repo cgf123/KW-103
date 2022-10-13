@@ -1016,7 +1016,7 @@
 				StartAbilityRange="100000"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
-				PersistentPrepTime="5s"
+				PersistentPrepTime="4s"
 				PersistentCount="-1"
 				PackTime="3.5s"
 				UnpackTime="3.5s"

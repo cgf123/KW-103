@@ -307,7 +307,7 @@
 		Description="UpgradeDesc:ALIENMinorForcefieldGenerators"
 		Type="PLAYER"
 		BuildTime="60.0s"
-		BuildCost="1500"
+		BuildCost="1000"
 		ResearchSound="AudioEvent:ALI_AttenudatedForcefield_Upgrade"
 		IconImage="Button_Upgrade_AttForcefields" />
 	
@@ -323,7 +323,7 @@
 		Description="UpgradeDesc:ALIENMinorForcefieldGenerators"
 		Type="PLAYER"
 		BuildTime="60.0s"
-		BuildCost="1500"
+		BuildCost="1000"
 		ResearchSound="AudioEvent:ALI_AttenudatedForcefield_Upgrade"
 		IconImage="Button_Upgrade_AttForcefields" />				
 	
@@ -571,7 +571,7 @@
 		Description="UpgradeDesc:CeramicArmor"
 		Type="PLAYER"
 		BuildCost="1500"
-		BuildTime="45s"
+		BuildTime="60s"
 		ResearchSound="AudioEvent:GDI_Hammerhead_CeramicArmorUpgraded"
 		IconImage="Button_Upgrade_CeramicArmor">		
 		<GameDependency>

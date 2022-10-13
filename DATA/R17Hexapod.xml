@@ -2622,7 +2622,7 @@
 				Texture1_FrameRate="30"
 				Texture2_NumFrames="1"
 				Texture2_FrameRate="30"
-				LaserWidth="8"
+				LaserWidth="12"
 				WeaponSlotID="-1"
 				LaserStateID="0"
 				UseDistortionShader="False">

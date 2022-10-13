@@ -90,7 +90,7 @@
 			RequiredModelConditionsAny=""
 			ForbiddenModelConditions=""
 			RequiredObjectStatusAny="">
-			<RequiredObject>MarkedOfKaneOperationsCenter</RequiredObject>
+			<RequiredObject>BlackHandOperationsCenter</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="NODBeamCannonArmor"

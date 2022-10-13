@@ -214,7 +214,7 @@
 		Duration="6.0s"
 		ObjectStatusToSet="CARRYING_FLAG">
 		<Modifier Type="SPEED" Value="60%"/>
-		<Modifier Type="RATE_OF_FIRE" Value="60%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="75%"/>
 	</AttributeModifier>		
 	
 	<AttributeModifier
@@ -223,7 +223,7 @@
 		Duration="2.0s"
 		ObjectStatusToSet="CARRYING_FLAG">
 		<Modifier Type="SPEED" Value="60%"/>
-		<Modifier Type="RATE_OF_FIRE" Value="80%"/>		
+		<Modifier Type="RATE_OF_FIRE" Value="90%"/>		
 	</AttributeModifier>			
 	
 	<AttributeModifier

@@ -1847,7 +1847,7 @@
 				PingPongSidewaysDrift="True" />
 			<SuppressionUpdate
 				id="3AE0061F"
-				UpdateDelay="0.5s"
+				UpdateDelay="0.25s"
 				Suppressability="1000"
 				SuppressionDuration="1.0s"
 				AttributeModifierSuppressed="Modifier_Test_Suppression"

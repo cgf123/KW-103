@@ -11,7 +11,7 @@
 		</CreateObject>
 	</ObjectCreationList> 
  
-<!-- ########################### ST ZONE DRAFT ################ -->
+<!-- ########################### ZONE DRAFT ################ -->
 
 	<ObjectCreationList
 		id="OCL_ArmorySteelTalonsBuildingDestruction">
@@ -33,6 +33,7 @@
 			<CreateObject>SteelTalonsGrenadeSoldierSquad</CreateObject>
 		</CreateObject>
 	</ObjectCreationList>	
+	
 	<ObjectCreationList
 		id="OCL_AdvancedSteelTalonsBuildingDestruction">
 		<CreateObject
@@ -42,7 +43,7 @@
 			MaxHealth="0.75"
 			MinHordeDensity="30"
 			MaxHordeDensity="90">
-			<CreateObject>SteelTalonsZoneTrooperSquad</CreateObject>
+			<CreateObject>SteelTalonsGrenadeSoldierSquad</CreateObject>
 		</CreateObject>	
 	</ObjectCreationList>
 	<ObjectCreationList
@@ -50,9 +51,51 @@
 		<CreateObject
 			Options="IGNORE_ALL_OBJECTS"
 			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
-			<CreateObject>SteelTalonsZoneTrooperSquad</CreateObject>
+			<CreateObject>SteelTalonsGrenadeSoldierSquad</CreateObject>
 		</CreateObject>		
 	</ObjectCreationList>	
+	
+	<ObjectCreationList
+		id="OCL_AdvancedZOCOMBuildingDestruction">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS REQUIRES_LIVE_PLAYER"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND"
+			MinHealth="0.3"
+			MaxHealth="0.75"
+			MinHordeDensity="30"
+			MaxHordeDensity="90">
+			<CreateObject>ZOCOMGrenadeSoldierSquad</CreateObject>
+		</CreateObject>	
+	</ObjectCreationList>
+	<ObjectCreationList
+		id="OCL_AdvancedZOCOMBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>ZOCOMGrenadeSoldierSquad</CreateObject>
+		</CreateObject>		
+	</ObjectCreationList>			
+	
+	<ObjectCreationList
+		id="OCL_AdvancedGDIBuildingDestruction">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS REQUIRES_LIVE_PLAYER"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND"
+			MinHealth="0.3"
+			MaxHealth="0.75"
+			MinHordeDensity="30"
+			MaxHordeDensity="90">
+			<CreateObject>GDIGrenadeSoldierSquad</CreateObject>
+		</CreateObject>	
+	</ObjectCreationList>
+	<ObjectCreationList
+		id="OCL_AdvancedGDIBuildingSuicide">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="ON_GROUND_ALIGNED CLAMP_TO_GROUND">
+			<CreateObject>GDIGrenadeSoldierSquad</CreateObject>
+		</CreateObject>		
+	</ObjectCreationList>		
 	
 	
 	<!-- ############################### BH DRAFT ##################### -->

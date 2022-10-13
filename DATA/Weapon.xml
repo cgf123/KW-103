@@ -168,8 +168,8 @@ DAMAGE TYPES
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
 		<ClipReloadTime
-			MinSeconds="2.2s"
-			MaxSeconds="2.3s" />
+			MinSeconds="2.7s"
+			MaxSeconds="2.9s" />
 
 		<Nuggets>
 			<ProjectileNugget
@@ -469,18 +469,18 @@ DAMAGE TYPES
 		  FireSound="AudioEvent:ZoneTrooperGunFire"
 		  FireFX="FX_RailGunFire"
 		  FireVeteranFX="FX_RailGunFireHeroic"
-		  ReAcquireDetailType="PER_CLIP"
-		  DisableScatterForTargetsOnWall="true"
 		  ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
 		  AntiMask="ANTI_GROUND ANTI_STRUCTURE"
-		  NoVictimNeeded="false"
  		>
+		<PreAttackDelay
+			MinSeconds="0.1s"
+			MaxSeconds="0.1s" />		
 		<FiringDuration
-				MinSeconds="0.23s"
-				MaxSeconds="0.23s" />
+			MinSeconds="0.25s"
+			MaxSeconds="0.25s" />
 		<ClipReloadTime
-			MinSeconds="2.0s"
-			MaxSeconds="2.3s" />
+			MinSeconds="2.6s"
+			MaxSeconds="2.8s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
@@ -635,9 +635,6 @@ DAMAGE TYPES
 		Name="ZoneRaiderSonicRifleWarhead"
 		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
-		ClipSize="1"
-		AutoReloadsClip="AUTO"
-		CanFireWhileMoving="false"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE" >
 		<Nuggets>
 			<DamageNugget
@@ -784,25 +781,67 @@ DAMAGE TYPES
 		  MinSeconds="0.1s"
 		  MaxSeconds="0.1s" />
 		<FiringDuration
-				MinSeconds="0.2s"
-				MaxSeconds="0.3s" />
+			MinSeconds="0.2s"
+			MaxSeconds="0.3s" />
 		<ClipReloadTime
-				MinSeconds="1.0s"
-				MaxSeconds="1.3s" />
+			MinSeconds="1.9s"
+			MaxSeconds="2.1s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="ZoneRaiderSonicRifleProjectile"
-				WarheadTemplate="ZoneRaiderSonicRifleWarhead">
+				WarheadTemplate="MARVZoneRaiderSonicRifleWarhead">
 				<VeterancyProjectiles
 					VeterancyLevel="HEROIC"
 					ProjectileTemplate="ZoneRaiderSonicRifleProjectile_Veteran"/>
 			</ProjectileNugget>
 			<SuppressionNugget
-				Radius="40.0"
+				Radius="30.0"
 				Suppression="20"
 				DurationSeconds="7.5s" />
 		</Nuggets>
 	</WeaponTemplate>
+	
+    <WeaponTemplate
+		id="MARVZoneRaiderSonicRifleWarhead"
+		Name="MARVZoneRaiderSonicRifleWarhead"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE" >
+		<Nuggets>
+			<DamageNugget
+				Damage="285"
+				Radius="30.0"
+				DamageTaperOff="20"
+				DelayTimeSeconds="0.0s"
+				DamageType="CANNON"
+				DamageFXType="GDI_ECHOCANNON"
+				DeathType="NORMAL" >
+				<!-- No damage to Allies except vs Husks -->
+				<DamageScalarDetails Scalar="0%">
+                  <Filter Rule="ALL" Relationship="ALLIES" Exclude="HUSK" /> 
+                </DamageScalarDetails>				
+				<!-- Weaker vs some anti-inf units -->
+		        <DamageScalarDetails Scalar= "75%">
+					<Filter Rule="NONE"
+							Include="CAVALRY">          
+					</Filter>
+				</DamageScalarDetails>					
+				  			  
+				<!-- Weaker vs inf -->				
+				<DamageScalarDetails Scalar= "40%">
+					<Filter Rule="NONE" 
+						Include="INFANTRY" 
+						Exclude="ARCHER">          
+					</Filter>
+				</DamageScalarDetails>
+				<DamageScalarDetails Scalar= "50%">
+					<Filter Rule="NONE" 
+						Include="ARCHER">          
+					</Filter>
+				</DamageScalarDetails>				
+	        </DamageNugget>  
+		</Nuggets>
+	</WeaponTemplate>	
 	
 	<WeaponTemplate
 		id="OverloadBeamSelfStunWeapon"
@@ -973,14 +1012,14 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<PreAttackDelay
-		  MinSeconds="0.1s"
-		  MaxSeconds="0.1s" />
+		  MinSeconds="0.3s"
+		  MaxSeconds="0.3s" />
 		<FiringDuration
 			MinSeconds="0.2s"
 			MaxSeconds="0.3s" />
 		<ClipReloadTime
-			MinSeconds="2.2s"
-			MaxSeconds="2.5s" />
+			MinSeconds="2.5s"
+			MaxSeconds="2.7s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="MARVGrenadeSoldierWeaponProjectile"
@@ -1297,8 +1336,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="1.1s"
-				MaxSeconds="1.1s" />
+				MinSeconds="1.06s"
+				MaxSeconds="1.06s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -1373,8 +1412,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="0.83s"
-				MaxSeconds="0.83s" />
+				MinSeconds="0.8s"
+				MaxSeconds="0.8s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -4703,7 +4742,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -4778,7 +4817,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -4820,7 +4859,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienShockTrooperPlasmaDisk"
 		Name="AlienShockTrooperPlasmaDisk"
-		AttackRange="310.0"
+		AttackRange="300.0"
 		WeaponSpeed="400.0"
 		FireSound="AudioEvent:ALI_ShockTrooper_PlasmaDiskFire"
 		FireFX="FX_AlienPlasmaDiskFire"
@@ -4861,7 +4900,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -4894,7 +4933,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienShockTrooperProtonCannon"
 		Name="AlienShockTrooperProtonCannon"
-		AttackRange="310.0"
+		AttackRange="300.0"
 		WeaponSpeed="400.0"
 		FireSound="Multisound:ALI_ShockTrooper_ProtonCannonFireMS"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
@@ -4922,7 +4961,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6501,7 +6540,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6573,7 +6612,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6651,22 +6690,22 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
 		<Nuggets>
 			<DamageNugget
-				Damage="120.0"
+				Damage="160.0"
 				Radius="10.0"				
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARD" >		
-				<DamageScalarDetails Scalar= "50%">
+				<DamageScalarDetails Scalar= "40%">
 					<Filter
 						Rule="ANY"
 						Exclude="TRANSPORT WEAPON_SALVAGER"
 						Include="VEHICLE" />
 				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "55%">
+				<DamageScalarDetails Scalar= "45%">
 					<Filter
 						Rule="ANY"
 						Include="WEAPON_SALVAGER" />
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "60%">
+				<DamageScalarDetails Scalar= "50%">
 					<Filter
 						Rule="ANY"
 						Include="TRANSPORT" />
@@ -7575,7 +7614,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7659,7 +7698,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7737,7 +7776,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>
 								
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7960,7 +7999,7 @@ DAMAGE TYPES
 				DeathType="NORMAL" > 	
 				
 				<!-- Very Epic Armor? -->
-				<DamageScalarDetails Scalar= "140%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="NONE">
 						<IncludeThing>GDIMARV</IncludeThing>
@@ -9579,6 +9618,15 @@ DAMAGE TYPES
 					Include="VEHICLE AIRCRAFT"
 					RejectStatusBitFlags="AIRBORNE_TARGET" />
 			</AttributeModifierNugget>		
+			<!-- Slow vs Warships -->
+			<AttributeModifierNugget
+				PartitionFilterTestType="SPHERE"
+				AttributeModifierName="AttributeModifier_RageSlow"
+				Radius="550" >
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="TIBERIUM_BASED AIRCRAFT" />
+			</AttributeModifierNugget>				
 
 			<AttributeModifierNugget
 				PartitionFilterTestType="SPHERE"
@@ -11051,6 +11099,11 @@ DAMAGE TYPES
 				Radius="40.0"
 				DamageType="GRENADE"
 				DeathType="EXPLODED" >
+				<DamageScalarDetails Scalar= "25%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT" />
+				</DamageScalarDetails>				
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -12766,7 +12819,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienAnnihilatorEMPCannon"
 		Name="AlienAnnihilatorEMPCannon"
-		AttackRange="120.0"
+		AttackRange="125.0"
 		WeaponSpeed="500.0"
 		MinTargetPitch="-15d"
 		MaxTargetPitch="15d"

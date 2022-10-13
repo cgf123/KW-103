@@ -371,7 +371,7 @@
 		RequiredTargetObjectStatus=""
 		DisallowedTargetObjectStatus="IN_STASIS AIRBORNE_TARGET"
 		DisallowedTargetModelStates="TRANSPORT_MOVING FLYING"		
-		ReloadTime="5s"
+		ReloadTime="4s"
 		RadiusCursorRadius="100"
 		TargetType="LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x933DCB8B"
