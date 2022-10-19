@@ -234,8 +234,8 @@ DAMAGE TYPES
 			MinSeconds=".2s"
 			MaxSeconds=".2s" />
 		<FiringDuration
-			MinSeconds="1.6s"
-			MaxSeconds="1.8s" />
+			MinSeconds="1.4s"
+			MaxSeconds="1.7s" />
 		<ClipReloadTime
 			MinSeconds="0.8s"
 			MaxSeconds="1.2s" />
@@ -784,8 +784,8 @@ DAMAGE TYPES
 			MinSeconds="0.2s"
 			MaxSeconds="0.3s" />
 		<ClipReloadTime
-			MinSeconds="1.9s"
-			MaxSeconds="2.1s" />
+			MinSeconds="1.8s"
+			MaxSeconds="2.0s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="ZoneRaiderSonicRifleProjectile"
@@ -1305,6 +1305,13 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="GDI_MISSILE"
 				DeathType="EXPLODED" >
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					
 			</DamageNugget>		
 			<SuppressionNugget
 				Radius="25.0"
@@ -1380,7 +1387,14 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" />
-				</DamageScalarDetails>							
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					
 			</DamageNugget>
 			<SuppressionNugget
 				Radius="40.0"
@@ -1456,7 +1470,14 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" />
-				</DamageScalarDetails>							
+				</DamageScalarDetails>		
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					
 			</DamageNugget>
 			<SuppressionNugget
 				Radius="40.0"
@@ -1477,8 +1498,14 @@ DAMAGE TYPES
 				Radius="25"
 				DamageType="ROCKET"
 				DamageFXType="GDI_BOMB"
-				DeathType="NORMAL"
-				>
+				DeathType="NORMAL">
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					
 			</DamageNugget>
 			<MetaImpactNugget
 				ShockWaveAmount="90.0"
@@ -6507,7 +6534,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="AlienEradicatorLaserWeapon"
 		  Name="AlienEradicatorLaserWeapon"
-		  AttackRange="350.0"
+		  AttackRange="330.0"
 		  FireSound="AudioEvent:ALI_RazorDrone_Weapon1Fire"
 		  FireFX="FX_AlienBuzzerFire"
 		  FireVeteranFX="FX_AlienBuzzerFireHeroic"
@@ -6528,7 +6555,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="0"/>
 			<DamageNugget
-				Damage="240.0"
+				Damage="225.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.4s"
 				DamageType="ROCKET"
@@ -7633,7 +7660,15 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
 					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>		
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  				
 			</DamageNugget>
 		</Nuggets>
 		<ScatterRadiusVsType
@@ -7717,7 +7752,15 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
 					</Filter>
-				</DamageScalarDetails>					
+				</DamageScalarDetails>			
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>		
@@ -7795,7 +7838,15 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
 					</Filter>
-				</DamageScalarDetails>					
+				</DamageScalarDetails>	
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  				
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>		
@@ -8042,7 +8093,7 @@ DAMAGE TYPES
 						<IncludeThing>GDIJuggernaught</IncludeThing>
 						<IncludeThing>SteelTalonsBehemoth</IncludeThing>					
 					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>					
 
 				<!-- DEFAULT/Heavy Armor -->
 				<DamageScalarDetails Scalar= "45%">
@@ -8121,7 +8172,15 @@ DAMAGE TYPES
 						<ExcludeThing>NODStealthTank</ExcludeThing>
 						<ExcludeThing>BlackhandAttackBike</ExcludeThing>							
 					</Filter>
-				</DamageScalarDetails>				
+				</DamageScalarDetails>		
+
+				<DamageScalarDetails Scalar= "43.75%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  						
 
 				<!-- Semi-Heavy Armor -->
 				<DamageScalarDetails Scalar= "35%">
@@ -9732,7 +9791,7 @@ DAMAGE TYPES
 			<CrushTiberiumNugget
 				Radius="30"
 				PartitionFilterTestType="SPHERE"
-				ProductionModifer="25%"
+				ProductionModifer="33%"
 				DamageArc="360d">
 				<SpecialObjectFilter
 					Rule="ALL"
@@ -9885,6 +9944,12 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="GDI_MACHINEGUN"
 				DeathType="NORMAL">
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="NONCOM" >
+					</Filter>
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "100%">
 					<Filter
 						Rule="NONE"
@@ -9898,8 +9963,8 @@ DAMAGE TYPES
 						  StatusBitFlags="SWITCHED_WEAPONS"
 						  Include="INFANTRY">	
 					</Filter>			
-				</DamageScalarDetails>  		
-				
+				</DamageScalarDetails>  	
+			
 				<DamageScalarDetails Scalar= "150%">
 					<Filter
 						Rule="NONE"
@@ -9938,7 +10003,15 @@ DAMAGE TYPES
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
 				DamageFXType="NOD_MACHINEGUN"
-				DeathType="NORMAL" >                     
+				DeathType="NORMAL" >	
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  						
 			</DamageNugget>
 			<!--
 			<SuppressionNugget
@@ -9973,6 +10046,20 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="NOD_MACHINEGUN"
 				DeathType="NORMAL" >	
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="NONCOM" >
+					</Filter>
+				</DamageScalarDetails>		
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  						
 			</DamageNugget>
 			<!--
 			<SuppressionNugget
@@ -10006,7 +10093,7 @@ DAMAGE TYPES
 		/>
 		<Nuggets>
 			<DamageNugget
-				Damage="24.0"
+				Damage="25.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -10063,6 +10150,12 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="GDI_MACHINEGUN"
 				DeathType="NORMAL">
+				<DamageScalarDetails Scalar= "112.5%">
+					<Filter
+						Rule="NONE"
+						Include="NONCOM" >
+					</Filter>
+				</DamageScalarDetails>														
 				<DamageScalarDetails Scalar= "75%">
 					<Filter
 						Rule="NONE"
@@ -10111,7 +10204,8 @@ DAMAGE TYPES
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
 				DamageFXType="GDI_MACHINEGUN"
-				DeathType="NORMAL" />
+				DeathType="NORMAL" >										
+			</DamageNugget>
 			<SuppressionNugget
 				Radius="10.0"
 				Suppression="25"
@@ -10145,7 +10239,14 @@ DAMAGE TYPES
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
 				DamageFXType="GDI_MACHINEGUN"
-				DeathType="NORMAL" />
+				DeathType="NORMAL" >
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="NONCOM" >
+					</Filter>
+				</DamageScalarDetails>							
+			</DamageNugget>
 			<SuppressionNugget
 				Radius="10.0"
 				Suppression="25"
@@ -10308,7 +10409,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIRifleSquadGunRangefinder"
 		Name="GDIRifleSquadGunRangefinder"
-		AttackRange="220" 		
+		AttackRange="225" 		
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -10324,7 +10425,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIRifleSoldierRifle"
 		Name="GDIRifleSoldierRifle"
-		AttackRange="270.0"
+		AttackRange="275.0"
 		WeaponSpeed="999999.0"
 		FireSoundPerClip="AudioEvent:GDI_RifleSoldier_gunFire_v5"
 		FireFX="FX_GDIRifleManFire"
@@ -10356,7 +10457,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIRifleSoldierRifleAPAmmo"
 		Name="GDIRifleSoldierRifleAPAmmo"
-		AttackRange="270.0"
+		AttackRange="275.0"
 		WeaponSpeed="999999.0"
 		FireSoundPerClip="AudioEvent:GDI_RifleSoldier_gunFire_v5"
 		FireFX="FX_GDIRifleManFire"
@@ -10377,7 +10478,13 @@ DAMAGE TYPES
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
 				DamageFXType="GDI_MACHINEGUN"
-				DeathType="NORMAL" >				
+				DeathType="NORMAL" >	
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="NONCOM" >
+					</Filter>
+				</DamageScalarDetails>								
 			</DamageNugget>
 			<SuppressionNugget
 				Radius="5.0"
@@ -10409,7 +10516,14 @@ DAMAGE TYPES
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
 				DamageFXType="NOD_MACHINEGUN"
-				DeathType="NORMAL" />
+				DeathType="NORMAL" >
+				<DamageScalarDetails Scalar= "150%">
+					<Filter
+						Rule="NONE"
+						Include="NONCOM" >
+					</Filter>
+				</DamageScalarDetails>						
+			</DamageNugget>
 			<SuppressionNugget
 				Radius="1.0"
 				Suppression="25"
@@ -12332,8 +12446,15 @@ DAMAGE TYPES
 				Damage="3000.0"
 				Radius="45.0"
 				DamageType="CANNON"
-				DeathType="NORMAL"
-			 />
+				DeathType="NORMAL">
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					 
+			 </DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -12441,12 +12562,14 @@ DAMAGE TYPES
 				DelayTimeSeconds="0.0s"
 				DamageType="GRENADE"
 				DeathType="NORMAL" >
-				<DamageScalarDetails Scalar= "100%">
-					<Filter
-						Rule="NONE"
-						Include="VEHICLE">
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
 					</Filter>
-				</DamageScalarDetails>					
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					
 			</DamageNugget>
 			<MetaImpactNugget
 				ShockWaveAmount="90.0"
@@ -12482,12 +12605,14 @@ DAMAGE TYPES
 				DelayTimeSeconds="0.0s"
 				DamageType="GRENADE"
 				DeathType="NORMAL" >
-				<DamageScalarDetails Scalar= "75%">
-					<Filter
-						Rule="NONE"
-						Include="VEHICLE">
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
 					</Filter>
-				</DamageScalarDetails>					
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					
 			</DamageNugget>
 			<MetaImpactNugget
 				ShockWaveAmount="90.0"
@@ -13103,7 +13228,15 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
-				</DamageScalarDetails>					
+				</DamageScalarDetails>		
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  						
 			</DamageNugget>
 			<SuppressionNugget
 				Radius="1.0"
@@ -13147,7 +13280,15 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
-				</DamageScalarDetails>					
+				</DamageScalarDetails>		
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  						
 			 </DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -13189,7 +13330,15 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
-				</DamageScalarDetails>					
+				</DamageScalarDetails>		
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  						
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -13229,7 +13378,15 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
-				</DamageScalarDetails>					
+				</DamageScalarDetails>			
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  						
 			</DamageNugget>					
 		</Nuggets>
 	</WeaponTemplate>	
@@ -14102,13 +14259,8 @@ DAMAGE TYPES
 			  DamageFXType="NOD_FLAMETHROWER">        			  
 			<DamageScalarDetails Scalar= "200%" >
 				<Filter 
-					  Rule="NONE">	
-					  <IncludeThing>NodRaiderTank</IncludeThing>
-					  <IncludeThing>BlackHandRaiderTank</IncludeThing>
-					  <IncludeThing>MarkedOfKaneRaiderTank</IncludeThing>						  
-					  <IncludeThing>NodBunkerTruck</IncludeThing>
-					  <IncludeThing>BlackHandBunkerTruck</IncludeThing>
-					  <IncludeThing>MarkedOfKaneBunkerTruck</IncludeThing>						  
+					  Rule="NONE"
+					  Include="VEHICLE">	
 				</Filter>
 				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 			</DamageScalarDetails>  	
@@ -14149,13 +14301,8 @@ DAMAGE TYPES
 				  DamageFXType="NOD_FLAMETHROWER">  
 				<DamageScalarDetails Scalar= "200%" >
 					<Filter 
-						  Rule="NONE">	
-						  <IncludeThing>NodRaiderTank</IncludeThing>
-						  <IncludeThing>BlackHandRaiderTank</IncludeThing>
-						  <IncludeThing>MarkedOfKaneRaiderTank</IncludeThing>						  
-						  <IncludeThing>NodBunkerTruck</IncludeThing>
-						  <IncludeThing>BlackHandBunkerTruck</IncludeThing>
-						  <IncludeThing>MarkedOfKaneBunkerTruck</IncludeThing>						  
+						  Rule="NONE"
+						  Include="VEHICLE">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>		
@@ -14196,13 +14343,8 @@ DAMAGE TYPES
 				  DamageFXType="ALIEN_GRENADE">		
 				<DamageScalarDetails Scalar= "100%" >
 					<Filter 
-						  Rule="NONE">	
-						  <IncludeThing>NodRaiderTank</IncludeThing>
-						  <IncludeThing>BlackHandRaiderTank</IncludeThing>
-						  <IncludeThing>MarkedOfKaneRaiderTank</IncludeThing>						  
-						  <IncludeThing>NodBunkerTruck</IncludeThing>
-						  <IncludeThing>BlackHandBunkerTruck</IncludeThing>
-						  <IncludeThing>MarkedOfKaneBunkerTruck</IncludeThing>						  
+						  Rule="NONE"
+						  Include="VEHICLE">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>      
@@ -14225,13 +14367,8 @@ DAMAGE TYPES
 				  DamageFXType="ALIEN_TIBSHARD">			  
 				<DamageScalarDetails Scalar= "100%" >
 					<Filter 
-						  Rule="NONE">	
-						  <IncludeThing>NodRaiderTank</IncludeThing>
-						  <IncludeThing>BlackHandRaiderTank</IncludeThing>
-						  <IncludeThing>MarkedOfKaneRaiderTank</IncludeThing>						  
-						  <IncludeThing>NodBunkerTruck</IncludeThing>
-						  <IncludeThing>BlackHandBunkerTruck</IncludeThing>
-						  <IncludeThing>MarkedOfKaneBunkerTruck</IncludeThing>						  
+						  Rule="NONE"
+						  Include="VEHICLE">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  							
@@ -14255,13 +14392,8 @@ DAMAGE TYPES
 				  DamageFXType="NOD_PARTICLEBM">	  
 				<DamageScalarDetails Scalar= "10000%" >
 					<Filter 
-						  Rule="NONE">	
-						  <IncludeThing>NodRaiderTank</IncludeThing>
-						  <IncludeThing>BlackHandRaiderTank</IncludeThing>
-						  <IncludeThing>MarkedOfKaneRaiderTank</IncludeThing>						  
-						  <IncludeThing>NodBunkerTruck</IncludeThing>
-						  <IncludeThing>BlackHandBunkerTruck</IncludeThing>
-						  <IncludeThing>MarkedOfKaneBunkerTruck</IncludeThing>						  
+						  Rule="NONE"
+						  Include="VEHICLE">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  							
@@ -14296,13 +14428,8 @@ DAMAGE TYPES
 				  DamageFXType="ALIEN_PLASMADISK">		
 				<DamageScalarDetails Scalar= "10000%" >
 					<Filter 
-						  Rule="NONE">	
-						  <IncludeThing>NodRaiderTank</IncludeThing>
-						  <IncludeThing>BlackHandRaiderTank</IncludeThing>
-						  <IncludeThing>MarkedOfKaneRaiderTank</IncludeThing>						  
-						  <IncludeThing>NodBunkerTruck</IncludeThing>
-						  <IncludeThing>BlackHandBunkerTruck</IncludeThing>
-						  <IncludeThing>MarkedOfKaneBunkerTruck</IncludeThing>						  
+						  Rule="NONE"
+						  Include="VEHICLE">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  							
@@ -14337,13 +14464,8 @@ DAMAGE TYPES
 				  DamageFXType="GDI_RAILGUN">	  
 				<DamageScalarDetails Scalar= "10000%" >
 					<Filter 
-						  Rule="NONE">	
-						  <IncludeThing>NodRaiderTank</IncludeThing>
-						  <IncludeThing>BlackHandRaiderTank</IncludeThing>
-						  <IncludeThing>MarkedOfKaneRaiderTank</IncludeThing>						  
-						  <IncludeThing>NodBunkerTruck</IncludeThing>
-						  <IncludeThing>BlackHandBunkerTruck</IncludeThing>
-						  <IncludeThing>MarkedOfKaneBunkerTruck</IncludeThing>						  
+						  Rule="NONE"
+						  Include="VEHICLE">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>				
@@ -14676,7 +14798,7 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DeathType="DETONATED"
 				CylinderAOE="true" >
-				<DamageScalarDetails Scalar= "133%" >
+				<DamageScalarDetails Scalar= "125%" >
 					<Filter 
 						  Rule="ANY"
 						  Include="METAUNIT">

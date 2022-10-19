@@ -75,7 +75,7 @@ DAMAGE TYPES
 			Percent="12" />
 		<Armor
 			Damage="MINE"
-			Percent="100" />
+			Percent="75" />
 	</ArmorTemplate>
 
 	
@@ -106,7 +106,7 @@ DAMAGE TYPES
 			Percent="12" />
 		<Armor
 			Damage="MINE"
-			Percent="100" />
+			Percent="75" />
 	</ArmorTemplate>
 
 	<ArmorTemplate
@@ -136,7 +136,7 @@ DAMAGE TYPES
 			Percent="12" />
 		<Armor
 			Damage="MINE"
-			Percent="100" />
+			Percent="75" />
 	</ArmorTemplate>	
 
 	
@@ -1699,9 +1699,9 @@ DAMAGE TYPES
 	</ArmorTemplate>	
 	<!-- No more LOLOLOL Dozer crushing -->
 	<ArmorTemplate
-		id="NODRaiderTankArmorDozerBlades"
-		SideDamageScalar="110"
-		RearDamageScalar="150">
+		id="NODRaiderTankArmorDozerBlades"	
+		SideDamageScalar="137.5%"
+		RearDamageScalar="187.5%">
 		<Armor
 			Damage="CANNON"
 			Percent="100" />
@@ -1758,8 +1758,8 @@ DAMAGE TYPES
 	
 	<ArmorTemplate
 		id="NODBunkerTruckArmorDozerBlades"
-		SideDamageScalar="110"
-		RearDamageScalar="150">
+		SideDamageScalar="137.5%"
+		RearDamageScalar="187.5%">
 		<Armor
 			Damage="CANNON"
 			Percent="110" />
@@ -2106,7 +2106,7 @@ DAMAGE TYPES
 			Percent="38%" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="30%" />
+			Percent="35%" />
 		<Armor
 			Damage="FLAME"
 			Percent="40%" />				
@@ -2137,7 +2137,7 @@ DAMAGE TYPES
 			Percent="38%" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="30%" />
+			Percent="35%" />
 		<Armor
 			Damage="FLAME"
 			Percent="40%" />				
