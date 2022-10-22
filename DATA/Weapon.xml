@@ -234,7 +234,7 @@ DAMAGE TYPES
 			MinSeconds=".2s"
 			MaxSeconds=".2s" />
 		<FiringDuration
-			MinSeconds="1.4s"
+			MinSeconds="1.5s"
 			MaxSeconds="1.7s" />
 		<ClipReloadTime
 			MinSeconds="0.8s"
@@ -2359,7 +2359,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIShattererShockWaveCannon"
 		Name="GDIShattererShockWaveCannon"
-		AttackRange="350.0"
+		AttackRange="375.0"
 		MinimumAttackRange="0"
 		WeaponSpeed="510.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
@@ -2487,7 +2487,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="SteelShattererShockWaveCannon"
 		Name="SteelShattererShockWaveCannon"
-		AttackRange="350.0"
+		AttackRange="375.0"
 		MinimumAttackRange="0"
 		WeaponSpeed="510.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
@@ -3832,7 +3832,15 @@ DAMAGE TYPES
 					  DamageFXType="GDI_RIFLE"
 					  DeathType="DETONATED"
 					  CylinderAOE="true"
-					  VictimShroudRevealer="ArtilleryShroudRevealer"/>
+					  VictimShroudRevealer="ArtilleryShroudRevealer">
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  						  
+			</DamageNugget>
 			<WeaponOCLNugget
 				WeaponOCL="OCL_GenericTreeCrusher" />
 			<SuppressionNugget
@@ -3884,7 +3892,15 @@ DAMAGE TYPES
 				  DamageFXType="GDI_RIFLE"
 				  DeathType="NORMAL"
 				  CylinderAOE="true"
-				  VictimShroudRevealer="ArtilleryShroudRevealer"/>
+				  VictimShroudRevealer="ArtilleryShroudRevealer">
+			<DamageScalarDetails Scalar= "125%" >
+				<Filter 
+					  Rule="NONE"
+					  Include="VEHICLE">	
+				</Filter>
+				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+			</DamageScalarDetails>  					  
+		</DamageNugget>
 		<SuppressionNugget
 			Radius="40.0"
 			Suppression="100"
@@ -4180,7 +4196,15 @@ DAMAGE TYPES
 				Radius="200"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
-				DeathType="BURNED" />
+				DeathType="BURNED" >
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					
+			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -6450,7 +6474,15 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>				
+				</DamageScalarDetails>			
+
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  				
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -8651,14 +8683,14 @@ DAMAGE TYPES
 		ClipSize="1"
 		AutoReloadsClip="AUTO">
 		<PreAttackDelay
-		  MinSeconds="0.5s"
-		  MaxSeconds="0.5s" />
+		  MinSeconds="0.6s"
+		  MaxSeconds="0.6s" />
 		<FiringDuration
-			MinSeconds="0.6s"
-			MaxSeconds="0.6s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
-			MinSeconds="1.2s"
-			MaxSeconds="1.2s" />
+			MinSeconds="0.75s"
+			MaxSeconds="0.75s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
@@ -8697,14 +8729,14 @@ DAMAGE TYPES
 		ClipSize="1"
 		AutoReloadsClip="AUTO">
 		<PreAttackDelay
-		  MinSeconds="0.5s"
-		  MaxSeconds="0.5s" />
+		  MinSeconds="0.6s"
+		  MaxSeconds="0.6s" />
 		<FiringDuration
-			MinSeconds="0.6s"
-			MaxSeconds="0.6s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
-			MinSeconds="1.2s"
-			MaxSeconds="1.2s" />
+			MinSeconds="0.75s"
+			MaxSeconds="0.75s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
@@ -8743,14 +8775,14 @@ DAMAGE TYPES
 		ClipSize="1"
 		AutoReloadsClip="AUTO">
 		<PreAttackDelay
-		  MinSeconds="0.5s"
-		  MaxSeconds="0.5s" />
+		  MinSeconds="0.6s"
+		  MaxSeconds="0.6s" />
 		<FiringDuration
-			MinSeconds="0.6s"
-			MaxSeconds="0.6s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
-			MinSeconds="1.2s"
-			MaxSeconds="1.2s" />
+			MinSeconds="0.75s"
+			MaxSeconds="0.75s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
@@ -8789,14 +8821,14 @@ DAMAGE TYPES
 		ClipSize="1"
 		AutoReloadsClip="AUTO">
 		<PreAttackDelay
-		  MinSeconds="0.5s"
-		  MaxSeconds="0.5s" />
+		  MinSeconds="0.6s"
+		  MaxSeconds="0.6s" />
 		<FiringDuration
-			MinSeconds="0.6s"
-			MaxSeconds="0.6s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
-			MinSeconds="1.2s"
-			MaxSeconds="1.2s" />
+			MinSeconds="0.75s"
+			MaxSeconds="0.75s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
@@ -8846,7 +8878,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="2"/>
 			<DamageNugget
-				Damage="1150.0"
+				Damage="1350.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -8889,7 +8921,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="2"/>
 			<DamageNugget
-				Damage="1150.0"
+				Damage="1350.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -10093,20 +10125,20 @@ DAMAGE TYPES
 		/>
 		<Nuggets>
 			<DamageNugget
-				Damage="25.0"
+				Damage="27.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
 				DamageFXType="GDI_MACHINEGUN"
 				DeathType="NORMAL">
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter
 						Rule="NONE"
 						RejectStatusBitFlags="SWITCHED_WEAPONS"
 						Include="INFANTRY" >
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "67%" >
+				<DamageScalarDetails Scalar= "60%" >
 					<Filter 
 						  Rule="NONE"
 						  StatusBitFlags="SWITCHED_WEAPONS"
@@ -10144,26 +10176,27 @@ DAMAGE TYPES
 		/>
 		<Nuggets>
 			<DamageNugget
-				Damage="33.0"
+				Damage="36.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
 				DamageFXType="GDI_MACHINEGUN"
 				DeathType="NORMAL">
-				<DamageScalarDetails Scalar= "112.5%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter
 						Rule="NONE"
 						Include="NONCOM" >
 					</Filter>
 				</DamageScalarDetails>														
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter
 						Rule="NONE"
 						RejectStatusBitFlags="SWITCHED_WEAPONS"
+						Exclude="NONCOM"
 						Include="INFANTRY" >
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "67%" >
+				<DamageScalarDetails Scalar= "60%" >
 					<Filter 
 						  Rule="NONE"
 						  StatusBitFlags="SWITCHED_WEAPONS"
@@ -12801,7 +12834,7 @@ DAMAGE TYPES
 		<Nuggets>
 			<ParalyzeNugget
 				Radius="50.0"
-				DurationSeconds="5s"
+				DurationSeconds="4s"
 				ParalyzeType="EMP"
 				ParalyzeFX="FX_NODBuggyEmpHit">
 				<SpecialObjectFilter
@@ -13097,7 +13130,15 @@ DAMAGE TYPES
 				Radius="50.0"
 				DamageType="GRENADE"
 				DamageFXType="GDI_SHOCKWAVE"
-				DeathType="NORMAL" />
+				DeathType="NORMAL" >
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					
+			</DamageNugget>
 			<ParalyzeNugget
 				Radius="50.0"
 				DurationSeconds="10s"
@@ -14387,7 +14428,7 @@ DAMAGE TYPES
 		  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 		<Nuggets>
 			<DamageNugget 
-				  Damage="25.0" 
+				  Damage="30.0" 
 				  DamageType="MINE" 
 				  DamageFXType="NOD_PARTICLEBM">	  
 				<DamageScalarDetails Scalar= "10000%" >

@@ -1272,7 +1272,7 @@
 					IdleScanDelay="0.8s"
 					ReacquireDelay="5s"
 					StartupDelay="0s"
-					SympathyRange="100"
+					SympathyRange="25"
 					CheckVisionRange="False"
 					CanPickDynamicTargets="False"
 					RotateToTargetWhenAiming="True"
@@ -1283,7 +1283,7 @@
 		<Body>
 			<ActiveBody
 				id="A5C3EB8A"
-				MaxHealth="2400"
+				MaxHealth="2440"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

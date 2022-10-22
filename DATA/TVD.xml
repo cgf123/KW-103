@@ -355,7 +355,14 @@ KW XMLs:
 						Rule="NONE"
 						Include="TIBERIUM_BASED">								
 					</Filter>
-				</DamageScalarDetails>									
+				</DamageScalarDetails>		
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					
 			</DamageNugget> 
 			<AttributeModifierNugget
 				PartitionFilterTestType="SPHERE"

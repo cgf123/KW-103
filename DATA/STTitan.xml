@@ -4929,7 +4929,7 @@
 					IdleScanDelay="0.8s"
 					ReacquireDelay="5s"
 					StartupDelay="0s"
-					SympathyRange="100"
+					SympathyRange="25"
 					CheckVisionRange="False"
 					CanPickDynamicTargets="False"
 					RotateToTargetWhenAiming="True"
