@@ -91,10 +91,6 @@
 			Armor="AlienSeekerTankArmor"
 			DamageFX="InfantryAlienDamageFX"
 			Conditions="" />
-		<ArmorSet
-			Armor="AlienSeekerTankArmorShieldBodyEnabled"
-			DamageFX="VehicleDamageFX"
-			Conditions="SHIELDBODY_ENABLED" />
 		<LocomotorSet
 			Speed="90"
 			Condition="NORMAL"
@@ -929,8 +925,6 @@
 				ApplyToContained="False">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>			
-			<ShieldBodyUpdate
-				id="477C6A8E" />
 			<AudioLoopUpgrade
 				id="04FC01D4"
 				RequiresAllTriggers="False"
@@ -977,7 +971,7 @@
 			</AIUpdate>
 		</AI>
 		<Body>
-			<ShieldBody
+			<ActiveBody
 				id="B313F576"
 				MaxHealth="2100"
 				MaxHealthDamaged="0"
@@ -998,15 +992,7 @@
 				SecondChanceHeal="0"
 				UseDefaultDamageSettings="True"
 				RemoveUpgradesOnDeath="False"
-				BurningDeathBehavior="False"
-				ShieldEnabledFX="FX_AlienShieldEnabled"
-				ShieldDepleteFX="FX_AlienShieldDeplete"
-				ShieldRechargeEndFX=""
-				ShieldTakeDamageFX="FX_AlienShieldHit"
-				ShieldAmount="400"
-				ShieldArmor="ForcefieldFilterDamageArmor"
-				ShieldRechargeIdleTime="30s"
-				ShieldActiveModelCondition="USER_1" />
+				BurningDeathBehavior="False" />
 		</Body>
 		<Geometry
 			IsSmall="True">

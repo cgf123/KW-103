@@ -1023,7 +1023,7 @@
 				ShieldDepleteFX="FX_AlienShieldDeplete"
 				ShieldRechargeEndFX=""
 				ShieldTakeDamageFX="FX_AlienShieldHit"
-				ShieldAmount="400"
+				ShieldAmount="450"
 				ShieldArmor="ForcefieldFilterDamageArmor"
 				ShieldRechargeIdleTime="30s"
 				ShieldActiveModelCondition="USER_1" />

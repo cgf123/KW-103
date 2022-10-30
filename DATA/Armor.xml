@@ -1206,7 +1206,7 @@ DAMAGE TYPES
 			Percent="30" />			
 		<Armor
 			Damage="GUN"
-			Percent="45" />
+			Percent="40" />
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -1365,7 +1365,7 @@ DAMAGE TYPES
 			Percent="50" />				
 		<Armor
 			Damage="GUN"
-			Percent="45" />
+			Percent="40" />
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -1599,7 +1599,7 @@ DAMAGE TYPES
 			Percent="110" />
 		<Armor
 			Damage="ROCKET"
-			Percent="60" />
+			Percent="55" />
 		<Armor
 			Damage="BLAST"
 			Percent="44" />			
@@ -2641,22 +2641,22 @@ DAMAGE TYPES
 
 	<ArmorTemplate
 		id="ZOCOMOrcaCeramicArmor"
-		Default="67">
+		Default="62.5%">
 		<Armor
 			Damage="CANNON"
-			Percent="67%" />		
+			Percent="62.5%" />		
 		<Armor
 			Damage="ROCKET"
-			Percent="67%" />
+			Percent="62.5%" />
 		<Armor
 			Damage="GRENADE"
-			Percent="67%" />
+			Percent="62.5%" />
 		<Armor
 			Damage="FLAME"
-			Percent="67%" />					
+			Percent="62.5%" />					
 		<Armor
 			Damage="GUN"
-			Percent="67%" />
+			Percent="62.5%" />
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -2687,22 +2687,22 @@ DAMAGE TYPES
 	
 	<ArmorTemplate
 		id="GDIHammerheadCeramicArmor"
-		Default="75">
+		Default="70">
 		<Armor
 			Damage="CANNON"
-			Percent="75" />
+			Percent="70" />
 		<Armor
 			Damage="ROCKET"
-			Percent="75" />
+			Percent="70" />
 		<Armor
 			Damage="GRENADE"
-			Percent="75" />
+			Percent="70" />
 		<Armor
 			Damage="FLAME"
-			Percent="75" />					
+			Percent="70" />					
 		<Armor
 			Damage="GUN"
-			Percent="75" />
+			Percent="70" />
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />

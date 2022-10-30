@@ -570,7 +570,7 @@
 		TypeDescription="UpgradeType:CeramicArmor"
 		Description="UpgradeDesc:CeramicArmor"
 		Type="PLAYER"
-		BuildCost="1500"
+		BuildCost="2000"
 		BuildTime="60s"
 		ResearchSound="AudioEvent:GDI_Hammerhead_CeramicArmorUpgraded"
 		IconImage="Button_Upgrade_CeramicArmor">		

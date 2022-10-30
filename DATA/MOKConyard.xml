@@ -1028,7 +1028,7 @@
 				UpgradeToGive="Upgrade_Pack"
 				WeaponFlags="" />
 			<PowerUpdate
-				UpdatePeriod="1s"
+				UpdatePeriod="0.25s"
 				ReloadTime="30s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />

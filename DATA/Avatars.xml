@@ -2337,7 +2337,7 @@
 				DefectionFrameCount="300" />
 
 			<PowerUpdate
-				UpdatePeriod="1s"
+				UpdatePeriod="0.25s"
 				ReloadTime="30s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />				
@@ -4902,7 +4902,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="10000"
+				MaxHealth="9500"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -7451,7 +7451,7 @@
 				DefectionFrameCount="300" />
 				
 			<PowerUpdate
-				UpdatePeriod="1s"
+				UpdatePeriod="0.25s"
 				ReloadTime="30s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />								
@@ -10016,7 +10016,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="10000"
+				MaxHealth="9500"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

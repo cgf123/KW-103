@@ -278,7 +278,9 @@
 	
 	<Include type="all" source="NODNukeSeed.xml" />		
 
-	<Include type="all" source="NODAttackBikeRocketProjectiles.xml" />		
+	<Include type="all" source="NODAttackBikeRocketProj.xml" />		
+
+	<Include type="all" source="NODVertigoBombProj.xml" />		
 
 	<Include type="all" source="NODAttackBike.xml" />			
 	<Include type="all" source="BHAttackBike.xml" />			

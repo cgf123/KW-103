@@ -1018,8 +1018,8 @@ DAMAGE TYPES
 			MinSeconds="0.2s"
 			MaxSeconds="0.3s" />
 		<ClipReloadTime
-			MinSeconds="2.5s"
-			MaxSeconds="2.7s" />
+			MinSeconds="2.4s"
+			MaxSeconds="2.6s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="MARVGrenadeSoldierWeaponProjectile"
@@ -1269,8 +1269,8 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="0.93s"
-				MaxSeconds="0.93s" />
+				MinSeconds="1.0s"
+				MaxSeconds="1.0s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -1343,8 +1343,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="1.06s"
-				MaxSeconds="1.06s" />
+				MinSeconds="1.2s"
+				MaxSeconds="1.2s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -1426,8 +1426,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="0.8s"
-				MaxSeconds="0.8s" />
+				MinSeconds="0.96s"
+				MaxSeconds="0.96s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -4822,11 +4822,20 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>
 
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="NONE" 
 						Include="MADE_OF_WOOD" />					
-				</DamageScalarDetails>														
+				</DamageScalarDetails>		
+
+				<DamageScalarDetails Scalar= "80%">
+					<Filter 
+						Rule="NONE">
+						<IncludeThing>AlienGunWalker</IncludeThing>
+						<IncludeThing>Traveler59GunWalker</IncludeThing>
+						<IncludeThing>Reaper17ShardWalker</IncludeThing>						
+					</Filter>
+				</DamageScalarDetails>						
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -4896,11 +4905,20 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="NONE" 
 						Include="MADE_OF_WOOD" />					
-				</DamageScalarDetails>							
+				</DamageScalarDetails>	
+
+				<DamageScalarDetails Scalar= "80%">
+					<Filter 
+						Rule="NONE">
+						<IncludeThing>AlienGunWalker</IncludeThing>
+						<IncludeThing>Traveler59GunWalker</IncludeThing>
+						<IncludeThing>Reaper17ShardWalker</IncludeThing>						
+					</Filter>
+				</DamageScalarDetails>					
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -4972,7 +4990,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 				
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="NONE" 
 						Include="MADE_OF_WOOD" />					
@@ -5033,7 +5051,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 				
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="NONE" 
 						Include="MADE_OF_WOOD" />					
@@ -5539,7 +5557,7 @@ DAMAGE TYPES
 						Rule="NONE"
 						Include="INFANTRY" />
 				</DamageScalarDetails>			
-			</DamageNugget>
+			</DamageNugget>		
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -6619,7 +6637,7 @@ DAMAGE TYPES
 						Include="INFANTRY" />
 				</DamageScalarDetails>
 				
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="NONE" 
 						Include="MADE_OF_WOOD" />					
@@ -6692,7 +6710,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 				
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="NONE" 
 						Include="MADE_OF_WOOD" />					
@@ -6832,6 +6850,12 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DeathType="NORMAL"
 				DamageFXType="ALIEN_TIBSHARD" >
+				<DamageScalarDetails Scalar= "250%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TRANSPORT" >
+					</Filter>
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="ANY"
@@ -6860,7 +6884,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>				
 				
 				<!-- Scalar vs Disints -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter Rule="NONE">          
 						<IncludeThing>Traveler59RazorDrones</IncludeThing>					
 						<IncludeThing>AlienRazorDrones</IncludeThing>					
@@ -6921,6 +6945,12 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARDBLUE"
 				DeathType="NORMAL">
+				<DamageScalarDetails Scalar= "250%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TRANSPORT" >
+					</Filter>
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="ANY"
@@ -6949,7 +6979,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 				
 				<!-- Scalar vs Disints -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter Rule="NONE">          
 						<IncludeThing>Traveler59RazorDrones</IncludeThing>					
 						<IncludeThing>AlienRazorDrones</IncludeThing>					
@@ -6995,6 +7025,12 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_CANNON"
 				DeathType="NORMAL">
+				<DamageScalarDetails Scalar= "250%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TRANSPORT" >
+					</Filter>
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
@@ -7023,7 +7059,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 
 				<!-- Scalar vs Disints -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter Rule="NONE">          
 						<IncludeThing>Traveler59RazorDrones</IncludeThing>					
 						<IncludeThing>AlienRazorDrones</IncludeThing>					
@@ -7092,7 +7128,14 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_PLASMADISK">	
 				
-				<DamageScalarDetails Scalar= "200%">
+				<DamageScalarDetails Scalar= "275%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TRANSPORT"
+						Exclude="WEAPON_SALVAGER" >
+					</Filter>
+				</DamageScalarDetails>					
+				<DamageScalarDetails Scalar= "220%">
 					<Filter
 						Rule="ANY"
 						Include="AIRCRAFT" >
@@ -7155,8 +7198,8 @@ DAMAGE TYPES
 		/>
 
 		<ClipReloadTime
-			MinSeconds="1.85s"
-			MaxSeconds="1.85s"
+			MinSeconds="1.75s"
+			MaxSeconds="1.75s"
 		/>
 
 		<Nuggets>
@@ -7182,7 +7225,14 @@ DAMAGE TYPES
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_TIBSHARD" >
-				<DamageScalarDetails Scalar= "200%">
+				<DamageScalarDetails Scalar= "275%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TRANSPORT"
+						Exclude="WEAPON_SALVAGER" >
+					</Filter>
+				</DamageScalarDetails>					
+				<DamageScalarDetails Scalar= "220%">
 					<Filter
 						Rule="ANY"
 						Include="AIRCRAFT" >
@@ -7278,7 +7328,7 @@ DAMAGE TYPES
 				DamageFXType="ALIEN_PLASMADISK"
 				DeathType="NORMAL">
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT">          						
@@ -7335,7 +7385,7 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_TIBSHARD" >
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT">          						
@@ -7687,7 +7737,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -7779,7 +7829,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -7865,7 +7915,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>			
 
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -8082,7 +8132,7 @@ DAMAGE TYPES
 				DeathType="NORMAL" > 	
 				
 				<!-- Very Epic Armor? -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "135%">
 					<Filter 
 						Rule="NONE">
 						<IncludeThing>GDIMARV</IncludeThing>
@@ -8092,7 +8142,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>						
 
 				<!-- Epic Armor -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="NONE"
 						Include="METAUNIT">
@@ -8109,12 +8159,19 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="NONE">			
-						<IncludeThing>NODAvatar</IncludeThing>
-						<IncludeThing>MarkedOfKaneAvatar</IncludeThing>
-						<IncludeThing>BlackHandCustomWarmech</IncludeThing>
 						<IncludeThing>AlienAnnihilatorTripod</IncludeThing>
 						<IncludeThing>Traveler59AnnihilatorTripod</IncludeThing>
 						<IncludeThing>Reaper17AnnihilatorTripod</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>					
+				
+				<!-- Very Heavy Armor -->
+				<DamageScalarDetails Scalar= "90%">
+					<Filter 
+						Rule="NONE">			
+						<IncludeThing>NODAvatar</IncludeThing>
+						<IncludeThing>MarkedOfKaneAvatar</IncludeThing>
+						<IncludeThing>BlackHandCustomWarmech</IncludeThing>
 					</Filter>
 				</DamageScalarDetails>				
 				
@@ -8181,9 +8238,7 @@ DAMAGE TYPES
 						<!-- Med Armor -->
 						<ExcludeThing>AlienSeekerTank</ExcludeThing>
 						<ExcludeThing>Traveler59SeekerTank</ExcludeThing>
-						<ExcludeThing>Reaper17SeekerTank</ExcludeThing>							
-						<ExcludeThing>SteelTalonsWolverine</ExcludeThing>	
-						<ExcludeThing>SteelTalonsWolverine_Veteran</ExcludeThing>						
+						<ExcludeThing>Reaper17SeekerTank</ExcludeThing>											
 						
 						<!-- Light Armor -->				
 						<ExcludeThing>GDIPitbull</ExcludeThing>
@@ -8191,7 +8246,9 @@ DAMAGE TYPES
 						<ExcludeThing>SteelTalonsPitbull</ExcludeThing>		
 						<ExcludeThing>GDIPitbull_Veteran</ExcludeThing>
 						<ExcludeThing>ZOCOMPitbull_Veteran</ExcludeThing>
-						<ExcludeThing>SteelTalonsPitbull_Veteran</ExcludeThing>		
+						<ExcludeThing>SteelTalonsPitbull_Veteran</ExcludeThing>	
+						<ExcludeThing>SteelTalonsWolverine</ExcludeThing>	
+						<ExcludeThing>SteelTalonsWolverine_Veteran</ExcludeThing>								
 						<ExcludeThing>NODScorpionBuggy</ExcludeThing>
 						<ExcludeThing>BlackHandScorpionBuggy</ExcludeThing>
 						<ExcludeThing>MarkedOfKaneScorpionBuggy</ExcludeThing>								
@@ -8254,9 +8311,7 @@ DAMAGE TYPES
 						<IncludeThing>ZOCOMHammerhead</IncludeThing>
 						<IncludeThing>SteelTalonsHammerhead</IncludeThing>						
 						<IncludeThing>NODVertigo</IncludeThing>	
-						<IncludeThing>MarkedOfKaneVertigo</IncludeThing>							
-						<IncludeThing>SteelTalonsWolverine</IncludeThing>	
-						<IncludeThing>SteelTalonsWolverine_Veteran</IncludeThing>						
+						<IncludeThing>MarkedOfKaneVertigo</IncludeThing>												
 					</Filter>
 				</DamageScalarDetails>	
 								
@@ -8308,7 +8363,9 @@ DAMAGE TYPES
 						<IncludeThing>SteelTalonsPitbull</IncludeThing>		
 						<IncludeThing>GDIPitbull_Veteran</IncludeThing>
 						<IncludeThing>ZOCOMPitbull_Veteran</IncludeThing>
-						<IncludeThing>SteelTalonsPitbull_Veteran</IncludeThing>							
+						<IncludeThing>SteelTalonsPitbull_Veteran</IncludeThing>	
+						<IncludeThing>SteelTalonsWolverine</IncludeThing>	
+						<IncludeThing>SteelTalonsWolverine_Veteran</IncludeThing>							
 					</Filter>
 				</DamageScalarDetails>			
 				
@@ -8689,15 +8746,15 @@ DAMAGE TYPES
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
 		<ClipReloadTime
-			MinSeconds="0.75s"
-			MaxSeconds="0.75s" />
+			MinSeconds="1.2s"
+			MaxSeconds="1.2s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
 				LaserId="1"
 				HitGroundFX="FX_NODSpitfireHit"/>
 			<DamageNugget
-				Damage="950.0"
+				Damage="1250.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -8743,7 +8800,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_NODSpitfireHit"/>
 			<DamageNugget
-				Damage="950.0"
+				Damage="1250.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -8789,7 +8846,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_NODSpitfireHit"/>
 			<DamageNugget
-				Damage="1150.0"
+				Damage="1250.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -8835,7 +8892,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_NODSpitfireHit"/>
 			<DamageNugget
-				Damage="1150.0"
+				Damage="1250.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -8878,7 +8935,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="2"/>
 			<DamageNugget
-				Damage="1350.0"
+				Damage="1500.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -8921,7 +8978,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="2"/>
 			<DamageNugget
-				Damage="1350.0"
+				Damage="1500.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -11513,8 +11570,8 @@ DAMAGE TYPES
 		PreAttackType="PER_BURST"
 		ReAcquireDetailType="PER_ATTACK">
 		<PreAttackDelay
-			MinSeconds="1.0s"
-			MaxSeconds="1.0s" />			
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />			
 		<Nuggets>				
 			<ActivateLaserNugget
 				Lifetime="0.25s"
@@ -11701,7 +11758,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_NODSpitfireHit"/>
 			<DamageNugget 
-				Damage="148.0" 
+				Damage="140.0" 
 				Radius="0.0" 
 				DamageType="GUN" 
 				DamageFXType="NOD_LASER"		
@@ -11751,7 +11808,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_ChargedParticleBeamHit"	/>
 			<DamageNugget
-				Damage="140.0"
+				Damage="148.0"
 				Radius="0.0"
 				DamageType="GUN"
 				DamageFXType="NOD_PARTICLEBM"
@@ -11997,8 +12054,8 @@ DAMAGE TYPES
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="NOD_MISSILE"
-				DeathType="EXPLODED">
-				<DamageScalarDetails Scalar= "160%">
+				DeathType="EXPLODED">				
+				<DamageScalarDetails Scalar= "175%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" >    
@@ -12073,7 +12130,13 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="NOD_TIBCOREMISSILE"
 				DeathType="EXPLODED">				
-				<DamageScalarDetails Scalar= "160%">
+				<DamageScalarDetails Scalar= "175%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED" >    
+					</Filter>
+				</DamageScalarDetails>					
+				<DamageScalarDetails Scalar= "175%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" >   						
@@ -12119,14 +12182,20 @@ DAMAGE TYPES
 		  ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
 		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		  AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
-		<Nuggets>
+		<Nuggets>		
 			<DamageNugget
 				  Damage="187.0"
 				  Radius="10.0"
 				  DelayTimeSeconds="0s"
 				  DamageType="ROCKET"
 				  DamageFXType="NOD_TIBCOREMISSILE"
-				  DeathType="EXPLODED" >						  
+				  DeathType="EXPLODED" >
+				<DamageScalarDetails Scalar= "100%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED" >    
+					</Filter>
+				</DamageScalarDetails>					  
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -12260,15 +12329,20 @@ DAMAGE TYPES
 				Name="NODStealthTankRocketTibCoreWarhead"
 				ProjectileCollidesWith  = "ENEMIES"
 				RadiusDamageAffects="ALLIES ENEMIES NEUTRALS NOT_SIMILAR"
-				AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
- 		>
+				AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
 		<Nuggets>
 			<DamageNugget
 				Damage="262.5"
 				Radius="10.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
-				DamageFXType="NOD_TIBCOREMISSILE" >				
+				DamageFXType="NOD_TIBCOREMISSILE" >		
+				<DamageScalarDetails Scalar= "225%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED" >    
+					</Filter>
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "225%">
 					<Filter
 						Rule="NONE"
@@ -12438,7 +12512,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODVertigoBomb"
 		Name="NODVertigoBomb"
-		AttackRange="100.0"
+		AttackRange="125.0"
 		WeaponSpeed="200"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="20d"

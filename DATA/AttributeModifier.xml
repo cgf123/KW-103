@@ -213,7 +213,7 @@
 		Category="NONE"
 		Duration="6.0s"
 		ObjectStatusToSet="CARRYING_FLAG">
-		<Modifier Type="SPEED" Value="60%"/>
+		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="75%"/>
 	</AttributeModifier>		
 	
@@ -222,7 +222,7 @@
 		Category="NONE"
 		Duration="3.0s"
 		ObjectStatusToSet="CARRYING_FLAG">
-		<Modifier Type="SPEED" Value="60%"/>
+		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="100%"/>		
 	</AttributeModifier>			
 	
@@ -273,7 +273,7 @@
     <AttributeModifier
 		id="AttributeModifier_AvatarFlamerBuff"
 		Category="INNATE_HEALTH">
-		<Modifier Type="ARMOR" Value="90%"/>
+		<Modifier Type="ARMOR" Value="95%"/>
 	</AttributeModifier>	
 
     <AttributeModifier
