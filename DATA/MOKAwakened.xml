@@ -92,6 +92,10 @@
 		BuildInProximityToSamePlayerStucture="True">
 		<DisplayName>Name:NODCyborgInfantry</DisplayName>
 		<ArmorSet
+			Armor="NODCyborgInfantryArmorUpgraded"
+			DamageFX="InfantryDamageFX"
+			Conditions="PLAYER_UPGRADE" />		
+		<ArmorSet
 			Armor="NODCyborgInfantryArmor"
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
@@ -1374,6 +1378,18 @@
 				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>
 			</AttributeModifierUpgrade>		
 			
+			<ArmorUpgrade
+				id="11A0FF33"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="True"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				ArmorSetFlag="PLAYER_UPGRADE"
+				KillArmorUpgrade="False"
+				IgnoreArmorUpgrade="False">
+				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>					
+			</ArmorUpgrade>					
 			
 			<SpecialPower
 				id="72CA9D89"

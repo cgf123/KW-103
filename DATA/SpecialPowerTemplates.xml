@@ -1246,10 +1246,12 @@
 			<ExcludeThing>AlienWormHole</ExcludeThing>
 			<ExcludeThing>ABTower</ExcludeThing>
 
+			<!--
 			<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
 			<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
 			<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
 			<ExcludeThing>AlienMillipedeBody</ExcludeThing>	
+			-->
 			
 			<!-- Drone-based units are not capturable
 			<ExcludeThing>BlackHandStealthTank</ExcludeThing>			
@@ -1325,10 +1327,12 @@
 			<ExcludeThing>Traveler59Cultist</ExcludeThing>
 			<ExcludeThing>Traveler59CultistSquad</ExcludeThing>		
 
+			<!--
 			<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
 			<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
 			<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
 			<ExcludeThing>AlienMillipedeBody</ExcludeThing>
+			-->
 			
 			<!-- Drone-based units are not capturable
 			<ExcludeThing>BlackHandStealthTank</ExcludeThing>			

@@ -1595,6 +1595,95 @@
 				DoFlash="False">
 				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
 			</LevelUpUpgrade>
+
+			<!-- Split Aura -->
+			<PassiveAreaEffectBehavior
+				id="7FFDED05"
+				EffectRadius="150"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="30"
+				UpgradeRequired=""
+				AntiCategoryMask=""
+				AntiFX=""
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>AttributeModifier_CM11RadioTowerBuff</Modifier>
+				<AllowFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="INFANTRY"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>					
+			
+			<PassiveAreaEffectBehavior
+				id="7FFDED06"
+				EffectRadius="150"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="30"
+				UpgradeRequired=""
+				AntiCategoryMask=""
+				AntiFX=""
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>Confessor_Militant_AttributeModifier</Modifier>
+				<AllowFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="INFANTRY"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>
+
+			<PassiveAreaEffectBehavior
+				id="7FFDED07"
+				EffectRadius="150"
+				MaxBeneficiaries="0"
+				HealingPercentPerSecond="0%"
+				HealingPointsPerSecond="0"
+				SurveyDelayFrames="30"
+				UpgradeRequired=""
+				AntiCategoryMask=""
+				AntiFX=""
+				HealFX=""
+				NonStackable="True"
+				AffectAttached="False"
+				AffectWoundedOnly="False"
+				AffectUnderAttack="False">
+				<Modifier>AttributeModifier_BlackHandLeadership</Modifier>
+				<AllowFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="INFANTRY"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="">				
+				</AllowFilter>
+			</PassiveAreaEffectBehavior>				
+			
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate

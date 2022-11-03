@@ -808,6 +808,32 @@ DAMAGE TYPES
 	</ArmorTemplate>	
 	
 	<ArmorTemplate
+		id="MOKTibTrooperArmorUpgraded"
+		Default="75" >
+		<Armor
+			Damage="CANNON"
+			Percent="6" />
+		<Armor
+			Damage="ROCKET"
+			Percent="18" />
+		<Armor
+			Damage="BLAST"
+			Percent="13" />			
+		<Armor
+			Damage="GRENADE"
+			Percent="75" />
+		<Armor
+			Damage="FLAME"
+			Percent="40" />					
+		<Armor
+			Damage="GUN"
+			Percent="100" />
+		<Armor
+			Damage="SNIPER"
+			Percent="50" />			
+	</ArmorTemplate>		
+	
+	<ArmorTemplate
 		id="NODCyborgInfantryArmor"
 		Default="75">
 		<Armor
@@ -830,8 +856,34 @@ DAMAGE TYPES
 			Percent="85" />
 		<Armor
 			Damage="SNIPER"
-			Percent="55" />	
+			Percent="60" />	
 	</ArmorTemplate>	
+
+	<ArmorTemplate
+		id="NODCyborgInfantryArmorUpgraded"
+		Default="75">
+		<Armor
+			Damage="CANNON"
+			Percent="12" />
+		<Armor
+			Damage="ROCKET"
+			Percent="30" />
+		<Armor
+			Damage="BLAST"
+			Percent="27" />		
+		<Armor
+			Damage="GRENADE"
+			Percent="100" />
+		<Armor
+			Damage="FLAME"
+			Percent="100" />					
+		<Armor
+			Damage="GUN"
+			Percent="85" />
+		<Armor
+			Damage="SNIPER"
+			Percent="40" />	
+	</ArmorTemplate>		
 	
 	<ArmorTemplate
 		id="NODEnlightenedArmor"
@@ -856,7 +908,33 @@ DAMAGE TYPES
 			Percent="85" />
 		<Armor
 			Damage="SNIPER"
-			Percent="55"/>
+			Percent="60"/>
+	</ArmorTemplate>		
+	
+	<ArmorTemplate
+		id="NODEnlightenedArmorUpgraded"
+		Default="75">
+		<Armor
+			Damage="CANNON"
+			Percent="12" />
+		<Armor
+			Damage="ROCKET"
+			Percent="30" />
+		<Armor
+			Damage="BLAST"
+			Percent="27" />				
+		<Armor
+			Damage="GRENADE"
+			Percent="100" />
+		<Armor
+			Damage="FLAME"
+			Percent="100" />					
+		<Armor
+			Damage="GUN"
+			Percent="85" />
+		<Armor
+			Damage="SNIPER"
+			Percent="40"/>
 	</ArmorTemplate>		
 
 	<ArmorTemplate

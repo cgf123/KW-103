@@ -102,7 +102,7 @@
 			DamageFX=""
 			Conditions="" />
 		<LocomotorSet
-			Speed="55"
+			Speed="45"
 			Condition="NORMAL"
 			Locomotor="NormalRangedSquadLocomotor" />
 		<SkirmishAIInformation
@@ -715,7 +715,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				AttributeModifier="AttributeModifier_CyberneticLegs">
+				AttributeModifier="AttributeModifier_CyberneticLegs1">
 				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>
 			</AttributeModifierUpgrade>
 			<CreateAndEnterObjectSpecialPower

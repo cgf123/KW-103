@@ -1269,8 +1269,8 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="1.0s"
-				MaxSeconds="1.0s" />
+				MinSeconds="0.9375s"
+				MaxSeconds="0.9375s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -1426,8 +1426,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="0.96s"
-				MaxSeconds="0.96s" />
+				MinSeconds="0.9s"
+				MaxSeconds="0.9s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -11496,8 +11496,8 @@ DAMAGE TYPES
 		FireVeteranFX="FX_NODSpitfireFireHeroic"
 		NoVictimNeeded="false" >
 		<FiringDuration
-			MinSeconds="2.5s"
-			MaxSeconds="2.5s" />
+			MinSeconds="2.56s"
+			MaxSeconds="2.56s" />
 		<Nuggets>
 			<DamageNugget
 				Damage="520.0"

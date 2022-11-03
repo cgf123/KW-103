@@ -88,11 +88,15 @@
 		BuildInProximityToSamePlayerStucture="True">
 		<DisplayName>Name:NODTibTrooper</DisplayName>
 		<ArmorSet
+			Armor="MOKTibTrooperArmorUpgraded"
+			DamageFX="InfantryDamageFX"
+			Conditions="PLAYER_UPGRADE" />		
+		<ArmorSet
 			Armor="MOKTibTrooperArmor"
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="65"
+			Speed="70"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<SkirmishAIInformation
@@ -1621,6 +1625,20 @@
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>
 			</AudioLoopUpgrade>
+
+			<ArmorUpgrade
+				id="11A0FF33"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="True"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				ArmorSetFlag="PLAYER_UPGRADE"
+				KillArmorUpgrade="False"
+				IgnoreArmorUpgrade="False">
+				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>					
+			</ArmorUpgrade>			
+			
 		</Behaviors>
 		<AI>
 			<AIUpdate

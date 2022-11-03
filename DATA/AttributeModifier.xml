@@ -362,7 +362,7 @@
 		Duration="15.0s"
 		ObjectStatusToSet="SWITCHED_WEAPONS"		
 		ModelConditionsSet="USER_8"	>
-		<Modifier Type="SPEED" Value="80%"/>
+		<Modifier Type="SPEED" Value="85%"/>
 		<Modifier Type="ARMOR" Value="75%" />
 		<Modifier Type="RATE_OF_FIRE" Value="100%" />		
 		<Modifier Type="RESIST_EMP" Value="100%"/> <!--
@@ -375,7 +375,7 @@
 		Duration="15.0s"
 		ObjectStatusToSet="SWITCHED_WEAPONS"		
 		ModelConditionsSet="USER_8"	>
-		<Modifier Type="SPEED" Value="80%"/>
+		<Modifier Type="SPEED" Value="85%"/>
 		<Modifier Type="ARMOR" Value="90%" />
 		<Modifier Type="RATE_OF_FIRE" Value="100%" />
 		<Modifier Type="RESIST_EMP" Value="100%"/> <!--
@@ -495,7 +495,7 @@
 	<AttributeModifier
 		id="AttributeModifier_AdvancedArticulators"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="133%"/>
+		<Modifier Type="SPEED" Value="125%"/>
 	</AttributeModifier>
 	
 	<!-- For T59 Shocks -->	
@@ -535,18 +535,18 @@
 		<Modifier Type="SPEED" Value="125%"/>
 	</AttributeModifier>
 				
-	<!-- For Awakened -->
+	<!-- For Awakened/Enlightened -->
 	<AttributeModifier
 		id="AttributeModifier_CyberneticLegs1"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="166%"/>
+		<Modifier Type="SPEED" Value="150%"/>
 	</AttributeModifier>			
 		
-	<!-- For Enlightened/TibTroopers -->
+	<!-- For TibTroopers -->
 	<AttributeModifier
 		id="AttributeModifier_CyberneticLegs"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="145%"/>
+		<Modifier Type="SPEED" Value="130%"/>
 	</AttributeModifier>			
 				
 	<!-- For Saboteurs -->

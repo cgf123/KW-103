@@ -92,11 +92,15 @@
 		BuildInProximityToSamePlayerStucture="True">
 		<DisplayName>Name:MarkedOfKaneImprovedCyborgInfantry</DisplayName>
 		<ArmorSet
+			Armor="NODEnlightenedArmorUpgraded"
+			DamageFX="InfantryDamageFX"
+			Conditions="PLAYER_UPGRADE" />			
+		<ArmorSet
 			Armor="NODEnlightenedArmor"
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="65"
+			Speed="55"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<SkirmishAIInformation
@@ -1619,9 +1623,22 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				AttributeModifier="AttributeModifier_CyberneticLegs">
+				AttributeModifier="AttributeModifier_CyberneticLegs1">
 				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>
 			</AttributeModifierUpgrade>
+			
+			<ArmorUpgrade
+				id="11A0FF33"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="True"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				ArmorSetFlag="PLAYER_UPGRADE"
+				KillArmorUpgrade="False"
+				IgnoreArmorUpgrade="False">
+				<TriggeredBy>Upgrade_MarkedOfKaneCyberneticLegs</TriggeredBy>					
+			</ArmorUpgrade>					
 			
 			<!-- CPB/SCPB subobject fix 
 			<GrantUpgradeCreate
