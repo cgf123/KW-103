@@ -417,6 +417,26 @@
 		CanMoveBackward="true"
 		BackingUpSpeed="33%"
 		/>  	
+
+  <LocomotorTemplate
+		id="TitanLocomotor"
+		Name="TitanLocomotor"
+		Surfaces="GROUND RUBBLE CRUSHABLE_OBSTACLE" 
+		TurnTimeSeconds="2.5s" 
+		TurnTimeDamagedSeconds="5s" 
+		MaxSpeedDamaged="75%"
+		FastTurnRadius="9.0" 
+		SlowTurnRadius="1.0" 
+		AccelerationSeconds="0.2s"
+		FormationPriority="NO_FORMATION"
+		BrakingSeconds="0.01s"
+		MinTurnSpeed="0%"
+		BehaviorZ="NO_MOTIVE_FORCE"	
+		Appearance="TWO_LEGS" 
+		StickToGround="true"
+		CanMoveBackward="true"
+		BackingUpSpeed="33%"
+	/>
 	
 	<LocomotorTemplate
 		id="GDIPitbullLocomotor"
@@ -902,6 +922,56 @@
 		MaximumWheelCompression="1.4"
 		WheelTurnAngle="35d"		
 	/>
+	
+	<LocomotorTemplate
+		id="NODMobileArtilleryLocomotor"
+		Name="NODMobileArtilleryLocomotor"
+		Surfaces="GROUND CRUSHABLE_OBSTACLE"
+		TurnTimeSeconds="2.0s"
+		TurnTimeDamagedSeconds="4.0s"
+		MaxSpeedDamaged="75%"
+		AccelerationSeconds="0.8s"
+		BrakingSeconds="0.01s"
+		SlowTurnRadius="0.0"
+		FastTurnRadius="20.0"
+		BehaviorZ="NO_MOTIVE_FORCE"
+		Appearance="TREADS"
+		UseTerrainSmoothing="true"
+
+		AccelPitchLimit="5d"
+		BounceKick="1d"
+		PitchStiffness="0.15"
+		RollStiffness="0.25"
+		PitchDamping="0.5"
+		RollDamping="0.5"
+		ForwardAccelerationPitchFactor="0.1"
+		LateralAccelerationRollFactor="0.0"
+
+		HasSuspension="true"
+		CanMoveBackward="false"
+		ClampOrientationToPathTangent="true"
+		ReorientIfTurnTooSharp="true"
+		/>	
+		
+	<LocomotorTemplate
+		id="JuggernaughtLocomotor"
+		Name="JuggernaughtLocomotor"
+		Surfaces="GROUND RUBBLE CRUSHABLE_OBSTACLE" 
+		TurnTimeSeconds="2.5s" 
+		TurnTimeDamagedSeconds="5s" 
+		MaxSpeedDamaged="75%"
+		FastTurnRadius="9.0" 
+		SlowTurnRadius="1.0" 
+		AccelerationSeconds="0.5s"
+		FormationPriority="NO_FORMATION"
+		BrakingSeconds="0.01s"
+		MinTurnSpeed="0%"
+		BehaviorZ="NO_MOTIVE_FORCE"	
+		Appearance="TWO_LEGS" 
+		StickToGround="true"
+		CanMoveBackward="true"
+		BackingUpSpeed="33%"
+	/>		
 		
 	<LocomotorTemplate
 		id="GDIMammothLocomotor"

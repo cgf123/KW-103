@@ -270,15 +270,9 @@
 						Name="NUBEAM_SKN"
 						ExtraMesh="False" />
 				</ModelConditionState>
-				<ModelConditionState
+				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="UNPACKING"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
-					<Model
-						Name="NUBEAM_SKN"
-						ExtraMesh="False" />
+					ConditionsYes="UNPACKING">
 					<ParticleSysBone
 						BoneName="FX_Weapon"
 						FXParticleSystemTemplate="BeamPreFireFlash"
@@ -293,13 +287,10 @@
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
-				</ModelConditionState>
-				<ModelConditionState
+				</AnimationState>
+				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="PREPARING"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="PREPARING">
 					<Model
 						Name="NUBEAM_SKN"
 						ExtraMesh="False" />
@@ -317,16 +308,10 @@
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
-				</ModelConditionState>
-				<ModelConditionState
+				</AnimationState>
+				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FIRING_OR_PREATTACK_A USER_6"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
-					<Model
-						Name="NUBEAM_SKN"
-						ExtraMesh="False" />
+					ConditionsYes="FIRING_OR_PREATTACK_A USER_6">
 					<ParticleSysBone
 						BoneName="FX_Weapon"
 						FXParticleSystemTemplate="BeamConstantFire"
@@ -341,16 +326,10 @@
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
-				</ModelConditionState>						
-				<ModelConditionState
+				</AnimationState>						
+				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FIRING_OR_PREATTACK_A"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
-					<Model
-						Name="NUBEAM_SKN"
-						ExtraMesh="False" />
+					ConditionsYes="FIRING_OR_PREATTACK_A">
 					<ParticleSysBone
 						BoneName="FX_Weapon"
 						FXParticleSystemTemplate="BeamConstantFireBlue"
@@ -365,7 +344,7 @@
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
-				</ModelConditionState>				
+				</AnimationState>		
 			</TruckDraw>
 			<!-- Blue Beam -->
 			<LaserDraw

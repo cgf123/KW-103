@@ -97,7 +97,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="90"
+			Speed="80"
 			Condition="NORMAL"
 			Locomotor="NODMobileArtilleryLocomotor" />
 		<SkirmishAIInformation
@@ -452,8 +452,8 @@
 						AnimationMode="ONCE"
 						Distance="0"
 						AnimationBlendTime="10"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
+						AnimationSpeedFactorMin="2"
+						AnimationSpeedFactorMax="2"
 						WeaponTimingOrdering="PRIMARY_WEAPON"
 						WeaponTimingSlotID="1"
 						AnimationPriority="1"
@@ -485,8 +485,8 @@
 						AnimationMode="ONCE_BACKWARDS"
 						Distance="0"
 						AnimationBlendTime="10"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
+						AnimationSpeedFactorMin="2"
+						AnimationSpeedFactorMax="2"
 						WeaponTimingOrdering="PRIMARY_WEAPON"
 						WeaponTimingSlotID="1"
 						AnimationPriority="1"
@@ -517,8 +517,8 @@
 						AnimationMode="ONCE"
 						Distance="0"
 						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
+						AnimationSpeedFactorMin="2"
+						AnimationSpeedFactorMax="2"
 						WeaponTimingOrdering="PRIMARY_WEAPON"
 						WeaponTimingSlotID="1"
 						AnimationPriority="1"
@@ -570,6 +570,7 @@
 				<LeftTread>"TreadsL"</LeftTread>
 				<RightTread>"TreadsR"</RightTread>
 			</TankDraw>
+			<!--
 			<TankDraw
 				id="E2B3E27B"
 				RecoilDamping="0.4"
@@ -757,6 +758,7 @@
 				<LeftTread>"TreadsL"</LeftTread>
 				<RightTread>"TreadsR"</RightTread>
 			</TankDraw>
+			-->
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate
@@ -1018,8 +1020,8 @@
 				PreparationTime="0s"
 				PersistentPrepTime="5s"
 				PersistentCount="-1"
-				PackTime="3.5s"
-				UnpackTime="3.5s"
+				PackTime="1.75s"
+				UnpackTime="1.75s"
 				PreTriggerUnstealthTime="0s"
 				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE"
 				PackUnpackVariationFactor="0"
@@ -1330,8 +1332,8 @@
 				CanAttackWhileContained="False"
 				RampageRequiresAflame="False"
 				FadeOnPortals="False"
-				UnpackTime="3.5s"
-				PackTime="3.5s"
+				UnpackTime="1.75s"
+				PackTime="1.75s"
 				DeployedAttributeModifierName=""
 				ResetTurretBeforePacking="False"
 				TurretsFunctionOnlyWhenDeployed="False"

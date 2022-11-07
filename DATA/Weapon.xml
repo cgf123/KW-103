@@ -10987,13 +10987,13 @@ DAMAGE TYPES
 		</Nuggets>
 	</WeaponTemplate>	
 
-
+	<!-- SPECTER WEAPON -->
 	<WeaponTemplate
 		id="NodMobileArtilleryCannon"
 		Name="NodMobileArtilleryCannon"
-		AttackRange="750.0"
-		MinimumAttackRange="250.0"
-		WeaponSpeed="275"
+		AttackRange="650.0"
+		MinimumAttackRange="200.0"
+		WeaponSpeed="300"
 		ClipSize="1"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		CanFireWhileMoving="false"
@@ -11025,7 +11025,7 @@ DAMAGE TYPES
 				Include="INFANTRY" />
 		</ScatterRadiusVsType>
 		<ScatterRadiusVsType
-			Radius="50.0">
+			Radius="0.0">
 			<Filter
 				Rule="NONE"
 				Include="VEHICLE" />
@@ -11043,7 +11043,7 @@ DAMAGE TYPES
 		<Nuggets>
 			<DamageNugget
 				Damage="1200.0"
-				Radius="110.0"
+				Radius="100.0"
 				DamageTaperOff="0"
 				DelayTimeSeconds="0.0s"
 				DamageType="CANNON"
@@ -11076,9 +11076,9 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NodMobileArtilleryCannonCloned"
 		Name="NodMobileArtilleryCannonCloned"
-		AttackRange="750.0"
-		MinimumAttackRange="250.0"
-		WeaponSpeed="275"
+		AttackRange="650.0"
+		MinimumAttackRange="200.0"
+		WeaponSpeed="300"
 		ClipSize="1"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		CanFireWhileMoving="false"
@@ -11109,7 +11109,7 @@ DAMAGE TYPES
 				Include="INFANTRY" />
 		</ScatterRadiusVsType>
 		<ScatterRadiusVsType
-			Radius="50.0">
+			Radius="0.0">
 			<Filter
 				Rule="NONE"
 				Include="VEHICLE" />
@@ -11127,7 +11127,7 @@ DAMAGE TYPES
 		<Nuggets>
 			<DamageNugget
 			  Damage="12.0"
-			  Radius="110.0"
+			  Radius="100.0"
 			  DamageTaperOff="0"
 			  DelayTimeSeconds="0.0s"
 			  DamageType="CANNON"
@@ -11161,7 +11161,7 @@ DAMAGE TYPES
 			id="NodMobileArtilleryBombardCannon"
 			Name="NodMobileArtilleryBombardCannon"
 			AttackRange="50000.0"
-			WeaponSpeed="275"
+			WeaponSpeed="300"
 			MinimumAttackRange="250.0"
 			AcceptableAimDelta="20d"
 			MaxTargetPitch="60d"
@@ -11195,7 +11195,7 @@ DAMAGE TYPES
 				Include="INFANTRY" />
 		</ScatterRadiusVsType>
 		<ScatterRadiusVsType
-			Radius="50.0">
+			Radius="0.0">
 			<Filter
 				Rule="NONE"
 				Include="VEHICLE" />
@@ -11212,7 +11212,7 @@ DAMAGE TYPES
 		<Nuggets>
 			<DamageNugget
 				Damage="1200.0"
-				Radius="110.0"
+				Radius="100.0"
 				DamageTaperOff="0"
 				DelayTimeSeconds="0.0s"
 				DamageType="CANNON"
@@ -14037,7 +14037,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_ChargedParticleBeamHitG" />
 			<DamageNugget
-					Damage="250.0"
+					Damage="260.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="CANNON"
