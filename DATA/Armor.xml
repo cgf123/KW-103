@@ -1912,7 +1912,7 @@ DAMAGE TYPES
 			Percent="45" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="35" />
+			Percent="30" />
 		<Armor
 			Damage="FLAME"
 			Percent="40" />				

@@ -276,7 +276,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT" >			 
 				    </Filter>
 				</DamageScalarDetails>			
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter
 						Rule="NONE">			 
 						<IncludeThing>NODFlameTank</IncludeThing>
@@ -2264,7 +2264,7 @@ DAMAGE TYPES
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS">
 		<Nuggets>
 			<DamageNugget
-				Damage="2300.0"
+				Damage="2250.0"
 				Radius="0"
 				DamageType="CANNON"	>				
 				<!-- Remove friendly fire unfortunately because projectilenugget somehow causes wave to damage allies -->
@@ -2289,7 +2289,7 @@ DAMAGE TYPES
 						Include="STRUCTURE">
 					</Filter>
 				</DamageScalarDetails>				   
-				<DamageScalarDetails Scalar= "210%" >
+				<DamageScalarDetails Scalar= "200%" >
 					<Filter
 						Rule="NONE"
 						Relationship="ENEMIES"
@@ -2307,7 +2307,7 @@ DAMAGE TYPES
 		<Nuggets>
 			<!-- For killing husks -->
              <DamageNugget 
-				Damage="2300.0" 
+				Damage="2250.0" 
 				Radius="20"
 				DamageType="CANNON" >
                <SpecialObjectFilter
@@ -2324,7 +2324,7 @@ DAMAGE TYPES
              </DamageNugget> 
 			<!-- As friendly-fire is disabled on the sonic wave, we use this for damaging targeted single allies -->
              <DamageNugget 
-				Damage="2300.0" 
+				Damage="2250.0" 
 				Radius="20"
 				DamageType="CANNON" >
                <SpecialObjectFilter
@@ -2345,7 +2345,7 @@ DAMAGE TYPES
 						Include="STRUCTURE">
 					</Filter>
 				</DamageScalarDetails>				   
-				<DamageScalarDetails Scalar= "210%" >
+				<DamageScalarDetails Scalar= "200%" >
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY">
@@ -2417,7 +2417,7 @@ DAMAGE TYPES
 						Include="STRUCTURE">
 					</Filter>
 				</DamageScalarDetails>						
-				<DamageScalarDetails Scalar= "210%" >
+				<DamageScalarDetails Scalar= "200%" >
 					<Filter
 						Rule="NONE"
 						Relationship="ENEMIES"
@@ -2473,7 +2473,7 @@ DAMAGE TYPES
 						Include="STRUCTURE">
 					</Filter>
 				</DamageScalarDetails>				   
-				<DamageScalarDetails Scalar= "210%" >
+				<DamageScalarDetails Scalar= "200%" >
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY">
@@ -2571,7 +2571,7 @@ DAMAGE TYPES
 						Include="STRUCTURE">
 					</Filter>
 				</DamageScalarDetails>				   
-				<DamageScalarDetails Scalar= "210%" >
+				<DamageScalarDetails Scalar= "200%" >
 					<Filter
 						Rule="NONE"
 						Relationship="ENEMIES"
@@ -2622,7 +2622,7 @@ DAMAGE TYPES
 						Include="STRUCTURE">
 					</Filter>
 				</DamageScalarDetails>				   
-				<DamageScalarDetails Scalar= "210%" >
+				<DamageScalarDetails Scalar= "200%" >
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY">
@@ -3477,7 +3477,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="BlckDiscipleFlamethrower"
 		  Name="BlckDiscipleFlamethrower"
-		  AttackRange="220.0"
+		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
 		  ClipSize="20"
@@ -3548,7 +3548,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="BlckDiscipleFlamethrower_Raged"
 		  Name="BlckDiscipleFlamethrower_Raged"
-		  AttackRange="220.0"
+		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
 		  ClipSize="20"
@@ -3606,7 +3606,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="BlckDiscipleUpgradedFlamethrower"
 		  Name="BlckDiscipleUpgradedFlamethrower"
-		  AttackRange="220.0"
+		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
 		  ClipSize="20"
@@ -3685,7 +3685,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="BlckDiscipleUpgradedFlamethrower_Raged"
 		  Name="BlckDiscipleUpgradedFlamethrower_Raged"
-		  AttackRange="220.0"
+		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS"
 		  ClipSize="20"
@@ -4343,7 +4343,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="BHConfessorSquadRangefinder"
 		Name="BHConfessorSquadRangefinder"
-		AttackRange="225"
+		AttackRange="240"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -4608,8 +4608,8 @@ DAMAGE TYPES
 			MinSeconds="2.75s"
 			MaxSeconds="2.75s" />
 		<ClipReloadTime
-			MinSeconds="10s"
-			MaxSeconds="10s" />
+			MinSeconds="9s"
+			MaxSeconds="9s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="NODConfessorGrenadeProjectile"
@@ -6180,7 +6180,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="StalkerRangefinder"
 		Name="StalkerRangefinder"
-		AttackRange="300"
+		AttackRange="275"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -6195,7 +6195,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 			id="AlienStalkerShardWeapon"
 			Name="AlienStalkerShardWeapon"
-			AttackRange="375.0"
+			AttackRange="350.0"
 			WeaponSpeed="500.0"
 			FireSound="AudioEvent:ALI_Stalker_ShardWeaponFire"
 			FireFX="FX_AlienTibShardFire"
@@ -6284,7 +6284,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienStalkerBlueShardWeapon"
 		Name="AlienStalkerBlueShardWeapon"
-		AttackRange="375.0"
+		AttackRange="350.0"
 		WeaponSpeed="500.0"
 		FireSound="AudioEvent:ALI_Stalker_ShardWeaponFireVeteran"
 		FireFX="FX_AlienTibShardFireBlue"
@@ -7279,7 +7279,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienPlasmaMissileBatteryWeapon"
 		Name="AlienPlasmaMissileBatteryWeapon"
-		AttackRange="475.0"
+		AttackRange="450.0"
 		WeaponSpeed="400"
 		FireSoundPerClip="AudioEvent:ALI_PlasmaMissileBattery_WeaponFire"
 		FireFX="FX_AlienPlasmaDiskFire"
@@ -7331,7 +7331,14 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
-						Include="TRANSPORT">          						
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="ANY"
+						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>							
 			</DamageNugget>
@@ -7341,7 +7348,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienPlasmaMissileBatteryShardLauncherWeapon"
 		Name="AlienPlasmaMissileBatteryShardLauncherWeapon"
-		AttackRange="475.0"
+		AttackRange="450.0"
 		WeaponSpeed="400"
 		FireSound="AudioEvent:ALI_PlasmaMissileBattery_ShardWeaponFire"
 		FireFX="FX_AlienTibShardFire"
@@ -7388,7 +7395,14 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
-						Include="TRANSPORT">          						
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="ANY"
+						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>					
 			</DamageNugget>
@@ -14037,7 +14051,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_ChargedParticleBeamHitG" />
 			<DamageNugget
-					Damage="260.0"
+					Damage="264.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="CANNON"
