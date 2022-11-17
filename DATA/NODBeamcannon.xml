@@ -906,7 +906,7 @@
 				GrabPassengerHealGain="0%"
 				SpecialPowerTemplate="NODBeamCannonLaserSpecialPower"
 				StartAbilityRange="610"
-				AbilityAbortRange="1E+07"
+				AbilityAbortRange="610"
 				PreparationTime="10000s"
 				PersistentPrepTime="0s"
 				PersistentCount="-1"

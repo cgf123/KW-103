@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="AlienAnnihilatorTripodHusk"
-		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS PRELOAD NOT_AUTOACQUIRABLE TIBERIUM_BASED VALID_TARGET_FOR_C4 HUSK"
+		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS PRELOAD NOT_AUTOACQUIRABLE TIBERIUM_BASED HUSK"
 		Description="Desc:AnnihilatorTripodHusk"
 		RadarPriority="UNIT"
 		Side="ALIEN"
@@ -234,7 +234,7 @@
 				MinorRadius="11.8139"
 				Height="15.935">
 				<Offset
-					x="30.8415"
+					x="5.8415"
 					y="-2.5509" />
 			</Shape>
 		</Geometry>

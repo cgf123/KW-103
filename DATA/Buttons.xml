@@ -340,6 +340,14 @@
 		</Data>
 	</UnitAbilityButtonTemplate>	
 	
+	<ButtonSingleStateData
+		id="ButtonStateUpgradeTravelerEngines" >
+		<State
+			Image="Button_Upgrade_TravelerEngines"
+			Title="Name:UpgradeTravelerEngines"
+			Description="DESC:UpgradeTravelerEngines_103" />
+	</ButtonSingleStateData>	
+	
 	<!-- Countermeasures -->
 	<UnitAbilityButtonTemplate
 		id="ButtonComputerCounterMeasures"

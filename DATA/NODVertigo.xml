@@ -1881,11 +1881,11 @@
 			<ModelConditionAudioLoopClientBehavior
 				id="5774E321">
 				<ModelConditionSound
-					Sound="NOD_VertigoBomb_MoveLand"
+					Sound="AudioEvent:NOD_VertigoBomb_MoveLand"
 					RequiredFlags="RAPPELLING"
 					ExcludedFlags="" />
 				<ModelConditionSound
-					Sound="NOD_VertigoBomb_MoveLift"
+					Sound="AudioEvent:NOD_VertigoBomb_MoveLift"
 					RequiredFlags="CLIMBING"
 					ExcludedFlags="" />
 			</ModelConditionAudioLoopClientBehavior>

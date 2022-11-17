@@ -888,7 +888,7 @@
 				EffectRadius="750"
 				UpgradeRequired="Upgrade_Reflector"
 				HealingPercentPerSecond="0"
-				SurveyDelayFrames="2"
+				SurveyDelayFrames="5"
 				NonStackable="True" >
 				<Modifier>AttributeModifier_BeamDummy1</Modifier>
 				<AllowFilter 
@@ -902,7 +902,7 @@
 				EffectRadius="1000"
 				UpgradeRequired="Upgrade_Reflector"
 				HealingPercentPerSecond="0"
-				SurveyDelayFrames="1"
+				SurveyDelayFrames="5"
 				NonStackable="True" >
 				<Modifier>AttributeModifier_BeamDummy</Modifier>
 				<AllowFilter 
@@ -2562,7 +2562,7 @@
 				EffectRadius="750"
 				UpgradeRequired="Upgrade_Reflector"
 				HealingPercentPerSecond="0"
-				SurveyDelayFrames="2"
+				SurveyDelayFrames="5"
 				NonStackable="True" >
 				<Modifier>AttributeModifier_BeamDummy1</Modifier>
 				<AllowFilter 
@@ -2576,7 +2576,7 @@
 				EffectRadius="1000"
 				UpgradeRequired="Upgrade_Reflector"
 				HealingPercentPerSecond="0"
-				SurveyDelayFrames="1"
+				SurveyDelayFrames="5"
 				NonStackable="True" >
 				<Modifier>AttributeModifier_BeamDummy</Modifier>
 				<AllowFilter 
@@ -4392,7 +4392,7 @@
 				EffectRadius="750"
 				UpgradeRequired="Upgrade_Reflector"
 				HealingPercentPerSecond="0"
-				SurveyDelayFrames="2"
+				SurveyDelayFrames="5"
 				NonStackable="True" >
 				<Modifier>AttributeModifier_BeamDummy1</Modifier>
 				<AllowFilter 
@@ -4406,7 +4406,7 @@
 				EffectRadius="1000"
 				UpgradeRequired="Upgrade_Reflector"
 				HealingPercentPerSecond="0"
-				SurveyDelayFrames="1"
+				SurveyDelayFrames="5"
 				NonStackable="True" >
 				<Modifier>AttributeModifier_BeamDummy</Modifier>
 				<AllowFilter 

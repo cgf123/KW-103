@@ -1730,7 +1730,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="GDIPredatorTankCannon"
 		  Name="GDIPredatorTankCannon"
-		  AttackRange="325.0"
+		  AttackRange="330.0"
 		  MinTargetPitch="-15d"
 		  MaxTargetPitch="15d"
 		  WeaponSpeed="1000"
@@ -1795,7 +1795,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="GDIPredatorTankRailgun"
 		  Name="GDIPredatorTankRailgun"
-		  AttackRange="325.0"
+		  AttackRange="330.0"
 		  MinTargetPitch="-15d"
 		  MaxTargetPitch="15d"
 		  WeaponSpeed="800"
@@ -2934,7 +2934,7 @@ DAMAGE TYPES
 		<Nuggets>
 			<DamageNugget
 				Damage="500.0"
-				Radius="50.0"
+				Radius="60.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3087,7 +3087,7 @@ DAMAGE TYPES
 				MaxSeconds="0.5s" />
 		<Nuggets>		
 			<DamageNugget
-				Damage="200.0"
+				Damage="192.0"
 				Radius="40.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3142,7 +3142,7 @@ DAMAGE TYPES
 				MaxSeconds="0.5s" />
 		<Nuggets>		
 			<DamageNugget
-				Damage="200.0"
+				Damage="192.0"
 				Radius="40.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3350,7 +3350,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 
 			<DamageNugget
-				Damage="70"
+				Damage="66"
 				Radius="30.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3369,7 +3369,7 @@ DAMAGE TYPES
                 </DamageScalarDetails>				
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="70"
+				Damage="66"
 				Radius="20.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3431,7 +3431,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="70"
+				Damage="66"
 				Radius="30.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3443,7 +3443,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>						
 			</DamageNugget> 				
 			<DamageNugget
-				Damage="70"
+				Damage="66"
 				Radius="20.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3628,7 +3628,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="70"
+				Damage="66"
 				Radius="15.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3646,7 +3646,7 @@ DAMAGE TYPES
                 </DamageScalarDetails>						
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="70"
+				Damage="66"
 				Radius="10.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3707,7 +3707,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="70"
+				Damage="66"
 				Radius="15.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3719,7 +3719,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>							
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="70"
+				Damage="66"
 				Radius="10.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -4925,6 +4925,22 @@ DAMAGE TYPES
 	
 	
 	<!-- Shocktrooper weapon buffs -->	
+	<WeaponTemplate
+	id="ShockTrooperRangefinder"
+	Name="ShockTrooperRangefinder"
+	AttackRange="245"
+	LeechRangeWeapon="true"
+	AcceptableAimDelta="45d"
+	AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
+	CanFireWhileMoving="true"
+	FinishAttackOnceStarted="false"
+ 		>
+		<FiringDuration
+				MinSeconds="1s"
+				MaxSeconds="1s" />
+	</WeaponTemplate>
+
+
 	<WeaponTemplate
 		id="AlienShockTrooperPlasmaDisk"
 		Name="AlienShockTrooperPlasmaDisk"
@@ -7198,8 +7214,8 @@ DAMAGE TYPES
 		/>
 
 		<ClipReloadTime
-			MinSeconds="1.75s"
-			MaxSeconds="1.75s"
+			MinSeconds="1.8s"
+			MaxSeconds="1.8s"
 		/>
 
 		<Nuggets>
@@ -10180,7 +10196,7 @@ DAMAGE TYPES
 		FireSoundPerClip="Multisound:GDI_Wolverine_MachineGunFireMS"
 		FireFX="FX_GDI_WolverineGunFire"
 		FireVeteranFX="FX_GDI_WolverineGunFireHeroic"
-		AttackRange="325.0"
+		AttackRange="330.0"
 		WeaponSpeed="999999.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND"
@@ -10230,7 +10246,7 @@ DAMAGE TYPES
 		FireSound="AudioEvent:GDI_Wolverine_MachineGunFire"
 		FireFX="FX_GDIRifleManFire"
 		FireVeteranFX="FX_GDIRifleManFireHeroic"
-		AttackRange="325.0"
+		AttackRange="330.0"
 		WeaponSpeed="999999.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND"
@@ -11006,7 +11022,7 @@ DAMAGE TYPES
 		id="NodMobileArtilleryCannon"
 		Name="NodMobileArtilleryCannon"
 		AttackRange="650.0"
-		MinimumAttackRange="200.0"
+		MinimumAttackRange="175.0"
 		WeaponSpeed="300"
 		ClipSize="1"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
@@ -11091,7 +11107,7 @@ DAMAGE TYPES
 		id="NodMobileArtilleryCannonCloned"
 		Name="NodMobileArtilleryCannonCloned"
 		AttackRange="650.0"
-		MinimumAttackRange="200.0"
+		MinimumAttackRange="175.0"
 		WeaponSpeed="300"
 		ClipSize="1"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
@@ -11176,7 +11192,7 @@ DAMAGE TYPES
 			Name="NodMobileArtilleryBombardCannon"
 			AttackRange="50000.0"
 			WeaponSpeed="300"
-			MinimumAttackRange="250.0"
+			MinimumAttackRange="175.0"
 			AcceptableAimDelta="20d"
 			MaxTargetPitch="60d"
 			ClipSize="1"
@@ -11276,7 +11292,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODShadowMachinePistol"
 		Name="NODShadowMachinePistol"
-		AttackRange="225.0"
+		AttackRange="230.0"
 		WeaponSpeed="999999.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		ClipSize="1"
@@ -12542,8 +12558,8 @@ DAMAGE TYPES
 			MinSeconds="3.0s"
 			MaxSeconds="3.0s" />
 		<ClipReloadTime
-			MinSeconds="5.0s"
-			MaxSeconds="5.0s" />
+			MinSeconds="4.5s"
+			MaxSeconds="4.5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="NODVertigoBombProjectile"

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
-		id="MarkedOfKaneVertigo"
+		id="BlackHandVertigo"
 		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS AIRCRAFT PRELOAD NO_COLLIDE SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE BOMBER_AIRCRAFT LINE_OF_SIGHT_IGNORES_BUILDINGS CAN_BE_FAVORITE_UNIT RELOAD_AIRCRAFT"
-		Description="Desc:MarkedOfKaneVertigo"
-		TypeDescription="Type:MarkedOfKaneVertigo"
+		Description="Desc:BlackHandVertigo_103"
+		TypeDescription="Type:NODVertigo"
 		RadarPriority="UNIT"
 		BuildCompletion="APPEARS_AT_RALLY_POINT"
 		FenceWidth="0"
@@ -15,15 +15,15 @@
 		BuildFadeInOnCreateTimeSeconds="1.5s"
 		FactoryExitWidth="0"
 		FactoryExtraBibWidth="0"
-		Side="MarkedOfKane"
-		EditorName="MarkedOfKaneVertigo"
+		Side="BlackHand"
+		EditorName="BlackHandVertigo"
 		EditorSorting="UNIT"
 		BountyValue="0"
 		BuildTime="16"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
-		CommandSet="NODVertigoCommandSet"
+		CommandSet="BlackHandVertigoCommandSet"
 		SelectPortrait="Portrait_NODVertigoBomber"
 		ButtonImage="Portrait_NODVertigoBomber"
 		VoicePriority="140"
@@ -66,7 +66,7 @@
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
-		WorldMapArmoryUpgradesAllowed="Upgrade_VertigoDisruptionPod"
+		WorldMapArmoryUpgradesAllowed=""
 		CaptureTime="0s"
 		BuildCost="1600"
 		RefundValue="0"
@@ -91,7 +91,7 @@
 			RequiredModelConditionsAny=""
 			ForbiddenModelConditions=""
 			RequiredObjectStatusAny="">
-			<RequiredObject>MarkedOfKaneTechAssemblyPlant</RequiredObject>
+			<RequiredObject>BlackHandTechAssemblyPlant</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="NODVertigoArmor"
@@ -1298,6 +1298,7 @@
 				SetBonusModelConditionOnSpeedBonus="False"
 				SecondaryQueue="False"
 				IgnorePreReqs="False" />
+			<!--
 			<InvisibilityUpdate
 				id="1036CCC4"
 				Options="STARTS_ACTIVE"
@@ -1318,6 +1319,7 @@
 					HintDetectableStates="IS_ATTACKING"
 					NoStealthForAttackWindow="3s" />
 			</InvisibilityUpdate>
+			-->
 			<ReturnToProducerSpecialPower
 				id="53D58533"
 				SpecialPowerTemplate="SpecialPowerReturnToProducer"
@@ -1856,7 +1858,7 @@
 		<Body>
 			<ActiveBody
 				id="E128C6A2"
-				MaxHealth="3000"
+				MaxHealth="3200"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1922,7 +1924,7 @@
 				Sound="AudioEvent:NOD_VertigoBomber_VoiceRetreat"
 				AudioType="voiceRetreatToCastle" />
 			<AudioEntry
-				Sound="Multisound:NOD_VertigoBomber_VoiceSelectMS"
+				Sound="Multisound:BH_VertigoBomber_VoiceSelectMS"
 				AudioType="voiceSelect" />
 			<NamedEntry
 				Sound="AudioEvent:NOD_VertigoBomber_VoiceMove"
@@ -2004,6 +2006,5 @@
 			UseCrushAttack="True"
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
-		<DisplayUpgrade>Upgrade_VertigoDisruptionPod</DisplayUpgrade>
 	</GameObject>
 </AssetDeclaration>

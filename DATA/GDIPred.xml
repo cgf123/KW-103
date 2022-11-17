@@ -972,7 +972,7 @@
 						ObjectStatus="WEAPON_UPGRADED_01"
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="200"
+						TurretTurnRate="240"
 						TurretPitchRate="40"
 						MinimumPitch="0d"
 						PitchHeight="50%"

@@ -318,18 +318,18 @@
 	<!-- BATTLE BUSES -->
 	<LogicCommandSet
 	id="NODBunkerTruckCommandSet">
-		<Cmd>Command_Evacuate</Cmd>		
-		<!-- <Cmd>Command_UnPackNODBunkerTruck</Cmd> -->
+		<!-- <Cmd>Command_Evacuate</Cmd> -->		
+		<Cmd>Command_UnPackNODBunkerTruck</Cmd>
 		<Cmd>Command_Stop</Cmd>
 		<Cmd>Command_AttackMove</Cmd>		
 	</LogicCommandSet>	
 	
 	<LogicCommandSet	
 	id="MarkedOfKaneBunkerTruckCommandSet">
-		<Cmd>Command_Evacuate</Cmd>		
-		<!-- <Cmd>Command_UnPackNODBunkerTruck</Cmd> -->
+		<!-- <Cmd>Command_Evacuate</Cmd> -->		
+		<Cmd>Command_UnPackNODBunkerTruck</Cmd>
 		<Cmd>Command_Stop</Cmd>
-		<Cmd>Command_AttackMove</Cmd>
+		<Cmd>Command_AttackMove</Cmd>	
 	</LogicCommandSet>	
 
 	<!-- Remove fence bug -->
@@ -441,17 +441,25 @@
 		id="BlackHandMobileArtilleryCommandSet">
 		<Cmd>Command_AttackMove</Cmd>
 		<Cmd>Command_NodCallForTransportVehicle</Cmd>
-		<Cmd>Command_CommandoBombard</Cmd>				
+		<!--
+		<Cmd>Command_CommandoBombard</Cmd> -->		
 	</LogicCommandSet>	
 		
-	<!-- BH VENOMS !!!!!!!! -->	
+	<!-- BH AIRCRAFT !!!!!!!! -->	
 	<LogicCommandSet
 		id="BlackHandHangarCommandSet">
 		<Cmd>Command_ConstructBlackHandVenom</Cmd>
+		<Cmd>Command_ConstructBlackHandVertigo</Cmd>		
 		<!--
 		<Cmd>Command_NODBurrowMines</Cmd>	
 		-->
 	</LogicCommandSet>	
+
+  <LogicCommand
+    Type="CONSTRUCTION_YARD_CONSTRUCT"
+    id="Command_Construct_BlackHandAirSupport">
+    <Object>BlackHandAirSupport</Object>
+  </LogicCommand>  
 
 	<LogicCommandSet
 		id="BlackHandConstructionYardCommandSet">
@@ -472,6 +480,7 @@
 		<Cmd>Command_Construct_BlackHandTempleOfNOD</Cmd>
 		<Cmd>Command_Construct_BlackHandTiberiumLiquidationFacility</Cmd>
 		<Cmd>Command_Construct_BlackHandCrane</Cmd>		
+		<Cmd>Command_Construct_BlackHandAirSupport</Cmd>
 		<Cmd>Command_Construct_BlackHandEmissary</Cmd>
 		<Cmd>Command_ConstructBlackHandWarmechFacility</Cmd>		
 		<Cmd>Command_PackNODMCV</Cmd>
@@ -490,6 +499,19 @@
 		<Cmd>Command_Construct_BlackHandTiberiumSilo</Cmd>
 		<Cmd>Command_Construct_BlackHandPropagandaTower</Cmd>
 		<Cmd>Command_Construct_BlackHandTiberiumLiquidationFacility</Cmd>	
+		<Cmd>Command_Construct_BlackHandAirSupport</Cmd>		
+	</LogicCommandSet>		
+	
+  <LogicCommand
+    Type="UNIT_BUILD"
+    id="Command_ConstructBlackHandVertigo">
+    <Object>BlackHandVertigo</Object>
+  </LogicCommand>	
+	
+	<LogicCommandSet
+		id="BlackHandVertigoCommandSet">
+		<Cmd>Command_ReturnToHangar</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>	
 	
 	<!-- MOK INFUSION -->

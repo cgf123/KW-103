@@ -1020,8 +1020,8 @@
 				PreparationTime="0s"
 				PersistentPrepTime="4s"
 				PersistentCount="-1"
-				PackTime="1.75s"
-				UnpackTime="1.75s"
+				PackTime="1.5s"
+				UnpackTime="1.5s"
 				PreTriggerUnstealthTime="0s"
 				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE"
 				PackUnpackVariationFactor="0"
@@ -1312,8 +1312,8 @@
 				CanAttackWhileContained="False"
 				RampageRequiresAflame="False"
 				FadeOnPortals="False"
-				UnpackTime="1.75s"
-				PackTime="1.75s"
+				UnpackTime="1.5s"
+				PackTime="1.5s"
 				DeployedAttributeModifierName=""
 				ResetTurretBeforePacking="False"
 				TurretsFunctionOnlyWhenDeployed="False"
@@ -1335,7 +1335,7 @@
 		<Body>
 			<ActiveBody
 				id="A5C3EB8A"
-				MaxHealth="2400"
+				MaxHealth="2600"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1382,19 +1382,19 @@
 				Sound="AudioEvent:NOD_Spectre_VoiceAttack"
 				AudioType="voiceAttack" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_Spectre_VoiceCreate"
+				Sound="AudioEvent:BH_Spectre_VoiceCreate"
 				AudioType="voiceCreated" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_Spectre_VoiceCreate"
+				Sound="AudioEvent:BH_Spectre_VoiceCreate"
 				AudioType="voiceFullyCreated" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_Spectre_VoiceMoveAttack"
 				AudioType="voiceAttackAfterMoving" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_Spectre_VoiceMove"
+				Sound="AudioEvent:BH_Spectre_VoiceMove"
 				AudioType="voiceMove" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_Spectre_VoiceMove"
+				Sound="AudioEvent:BH_Spectre_VoiceMove"
 				AudioType="voiceGuard" />
 			<AudioEntry
 				Sound="AudioEvent:NOD_Spectre_VoiceRetreat"
@@ -1403,7 +1403,7 @@
 				Sound="Multisound:NOD_Spectre_VoiceSelectBattleMS"
 				AudioType="voiceSelectBattle" />
 			<AudioEntry
-				Sound="Multisound:NOD_Spectre_VoiceSelectMS"
+				Sound="Multisound:BH_Spectre_VoiceSelectMS"
 				AudioType="voiceSelect" />
 			<NamedEntry
 				Sound="AudioEvent:NOD_Spectre_VoiceAttackBombard"

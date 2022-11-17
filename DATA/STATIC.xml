@@ -168,6 +168,9 @@
 
 	<Include type="all" source="GDIJuggernaut.xml" />
 	<Include type="all" source="STBehemoth.xml" />
+	
+	<Include type="all" source="GDIJuggernautHusk.xml" />
+	<Include type="all" source="STBehemothHusk.xml" />	
 
 	<Include type="all" source="GDIPred.xml" />	
 	<Include type="all" source="GDIMammoth.xml" />		
@@ -291,6 +294,7 @@
 
 	<Include type="all" source="NODVertigo.xml" />			
 	<Include type="all" source="MOKVertigo.xml" />				
+	<Include type="all" source="BHVertigo.xml" />					
 	
 	<Include type="all" source="NODCarryallInfantry.xml" />	
 	<Include type="all" source="NODCarryallVehicle.xml" />		
@@ -378,6 +382,11 @@
 
 	<Include type="all" source="Avatars.xml" />		
 	<Include type="all" source="BHPurifier.xml" />			
+
+	<Include type="all" source="NODAvatarHusk.xml" />	
+	<Include type="all" source="MOKAvatarHusk.xml" />	
+	<Include type="all" source="BHPurifierHusk.xml" />	
+
 	<Include type="all" source="BHMantis.xml" />
 	
 	<Include type="all" source="NODMilitant.xml" />		

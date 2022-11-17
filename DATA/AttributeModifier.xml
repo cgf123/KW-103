@@ -220,7 +220,7 @@
 	<AttributeModifier
 		id="AttributeModifier_HallucinateSlow"
 		Category="NONE"
-		Duration="3.0s"
+		Duration="4.0s"
 		ObjectStatusToSet="CARRYING_FLAG">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="100%"/>		
@@ -339,7 +339,7 @@
 	<AttributeModifier
 		id="AttributeModifier_TravelerEngines"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="130%"/>
+		<Modifier Type="SPEED" Value="125%"/>
 	</AttributeModifier>
 	<AttributeModifier
 		id="AttributeModifier_TravelerEnginesLargeShips"
@@ -502,7 +502,7 @@
 	<AttributeModifier
 		id="AttributeModifier_AdvancedArticulators1"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="133%"/>
+		<Modifier Type="SPEED" Value="125%"/>
 	</AttributeModifier>	
 
 	<!-- For T59 Ravs -->

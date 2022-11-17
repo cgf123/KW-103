@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
-		id="Traveler59AnnihilatorTripodHusk"
-		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS PRELOAD NOT_AUTOACQUIRABLE TIBERIUM_BASED HUSK"
-		Description="Desc:Traveler59AnnihilatorTripodHusk"
+		id="NODAvatarHusk"
+		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS PRELOAD NOT_AUTOACQUIRABLE HUSK"
+		Description="Desc:AvatarWarmechHusk"
 		RadarPriority="UNIT"
-		Side="Traveler59"
-		EditorName="Traveler59AnnihilatorTripodHusk"
+		Side="NOD"
+		EditorName="NODAvatarHusk"
 		EditorSorting="UNIT"
 		CommandSet="EmptyCommandSet"
-		SelectPortrait="Portrait_AlienAnnihilatorHusk"
-		ButtonImage="Portrait_AlienAnnihilatorHusk"
+		SelectPortrait="Portrait_NodAvatarHusk"
+		ButtonImage="Portrait_NodAvatarHusk"
 		ShockwaveResistance="100"
+		ProductionQueueType="VEHICLE"
 		ReinvisibilityDelay="7s">
-		<DisplayName>Name:AnnihilatorTripodHusk</DisplayName>
+		<DisplayName>Name:AvatarWarmechHusk</DisplayName>
 		<ArmorSet
 			Armor="NoArmor"
 			DamageFX="NormalDamageFX" />
@@ -24,70 +25,32 @@
 				RecoilDamping="0.4"
 				OkToChangeModelColor="True">
 				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="NONE">
+					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="W3DContainer:AUANLTRPDH_SKN" />
-					<Texture
-						Original="AUAnhlTrpd"
-						New="AUAnhlTrpd_D" />
+						Name="W3DContainer:NUMECHH_SKN" />
+					<ParticleSysBone
+						BoneName="B_UArmL"
+						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
+						FollowBone="True" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_1">
+					ConditionsYes="USER_6">
 					<Model
-						Name="W3DContainer:AUANLTRPDH_SKN" />
+						Name="W3DContainer:NUMECHH_SKN" />
 					<Texture
-						Original="AUAnhlTrpd"
-						New="AUAnhlTrpdD_K" />
-					<Texture
-						Original="AUAnhlTrpd_D"
-						New="AUAnhlTrpdD_K" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING USER_1">
-					<Model
-						Name="W3DContainer:AUANLTRPDR_SKN" />
-					<Texture
-						Original="AUAnhlTrpd"
-						New="AUAnhlTrpdD_K" />
-					<Texture
-						Original="AUAnhlTrpd_D"
-						New="AUAnhlTrpdD_K" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING">
-					<Model
-						Name="W3DContainer:AUANLTRPDR_SKN" />
-					<Texture
-						Original="AUAnhlTrpd"
-						New="AUAnhlTrpd_D" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED">
-					<Model
-						Name="W3DContainer:AUANLTRPDH_SKN" />
-					<Texture
-						Original="AUAnhlTrpd"
-						New="AUAnhlTrpd_D" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
-					<Model
-						Name="W3DContainer:AUANLTRPDH_SKN" />
-					<Texture
-						Original="AUAnhlTrpd"
-						New="AUAnhlTrpd_D" />
+						Original="NUMechD"
+						New="NUMechD_K" />
+					<ParticleSysBone
+						BoneName="B_UArmL"
+						FXParticleSystemTemplate="GDIDebrisSmallSmoke"
+						FollowBone="True" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"
 					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="AUANLTRPD_DIEA"
+						AnimationName="NUMECH_DIEB"
 						AnimationMode="MANUAL"
 						AnimationBlendTime="0" />
 				</AnimationState>
@@ -95,7 +58,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_2">
 					<Animation
-						AnimationName="AUANLTRPD_DIEA"
+						AnimationName="NUMECH_DIEB"
 						AnimationMode="ONCE"
 						AnimationBlendTime="0" />
 				</AnimationState>
@@ -172,14 +135,13 @@
 				id="0x3473AFD2"
 				DefectionFrameCount="300" />
 			<Physics
-				id="0xC2B69CF1" />
+				id="0x6D41764B" />
 			<SlowDeath
 				id="0x73542D4A"
 				SinkRate="2.4"
-				SinkDelay="3s"
-				DestructionDelay="8s">
+				DestructionDelay="4s">
 				<OCL>
-					<OCL>OCL_ALIENTripodHuskDebris</OCL>
+					<OCL>OCL_NODAvatarHuskDebris</OCL>
 				</OCL>
 				<DieMuxData
 					DeathTypes="ALL" />
@@ -189,11 +151,11 @@
 				<DieMuxData
 					DeathTypes="ALL" />
 				<Event
-					FX="FX_AVehicleExplodeScorch_AnnihilatorHusk" />
+					FX="FX_GDIVehicleExplodeNoScorch" />
 			</FXListBehavior>
 			<EngineerContain
 				id="0xE2BE8599"
-				ReplaceWith="Traveler59AnnihilatorTripodHuskReplace"
+				ReplaceWith="NODAvatarHuskReplace"
 				NameOfVoiceToUseForFriendlyEnter="0x9A3D3D56"
 				NameOfVoiceToUseForHostileEnter="0x9A3D3D56"
 				FXForCapture="FX_Husk_Captured"
@@ -210,39 +172,60 @@
 					<IncludeThing>Traveler59Assimilator</IncludeThing>
 					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
 					<IncludeThing>ZOCOMEngineer</IncludeThing>
-					<IncludeThing>GDIEngineer</IncludeThing>
-					<IncludeThing>NODSaboteur</IncludeThing>
-					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
-					<IncludeThing>AlienAssimilator</IncludeThing>
-					<IncludeThing>Traveler59Assimilator</IncludeThing>
-					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
-					<IncludeThing>ZOCOMEngineer</IncludeThing>
 				</CanEnterFilter>
 			</EngineerContain>
 			<LifetimeUpdate
 				id="0xFD76F2F2"
 				MinLifetime="300s"
 				MaxLifetime="300s" />
+			<SubObjectsUpgrade
+				id="0x5A1A2355"
+				ShowSubObjects="S_GENERATOR">
+				<TriggeredBy>Upgrade_AvatarInvisibility</TriggeredBy>
+			</SubObjectsUpgrade>
+			<SubObjectsUpgrade
+				id="0x46407CC4"
+				ShowSubObjects="FLAMETANK">
+				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
+			</SubObjectsUpgrade>
+			<SubObjectsUpgrade
+				id="0xA155FBC8"
+				ShowSubObjects="NUBEAM">
+				<TriggeredBy>Upgrade_AvatarBeamCannon</TriggeredBy>
+			</SubObjectsUpgrade>
+			<SubObjectsUpgrade
+				id="0xD3A631DE"
+				ShowSubObjects="S_DETECTOR">
+				<TriggeredBy>Upgrade_AvatarStealthDetect</TriggeredBy>
+			</SubObjectsUpgrade>
 			<ModelConditionUpgrade
 				id="0x081018FB"
-				AddConditionFlags="USER_1">
+				AddConditionFlags="USER_6">
 				<TriggeredBy>Upgrade_AllFactionUpgrade</TriggeredBy>
 			</ModelConditionUpgrade>
 		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="0x12FA48BA"
+				AutoAcquireEnemiesWhenIdle="YES"
+				AILuaEventsList="NODAvatarHuskFunctions">
+				<UnitAITargetChooserData
+					TargetingCompareList="DefaultTargetingCompareList" />
+			</AIUpdate>
+		</AI>
 		<Body>
 			<ActiveBody
-				id="0xFADB485A"
+				id="0xB313F576"
 				MaxHealth="2000" />
 		</Body>
 		<Geometry>
 			<Shape
 				Type="BOX"
-				MajorRadius="30.0561"
-				MinorRadius="11.8139"
-				Height="15.935">
+				MajorRadius="30"
+				MinorRadius="14"
+				Height="13">
 				<Offset
-					x="5.8415"
-					y="-2.5509" />
+					x="5" />
 			</Shape>
 		</Geometry>
 		<EvaEvents
@@ -266,8 +249,8 @@
 			SizeX="14"
 			SizeY="14" />
 		<VisionInfo
-			VisionRange="25"
-			ShroudClearingRange="25" />
+			VisionRange="50"
+			ShroudClearingRange="50" />
 		<CrusherInfo
 			CrushableLevel="0"
 			CrushEqualLevelProps="True" />

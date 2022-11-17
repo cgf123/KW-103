@@ -83,8 +83,8 @@
 			<LifetimeUpdate
 				id="ModuleTag_Lifetime"
 				DeathType="FADED"
-				MinLifetime="24s"
-				MaxLifetime="24s" />
+				MinLifetime="20s"
+				MaxLifetime="20s" />
 		</Behaviors>
 		<Body>
 			<ActiveBody

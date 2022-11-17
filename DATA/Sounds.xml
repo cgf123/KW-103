@@ -263,4 +263,141 @@
 			Weight="1000">NUPurif_voicCreab</Sound>					
 	</AudioEvent>		
 	
+
+	<!-- NO STEALTH BH SPEC -->
+	<AudioEvent id="BH_Spectre_VoiceCreate"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Sound>NUStArt_VoiCreatea</Sound> 
+		<Sound>NUStArt_VoiCreateb</Sound> 
+		<Sound>NUStArt_VoiCreatec</Sound> 
+		<!--
+		<Sound>NUStArt_VoiCreated</Sound> 
+		-->
+	</AudioEvent>	
+
+	<Multisound id="BH_Spectre_VoiceSelectMS" >
+		<Subsound>BH_Spectre_VoiceSelect</Subsound>
+		<Subsound>NOD_Specter_SoundSelect</Subsound>
+	</Multisound>
+	
+	<AudioEvent id="BH_Spectre_VoiceSelect"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Sound>NUStArt_VoiSelecta</Sound> 
+		<Sound>NUStArt_VoiSelectb</Sound> 
+		<!--
+		<Sound>NUStArt_VoiSelectc</Sound> -->
+		<Sound>NUStArt_VoiSelectd</Sound> 
+	</AudioEvent>
+	
+	<AudioEvent id="BH_Spectre_VoiceMove"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Sound>NUStArt_VoiMovea</Sound> 
+		<Sound>NUStArt_VoiMoveb</Sound> 
+		<Sound>NUStArt_VoiMovec</Sound> 
+		<!--
+		<Sound>NUStArt_VoiMoved</Sound> -->
+		<Sound>NUStArt_VoiMovee</Sound> 
+		<Sound>NUStArt_VoiMovef</Sound> 
+		<Sound>NUStArt_VoiMoveg</Sound> 
+	</AudioEvent>	
+	
+	
+	<!-- NO STEALTH BH VERT -->
+	<Multisound id="BH_VertigoBomber_VoiceSelectMS" >
+		<Subsound>BH_VertigoBomber_VoiceSelect</Subsound>
+		<Subsound>NOD_VertigoBomb_SoundSelect</Subsound>
+	</Multisound>	
+	
+  <AudioEvent id="BH_VertigoBomber_VoiceSelect"
+		Volume="110%"
+		VolumeShift="0%"
+		PerFileVolumeShift="0%"
+		MinVolume="105%"
+		PlayPercent="100%"
+		Limit="3"
+		Priority="HIGH"
+		Type="WORLD VOICE PLAYER"
+		Control=""
+		MinRange="200"
+		MaxRange="800"
+		LowPassCutoff="0%"
+		ZoomedInOffscreenVolumePercent="50%"
+		ZoomedInOffscreenMinVolumePercent="100%"
+		ZoomedInOffscreenOcclusionPercent="20%"
+		ReverbEffectLevel="100%"
+		DryLevel="100%"
+		SubmixSlider="VOICE">
+		<PitchShift
+			Low="-1"
+			High="1" />
+		<Sound>NuVerti_VoiSelecta</Sound>
+		<Sound>NuVerti_VoiSelectb</Sound>
+		<!--
+		<Sound>NuVerti_VoiSelectc</Sound> -->
+		<Sound>NuVerti_VoiSelectd</Sound>
+		<Sound>NuVerti_VoiSelecte</Sound>
+		<Sound>NuVerti_VoiSelectf</Sound>
+		<Sound>NuVerti_VoiCreateb</Sound>
+	</AudioEvent>		
+	
 </AssetDeclaration>	

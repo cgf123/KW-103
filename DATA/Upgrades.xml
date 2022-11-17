@@ -501,7 +501,7 @@
 		TypeDescription="UpgradeType:ALIENBlueShardWeapon"
 		Description="UpgradeDesc:ALIENBlueShardWeapon"
 		Type="PLAYER"
-		BuildTime="30.0s"
+		BuildTime="45.0s"
 		BuildCost="1500"
 		ResearchSound="AudioEvent:ALI_Stalker_BlueShardUpgrade"
 		IconImage="Button_Upgrade_BlueShards">
