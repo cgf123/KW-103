@@ -1838,6 +1838,31 @@
 					/>
 				</ModelConditionState>
 			</ScriptedModelDraw>
+			
+			<!-- Buff Aura radius -->
+			<ScriptedModelDraw
+				id="ModuleTag_Draw_Selected_Aura_Decal"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model Name="" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="SELECTED USER_11">
+					<Model Name="FXInvisBone" />
+					<ShadowInfo
+						Type="ADDITIVE_DECAL"
+						SizeX="400"
+						SizeY="400"
+						OverrideLODVisibility="true"
+						MaxHeight="200"
+						UseHouseColor="true"
+						Texture="Decal_LeadershipBuff" 
+						LocalPlayerOnly="true"
+					/>
+				</ModelConditionState>
+			</ScriptedModelDraw>			
 
 			<!--   -->
 			
@@ -4815,11 +4840,56 @@
 			</AttributeModifierUpgrade>
 			
 			<!-- Flame commandeer boost!! -->
-			<AttributeModifierUpgrade
-				id="Upgrade_avatarflamebuff"
-				AttributeModifier="AttributeModifier_AvatarFlamerBuff">				
+			<ModelConditionUpgrade
+				id="ModelConditionUpgrade_Flamer"
+				AddConditionFlags="USER_11">
 				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
-			</AttributeModifierUpgrade>			
+			</ModelConditionUpgrade>					
+			
+			<!-- Split Aura -->
+			<AttributeModifierAuraUpdate
+				id="ModuleTag_AttributeModifier_FlamerBuff" 
+				InitiallyActive="false"
+				AttributeModifierName="AttributeModifier_AvatarFlamerBuff"
+				Range="200"
+				RefreshDelay="1.0s"
+				AllowSelf="true"
+				AffectContainedOnly="false">
+				<ObjectFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="VEHICLE"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" >				
+				</ObjectFilter>
+				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
+			</AttributeModifierAuraUpdate>					
+
+			<AttributeModifierAuraUpdate
+				id="ModuleTag_AttributeModifier_FlamerBuffFX" 
+				InitiallyActive="false"
+				AttributeModifierName="AttributeModifier_BlackHandLeadership"
+				Range="200"
+				RefreshDelay="1.0s"
+				AllowSelf="true"
+				AffectContainedOnly="false">
+				<ObjectFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="VEHICLE"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" >				
+				</ObjectFilter>
+				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
+			</AttributeModifierAuraUpdate>				
 			
 			<ModelConditionUpgrade
 				id="081018FB"
@@ -6952,6 +7022,31 @@
 					/>
 				</ModelConditionState>
 			</ScriptedModelDraw>
+			
+			<!-- Buff Aura radius -->
+			<ScriptedModelDraw
+				id="ModuleTag_Draw_Selected_Aura_Decal"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model Name="" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="SELECTED USER_11">
+					<Model Name="FXInvisBone" />
+					<ShadowInfo
+						Type="ADDITIVE_DECAL"
+						SizeX="400"
+						SizeY="400"
+						OverrideLODVisibility="true"
+						MaxHeight="200"
+						UseHouseColor="true"
+						Texture="Decal_LeadershipBuff" 
+						LocalPlayerOnly="true"
+					/>
+				</ModelConditionState>
+			</ScriptedModelDraw>				
 
 			<!--   -->
 						
@@ -9929,12 +10024,58 @@
 			</AttributeModifierUpgrade>
 
 			<!-- Flame commandeer boost!! -->
-			<AttributeModifierUpgrade
-				id="Upgrade_avatarflamebuff"
-				AttributeModifier="AttributeModifier_AvatarFlamerBuff">				
+			<ModelConditionUpgrade
+				id="ModelConditionUpgrade_Flamer"
+				AddConditionFlags="USER_11">
 				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
-			</AttributeModifierUpgrade>					
+			</ModelConditionUpgrade>					
 			
+			<!-- Split Aura -->
+			<AttributeModifierAuraUpdate
+				id="ModuleTag_AttributeModifier_FlamerBuff" 
+				InitiallyActive="false"
+				AttributeModifierName="AttributeModifier_AvatarFlamerBuff"
+				Range="200"
+				RefreshDelay="1.0s"
+				AllowSelf="true"
+				AffectContainedOnly="false">
+				<ObjectFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="VEHICLE"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" >				
+				</ObjectFilter>
+				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
+			</AttributeModifierAuraUpdate>			
+
+			<AttributeModifierAuraUpdate
+				id="ModuleTag_AttributeModifier_FlamerBuffFX" 
+				InitiallyActive="false"
+				AttributeModifierName="AttributeModifier_BlackHandLeadership"
+				Range="200"
+				RefreshDelay="1.0s"
+				AllowSelf="true"
+				AffectContainedOnly="false">
+				<ObjectFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="VEHICLE"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" >				
+				</ObjectFilter>
+				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
+			</AttributeModifierAuraUpdate>					
+			
+
 			<ModelConditionUpgrade
 				id="081018FB"
 				RequiresAllTriggers="False"

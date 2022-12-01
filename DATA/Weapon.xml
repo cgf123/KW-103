@@ -2849,10 +2849,9 @@ DAMAGE TYPES
 		<FiringDuration
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
-		<!--
 		<ClipReloadTime
 			MinSeconds="0.5s"
-			MaxSeconds="0.5s" /> -->
+			MaxSeconds="0.5s" />
 		<Nuggets>
 			<DamageNugget
 				Damage="144.0"
@@ -2898,10 +2897,9 @@ DAMAGE TYPES
 		<FiringDuration
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
-		<!--
 		<ClipReloadTime
 			MinSeconds="0.5s"
-			MaxSeconds="0.5s" /> -->
+			MaxSeconds="0.5s" />
 		<Nuggets>
 			<DamageNugget
 				Damage="144.0"
@@ -3499,7 +3497,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="50"
+				Damage="45"
 				Radius="15.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3517,7 +3515,7 @@ DAMAGE TYPES
                 </DamageScalarDetails>						
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="50"
+				Damage="45"
 				Radius="10.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3570,7 +3568,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="50"
+				Damage="45"
 				Radius="15.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3582,7 +3580,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>							
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="50"
+				Damage="45"
 				Radius="10.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3628,7 +3626,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="66"
+				Damage="60"
 				Radius="15.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3646,7 +3644,7 @@ DAMAGE TYPES
                 </DamageScalarDetails>						
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="66"
+				Damage="60"
 				Radius="10.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3707,7 +3705,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="66"
+				Damage="60"
 				Radius="15.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3719,7 +3717,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>							
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="66"
+				Damage="60"
 				Radius="10.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -4608,8 +4606,8 @@ DAMAGE TYPES
 			MinSeconds="2.75s"
 			MaxSeconds="2.75s" />
 		<ClipReloadTime
-			MinSeconds="9s"
-			MaxSeconds="9s" />
+			MinSeconds="8s"
+			MaxSeconds="8s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="NODConfessorGrenadeProjectile"
@@ -5112,7 +5110,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="0"/>
 			<DamageNugget
-				Damage="135.0"
+				Damage="120.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.4s"
 				DamageType="CANNON"
@@ -5158,7 +5156,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="0"/>
 			<DamageNugget
-				Damage="135.0"
+				Damage="120.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.4s"
 				DamageType="CANNON"
@@ -6824,7 +6822,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="AlienShardWalkerWeapon"
 		  Name="AlienShardWalkerWeapon"
-		  AttackRange="300.0"
+		  AttackRange="315.0"
 		  WeaponSpeed="500.0"
 		  FireSound="Multisound:ALI_GunWalker_ShardWeaponFireMS"
 		  FireFX="FX_AlienTibShardFire"
@@ -6921,7 +6919,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="AlienShardWalkerBlueShardWeapon"
 		  Name="AlienShardWalkerBlueShardWeapon"
-		  AttackRange="300.0"
+		  AttackRange="315.0"
 		  WeaponSpeed="500.0"
 		  FireSound="Multisound:ALI_GunWalker_BlueShardWeaponFireMS"
 		  FireFX="FX_AlienTibShardFireBlue"
@@ -7017,7 +7015,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="AlienGunWalkerPlasmaAutoCannon"
 		  Name="AlienGunWalkerPlasmaAutoCannon"
-		  AttackRange="300.0"
+		  AttackRange="315.0"
 		  WeaponSpeed="999999.0"
 		  FireSound="AudioEvent:ALI_GunWalker_WeaponFire"
 		  FireFX="FX_AlienAutoCannonFire"
@@ -8010,7 +8008,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>
 			<AttributeModifierNugget
-				Radius="25.0"
+				Radius="40.0"
 				PartitionFilterTestType="CIRCLE"
 				AttributeModifierName="AttributeModifier_AOEMCMarker1">
 				<SpecialObjectFilter
@@ -8039,7 +8037,7 @@ DAMAGE TYPES
 			</ParalyzeNugget>		
 			<!-- Affects Epics -->
 			<ParalyzeNugget
-				Radius="25.0"
+				Radius="40.0"
 				DurationSeconds="0.5s"
 				ParalyzeType="EMP">
 				<SpecialObjectFilter
@@ -8051,7 +8049,7 @@ DAMAGE TYPES
 			</ParalyzeNugget>
 			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
-				Radius="25.0"
+				Radius="50.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_AOEMC"
 				PartitionFilterTestType="CIRCLE" >
 				<SpecialObjectFilter
@@ -8770,11 +8768,11 @@ DAMAGE TYPES
 		ClipSize="1"
 		AutoReloadsClip="AUTO">
 		<PreAttackDelay
-		  MinSeconds="0.6s"
-		  MaxSeconds="0.6s" />
+		  MinSeconds="0.45s"
+		  MaxSeconds="0.45s" />
 		<FiringDuration
-			MinSeconds="0.5s"
-			MaxSeconds="0.5s" />
+			MinSeconds="0.55s"
+			MaxSeconds="0.55s" />
 		<ClipReloadTime
 			MinSeconds="1.2s"
 			MaxSeconds="1.2s" />
@@ -8816,14 +8814,14 @@ DAMAGE TYPES
 		ClipSize="1"
 		AutoReloadsClip="AUTO">
 		<PreAttackDelay
-		  MinSeconds="0.6s"
-		  MaxSeconds="0.6s" />
+		  MinSeconds="0.45s"
+		  MaxSeconds="0.45s" />
 		<FiringDuration
-			MinSeconds="0.5s"
-			MaxSeconds="0.5s" />
+			MinSeconds="0.55s"
+			MaxSeconds="0.55s" />
 		<ClipReloadTime
-			MinSeconds="0.75s"
-			MaxSeconds="0.75s" />
+			MinSeconds="1.2s"
+			MaxSeconds="1.2s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
@@ -8862,21 +8860,21 @@ DAMAGE TYPES
 		ClipSize="1"
 		AutoReloadsClip="AUTO">
 		<PreAttackDelay
-		  MinSeconds="0.6s"
-		  MaxSeconds="0.6s" />
+		  MinSeconds="0.45s"
+		  MaxSeconds="0.45s" />
 		<FiringDuration
-			MinSeconds="0.5s"
-			MaxSeconds="0.5s" />
+			MinSeconds="0.55s"
+			MaxSeconds="0.55s" />
 		<ClipReloadTime
-			MinSeconds="0.75s"
-			MaxSeconds="0.75s" />
+			MinSeconds="1.2s"
+			MaxSeconds="1.2s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
 				LaserId="1"
 				HitGroundFX="FX_NODSpitfireHit"/>
 			<DamageNugget
-				Damage="1250.0"
+				Damage="1375.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -8908,21 +8906,21 @@ DAMAGE TYPES
 		ClipSize="1"
 		AutoReloadsClip="AUTO">
 		<PreAttackDelay
-		  MinSeconds="0.6s"
-		  MaxSeconds="0.6s" />
+		  MinSeconds="0.45s"
+		  MaxSeconds="0.45s" />
 		<FiringDuration
-			MinSeconds="0.5s"
-			MaxSeconds="0.5s" />
+			MinSeconds="0.55s"
+			MaxSeconds="0.55s" />
 		<ClipReloadTime
-			MinSeconds="0.75s"
-			MaxSeconds="0.75s" />
+			MinSeconds="1.2s"
+			MaxSeconds="1.2s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
 				LaserId="1"
 				HitGroundFX="FX_NODSpitfireHit"/>
 			<DamageNugget
-				Damage="1250.0"
+				Damage="1375.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -8965,7 +8963,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="2"/>
 			<DamageNugget
-				Damage="1500.0"
+				Damage="1375.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -9008,7 +9006,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="2"/>
 			<DamageNugget
-				Damage="1500.0"
+				Damage="1375.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.05s"
 				DamageType="CANNON"
@@ -9358,21 +9356,21 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<PreAttackDelay
-			MinSeconds="0.63s"
-			MaxSeconds="0.63s" />
+			MinSeconds="0.23s"
+			MaxSeconds="0.23s" />
 		<FiringDuration
 			MinSeconds="1.6s"
 			MaxSeconds="1.8s" />
 		<ClipReloadTime
-			MinSeconds="0.23s"
-			MaxSeconds="0.27s" />
+			MinSeconds="0.63s"
+			MaxSeconds="0.67s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.25s"
 				LaserId="4"
 				HitGroundFX="FX_ChargedParticleBeamHit" />
 			<DamageNugget
-					Damage="960.0"
+					Damage="1000.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="CANNON"
@@ -9416,21 +9414,21 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<PreAttackDelay
-			MinSeconds="0.63s"
-			MaxSeconds="0.63s" />
+			MinSeconds="0.23s"
+			MaxSeconds="0.23s" />
 		<FiringDuration
 			MinSeconds="1.6s"
 			MaxSeconds="1.8s" />
 		<ClipReloadTime
-			MinSeconds="0.23s"
-			MaxSeconds="0.27s" />
+			MinSeconds="0.63s"
+			MaxSeconds="0.67s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.25s"
 				LaserId="5"
 				HitGroundFX="FX_ChargedParticleBeamHit" />
 			<DamageNugget
-					Damage="960.0"
+					Damage="1000.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="CANNON"
@@ -11911,7 +11909,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODLaserCannonWeapon"
 		Name="NODLaserCannonWeapon"
-		AttackRange="350.0"
+		AttackRange="375.0"
 		WeaponSpeed="999999.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="180d"
@@ -11952,7 +11950,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODLaserCannonHubWeapon"
 		Name="NODLaserCannonHubWeapon"
-		AttackRange="350.0"
+		AttackRange="375.0"
 		WeaponSpeed="999999.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="180d"
@@ -11992,7 +11990,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODLaserCannonCapacitorsWeapon"
 		Name="NODLaserCannonCapacitorsWeapon"
-		AttackRange="350.0"
+		AttackRange="375.0"
 		WeaponSpeed="999999.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="180d"
@@ -12542,7 +12540,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODVertigoBomb"
 		Name="NODVertigoBomb"
-		AttackRange="125.0"
+		AttackRange="150.0"
 		WeaponSpeed="200"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="20d"
@@ -12567,8 +12565,14 @@ DAMAGE TYPES
 				<VeterancyProjectiles
 					VeterancyLevel="HEROIC"
 					ProjectileTemplate="NODVertigoBombProjectile_Veteran"/>
-			</ProjectileNugget>
+			</ProjectileNugget>	
 		</Nuggets>
+		<ScatterRadiusVsType
+			Radius="15.0">
+			<Filter
+				Rule="NONE"
+				Include="INFANTRY" />
+		</ScatterRadiusVsType>		
 	</WeaponTemplate>
 
 	<WeaponTemplate
@@ -12886,7 +12890,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY META_HORDE CAN_HEAL_ALLIES TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			
@@ -12898,7 +12902,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude="META_HORDE CAN_HEAL_ALLIES"
+					Exclude=""
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">						
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
@@ -12944,7 +12948,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY META_HORDE CAN_HEAL_ALLIES TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			
@@ -12956,7 +12960,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude="META_HORDE CAN_HEAL_ALLIES"
+					Exclude=""
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">						
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
@@ -13020,7 +13024,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY META_HORDE CAN_HEAL_ALLIES TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			
@@ -13032,7 +13036,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude="META_HORDE CAN_HEAL_ALLIES"					
+					Exclude=""					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
@@ -13056,7 +13060,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY META_HORDE CAN_HEAL_ALLIES TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 		
@@ -13068,7 +13072,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude="META_HORDE CAN_HEAL_ALLIES"					
+					Exclude=""					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>
@@ -13123,7 +13127,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY META_HORDE CAN_HEAL_ALLIES TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			
@@ -13135,7 +13139,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude="META_HORDE CAN_HEAL_ALLIES"					
+					Exclude=""					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
@@ -13199,7 +13203,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY META_HORDE CAN_HEAL_ALLIES TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
 				</SpecialObjectFilter>				
 			</ParalyzeNugget>
 			
@@ -13211,7 +13215,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude="META_HORDE CAN_HEAL_ALLIES"					
+					Exclude=""					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
@@ -13252,7 +13256,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY META_HORDE CAN_HEAL_ALLIES TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			<WeaponOCLNugget
@@ -13266,7 +13270,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude="META_HORDE CAN_HEAL_ALLIES"					
+					Exclude=""					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
@@ -13315,7 +13319,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY META_HORDE CAN_HEAL_ALLIES TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			
@@ -13327,7 +13331,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude="META_HORDE CAN_HEAL_ALLIES"
+					Exclude=""
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">	
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
@@ -14052,14 +14056,14 @@ DAMAGE TYPES
 		AcceptableAimDelta="10d"
 		CanFireWhileMoving="true">
 		<PreAttackDelay
-			MinSeconds="0.63s"
-			MaxSeconds="0.63s" />
+			MinSeconds="0.23s"
+			MaxSeconds="0.23s" />
 		<FiringDuration
 			MinSeconds="1.6s"
 			MaxSeconds="1.8s" />
 		<ClipReloadTime
-			MinSeconds="0.23s"
-			MaxSeconds="0.27s" />
+			MinSeconds="0.63s"
+			MaxSeconds="0.67s" />
 		<Nuggets>
 
 			<ActivateLaserNugget
@@ -14067,7 +14071,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_ChargedParticleBeamHitG" />
 			<DamageNugget
-					Damage="264.0"
+					Damage="267.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="CANNON"
@@ -14111,21 +14115,21 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<PreAttackDelay
-			MinSeconds="0.63s"
-			MaxSeconds="0.63s" />
+			MinSeconds="0.23s"
+			MaxSeconds="0.23s" />
 		<FiringDuration
 			MinSeconds="1.6s"
 			MaxSeconds="1.8s" />
 		<ClipReloadTime
-			MinSeconds="0.23s"
-			MaxSeconds="0.27s" />
+			MinSeconds="0.63s"
+			MaxSeconds="0.67s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.25s"
 				LaserId="1"
 				HitGroundFX="FX_ChargedParticleBeamHit" />
 			<DamageNugget
-					Damage="330.0"
+					Damage="333.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="CANNON"

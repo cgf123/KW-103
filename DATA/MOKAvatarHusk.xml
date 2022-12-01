@@ -155,7 +155,7 @@
 			</FXListBehavior>
 			<EngineerContain
 				id="0xE2BE8599"
-				ReplaceWith="NODAvatarHuskReplace"
+				ReplaceWith="MarkedOfKaneAvatarHuskReplace"
 				NameOfVoiceToUseForFriendlyEnter="0x9A3D3D56"
 				NameOfVoiceToUseForHostileEnter="0x9A3D3D56"
 				FXForCapture="FX_Husk_Captured"

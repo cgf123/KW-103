@@ -1372,7 +1372,7 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="True"
 				FaceTarget="True"
-				DominateRadius="75"
+				DominateRadius="60"
 				TriggerFX="FX_AlienAOEMindControlHit"
 				DominatedFX="FX_AlienAOEMindControlDominatedHit"
 				FiringFX="FX_AlienAOEMindControlFire"

@@ -996,6 +996,9 @@
 				Permanent="true">
 				<TriggeredBy>Upgrade_AdaptiveArmor</TriggeredBy>
 			</AttributeModifierUpgrade>			
+			<StancesBehavior
+				id="54CA416E"
+				StanceTemplate="Generic" />					
 		</Behaviors>
 		<AI>
 			<AIUpdate

@@ -743,6 +743,9 @@
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
 				UseMetaAOI="False" />
+			<StancesBehavior
+				id="54CA416E"
+				StanceTemplate="Generic" />						
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -954,7 +957,7 @@
 			IsRotatingWithObject="True"
 			LocalPlayerOnly="False" />
 		<VisionInfo
-			VisionRange="375"
+			VisionRange="400"
 			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"

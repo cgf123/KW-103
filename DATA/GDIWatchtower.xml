@@ -965,6 +965,9 @@
 				UnHideSubObjectsOnRemove="False">
 				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
 			</SubObjectsUpgrade>
+			<StancesBehavior
+				id="54CA416E"
+				StanceTemplate="Generic" />					
 		</Behaviors>
 		<AI>
 			<AIUpdate

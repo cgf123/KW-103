@@ -705,7 +705,7 @@
 		Surfaces="GROUND RUBBLE CRUSHABLE_OBSTACLE" 
 		TurnTimeSeconds="1.75s" 
 		TurnTimeDamagedSeconds="1.75s" 
-		AccelerationSeconds="1.0s"
+		AccelerationSeconds="0.5s"
 		MaxSpeedDamaged="75%"
 		BrakingSeconds="0.01s"
 		SlowTurnRadius="0.0" 

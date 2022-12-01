@@ -495,6 +495,34 @@
 	</ObjectCreationList>	
 	
 	<ObjectCreationList
+		id="NODAvatarDieOCL">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS COPY_CREATORS_UPGRADES PRESERVE_LAYER"
+			Disposition="LIKE_EXISTING"
+			TempModelCondition="USER_2"
+			TempModelConditionTime="4.0s"
+			InvulnerableTime="4s" 
+			MinHealth="0.5"
+			MaxHealth="0.5">
+			<CreateObject>NODAvatarHusk</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+	
+	<ObjectCreationList
+		id="MOKAvatarDieOCL">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS COPY_CREATORS_UPGRADES PRESERVE_LAYER"
+			Disposition="LIKE_EXISTING"
+			TempModelCondition="USER_2"
+			TempModelConditionTime="4.0s"
+			InvulnerableTime="4s" 
+			MinHealth="0.5"
+			MaxHealth="0.5">
+			<CreateObject>MarkedOfKaneAvatarHusk</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+		
+	<ObjectCreationList
 	id="BlackHandCustomWarmechDieOCL">
 		<CreateObject
 			Options="IGNORE_ALL_OBJECTS COPY_CREATORS_UPGRADES PRESERVE_LAYER"
@@ -507,6 +535,7 @@
 			<CreateObject>BlackHandCustomWarmechHusk</CreateObject>
 		</CreateObject>
 	</ObjectCreationList>	
+	
 	
 	
 	<!-- ########################## AOE MC ################################## -->

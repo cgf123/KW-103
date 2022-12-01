@@ -1029,6 +1029,13 @@
 				UnHideSubObjectsOnRemove="False">
 				<TriggeredBy>Upgrade_MechapedeRazorWeapon</TriggeredBy>
 			</SubObjectsUpgrade>
+
+			<PowerUpdate
+				UpdatePeriod="1s"
+				ReloadTime="1s"
+				Duration="10s"
+				Type="BACKUP_GENERATOR" />					
+			
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -2049,6 +2056,12 @@
 					DeathTypes="ALL" />
 				<SpawnTemplate>AmbStream_MechaCreate</SpawnTemplate>
 			</SpawnBehavior>		
+			
+			<PowerUpdate
+				UpdatePeriod="1s"
+				ReloadTime="1s"
+				Duration="10s"
+				Type="BACKUP_GENERATOR" />					
 			
 		</Behaviors>
 		<AI>

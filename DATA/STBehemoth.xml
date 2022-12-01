@@ -1662,7 +1662,7 @@
 				IgnorePreReqs="False" />
 			<HordeTransportContain
 				id="9DC593B0"
-				ContainMax="1"
+				ContainMax="2"
 				EnterSound="AudioEvent:VehicleEnter"
 				ExitSound="AudioEvent:VehicleExit"
 				DamagePercentToUnits="0%"
@@ -1684,7 +1684,7 @@
 				KillPassengersOnDeath="True"
 				HasObjectStatusOfContainedEntry="True"
 				Enabled="True"
-				Slots="1"
+				Slots="2"
 				ExitBone=""
 				ExitPitchRate="0"
 				HealthRegenPercentPerSec="0"
@@ -1759,6 +1759,7 @@
 					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />					
 			</HordeTransportContain>
 
+			<!--
 			<AttributeModifierAuraUpdate
 				id="ModuleTag_AttributeModifier_InfContained" 
 				InitiallyActive="true"
@@ -1815,7 +1816,8 @@
 					<IncludeThing>ZOCOMZoneRaiderSquad</IncludeThing>	
 					<IncludeThing>ZOCOMZoneRaiderSquad_Veteran</IncludeThing>			
 				</ObjectFilter>
-			</AttributeModifierAuraUpdate>					
+			</AttributeModifierAuraUpdate>		
+			-->
 			
 			<MoveToPositionAndEvacuateSpecialPower
 				id="DBDCABC7"

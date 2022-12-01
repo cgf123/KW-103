@@ -220,7 +220,7 @@
 	<AttributeModifier
 		id="AttributeModifier_HallucinateSlow"
 		Category="NONE"
-		Duration="4.0s"
+		Duration="4.5s"
 		ObjectStatusToSet="CARRYING_FLAG">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="100%"/>		
@@ -265,15 +265,16 @@
     <AttributeModifier
 		id="AttributeModifier_AvatarSpeedBuff"
 		Category="INNATE_VISION">
-		<Modifier Type="RANGE" Value="100%"/>
+		<Modifier Type="VISION" Value="120%"/>		
 		<Modifier Type="SHROUD_CLEARING" Value="120%"/>
         <Modifier Type="SPEED" Value="115%"/>
 	</AttributeModifier>
 	
     <AttributeModifier
 		id="AttributeModifier_AvatarFlamerBuff"
-		Category="INNATE_HEALTH">
-		<Modifier Type="ARMOR" Value="95%"/>
+		Category="NONE"
+		Duration="1.5s" >
+		<Modifier Type="RATE_OF_FIRE" Value="110%"/>
 	</AttributeModifier>	
 
     <AttributeModifier
@@ -359,11 +360,11 @@
 	<AttributeModifier
 		id="AttributeModifier_AdaptiveArmor"
 		Category="NONE"
-		Duration="15.0s"
+		Duration="20.0s"
 		ObjectStatusToSet="SWITCHED_WEAPONS"		
 		ModelConditionsSet="USER_8"	>
-		<Modifier Type="SPEED" Value="85%"/>
-		<Modifier Type="ARMOR" Value="75%" />
+		<Modifier Type="SPEED" Value="80%"/>
+		<Modifier Type="ARMOR" Value="70%" />
 		<Modifier Type="RATE_OF_FIRE" Value="100%" />		
 		<Modifier Type="RESIST_EMP" Value="100%"/> <!--
 		<Modifier Type="CRUSHABLE_LEVEL" Value="100%"/>	-->	
@@ -372,11 +373,11 @@
 	<AttributeModifier
 		id="AttributeModifier_AdaptiveArmor2"
 		Category="NONE"
-		Duration="15.0s"
+		Duration="20.0s"
 		ObjectStatusToSet="SWITCHED_WEAPONS"		
 		ModelConditionsSet="USER_8"	>
-		<Modifier Type="SPEED" Value="85%"/>
-		<Modifier Type="ARMOR" Value="90%" />
+		<Modifier Type="SPEED" Value="80%"/>
+		<Modifier Type="ARMOR" Value="87.5%" />
 		<Modifier Type="RATE_OF_FIRE" Value="100%" />
 		<Modifier Type="RESIST_EMP" Value="100%"/> <!--
 		<Modifier Type="CRUSHABLE_LEVEL" Value="100%"/>	-->		
@@ -400,14 +401,14 @@
 	<AttributeModifier
 		id="AttributeModifier_InfContained"
 		Duration="3s"		
-		Category="NONE">
+		Category="NONE">	
 		<Modifier Type="RATE_OF_FIRE" Value="80%"/>
 	</AttributeModifier>		
 	
 	<AttributeModifier
 		id="AttributeModifier_InfContainedRev"
 		Duration="3s"		
-		Category="NONE">
+		Category="NONE">	
 		<Modifier Type="RATE_OF_FIRE" Value="125%"/>
 	</AttributeModifier>		
 	
@@ -466,8 +467,9 @@
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_AOEMC"
 		Duration="0.5s"		
-		ObjectStatusToSet="IMMOBILE NO_ATTACK"		
+		ObjectStatusToSet="IMMOBILE"		
 		Category="NONE">
+		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
 	</AttributeModifier>		
 	
 	<AttributeModifier

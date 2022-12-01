@@ -1998,7 +1998,7 @@
 		<Body>
 			<ActiveBody
 				id="E128C6A2"
-				MaxHealth="2000"
+				MaxHealth="2200"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -4174,7 +4174,7 @@
 		<Body>
 			<ActiveBody
 				id="E128C6A2"
-				MaxHealth="2000"
+				MaxHealth="2200"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -6401,7 +6401,7 @@
 		<Body>
 			<ActiveBody
 				id="E128C6A2"
-				MaxHealth="2000"
+				MaxHealth="2200"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

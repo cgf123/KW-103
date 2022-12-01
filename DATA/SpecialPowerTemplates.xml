@@ -540,7 +540,7 @@
 
 	<SpecialPowerTemplate
 		id="SteelTalonsAdaptiveArmor"
-		ReloadTime="15s"
+		ReloadTime="20s"
 		TargetType="NONE">
 		<GameDependency>
 			<NeededUpgrade>Upgrade_AdaptiveArmor</NeededUpgrade>
