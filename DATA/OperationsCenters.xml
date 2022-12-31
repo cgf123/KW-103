@@ -3461,7 +3461,7 @@
 				OnTriggerRechargeSpecialPower=""
 				BurnDecayModifier="0"
 				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="False"
+				UpdateModuleStartsAttack="True"
 				StartsPaused="False"
 				ReEnableAntiCategory="False"
 				AttributeModifierAffectsSelf="False"

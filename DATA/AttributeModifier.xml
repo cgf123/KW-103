@@ -56,7 +56,7 @@
 	<AttributeModifier
 		id="Modifier_NODDozerBlades"
 		Category="NONE">
-		<Modifier Type="ARMOR" Value="80%"/>
+		<Modifier Type="ARMOR" Value="80.0%"/>
 		<!-- 100% means add 1, 200% means add 2 (this is done in code). -->
 		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>
 	</AttributeModifier>
@@ -267,7 +267,7 @@
 		Category="INNATE_VISION">
 		<Modifier Type="VISION" Value="120%"/>		
 		<Modifier Type="SHROUD_CLEARING" Value="120%"/>
-        <Modifier Type="SPEED" Value="115%"/>
+        <Modifier Type="SPEED" Value="110%"/>
 	</AttributeModifier>
 	
     <AttributeModifier
@@ -395,7 +395,7 @@
 		Category="NONE"
 		Duration="5.0s"
 		ModelConditionsSet="USER_8"	>
-		<Modifier Type="RATE_OF_FIRE" Value="75%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="90%"/>
 	</AttributeModifier>	
 		
 	<AttributeModifier
@@ -436,22 +436,25 @@
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Generic"
 		Duration="10.0s"		
+		ObjectStatusToSet="DO_NOT_PICK_ME"			
 		Category="NONE">
-		<Modifier Type="SPEED" Value="50%"/>
+		<Modifier Type="SPEED" Value="0%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
 	</AttributeModifier>	
+	
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Grenadier"
 		Duration="7.5s"		
+		ObjectStatusToSet="INSIDE_CASTLE"			
 		Category="NONE">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
 	</AttributeModifier>		
 	
-	
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Awakened"
 		Duration="4.0s"		
+		ObjectStatusToSet="IMMOBILE"		
 		Category="NONE">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
@@ -459,6 +462,7 @@
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Enlightened"
 		Duration="5.0s"		
+		ObjectStatusToSet="IMMOBILE"			
 		Category="NONE">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		

@@ -19,7 +19,7 @@
 		EditorName="BlackHandLaserCannon"
 		EditorSorting="STRUCTURE"
 		BountyValue="0"
-		BuildTime="11"
+		BuildTime="9"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="-10"
 		EnergyBonus="0"
@@ -67,7 +67,7 @@
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
-		BuildCost="1100"
+		BuildCost="900"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1011,7 +1011,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="4400"
+				MaxHealth="3600"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

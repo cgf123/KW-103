@@ -82,7 +82,7 @@ DAMAGE TYPES
 	<ArmorTemplate
 		id="NODRedeemerArmor"
 		SideDamageScalar="110"
-		RearDamageScalar="125">
+		RearDamageScalar="135">
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -1265,8 +1265,8 @@ DAMAGE TYPES
 	
 	<ArmorTemplate
 		id="GDIPitbullArmor"
-		SideDamageScalar="105"
-		RearDamageScalar="145">
+		SideDamageScalar="100"
+		RearDamageScalar="140">
 		<Armor
 			Damage="CANNON"
 			Percent="100" />
@@ -1443,7 +1443,7 @@ DAMAGE TYPES
 			Percent="50" />				
 		<Armor
 			Damage="GUN"
-			Percent="40" />
+			Percent="40%" />
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -1725,7 +1725,7 @@ DAMAGE TYPES
 	<ArmorTemplate
 		id="NODAvatarArmor"
 		SideDamageScalar="110"
-		RearDamageScalar="125">
+		RearDamageScalar="135">
 		<Armor
 			Damage="CANNON"
 			Percent="100" />
@@ -1999,10 +1999,10 @@ DAMAGE TYPES
 			Percent="35" />
 		<Armor
 			Damage="FLAME"
-			Percent="45" />				
+			Percent="46" />				
 		<Armor
 			Damage="GUN"
-			Percent="40" />
+			Percent="37" />
 		<Armor
 			Damage="LASER"
 			Percent="1" />				
@@ -2030,10 +2030,10 @@ DAMAGE TYPES
 			Percent="26" />
 		<Armor
 			Damage="FLAME"
-			Percent="33" />				
+			Percent="35" />				
 		<Armor
 			Damage="GUN"
-			Percent="30" />
+			Percent="28" />
 		<Armor
 			Damage="LASER"
 			Percent="1" />				
@@ -2184,10 +2184,10 @@ DAMAGE TYPES
 			Percent="38%" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="35%" />
+			Percent="40%" />
 		<Armor
 			Damage="FLAME"
-			Percent="45%" />				
+			Percent="50%" />				
 		<Armor
 			Damage="GUN"
 			Percent="25%" />	
@@ -2215,10 +2215,10 @@ DAMAGE TYPES
 			Percent="38%" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="35%" />
+			Percent="40%" />
 		<Armor
 			Damage="FLAME"
-			Percent="45%" />				
+			Percent="50%" />					
 		<Armor
 			Damage="GUN"
 			Percent="25%" />	
@@ -2742,7 +2742,7 @@ DAMAGE TYPES
 	
 	<ArmorTemplate
 		id="ZOCOMFirehawkCeramicArmor"
-		Default="69">
+		Default="69%">
 		<Armor
 			Damage="CANNON"
 			Percent="69%" />				

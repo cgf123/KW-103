@@ -1544,7 +1544,7 @@
 				WaypointModeTerminal="True"
 				AttributeModifier="AttributeModifier_BunkerTruckDeployed">
 				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>
-			</AttributeModifierUpgrade>
+			</AttributeModifierUpgrade>	
 			<MaxHealthUpgrade
 				id="15346648"
 				RequiresAllTriggers="False"
@@ -1552,7 +1552,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				AddMaxHealth="3000"
+				AddMaxHealth="1500"
 				ChangeType="ADD_CURRENT_HEALTH_TOO">
 				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>
 			</MaxHealthUpgrade>

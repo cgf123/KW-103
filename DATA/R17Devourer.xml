@@ -98,7 +98,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="55"
+			Speed="60"
 			Condition="NORMAL"
 			Locomotor="AlienDevourerTankLocomotor" />
 		<SkirmishAIInformation

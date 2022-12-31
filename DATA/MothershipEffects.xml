@@ -427,11 +427,11 @@
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 		<PreAttackDelay
-		  MinSeconds="5.3s"
-		  MaxSeconds="5.3s" />
+		  MinSeconds="6.3s"
+		  MaxSeconds="6.3s" />
 		<FiringDuration
-				MinSeconds="4s"
-				MaxSeconds="4s" />
+				MinSeconds="3s"
+				MaxSeconds="3s" />
 		<ClipReloadTime
 				MinSeconds=".1s"
 				MaxSeconds=".1s" />

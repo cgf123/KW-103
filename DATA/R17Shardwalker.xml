@@ -1521,7 +1521,7 @@
 			CrushZFactor="1"
 			MinCrushVelocityPercent="1%"
 			CrushDecelerationPercent="0%"
-			CrushWeapon=""
+			CrushWeapon="SmallCrusherWeapon"
 			CrushRevengeWeapon=""
 			CrusherLevel="1"
 			CrushableLevel="2"

@@ -324,14 +324,13 @@
 		<Cmd>Command_AttackMove</Cmd>		
 	</LogicCommandSet>	
 	
-	<LogicCommandSet	
-	id="MarkedOfKaneBunkerTruckCommandSet">
-		<!-- <Cmd>Command_Evacuate</Cmd> -->		
-		<Cmd>Command_UnPackNODBunkerTruck</Cmd>
+	<LogicCommandSet
+	id="NODBunkerTruckDeployedCommandSet">
+		<Cmd>Command_Evacuate</Cmd>
 		<Cmd>Command_Stop</Cmd>
-		<Cmd>Command_AttackMove</Cmd>	
+		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>	
-
+	
 	<!-- Remove fence bug -->
 	<LogicCommandSet
 		id="NODTechAssemblyPlantCommandSet">
@@ -578,6 +577,14 @@
 		<Cmd>Command_MoveToPositionAndEvacuate</Cmd>
 		<Cmd>Command_Evacuate</Cmd>
 		<Cmd>Command_AttackMove</Cmd>			
+	</LogicCommandSet>	
+	
+	<LogicCommandSet
+		id="SteelTalonsBehemothCommandSet">
+		<Cmd>Command_MoveToPositionAndEvacuate</Cmd>
+		<Cmd>Command_Evacuate</Cmd>				
+		<Cmd>Command_Stop</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>	
 	
 	<!-- ################### INF USE TRANSPORTS FOR AI ############## -->

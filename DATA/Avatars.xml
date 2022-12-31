@@ -4851,7 +4851,7 @@
 				id="ModuleTag_AttributeModifier_FlamerBuff" 
 				InitiallyActive="false"
 				AttributeModifierName="AttributeModifier_AvatarFlamerBuff"
-				Range="200"
+				Range="150"
 				RefreshDelay="1.0s"
 				AllowSelf="true"
 				AffectContainedOnly="false">
@@ -4873,7 +4873,7 @@
 				id="ModuleTag_AttributeModifier_FlamerBuffFX" 
 				InitiallyActive="false"
 				AttributeModifierName="AttributeModifier_BlackHandLeadership"
-				Range="200"
+				Range="150"
 				RefreshDelay="1.0s"
 				AllowSelf="true"
 				AffectContainedOnly="false">
@@ -7037,8 +7037,8 @@
 					<Model Name="FXInvisBone" />
 					<ShadowInfo
 						Type="ADDITIVE_DECAL"
-						SizeX="400"
-						SizeY="400"
+						SizeX="300"
+						SizeY="300"
 						OverrideLODVisibility="true"
 						MaxHeight="200"
 						UseHouseColor="true"

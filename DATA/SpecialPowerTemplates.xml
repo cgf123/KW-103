@@ -491,7 +491,7 @@
 		</GameDependency>
 	</SpecialPowerTemplate>	
 
-	<!-- ######################## MiniMCV SP's ##################### -->
+	<!-- ######################## New UNPACK buttons ##################### -->
 	
 	<SpecialPowerTemplate
 		id="SpecialPower_GrantUnpackUpgrade_GDI"
@@ -507,7 +507,7 @@
 		id="SpecialPower_GrantUnpackUpgrade_ALIEN"
 		TargetType="NONE" >
 	</SpecialPowerTemplate>
-
+	
 	<!-- ################################### -->
 	
 	<SpecialPowerTemplate
@@ -1583,6 +1583,14 @@
 	</SpecialPowerTemplate>	
 	
 	<SpecialPowerTemplate
+		id="SpecialPower_PowerSignatureScan"
+		Flags="IS_PLAYER_POWER WATER_OK SHARED_SYNC"
+		TargetType="NONE"
+		InitiateSound="NOD_PowerSignatureScan"
+		ReloadTime="60s"
+		Money="-300" />	
+	
+	<SpecialPowerTemplate
 		id="SpecialPowerPulseScan"
 		ReloadTime="30s"
 		TargetType="NONE"
@@ -1724,6 +1732,55 @@
 			<IncludeThing>MG_SteelTalons_ReclamatorHub</IncludeThing>
 		</ObjectFilter>
 	</SpecialPowerTemplate>	
+	
+	<SpecialPowerTemplate
+		id="SpecialPowerIonCannonControlIonCannon"
+		DisplayName="NAME:SuperweaponTimerIonCannon"
+		Description="DESC:SuperweaponTimerIonCannon"
+		TargetType="LOCATION"
+		Flags="WATER_OK FOGGED_SHROUDED_CELLS_OK SHARED_SYNC HAS_PUBLIC_TIMER IS_PLAYER_POWER IGNORE_MAP_EXTENTS"
+		ReloadTime="360s"
+		RadiusCursorRadius="250"
+		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+		EvaEventToPlayOnInitiateOwner="OwnIonCannonActivated"
+		EvaEventToPlayOnInitiateAlly="AlliedIonCannonActivated"
+		EvaEventToPlayOnInitiateEnemy="EnemyIonCannonActivated"
+		RestrictionType="1"
+		TimerImage="Button_PlayerPowerIonCannon">
+	</SpecialPowerTemplate>
+	
+	<SpecialPowerTemplate
+		id="SpecialPowerNuclearMissile"
+		DisplayName="NAME:SuperweaponTimerNuclearMissile"
+		Description="DESC:SuperweaponTimerNuclearMissile"
+		TargetType="LOCATION"
+		Flags="WATER_OK FOGGED_SHROUDED_CELLS_OK SHARED_SYNC HAS_PUBLIC_TIMER IS_PLAYER_POWER IGNORE_MAP_EXTENTS"
+		ReloadTime="360s"
+		RadiusCursorRadius="310"
+		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+		EvaEventToPlayOnInitiateOwner="OwnNuclearMissileLaunched"
+		EvaEventToPlayOnInitiateAlly="AlliedNuclearMissileLaunched"
+		EvaEventToPlayOnInitiateEnemy="EnemyNuclearMissileLaunched"
+		RestrictionType="1"
+		TimerImage="Button_PlayerPowerNuclearMissile">
+	</SpecialPowerTemplate>	
+	
+	<SpecialPowerTemplate
+		id="SpecialPower_RiftGeneratorWeapon"
+		DisplayName="NAME:SuperweaponTimerRiftGenerator"
+		Description="DESC:SuperweaponTimerRiftGenerator"
+		TargetType="LOCATION"
+		Flags="WATER_OK FOGGED_SHROUDED_CELLS_OK SHARED_SYNC HAS_PUBLIC_TIMER IS_PLAYER_POWER IGNORE_MAP_EXTENTS"
+		ReloadTime="360s"
+		RadiusCursorRadius="310"
+		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+		EvaEventToPlayOnInitiateOwner="OwnRiftGeneratorActivated"
+		EvaEventToPlayOnInitiateAlly="AlliedRiftGeneratorActivated"
+		EvaEventToPlayOnInitiateEnemy="EnemyRiftGeneratorActivated"
+		RestrictionType="1"
+		TimerImage="Button_PlayerPowerRiftGenerator">
+	</SpecialPowerTemplate>	
+	
 	
 	<!-- ############ JUMPJETS NEW CURSOR ########### -->
 	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateJumpJets" -->

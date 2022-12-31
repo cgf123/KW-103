@@ -411,16 +411,21 @@
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
 					RejectModelCondition="">
+					<!--
 					<ExcludeThing>GDIZoneTrooperSquad_Veteran</ExcludeThing>
 					<ExcludeThing>GDIZoneTrooperSquad</ExcludeThing>
 					<ExcludeThing>ZOCOMZoneRaiderSquad_Veteran</ExcludeThing>
 					<ExcludeThing>ZOCOMZoneRaiderSquad</ExcludeThing>
-					<ExcludeThing>AlienShockTrooperSquad_Veteran</ExcludeThing>
+					-->
 					<ExcludeThing>AlienShockTrooperSquad</ExcludeThing>
 					<ExcludeThing>AlienRazorDroneSquad</ExcludeThing>
+					<ExcludeThing>AlienStalkerSquad</ExcludeThing>
 					<ExcludeThing>Reaper17ShockTrooperSquad</ExcludeThing>
+					<ExcludeThing>Reaper17RazorDroneSquad</ExcludeThing>
+					<ExcludeThing>Reaper17StalkerSquad</ExcludeThing>
 					<ExcludeThing>Traveler59ShockTrooperSquad</ExcludeThing>
 					<ExcludeThing>Traveler59RazorDroneSquad</ExcludeThing>
+					<ExcludeThing>Traveler59StalkerSquad</ExcludeThing>		
 				</PassengerFilter>
 				<DieMuxData
 					ExemptStatus=""

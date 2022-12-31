@@ -1532,7 +1532,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				AddMaxHealth="3000"
+				AddMaxHealth="1500"
 				ChangeType="ADD_CURRENT_HEALTH_TOO">
 				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>
 			</MaxHealthUpgrade>

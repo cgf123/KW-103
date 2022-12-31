@@ -554,7 +554,7 @@
 		Description="UpgradeDesc:GDIHardpoints"
 		Type="PLAYER"
 		BuildTime="75.0s"
-		BuildCost="2500"
+		BuildCost="1500"
 		ResearchSound="AudioEvent:GDI_Airfield_hardPointsUpgrade"
 		IconImage="Button_Upgrade_Hardpoints">
 	</UpgradeTemplate>		

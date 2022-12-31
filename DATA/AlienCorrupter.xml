@@ -482,8 +482,8 @@
 			</StatusBitsUpgrade>
 
 			<PowerUpdate
-				UpdatePeriod="1s"
-				ReloadTime="1s"
+				UpdatePeriod="1.5s"
+				ReloadTime="1.5s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />					
 			

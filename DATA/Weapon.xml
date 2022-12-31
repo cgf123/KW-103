@@ -276,7 +276,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT" >			 
 				    </Filter>
 				</DamageScalarDetails>			
-				<DamageScalarDetails Scalar= "80%">
+				<DamageScalarDetails Scalar= "75%">
 					<Filter
 						Rule="NONE">			 
 						<IncludeThing>NODFlameTank</IncludeThing>
@@ -1103,12 +1103,12 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND ANTI_AIRBORNE_INFANTRY ANTI_AIRBORNE_VEHICLE"		
 		FireFX="FX_GDISniperFire"
 		FireVeteranFX="FX_GDISniperFireHeroic">
-		<PreAttackDelay
+		<PreAttackDelay 
 			MinSeconds="0.2s"
 			MaxSeconds="0.2s" />
 		<FiringDuration
 			MinSeconds="0.8s"
-			MaxSeconds="1.1s" />
+			MaxSeconds="1.0s" />
 		<ClipReloadTime
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
@@ -1610,7 +1610,6 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="400.0"
 				Radius="10.0"
-				DamageTaperOff="0"
 				DamageType="ROCKET"
 				DamageFXType="GDI_MISSILE"
 				DeathType="EXPLODED" >
@@ -1924,18 +1923,18 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
  		>
 		<FiringDuration
-			MinSeconds="0.8s"
-			MaxSeconds="0.8s" />
+			MinSeconds="0.3s"
+			MaxSeconds="0.3s" />
 		<ClipReloadTime
-			MinSeconds="3.0s"
-			MaxSeconds="3.1s" />
+			MinSeconds="2.4s"
+			MaxSeconds="2.5s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
 				LaserId="0"
 				HitGroundFX="FX_RailGunHit"/>
 			<DamageNugget
-				Damage="1200.0"
+				Damage="900.0"
 				Radius="1.0"
 				DamageType="CANNON"
 				DamageFXType="GDI_RAILGUN"
@@ -2130,7 +2129,7 @@ DAMAGE TYPES
  		>
 		<Nuggets>
 			<DamageNugget
-				Damage="350.0"
+				Damage="360.0"
 				DamageTaperOff="100"
 				Radius="35.0"
 				DamageType="GRENADE"
@@ -2755,7 +2754,7 @@ DAMAGE TYPES
 				MaxSeconds="0.5s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="200.0"
+				Damage="192.0"
 				Radius="40.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -2805,7 +2804,7 @@ DAMAGE TYPES
 				MaxSeconds="0.5s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="200.0"
+				Damage="192.0"
 				Radius="40.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -4448,7 +4447,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_ChargedParticleBeamHitG" />
 			<DamageNugget
-					Damage="80.0"
+					Damage="67.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="GUN"
@@ -4488,7 +4487,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_ChargedParticleBeamHitG" />
 			<DamageNugget
-					Damage="80.0"
+					Damage="67.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="GUN"
@@ -4820,12 +4819,6 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>
 
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="NONE" 
-						Include="MADE_OF_WOOD" />					
-				</DamageScalarDetails>		
-
 				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="NONE">
@@ -4903,12 +4896,6 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="NONE" 
-						Include="MADE_OF_WOOD" />					
-				</DamageScalarDetails>	
-
 				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="NONE">
@@ -4983,14 +4970,14 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "115%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
@@ -5002,13 +4989,7 @@ DAMAGE TYPES
 					<Filter Rule="NONE"
 							Include="ARCHER">				
 					</Filter>
-				</DamageScalarDetails>	
-				
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="NONE" 
-						Include="MADE_OF_WOOD" />					
-				</DamageScalarDetails>									
+				</DamageScalarDetails>								
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -5044,31 +5025,25 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "115%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
+				</DamageScalarDetails>		
 				
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
 				<DamageScalarDetails Scalar= "125%">
 					<Filter Rule="NONE"
 							Include="ARCHER">						
 					</Filter>
-				</DamageScalarDetails>		
-				
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="NONE" 
-						Include="MADE_OF_WOOD" />					
 				</DamageScalarDetails>		
 			</DamageNugget>
 		</Nuggets>
@@ -5466,9 +5441,8 @@ DAMAGE TYPES
 		FireSound="AudioEvent:ALI_DevourerTank_BeamWeaponFire"
 		FireFX="FX_AlienDevourerFire"
 		FireVeteranFX="FX_AlienDevourerFireHeroic"
-		AttackRange="360.0"
+		AttackRange="355.0"
 		WeaponSpeed="999999.0"
-		ClipSize="1"
 		AutoReloadsClip="AUTO"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
@@ -5497,7 +5471,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5553,7 +5527,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5609,7 +5583,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5665,7 +5639,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5692,7 +5666,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienDevourerBeamLaser_TiberiumEnhanced"
 		Name="AlienDevourerBeamLaser_TiberiumEnhanced"
-		AttackRange="360.0"
+		AttackRange="355.0"
 		WeaponSpeed="999999.0"
 		FireFX="FX_AlienChargedFire"
 		FireSound="Multisound:ALI_DevourerTank_BeamWeaponTiberiumEnhancedFireMS"
@@ -5721,7 +5695,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5780,7 +5754,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING"	/>
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5839,7 +5813,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>			
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5898,7 +5872,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5965,7 +5939,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6031,7 +6005,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6097,7 +6071,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6163,7 +6137,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6494,7 +6468,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6578,7 +6552,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6649,13 +6623,7 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" />
-				</DamageScalarDetails>
-				
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="NONE" 
-						Include="MADE_OF_WOOD" />					
-				</DamageScalarDetails>					
+				</DamageScalarDetails>			
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -6703,31 +6671,25 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "115%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
+				</DamageScalarDetails>		
 				
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
 				<DamageScalarDetails Scalar= "125%">
 					<Filter Rule="NONE"
 							Include="ARCHER">						
 					</Filter>
-				</DamageScalarDetails>		
-				
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="NONE" 
-						Include="MADE_OF_WOOD" />					
 				</DamageScalarDetails>						
 			</DamageNugget>
 		</Nuggets>
@@ -6883,25 +6845,17 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>		
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "135%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>				
-				
-				<!-- Scalar vs Disints -->
-				<DamageScalarDetails Scalar= "100%">
-					<Filter Rule="NONE">          
-						<IncludeThing>Traveler59RazorDrones</IncludeThing>					
-						<IncludeThing>AlienRazorDrones</IncludeThing>					
 					</Filter>
 				</DamageScalarDetails>						
 				
@@ -6978,14 +6932,14 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>		
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "135%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
@@ -7058,27 +7012,19 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>		
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "135%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>					
-
-				<!-- Scalar vs Disints -->
-				<DamageScalarDetails Scalar= "100%">
-					<Filter Rule="NONE">          
-						<IncludeThing>Traveler59RazorDrones</IncludeThing>					
-						<IncludeThing>AlienRazorDrones</IncludeThing>					
-					</Filter>
-				</DamageScalarDetails>								
+				</DamageScalarDetails>											
 
 				<!-- Scalar vs Cultists -->		
 				<DamageScalarDetails Scalar= "150%">
@@ -7162,7 +7108,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>					
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7259,7 +7205,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>					
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7438,8 +7384,8 @@ DAMAGE TYPES
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
 		<ClipReloadTime
-			MinSeconds="2.1s"
-			MaxSeconds="2.1s" />
+			MinSeconds="2.4s"
+			MaxSeconds="2.4s" />
 		<Nuggets>
 			<ProjectileNugget
 				WarheadTemplate="AlienPhotonCannonWarhead"
@@ -7462,8 +7408,8 @@ DAMAGE TYPES
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
 		<ClipReloadTime
-			MinSeconds="1.0s"
-			MaxSeconds="1.0s" />
+			MinSeconds="1.2s"
+			MaxSeconds="1.2s" />
 		<Nuggets>
 			<ProjectileNugget
 				WarheadTemplate="AlienPhotonCannonShardLauncherWarhead"
@@ -7488,7 +7434,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7528,7 +7474,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7765,13 +7711,6 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="ANY"
-						Include="MADE_OF_WOOD">          						
-					</Filter>
-				</DamageScalarDetails>		
-
 				<DamageScalarDetails Scalar= "125%" >
 					<Filter 
 						  Rule="NONE"
@@ -7855,13 +7794,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>		
-
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="ANY"
-						Include="MADE_OF_WOOD">          						
-					</Filter>
 				</DamageScalarDetails>			
 
 				<DamageScalarDetails Scalar= "125%" >
@@ -7942,13 +7874,6 @@ DAMAGE TYPES
 						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>			
-
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="ANY"
-						Include="MADE_OF_WOOD">          						
-					</Filter>
-				</DamageScalarDetails>	
 
 				<DamageScalarDetails Scalar= "125%" >
 					<Filter 
@@ -8457,7 +8382,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8524,7 +8449,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8596,7 +8521,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8771,8 +8696,8 @@ DAMAGE TYPES
 		  MinSeconds="0.45s"
 		  MaxSeconds="0.45s" />
 		<FiringDuration
-			MinSeconds="0.55s"
-			MaxSeconds="0.55s" />
+			MinSeconds="0.6s"
+			MaxSeconds="0.6s" />
 		<ClipReloadTime
 			MinSeconds="1.2s"
 			MaxSeconds="1.2s" />
@@ -8817,8 +8742,8 @@ DAMAGE TYPES
 		  MinSeconds="0.45s"
 		  MaxSeconds="0.45s" />
 		<FiringDuration
-			MinSeconds="0.55s"
-			MaxSeconds="0.55s" />
+			MinSeconds="0.6s"
+			MaxSeconds="0.6s" />
 		<ClipReloadTime
 			MinSeconds="1.2s"
 			MaxSeconds="1.2s" />
@@ -8863,8 +8788,8 @@ DAMAGE TYPES
 		  MinSeconds="0.45s"
 		  MaxSeconds="0.45s" />
 		<FiringDuration
-			MinSeconds="0.55s"
-			MaxSeconds="0.55s" />
+			MinSeconds="0.6s"
+			MaxSeconds="0.6s" />
 		<ClipReloadTime
 			MinSeconds="1.2s"
 			MaxSeconds="1.2s" />
@@ -8909,8 +8834,8 @@ DAMAGE TYPES
 		  MinSeconds="0.45s"
 		  MaxSeconds="0.45s" />
 		<FiringDuration
-			MinSeconds="0.55s"
-			MaxSeconds="0.55s" />
+			MinSeconds="0.6s"
+			MaxSeconds="0.6s" />
 		<ClipReloadTime
 			MinSeconds="1.2s"
 			MaxSeconds="1.2s" />
@@ -8953,8 +8878,8 @@ DAMAGE TYPES
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
 		<FiringDuration
-			MinSeconds="0.75s"
-			MaxSeconds="0.75s" />
+			MinSeconds="0.6s"
+			MaxSeconds="0.6s" />
 		<ClipReloadTime
 			MinSeconds="0.2s"
 			MaxSeconds="0.2s" />
@@ -8996,8 +8921,8 @@ DAMAGE TYPES
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
 		<FiringDuration
-			MinSeconds="0.75s"
-			MaxSeconds="0.75s" />
+			MinSeconds="0.6s"
+			MaxSeconds="0.6s" />
 		<ClipReloadTime
 			MinSeconds="0.2s"
 			MaxSeconds="0.2s" />
@@ -10229,6 +10154,12 @@ DAMAGE TYPES
 						  StatusBitFlags="SWITCHED_WEAPONS"
 						  Include="INFANTRY">	
 					</Filter>			
+				</DamageScalarDetails>  	
+				<DamageScalarDetails Scalar= "100%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="STRUCTURE">	
+					</Filter>			
 				</DamageScalarDetails>  					
 			</DamageNugget>
 			<SuppressionNugget
@@ -10287,7 +10218,13 @@ DAMAGE TYPES
 						  StatusBitFlags="SWITCHED_WEAPONS"
 						  Include="INFANTRY">	
 					</Filter>			
-				</DamageScalarDetails>  	
+				</DamageScalarDetails>  
+				<DamageScalarDetails Scalar= "100%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="STRUCTURE">	
+					</Filter>			
+				</DamageScalarDetails>  					
 			</DamageNugget>
 			<SuppressionNugget
 				Radius="10.0"
@@ -10591,7 +10528,7 @@ DAMAGE TYPES
 			MaxSeconds="0.4s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="4.5"
+				Damage="5.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -10672,7 +10609,7 @@ DAMAGE TYPES
 			MaxSeconds="0.01s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="36.0"
+				Damage="37.5"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -10717,7 +10654,7 @@ DAMAGE TYPES
 			MaxSeconds="0.01s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="48.0"
+				Damage="50.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -10985,7 +10922,14 @@ DAMAGE TYPES
 			  DelayTimeSeconds="0.0s"
 			  DamageType="CANNON"
 			  DamageFXType="GDI_LASER"
-			  DeathType="NORMAL" />
+			  DeathType="NORMAL" >
+				<DamageScalarDetails Scalar="90%">
+					<Filter
+						Rule="NONE"
+						Include="METAUNIT" >
+					</Filter>
+				</DamageScalarDetails>					  
+			</DamageNugget>
 			<SuppressionNugget
 				Radius="25.0"
 				Suppression="100"
@@ -11007,7 +10951,14 @@ DAMAGE TYPES
 				  DamageType="CANNON"
 				  DamageFXType="GDI_LASER"
 				  DeathType="NORMAL"
-				  VictimShroudRevealer="ArtilleryShroudRevealer"/>
+				  VictimShroudRevealer="ArtilleryShroudRevealer" >
+				<DamageScalarDetails Scalar="90%">
+					<Filter
+						Rule="NONE"
+						Include="METAUNIT" >
+					</Filter>
+				</DamageScalarDetails>					  
+			</DamageNugget>
 			<SuppressionNugget
 				Radius="25.0"
 				Suppression="100"
@@ -11932,7 +11883,7 @@ DAMAGE TYPES
 				LaserId="0"
 				HitGroundFX="FX_NODSpitfireHit"/>
 			<DamageNugget
-				Damage="165.0"
+				Damage="155.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.1s"
 				DamageType="CANNON"
@@ -11972,7 +11923,7 @@ DAMAGE TYPES
 				LaserId="0"
 				HitGroundFX="FX_NODSpitfireHit"/>
 			<DamageNugget
-				Damage="165.0"
+				Damage="155.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.1s"
 				DamageType="CANNON"
@@ -12011,7 +11962,7 @@ DAMAGE TYPES
 				LaserId="0"
 				HitGroundFX="FX_NODSpitfireHit"/>
 			<DamageNugget
-				Damage="225.0"
+				Damage="210.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.1s"
 				DamageType="CANNON"
@@ -12212,7 +12163,7 @@ DAMAGE TYPES
 		  AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
 		<Nuggets>		
 			<DamageNugget
-				  Damage="187.0"
+				  Damage="190.0"
 				  Radius="10.0"
 				  DelayTimeSeconds="0s"
 				  DamageType="ROCKET"
@@ -12556,8 +12507,8 @@ DAMAGE TYPES
 			MinSeconds="3.0s"
 			MaxSeconds="3.0s" />
 		<ClipReloadTime
-			MinSeconds="4.5s"
-			MaxSeconds="4.5s" />
+			MinSeconds="5s"
+			MaxSeconds="5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="NODVertigoBombProjectile"
@@ -12834,6 +12785,22 @@ DAMAGE TYPES
 		</Nuggets>
 	</WeaponTemplate>	
 	
+	<WeaponTemplate
+		id="GDIFirehawkMissileWarhead"
+		Name="GDIFirehawkMissileWarhead"
+		ProjectileCollidesWith="ENEMIES"
+		RadiusDamageAffects="ENEMIES NEUTRALS"
+		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
+		<Nuggets>
+			<DamageNugget
+				Damage="1000.0"
+				Radius="10"
+				DamageType="ROCKET"
+				DamageFXType="GDI_MISSILE"
+				DeathType="EXPLODED"		/>
+		</Nuggets>
+	</WeaponTemplate>	
+	
 	
 	<!-- ************************************************* EMP FIXES, AFFECTS ADAPTIVE/PHASE *********************************************** -->
 
@@ -12893,7 +12860,7 @@ DAMAGE TYPES
 					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
-			
+
 			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
 				Radius="40.0"
@@ -14327,6 +14294,21 @@ DAMAGE TYPES
 	
 	<!-- ********************************************************* NEW HEAVY INF CRUSH WEAPONS ******************************************************************** -->
 	
+  <!-- Test Crush -->
+  <WeaponTemplate
+	  id="SmallCrusherWeapon"
+	  Name="SmallCrusherWeapon" 
+	  AttackRange="70.0"
+	  RadiusDamageAffects="ENEMIES"
+	  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+	<Nuggets>
+		<DamageNugget 
+			  Damage="400.0" 
+			  DamageType="CRUSH" >    
+		</DamageNugget>
+	</Nuggets>
+  </WeaponTemplate>		
+	
   <!-- Crush slow effect for Composite infantry -->
   <WeaponTemplate
 	  id="CompositeInfCrushWeapon"
@@ -14643,9 +14625,15 @@ DAMAGE TYPES
 		  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 		<Nuggets>
 			<DamageNugget 		
-				  Damage="1200.0" 
+				  Damage="2000.0" 
 				  Radius="30.0"						  
 				  DamageType="MINE">	
+				<DamageScalarDetails Scalar= "150%" >
+					<Filter 
+						  Rule="NONE">	
+						  <IncludeThing>SteelTalonsTitan</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>						  
 				<DamageScalarDetails Scalar= "0%" >
 					<Filter 
 						  Rule="ALL"
@@ -14947,6 +14935,9 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DeathType="DETONATED"
 				CylinderAOE="true" >
+				<SpecialObjectFilter
+					Rule="ALL"
+					RejectStatusBitFlags="OUT_OF_PHASE" />					
 				<DamageScalarDetails Scalar= "125%" >
 					<Filter 
 						  Rule="ANY"
@@ -14961,6 +14952,31 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>      
 			</DamageNugget>
+			<!-- 50x bonus vs Phased -->
+			<DamageNugget
+				Damage="1125000.0"
+				DamageTaperOff="50000.0"
+				Radius="250.0"
+				DamageType="CANNON"
+				DeathType="DETONATED"
+				CylinderAOE="true" >
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="OUT_OF_PHASE" />					
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter 
+						  Rule="ANY"
+						  Include="METAUNIT">
+						<IncludeThing>GDICommando</IncludeThing>
+						<IncludeThing>ZOCOMCommando</IncludeThing>		
+						<IncludeThing>NODCommando</IncludeThing>					
+						<IncludeThing>MarkedOfKaneCommando</IncludeThing>
+						<IncludeThing>BlackHandCommando</IncludeThing>	
+						<IncludeThing>AlienMastermind</IncludeThing>
+						<IncludeThing>Traveler59BlinkMastermind</IncludeThing>												  
+					</Filter>
+				</DamageScalarDetails>      
+			</DamageNugget>			
 			<WeaponOCLNugget
 				WeaponOCL="OCL_GenericTreeCrusher" />
 		</Nuggets>
@@ -14995,6 +15011,9 @@ DAMAGE TYPES
 				Radius="350"
 				DamageType="CANNON"
 				DeathType="DETONATED" >
+				<SpecialObjectFilter
+					Rule="ALL"
+					RejectStatusBitFlags="OUT_OF_PHASE" />					
 				<DamageScalarDetails Scalar= "150%" >
 					<Filter 
 						  Rule="ANY"
@@ -15007,8 +15026,33 @@ DAMAGE TYPES
 						<IncludeThing>AlienMastermind</IncludeThing>
 						<IncludeThing>Traveler59BlinkMastermind</IncludeThing>							  
 					</Filter>
-				</DamageScalarDetails>      
+				</DamageScalarDetails>      							
 			</DamageNugget>
+			<!-- 50x bonus vs Phased -->
+			<DamageNugget
+				Damage="1000000"
+				DamageTaperOff="200000"
+				DelayTimeSeconds="0.0s"
+				Radius="350"
+				DamageType="CANNON"
+				DeathType="DETONATED" >
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="OUT_OF_PHASE" />				
+				<DamageScalarDetails Scalar= "150%" >
+					<Filter 
+						  Rule="ANY"
+						  Include="METAUNIT">
+						<IncludeThing>GDICommando</IncludeThing>
+						<IncludeThing>ZOCOMCommando</IncludeThing>		
+						<IncludeThing>NODCommando</IncludeThing>					
+						<IncludeThing>MarkedOfKaneCommando</IncludeThing>
+						<IncludeThing>BlackHandCommando</IncludeThing>	
+						<IncludeThing>AlienMastermind</IncludeThing>
+						<IncludeThing>Traveler59BlinkMastermind</IncludeThing>							  
+					</Filter>
+				</DamageScalarDetails>      								
+			</DamageNugget>			
 		</Nuggets>
 	</WeaponTemplate>	
 
@@ -15078,6 +15122,9 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DeathType="NORMAL"
 				CylinderAOE="true">
+				<SpecialObjectFilter
+					Rule="ALL"
+					RejectStatusBitFlags="OUT_OF_PHASE" />						
 				<DamageScalarDetails Scalar= "175%" >
 					<Filter 
 						  Rule="ANY"
@@ -15092,6 +15139,31 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>      
 			</DamageNugget>
+			<!-- 50x bonus vs Phased -->
+			<DamageNugget
+				Damage="10000.0"
+				Radius="300.0"
+				DelayTimeSeconds="0s"
+				DamageType="CANNON"
+				DeathType="NORMAL"
+				CylinderAOE="true">
+				<SpecialObjectFilter
+					Rule="ALL"
+					StatusBitFlags="OUT_OF_PHASE" />						
+				<DamageScalarDetails Scalar= "175%" >
+					<Filter 
+						  Rule="ANY"
+						  Include="METAUNIT">
+						<IncludeThing>GDICommando</IncludeThing>
+						<IncludeThing>ZOCOMCommando</IncludeThing>		
+						<IncludeThing>NODCommando</IncludeThing>					
+						<IncludeThing>MarkedOfKaneCommando</IncludeThing>
+						<IncludeThing>BlackHandCommando</IncludeThing>	
+						<IncludeThing>AlienMastermind</IncludeThing>
+						<IncludeThing>Traveler59BlinkMastermind</IncludeThing>							  
+					</Filter>
+				</DamageScalarDetails>      
+			</DamageNugget>			
 			<MetaImpactNugget
 				ShockWaveAmount="30.0"
 				ShockWaveRadius="200.0"

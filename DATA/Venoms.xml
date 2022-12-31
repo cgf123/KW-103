@@ -91,11 +91,7 @@
 		<ArmorSet
 			Armor="NODVenomArmor"
 			DamageFX="VehicleDamageFX"
-			Conditions="" />
-		<ArmorSet
-			Armor="NODVenomSigGenArmor"
-			DamageFX="VehicleDamageFX"
-			Conditions="PLAYER_UPGRADE" />			
+			Conditions="" />		
 		<LocomotorSet
 			Speed="30"
 			Condition="TAXIING"
@@ -1237,7 +1233,7 @@
 				ChildModuleHandlesFX="False"
 				NumFalseReturns="5"
 				Radius="75"
-				HackDuration="5s">
+				HackDuration="10s">
 				<AttributeModifierAffects
 					Rule="UNPARSED"
 					Relationship=""
@@ -1269,13 +1265,6 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</RadarHackSpecialPower>
-			
-			<ArmorUpgrade
-				id="ModuleTag_SigGenArmorUpgrade"
-				Permanent="false"
-				ArmorSetFlag="PLAYER_UPGRADE">
-				<TriggeredBy>Upgrade_SigGenArmor</TriggeredBy>
-			</ArmorUpgrade>
 			
 			<StatusBitsUpgrade
 				id="85B2DF85"
@@ -1734,10 +1723,6 @@
 			Armor="NODVenomArmor"
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
-		<ArmorSet
-			Armor="NODVenomSigGenArmor"
-			DamageFX="VehicleDamageFX"
-			Conditions="PLAYER_UPGRADE" />		
 		<LocomotorSet
 			Speed="30"
 			Condition="TAXIING"
@@ -2912,7 +2897,7 @@
 				ChildModuleHandlesFX="False"
 				NumFalseReturns="5"
 				Radius="75"
-				HackDuration="20s">
+				HackDuration="10s">
 				<AttributeModifierAffects
 					Rule="UNPARSED"
 					Relationship=""
@@ -3431,11 +3416,7 @@
 		<ArmorSet
 			Armor="NODVenomArmor"
 			DamageFX="VehicleDamageFX"
-			Conditions="" />
-		<ArmorSet
-			Armor="NODVenomSigGenArmor"
-			DamageFX="VehicleDamageFX"
-			Conditions="PLAYER_UPGRADE" />		
+			Conditions="" />	
 		<LocomotorSet
 			Speed="30"
 			Condition="TAXIING"
@@ -4741,7 +4722,7 @@
 				ChildModuleHandlesFX="False"
 				NumFalseReturns="5"
 				Radius="75"
-				HackDuration="20s">
+				HackDuration="10s">
 				<AttributeModifierAffects
 					Rule="UNPARSED"
 					Relationship=""
