@@ -1066,7 +1066,7 @@
 		<Body>
 			<ShieldBody
 				id="B313F576"
-				MaxHealth="3950"
+				MaxHealth="4000"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

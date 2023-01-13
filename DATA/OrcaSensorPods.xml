@@ -55,7 +55,7 @@
 			</InvisibilityUpdate>
 			<StealthDetectorUpdate
 				id="ModuleTag_StealthDetect"
-				DetectionRange="400" />
+				DetectionRange="500" />
 			<LifetimeUpdate
 				id="ModuleTag_LifeTime"
 				MinLifetime="120s"
@@ -290,7 +290,7 @@
 			</InvisibilityUpdate>
 			<StealthDetectorUpdate
 				id="ModuleTag_StealthDetect"
-				DetectionRange="400" />
+				DetectionRange="500" />
 			<LifetimeUpdate
 				id="ModuleTag_LifeTime"
 				MinLifetime="120s"
@@ -543,8 +543,8 @@
 				DetectionRange="500" />
 			<LifetimeUpdate
 				id="ModuleTag_LifeTime"
-				MinLifetime="120s"
-				MaxLifetime="120s" />
+				MinLifetime="240s"
+				MaxLifetime="240s" />
 			<DestroyDie
 				id="ModuleTag_DestroyDie">
 				<DieMuxData

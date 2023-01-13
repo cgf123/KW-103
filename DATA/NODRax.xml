@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<GameObject
+		id="NODHandOfNOD"
+		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE FS_FACTORY AUTO_RALLYPOINT NOT_AUTOACQUIRABLE COVER FS_BARRACKS AUTO_ACQUIRABLE_BY_AI"
+		Description="Desc:NODHandofNOD"
+		TypeDescription="Type:NODHandofNod"
+		RadarPriority="STRUCTURE"
+		PlacementViewAngle="315d"
+		Side="NOD"
+		EditorName="NODHandOfNOD"
+		EditorSorting="STRUCTURE"
+		BuildTime="5"
+		EnergyProduction="-5"
+		CommandSet="NODHandOfNODCommandSet"
+		SelectPortrait="Portrait_NODHandofNod"
+		ButtonImage="Portrait_NODHandofNod"
+		CampnessValue="2000"
+		CampnessValueRadius="300"
+		ProductionQueueType="MAIN_STRUCTURE"
+		BuildPlacementTypeFlag="MAIN_STRUCTURE"
+		UnitCategory="STRUCTURE"
+		BuildCost="500"
+		TransportSlotCount="1">
+		<DisplayName>Name:NODHandofNod</DisplayName>
+		<GameDependency>
+			<RequiredObject>NODPowerPlant</RequiredObject>
+		</GameDependency>
+		<ArmorSet
+			Armor="NODHandOfNODArmor"
+			DamageFX="FactionStructureDamageFX" />
+		<ArmorSet
+			Armor="NODHandOfNODLaserFencingArmor"
+			DamageFX="NormalDamageFX"
+			Conditions="PLAYER_UPGRADE" />
+		<SkirmishAIInformation />
+		<Draws>
+			<ScriptedModelDraw
+				id="0x50DF2C46"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				OkToChangeModelColor="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="W3DContainer:NBHAND" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="W3DContainer:NBHAND_ASN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="W3DContainer:NBHANDD2_SN" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="GDIWTDamagedSmoke"
+						FollowBone="True" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="W3DContainer:NBHANDD2_SN" />
+					<ParticleSysBone
+						BoneName="FXBone02"
+						FXParticleSystemTemplate="GDIWTDamagedSmoke"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="GDIWTDamagedFire"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="GDIWTDamagedSmoke"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="GDIWTDamagedDist"
+						FollowBone="True" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Model
+						Name="W3DContainer:NBHANDD3_SN" />
+				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Animation
+						AnimationName="NBHAND_AAN"
+						AnimationMode="ONCE" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="Con_Large"
+						FollowBone="True" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED"
+					StateName="STATE_Damaged"
+					Flags="START_FRAME_FIRST">
+					<Animation
+						AnimationName="NBHANDD2_AN"
+						AnimationMode="MANUAL" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED"
+					StateName="STATE_ReallyDamaged"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="NBHANDD2_AN"
+						AnimationMode="MANUAL" />
+					<Script>
+					Prev = CurDrawablePrevAnimationState();
+					if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_DamagedToReallyDamaged" then
+						CurDrawableSetTransitionAnimState("TRANS_DamagedToReallyDamaged")
+					end
+				</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Animation
+						AnimationName="NBHANDD3_AN"
+						AnimationMode="ONCE" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="Des_Medium" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_DamagedToReallyDamaged">
+					<Animation
+						AnimationName="NBHANDD2_AN"
+						AnimationMode="ONCE" />
+				</AnimationState>
+			</ScriptedModelDraw>
+			<ScriptedModelDraw
+				id="0xFE02FE24"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				OkToChangeModelColor="True"
+				StaticModelLODMode="True"
+				UseStandardModelNames="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6 DYING">
+					<Model />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6 REALLYDAMAGED">
+					<Model />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6 DAMAGED">
+					<Model />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_6">
+					<Model
+						Name="W3DContainer:NBHAND_LF" />
+				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DOOR_1_OPENING">
+					<Script>
+						CurDrawableHideSubObject("Gate01")
+						CurDrawableHideSubObject("Gate02")
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DOOR_1_CLOSING"
+					StateName="STATE_Closed">
+					<Script>
+						CurDrawableShowSubObject("Gate01")
+						CurDrawableShowSubObject("Gate02")
+					</Script>
+				</AnimationState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="0x513BC476" />
+			<FireWeaponWhenDead
+				id="0xDDED328F"
+				DeathWeapon="CatalystBuildingDeathWeapon"
+				InitiallyActive="True">
+				<DieMuxData
+					DeathTypes="CATALYST" />
+			</FireWeaponWhenDead>
+			<TemporarilyDefectUpdate
+				id="0x3473AFD2"
+				DefectionFrameCount="100" />
+			<ProductionUpdate
+				id="0x5FD28433"
+				NumDoorAnimations="1"
+				DoorOpeningTime="0.1s"
+				DoorWaitOpenTime="2s"
+				DoorCloseTime="0.1s"
+				Type="INFANTRY"
+				GiveNoXP="True" />
+			<QueueProductionExitUpdate
+				id="0xC2B69CF1"
+				PlacementViewAngle="45d"
+				ExitDelay="1">
+				<UnitCreatePoint
+					x="40.0"
+					y="0.0" />			
+				<NaturalRallyPoint
+					x="68" />
+			</QueueProductionExitUpdate>
+			<SlowDeath
+				id="0x73542D4A"
+				SinkRate="4"
+				SinkDelay="3s"
+				DestructionDelay="8s">
+				<Weapon>
+					<Weapon>NODHandOfNodDeathWeapon</Weapon>
+				</Weapon>
+				<Sound
+					List="HumanFaction_MediumBuilding_DieMS" />
+				<DieMuxData
+					DeathTypes="ALL" />
+			</SlowDeath>
+			<FXListBehavior
+				id="0xC74C39D8">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onTransitionToDamaged"
+					FX="FX_BuildDamaged_Large" />
+				<Event
+					Index="onTransitionToReallyDamaged"
+					FX="FX_BuildDamaged_Large" />
+				<Event
+					Index="onTransitionToRubble"
+					FX="FX_BuildRubble_Large" />
+			</FXListBehavior>
+			<StructureUnpackUpdate
+				UnpackTime="1.5s" />
+			<ModelConditionUpgrade
+				id="0xC2732A48"
+				AddConditionFlags="USER_6">
+				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ArmorUpgrade
+				id="0xF3CB043F"
+				Permanent="True"
+				ArmorSetFlag="PLAYER_UPGRADE">
+				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
+			</ArmorUpgrade>
+			<StatusBitsUpgrade
+				id="0xC9F59DA1"
+				StatusToSet="RIDER1">
+				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
+			</StatusBitsUpgrade>
+			<RepairUpdate
+				id="0x41FDEB2A"></RepairUpdate>
+			<EngineerContain
+				id="0xE2BE8599"
+				NameOfVoiceToUseForFriendlyEnter="0x9D165EA1"
+				NameOfVoiceToUseForHostileEnter="0x124DB476"
+				FXForRepair="FX_Building_Repaired"
+				FXForCapture="FX_Building_Captured"
+				FXForCaptureAndReplace="FX_Building_Captured"
+				EvaEventForRepair="BuildingRepaired"
+				EvaEventForCapture="EnemyBuildingCaptured">
+				<CanEnterFilter>
+					<IncludeThing>GDIEngineer</IncludeThing>
+					<IncludeThing>NODSaboteur</IncludeThing>
+					<IncludeThing>AlienAssimilator</IncludeThing>
+					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
+					<IncludeThing>ZOCOMEngineer</IncludeThing>
+					<IncludeThing>BlackHandSaboteur</IncludeThing>
+					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Traveler59Assimilator</IncludeThing>
+				</CanEnterFilter>
+			</EngineerContain>
+			<CreateObjectDie
+				id="0x34FD1923"
+				CreationList="OCL_GenericNODBuildingDestruction"
+				UpgradeForbidden="">
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="SUICIDED DETONATED" />
+			</CreateObjectDie>
+			<CreateObjectDie
+				id="0x4BF392A4"
+				CreationList="OCL_GenericNODBuildingSuicide">
+				<DieMuxData
+					DeathTypes="SUICIDED" />
+			</CreateObjectDie>
+			<StancesBehavior
+				id="0x54CA416E"
+				StanceTemplate="Generic" />
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="0x12FA48BA"
+				AutoAcquireEnemiesWhenIdle="NO"
+				AILuaEventsList="BuildingPowerFunctions" />
+		</AI>
+		<Body>
+			<ActiveBody
+				id="0xB313F576"
+				MaxHealth="2500">
+				<DamageTrigger
+					HealthLevelBelowPercent="66"
+					RemoveUpgrade="Upgrade_LaserFencing" />
+			</ActiveBody>
+		</Body>
+		<Geometry>
+			<Shape
+				Type="BOX"
+				MajorRadius="50"
+				MinorRadius="25"
+				Height="8">
+				<Offset
+					x="-2" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="40"
+				MinorRadius="20"
+				Height="12">
+				<Offset
+					x="-10"
+					z="8" />
+			</Shape>
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="8"
+				Height="40">
+				<Offset
+					x="-36"
+					y="2.5" />
+			</Shape>
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="14"
+				Height="20">
+				<Offset
+					x="-36"
+					y="2.5"
+					z="40" />
+			</Shape>
+			<ContactPoint>
+				<Pos
+					x="32"
+					y="-17" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="27"
+					y="17"
+					z="20" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="-45"
+					y="18"
+					z="30" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="-45"
+					y="-23" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="40"
+					y="-20"
+					z="20" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="32"
+					y="-17" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="27"
+					y="17"
+					z="20" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					x="-45"
+					y="-23" />
+			</ContactPoint>
+		</Geometry>
+		<AudioArrayVoice>
+			<AudioEntry
+				EvaEvent="BuildingStolen"
+				AudioType="voiceDefectingAway" />
+			<AudioEntry
+				EvaEvent="EnemyBuildingCaptured"
+				AudioType="voiceDefectingTowards" />
+			<AudioEntry
+				Sound="AudioEvent:NOD_HandOfNODSelect"
+				AudioType="voiceSelect" />
+		</AudioArrayVoice>
+		<AudioArraySound>
+			<AudioEntry
+				Sound="AudioEvent:GDI_BuildingPlaced"
+				AudioType="soundUnderConstruction" />
+			<AudioEntry
+				Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS"
+				AudioType="soundOnDamaged" />
+			<AudioEntry
+				Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS"
+				AudioType="soundOnReallyDamaged" />
+		</AudioArraySound>
+		<EvaEvents
+			EvaEventSoldOwner="StructureSold"
+			EvaEventDamagedOwner="StructureUnderAttack"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventRepairingOwner="StructureRepairing"
+			EvaEnemyObjectSightedEvent="EnemyCampSighted"
+			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventProductionStarted="BuildingConstructionStarted"
+			EvaEventProductionComplete="BuildingConstructionComplete"
+			EvaEventPlacementFailed="StructurePlacementFailed"
+			EvaEventCannotBuildDueToFullBuildQueue="StructureCannotBuildDueToFullBuildQueue"
+			EvaEventBuildOnHold="BuildOnHold"
+			EvaEventBuildCancelled="BuildCancelled"
+			EvaEventManuallyPoweredOff="BuildingManuallyPoweredDown"
+			EvaEventManuallyPoweredOn="BuildingManuallyPoweredUp" />
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="100"
+			ShroudClearingRange="400" />
+		<ProjectedBuildabilityInfo
+			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
+	</GameObject>
+</AssetDeclaration>

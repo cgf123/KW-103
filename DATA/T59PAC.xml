@@ -92,7 +92,8 @@
 			ForbiddenModelConditions=""
 			RequiredObjectStatusAny="">
 			<RequiredObject>Traveler59Reactor</RequiredObject>
-			<RequiredObject>AlienTechDummy</RequiredObject>			
+			<!--
+			<RequiredObject>AlienTechDummy</RequiredObject> -->	
 		</GameDependency>
 		<ArmorSet
 			Armor="AlienPlanetaryAssaultCarrierArmor"

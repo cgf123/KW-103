@@ -243,8 +243,8 @@
 			</InvisibilityUpdate>
 			<LifetimeUpdate
 				id="6D14780C"
-				MinLifetime="120s"
-				MaxLifetime="120s"
+				MinLifetime="240s"
+				MaxLifetime="240s"
 				DeathType="NONE"
 				WaitForWakeUp="False"
 				ScoreKill="False"

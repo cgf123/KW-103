@@ -234,6 +234,12 @@
 	</AttributeModifier>		
 	
 	<AttributeModifier
+		id="AttributeModifier_FirehawkGroundVision"
+		Category="NONE">
+		<Modifier Type="VISION" Value="75%"/>
+	</AttributeModifier>			
+	
+	<AttributeModifier
 		id="ZoneTrooper_AutoInjectors"
 		Category="INNATE_HEALTH">
 		<Modifier Type="HEALTH_MULT" Value="120%"/>		
@@ -435,8 +441,7 @@
 
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Generic"
-		Duration="10.0s"		
-		ObjectStatusToSet="DO_NOT_PICK_ME"			
+		Duration="10.0s"				
 		Category="NONE">
 		<Modifier Type="SPEED" Value="0%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
@@ -444,8 +449,7 @@
 	
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Grenadier"
-		Duration="7.5s"		
-		ObjectStatusToSet="INSIDE_CASTLE"			
+		Duration="7.5s"			
 		Category="NONE">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
@@ -453,16 +457,14 @@
 	
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Awakened"
-		Duration="4.0s"		
-		ObjectStatusToSet="IMMOBILE"		
+		Duration="4.0s"			
 		Category="NONE">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
 	</AttributeModifier>		
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Enlightened"
-		Duration="5.0s"		
-		ObjectStatusToSet="IMMOBILE"			
+		Duration="5.0s"				
 		Category="NONE">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
@@ -470,8 +472,7 @@
 
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_AOEMC"
-		Duration="0.5s"		
-		ObjectStatusToSet="IMMOBILE"		
+		Duration="0.5s"			
 		Category="NONE">
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
 	</AttributeModifier>		

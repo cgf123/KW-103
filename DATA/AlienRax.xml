@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<GameObject
+		id="AlienPortal"
+		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE FS_FACTORY AUTO_RALLYPOINT NOT_AUTOACQUIRABLE COVER FS_BARRACKS AUTO_ACQUIRABLE_BY_AI"
+		Description="Desc:ALIENPortal"
+		TypeDescription="Type:AlienPortal"
+		RadarPriority="STRUCTURE"
+		PlacementViewAngle="315d"
+		Side="ALIEN"
+		EditorName="AlienPortal"
+		EditorSorting="STRUCTURE"
+		BuildTime="6"
+		EnergyProduction="-5"
+		CommandSet="AlienPortalCommandSet"
+		SelectPortrait="Portrait_ALIENPortal"
+		ButtonImage="Portrait_ALIENPortal"
+		CampnessValue="2000"
+		CampnessValueRadius="300"
+		ProductionQueueType="MAIN_STRUCTURE"
+		BuildPlacementTypeFlag="MAIN_STRUCTURE"
+		UnitCategory="STRUCTURE"
+		BuildCost="600"
+		TransportSlotCount="1">
+		<DisplayName>NAME:ALIENPortal</DisplayName>
+		<GameDependency>
+			<RequiredObject>AlienPowerProjector</RequiredObject>
+		</GameDependency>
+		<ArmorSet
+			Armor="AlienPortalArmor"
+			DamageFX="FactionStructureDamageFX" />
+		<SkirmishAIInformation />
+		<Draws>
+			<ScriptedModelDraw
+				id="0x50DF2C46"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				ExtraPublicBone="FXPortal"
+				OkToChangeModelColor="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="W3DContainer:ABPORTAL" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="W3DContainer:ABPORTALBLD_SKN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="RUBBLE">
+					<Model
+						Name="W3DContainer:ABPORTAL_D3SN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED">
+					<Model
+						Name="W3DContainer:ABPORTAL_D2SN" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="AlienDamageFire01"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="AlienDamageFireGlow01"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="AlienDamageFireGlow02"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone02"
+						FXParticleSystemTemplate="AlienDamageFire01"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone02"
+						FXParticleSystemTemplate="AlienDamageFireGlow01"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone02"
+						FXParticleSystemTemplate="AlienDamageFireGlow02"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone03"
+						FXParticleSystemTemplate="AlienDamageFire01"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone03"
+						FXParticleSystemTemplate="AlienDamageFireGlow01"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone03"
+						FXParticleSystemTemplate="AlienDamageFireGlow02"
+						FollowBone="True" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED">
+					<Model
+						Name="W3DContainer:ABPORTAL" />
+					<Texture
+						Original="ABPortal"
+						New="ABPortal_D" />
+					<ParticleSysBone
+						BoneName="FXBone01"
+						FXParticleSystemTemplate="AlienDamageFire01"
+						FollowBone="True" />
+					<ParticleSysBone
+						BoneName="FXBone03"
+						FXParticleSystemTemplate="AlienDamageFire01"
+						FollowBone="True" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="UNDERPOWERED">
+					<Model
+						Name="W3DContainer:ABPORTAL" />
+				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT" />
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Animation
+						AnimationName="ABPORTALBLD_AAN"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="RUBBLE"
+					StateName="STATE_Rubble"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="ABPORTAL_D3AN"
+						AnimationMode="MANUAL" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_Rubble" and Prev ~= "TRANS_IntoRubble" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoRubble")
+						end
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED"
+					StateName="STATE_ReallyDamaged"
+					Flags="START_FRAME_LAST">
+					<Animation
+						AnimationName="ABPORTAL_D2AN"
+						AnimationMode="MANUAL" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoReallyDamaged")
+						end
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_IntoReallyDamaged">
+					<Animation
+						AnimationName="ABPORTAL_D2AN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_IntoRubble">
+					<Animation
+						AnimationName="ABPORTAL_D3AN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+			</ScriptedModelDraw>
+			<ScriptedModelDraw
+				id="0x71FDC194"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				AttachToBoneInAnotherModule="FXPortal">
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="NONE">
+					<Model
+						Name="W3DContainer:ABPORTAL_FX" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="ACTIVELY_CONSTRUCTING">
+					<Model
+						Name="W3DContainer:ABPORTAL_FX" />
+					<ShadowInfo
+						Type="ADDITIVE_DECAL"
+						Texture="AUDronShipDecalIdle"
+						SizeX="120"
+						SizeY="120"
+						MaxHeight="200"
+						OverrideLODVisibility="True"
+						UseHouseColor="True" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="RUBBLE">
+					<Model
+						Name="W3DContainer:ABPORTAL_FXDIE" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="UNDERPOWERED">
+					<Model
+						Name="W3DContainer:ABPORTAL_FX" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="AFFECTED_BY_EMP">
+					<Model
+						Name="W3DContainer:ABPORTAL_FX" />
+				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT">
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayIdleCenterDist" />
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayIdleCenterFlare" />
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayIdleCenterGlow" />
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayIdleCenterDarkMatter" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="ACTIVELY_CONSTRUCTING">
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayCenterDist" />
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayCenterFlare" />
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayCenterGlow" />
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayCenterDarkMatter" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="UNDERPOWERED" />
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="AFFECTED_BY_EMP" />
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="RUBBLE"
+					StateName="STATE_Rubble">
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+							if Prev ~= "STATE_Rubble" and Prev ~= "TRANS_ReallyDamagedToRubble" then CurDrawableSetTransitionAnimState("TRANS_ReallyDamagedToRubble") end;
+					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_ReallyDamagedToRubble">
+					<Animation
+						AnimationName="ABPORTAL_FXDIE"
+						AnimationMode="ONCE" />
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayCenterDist" />
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayCenterFlare" />
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayCenterGlow" />
+					<ParticleSysBone
+						BoneName="FXPortal"
+						FXParticleSystemTemplate="ABGatewayCenterDarkMatter" />
+				</AnimationState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="0x513BC476" />
+			<FireWeaponWhenDead
+				id="0xDDED328F"
+				DeathWeapon="CatalystBuildingDeathWeapon"
+				InitiallyActive="True">
+				<DieMuxData
+					DeathTypes="CATALYST" />
+			</FireWeaponWhenDead>
+			<TemporarilyDefectUpdate
+				id="0x3473AFD2"
+				DefectionFrameCount="100" />
+			<FXListBehavior
+				id="0xC74C39D8">
+				<DieMuxData
+					DeathTypes="ALL" />
+				<Event
+					Index="onTransitionToDamaged"
+					FX="FX_AlienBuildingDamagedM" />
+				<Event
+					Index="onTransitionToReallyDamaged"
+					FX="FX_AlienBuildingDamagedM" />
+				<Event
+					Index="onTransitionToRubble"
+					FX="FX_AlienBuildingRubbleM" />
+			</FXListBehavior>
+			<ProductionUpdate
+				id="0x5FD28433"
+				Type="INFANTRY"
+				GiveNoXP="True" />
+			<QueueProductionExitUpdate
+				id="0xC2B69CF1"
+				PlacementViewAngle="45d"
+				ExitDelay="5">		
+				<NaturalRallyPoint
+					x="40" />
+			</QueueProductionExitUpdate>
+			<StructureUnpackUpdate
+				UnpackTime="2s" />
+			<SlowDeath
+				id="0x73542D4A"
+				SinkRate="4"
+				SinkDelay="4s"
+				DestructionDelay="8s">
+				<Sound
+					List="ALI_Building_Die" />
+				<DieMuxData
+					DeathTypes="ALL" />
+			</SlowDeath>
+			<RepairUpdate
+				id="0x41FDEB2A"></RepairUpdate>
+			<EngineerContain
+				id="0xE2BE8599"
+				NameOfVoiceToUseForFriendlyEnter="0x9D165EA1"
+				NameOfVoiceToUseForHostileEnter="0x124DB476"
+				FXForRepair="FX_Building_Repaired"
+				FXForCapture="FX_Building_Captured"
+				FXForCaptureAndReplace="FX_Building_Captured"
+				EvaEventForRepair="BuildingRepaired"
+				EvaEventForCapture="EnemyBuildingCaptured">
+				<CanEnterFilter>
+					<IncludeThing>GDIEngineer</IncludeThing>
+					<IncludeThing>NODSaboteur</IncludeThing>
+					<IncludeThing>AlienAssimilator</IncludeThing>
+					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
+					<IncludeThing>ZOCOMEngineer</IncludeThing>
+					<IncludeThing>BlackHandSaboteur</IncludeThing>
+					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
+					<IncludeThing>Traveler59Assimilator</IncludeThing>
+				</CanEnterFilter>
+			</EngineerContain>
+			<CreateObjectDie
+				id="0x34FD1923"
+				CreationList="OCL_GenericAlienBuildingDestruction"
+				UpgradeForbidden="">
+				<DieMuxData
+					DeathTypes="ALL"
+					DeathTypesForbidden="SUICIDED DETONATED" />
+			</CreateObjectDie>
+			<CreateObjectDie
+				id="0x4BF392A4"
+				CreationList="OCL_GenericAlienBuildingSuicide">
+				<DieMuxData
+					DeathTypes="SUICIDED" />
+			</CreateObjectDie>
+			<StancesBehavior
+				id="0x54CA416E"
+				StanceTemplate="Generic" />
+		</Behaviors>
+		<AI>
+			<AIUpdate
+				id="0x12FA48BA"
+				AutoAcquireEnemiesWhenIdle="NO" />
+		</AI>
+		<Body>
+			<ActiveBody
+				id="0xB313F576"
+				MaxHealth="3000" />
+		</Body>
+		<Geometry>
+			<Shape
+				Type="BOX"
+				MajorRadius="17"
+				MinorRadius="50"
+				Height="60" />
+			<ContactPoint>
+				<Pos
+					y="-40" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					y="-40"
+					z="55" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					y="40"
+					z="55" />
+			</ContactPoint>
+			<ContactPoint>
+				<Pos
+					y="40" />
+			</ContactPoint>
+		</Geometry>
+		<AudioArrayVoice>
+			<AudioEntry
+				EvaEvent="BuildingStolen"
+				AudioType="voiceDefectingAway" />
+			<AudioEntry
+				EvaEvent="EnemyBuildingCaptured"
+				AudioType="voiceDefectingTowards" />
+			<AudioEntry
+				Sound="AudioEvent:ALI_Portal_Select"
+				AudioType="voiceSelect" />
+		</AudioArrayVoice>
+		<AudioArraySound>
+			<AudioEntry
+				Sound="AudioEvent:GDI_BuildingPlaced"
+				AudioType="soundUnderConstruction" />
+			<AudioEntry
+				Sound="AudioEvent:ALI_Building_LightDamage"
+				AudioType="soundOnDamaged" />
+			<AudioEntry
+				Sound="AudioEvent:ALI_Building_HeavyDamage"
+				AudioType="soundOnReallyDamaged" />
+			<AudioEntry
+				Sound="AudioEvent:ALI_Building_Placed"
+				AudioType="soundUnderConstruction" />
+		</AudioArraySound>
+		<EvaEvents
+			EvaEventSoldOwner="StructureSold"
+			EvaEventDamagedOwner="StructureUnderAttack"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventRepairingOwner="StructureRepairing"
+			EvaEnemyObjectSightedEvent="EnemyCampSighted"
+			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventProductionStarted="BuildingConstructionStarted"
+			EvaEventProductionComplete="BuildingConstructionComplete"
+			EvaEventPlacementFailed="StructurePlacementFailed"
+			EvaEventCannotBuildDueToFullBuildQueue="StructureCannotBuildDueToFullBuildQueue"
+			EvaEventBuildOnHold="BuildOnHold"
+			EvaEventBuildCancelled="BuildCancelled"
+			EvaEventManuallyPoweredOff="BuildingManuallyPoweredDown"
+			EvaEventManuallyPoweredOn="BuildingManuallyPoweredUp" />
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="200"
+			ShroudClearingRange="400" />
+		<ProjectedBuildabilityInfo
+			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
+	</GameObject>
+</AssetDeclaration>

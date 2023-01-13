@@ -278,6 +278,10 @@
 	<Include type="all" source="NodTibChemPlant.xml" />			
 	<Include type="all" source="BHTibChemPlant.xml" />	
 	<Include type="all" source="MOKTibChemPlant.xml" />		
+
+	<Include type="all" source="NODRax.xml" />	
+	<Include type="all" source="BHRax.xml" />	
+	<Include type="all" source="MOKRax.xml" />		
 	
 	<Include type="all" source="NODNukeSeed.xml" />		
 
@@ -463,6 +467,7 @@
 	<Include type="all" source="T59SporePod.xml" />		
 	<Include type="all" source="R17GrowthStimulator.xml" />		
 
+	<Include type="all" source="AlienWormhole.xml" />		
 	<Include type="all" source="T59TemporalWormhole.xml" />		
 	
 	<Include type="all" source="AlienTechDummy.xml" />		
@@ -490,6 +495,9 @@
 	<Include type="all" source="R17PlasmaMissileBattery.xml" />		
 	<Include type="all" source="T59PlasmaMissileBattery.xml" />		
 
+	<Include type="all" source="AlienRax.xml" />	
+	<Include type="all" source="R17Rax.xml" />	
+	<Include type="all" source="T59Rax.xml" />		
 
 	<Include type="all" source="TibScanDummy.xml" />	
 	

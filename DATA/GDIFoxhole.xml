@@ -503,7 +503,7 @@
 		<Body>
 			<ActiveBody
 				id="C026F3D9"
-				MaxHealth="2200"
+				MaxHealth="2000"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

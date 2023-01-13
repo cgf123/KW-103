@@ -1016,7 +1016,7 @@
 		ForbiddenObjectRange="16"
 		PreventConditions="TEMPORARILY_DEFECTED"			
 		Flags="PATHABLE_ONLY NOT_CLIFF_CELL NO_FORBIDDEN_OBJECTS"
-		ReloadTime="20s">
+		ReloadTime="12s">
 		<ForbiddenObjectFilter
 	Rule="ANY"
 	Include="STRUCTURE CRUSHABLE_OBSTACLE" />
@@ -1478,6 +1478,28 @@
 			<IncludeThing>ZOCOMBattleBase</IncludeThing>			
 		</ObjectFilter>
 	</SpecialPowerTemplate>	
+	
+	<!-- InitiateMoveToPositionAndEvacuate -->
+	<SpecialPowerTemplate
+		id="SpecialPowerInfantryDigInTrigger"
+		ReloadTime="60s"
+		RadiusCursorRadius="30"
+		ForbiddenObjectRange="32"
+		TargetType="NONE"
+		Money="-100"
+		Flags="NOT_CLIFF_CELL PATHABLE_ONLY NO_FORBIDDEN_OBJECTS DISABLE_FOR_MULTIPLE_SELECTION"
+		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0xD451C3CA">
+		<ForbiddenObjectFilter
+			Rule="ANY"
+			Include="STRUCTURE TIBERIUM">
+			<IncludeThing>GDIDigInBuildingPlaceholder</IncludeThing>
+		</ForbiddenObjectFilter>
+	</SpecialPowerTemplate>
+	<SpecialPowerTemplate
+		id="SpecialPowerInfantryDigIn"
+		ReloadTime="60s"
+		TargetType="LOCATION"
+		/>	
 	
 	<SpecialPowerTemplate
 		id="SpecialPower_SupersonicAirAttack"

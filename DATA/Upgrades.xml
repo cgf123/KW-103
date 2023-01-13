@@ -12,7 +12,7 @@
 	
 	<UpgradeTemplate id="Upgrade_Raged"
 		Type="OBJECT"	/>	
-	
+		
 	<UpgradeTemplate id="Upgrade_Reflector"
 		Type="OBJECT"	/>
 		
@@ -92,7 +92,7 @@
 		Description="UpgradeDesc:GDIRailGuns"
 		Type="PLAYER"
 		BuildTime="75.0s"
-		BuildCost="3000"
+		BuildCost="2500"
 		ResearchSound="AudioEvent:GDI_RailCannon_Upgrade"
 		IconImage="Button_UpgradeRailGun"
 	/>
@@ -183,8 +183,8 @@
 		TypeDescription="UpgradeType:BlackHandBlackDisciples"
 		Description="UpgradeDesc:BlackHandBlackDisciples"
 		Type="PLAYER"
-		BuildCost="1000"
-		BuildTime="30.0s"
+		BuildCost="1500"
+		BuildTime="45.0s"
 		ResearchSound="AudioEvent:NOD_BlackDisciples_Upgrade"
 		IconImage="Button_Upgrade_BlackConfessors"
 	/>	
@@ -591,7 +591,7 @@
 		Description="UpgradeDesc:GDITungstenAAShells"
 		Type="PLAYER"
 		BuildTime="45.0s"
-		BuildCost="1500"
+		BuildCost="1000"
 		ResearchSound="AudioEvent:GDI_Slingshot_TungstenShellUpgrade"
 		IconImage="Button_Upgrade_TungstenShells">
 	</UpgradeTemplate>	

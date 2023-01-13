@@ -2329,7 +2329,7 @@
 			</SlowDeath>
 			<SuppressionUpdate
 				id="3AE0061F"
-				UpdateDelay="0.5s"
+				UpdateDelay="0.25s"
 				Suppressability="1000"
 				SuppressionDuration="1.5s"
 				AttributeModifierSuppressed="Modifier_Test_Suppression"

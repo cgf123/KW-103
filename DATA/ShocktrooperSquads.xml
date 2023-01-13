@@ -99,7 +99,7 @@
 			DamageFX=""
 			Conditions="" />
 		<LocomotorSet
-			Speed="90"
+			Speed="83"
 			Condition="NORMAL"
 			Locomotor="NormalRangedSquadLocomotor" />
 		<SkirmishAIInformation
@@ -996,7 +996,7 @@
 			DamageFX=""
 			Conditions="" />
 		<LocomotorSet
-			Speed="90"
+			Speed="83"
 			Condition="NORMAL"
 			Locomotor="NormalRangedSquadLocomotor" />
 		<SkirmishAIInformation
@@ -1894,7 +1894,7 @@
 			DamageFX=""
 			Conditions="" />
 		<LocomotorSet
-			Speed="90"
+			Speed="83"
 			Condition="NORMAL"
 			Locomotor="NormalRangedSquadLocomotor" />
 		<SkirmishAIInformation

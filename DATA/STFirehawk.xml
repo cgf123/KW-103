@@ -2372,6 +2372,16 @@
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_SelectLoad_02</TriggeredBy>
 			</AudioLoopUpgrade>
+			<AttributeModifierUpgrade
+				id="A921E313"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="AttributeModifier_FirehawkGroundVision">
+				<TriggeredBy>Upgrade_SelectLoad_02</TriggeredBy>
+			</AttributeModifierUpgrade>					
 		</Behaviors>
 		<AI>
 			<JetAIUpdate
