@@ -292,18 +292,29 @@
 				</CanEnterFilter>
 			</EngineerContain>
 			<CreateObjectDie
-				id="0x34FD1923"
-				CreationList="OCL_GenericNODBuildingDestruction"
-				UpgradeForbidden="">
+				id="34FD1923"
+				CreationList="OCL_GenericMarkedOfKaneBuildingDestruction"
+				UpgradeForbidden="  ">
 				<DieMuxData
+					ExemptStatus=""
+					RequiredStatus=""
+					DamageAmountRequired="-1"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
 					DeathTypes="ALL"
 					DeathTypesForbidden="SUICIDED DETONATED" />
 			</CreateObjectDie>
 			<CreateObjectDie
-				id="0x4BF392A4"
-				CreationList="OCL_GenericNODBuildingSuicide">
+				id="4BF392A4"
+				CreationList="OCL_GenericMarkedOfKaneBuildingSuicide">
 				<DieMuxData
-					DeathTypes="SUICIDED" />
+					ExemptStatus=""
+					RequiredStatus=""
+					DamageAmountRequired="-1"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
+					DeathTypes="SUICIDED"
+					DeathTypesForbidden="" />
 			</CreateObjectDie>
 			<StancesBehavior
 				id="0x54CA416E"

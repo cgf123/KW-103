@@ -1267,7 +1267,7 @@ DAMAGE TYPES
 	<ArmorTemplate
 		id="GDIPitbullArmor"
 		SideDamageScalar="100"
-		RearDamageScalar="140">
+		RearDamageScalar="150">
 		<Armor
 			Damage="CANNON"
 			Percent="100" />
@@ -1678,7 +1678,7 @@ DAMAGE TYPES
 			Percent="110" />
 		<Armor
 			Damage="ROCKET"
-			Percent="60" />
+			Percent="55" />
 		<Armor
 			Damage="BLAST"
 			Percent="44" />			

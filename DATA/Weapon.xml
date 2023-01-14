@@ -3821,7 +3821,7 @@ DAMAGE TYPES
 		>
 		<Nuggets>
 			<DamageNugget
-					  Damage="2000.0"
+					  Damage="2300.0"
 					  Radius="235.0"
 					  DamageTaperOff="15"
 					  DelayTimeSeconds="0.0s"
@@ -5473,8 +5473,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="5d"
 		>
 		<FiringDuration
-			MinSeconds="2.3s"
-			MaxSeconds="2.3s" />
+			MinSeconds="2.4s"
+			MaxSeconds="2.4s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -5697,8 +5697,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="5d"		
 		>
 		<FiringDuration
-			MinSeconds="2.3s"
-			MaxSeconds="2.3s" />
+			MinSeconds="2.4s"
+			MaxSeconds="2.4s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -5757,7 +5757,7 @@ DAMAGE TYPES
 		>
 		<FiringDuration
 			MinSeconds="1.25s"
-			MaxSeconds="1.75s" />
+			MaxSeconds="1.55s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -5816,7 +5816,7 @@ DAMAGE TYPES
 		>
 		<FiringDuration
 			MinSeconds="1.25s"
-			MaxSeconds="1.75s" />
+			MaxSeconds="1.55s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -5875,7 +5875,7 @@ DAMAGE TYPES
 		>
 		<FiringDuration
 			MinSeconds="1.25s"
-			MaxSeconds="1.75s" />
+			MaxSeconds="1.55s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -5934,8 +5934,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="5d"		
 		>
 		<FiringDuration
-			MinSeconds="2.3s"
-			MaxSeconds="2.3s" />
+			MinSeconds="2.4s"
+			MaxSeconds="2.4s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
