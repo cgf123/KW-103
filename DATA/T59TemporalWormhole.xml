@@ -118,14 +118,27 @@
 			<AttributeModifierNugget
 				Radius="125.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS OUT_OF_PHASE"
+				ForbiddenTargetObjectStatus="IN_STASIS"
 				AttributeModifierName="AttributeModifier_TemporalWormhole">
 				<SpecialObjectFilter
 					Rule="ALL">
-					<ExcludeThing>AlienCrystalShield</ExcludeThing>
-					<ExcludeThing>Traveler59TemporalWormhole</ExcludeThing>
-				</SpecialObjectFilter>				
+					<ExcludeThing>NODBeamCannon</ExcludeThing>					
+					<ExcludeThing>BlackHandBeamCannon</ExcludeThing>			
+					<ExcludeThing>MarkedOfKaneBeamCannon</ExcludeThing>									
+				</SpecialObjectFilter>					
 			</AttributeModifierNugget>
+			<AttributeModifierNugget
+				Radius="125.0"
+				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="IN_STASIS"
+				AttributeModifierName="AttributeModifier_TemporalWormhole1">
+				<SpecialObjectFilter
+					Rule="NONE">
+					<IncludeThing>NODBeamCannon</IncludeThing>					
+					<IncludeThing>BlackHandBeamCannon</IncludeThing>			
+					<IncludeThing>MarkedOfKaneBeamCannon</IncludeThing>									
+				</SpecialObjectFilter>				
+			</AttributeModifierNugget>	
 			<TintObjectsNugget
 				Radius="125"
 				PreColorTime="0s"

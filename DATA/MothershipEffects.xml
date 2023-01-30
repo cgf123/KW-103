@@ -333,7 +333,7 @@
 	<AttributeModifier
 		id="Modifier_MSCatalystInfect"
 		Category="NONE"
-		Duration="0.5s"
+		Duration="1.5s"
 		ObjectStatusToSet="HEALTH_PERCENT_0" 
 		>
 	</AttributeModifier>					

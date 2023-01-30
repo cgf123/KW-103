@@ -10,8 +10,11 @@
 	<UpgradeTemplate id="Upgrade_Transporting"
 		Type="OBJECT"	/>		
 	
-	<UpgradeTemplate id="Upgrade_Raged"
+	<UpgradeTemplate id="Upgrade_NoAttack"
 		Type="OBJECT"	/>	
+		
+	<UpgradeTemplate id="Upgrade_Raged"
+		Type="OBJECT"	/>			
 		
 	<UpgradeTemplate id="Upgrade_Reflector"
 		Type="OBJECT"	/>

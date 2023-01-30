@@ -103,7 +103,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="SHIELDBODY_ENABLED" />
 		<LocomotorSet
-			Speed="54"
+			Speed="55"
 			Condition="NORMAL"
 			Locomotor="AlienPlanetaryAssaultCarrierLocomotor" />
 		<SkirmishAIInformation

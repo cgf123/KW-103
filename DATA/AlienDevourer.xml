@@ -791,6 +791,12 @@
 						IsPlayerUpgradePermanent="False" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
+						Template="AlienDevourerBeamLaser_Dummy"
+						Upgrade=""
+						ObjectStatus="WEAPON_UPGRADED_03"
+						IsPlayerUpgradePermanent="False" />							
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
 						Template="AlienDevourerBeamLaser_TiberiumEnhanced"
 						Upgrade=""
 						ObjectStatus="HAS_TIBERIUM_AMMO"
@@ -1133,6 +1139,16 @@
 				ApplyToContained="False">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
+			<AttributeModifierUpgrade
+				id="AA36A1AB"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="AttributeModifier_TibChargeNoAttack">
+				<TriggeredBy>Upgrade_NoAttack</TriggeredBy>
+			</AttributeModifierUpgrade>				
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -1140,7 +1156,7 @@
 				AutoAcquireEnemiesWhenIdle="YES"
 				StopChaseDistance="500"
 				HoldGroundCloseRangeDistance="0"
-				AILuaEventsList="Reaper17DevourerFunctions"
+				AILuaEventsList="Reaper17DevourerFunctions_103"
 				MinCowerTime="0s"
 				MaxCowerTime="0s"
 				RampageTime="0s"

@@ -1215,7 +1215,7 @@ DAMAGE TYPES
 		id="GDIOrcaRocketWeapon"
 		Name="GDIOrcaRocketWeapon"
 		AttackRange="250.0"
-		WeaponSpeed="500"
+		WeaponSpeed="450"
 		MinWeaponSpeed="510"
 		MaxWeaponSpeed="500"
 		FireFX="FX_GDIOrcaMissleFire"
@@ -1255,7 +1255,7 @@ DAMAGE TYPES
 		id="GDIOrcaHardpointsUpgradedRocketWeapon"
 		Name="GDIOrcaHardpointsUpgradedRocketWeapon"
 		AttackRange="250.0"
-		WeaponSpeed="500"
+		WeaponSpeed="450"
 		MinWeaponSpeed="510"
 		MaxWeaponSpeed="500"
 		FireFX="FX_GDIOrcaMissleFire"
@@ -3496,7 +3496,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="45"
+				Damage="40"
 				Radius="15.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3514,7 +3514,7 @@ DAMAGE TYPES
                 </DamageScalarDetails>						
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="45"
+				Damage="40"
 				Radius="10.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3567,7 +3567,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="45"
+				Damage="40"
 				Radius="15.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3579,7 +3579,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>							
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="45"
+				Damage="40"
 				Radius="10.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3625,7 +3625,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="60"
+				Damage="53"
 				Radius="15.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3643,7 +3643,7 @@ DAMAGE TYPES
                 </DamageScalarDetails>						
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="60"
+				Damage="53"
 				Radius="10.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3704,7 +3704,7 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="60"
+				Damage="53"
 				Radius="15.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -3716,7 +3716,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>							
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="60"
+				Damage="53"
 				Radius="10.0"
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
@@ -4105,7 +4105,7 @@ DAMAGE TYPES
 						Include="HARVESTER">			
 					</Filter>
 				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "1000%" >
+				<DamageScalarDetails Scalar= "1500%" >
 					<Filter 
 						  Rule="ANY"
 						  Include="VEHICLE"
@@ -5130,7 +5130,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienMechapedeRazorDroneWeapon"
 		Name="AlienMechapedeRazorDroneWeapon"
-		AttackRange="275.0"
+		AttackRange="260.0"
 		FireSound="AudioEvent:ALI_RazorDrone_Weapon1Fire"
 		FireFX="FX_AlienBuzzerFire"
 		FireVeteranFX="FX_AlienBuzzerFireHeroic"
@@ -5154,7 +5154,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="120.0"
 				Radius="0.0"
-				DelayTimeSeconds="0.4s"
+				DelayTimeSeconds="0.8s"
 				DamageType="CANNON"
 				DamageFXType="ALIEN_BUZZER"
 				DeathType="NORMAL">
@@ -5473,14 +5473,14 @@ DAMAGE TYPES
 		AcceptableAimDelta="5d"
 		>
 		<FiringDuration
-			MinSeconds="2.4s"
-			MaxSeconds="2.4s" />
+			MinSeconds="2.5s"
+			MaxSeconds="2.5s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
 				LaserId="1"/>
 			<DamageNugget
-				Damage="650.0"
+				Damage="675.0"
 				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="ALIEN_LASER"
@@ -5681,6 +5681,225 @@ DAMAGE TYPES
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
+	
+	<!-- ################# FAKE WEAPONS TO FIX TIB CHARGE DOUBLE SHOT BUG ################## -->
+
+	<WeaponTemplate
+		id="AlienDevourerBeamLaser_Dummy"
+		Name="AlienDevourerBeamLaser_Dummy"
+		FireSound="AudioEvent:ALI_DevourerTank_BeamWeaponFire"
+		FireFX="FX_AlienDevourerFire"
+		FireVeteranFX="FX_AlienDevourerFireHeroic"
+		AttackRange="355.0"
+		WeaponSpeed="999999.0"
+		AutoReloadsClip="AUTO"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
+		FiringLoopSound="Multisound:ALI_DevourerTank_BeamWeaponLoopMS"
+		FiringLoopSoundContinuesDuringReload="false"
+		CanFireWhileMoving="true"
+		AcceptableAimDelta="5d"
+		>
+		<PreAttackDelay
+			MinSeconds="9999s"
+			MaxSeconds="9999s" />		
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="1s"
+				LaserId="1"/>
+			<DamageNugget
+				Damage="675.0"
+				Radius="0.0"
+				DamageType="CANNON"
+				DamageFXType="ALIEN_LASER"
+				DeathType="NORMAL">
+				<DamageScalarDetails
+					Scalar= "200%">
+					<Filter
+						Rule="NONE"
+						Include="CIVILIAN_BUILDING" />
+				</DamageScalarDetails>
+				<!-- Scalars vs transport vehicles -->
+				<DamageScalarDetails Scalar= "125%">
+					<Filter 
+						Rule="ANY"
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="ANY"
+						Include="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>				
+				<DamageScalarDetails Scalar= "50%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>			
+	
+	<WeaponTemplate
+		id="AlienAnnihilatorPulseCannonA_Dummy"
+		Name="AlienAnnihilatorPulseCannonA_Dummy"
+		AttackRange="355.0"
+		WeaponSpeed="999999.0"
+		FireSound="Multisound:ALI_AnnihilatorTripod_Weapon1FireMS"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		ClipSize="1"
+		FireFX="FX_AlienDevourerFire"
+		FireVeteranFX="FX_AlienDevourerFireHeroic"
+		CanFireWhileMoving="true"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+		<PreAttackDelay
+			MinSeconds="9999s"
+			MaxSeconds="9999s" />		
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.9s"
+				LaserId="1"/>
+			<DamageNugget
+				Damage="575.0"
+				DamageType="CANNON"
+				DamageFXType="ALIEN_CANNON">
+				<DamageScalarDetails Scalar= "200%">
+					<Filter
+						Rule="NONE"
+						Include="CIVILIAN_BUILDING" />
+				</DamageScalarDetails>
+				<!-- Scalars vs transport vehicles -->
+				<DamageScalarDetails Scalar= "125%">
+					<Filter 
+						Rule="ANY"
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="ANY"
+						Include="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>						
+				<DamageScalarDetails Scalar= "50%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>			
+			</DamageNugget>		
+		</Nuggets>
+	</WeaponTemplate>
+
+	<WeaponTemplate
+		id="AlienAnnihilatorPulseCannonB_Dummy"
+		Name="AlienAnnihilatorPulseCannonB_Dummy"
+		AttackRange="355.0"
+		WeaponSpeed="999999.0"
+		FireSound="Multisound:ALI_AnnihilatorTripod_Weapon1FireMS"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		ClipSize="1"
+		FireFX="FX_AlienDevourerFire"
+		FireVeteranFX="FX_AlienDevourerFireHeroic"
+		CanFireWhileMoving="true"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+		<PreAttackDelay
+			MinSeconds="9999s"
+			MaxSeconds="9999s" />		
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.9s"
+				LaserId="2"/>
+			<DamageNugget
+				Damage="575.0"
+				DamageType="CANNON"
+				DamageFXType="ALIEN_CANNON">
+				<DamageScalarDetails Scalar= "200%">
+					<Filter
+						Rule="NONE"
+						Include="CIVILIAN_BUILDING" />
+				</DamageScalarDetails>
+				<!-- Scalars vs transport vehicles -->
+				<DamageScalarDetails Scalar= "125%">
+					<Filter 
+						Rule="ANY"
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="ANY"
+						Include="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>							
+				<DamageScalarDetails Scalar= "50%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>				
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
+
+	<WeaponTemplate
+		id="AlienAnnihilatorPulseCannonC_Dummy"
+		Name="AlienAnnihilatorPulseCannonC_Dummy"
+		AttackRange="355.0"
+		WeaponSpeed="999999.0"
+		FireSound="Multisound:ALI_AnnihilatorTripod_Weapon1FireMS"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		ClipSize="1"
+		FireFX="FX_AlienDevourerFire"
+		FireVeteranFX="FX_AlienDevourerFireHeroic"
+		CanFireWhileMoving="true"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE">
+		<PreAttackDelay
+			MinSeconds="9999s"
+			MaxSeconds="9999s" />		
+		<Nuggets>
+			<ActivateLaserNugget
+				Lifetime="0.9s"
+				LaserId="3"/>
+			<DamageNugget
+				Damage="575.0"
+				DamageType="CANNON"
+				DamageFXType="ALIEN_CANNON">
+				<DamageScalarDetails Scalar= "200%">
+					<Filter
+						Rule="NONE"
+						Include="CIVILIAN_BUILDING" />
+				</DamageScalarDetails>
+				<!-- Scalars vs transport vehicles -->
+				<DamageScalarDetails Scalar= "125%">
+					<Filter 
+						Rule="ANY"
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="ANY"
+						Include="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>						
+				<DamageScalarDetails Scalar= "50%">
+					<Filter
+						Rule="NONE"
+						Include="INFANTRY" />
+				</DamageScalarDetails>
+			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>
   
 	<!-- ######################################## CHARGED TRIPODS/DEVS #################################################### -->
 
@@ -5756,8 +5975,8 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.25s"
-			MaxSeconds="1.55s" />
+			MinSeconds="1.44s"
+			MaxSeconds="1.44s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -5815,8 +6034,8 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.25s"
-			MaxSeconds="1.55s" />
+			MinSeconds="1.44s"
+			MaxSeconds="1.44s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -5874,8 +6093,8 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.25s"
-			MaxSeconds="1.55s" />
+			MinSeconds="1.44s"
+			MaxSeconds="1.44s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -6000,8 +6219,8 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.25s"
-			MaxSeconds="1.55s" />
+			MinSeconds="1.44s"
+			MaxSeconds="1.44s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -6066,8 +6285,8 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.25s"
-			MaxSeconds="1.55s" />
+			MinSeconds="1.44s"
+			MaxSeconds="1.44s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -6132,8 +6351,8 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.25s"
-			MaxSeconds="1.55s" />
+			MinSeconds="1.44s"
+			MaxSeconds="1.44s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -6593,7 +6812,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="AlienEradicatorLaserWeapon"
 		  Name="AlienEradicatorLaserWeapon"
-		  AttackRange="330.0"
+		  AttackRange="340.0"
 		  FireSound="AudioEvent:ALI_RazorDrone_Weapon1Fire"
 		  FireFX="FX_AlienBuzzerFire"
 		  FireVeteranFX="FX_AlienBuzzerFireHeroic"
@@ -6616,7 +6835,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="225.0"
 				Radius="0.0"
-				DelayTimeSeconds="0.4s"
+				DelayTimeSeconds="1.2s"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_BUZZER"
 				DeathType="NORMAL">
@@ -6805,7 +7024,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="AlienShardWalkerWeapon"
 		  Name="AlienShardWalkerWeapon"
-		  AttackRange="315.0"
+		  AttackRange="330.0"
 		  WeaponSpeed="500.0"
 		  FireSound="Multisound:ALI_GunWalker_ShardWeaponFireMS"
 		  FireFX="FX_AlienTibShardFire"
@@ -6821,8 +7040,8 @@ DAMAGE TYPES
 			MaxSeconds="0.4s"
 		  />
 		<ClipReloadTime
-			MinSeconds="0.4s"
-			MaxSeconds="0.5s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.6s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="AlienTibShardProjectile"
@@ -6894,7 +7113,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="AlienShardWalkerBlueShardWeapon"
 		  Name="AlienShardWalkerBlueShardWeapon"
-		  AttackRange="315.0"
+		  AttackRange="330.0"
 		  WeaponSpeed="500.0"
 		  FireSound="Multisound:ALI_GunWalker_BlueShardWeaponFireMS"
 		  FireFX="FX_AlienTibShardFireBlue"
@@ -6909,8 +7128,8 @@ DAMAGE TYPES
 			MaxSeconds="0.4s"
 		  />
 		<ClipReloadTime
-			MinSeconds="0.4s"
-			MaxSeconds="0.5s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.6s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="AlienBlueShardProjectile"
@@ -6990,7 +7209,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="AlienGunWalkerPlasmaAutoCannon"
 		  Name="AlienGunWalkerPlasmaAutoCannon"
-		  AttackRange="315.0"
+		  AttackRange="330.0"
 		  WeaponSpeed="999999.0"
 		  FireSound="AudioEvent:ALI_GunWalker_WeaponFire"
 		  FireFX="FX_AlienAutoCannonFire"
@@ -7005,8 +7224,8 @@ DAMAGE TYPES
 			MaxSeconds="0.4s"
 		/>
 		<ClipReloadTime
-			MinSeconds="0.4s"
-			MaxSeconds="0.5s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.6s" />
 		<Nuggets>
 			<DamageNugget
 				Damage="90.0"
@@ -7116,7 +7335,7 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER" >
 					</Filter>
 				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "220%">
+				<DamageScalarDetails Scalar= "225%">
 					<Filter
 						Rule="ANY"
 						Include="AIRCRAFT" >
@@ -7141,7 +7360,7 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
+				</DamageScalarDetails>		
 						
 				<!-- Scalar vs heavy vehicles -->
 				<DamageScalarDetails Scalar= "90%">
@@ -7213,7 +7432,7 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER" >
 					</Filter>
 				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "220%">
+				<DamageScalarDetails Scalar= "225%">
 					<Filter
 						Rule="ANY"
 						Include="AIRCRAFT" >
@@ -7238,7 +7457,7 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
+				</DamageScalarDetails>		
 			
 				<!-- Scalar vs heavy vehicles -->
 				<DamageScalarDetails Scalar= "90%">
@@ -7405,8 +7624,8 @@ DAMAGE TYPES
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
 		<ClipReloadTime
-			MinSeconds="2.7s"
-			MaxSeconds="2.7s" />
+			MinSeconds="2.6s"
+			MaxSeconds="2.6s" />
 		<Nuggets>
 			<ProjectileNugget
 				WarheadTemplate="AlienPhotonCannonWarhead"
@@ -7429,8 +7648,8 @@ DAMAGE TYPES
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
 		<ClipReloadTime
-			MinSeconds="1.5s"
-			MaxSeconds="1.5s" />
+			MinSeconds="1.3s"
+			MaxSeconds="1.3s" />
 		<Nuggets>
 			<ProjectileNugget
 				WarheadTemplate="AlienPhotonCannonShardLauncherWarhead"
@@ -7740,6 +7959,13 @@ DAMAGE TYPES
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  				
 			</DamageNugget>
+			
+			<DamageScalarDetails Scalar= "90%">
+				<Filter 
+					Rule="ANY"
+					Include="MADE_OF_WOOD">          						
+				</Filter>
+			</DamageScalarDetails>					
 		</Nuggets>
 		<ScatterRadiusVsType
 			Radius="15.0">
@@ -7823,7 +8049,14 @@ DAMAGE TYPES
 						  Include="VEHICLE">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
-				</DamageScalarDetails>  					
+				</DamageScalarDetails>  
+
+				<DamageScalarDetails Scalar= "90%">
+					<Filter 
+						Rule="ANY"
+						Include="MADE_OF_WOOD">          						
+					</Filter>
+				</DamageScalarDetails>						
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>		
@@ -7902,7 +8135,14 @@ DAMAGE TYPES
 						  Include="VEHICLE">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
-				</DamageScalarDetails>  				
+				</DamageScalarDetails>  	
+
+				<DamageScalarDetails Scalar= "90%">
+					<Filter 
+						Rule="ANY"
+						Include="MADE_OF_WOOD">          						
+					</Filter>
+				</DamageScalarDetails>					
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>		
@@ -10162,14 +10402,14 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="GDI_MACHINEGUN"
 				DeathType="NORMAL">
-				<DamageScalarDetails Scalar= "67%">
+				<DamageScalarDetails Scalar= "75%">
 					<Filter
 						Rule="NONE"
 						RejectStatusBitFlags="SWITCHED_WEAPONS"
 						Include="INFANTRY" >
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "60%" >
+				<DamageScalarDetails Scalar= "67%" >
 					<Filter 
 						  Rule="NONE"
 						  StatusBitFlags="SWITCHED_WEAPONS"
@@ -10225,7 +10465,7 @@ DAMAGE TYPES
 						Include="NONCOM" >
 					</Filter>
 				</DamageScalarDetails>														
-				<DamageScalarDetails Scalar= "67%">
+				<DamageScalarDetails Scalar= "75%">
 					<Filter
 						Rule="NONE"
 						RejectStatusBitFlags="SWITCHED_WEAPONS"
@@ -10233,7 +10473,7 @@ DAMAGE TYPES
 						Include="INFANTRY" >
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "60%" >
+				<DamageScalarDetails Scalar= "67%" >
 					<Filter 
 						  Rule="NONE"
 						  StatusBitFlags="SWITCHED_WEAPONS"
@@ -12125,7 +12365,7 @@ DAMAGE TYPES
  		>
 		<Nuggets>
 			<DamageNugget
-				Damage="425.0"
+				Damage="430.0"
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="NOD_TIBCOREMISSILE"
@@ -12512,7 +12752,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODVertigoBomb"
 		Name="NODVertigoBomb"
-		AttackRange="125.0"
+		AttackRange="150.0"
 		WeaponSpeed="200"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="20d"
@@ -12528,8 +12768,8 @@ DAMAGE TYPES
 			MinSeconds="3.0s"
 			MaxSeconds="3.0s" />
 		<ClipReloadTime
-			MinSeconds="5s"
-			MaxSeconds="5s" />
+			MinSeconds="4.5s"
+			MaxSeconds="4.5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="NODVertigoBombProjectile"
@@ -13378,7 +13618,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="NOD_MACHINEGUN"
 				DeathType="NORMAL" >	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
@@ -13430,7 +13670,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="NOD_LASER"
 				DeathType="LASERED" >	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
@@ -13480,7 +13720,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="NOD_PARTICLEBM"
 				DeathType="LASERED" >	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
@@ -13528,7 +13768,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="NOD_PARTICLEBM"
 				DeathType="LASERED" >
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />

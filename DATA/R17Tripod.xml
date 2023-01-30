@@ -2144,7 +2144,6 @@
 				StatusToClear=""
 				ApplyToContained="False">
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
-				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
 			<ModelConditionUpgrade
 				id="081018FB"
@@ -2184,6 +2183,12 @@
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="AlienAnnihilatorPulseCannonA_Dummy"
+						Upgrade=""
+						ObjectStatus="WEAPON_UPGRADED_03"
+						IsPlayerUpgradePermanent="False" />						
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="Reaper17TripodPulseCannonA_TiberiumEnhanced"
@@ -2239,6 +2244,12 @@
 						IsPlayerUpgradePermanent="False" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
+						Template="AlienAnnihilatorPulseCannonB_Dummy"
+						Upgrade=""
+						ObjectStatus="WEAPON_UPGRADED_03"
+						IsPlayerUpgradePermanent="False" />							
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
 						Template="Reaper17TripodPulseCannonB_TiberiumEnhanced"
 						Upgrade=""
 						ObjectStatus="HAS_TIBERIUM_AMMO"
@@ -2290,6 +2301,12 @@
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="AlienAnnihilatorPulseCannonC_Dummy"
+						Upgrade=""
+						ObjectStatus="WEAPON_UPGRADED_03"
+						IsPlayerUpgradePermanent="False" />							
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
 						Template="Reaper17TripodPulseCannonC_TiberiumEnhanced"
@@ -2568,6 +2585,16 @@
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_Reaper17ReactorForcefieldGenerator</TriggeredBy>
 			</AudioLoopUpgrade>
+			<AttributeModifierUpgrade
+				id="AA36A1AB"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="AttributeModifier_TibChargeNoAttack1">
+				<TriggeredBy>Upgrade_NoAttack</TriggeredBy>
+			</AttributeModifierUpgrade>			
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -2575,7 +2602,7 @@
 				AutoAcquireEnemiesWhenIdle="YES"
 				StopChaseDistance="500"
 				HoldGroundCloseRangeDistance="0"
-				AILuaEventsList="ReaperTripodFunctions"
+				AILuaEventsList="ReaperTripodFunctions_103"
 				MinCowerTime="0s"
 				MaxCowerTime="0s"
 				RampageTime="0s"

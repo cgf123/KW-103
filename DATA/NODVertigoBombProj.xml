@@ -48,7 +48,8 @@
 				FirstPercentIndent="33"
 				SecondPercentIndent="66"
 				OrientToFlightPath="true"
-				FlightPathAdjustDistPerSecond="25"				
+				MaxDistanceToTravel="300"				
+				FlightPathAdjustDistPerSecond="40"				
 				GroundHitFX="FX_NOD_Vertigo_DirtHit_BombImpactExplosion"/>
 		</Behaviors>
 <!-- GroundHitFX="FX_DirtHit"/> -->
@@ -112,7 +113,8 @@
 				FirstPercentIndent="33"
 				SecondPercentIndent="66"
 				OrientToFlightPath="true"
-				FlightPathAdjustDistPerSecond="25"								
+				MaxDistanceToTravel="300"	
+				FlightPathAdjustDistPerSecond="40"								
 				GroundHitFX="FX_NOD_Vertigo_DirtHit_BombImpactExplosion"/>
 		</Behaviors>
 <!-- GroundHitFX="FX_DirtHit"/> -->
