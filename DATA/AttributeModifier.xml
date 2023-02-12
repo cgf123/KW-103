@@ -220,7 +220,7 @@
 	<AttributeModifier
 		id="AttributeModifier_HallucinateSlow"
 		Category="NONE"
-		Duration="4.5s"
+		Duration="6.0s"
 		ObjectStatusToSet="CARRYING_FLAG">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="100%"/>		

@@ -1215,7 +1215,7 @@ DAMAGE TYPES
 		id="GDIOrcaRocketWeapon"
 		Name="GDIOrcaRocketWeapon"
 		AttackRange="250.0"
-		WeaponSpeed="450"
+		WeaponSpeed="500"
 		MinWeaponSpeed="510"
 		MaxWeaponSpeed="500"
 		FireFX="FX_GDIOrcaMissleFire"
@@ -1229,8 +1229,8 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="1.25s"
-				MaxSeconds="1.25s" />
+				MinSeconds="1.33s"
+				MaxSeconds="1.33s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -1255,7 +1255,7 @@ DAMAGE TYPES
 		id="GDIOrcaHardpointsUpgradedRocketWeapon"
 		Name="GDIOrcaHardpointsUpgradedRocketWeapon"
 		AttackRange="250.0"
-		WeaponSpeed="450"
+		WeaponSpeed="500"
 		MinWeaponSpeed="510"
 		MaxWeaponSpeed="500"
 		FireFX="FX_GDIOrcaMissleFire"
@@ -1305,6 +1305,12 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="GDI_MISSILE"
 				DeathType="EXPLODED" >
+				<DamageScalarDetails Scalar= "90%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="HARVESTER">	
+					</Filter>
+				</DamageScalarDetails>  					
 				<DamageScalarDetails Scalar= "125%" >
 					<Filter 
 						  Rule="NONE"
@@ -1343,8 +1349,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="1.2s"
-				MaxSeconds="1.2s" />
+				MinSeconds="1.25s"
+				MaxSeconds="1.25s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -1388,6 +1394,12 @@ DAMAGE TYPES
 						Rule="NONE"
 						Include="INFANTRY" />
 				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "90%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="HARVESTER">	
+					</Filter>
+				</DamageScalarDetails>  					
 				<DamageScalarDetails Scalar= "125%" >
 					<Filter 
 						  Rule="NONE"
@@ -1426,8 +1438,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="0.96s"
-				MaxSeconds="0.96s" />
+				MinSeconds="0.9375s"
+				MaxSeconds="0.9375s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -1470,7 +1482,13 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" />
-				</DamageScalarDetails>		
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "90%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="HARVESTER">	
+					</Filter>
+				</DamageScalarDetails>  					
 				<DamageScalarDetails Scalar= "125%" >
 					<Filter 
 						  Rule="NONE"
@@ -1499,6 +1517,12 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="GDI_BOMB"
 				DeathType="NORMAL">
+				<DamageScalarDetails Scalar= "90%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="HARVESTER">	
+					</Filter>
+				</DamageScalarDetails>  					
 				<DamageScalarDetails Scalar= "125%" >
 					<Filter 
 						  Rule="NONE"
@@ -4093,7 +4117,7 @@ DAMAGE TYPES
 						Include="TIBERIUM">
 					</Filter>
 				</DamageScalarDetails>								
-				<DamageScalarDetails Scalar= "2500%">
+				<DamageScalarDetails Scalar= "3000%">
 					<Filter
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
@@ -7366,7 +7390,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "90%">
 					<Filter 
 						Rule="ANY"			
-						Include="MADE_OF_METAL">          						
+						Include="MADE_OF_METAL HARVESTER">          						
 					</Filter>
 				</DamageScalarDetails>									
 				<DamageScalarDetails Scalar= "25%">
@@ -7463,7 +7487,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "90%">
 					<Filter 
 						Rule="ANY"			
-						Include="MADE_OF_METAL">          						
+						Include="MADE_OF_METAL HARVESTER">          						
 					</Filter>
 				</DamageScalarDetails>									
 				<DamageScalarDetails Scalar= "25%">
@@ -11487,7 +11511,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ShadowMachineGunRangefinder"
 		Name="ShadowMachineGunRangefinder"
-		AttackRange="175"
+		AttackRange="180"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND"
@@ -11502,7 +11526,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODShadowMachinePistol"
 		Name="NODShadowMachinePistol"
-		AttackRange="230.0"
+		AttackRange="240.0"
 		WeaponSpeed="999999.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		ClipSize="1"
@@ -12369,13 +12393,7 @@ DAMAGE TYPES
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="NOD_TIBCOREMISSILE"
-				DeathType="EXPLODED">				
-				<DamageScalarDetails Scalar= "175%">
-					<Filter
-						Rule="NONE"
-						Include="AIRCRAFT TIBERIUM_BASED" >    
-					</Filter>
-				</DamageScalarDetails>					
+				DeathType="EXPLODED">								
 				<DamageScalarDetails Scalar= "175%">
 					<Filter
 						Rule="NONE"
@@ -12406,7 +12424,7 @@ DAMAGE TYPES
 		  AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
 		<Nuggets>
 			<DamageNugget
-				  Damage="150.0"
+				  Damage="160.0"
 				  Radius="10.0"
 				  DelayTimeSeconds="0s"
 				  DamageType="ROCKET"
@@ -12424,18 +12442,12 @@ DAMAGE TYPES
 		  AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
 		<Nuggets>		
 			<DamageNugget
-				  Damage="190.0"
+				  Damage="200.0"
 				  Radius="10.0"
 				  DelayTimeSeconds="0s"
 				  DamageType="ROCKET"
 				  DamageFXType="NOD_TIBCOREMISSILE"
-				  DeathType="EXPLODED" >
-				<DamageScalarDetails Scalar= "100%">
-					<Filter
-						Rule="NONE"
-						Include="AIRCRAFT TIBERIUM_BASED" >    
-					</Filter>
-				</DamageScalarDetails>					  
+				  DeathType="EXPLODED" >				  
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -12576,13 +12588,7 @@ DAMAGE TYPES
 				Radius="10.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
-				DamageFXType="NOD_TIBCOREMISSILE" >		
-				<DamageScalarDetails Scalar= "225%">
-					<Filter
-						Rule="NONE"
-						Include="AIRCRAFT TIBERIUM_BASED" >    
-					</Filter>
-				</DamageScalarDetails>					
+				DamageFXType="NOD_TIBCOREMISSILE" >					
 				<DamageScalarDetails Scalar= "225%">
 					<Filter
 						Rule="NONE"
@@ -13112,7 +13118,7 @@ DAMAGE TYPES
 		<Nuggets>
 			<ParalyzeNugget
 				Radius="50.0"
-				DurationSeconds="4s"
+				DurationSeconds="5s"
 				ParalyzeType="EMP"
 				ParalyzeFX="FX_NODBuggyEmpHit">
 				<SpecialObjectFilter
@@ -13170,7 +13176,7 @@ DAMAGE TYPES
 		<Nuggets>
 			<ParalyzeNugget
 				Radius="50.0"
-				DurationSeconds="4s"
+				DurationSeconds="5s"
 				ParalyzeType="EMP"
 				ParalyzeFX="FX_NODBuggyEmpHit">
 				<SpecialObjectFilter

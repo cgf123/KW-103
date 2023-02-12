@@ -21,7 +21,7 @@
 		BountyValue="0"
 		BuildTime="9"
 		BuildFadeInOnCreateTime="0"
-		EnergyProduction="-10"
+		EnergyProduction="-9"
 		EnergyBonus="0"
 		CommandSet="NODLaserCannonCommandSet"
 		SelectPortrait="Portrait_NODHub"
