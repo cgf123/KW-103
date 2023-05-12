@@ -205,7 +205,7 @@
 		Description="UpgradeDesc:MarkedOfKaneSuperChargedParticleBeam"
 		Type="PLAYER"
 		BuildTime="60.0s"
-		BuildCost="2000"
+		BuildCost="2500"
 		ResearchSound="AudioEvent:NOD_Enlightened_SuperChargedParticleBeamUpgrade"
 		IconImage="Button_Upgrade_SuperCharBeam">
 	</UpgradeTemplate>
@@ -380,7 +380,7 @@
 		Description="UpgradeDesc:ALIENPlasmaDiscLauncher"
 		Type="PLAYER"
 		BuildTime="30.0s"
-		BuildCost="1500"
+		BuildCost="1000"
 		ResearchSound="AudioEvent:ALI_PlasmaDiscLaunchers_Upgrade"
 		IconImage="Button_UpgradePlasmaDiscLauncher">
 	</UpgradeTemplate>	
@@ -424,6 +424,23 @@
 		</GameDependency>
 	</UpgradeTemplate>	
 	
+	<UpgradeTemplate id="Upgrade_GDICompositeArmor"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"
+
+		DisplayName="UpgradeName:GDICompositeArmor"
+		AcquireHint="UpgradePrereq:GDICompositeArmor"
+		TypeDescription="UpgradeType:GDICompositeArmor"
+		Description="UpgradeDesc:GDICompositeArmor"
+		Type="PLAYER"
+		BuildCost="1500"
+		BuildTime="45s"
+		ResearchSound="AudioEvent:Generic_Infantry_Upgrade"
+		IconImage="Button_UpgradeCompositeArmor"
+	/>	
+	
 	<UpgradeTemplate id="Upgrade_NODConfessorUpgrade"
 		LocalPlayerProductionStartedEvaEvent="None"
 		ResearchCompleteEvaEvent ="UpgradeComplete"
@@ -452,7 +469,7 @@
 		TypeDescription="UpgradeType:NODTiberiumInfusion"
 		Description="UpgradeDesc:NODTiberiumInfusion"
 		Type="PLAYER"
-		BuildCost="750"
+		BuildCost="500"
 		BuildTime="15s"
 		ResearchSound="AudioEvent:NOD_TiberiumUpgrade"
 		IconImage="Button_UpgradeTiberiumInfusion"

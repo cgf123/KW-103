@@ -3,9 +3,10 @@
   <Tags></Tags>
   <Includes>
 
-	<!-- Note: No references because 103base stream takes care of that stuff 
-	<Include type="reference" source="global.xml" /> 
-	<Include type="reference" source="static.xml" />-->
+	<!-- Note: No references because 103base stream takes care of that stuff -->
+	<!--
+	<Include type="reference" source="global.xml" />
+	<Include type="reference" source="static.xml" /> -->
 	<!-- ======================== GLOBALS ======================= -->
 	<Include type="all" source="Weapon.xml" />
 	<Include type="all" source="Armor.xml" />
@@ -64,9 +65,21 @@
 	<Include type="all" source="ART:T59Devourer\AU_INITIATORR.w3x" />		
 	<Include type="all" source="ART:T59Devourer\AU_INITIATORR.AU_INITIATOR.w3x" />		-->	
 	
-	<Include type="all" source="art/abtpbone/ABTPBONE.OBBOX01.w3x" />	
-	<Include type="all" source="art/abtpbone/ABTPBONE_CTR.w3x" />	
-	<Include type="all" source="art/abtpbone/ABTPBONE_HRC.w3x" />			
+	<Include type="all" source="ART:abtpbone/ABTPBONE.OBBOX01.w3x" />	
+	<Include type="all" source="ART:abtpbone/ABTPBONE_CTR.w3x" />	
+	<Include type="all" source="ART:abtpbone/ABTPBONE_HRC.w3x" />	
+
+	<Include type="all" source="ART:FXTEMPORAL/FXTEMPORALWORMHOLE.DIFFUSE.w3x" />	
+	<Include type="all" source="ART:FXTEMPORAL/FXTEMPORALWORMHOLE.DISTORTION.w3x" />	
+	<Include type="all" source="ART:FXTEMPORAL/FXTEMPORALWORMHOLE_CTR.w3x" />		
+	<Include type="all" source="ART:FXTEMPORAL/FXTEMPORALWORMHOLE_HRC.w3x" />		
+	<Include type="all" source="ART:FXTEMPORAL/FXTEMPORALWORMHOLE.w3x" />		
+	
+	<Include type="all" source="ART:FXSHLDABILITY/FXSHLDABILITY.DIFFUSE.w3x" />	
+	<Include type="all" source="ART:FXSHLDABILITY/FXSHLDABILITY.DISTORTION.w3x" />	
+	<Include type="all" source="ART:FXSHLDABILITY/FXSHLDABILITY_CTR.w3x" />		
+	<Include type="all" source="ART:FXSHLDABILITY/FXSHLDABILITY_HRC.w3x" />		
+	<Include type="all" source="ART:FXSHLDABILITY/FXSHLDABILITY.w3x" />	
 	
 	<!-- =========================== NEUTRALS ========================= -->
 	<Include type="all" source="TibFieldHarv.xml" />					
@@ -124,6 +137,8 @@
 	<Include type="all" source="GDIRifleSoldierSquads.xml" />			
 	<Include type="all" source="STRifleSoldierSquads.xml" />			
 	<Include type="all" source="ZOCOMRifleSoldierSquads.xml" />			
+	
+	<Include type="all" source="IonCannonEffect.xml" />		
 
 	<Include type="all" source="GDIFoxhole.xml" />					
 
@@ -252,7 +267,7 @@
 	<Include type="all" source="ZOCOMEngineer.xml" />		
 	
 	<!-- ========================= NOD ======================== -->
-	
+
 	<Include type="all" source="NODMCV.xml" />	
 	<Include type="all" source="BHMCV.xml" />	
 	<Include type="all" source="MOKMCV.xml" />
@@ -285,8 +300,8 @@
 	
 	<Include type="all" source="NODNukeSeed.xml" />		
 
-	<Include type="all" source="NODAttackBikeRocketProj.xml" />		
-
+	<Include type="all" source="NODAttackBikeRocketProj.xml" />
+	
 	<Include type="all" source="NODVertigoBombProj.xml" />		
 
 	<Include type="all" source="NODAttackBike.xml" />			
@@ -298,7 +313,7 @@
 
 	<Include type="all" source="NODVertigo.xml" />			
 	<Include type="all" source="MOKVertigo.xml" />				
-	<Include type="all" source="BHVertigo.xml" />					
+	<Include type="all" source="BHVertigo.xml" />	
 	
 	<Include type="all" source="NODCarryallInfantry.xml" />	
 	<Include type="all" source="NODCarryallVehicle.xml" />		
@@ -306,12 +321,12 @@
 	<Include type="all" source="MOKSecretShrine.xml" />		
 	
 	<Include type="all" source="BHHangar.xml" />	
-		
+
 	<Include type="all" source="RageGenDummy.xml" />		
 	<Include type="all" source="NODRedeemer.xml" />	
 	<Include type="all" source="BHRedeemer.xml" />	
 	<Include type="all" source="MOKRedeemer.xml" />	
-	
+
 	<Include type="all" source="NODReckoner.xml" />	
 	<Include type="all" source="BHReckoner.xml" />	
 	<Include type="all" source="MOKReckoner.xml" />		
@@ -348,8 +363,8 @@
 
 	<Include type="all" source="NODObelisk.xml" />			
 	<Include type="all" source="BHObelisk.xml" />			
-	<Include type="all" source="MOKObelisk.xml" />		
-	
+	<Include type="all" source="MOKObelisk.xml" />	
+
 	<Include type="all" source="NodTurrets/NODShredderTurretHub.xml" />
 	<Include type="all" source="NodTurrets/BHShredderTurretHub.xml" />
 	<Include type="all" source="NodTurrets/MOKShredderTurretHub.xml" />
@@ -360,12 +375,13 @@
 	<Include type="all" source="NodTurrets/NODRocketBunkerHub.xml" />
 	<Include type="all" source="NodTurrets/BHRocketBunkerHub.xml" />
 	<Include type="all" source="NodTurrets/MOKRocketBunkerHub.xml" />	
-	<Include type="all" source="NodTurrets/NODRocketBunkerSpawn.xml" />	<!-- This spawn is shared by all the hubs -->
+	<Include type="all" source="NodTurrets/NODRocketBunkerSpawn.xml" />
 
 	<Include type="all" source="NodTurrets/NODLaserCannonHub.xml" />
 	<Include type="all" source="NodTurrets/BHLaserCannonHub.xml" />
 	<Include type="all" source="NodTurrets/MOKLaserCannonHub.xml" />		
-	<Include type="all" source="NodTurrets/NODLaserCannonSpawn.xml" />	<!-- This spawn is shared by all the hubs -->
+	<Include type="all" source="NodTurrets/NODLaserCannonSpawn.xml" />
+
 	
 	<Include type="all" source="NODCyborg.xml" />			
 	<Include type="all" source="NODCyborgSquad.xml" />		
@@ -436,7 +452,7 @@
 	<Include type="all" source="NODSaboteur.xml" />	
 	<Include type="all" source="MOKSaboteur.xml" />		
 	<Include type="all" source="BHSaboteur.xml" />		
-		
+	
 	<!-- ============================ SCRIN ================================ -->
 	
 	<Include type="all" source="AlienMCV.xml" />	

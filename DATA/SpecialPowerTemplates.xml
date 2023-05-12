@@ -218,7 +218,7 @@
 		id="SpecialPowerCallSupportSTHunterKillerTeam"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
 		ForbiddenObjectRange="130"
-		ReloadTime="240s"
+		ReloadTime="160s"
 		RadiusCursorRadius="130"
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
@@ -850,7 +850,7 @@
 		TargetType="LOCATION"
 		InitiateAtLocationSound="AudioEvent:ALI_StasisShield_Start"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		RadiusCursorRadius="150"
+		RadiusCursorRadius="120"
 		Money="-2000">
 		<!--		<GameDependency>
 			<RequiredObject>AlienStatisChamber</RequiredObject>
@@ -865,7 +865,7 @@
 		TargetType="LOCATION"
 		InitiateAtLocationSound="AudioEvent:ALI_TemporalWormhole_Start"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		RadiusCursorRadius="225"
+		RadiusCursorRadius="150"
 		Money="-1200">
 	</SpecialPowerTemplate>	
 	
@@ -879,7 +879,7 @@
 		Flags="NEEDS_OBJECT_FILTER NO_FORBIDDEN_MODEL_STATES"
 		RequiredTargetObjectStatus="DOES_CONTAIN_TIBERIUM"
 		DisallowedTargetModelStates="USER_16"
-		ReloadTime="45s"
+		ReloadTime="30s"
 		PreventConditions="AIRBORNE_TARGET IGNORE_AI_COMMAND">
 		<ObjectFilter
 			Rule="ANY"
@@ -945,7 +945,7 @@
 		Flags="NEEDS_OBJECT_FILTER NO_FORBIDDEN_MODEL_STATES"
 		RequiredTargetObjectStatus="DOES_CONTAIN_TIBERIUM"
 		DisallowedTargetModelStates="USER_16"
-		ReloadTime="45s"
+		ReloadTime="30s"
 		PreventConditions="AIRBORNE_TARGET IGNORE_AI_COMMAND">
 		<ObjectFilter
 			Rule="ANY"
@@ -1026,9 +1026,9 @@
 	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="TeleportObject" -->
 	<SpecialPowerTemplate
 		id="SpecialPowerMastermindTeleportObjectSelect"
-		ReloadTime="10s"
+		ReloadTime="0s"
 		TargetType="LOCATION"
-		RadiusCursorRadius="60"
+		RadiusCursorRadius="55"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		MaxCastRange="9999997"
 		Flags="NEEDS_OBJECT_FILTER LIMIT_DISTANCE IGNORE_SELF_IN_NEEDED_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
@@ -1055,7 +1055,7 @@
 		id="SpecialPowerMastermindTeleportObject"
 		ReloadTime="10s"
 		TargetType="LOCATION"
-		RadiusCursorRadius="30"
+		RadiusCursorRadius="25"
 		Flags="LIMIT_DISTANCE PATHABLE_ONLY NOT_CLIFF_CELL NO_FORBIDDEN_OBJECTS"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		MaxCastRange="9999999"
@@ -1069,9 +1069,9 @@
 	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="TeleportObject" -->
 	<SpecialPowerTemplate
 		id="SpecialPowerProdigyTeleportObjectSelect"
-		ReloadTime="10s"
+		ReloadTime="0s"
 		TargetType="LOCATION"
-		RadiusCursorRadius="60"
+		RadiusCursorRadius="55"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		MaxCastRange="9999999"
 		Flags="NEEDS_OBJECT_FILTER LIMIT_DISTANCE IGNORE_SELF_IN_NEEDED_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
@@ -1098,7 +1098,7 @@
 		id="SpecialPowerProdigyTeleportObject"
 		ReloadTime="10s"
 		TargetType="LOCATION"
-		RadiusCursorRadius="30"
+		RadiusCursorRadius="25"
 		Flags="LIMIT_DISTANCE PATHABLE_ONLY NOT_CLIFF_CELL NO_FORBIDDEN_OBJECTS"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		MaxCastRange="9999999"

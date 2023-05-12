@@ -21,7 +21,7 @@
 		BountyValue="0"
 		BuildTime="8"
 		BuildFadeInOnCreateTime="0"
-		EnergyProduction="-9"
+		EnergyProduction="-8"
 		EnergyBonus="0"
 		CommandSet="AlienPhotonCannonCommandSet"
 		SelectPortrait="Portrait_AlienPhotonCannon"

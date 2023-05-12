@@ -310,6 +310,18 @@ KW XMLs:
     RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
     AttackRange="50000.0"
     >
+    <Nuggets>		
+		  <WeaponOCLNugget
+				WeaponOCL="OCL_NODVeinDetonation" />
+    </Nuggets>
+  </WeaponTemplate>  
+  
+  <WeaponTemplate
+    id="VeinDetonationMarkerWeapon"
+    Name="VeindDetionationMarkerWeapon"
+    RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+    AttackRange="50000.0"
+    >
     <Nuggets>
 			<DamageNugget
 				Damage="100"
@@ -325,12 +337,18 @@ KW XMLs:
 					<ExcludeThing>ZOCOMHammerhead</ExcludeThing>
 					<ExcludeThing>SteelTalonsHammerhead</ExcludeThing>
 				</SpecialObjectFilter>
-			</DamageNugget> 	
-      <WeaponOCLNugget
-			WeaponOCL="OCL_NODVeinDetonation" />
-      <ReportWeaponFiredStatNugget/>
+			</DamageNugget> 
+			<AttributeModifierNugget
+				PartitionFilterTestType="SPHERE"
+				AttributeModifierName="AttributeModifier_TibVeinSlow"
+				Radius="250" >
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="CAN_HEAL_ALLIES" />
+			</AttributeModifierNugget>					
+		  <ReportWeaponFiredStatNugget/>
     </Nuggets>
-  </WeaponTemplate>  
+  </WeaponTemplate>    
 
   <!-- Damage over time to units -->
   <WeaponTemplate
@@ -372,15 +390,7 @@ KW XMLs:
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					
-			</DamageNugget> 
-			<AttributeModifierNugget
-				PartitionFilterTestType="SPHERE"
-				AttributeModifierName="AttributeModifier_TibVeinSlow"
-				Radius="250" >
-				<SpecialObjectFilter
-					Rule="ALL"
-					Exclude="CAN_HEAL_ALLIES">
-			</AttributeModifierNugget>				
+			</DamageNugget> 		
 			<ReportWeaponFiredStatNugget/>
 		</Nuggets>
 	</WeaponTemplate>
@@ -411,7 +421,7 @@ KW XMLs:
 	<AttributeModifier
 		id="AttributeModifier_TibVeinSlow"
 		Category="NONE"
-		Duration="1.5s">
+		Duration="3s">
 		<Modifier Type="SPEED" Value="90%" />
 	</AttributeModifier>	
 
@@ -455,6 +465,10 @@ KW XMLs:
         <FireWeaponNugget
           WeaponName = "VeinDetonationCreationWeapon"
           FireDelay = "1s"
+          OneShot = "true"/>
+        <FireWeaponNugget
+          WeaponName = "VeinDetonationMarkerWeapon"
+          FireDelay = "0.25s"
           OneShot = "true"/>
       </FireWeaponUpdate>  	  
 	  <FireWeaponUpdate

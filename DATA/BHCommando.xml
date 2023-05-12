@@ -3,7 +3,7 @@
 	<GameObject
 		id="BlackHandCommando"
 		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS INFANTRY PRELOAD STEALTH_GARRISON SCORE CAN_PLACE_CHARGE ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAPTURE PATH_THROUGH_INFANTRY SKIRMISH_AI_DONT_GARRISON IGNORE_FORCE_MOVE SNIPER CAN_BE_FAVORITE_UNIT"
-		Description="Desc:BlackHandCommando"
+		Description="Desc:BlackHandCommando_103"
 		TypeDescription="Type:BlackHandCommando"
 		RadarPriority="UNIT"
 		BuildCompletion="APPEARS_AT_RALLY_POINT"
@@ -2058,6 +2058,7 @@
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</StatusBitsUpgrade>
 			
+			<!--
 			<LevelUpUpgrade
 				id="D0BB7535"
 				RequiresAllTriggers="False"
@@ -2070,6 +2071,7 @@
 				DoFlash="False">
 				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
 			</LevelUpUpgrade>
+			-->
 			
 		</Behaviors>
 		<AI>

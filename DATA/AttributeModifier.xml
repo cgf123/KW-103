@@ -87,7 +87,7 @@
 		Duration="1.5s">
 		<Modifier
 			Type="RATE_OF_FIRE"
-			Value="125%" />
+			Value="120%" />
 	</AttributeModifier>	
 	
 	<!-- Baseline aura buff -->
@@ -99,7 +99,7 @@
 		ReplaceInCategoryIfLongest="False">
 		<Modifier
 			Type="RATE_OF_FIRE"
-			Value="120%" />	
+			Value="125%" />	
 	</AttributeModifier>		
 	
 	<!-- FX for NOD -->
@@ -224,8 +224,17 @@
 		ObjectStatusToSet="CARRYING_FLAG">
 		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="100%"/>		
-	</AttributeModifier>			
-	
+	</AttributeModifier>	
+
+	<AttributeModifier
+		id="AttributeModifier_IonCannonSlow"
+		Category="NONE"
+		Duration="7.5s"
+		ObjectStatusToSet="CARRYING_FLAG">
+		<Modifier Type="SPEED" Value="50%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="75%"/>
+	</AttributeModifier>		
+
 	<AttributeModifier
 		id="AttributeModifier_ZTCrush"
 		Category="NONE"
@@ -243,7 +252,7 @@
 		id="AttributeModifier_TibChargeNoAttack"
 		Category="NONE"
 		ObjectStatusToSet="WEAPON_UPGRADED_03"		
-		Duration="2.4s">
+		Duration="2.33s">
 	</AttributeModifier>	
 	
 	<AttributeModifier
@@ -285,8 +294,8 @@
     <AttributeModifier
 		id="AttributeModifier_AvatarSpeedBuff"
 		Category="INNATE_VISION">
-		<Modifier Type="VISION" Value="120%"/>		
-		<Modifier Type="SHROUD_CLEARING" Value="120%"/>
+		<Modifier Type="VISION" Value="115%"/>		
+		<Modifier Type="SHROUD_CLEARING" Value="115%"/>
         <Modifier Type="SPEED" Value="110%"/>
 	</AttributeModifier>
 	
@@ -383,7 +392,7 @@
 		Duration="20.0s"
 		ObjectStatusToSet="SWITCHED_WEAPONS"		
 		ModelConditionsSet="USER_8"	>
-		<Modifier Type="SPEED" Value="80%"/>
+		<Modifier Type="SPEED" Value="85%"/>
 		<Modifier Type="ARMOR" Value="70%" />
 		<Modifier Type="RATE_OF_FIRE" Value="100%" />		
 		<Modifier Type="RESIST_EMP" Value="100%"/> <!--
@@ -396,7 +405,7 @@
 		Duration="20.0s"
 		ObjectStatusToSet="SWITCHED_WEAPONS"		
 		ModelConditionsSet="USER_8"	>
-		<Modifier Type="SPEED" Value="80%"/>
+		<Modifier Type="SPEED" Value="85%"/>
 		<Modifier Type="ARMOR" Value="87.5%" />
 		<Modifier Type="RATE_OF_FIRE" Value="100%" />
 		<Modifier Type="RESIST_EMP" Value="100%"/> <!--
@@ -457,9 +466,9 @@
 		id="AttributeModifier_EMPSlow_Generic"
 		Duration="10.0s"				
 		Category="NONE">
-		<Modifier Type="SPEED" Value="0%"/>
+		<Modifier Type="SPEED" Value="50%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="50%"/>		
-	</AttributeModifier>	
+	</AttributeModifier>
 	
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Grenadier"

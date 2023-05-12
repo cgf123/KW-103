@@ -4,7 +4,7 @@
 		id="ZOCOMTerraformingStation"
 		KindOf="SELECTABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS STRUCTURE ATTACK_NEEDS_LINE_OF_SIGHT FS_BASE_DEFENSE POWERED CAN_SEE_THROUGH_STRUCTURE COVER AUTO_ACQUIRABLE_BY_AI LINE_OF_SIGHT_IGNORES_BUILDINGS"
 		Description="Desc:GDITerraformingStation"
-		TypeDescription="Type:GDITerraformingStation"
+		TypeDescription="Type:GDITerraformingStation_103"
 		RadarPriority="STRUCTURE"
 		BuildCompletion="INVALID"
 		FenceWidth="0"

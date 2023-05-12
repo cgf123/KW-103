@@ -449,9 +449,6 @@
 		id="BlackHandHangarCommandSet">
 		<Cmd>Command_ConstructBlackHandVenom</Cmd>
 		<Cmd>Command_ConstructBlackHandVertigo</Cmd>		
-		<!--
-		<Cmd>Command_NODBurrowMines</Cmd>	
-		-->
 	</LogicCommandSet>	
 
   <LogicCommand
@@ -505,7 +502,7 @@
     Type="UNIT_BUILD"
     id="Command_ConstructBlackHandVertigo">
     <Object>BlackHandVertigo</Object>
-  </LogicCommand>	
+  </LogicCommand>
 	
 	<LogicCommandSet
 		id="BlackHandVertigoCommandSet">

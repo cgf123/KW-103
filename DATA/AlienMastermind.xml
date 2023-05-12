@@ -1363,7 +1363,7 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="True"
 				FaceTarget="False"
-				Radius="65" />
+				Radius="60" />
 			<SpecialPower
 				id="3A88C6D8"
 				SpecialPowerTemplate="SpecialPowerMastermindTeleportObject"
@@ -1491,7 +1491,7 @@
 				MaxBeneficiaries="0"
 				HealingPercentPerSecond="0%"
 				HealingPointsPerSecond="0"
-				SurveyDelayFrames="60"
+				SurveyDelayFrames="30"
 				UpgradeRequired=""
 				AntiCategoryMask=""
 				AntiFX=""
@@ -1520,7 +1520,7 @@
 				MaxBeneficiaries="0"
 				HealingPercentPerSecond="0%"
 				HealingPointsPerSecond="0"
-				SurveyDelayFrames="60"
+				SurveyDelayFrames="30"
 				UpgradeRequired=""
 				AntiCategoryMask=""
 				AntiFX=""

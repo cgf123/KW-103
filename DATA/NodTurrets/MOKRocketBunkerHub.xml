@@ -21,7 +21,7 @@
 		BountyValue="0"
 		BuildTime="8"
 		BuildFadeInOnCreateTime="0"
-		EnergyProduction="-8"
+		EnergyProduction="-6"
 		EnergyBonus="0"
 		CommandSet="NODRocketBunkerCommandSet"
 		SelectPortrait="Portrait_NODRocketBunker"

@@ -6,393 +6,173 @@
 		Description="Desc:NODRocketBunker"
 		TypeDescription="Type:NODRocketBunker"
 		RadarPriority="STRUCTURE"
-		BuildCompletion="INVALID"
-		FenceWidth="0"
-		FenceXOffset="0"
-		RemoveTerrainRadius="0"
-		EmotionRange="0"
 		PlacementViewAngle="225d"
-		BuildFadeInOnCreateTimeSeconds="0s"
-		FactoryExitWidth="0"
-		FactoryExtraBibWidth="0"
 		Side="NOD"
 		EditorName="NODRocketBunkerSpawn"
 		EditorSorting="STRUCTURE"
-		BountyValue="0"
 		BuildTime="10"
-		BuildFadeInOnCreateTime="0"
-		EnergyProduction="0"
-		EnergyBonus="0"
 		CommandSet="EmptyCommandSet"
 		SelectPortrait="Portrait_NODSAMTurret"
 		ButtonImage="Portrait_NODSAMTurret"
-		VoicePriority="0"
-		MinZIncreaseForVoiceMoveToHigherGround="-1"
-		CrowdResponse=""
 		CampnessValue="2000"
 		CampnessValueRadius="300"
-		Scale="1"
-		HealthBoxScale="1.5"
-		HealthBoxHeightOffset="10"
-		OcclusionDelay="0"
-		LiveCameraPitch="0"
-		FormationWidth="1"
-		FormationDepth="1"
-		InstanceScaleFuzziness="0"
-		ThreatRadius="-1"
-		RamPower="0"
-		RamZMult="1"
-		ShockwaveResistance="0"
-		CommandPoints="0"
-		CommandPointBonus="0"
-		VoiceAttackChargeTimeout="0"
-		MaxDistanceForEngaged="0"
-		EngagedStateTimeout="0"
-		ThreatLevel="1"
-		SlopeLimitIndex="0"
-		PathfindDiameter="-1"
-		SupplyOverride="0"
-		DisplayMeleeDamage="-1"
-		DisplayRangedDamage="-1"
-		HeroSortOrder="2147483647"
-		FiringArc="360"
-		CamouflageDetectionMultiplier="1"
-		SelectionPriority="2147483647"
 		ProductionQueueType="OTHER_STRUCTURE"
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
-		BuildOnRequiredObjectKindOf=""
 		UnitCategory="STRUCTURE"
 		WeaponCategory="MISSILE"
-		HasFiredRecentlyTime="2s"
-		UnitTypeIcon=""
-		ReinvisibilityDelay="4s"
-		CaptureTime="0s"
-		BuildCost="400"
-		RefundValue="0"
-		ThreatValue="0"
-		MaxSimultaneousOfType="0"
-		TransportSlotCount="0"
-		IsTrainable="True"
-		IsForbidden="False"
-		IsPrerequisite="False"
-		IsGrabbable="False"
-		IsHarvestable="False"
-		StructureRubbleHeight="0"
-		ForceLuaRegistration="False"
-		ShowHealthInSelectionDecal="False"
-		KeepSelectableWhenDead="False"
-		IsAutoBuilt="False"
-		CanPathThroughGates="True"
-		ShouldClearShotsOnIdle="False"
-		BuildInProximityToSamePlayerStucture="True">
+		BuildCost="400">
 		<DisplayName>Name:NODRocketBunker</DisplayName>
 		<ArmorSet
 			Armor="NODBaseDefenceArmor"
-			DamageFX="FactionStructureDamageFX"
-			Conditions="" />
+			DamageFX="FactionStructureDamageFX" />
 		<SkirmishAIInformation
-			BaseBuildingLocation="CENTER"
-			ConquerMetricsOverrideDamageType="UNDEFINED"
-			ConquerMetricsOverrideAntiMask="ANTI_GROUND"
-			UnitBuilderStandardCombatUnit="False" />
+			BaseBuildingLocation="CENTER" />
 		<Draws>
 			<ScriptedModelDraw
-				id="50DF2C46"
-				RecoilDamping="0.4"
+				id="0x90B2BBF6"
 				MaxRecoilDistance="3"
-				InitialRecoilSpeed="2"
-				RecoilSettleSpeed="0.065"
-				MinLODRequired="LOW"
-				ProjectileBoneFeedbackEnabledSlots=""
-				TrackMarks=""
+				RecoilDamping="0.4"
 				ExtraPublicBone="FX_WEAPEN01 FX_WEAPEN02 FX_WEAPEN03"
-				DependencySharedModelFlags=""
-				HighDetailLODThreshold="0"
-				LowDetailLODThreshold="0"
-				WadingParticleSys=""
-				AlphaCameraFadeOuterRadius="0"
-				AlphaCameraFadeInnerRadius="0"
-				AlphaCameraAtInnerRadius="100%"
-				StaticSortLevelWhileFading="-1"
-				BirthFadeTime="0"
-				OkToChangeModelColor="True"
-				AnimationsRequirePower="True"
-				UseYAxisForTurretRotation="False"
-				TrackMarksOnlyWhenCorneringQuickly="False"
-				UseProducerTexture="False"
-				NoRotate="False"
-				UseFiringArcRotation="False"
-				Selectable="True"
-				RandomTextureFixedRandomIndex="False"
-				ParticlesAttachedToAnimatedBones="False"
-				ParticleBonesCheckDrawable="False"
-				ShadowForceDisable="False"
-				SwitchModelLODMode="False"
-				StaticModelLODMode="False"
-				ShowShadowWhileContained="False"
-				UseStandardModelNames="False"
-				UseDefaultAnimation="False"
-				BirthFadeAdditive="False"
-				ZWriteDisableOverride="False"
-				MultiPlayerOnly="False"
-				AffectedByStealth="True"
-				InvertStealthOpacity="False"
-				HighDetailOnly="False"
-				SetAnimsToLastFrameOnConstructionComplete="True">
+				OkToChangeModelColor="True">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="NBRDEFENSE_UGTCM_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_SKN" />
 					<WeaponFireFXBone
-						WeaponSlotID="1"
-						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="FX_WEAPEN" />
 					<WeaponLaunchBone
-						WeaponSlotID="1"
-						WeaponSlotType="PRIMARY_WEAPON"
 						BoneName="FX_WEAPEN" />
 					<Turret
 						TurretNameKey="TORRET"
-						TurretArtAngle="0d"
 						TurretPitch="TORRET_PITCH"
-						TurretArtPitch="0d"
 						TurretID="1" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REPAIRING_DISABLED USER_5"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="REPAIRING_DISABLED USER_5">
 					<Model
-						Name="NBRDEFENSE_UGTCM_D3_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_D3_SKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="RUBBLE USER_5"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="RUBBLE USER_5">
 					<Model
-						Name="NBRDEFENSE_UGTCM_D3_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_D3_SKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED USER_5"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="REALLYDAMAGED USER_5">
 					<Model
-						Name="NBRDEFENSE_UGTCM_D2_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_D2_SKN" />
+					<Texture
+						Original="NUTibCoreMissles"
+						New="NUTibCoreMissles_D" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED USER_5"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="DAMAGED USER_5">
 					<Model
-						Name="NBRDEFENSE_UGTCM_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_SKN" />
 					<Texture
 						Original="NBDefense"
 						New="NBDefenseD" />
 					<Texture
-						Original="Asset not found in stream: [21E727DA:050A4A42]"
-						New="Asset not found in stream: [21E727DA:B3A89759]" />
+						Original="NUTibCoreMissles"
+						New="NUTibCoreMissles_D" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING USER_5"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="STRUCTURE_UNPACKING USER_5">
 					<Model
-						Name="NBRDEFENSE_UGTCM_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_SKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_5"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="USER_5">
 					<Model
-						Name="NBRDEFENSE_UGTCM_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_SKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REPAIRING_DISABLED"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="REPAIRING_DISABLED">
 					<Model
-						Name="NBRDEFENSE_UGTCM_D3_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_D3_SKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="RUBBLE"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="RUBBLE">
 					<Model
-						Name="NBRDEFENSE_UGTCM_D3_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_D3_SKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="REALLYDAMAGED">
 					<Model
-						Name="NBRDEFENSE_UGTCM_D2_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_D2_SKN" />
+					<Texture
+						Original="NUTibCoreMissles"
+						New="NUTibCoreMissles_D" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="DAMAGED">
 					<Model
-						Name="NBRDEFENSE_UGTCM_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:NBRDEFENSE_UGTCM_SKN" />
 					<Texture
 						Original="NBDefense"
 						New="NBDefenseD" />
+					<Texture
+						Original="NUTibCoreMissles"
+						New="NUTibCoreMissles_D" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					ParseCondStateType="PARSE_DEFAULT">
 					<Animation
 						AnimationName="NBRDEFENSE_IDLA"
-						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationMode="ONCE" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_1 USER_5"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
-					<Animation
-						AnimationName="NBRDEFENSE_UGTCMBLD_AAN"
-						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+					ConditionsYes="BUILD_PLACEMENT_CURSOR">
+					<Script>
+						CurDrawableHideSubObject("TIBCOREMISSILE")
+						CurDrawableHideSubObject("HOSE")
+					</Script>
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING USER_5"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					ConditionsYes="USER_1 USER_5">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCMBLD_AAN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING USER_5">
+					<Animation
+						AnimationName="NBRDEFENSE_UGTCMBLD_AAN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REPAIRING_DISABLED USER_5"
 					StateName="STATE_RubbleTibCore"
-					Flags="START_FRAME_LAST"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="START_FRAME_LAST">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCM_D3_AAN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE USER_5"
 					StateName="STATE_RubbleTibCore"
-					Flags="START_FRAME_LAST"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="START_FRAME_LAST">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCM_D3_AAN"
-						AnimationMode="MANUAL"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_RubbleTibCore" and Prev ~= "TRANS_IntoRubbleTibCore" then
@@ -404,27 +184,10 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED USER_5"
 					StateName="STATE_ReallyDamagedTibCore"
-					Flags="START_FRAME_LAST"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="START_FRAME_LAST">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCM_D2_AAN"
-						AnimationMode="MANUAL"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_ReallyDamagedTibCore" and Prev ~= "TRANS_IntoReallyDamagedTibCore" then
@@ -434,103 +197,38 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_1"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					ConditionsYes="USER_1">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCMBLD_AAN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					ConditionsYes="STRUCTURE_UNPACKING">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCMBLD_AAN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REPAIRING_DISABLED"
 					StateName="STATE_Rubble"
-					Flags="START_FRAME_LAST"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="START_FRAME_LAST">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCM_D3_AAN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE"
 					StateName="STATE_Rubble"
-					Flags="START_FRAME_LAST"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="START_FRAME_LAST">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCM_D3_AAN"
-						AnimationMode="MANUAL"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_Rubble" and Prev ~= "TRANS_IntoRubble" then
@@ -542,27 +240,10 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED"
 					StateName="STATE_ReallyDamaged"
-					Flags="START_FRAME_LAST"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="START_FRAME_LAST">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCM_D2_AAN"
-						AnimationMode="MANUAL"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" then
@@ -572,457 +253,176 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_IntoReallyDamagedTibCore"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="TRANS_IntoReallyDamagedTibCore">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCM_D2_AAN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_IntoRubbleTibCore"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="TRANS_IntoRubbleTibCore">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCM_D3_AAN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_IntoReallyDamaged"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="TRANS_IntoReallyDamaged">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCM_D2_AAN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_IntoRubble"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="TRANS_IntoRubble">
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCM_D3_AAN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate
-				id="513BC476" />
+				id="0x788FFB50" />
 			<FireWeaponWhenDead
-				id="DDED328F"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				DelayTime="0s"
+				id="0xE84F2471"
 				DeathWeapon="CatalystBuildingDeathWeapon"
-				FocusFireKindOfFlag=""
-				InitiallyActive="True"
-				ActiveDuringConstruction="False"
-				ContinueToBezierDestination="False">
+				InitiallyActive="True">
 				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="0.9999999d"
-					MaxKillerAngle="-0.9999999d"
-					DeathTypes="CATALYST"
-					DeathTypesForbidden="" />
+					DeathTypes="CATALYST" />
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
-				id="3473AFD2"
+				id="0x01009D1F"
 				DefectionFrameCount="100" />
 			<WeaponSetUpdate
-				id="720F4A50">
+				id="0xE3D95180">
 				<WeaponSlotTurret
 					ID="1"
-					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
-					WeaponChoiceCriteria="PREFER_MOST_DAMAGE"
-					AllowInterleavedFiring="False">
+					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE">
 					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="NODRocketBunkerSpawnWeapon"
-						Upgrade=""
-						ObjectStatus=""
-						IsPlayerUpgradePermanent="False" />
+						Template="NODRocketBunkerSpawnWeapon" />
 					<Weapon
-						Ordering="PRIMARY_WEAPON"
 						Template="NODRocketBunkerSpawnTibCoreWeapon"
-						Upgrade=""
-						ObjectStatus="WEAPON_UPGRADED_01"
-						IsPlayerUpgradePermanent="False" />
+						ObjectStatus="WEAPON_UPGRADED_01" />
 					<TurretSettings
 						TurretTurnRate="360"
 						TurretPitchRate="100"
 						MinimumPitch="-60d"
 						PitchHeight="90%"
-						ControlledWeaponSlots=""
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
-						MinIdleScanAngle="0"
 						MaxIdleScanAngle="180"
-						MaxDeflectionClockwise="180d"
-						MaxDeflectionAntiClockwise="180d"
-						NaturalTurretAngle="0d"
-						AllowsPitch="True"
-						RecenterWhenOutOfTurnRange="True">
+						AllowsPitch="True">
 						<TurretAITargetChooserData
-							IdleScanDelay="0.8s"
-							ReacquireDelay="5s"
-							StartupDelay="0s"
-							SympathyRange="25"
-							CheckVisionRange="False"
-							CanPickDynamicTargets="True"
-							RotateToTargetWhenAiming="True"
-							CanAutoAcquireNonAutoAcquirable="False"
-							TargetingCompareList="DefaultTurretTargetingCompareList"
-							ActiveWhenPerformingSpecialAbility="False"
-							CanAcquireDynamicIfAssignedOutOfRange="False"
-							CanPickTargetsOutOfTurretAngle="False" />
+							TargetingCompareList="DefaultTurretTargetingCompareList" />
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
 			<FXListBehavior
-				id="C74C39D8">
+				id="0x57E81491">
 				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="0.9999999d"
-					MaxKillerAngle="-0.9999999d"
-					DeathTypes="ALL"
-					DeathTypesForbidden="" />
+					DeathTypes="ALL" />
 				<Event
-					Index="onDeath"
-					FX="FX_NOD_DefensiveTurret_Explode"
-					MinThreshold="0"
-					MaxThreshold="0"
-					Direction="Default"
-					OrientToObject="True"
-					ForceUseDoFXObj="False" />
+					FX="FX_NOD_DefensiveTurret_Explode" />
 				<Event
 					Index="onTransitionToDamaged"
-					FX="FX_BuildDamaged_Small"
-					MinThreshold="0"
-					MaxThreshold="0"
-					Direction="Default"
-					OrientToObject="True"
-					ForceUseDoFXObj="False" />
+					FX="FX_BuildDamaged_Small" />
 				<Event
 					Index="onTransitionToReallyDamaged"
-					FX="FX_BuildDamaged_Small"
-					MinThreshold="0"
-					MaxThreshold="0"
-					Direction="Default"
-					OrientToObject="True"
-					ForceUseDoFXObj="False" />
+					FX="FX_BuildDamaged_Small" />
 				<Event
 					Index="onTransitionToRubble"
-					FX="FX_BuildRubble_Small"
-					MinThreshold="0"
-					MaxThreshold="0"
-					Direction="Default"
-					OrientToObject="True"
-					ForceUseDoFXObj="False" />
+					FX="FX_BuildRubble_Small" />
 			</FXListBehavior>
 			<SlavedUpdate
-				id="4AAAACCD"
-				LeashRange="0"
-				GuardMaxRange="0"
-				GuardWanderRange="0"
-				AttackRange="0"
-				AttackWanderRange="0"
-				ScoutRange="0"
-				ScoutWanderRange="0"
-				DistToTargetToGrantRangeBonus="0"
-				RepairRange="0"
-				RepairMinAltitude="0"
-				RepairMaxAltitude="0"
-				RepairWhenHealthBelowPercentage="0"
-				RepairRatePerSecond="0"
-				MinReadyFrames="0"
-				MaxReadyFrames="0"
-				MinWeldFrames="0"
-				MaxWeldFrames="0"
-				WeldingSysId=""
-				DieOnMastersDeathDamageType="UNRESISTABLE"
+				id="0xE4107B89"
 				DieOnMastersDeathType="SUICIDED"
-				FadeOutRange="0"
-				FadeTime="0"
-				StayOnSameLayerAsMaster="False"
-				DieOnMastersDeath="True"
-				MarkUnselectable="False"
-				UseSlaverAsControlForEvaObjectSightedEvents="False" />
+				DieOnMastersDeath="True" />
 			<ModelConditionUpgrade
-				id="29A73D7E"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				AddConditionFlags="USER_5"
-				RemoveConditionFlags=""
-				AddTempConditionFlag="TOPPLED"
-				TempConditionTime="0s">
+				id="0x3270AE03"
+				AddConditionFlags="USER_5">
 				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
 			</ModelConditionUpgrade>
 			<StatusBitsUpgrade
-				id="85B2DF85"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				StatusToSet="WEAPON_UPGRADED_01"
-				StatusToClear=""
-				ApplyToContained="False">
+				id="0xE6191BDE"
+				StatusToSet="WEAPON_UPGRADED_01">
 				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
 			</StatusBitsUpgrade>
 			<SubObjectsUpgrade
-				id="AB0A7BC8"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				ShowSubObjects="TIBCOREMISSILE HOSE"
-				FadeTimeInSeconds="0.5"
-				WaitBeforeFadeInSeconds="0"
-				RecolorHouse="False"
-				SkipFadeOnCreate="False"
-				HideSubObjectsOnRemove="False"
-				UnHideSubObjectsOnRemove="False">
+				id="0x825DB755"
+				ShowSubObjects="TIBCOREMISSILE HOSE">
 				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
 			</SubObjectsUpgrade>
 			<AudioLoopUpgrade
-				id="92E56D65"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				SoundToPlay="AudioEvent:GDI_RailCannon_Upgrade"
-				KillAfterMS="0">
+				id="0x60913473"
+				SoundToPlay="AudioEvent:GDI_RailCannon_Upgrade">
 				<TriggeredBy>Upgrade_NODTechCenterTibCoreMissiles</TriggeredBy>
 			</AudioLoopUpgrade>
 			<SlowDeath
-				id="73542D4A"
+				id="0x1673247C"
 				SinkRate="4"
-				ProbabilityModifier="10"
-				ModifierBonusPerOverkillPercent="0%"
 				SinkDelay="3s"
-				SinkDelayVariance="0s"
-				DestructionDelay="8s"
-				DestructionDelayVariance="0s"
-				DecayBeginTime="0s"
-				FlingForce="0"
-				FlingForceVariance="0"
-				FlingPitch="0d"
-				FlingPitchVariance="0d"
-				DeathFlags=""
-				FadeTime="0s"
-				FadeDelay="0s"
-				DeathTypes=""
-				DeathObjectStatusBits=""
-				ShadowWhenDead="False"
-				Fade="False">
+				DestructionDelay="8s">
 				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="0.9999999d"
-					MaxKillerAngle="-0.9999999d"
-					DeathTypes="SUICIDED"
-					DeathTypesForbidden="" />
+					DeathTypes="SUICIDED" />
 			</SlowDeath>
 			<KeepObjectDie
-				id="6D046D3D"
-				CollapsingTime="0s"
-				StayOnRadar="False">
+				id="0xA9303BAA">
 				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="0.9999999d"
-					MaxKillerAngle="-0.9999999d"
 					DeathTypes="ALL"
 					DeathTypesForbidden="SUICIDED" />
 			</KeepObjectDie>
 			<InitiateRepairDie
-				id="62B841CE"
+				id="0x6C02C994"
 				DelayTime="20s"
 				MasterDeadDieFX="FX_TEMPLarge"
 				Options="REPAIR_INSTANT"
 				InstantRepairModelCondition="USER_1"
 				InstantRepairAnimDuration="2s">
 				<Die
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="0.9999999d"
-					MaxKillerAngle="-0.9999999d"
 					DeathTypes="ALL"
 					DeathTypesForbidden="SUICIDED" />
 			</InitiateRepairDie>
 			<StructureUnpackUpdate
 				UnpackTime="3.3s" />
 			<RepairUpdate
-				id="41FDEB2A"
-				RepopThreshold="0.2"
-				HealAmountPerSecond="90"
+				id="0x23C74182"
 				Toggleable="False"
-				RepairableWhenDead="True">
-				<PercentOfBuildCostToRebuildInfo
-					Pristine="50%"
-					Damaged="50%"
-					ReallyDamaged="50%"
-					Rubble="50%" />
-				<SelfAudio
-					SelfRepairFromDamageLoop=""
-					SelfRepairFromRubbleLoop="" />
-			</RepairUpdate>
+				RepairableWhenDead="True"></RepairUpdate>
 		</Behaviors>
 		<AI>
 			<AIUpdate
-				id="6F9507AA"
+				id="0xE59AAEB1"
 				AutoAcquireEnemiesWhenIdle="YES"
-				StopChaseDistance="500"
-				HoldGroundCloseRangeDistance="0"
-				AILuaEventsList="NODRocketBunkerSpawnFunctions"
-				MinCowerTime="0s"
-				MaxCowerTime="0s"
-				RampageTime="0s"
-				BurningDeathTime="0s"
-				TimeToEjectPassengersOnRampage="0"
-				ComboLocomotorSet="NORMAL"
-				ComboLocoAttackDistance="80"
-				IdleTargetTime="0s"
-				MaxCombineChildren="1"
-				SpawnOffsetRadius="0"
-				StandGround="False"
-				CanAttackWhileContained="False"
-				RampageRequiresAflame="False"
-				FadeOnPortals="False">
+				AILuaEventsList="NODRocketBunkerSpawnFunctions">
 				<UnitAITargetChooserData
-					IdleScanDelay="0.8s"
-					ReacquireDelay="5s"
-					StartupDelay="0s"
-					SympathyRange="25"
-					CheckVisionRange="False"
 					CanPickDynamicTargets="False"
-					RotateToTargetWhenAiming="True"
-					CanAutoAcquireNonAutoAcquirable="False"
 					TargetingCompareList="DefaultTargetingCompareList" />
 			</AIUpdate>
 		</AI>
 		<Body>
 			<ActiveBody
-				id="B313F576"
-				MaxHealth="2000"
-				MaxHealthDamaged="0"
-				MaxHealthReallyDamaged="0"
-				InitialHealth="-1"
-				RecoveryTime="0"
-				DodgePercent="0"
-				EnteringDamagedTransitionTime="0s"
-				EnteringReallyDamagedTransitionTime="0s"
-				GrabFX=""
-				GrabDamage="200"
-				HealingBuffFX=""
-				DamagedAttributeModifier=""
-				ReallyDamagedAttributeModifier=""
-				CheerRadius="200"
-				BurningDeathFX=""
-				SecondChanceUpgrade=""
-				SecondChanceHeal="0"
-				UseDefaultDamageSettings="True"
-				RemoveUpgradesOnDeath="False"
-				BurningDeathBehavior="False" />
+				id="0xC026F3D9"
+				MaxHealth="2000" />
 		</Body>
 		<ClientBehaviors>
 			<ModelConditionAudioLoopClientBehavior
-				id="DFC3D831">
+				id="0x1774247B">
 				<ModelConditionSound
 					Sound="AudioEvent:NOD_GenericTurret_Regenerate"
-					RequiredFlags="USER_1"
-					ExcludedFlags="" />
+					RequiredFlags="USER_1" />
 			</ModelConditionAudioLoopClientBehavior>
 		</ClientBehaviors>
-		<Geometry
-			IsSmall="False">
+		<Geometry>
 			<Shape
 				Type="CYLINDER"
 				ContactPointGeneration="INFANTRY"
 				MajorRadius="20"
-				MinorRadius="1"
-				Height="30"
-				FrontAngle="0d"
-				Active="True"
-				UsedForHealthBox="True" />
+				Height="30" />
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry
@@ -1058,7 +458,6 @@
 		<EvaEvents
 			EvaEventSoldOwner="StructureSold"
 			EvaEventDamagedOwner="StructureUnderAttack"
-			EvaEventSecondDamageFarFromFirstScanRange="200"
 			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
 			EvaEventRepairingOwner="StructureRepairing"
 			EvaEnemyObjectSightedEvent="EnemyCampSighted"
@@ -1072,34 +471,11 @@
 			EvaEventManuallyPoweredOff="BuildingManuallyPoweredDown"
 			EvaEventManuallyPoweredOn="BuildingManuallyPoweredUp" />
 		<ShadowInfo
-			Type="VOLUME"
-			Texture=""
-			AdditionalTexture=""
-			SizeX="0"
-			SizeY="0"
-			OffsetX="0"
-			OffsetY="0"
-			OpacityStart="0"
-			OpacityFadeInTime="0s"
-			OpacityPeak="1"
-			OpacityFadeOutTime="0s"
-			OpacityEnd="0"
-			MaxHeight="20"
-			SunAngle="0"
-			OverrideLODVisibility="False"
-			UseHouseColor="False"
-			IsRotatingWithObject="True"
-			LocalPlayerOnly="False" />
+			Type="VOLUME" />
 		<VisionInfo
 			VisionRange="500"
-			ShroudClearingRange="500"
-			VisionSide="100%"
-			VisionRear="100%"
-			VisionBonusTestRadius="100"
-			VisionBonusTestSegments="8"
-			VisionBonusPercentPerFoot="0%"
-			MaxVisionBonusPercent="50%"
-			MinVisionBonusPercent="-50%" />
+			ShroudClearingRange="500" />
+		<DisplayUpgrade>Upgrade_NODQuadTurrets</DisplayUpgrade>
 		<DisplayUpgrade>Upgrade_NODTechCenterTibCoreMissiles</DisplayUpgrade>
 	</GameObject>
 </AssetDeclaration>

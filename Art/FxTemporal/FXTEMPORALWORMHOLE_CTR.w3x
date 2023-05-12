@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<W3DContainer id="FXTEMPORALWORMHOLE_new" Hierarchy="FXTEMPORALWORMHOLE_new">
+		<SubObject SubObjectID="DISTORTION" BoneIndex="2">
+			<RenderObject>
+				<Mesh>FXTEMPORALWORMHOLE.DISTORTION_new</Mesh>
+			</RenderObject>
+		</SubObject>
+		<SubObject SubObjectID="DIFFUSE" BoneIndex="1">
+			<RenderObject>
+				<Mesh>FXTEMPORALWORMHOLE.DIFFUSE_new</Mesh>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>
+</AssetDeclaration>

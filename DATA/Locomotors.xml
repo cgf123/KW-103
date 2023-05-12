@@ -191,6 +191,7 @@
 		Appearance="TREADS" 
 		
 		UseTerrainSmoothing="true"
+		CloseEnoughDist="1"
 		
 		AccelPitchLimit="2d"
 		PitchStiffness="0.5"
@@ -218,7 +219,8 @@
 		Appearance="TREADS" 
 	
 		UseTerrainSmoothing="true"
-		
+		CloseEnoughDist="1"
+
 		AccelPitchLimit="2d"
 		PitchStiffness="0.5"
 		RollStiffness="0.5"
@@ -244,6 +246,8 @@
 		BehaviorZ="NO_MOTIVE_FORCE"	
 		Appearance="TREADS" 
 		UseTerrainSmoothing="true"
+
+		CloseEnoughDist="1"
 
 		AccelPitchLimit="2d"
 		PitchStiffness="0.5"
@@ -1027,8 +1031,8 @@
 		id="AlienAnnihilatorTripodUpgradedLocomotor"
 		Name="AlienAnnihilatorTripodUpgradedLocomotor"
 		Surfaces="GROUND RUBBLE CRUSHABLE_OBSTACLE" 
-		TurnTimeSeconds="2.5s" 
-		TurnTimeDamagedSeconds="2.5s" 
+		TurnTimeSeconds="2.25s" 
+		TurnTimeDamagedSeconds="2.25s" 
 		MaxSpeedDamaged="75%"
 		AccelerationSeconds="1.0s"
 		BrakingSeconds="0.01s"
