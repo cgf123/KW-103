@@ -3,7 +3,7 @@
 	<GameObject
 		id="BlackHandBunkerTruck"
 		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT WEAPON_SALVAGER"
-		Description="Desc:BlackHandBunkerTruck"
+		Description="Desc:NODBunkerTruck_103"
 		TypeDescription="Type:BlackHandBunkerTruck"
 		RadarPriority="UNIT"
 		BuildCompletion="INVALID"
