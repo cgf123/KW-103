@@ -1263,7 +1263,7 @@
 			IsRotatingWithObject="True"
 			LocalPlayerOnly="False" />
 		<VisionInfo
-			VisionRange="180"
+			VisionRange="250"
 			ShroudClearingRange="600"
 			VisionSide="100%"
 			VisionRear="100%"

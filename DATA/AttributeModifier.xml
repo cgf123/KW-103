@@ -159,7 +159,7 @@
 		ModelConditionsSet="INVULNERABLE"		
 		ObjectStatusToSet="UNATTACKABLE NO_ATTACK" >
 	</AttributeModifier>
-
+	
 	<!-- AOEMC -->
 	<AttributeModifier
 		id="AttributeModifier_AOEMCMarker"
@@ -204,6 +204,14 @@
 		id="AttributeModifier_Hallucinate"
 		Category="NONE"
 		Duration="0.25s"
+		ObjectStatusToSet="IGNORE_AI_COMMAND"
+		ModelConditionsSet="EMOTION_DISSIDENT" >
+	</AttributeModifier>
+
+	<AttributeModifier
+		id="AttributeModifier_Hallucinate_Strong"
+		Category="NONE"
+		Duration="6.0s"
 		ObjectStatusToSet="IGNORE_AI_COMMAND"
 		ModelConditionsSet="EMOTION_DISSIDENT" >
 	</AttributeModifier>		
@@ -506,7 +514,7 @@
 		ObjectStatusToSet="CAN_ATTACK IMMOBILE"
 		ModelConditionsSet="UNPACKING">
 		<Modifier Type="SPEED" Value="0%"/>
-		<Modifier Type="HEALTH_MULT" Value="200%" />
+		<Modifier Type="HEALTH_MULT" Value="300%" />
 		<Modifier Type="RESIST_EMP" Value="100%"/>
 		<Modifier Type="CRUSHER_LEVEL" Value="0%"/> <!--
 		<Modifier Type="CRUSHABLE_LEVEL" Value="100%"/> -->

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<GameObject
+		id="NODCarryallBunkerTruckDebris_01"
+		KindOf="NO_COLLIDE UNATTACKABLE INERT INERT_SHROUD_REVEALER NOT_AUTOACQUIRABLE"
+		RadarPriority="NOT_ON_RADAR"
+		Side="Neutral"
+		EditorName="NODCarryallBunkerTruckDebris_01"
+		EditorSorting="MISC_MAN_MADE"
+		CommandSet="EmptyCommandSet">
+		<DisplayName>Debris</DisplayName>
+		<ArmorSet
+			Armor="NoArmor" />
+		<Draws>
+			<ScriptedModelDraw
+				id="0x50DF2C46"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				OkToChangeModelColor="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="W3DContainer:NURECKONER_R" />
+					<ParticleSysBone
+						BoneName="BoneGarrison04"
+						FXParticleSystemTemplate="NODDamagedFire"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_SteamJet_Front"
+						FXParticleSystemTemplate="NODDamagedFireDistortion"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="bone_RightTread"
+						FXParticleSystemTemplate="NODDamagedSmoke"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<Physics
+				id="0x6D41764B"
+				BounceCount="0"
+				TumbleRandomly="False" />
+			<LifetimeUpdate
+				id="0x6D14780C"
+				MinLifetime="1s"
+				MaxLifetime="1s" />
+			<SlowDeath
+				id="0x73542D4A"
+				SinkRate="2.0"
+				SinkDelay="0.5s"
+				DestructionDelay="4s">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</SlowDeath>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="0xB313F576"
+				MaxHealth="100" />
+		</Body>
+		<Geometry
+			IsSmall="True">
+			<Shape
+				Type="BOX"
+				MajorRadius="10"
+				MinorRadius="10"
+				Height="10" />
+		</Geometry>
+		<ShadowInfo
+			Type="VOLUME" />
+		<VisionInfo
+			VisionRange="1"
+			ShroudClearingRange="1" />
+	</GameObject>
+	
+	<ObjectCreationList
+		id="OCL_NODCarryallBunkerTruckDebris">
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="1.0"
+			MaxForceMagnitude="2.0"
+			DispositionIntensity="2.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="0.53"
+				y="-0.56"
+				z="0.37"></Offset>
+			<CreateObject>NODCarryallBunkerTruckDebris_01</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="16.53"
+				y="-8.56"
+				z="3.37"></Offset>
+			<CreateObject>NODBunkerTruckDebris_01</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="-3.75"
+				y="-8.56"
+				z="3.37"></Offset>
+			<CreateObject>NODBunkerTruckDebris_02</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="-12.55"
+				y="8.3"
+				z="3.37"></Offset>
+			<CreateObject>NODBunkerTruckDebris_03</CreateObject>
+		</CreateObject>
+		<CreateObject
+			Options="IGNORE_ALL_OBJECTS"
+			Disposition="RANDOM_FORCE RELATIVE_ANGLE"
+			MinForceMagnitude="2.0"
+			MaxForceMagnitude="7.0"
+			DispositionIntensity="5.0"
+			MinLifetime="1.0s"
+			MaxLifetime="3.s"
+			MinForcePitch="90d"
+			MaxForcePitch="75d">
+			<Offset
+				x="7.94"
+				y="-0.11"
+				z="12.38"></Offset>
+			<CreateObject>NODBunkerTruckDebris_04</CreateObject>
+		</CreateObject>
+	</ObjectCreationList>	
+
+	<WeaponTemplate
+		  id="BunkerTruckFallWeapon"
+		  Name="BunkerTruckFallWeapon">
+		<Nuggets>
+			<WeaponOCLNugget
+				WeaponOCL="OCL_NODCarryallBunkerTruckDebris" />		
+		</Nuggets>
+	</WeaponTemplate>			
+	
+</AssetDeclaration>

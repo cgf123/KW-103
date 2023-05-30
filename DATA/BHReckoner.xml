@@ -870,6 +870,83 @@
 						RecenterWhenOutOfTurnRange="True" />
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
+
+			<CreateAndEnterObjectSpecialPower
+				id="6D44A823"
+				SpecialPowerTemplate="SpecialPowerCallForTransportNOD"
+				AntiCategory=""
+				AntiFX=""
+				AttributeModifier=""
+				AttributeModifierRange="0"
+				AttributeModifierFX=""
+				WeatherDuration="0"
+				InitiateFX=""
+				TriggerFX="FX_NodCallForTransportFlare"
+				SetModelCondition="TOPPLED"
+				SetModelConditionTime="0s"
+				GiveLevels="0"
+				ChangeWeather="NORMAL"
+				OnTriggerRechargeSpecialPower=""
+				BurnDecayModifier="0"
+				MaxDistanceFromCommandCenter="0"
+				UpdateModuleStartsAttack="False"
+				StartsPaused="False"
+				ReEnableAntiCategory="False"
+				AttributeModifierAffectsSelf="False"
+				AttributeModifierWeatherBased="False"
+				TargetEnemy="False"
+				TargetAllSides="False"
+				DisableDuringAnimDuration="False"
+				IdleWhenStartingPower="True"
+				AffectGood="False"
+				AffectEvil="False"
+				AffectAllies="True"
+				AvailableAtStart="True"
+				AdjustVictim="False"
+				UseDistanceFromCommandCenter="False"
+				ChildModuleHandlesFX="True"
+				OCL="OCL_NodCallForTransportBunkerTruck"
+				CreateLocation="CREATE_ABOVE_LOCATION"
+				MaxCreateCount="0"
+				NumberToSpawn="1"
+				DestinationOCL=""
+				RegisterObjectsWithSpecialAbilityUpdate="False">
+				<AttributeModifierAffects
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<RequirementsFilterMP
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<RequirementsFilterStrategic
+					Rule="UNPARSED"
+					Relationship=""
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" />
+				<FXOffset
+					x="25"
+					y="0"
+					z="0" />
+			</CreateAndEnterObjectSpecialPower>			
+			
 			<StatusBitsUpgrade
 				id="14FFBC57"
 				RequiresAllTriggers="False"
@@ -1021,7 +1098,7 @@
 				KillPassengersOnDeath="False"
 				HasObjectStatusOfContainedEntry="True"
 				Enabled="True"
-				Slots="3"
+				Slots="2"
 				ExitPitchRate="0"
 				HealthRegenPercentPerSec="0"
 				ExitDelay="0"
@@ -1095,11 +1172,9 @@
 				<OpenContainUpgradeOverride
 					UpgradeTriggeredBy="Upgrade_DeployNODBunkerTruck"
 					ObjectStatusOfContained="CAN_ATTACK UNSELECTABLE ENCLOSED" />
-				<!--
 				<TransportContainUpgradeOverride
 					UpgradeTriggeredBy="Upgrade_DeployNODBunkerTruck"
 					AdditionalSlots="1" /> 
-				-->
 			</HordeTransportContain>
 			
 			<AttributeModifierAuraUpdate

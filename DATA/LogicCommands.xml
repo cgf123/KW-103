@@ -318,8 +318,10 @@
 	<!-- BATTLE BUSES -->
 	<LogicCommandSet
 	id="NODBunkerTruckCommandSet">
-		<!-- <Cmd>Command_Evacuate</Cmd> -->		
 		<Cmd>Command_UnPackNODBunkerTruck</Cmd>
+		<Cmd>Command_Evacuate</Cmd>		
+		<Cmd>Command_MoveToPositionAndEvacuate</Cmd>
+		<Cmd>Command_NodCallForTransportVehicle</Cmd>
 		<Cmd>Command_Stop</Cmd>
 		<Cmd>Command_AttackMove</Cmd>		
 	</LogicCommandSet>	

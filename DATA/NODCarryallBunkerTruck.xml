@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
-		id="NODCarryallVehicle"
+		id="NODCarryallBunkerTruck"
 		KindOf="SELECTABLE CAN_CAST_REFLECTIONS AIRCRAFT TRANSPORT PRELOAD IGNORES_SELECT_ALL SUMMONED VEHICLE WEAPON_SALVAGER"
 		Description="Desc:NODCarryall"
 		TypeDescription="Type:NODCarryall"
@@ -16,7 +16,7 @@
 		FactoryExitWidth="0"
 		FactoryExtraBibWidth="0"
 		Side="NOD"
-		EditorName="NODCarryallVehicle"
+		EditorName="NODCarryallBunkerTruck"
 		EditorSorting="UNIT"
 		BountyValue="0"
 		BuildTime="1"
@@ -85,6 +85,7 @@
 		CanPathThroughGates="True"
 		ShouldClearShotsOnIdle="False"
 		BuildInProximityToSamePlayerStucture="True">
+		<EquivalentTo>NODCarryallVehicle</EquivalentTo>				
 		<DisplayName>Name:NODCarryall</DisplayName>
 		<ArmorSet
 			Armor="NODCarryallArmor"
@@ -726,6 +727,32 @@
 					DeathTypes="ALL"
 					DeathTypesForbidden="TOPPLED" />
 			</SlowDeath>
+			
+			<!--
+			<FireWeaponWhenDead
+				id="DDED328E"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				DelayTime="0s"
+				DeathWeapon="BunkerTruckFallWeapon"
+				FocusFireKindOfFlag=""
+				InitiallyActive="True"
+				ActiveDuringConstruction="False"
+				ContinueToBezierDestination="False">
+				<DieMuxData
+					ExemptStatus="UNSELECTABLE"
+					RequiredStatus=""
+					DamageAmountRequired="-1"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
+					DeathTypes="ALL"
+					DeathTypesForbidden="" />				
+			</FireWeaponWhenDead>
+			-->
+			
 			<FXListBehavior
 				id="C74C39D8">
 				<DieMuxData
@@ -806,30 +833,10 @@
 					StatusBitFlags=""
 					RejectStatusBitFlags="IMMOBILE"
 					AcceptModelCondition=""
-					RejectModelCondition="">
-					<IncludeThing>NODAttackBike</IncludeThing>
-					<IncludeThing>NODBeamCannon</IncludeThing>
-					<IncludeThing>NODRaiderTank</IncludeThing>
-					<IncludeThing>NODScorpionBuggy</IncludeThing>
-					<IncludeThing>NODEmissary</IncludeThing>
-					<IncludeThing>NODMobileArtillery</IncludeThing>
-					<IncludeThing>NODFlameTank</IncludeThing>
-					<IncludeThing>NODStealthTank</IncludeThing>			
-					<IncludeThing>MarkedOfKaneAttackBike</IncludeThing>
-					<IncludeThing>MarkedOfKaneRaiderTank</IncludeThing>
-					<IncludeThing>MarkedOfKaneScorpionBuggy</IncludeThing>
-					<IncludeThing>MarkedOfKaneMobileArtillery</IncludeThing>
-					<IncludeThing>MarkedOfKaneBeamCannon</IncludeThing>
-					<IncludeThing>MarkedOfKaneEmissary</IncludeThing>
-					<IncludeThing>MarkedOfKaneStealthTank</IncludeThing>					
-					<IncludeThing>BlackHandAttackBike</IncludeThing>
-					<IncludeThing>BlackHandBeamCannon</IncludeThing>
-					<IncludeThing>BlackHandRaiderTank</IncludeThing>
-					<IncludeThing>BlackHandScorpionBuggy</IncludeThing>
-					<IncludeThing>BlackHandEmissary</IncludeThing>
-					<IncludeThing>BlackHandMobileArtillery</IncludeThing>
-					<IncludeThing>BlackHandFlameTank</IncludeThing>
-					<IncludeThing>BlackHandStealthTank</IncludeThing>					
+					RejectModelCondition="">	
+					<IncludeThing>NODBunkerTruck</IncludeThing>
+					<IncludeThing>MarkedOfKaneBunkerTruck</IncludeThing>					
+					<IncludeThing>BlackHandBunkerTruck</IncludeThing>					
 				</PassengerFilter>
 				<DieMuxData
 					ExemptStatus=""
@@ -926,7 +933,18 @@
 				CanPathThroughUnitsWhileHarvesting="True"
 				FlyOffMap="REVERSE_DIRECTION"
 				DelayAFterLoadingOrUnloading="0s"
-				FlyOffMapOnUnload="True" />
+				FlyOffMapOnUnload="True" >
+				<UnitAITargetChooserData
+					IdleScanDelay="0.8s"
+					ReacquireDelay="5s"
+					StartupDelay="0s"
+					SympathyRange="100"
+					CheckVisionRange="False"
+					CanPickDynamicTargets="True"
+					RotateToTargetWhenAiming="True"
+					CanAutoAcquireNonAutoAcquirable="False"
+					TargetingCompareList="DefaultTargetingCompareList" />				
+			</TransportHelicopterAIUpdate>
 		</AI>
 		<Body>
 			<ActiveBody
@@ -1045,7 +1063,7 @@
 			IsRotatingWithObject="True"
 			LocalPlayerOnly="False" />
 		<VisionInfo
-			VisionRange="180"
+			VisionRange="250"
 			ShroudClearingRange="600"
 			VisionSide="100%"
 			VisionRear="100%"

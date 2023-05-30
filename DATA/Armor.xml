@@ -498,10 +498,10 @@ DAMAGE TYPES
 			Percent="4.5%" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="32%" />
+			Percent="24%" />
 		<Armor
 			Damage="FLAME"
-			Percent="32%" />					
+			Percent="24%" />					
 		<Armor
 			Damage="SNIPER"
 			Percent="40%" />
@@ -524,10 +524,10 @@ DAMAGE TYPES
 			Percent="5.6%" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="40%" />
+			Percent="30%" />
 		<Armor
 			Damage="FLAME"
-			Percent="40%" />					
+			Percent="30%" />					
 		<Armor
 			Damage="SNIPER"
 			Percent="50%" />
@@ -734,7 +734,7 @@ DAMAGE TYPES
 		Default="75" >
 		<Armor
 			Damage="CANNON"
-			Percent="6" />
+			Percent="8" />
 		<Armor
 			Damage="ROCKET"
 			Percent="18" />
@@ -760,7 +760,7 @@ DAMAGE TYPES
 		Default="75" >
 		<Armor
 			Damage="CANNON"
-			Percent="6" />
+			Percent="8" />
 		<Armor
 			Damage="ROCKET"
 			Percent="18" />
@@ -786,7 +786,7 @@ DAMAGE TYPES
 		Default="75" >
 		<Armor
 			Damage="CANNON"
-			Percent="6" />
+			Percent="8" />
 		<Armor
 			Damage="ROCKET"
 			Percent="18" />
@@ -812,7 +812,7 @@ DAMAGE TYPES
 		Default="75" >
 		<Armor
 			Damage="CANNON"
-			Percent="6" />
+			Percent="8" />
 		<Armor
 			Damage="ROCKET"
 			Percent="18" />
@@ -830,7 +830,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="SNIPER"
-			Percent="50" />			
+			Percent="75" />			
 	</ArmorTemplate>		
 	
 	<ArmorTemplate
@@ -856,7 +856,7 @@ DAMAGE TYPES
 			Percent="85" />
 		<Armor
 			Damage="SNIPER"
-			Percent="60" />	
+			Percent="40" />	
 	</ArmorTemplate>	
 
 	<ArmorTemplate
@@ -908,7 +908,7 @@ DAMAGE TYPES
 			Percent="85" />
 		<Armor
 			Damage="SNIPER"
-			Percent="60"/>
+			Percent="40"/>
 	</ArmorTemplate>		
 	
 	<ArmorTemplate
@@ -1211,7 +1211,7 @@ DAMAGE TYPES
 	
 	<ArmorTemplate
 		id="NODHarvesterArmor"
-		Default="95"		
+		Default="90"		
 		SideDamageScalar="100"
 		RearDamageScalar="100">
 		<Armor
@@ -1504,7 +1504,7 @@ DAMAGE TYPES
 
 	<ArmorTemplate
 		id="GDIHarvesterArmor"
-		Default="95"
+		Default="90"
 		SideDamageScalar="100"
 		RearDamageScalar="100">
 		<Armor
@@ -2167,7 +2167,7 @@ DAMAGE TYPES
 
 	<ArmorTemplate
 		id="AlienHarvesterArmor"
-		Default="95%"
+		Default="90%"
 		DamageScalar="100%"
 		SideDamageScalar="100%"
 		RearDamageScalar="100%"
@@ -2200,7 +2200,7 @@ DAMAGE TYPES
 	
 	<ArmorTemplate
 		id="AlienHarvesterArmorShieldBodyEnabled"
-		Default="95"
+		Default="90"
 		SideDamageScalar="100"
 		RearDamageScalar="100">
 		<Armor

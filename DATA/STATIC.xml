@@ -15,7 +15,6 @@
 	<Include type="all" source="OCL.xml" />	
 	<Include type="all" source="SpecialPowerTemplates.xml" />		
 	<Include type="all" source="LogicCommands.xml" />	
-	<Include type="all" source="Experience.xml" />
 	<Include type="all" source="Upgrades.xml" />
 	<Include type="all" source="Buttons.xml" />		
 	<Include type="all" source="FXList.xml" />	
@@ -91,6 +90,9 @@
 	<Include type="all" source="MutantMarauderSquad.xml" />				
 	
 	<!-- ============================= GDI ============================== -->
+
+	<Include type="all" source="GDIXP.xml" />
+
 	<Include type="all" source="GDIMARV.xml" />	
 	<Include type="all" source="STMARV.xml" />	
 	<Include type="all" source="ZOCOMMARV.xml" />	
@@ -268,6 +270,8 @@
 	
 	<!-- ========================= NOD ======================== -->
 
+	<Include type="all" source="NODXP.xml" />
+
 	<Include type="all" source="NODMCV.xml" />	
 	<Include type="all" source="BHMCV.xml" />	
 	<Include type="all" source="MOKMCV.xml" />
@@ -315,8 +319,17 @@
 	<Include type="all" source="MOKVertigo.xml" />				
 	<Include type="all" source="BHVertigo.xml" />	
 	
+	<Include type="all" source="NODVertigoAirDispersion.xml" />				
+	<Include type="all" source="NODVertigoDeployMines.xml" />				
+	<Include type="all" source="NODVertigoSeedTiberium.xml" />				
+	
 	<Include type="all" source="NODCarryallInfantry.xml" />	
 	<Include type="all" source="NODCarryallVehicle.xml" />		
+	<Include type="all" source="NODCarryallBunkerTruck.xml" />		
+
+	<!--
+	<Include type="all" source="NODCarryallBunkerTruckDebris_01.xml" />		
+	-->
 	
 	<Include type="all" source="MOKSecretShrine.xml" />		
 	
@@ -454,6 +467,8 @@
 	<Include type="all" source="BHSaboteur.xml" />		
 	
 	<!-- ============================ SCRIN ================================ -->
+	
+	<Include type="all" source="AlienXP.xml" />
 	
 	<Include type="all" source="AlienMCV.xml" />	
 	<Include type="all" source="R17MCV.xml" />	

@@ -570,6 +570,7 @@
 		ReloadTime="120s"
 		TargetType="NONE"
 		Money="-200"
+		PreventConditions="IMMOBILE"
 		InitiateAtLocationSound="AudioEvent:NOD_Carryall_VoiceInbound">
 		<GameDependency>
 			<ObjectFilter
