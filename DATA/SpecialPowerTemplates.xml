@@ -158,6 +158,7 @@
 		ReloadTime="10s"
 		Flags="NEEDS_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
 		RequiredTargetObjectStatus="DOES_CONTAIN_TIBERIUM"		
+		DisallowedTargetObjectStatus="IS_BEING_HARVESTED"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0xFCC76FD1"
 		WaypointModeTerminal="false">
 		<ObjectFilter
@@ -172,7 +173,8 @@
 		MaxCastRange="100000"
 		ReloadTime="10s"
 		Flags="NEEDS_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
-		RequiredTargetObjectStatus="DOES_CONTAIN_TIBERIUM"		
+		RequiredTargetObjectStatus="DOES_CONTAIN_TIBERIUM"	
+		DisallowedTargetObjectStatus="IS_BEING_HARVESTED"		
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0xFCC76FD1"
 		WaypointModeTerminal="false">
 		<ObjectFilter
@@ -405,6 +407,7 @@
 			Rule="ANY"
 			Include="STRUCTURE"
 			Exclude="UNATTACKABLE"
+			RejectStatusBitFlags="RIDER1"
 			Relationship="ENEMIES NEUTRAL" />
 	</SpecialPowerTemplate>	
 	
@@ -565,6 +568,14 @@
 		</ObjectFilter>
 	</SpecialPowerTemplate>	
 	
+	<!-- VoiceAttackEMP -->
+	<SpecialPowerTemplate
+		id="ImprovedEMPBlastGetInRange"
+		RadiusCursorRadius="60"
+		ReloadTime="30s"
+		TargetType="LOCATION"
+		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0xD6AB46C3" />
+	
 	<SpecialPowerTemplate
 		id="SpecialPowerCallForTransportNOD"
 		ReloadTime="120s"
@@ -585,7 +596,7 @@
 	<SpecialPowerTemplate
       id="SpecialPowerCallSupportZOCOMAirborne"
       Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-      ReloadTime="45s"
+      ReloadTime="50s"
       ForbiddenObjectRange="110"
       RadiusCursorRadius="110"
       TargetType="LOCATION"
@@ -600,7 +611,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerCallSupportGDIAirborne"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-		ReloadTime="45s"
+		ReloadTime="50s"
 		ForbiddenObjectRange="110"
 		RadiusCursorRadius="110"
 		TargetType="LOCATION"
@@ -799,6 +810,19 @@
 		RadiusCursorRadius="25"
 		Money="-1500">
 	</SpecialPowerTemplate>		
+	
+	<SpecialPowerTemplate
+		id="SpecialPower_AlienSeedTiberium"
+		ReloadTime="100s"
+		TargetType="LOCATION"
+		InitiateAtLocationSound="Multisound:ALI_IchorSeed_BeamMS"
+		Flags="LIMIT_DISTANCE IS_PLAYER_POWER SHARED_SYNC NOT_ON_BRIDGE NOT_BENEATH_BRIDGE NOT_CLIFF_CELL NO_FORBIDDEN_OBJECTS"
+		RadiusCursorRadius="40"
+		Money="-500" >
+		<ForbiddenObjectFilter
+    			Rule="ANY"
+			Include="STRUCTURE" />
+	</SpecialPowerTemplate>	
 	
 	<SpecialPowerTemplate
 		id="SpecialPower_DeployIonStormStart"

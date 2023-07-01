@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="SteelTalonsHeavyHarvester"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS HARVESTER PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT IGNORES_SELECT_ALL CAN_REVERSE_MOVE MOVE_FOR_NOONE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS HARVESTER PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT IGNORES_SELECT_ALL CAN_REVERSE_MOVE PATH_THROUGH_EACH_OTHER PATH_THROUGH_INFANTRY VEHICLE CAN_BE_FAVORITE_UNIT"
 		Description="Desc:SteelTalonsHeavyHarvester"
 		TypeDescription="Type:SteelTalonsHeavyHarvester"
 		RadarPriority="UNIT"
@@ -989,6 +989,7 @@
 					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />
 			</HordeTransportContain>
 			
+			<!--
 			<AttributeModifierAuraUpdate
 				id="ModuleTag_AttributeModifier_InfContained" 
 				InitiallyActive="true"
@@ -1045,7 +1046,8 @@
 					<IncludeThing>ZOCOMZoneRaiderSquad</IncludeThing>	
 					<IncludeThing>ZOCOMZoneRaiderSquad_Veteran</IncludeThing>			
 				</ObjectFilter>
-			</AttributeModifierAuraUpdate>						
+			</AttributeModifierAuraUpdate>		
+			-->
 			
 			<MoveToPositionAndEvacuateSpecialPower
 				id="DBDCABC7"

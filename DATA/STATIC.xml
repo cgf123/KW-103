@@ -395,6 +395,7 @@
 	<Include type="all" source="NodTurrets/MOKLaserCannonHub.xml" />		
 	<Include type="all" source="NodTurrets/NODLaserCannonSpawn.xml" />
 
+	<Include type="all" source="NODEMPBlastProjectile1.xml" />				
 	
 	<Include type="all" source="NODCyborg.xml" />			
 	<Include type="all" source="NODCyborgSquad.xml" />		
@@ -508,7 +509,9 @@
 
 	<Include type="all" source="AlienStasisChamber.xml" />		
 	<Include type="all" source="T59StasisChamber.xml" />		
-	<Include type="all" source="R17StasisChamber.xml" />		
+	<Include type="all" source="R17StasisChamber.xml" />	
+
+	<Include type="all" source="AlienTiberiumFieldSeeded.xml" />					
 
 	<Include type="all" source="AlienRef.xml" />	
 	<Include type="all" source="R17Ref.xml" />	

@@ -5010,11 +5010,11 @@
 		<Geometry
 			IsSmall="True">
 			<Shape
-				Type="BOX"
+				Type="CYLINDER"
 				ContactPointGeneration="INFANTRY"
 				Name=""
 				MajorRadius="26"
-				MinorRadius="21"
+				MinorRadius="1"
 				Other=""
 				Height="40"
 				FrontAngle="0d"

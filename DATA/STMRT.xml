@@ -1076,7 +1076,9 @@
 					<IncludeThing>BlackHandMilitantRocket</IncludeThing>	
 					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>MarkedOfKaneMilitantRocket</IncludeThing>		
-					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>	
+					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantry</IncludeThing>		
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantrySquad</IncludeThing>					
 					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>NODBlackHand</IncludeThing>		
 					<IncludeThing>NODBlackHandSquad</IncludeThing>		
@@ -1505,7 +1507,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2600"
+				MaxHealth="2800"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

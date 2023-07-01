@@ -19,7 +19,7 @@
 		EditorName="GDIHammerhead"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="14"
+		BuildTime="13"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -68,7 +68,7 @@
 		ReinvisibilityDelay="7s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_GDIAPAmmo"
 		CaptureTime="0s"
-		BuildCost="1400"
+		BuildCost="1300"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1539,6 +1539,8 @@
 					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>MarkedOfKaneMilitantRocket</IncludeThing>		
 					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>	
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantry</IncludeThing>		
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantrySquad</IncludeThing>					
 					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>NODBlackHand</IncludeThing>		
 					<IncludeThing>NODBlackHandSquad</IncludeThing>		

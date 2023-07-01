@@ -210,7 +210,7 @@
 				id="0x5FD28433"
 				NumDoorAnimations="1"
 				DoorOpeningTime="0.1s"
-				DoorWaitOpenTime="2s"
+				DoorWaitOpenTime="0.1s"
 				DoorCloseTime="0.1s"
 				Type="INFANTRY"
 				GiveNoXP="True" />
@@ -219,7 +219,7 @@
 				PlacementViewAngle="45d"
 				ExitDelay="1">
 				<UnitCreatePoint
-					x="40.0"
+					x="30.0"
 					y="0.0" />			
 				<NaturalRallyPoint
 					x="68" />

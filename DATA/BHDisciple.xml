@@ -1893,37 +1893,6 @@
 				<TriggeredBy>Upgrade_BlackHandSecretShrinePurifyingFlame</TriggeredBy>
 			</ModelConditionUpgrade>
 			
-			<!-- Split Aura -->
-			<AttributeModifierAuraUpdate
-				id="ModuleTag_AttributeModifierAuraUpdate"
-				AttributeModifierName="Confessor_Militant_AttributeModifier"
-				RefreshDelay="1.0s"
-				Range="300"
-				AllowSelf="false"
-				AffectHordeMembersOnly="true"
-				InitiallyActive="true">
-				<ObjectFilter
-					Rule="NONE"
-					Relationship="ALLIES"
-					Include="INFANTRY">
-				</ObjectFilter>
-			</AttributeModifierAuraUpdate>		
-			
-			<AttributeModifierAuraUpdate
-				id="ModuleTag_AttributeModifierAuraFXUpdate"
-				AttributeModifierName="AttributeModifier_BlackHandLeadership"
-				RefreshDelay="1.0s"
-				Range="300"
-				AllowSelf="false"
-				AffectHordeMembersOnly="true"
-				InitiallyActive="true">
-				<ObjectFilter
-					Rule="NONE"
-					Relationship="ALLIES"
-					Include="INFANTRY">
-				</ObjectFilter>
-			</AttributeModifierAuraUpdate>					
-			
 		</Behaviors>
 		<AI>
 			<AIUpdate

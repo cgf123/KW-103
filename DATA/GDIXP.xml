@@ -135,7 +135,7 @@
 	<ExperienceLevelTemplate
 		id="GDIHammerheadExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="1400"
+		ExperienceAward="1300"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -155,8 +155,8 @@
 	<ExperienceLevelTemplate
 		id="GDIHammerheadExperienceLevel_2"
 		Prerequisite="GDIHammerheadExperienceLevel_1"
-		RequiredExperience="4200"
-		ExperienceAward="1820"
+		RequiredExperience="3900"
+		ExperienceAward="1690"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -181,8 +181,8 @@
 	<ExperienceLevelTemplate
 		id="GDIHammerheadExperienceLevel_3"
 		Prerequisite="GDIHammerheadExperienceLevel_2"
-		RequiredExperience="8400"
-		ExperienceAward="2240"
+		RequiredExperience="7800"
+		ExperienceAward="2080"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
@@ -207,8 +207,8 @@
 	<ExperienceLevelTemplate
 		id="GDIHammerheadExperienceLevel_4"
 		Prerequisite="GDIHammerheadExperienceLevel_3"
-		RequiredExperience="12600"
-		ExperienceAward="2800"
+		RequiredExperience="11700"
+		ExperienceAward="2600"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
 		<LevelUpTintColor
@@ -234,7 +234,7 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsHammerheadExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="1400"
+		ExperienceAward="1300"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -254,8 +254,8 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsHammerheadExperienceLevel_2"
 		Prerequisite="SteelTalonsHammerheadExperienceLevel_1"
-		RequiredExperience="4200"
-		ExperienceAward="1820"
+		RequiredExperience="3900"
+		ExperienceAward="1690"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -280,8 +280,8 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsHammerheadExperienceLevel_3"
 		Prerequisite="SteelTalonsHammerheadExperienceLevel_2"
-		RequiredExperience="8400"
-		ExperienceAward="2240"
+		RequiredExperience="7800"
+		ExperienceAward="2080"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
@@ -306,8 +306,8 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsHammerheadExperienceLevel_4"
 		Prerequisite="SteelTalonsHammerheadExperienceLevel_3"
-		RequiredExperience="12600"
-		ExperienceAward="2800"
+		RequiredExperience="11700"
+		ExperienceAward="2600"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
 		<LevelUpTintColor
@@ -333,7 +333,7 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMHammerheadExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="1400"
+		ExperienceAward="1300"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -353,8 +353,8 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMHammerheadExperienceLevel_2"
 		Prerequisite="ZOCOMHammerheadExperienceLevel_1"
-		RequiredExperience="4200"
-		ExperienceAward="1820"
+		RequiredExperience="3900"
+		ExperienceAward="1690"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -379,8 +379,8 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMHammerheadExperienceLevel_3"
 		Prerequisite="ZOCOMHammerheadExperienceLevel_2"
-		RequiredExperience="8400"
-		ExperienceAward="2240"
+		RequiredExperience="7800"
+		ExperienceAward="2080"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
@@ -405,8 +405,8 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMHammerheadExperienceLevel_4"
 		Prerequisite="ZOCOMHammerheadExperienceLevel_3"
-		RequiredExperience="12600"
-		ExperienceAward="2800"
+		RequiredExperience="11700"
+		ExperienceAward="2600"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
 		<LevelUpTintColor

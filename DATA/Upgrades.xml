@@ -441,6 +441,23 @@
 		IconImage="Button_UpgradeCompositeArmor"
 	/>	
 	
+	<UpgradeTemplate id="Upgrade_ZOCOMFieldSuits"
+		LocalPlayerProductionStartedEvaEvent="None"
+		ResearchCompleteEvaEvent ="UpgradeComplete"
+		LocalPlayerBuildOnHoldEvaEvent="BuildOnHold"
+		LocalPlayerBuildCancelledEvaEvent="BuildCancelled"	
+	
+		DisplayName="UpgradeName:ZOCOMFieldSuits"
+		AcquireHint="UpgradePrereq:ZOCOMFieldSuits"
+		TypeDescription="UpgradeType:ZOCOMFieldSuits"
+		Description="UpgradeDesc:ZOCOMFieldSuits"
+		Type="PLAYER"
+		BuildCost="1000"
+		BuildTime="45s"
+		ResearchSound="AudioEvent:GDI_Armory_TiberiumFieldSuitsUpgrade"
+		IconImage="Button_Upgrade_FieldSuits"
+	/>	
+	
 	<UpgradeTemplate id="Upgrade_NODConfessorUpgrade"
 		LocalPlayerProductionStartedEvaEvent="None"
 		ResearchCompleteEvaEvent ="UpgradeComplete"

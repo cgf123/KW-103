@@ -1176,7 +1176,8 @@
 					UpgradeTriggeredBy="Upgrade_DeployNODBunkerTruck"
 					AdditionalSlots="1" />
 			</HordeTransportContain>
-				
+						
+			<!--
 			<AttributeModifierAuraUpdate
 				id="ModuleTag_AttributeModifier_InfContainedRev" 
 				InitiallyActive="false"
@@ -1217,11 +1218,23 @@
 					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>MarkedOfKaneMilitantRocket</IncludeThing>		
 					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>	
+					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>NODBlackHand</IncludeThing>		
 					<IncludeThing>NODBlackHandSquad</IncludeThing>		
 					<IncludeThing>BlackHandBlackHand</IncludeThing>		
-					<IncludeThing>BlackHandBlackHandSquad</IncludeThing>
-					<IncludeThing>BlackHandBlackDisciple</IncludeThing>	
+					<IncludeThing>BlackHandBlackHandSquad</IncludeThing>		
+					<IncludeThing>BlackHandBlackDisciple</IncludeThing>		
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantry</IncludeThing>
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantrySquad</IncludeThing>					
+					<IncludeThing>GDIZoneTrooper</IncludeThing>
+					<IncludeThing>GDIZoneTrooperSquad</IncludeThing>
+					<IncludeThing>GDIZoneTrooperSquad_Veteran</IncludeThing>					
+					<IncludeThing>SteelTalonsZoneTrooper</IncludeThing>
+					<IncludeThing>SteelTalonsZoneTrooperSquad</IncludeThing>
+					<IncludeThing>SteelTalonsZoneTrooperSquad_Veteran</IncludeThing>					
+					<IncludeThing>ZOCOMZoneRaider</IncludeThing>
+					<IncludeThing>ZOCOMZoneRaiderSquad</IncludeThing>	
+					<IncludeThing>ZOCOMZoneRaiderSquad_Veteran</IncludeThing>						
 				</ObjectFilter>
 				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>
 			</AttributeModifierAuraUpdate>				
@@ -1266,14 +1279,27 @@
 					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>MarkedOfKaneMilitantRocket</IncludeThing>		
 					<IncludeThing>MarkedOfKaneMilitantRocketSquad</IncludeThing>	
+					<IncludeThing>BlackHandMilitantRocketSquad</IncludeThing>						
 					<IncludeThing>NODBlackHand</IncludeThing>		
 					<IncludeThing>NODBlackHandSquad</IncludeThing>		
 					<IncludeThing>BlackHandBlackHand</IncludeThing>		
-					<IncludeThing>BlackHandBlackHandSquad</IncludeThing>	
+					<IncludeThing>BlackHandBlackHandSquad</IncludeThing>		
 					<IncludeThing>BlackHandBlackDisciple</IncludeThing>	
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantry</IncludeThing>
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantrySquad</IncludeThing>					
+					<IncludeThing>GDIZoneTrooper</IncludeThing>
+					<IncludeThing>GDIZoneTrooperSquad</IncludeThing>
+					<IncludeThing>GDIZoneTrooperSquad_Veteran</IncludeThing>					
+					<IncludeThing>SteelTalonsZoneTrooper</IncludeThing>
+					<IncludeThing>SteelTalonsZoneTrooperSquad</IncludeThing>
+					<IncludeThing>SteelTalonsZoneTrooperSquad_Veteran</IncludeThing>					
+					<IncludeThing>ZOCOMZoneRaider</IncludeThing>
+					<IncludeThing>ZOCOMZoneRaiderSquad</IncludeThing>	
+					<IncludeThing>ZOCOMZoneRaiderSquad_Veteran</IncludeThing>									
 				</ObjectFilter>
 				<ConflictsWith>Upgrade_DeployNODBunkerTruck</ConflictsWith>
-			</AttributeModifierAuraUpdate>	
+			</AttributeModifierAuraUpdate>			
+			-->
 			
 			<MoveToPositionAndEvacuateSpecialPower
 				id="DBDCABC7"

@@ -1177,6 +1177,7 @@
 					AdditionalSlots="1" />
 			</HordeTransportContain>
 			
+			<!--
 			<AttributeModifierAuraUpdate
 				id="ModuleTag_AttributeModifier_InfContainedRev" 
 				InitiallyActive="false"
@@ -1223,6 +1224,8 @@
 					<IncludeThing>BlackHandBlackHand</IncludeThing>		
 					<IncludeThing>BlackHandBlackHandSquad</IncludeThing>		
 					<IncludeThing>BlackHandBlackDisciple</IncludeThing>		
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantry</IncludeThing>
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantrySquad</IncludeThing>					
 					<IncludeThing>GDIZoneTrooper</IncludeThing>
 					<IncludeThing>GDIZoneTrooperSquad</IncludeThing>
 					<IncludeThing>GDIZoneTrooperSquad_Veteran</IncludeThing>					
@@ -1281,7 +1284,9 @@
 					<IncludeThing>NODBlackHandSquad</IncludeThing>		
 					<IncludeThing>BlackHandBlackHand</IncludeThing>		
 					<IncludeThing>BlackHandBlackHandSquad</IncludeThing>		
-					<IncludeThing>BlackHandBlackDisciple</IncludeThing>		
+					<IncludeThing>BlackHandBlackDisciple</IncludeThing>	
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantry</IncludeThing>
+					<IncludeThing>MarkedOfKaneImprovedCyborgInfantrySquad</IncludeThing>					
 					<IncludeThing>GDIZoneTrooper</IncludeThing>
 					<IncludeThing>GDIZoneTrooperSquad</IncludeThing>
 					<IncludeThing>GDIZoneTrooperSquad_Veteran</IncludeThing>					
@@ -1293,7 +1298,8 @@
 					<IncludeThing>ZOCOMZoneRaiderSquad_Veteran</IncludeThing>									
 				</ObjectFilter>
 				<ConflictsWith>Upgrade_DeployNODBunkerTruck</ConflictsWith>
-			</AttributeModifierAuraUpdate>					
+			</AttributeModifierAuraUpdate>			
+			-->
 			
 			<MoveToPositionAndEvacuateSpecialPower
 				id="DBDCABC7"

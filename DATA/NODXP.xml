@@ -2364,7 +2364,7 @@
 	<ExperienceLevelTemplate
 		id="BlackHandCustomWarmechExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="2600"
+		ExperienceAward="2500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -2384,8 +2384,8 @@
 	<ExperienceLevelTemplate
 		id="BlackHandCustomWarmechExperienceLevel_2"
 		Prerequisite="BlackHandCustomWarmechExperienceLevel_1"
-		RequiredExperience="7800"
-		ExperienceAward="3380"
+		RequiredExperience="7500"
+		ExperienceAward="3250"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -2410,8 +2410,8 @@
 	<ExperienceLevelTemplate
 		id="BlackHandCustomWarmechExperienceLevel_3"
 		Prerequisite="BlackHandCustomWarmechExperienceLevel_2"
-		RequiredExperience="15600"
-		ExperienceAward="4160"
+		RequiredExperience="15000"
+		ExperienceAward="4000"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
@@ -2436,8 +2436,8 @@
 	<ExperienceLevelTemplate
 		id="BlackHandCustomWarmechExperienceLevel_4"
 		Prerequisite="BlackHandCustomWarmechExperienceLevel_3"
-		RequiredExperience="23400"
-		ExperienceAward="5200"
+		RequiredExperience="22500"
+		ExperienceAward="5000"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
 		<LevelUpTintColor

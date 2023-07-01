@@ -23,8 +23,8 @@
 		Category="LEVEL" >
 		<Modifier Type="DAMAGE_MULT" Value="125%"/>
 		<Modifier Type="HEALTH_MULT" Value="150%"/>
-		<Modifier Type="SUPPRESSABILITY" Value="200%"/>
 		<Modifier Type="RATE_OF_FIRE" Value="200%"/>
+		<Modifier Type="CRUSHABLE_LEVEL" Value="200%"/>		
 	</AttributeModifier>
     <!--	-->
 	
@@ -428,7 +428,7 @@
 	</AttributeModifier>		
 	
 	<AttributeModifier
-		id="AttributeModifgier_SigGen"
+		id="AttributeModifier_SigGen"
 		Category="NONE"
 		Duration="5.0s"
 		ModelConditionsSet="USER_8"	>
@@ -594,14 +594,14 @@
 	<AttributeModifier
 		id="AttributeModifier_CyberneticLegs"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="130%"/>
+		<Modifier Type="SPEED" Value="133%"/>
 	</AttributeModifier>			
 				
 	<!-- For Saboteurs -->
 	<AttributeModifier
 		id="AttributeModifier_CyberneticLegs2"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="180%"/>
+		<Modifier Type="SPEED" Value="175%"/>
 	</AttributeModifier>	
 	
 	
