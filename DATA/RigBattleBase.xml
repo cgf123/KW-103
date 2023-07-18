@@ -900,7 +900,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<WeaponSetUpdate
 				id="75F3FD00">
 				<WeaponSlotTurret
@@ -2620,7 +2620,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<WeaponSetUpdate
 				id="75F3FD00">
 				<WeaponSlotTurret
@@ -4313,7 +4313,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<WeaponSetUpdate
 				id="75F3FD00">
 				<WeaponSlotTurret
@@ -5783,7 +5783,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<Physics
 				id="6D41764B"
 				MaxXRotationVelocity="360"
@@ -6873,7 +6873,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<Physics
 				id="6D41764B"
 				MaxXRotationVelocity="360"
@@ -7963,7 +7963,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<Physics
 				id="6D41764B"
 				MaxXRotationVelocity="360"

@@ -1716,7 +1716,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<StreamState
 				id="1B082F9E"
 				StreamId="0" />

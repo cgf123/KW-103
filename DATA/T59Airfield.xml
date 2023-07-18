@@ -1978,7 +1978,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<FXListBehavior
 				id="C74C39D8">
 				<DieMuxData
@@ -2296,7 +2296,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="6000"
+				MaxHealth="5400"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

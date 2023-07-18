@@ -411,12 +411,6 @@
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
 					RejectModelCondition="">
-					<!--
-					<ExcludeThing>GDIZoneTrooperSquad_Veteran</ExcludeThing>
-					<ExcludeThing>GDIZoneTrooperSquad</ExcludeThing>
-					<ExcludeThing>ZOCOMZoneRaiderSquad_Veteran</ExcludeThing>
-					<ExcludeThing>ZOCOMZoneRaiderSquad</ExcludeThing>
-					-->
 					<ExcludeThing>AlienShockTrooperSquad</ExcludeThing>
 					<ExcludeThing>AlienRazorDroneSquad</ExcludeThing>
 					<ExcludeThing>AlienStalkerSquad</ExcludeThing>
@@ -462,6 +456,18 @@
 					y="-80"
 					z="0" />
 			</HordeGarrisonContain>
+
+			<AttributeModifierAuraUpdate
+				id="0x7A30C5BF"
+				AttributeModifierName="AttributeModifier_GarrisonFix"
+				RefreshDelay="0.5s"
+				InitiallyActive="True"
+				AffectContainedOnly="True">
+				<ObjectFilter
+					Rule="ALL"
+					Include="INFANTRY HORDE" />
+			</AttributeModifierAuraUpdate>			
+			
 			<FXListBehavior
 				id="57E81491">
 				<DieMuxData

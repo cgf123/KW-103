@@ -2134,7 +2134,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="01009D1F"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<ModelConditionUpgrade
 				id="CFD506D9"
 				RequiresAllTriggers="False"

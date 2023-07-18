@@ -1322,7 +1322,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="01009D1F"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<WeaponSetUpdate
 				id="E3D95180">
 				<WeaponSlotHardpoint
@@ -2289,7 +2289,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotHardpoint
@@ -3623,7 +3623,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="01009D1F"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<WeaponSetUpdate
 				id="E3D95180">
 				<WeaponSlotHardpoint

@@ -176,7 +176,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<AssignSlavesTargetObjectSpecialPower
 				id="F9B1E08D"
 				SpecialPowerTemplate="SpecialPower_TargetedRepairVehicle"

@@ -961,7 +961,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<CreateObjectDie
 				id="36031C5A"
 				CreationList="FactionStructureTiberiumFieldOCL">

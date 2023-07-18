@@ -287,7 +287,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<WeaponSetUpdate>
 				<WeaponSlotHardpoint
 					ID="1"

@@ -1693,7 +1693,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<ProductionUpdate
 				id="749674DE"
 				MaxQueueEntries="99"

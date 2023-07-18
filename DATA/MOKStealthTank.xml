@@ -970,7 +970,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<Physics
 				id="E128C6A2"
 				MaxXRotationVelocity="360"

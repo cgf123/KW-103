@@ -1071,7 +1071,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="75" />
 			<Physics
 				id="C2B69CF1"
 				MaxXRotationVelocity="360"

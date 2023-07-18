@@ -473,7 +473,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<SlowDeath
 				id="73542D4A"
 				SinkRate="4"
@@ -1282,7 +1282,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<SlowDeath
 				id="73542D4A"
 				SinkRate="4"

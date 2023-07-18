@@ -725,7 +725,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotHardpoint
@@ -1942,7 +1942,7 @@
 				FadeInTime="2s" />
 			<SpecialPower
 				id="11EABCF2"
-				SpecialPowerTemplate="SpecialPowerProdigyTeleportObjectSelect"
+				SpecialPowerTemplate="SpecialPowerMastermindTeleportObjectSelect"
 				AntiCategory=""
 				AntiFX=""
 				AttributeModifier=""
@@ -2008,7 +2008,7 @@
 			<StoreObjectsSpecialPowerUpdate
 				id="4BED860E"
 				GrabPassengerHealGain="0%"
-				SpecialPowerTemplate="SpecialPowerProdigyTeleportObjectSelect"
+				SpecialPowerTemplate="SpecialPowerMastermindTeleportObjectSelect"
 				StartAbilityRange="1E+07"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
@@ -2053,7 +2053,7 @@
 				Radius="60" />
 			<SpecialPower
 				id="3A88C6D8"
-				SpecialPowerTemplate="SpecialPowerProdigyTeleportObject"
+				SpecialPowerTemplate="SpecialPowerMastermindTeleportObject"
 				AntiCategory=""
 				AntiFX=""
 				AttributeModifier=""
@@ -2119,7 +2119,7 @@
 			<TeleportToCasterSpecialPower
 				id="4AA2139E"
 				GrabPassengerHealGain="0%"
-				SpecialPowerTemplate="SpecialPowerProdigyTeleportObject"
+				SpecialPowerTemplate="SpecialPowerMastermindTeleportObject"
 				StartAbilityRange="1E+07"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
@@ -2172,7 +2172,7 @@
 				KillObjectsIfPlacedInBadSpot="True" />
 			<AISpecialPowerUpdate
 				id="37EB33E0"
-				CommandButtonName="Command_Traveler59ProdigySelectObjectsForTeleport"
+				CommandButtonName="Command_AlienMastermindSelectObjectsForTeleport"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
 				SpecialPowerRadius="-1"

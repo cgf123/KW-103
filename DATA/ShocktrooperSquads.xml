@@ -277,7 +277,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotHardpoint
@@ -1174,7 +1174,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotHardpoint
@@ -1796,6 +1796,279 @@
 
 
 	<GameObject
+		id="AlienShockTrooperSquad_Veteran"
+		KindOf="SELECTABLE CAN_ATTACK INFANTRY SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAPTURE HORDE PATH_THROUGH_INFANTRY ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND SKIRMISH_AI_DONT_GARRISON CAN_BE_FAVORITE_UNIT"
+		Description="Desc:AlienShockTrooper"
+		TypeDescription="Type:AlienShockTrooper"
+		RadarPriority="NOT_ON_RADAR"
+		Side="ALIEN"
+		EditorName="AlienShockTrooperSquad_Veteran"
+		EditorSorting="UNIT"
+		BuildTime="8"
+		CommandSet="AlienShockTrooperSquadCommandSet"
+		SelectPortrait="Portrait_ALIENShockTrooper"
+		ButtonImage="Portrait_ALIENShockTrooper"
+		FormationWidth="2"
+		CommandPoints="100"
+		ThreatLevel="0"
+		ProductionQueueType="INFANTRY"
+		UnitCategory="INFANTRY"
+		WeaponCategory="MISSILE"
+		UnitTypeIcon="ShockTrooperIcon"
+		WorldMapArmoryUpgradesAllowed="Upgrade_AlienShockTrooperPlasmaDiskLauncher Upgrade_AlienShockTrooperBlinkPack"
+		BuildCost="800"
+		TransportSlotCount="1">
+		<DisplayName>NAME:ALIENShockTrooper</DisplayName>
+		<GameDependency>
+			<RequiredObject>AlienStatisChamber</RequiredObject>
+			<RequiredObject>AlienControlCenter</RequiredObject>
+		</GameDependency>
+		<ArmorSet
+			Armor="NoArmor" />
+		<LocomotorSet
+			Speed="85"
+			Locomotor="NormalRangedSquadLocomotor" />
+		<EquivalentTo>Reaper17ShockTrooperSquad</EquivalentTo>
+		<SkirmishAIInformation
+			UnitBuilderStandardCombatUnit="True" />
+		<Draws>
+			<ScriptedModelDraw
+				id="0x50DF2C46"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				DependencySharedModelFlags="EMOTION_ALERT EMOTION_AFRAID EMOTION_TERROR SELECTED EMOTION_LOOK_TO_SKY EMOTION_MORALE_HIGH EMOTION_MORALE_LOW EMOTION_COWER EMOTION_TAUNTING"
+				OkToChangeModelColor="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW">
+					<Model
+						Name="W3DMesh:FXSHOCKTRPR_FP" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="WORLD_BUILDER">
+					<Model
+						Name="W3DContainer:SQUADMARKGUMIS" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<AttributeModifierPoolUpdate
+				id="0x513BC476" />
+			<AttributeModifierUpgrade
+				id="0xAA36A1AA"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterSpeed">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterSpeed</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="0x81C6F752"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterDamage">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterDamage</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<AttributeModifierUpgrade
+				id="0xE35F7EC4"
+				AttributeModifier="Modifier_MultifunctionUpgradeCenterArmor">
+				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterArmor</TriggeredBy>
+			</AttributeModifierUpgrade>
+			<StancesBehavior
+				id="0x54CA416E"
+				StanceTemplate="Generic" />
+			<EmotionTrackerUpdate
+				id="0x2C1462D7">
+				<TauntAndPointExcluded />
+				<AddEmotion>CheerIdle_Base</AddEmotion>
+				<AddEmotion>CheerBusy_Base</AddEmotion>
+			</EmotionTrackerUpdate>
+			<LevelUpUpgrade
+				id="0xA92BDFEA"
+				LevelsToGain="1"
+				LevelCap="4">
+				<TriggeredBy>Upgrade_ProductionVeterancy_VETERAN</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="0x5C3F216A"
+				LevelsToGain="2"
+				LevelCap="4">
+				<TriggeredBy>Upgrade_ProductionVeterancy_ELITE</TriggeredBy>
+			</LevelUpUpgrade>
+			<LevelUpUpgrade
+				id="0x379F3CE2"
+				LevelsToGain="3"
+				LevelCap="4">
+				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
+			</LevelUpUpgrade>
+			<TemporarilyDefectUpdate
+				id="0x3473AFD2"
+				DefectionFrameCount="75" />
+			<WeaponSetUpdate
+				id="0x720F4A50">
+				<WeaponSlotHardpoint
+					ID="1"
+					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE">
+					<Weapon
+						Template="ShockTrooperRangefinder" />
+				</WeaponSlotHardpoint>
+			</WeaponSetUpdate>
+			<StealthDetectorUpdate
+				id="0x70ED959C"
+				DetectionRange="100" />
+			<UnpauseSpecialPowerUpgrade
+				id="0xDD1AE131"
+				Permanent="True"
+				SpecialPowerTemplate="SpecialPower_UseBlinkPack">
+				<TriggeredBy>Upgrade_AlienShockTrooperBlinkPack</TriggeredBy>
+			</UnpauseSpecialPowerUpgrade>
+			<SpecialPower
+				id="0x03429543"
+				SpecialPowerTemplate="SpecialPower_UseBlinkPack"
+				AttributeModifierFX="FX_AlienInfantryHitFX"
+				UpdateModuleStartsAttack="True"
+				StartsPaused="True">
+				<AttributeModifierAffects
+					Rule="UNPARSED" />
+				<RequirementsFilterMP
+					Rule="UNPARSED" />
+				<RequirementsFilterStrategic
+					Rule="UNPARSED" />
+			</SpecialPower>
+			<TeleportSpecialAbilityUpdate
+				id="0x6E468FA8"
+				SpecialPowerTemplate="SpecialPower_UseBlinkPack"
+				StartAbilityRange="750"
+				UnpackingVariation="1"
+				FaceTarget="True"
+				BusyDuration="1.5s"
+				DestinationWeapon="AlienShockTrooperBlinkWeapon2"
+				SourceWeapon="AlienShockTrooperBlinkWeapon"
+				MaxDistance="750"
+				FadeInTime="1s" />
+			<StatusBitsUpgrade
+				StatusToSet="WEAPON_UPGRADED_01">
+				<TriggeredBy>Upgrade_AlienShockTrooperPlasmaDiskLauncher</TriggeredBy>
+			</StatusBitsUpgrade>
+			<Physics
+				id="0x6D41764B" />
+			<HordeContain
+				id="0x3473F0C6"
+				ShowPips="False"
+				Slots="3"
+				ConditionForEntry="INVALID"
+				MeleeAttackLeashDistance="1"
+				FrontAngle="4.7123"
+				FlankedDelaySeconds="2">
+				<PassengerFilter
+					Include="INFANTRY" />
+				<DieMuxData />
+				<InitialPayload
+					Name="AlienShockTrooper"
+					Count="3" />
+				<MeleeBehavior />
+				<RankInfo
+					RankID="1"
+					UnitType="AlienShockTrooper">
+					<Position
+						X="-10"
+						Y="-20" />
+					<Position
+						X="10" />
+					<Position
+						X="-10"
+						Y="20" />
+				</RankInfo>
+				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
+			</HordeContain>
+			<ProductionUpdate
+				id="0x749674DE"
+				GiveNoXP="True" />
+			<AISpecialPowerUpdate
+				id="0x391FA56C"
+				CommandButtonName="Command_UseBlinkPack"
+				SpecialPowerAIType="SPECIAL_POWER_MOVEMENT"
+				MinimumCutoff="100"
+				RandomizeTargetLocation="False" />
+			<SpecialPower
+				id="0x9C918DD9"
+				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
+				UpdateModuleStartsAttack="True">
+				<AttributeModifierAffects
+					Rule="UNPARSED" />
+				<RequirementsFilterMP
+					Rule="UNPARSED" />
+				<RequirementsFilterStrategic
+					Rule="UNPARSED" />
+			</SpecialPower>
+			<CaptureSpecialAbilityUpdate
+				id="0x89E11CB0"
+				SpecialPowerTemplate="SpecialPowerCaptureControlPoint"
+				StartAbilityRange="30"
+				PreparationTime="10s"
+				PackTime="1s"
+				UnpackTime="2s"
+				Options="DO_CAPTURE_FX"
+				FaceTarget="True" />
+			<LevelUpUpgrade
+				id="0xD0BB7535"
+				LevelsToGain="1"
+				LevelCap="4"
+				DoFlash="False">
+				<TriggeredBy>Upgrade_CallSupportUpgrade</TriggeredBy>
+			</LevelUpUpgrade>
+			<GrantUpgradeCreate
+				id="0x77FA1297"
+				UpgradeToGrant="Upgrade_CallSupportUpgrade" />
+		</Behaviors>
+		<AI>
+			<HordeAIUpdate
+				id="0x03F91C6F"
+				AILuaEventsList="GenericSquadFunctions_103"	
+				AutoAcquireEnemiesWhenIdle="YES ATTACK_BUILDINGS"
+				MinCowerTime="3s"
+				MaxCowerTime="5s"
+				CanAttackWhileContained="True">
+				<UnitAITargetChooserData
+					TargetingCompareList="DefaultTargetingCompareList" />
+			</HordeAIUpdate>
+		</AI>
+		<Body>
+			<ImmortalBody
+				id="0x63378FF2"
+				MaxHealth="1" />
+		</Body>
+		<Geometry>
+			<Shape
+				Type="BOX"
+				MajorRadius="20"
+				MinorRadius="30"
+				Height="13" />
+		</Geometry>
+		<EvaEvents
+			EvaEventDamagedOwner="UnitUnderAttack"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventProductionStarted="UnitConstructionStarted"
+			EvaEventBuildOnHold="BuildOnHold"
+			EvaEventBuildCancelled="BuildCancelled"
+			EvaEventPromotedOwner="UnitPromoted" />
+		<VisionInfo
+			VisionRange="350"
+			ShroudClearingRange="400"
+			VisionBonusTestRadius="200"
+			VisionBonusPercentPerFoot="1%"
+			MaxVisionBonusPercent="300%" />
+		<CrusherInfo
+			CrushableLevel="1"
+			UseCrushAttack="False" />
+		<DisplayUpgrade>Upgrade_AlienShockTrooperPlasmaDiskLauncher</DisplayUpgrade>
+		<DisplayUpgrade>Upgrade_AlienShockTrooperBlinkPack</DisplayUpgrade>
+	</GameObject>
+
+
+
+	<GameObject
 		id="Traveler59ShockTrooperSquad"
 		KindOf="SELECTABLE CAN_ATTACK INFANTRY SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAPTURE HORDE PATH_THROUGH_INFANTRY ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND SKIRMISH_AI_DONT_GARRISON CAN_BE_FAVORITE_UNIT"
 		Description="Desc:Traveler59ShockTrooper"
@@ -2072,7 +2345,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotHardpoint

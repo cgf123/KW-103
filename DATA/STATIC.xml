@@ -298,6 +298,8 @@
 	<Include type="all" source="BHTibChemPlant.xml" />	
 	<Include type="all" source="MOKTibChemPlant.xml" />		
 
+	<Include type="all" source="NODShredderTurretShell.xml" />
+
 	<Include type="all" source="NODRax.xml" />	
 	<Include type="all" source="BHRax.xml" />	
 	<Include type="all" source="MOKRax.xml" />		

@@ -1063,7 +1063,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotTurret
@@ -2727,7 +2727,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotTurret
@@ -4552,7 +4552,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotTurret

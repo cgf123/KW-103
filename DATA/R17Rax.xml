@@ -297,7 +297,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="0x3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<FXListBehavior
 				id="0xC74C39D8">
 				<DieMuxData

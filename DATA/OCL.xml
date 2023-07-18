@@ -450,7 +450,7 @@
 			Disposition="SPAWN_AROUND"
 			DispositionAngle="120d"
 			DispositionIntensity="80"
-			StartingBusyTime="1.5s"		
+			StartingBusyTime="3s"		
 			DisabledWhileBusy="true"				
 			>
 			<CreateObject>AlienShockTrooperSquad_Veteran</CreateObject>

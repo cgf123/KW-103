@@ -609,7 +609,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<BuildingBehavior
 				id="2118A085"
 				NightWindowObject="LIGHT_01"
@@ -1594,7 +1594,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<BuildingBehavior
 				id="2118A085"
 				NightWindowObject="LIGHT_01"
@@ -2580,7 +2580,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<BuildingBehavior
 				id="2118A085"
 				NightWindowObject="LIGHT_01"
@@ -3585,7 +3585,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<BuildingBehavior
 				id="2118A085"
 				NightWindowObject="LIGHT_01"
@@ -4680,7 +4680,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<BuildingBehavior
 				id="2118A085"
 				NightWindowObject="LIGHT_01"
@@ -5774,7 +5774,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<BuildingBehavior
 				id="2118A085"
 				NightWindowObject="LIGHT_01"

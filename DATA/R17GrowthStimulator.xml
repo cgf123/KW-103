@@ -19,7 +19,7 @@
 		EditorName="Reaper17GrowthStimulator"
 		EditorSorting="STRUCTURE"
 		BountyValue="0"
-		BuildTime="13"
+		BuildTime="10"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="-5"
 		EnergyBonus="0"
@@ -67,7 +67,7 @@
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
-		BuildCost="1300"
+		BuildCost="1000"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -462,7 +462,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<FXListBehavior
 				id="C74C39D8">
 				<DieMuxData

@@ -866,7 +866,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="75" />
 			<InvisibilityUpdate
 				id="3BD7F2F5"
 				Options="STARTS_ACTIVE"

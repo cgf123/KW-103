@@ -477,7 +477,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<SlowDeath
 				id="73542D4A"
 				SinkRate="4"
@@ -561,8 +561,8 @@
 			<PassiveAreaEffectBehavior
 				id="ModuleTag_PropagandaHeal"
 				EffectRadius="400"
-				HealingPercentPerSecond="10"
-				HealingPointsPerSecond="0"				
+				HealingPercentPerSecond="0"
+				HealingPointsPerSecond="50"				
 				SurveyDelayFrames="30"
 				AffectUnderAttack="true"
 				NonStackable="true" >

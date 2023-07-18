@@ -1127,7 +1127,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="75" />
 			<StealthDetectorUpdate
 				id="70ED959C"
 				RequiresAllTriggers="False"

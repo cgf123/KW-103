@@ -170,7 +170,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="0x3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<Physics
 				id="0xC2B69CF1" />
 			<SlowDeath

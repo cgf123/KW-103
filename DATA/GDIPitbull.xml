@@ -508,7 +508,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<ProductionUpdate
 				id="34FE0D85"
 				MaxQueueEntries="99"
@@ -1577,7 +1577,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<ProductionUpdate
 				id="34FE0D85"
 				MaxQueueEntries="99"

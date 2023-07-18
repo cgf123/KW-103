@@ -398,7 +398,7 @@
 			</LevelUpUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<WeaponSetUpdate>
 				<WeaponSlotHardpoint
 					ID="1"
@@ -991,7 +991,7 @@
 				id="363900E2"
 				GrabPassengerHealGain="0%"
 				SpecialPowerTemplate="SpecialPower_BlackHandConfessorCabalGetToGrenadeRange"
-				StartAbilityRange="275"
+				StartAbilityRange="300"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
 				PersistentPrepTime="0s"

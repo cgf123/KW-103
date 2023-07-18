@@ -2357,7 +2357,7 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Relationship="ENEMIES"
-						Include="STRUCTURE">
+						Include="STRUCTURE FS_BASE_DEFENSE">
 					</Filter>
 				</DamageScalarDetails>				   
 				<DamageScalarDetails Scalar= "200%" >
@@ -2383,14 +2383,13 @@ DAMAGE TYPES
 				DamageType="CANNON" >
                <SpecialObjectFilter
 					Rule="ANY"
-					Exclude="STRUCTURE"
+					Exclude="STRUCTURE FS_BASE_DEFENSE"
 					Include="HUSK IMMOBILE" >				
                </SpecialObjectFilter> 		
 				<DamageScalarDetails Scalar= "0%" >
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE">
-					</Filter>
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>					   
              </DamageNugget> 
 			<!-- As friendly-fire is disabled on the sonic wave, we use this for damaging targeted single allies -->
@@ -2401,7 +2400,7 @@ DAMAGE TYPES
                <SpecialObjectFilter
 					Rule="ANY"
 					Relationship="ALLIES NEUTRAL"
-					Include="VEHICLE INFANTRY STRUCTURE" >
+					Include="VEHICLE INFANTRY STRUCTURE FS_BASE_DEFENSE" >
                </SpecialObjectFilter> 
 				<DamageScalarDetails Scalar= "37.5%" >
 					<Filter
@@ -2412,9 +2411,8 @@ DAMAGE TYPES
 				</DamageScalarDetails>							
 				<DamageScalarDetails Scalar= "233%" >
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE">
-					</Filter>
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>				   
 				<DamageScalarDetails Scalar= "200%" >
 					<Filter
@@ -2483,9 +2481,9 @@ DAMAGE TYPES
 				</DamageScalarDetails>							
 				<DamageScalarDetails Scalar= "233%" >
 					<Filter
-						Rule="NONE"
+						Rule="ANY"
 						Relationship="ENEMIES"
-						Include="STRUCTURE">
+						Include="STRUCTURE FS_BASE_DEFENSE">
 					</Filter>
 				</DamageScalarDetails>						
 				<DamageScalarDetails Scalar= "200%" >
@@ -2511,14 +2509,13 @@ DAMAGE TYPES
 				DamageType="CANNON" >
                <SpecialObjectFilter
 					Rule="ANY"
-					Exclude="STRUCTURE"
+					Exclude="STRUCTURE FS_BASE_DEFENSE"
 					Include="HUSK IMMOBILE" >				
                </SpecialObjectFilter> 		
 				<DamageScalarDetails Scalar= "0%" >
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE">
-					</Filter>
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>					   
              </DamageNugget> 
 			<!-- As friendly-fire is disabled on the sonic wave, we use this for damaging targeted single allies -->
@@ -2529,7 +2526,7 @@ DAMAGE TYPES
                <SpecialObjectFilter
 					Rule="ANY"
 					Relationship="ALLIES NEUTRAL"
-					Include="VEHICLE INFANTRY STRUCTURE" >
+					Include="VEHICLE INFANTRY STRUCTURE FS_BASE_DEFENSE" >
                </SpecialObjectFilter> 			   
 				<DamageScalarDetails Scalar= "37.5%" >
 					<Filter
@@ -2540,9 +2537,8 @@ DAMAGE TYPES
 				</DamageScalarDetails>							
 				<DamageScalarDetails Scalar= "233%" >
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE">
-					</Filter>
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>				   
 				<DamageScalarDetails Scalar= "200%" >
 					<Filter
@@ -2637,9 +2633,9 @@ DAMAGE TYPES
 				</DamageScalarDetails>							
 				<DamageScalarDetails Scalar= "233%" >
 					<Filter
-						Rule="NONE"
+						Rule="ANY"
 						Relationship="ENEMIES"
-						Include="STRUCTURE">
+						Include="STRUCTURE FS_BASE_DEFENSE">
 					</Filter>
 				</DamageScalarDetails>				   
 				<DamageScalarDetails Scalar= "200%" >
@@ -2664,9 +2660,8 @@ DAMAGE TYPES
                </SpecialObjectFilter> 		
 				<DamageScalarDetails Scalar= "0%" >
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE">
-					</Filter>
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>					   
              </DamageNugget> 			 
 			<!-- 1500 more dmg because the wave no longer damages allies -->
@@ -2689,9 +2684,8 @@ DAMAGE TYPES
 				</DamageScalarDetails>							
 				<DamageScalarDetails Scalar= "233%" >
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE">
-					</Filter>
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>				   
 				<DamageScalarDetails Scalar= "200%" >
 					<Filter
@@ -2933,8 +2927,8 @@ DAMAGE TYPES
 				DeathType="BURNED">
 				<DamageScalarDetails Scalar= "100%">
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>
      			<!-- No damage to Allies except vs Husks -->
 				<DamageScalarDetails Scalar="0%">
@@ -3059,8 +3053,8 @@ DAMAGE TYPES
                 </DamageScalarDetails>				
 				<DamageScalarDetails Scalar= "150%">
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>
 			</DamageNugget>	
 			<ProjectileNugget
@@ -3101,8 +3095,8 @@ DAMAGE TYPES
 				DeathType="BURNED">			
 				<DamageScalarDetails Scalar= "150%">
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>				
 			</DamageNugget>	
 			<ProjectileNugget
@@ -3168,8 +3162,8 @@ DAMAGE TYPES
                 </DamageScalarDetails>						
 				<DamageScalarDetails Scalar= "150%">
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>
 			</DamageNugget>
 			
@@ -3219,8 +3213,8 @@ DAMAGE TYPES
 				DeathType="BURNED">						
 				<DamageScalarDetails Scalar= "150%">
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>				
 			</DamageNugget>
 			
@@ -4033,7 +4027,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 				
 				<!-- Bonus vs Scrin -->
-				<DamageScalarDetails Scalar= "150%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
@@ -4075,7 +4069,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 				
 				<!-- Bonus vs Scrin -->
-				<DamageScalarDetails Scalar= "150%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
@@ -4117,7 +4111,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 				
 				<!-- Bonus vs Scrin -->
-				<DamageScalarDetails Scalar= "150%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
@@ -4165,7 +4159,7 @@ DAMAGE TYPES
 						Include="TIBERIUM">
 					</Filter>
 				</DamageScalarDetails>								
-				<DamageScalarDetails Scalar= "2500%">
+				<DamageScalarDetails Scalar= "2666%">
 					<Filter
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
@@ -5220,7 +5214,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="0"/>
 			<DamageNugget
-				Damage="120.0"
+				Damage="125.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.4s"
 				DamageType="CANNON"
@@ -5233,8 +5227,8 @@ DAMAGE TYPES
 				</DamageScalarDetails>
 				<DamageScalarDetails Scalar= "40%">
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>				
 			</DamageNugget>
 		</Nuggets>
@@ -5244,7 +5238,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienMechapedeRazorDroneWeapon"
 		Name="AlienMechapedeRazorDroneWeapon"
-		AttackRange="272.0"
+		AttackRange="275.0"
 		FireSound="AudioEvent:ALI_RazorDrone_Weapon1Fire"
 		FireFX="FX_AlienBuzzerFire"
 		FireVeteranFX="FX_AlienBuzzerFireHeroic"
@@ -5266,7 +5260,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="0"/>
 			<DamageNugget
-				Damage="120.0"
+				Damage="125.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.8s"
 				DamageType="CANNON"
@@ -5279,8 +5273,8 @@ DAMAGE TYPES
 				</DamageScalarDetails>
 				<DamageScalarDetails Scalar= "40%">
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>	
 			</DamageNugget>
 		</Nuggets>
@@ -5346,8 +5340,8 @@ DAMAGE TYPES
 				
 				<DamageScalarDetails Scalar= "40%">
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>
 			</DamageNugget>
 		</Nuggets>
@@ -5479,8 +5473,8 @@ DAMAGE TYPES
 					Relationship="ENEMIES NEUTRAL" />			
 				<DamageScalarDetails Scalar= "150%">
 					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>
 			</DamageNugget>
 
@@ -5588,7 +5582,7 @@ DAMAGE TYPES
 		AcceptableAimDelta="5d"
 		>
 		<FiringDuration
-			MinSeconds="2.5s"
+			MinSeconds="2.4s"
 			MaxSeconds="2.5s" />
 		<Nuggets>
 			<ActivateLaserNugget
@@ -6031,7 +6025,7 @@ DAMAGE TYPES
 		AcceptableAimDelta="5d"		
 		>
 		<FiringDuration
-			MinSeconds="2.3s"
+			MinSeconds="2.2s"
 			MaxSeconds="2.3s" />
 		<Nuggets>
 			<ActivateLaserNugget
@@ -6268,7 +6262,7 @@ DAMAGE TYPES
 		AcceptableAimDelta="5d"		
 		>
 		<FiringDuration
-			MinSeconds="2.3s"
+			MinSeconds="2.2s"
 			MaxSeconds="2.3s" />
 		<Nuggets>
 			<ActivateLaserNugget
@@ -6280,14 +6274,7 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
-				<!-- Help vs turtles -->
-				<DamageScalarDetails Scalar= "100%">
-					<Filter
-						Rule="NONE" 
-						Include="STRUCTURE" 
-						Exclude="CIVILIAN_BUILDING">
-					</Filter>
-				</DamageScalarDetails>						
+				
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
@@ -6346,14 +6333,7 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
-				<!-- Help vs turtles -->
-				<DamageScalarDetails Scalar= "100%">
-					<Filter
-						Rule="NONE" 
-						Include="STRUCTURE" 
-						Exclude="CIVILIAN_BUILDING">
-					</Filter>
-				</DamageScalarDetails>						
+					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
@@ -6412,14 +6392,7 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
-				<!-- Help vs turtles -->
-				<DamageScalarDetails Scalar= "100%">
-					<Filter
-						Rule="NONE" 
-						Include="STRUCTURE" 
-						Exclude="CIVILIAN_BUILDING">
-					</Filter>
-				</DamageScalarDetails>						
+					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
@@ -6478,14 +6451,7 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
-				<!-- Help vs turtles -->
-				<DamageScalarDetails Scalar= "100%">
-					<Filter
-						Rule="NONE" 
-						Include="STRUCTURE" 
-						Exclude="CIVILIAN_BUILDING">
-					</Filter>
-				</DamageScalarDetails>						
+				
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
@@ -6609,9 +6575,9 @@ DAMAGE TYPES
 				
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
-						Rule="NONE"
+						Rule="ANY"
 						Exclude="CIVILIAN_BUILDING"
-						Include="STRUCTURE" />
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>								
 				<DamageScalarDetails Scalar= "100%">
 					<Filter
@@ -6684,9 +6650,9 @@ DAMAGE TYPES
 				
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
-						Rule="NONE"
+						Rule="ANY"
 						Exclude="CIVILIAN_BUILDING"
-						Include="STRUCTURE" />
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>								
 				<DamageScalarDetails Scalar= "100%">
 					<Filter
@@ -7075,8 +7041,8 @@ DAMAGE TYPES
 			MinSeconds="0.2s"
 			MaxSeconds="0.2s" />
 		<ClipReloadTime
-			MinSeconds="1.9s"
-			MaxSeconds="2.1s" />				
+			MinSeconds="1.7s"
+			MaxSeconds="1.9s" />				
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="AlienTibShardProjectile"
@@ -7116,9 +7082,9 @@ DAMAGE TYPES
 				
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
-						Rule="NONE"
+						Rule="ANY"
 						Exclude="CIVILIAN_BUILDING"
-						Include="STRUCTURE" />
+						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>								
 				<DamageScalarDetails Scalar= "100%">
 					<Filter
@@ -7504,11 +7470,10 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 						
-				<!-- Scalar vs heavy vehicles -->
 				<DamageScalarDetails Scalar= "90%">
 					<Filter 
 						Rule="ANY"			
-						Include="MADE_OF_METAL">          						
+						Include="HARVESTER">          						
 					</Filter>
 				</DamageScalarDetails>		
 				<DamageScalarDetails Scalar= "25%">
@@ -7604,11 +7569,10 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 			
-				<!-- Scalar vs heavy vehicles -->
 				<DamageScalarDetails Scalar= "90%">
 					<Filter 
 						Rule="ANY"			
-						Include="MADE_OF_METAL">          						
+						Include="HARVESTER">          						
 					</Filter>
 				</DamageScalarDetails>	
 				<DamageScalarDetails Scalar= "25%">
@@ -7942,6 +7906,11 @@ DAMAGE TYPES
 					Exclude="INFANTRY HORDE"
 					Relationship="ENEMIES NEUTRAL"
 				/>
+				<DamageScalarDetails Scalar="120%">
+					<Filter
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />
+				</DamageScalarDetails>				
 			</DamageNugget>
 			
 			<!-- Damage to allied husks -->
@@ -8337,7 +8306,7 @@ DAMAGE TYPES
 				AttributeModifierName="AttributeModifier_AOEMCMarker">
 				<SpecialObjectFilter
 					Rule="ANY"
-					Exclude="STRUCTURE"					
+					Exclude="STRUCTURE FS_BASE_DEFENSE"					
 					Include="MADE_OF_METAL" >
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>
@@ -8838,7 +8807,7 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DeathType="BURNED"
 				DamageFXType="ALIEN_ION">
-				<DamageScalarDetails Scalar= "25%">
+				<DamageScalarDetails Scalar= "20%">
 					<Filter Rule="NONE" Include="MADE_OF_WOOD">
 						<IncludeThing>AlienStormrider</IncludeThing>
 						<IncludeThing>AlienDevastatorWarship</IncludeThing>
@@ -8909,7 +8878,7 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DeathType="BURNED"
 				DamageFXType="ALIEN_ION">
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter
 						Rule="NONE"
 						Include="MADE_OF_WOOD">
@@ -10136,7 +10105,7 @@ DAMAGE TYPES
 					Include="VEHICLE AIRCRAFT"
 					RejectStatusBitFlags="AIRBORNE_TARGET" />
 			</AttributeModifierNugget>		
-			<!-- Slow vs Warships -->
+			<!-- Slow vs Warships
 			<AttributeModifierNugget
 				PartitionFilterTestType="SPHERE"
 				AttributeModifierName="AttributeModifier_RageSlow"
@@ -10145,6 +10114,7 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="TIBERIUM_BASED AIRCRAFT" />
 			</AttributeModifierNugget>				
+			-->
 
 			<!-- Friendly-Fire vs Infantry -->
 			<AttributeModifierNugget
@@ -10590,10 +10560,9 @@ DAMAGE TYPES
 					</Filter>			
 				</DamageScalarDetails>  	
 				<DamageScalarDetails Scalar= "125%" >
-					<Filter 
-						  Rule="NONE"
-						  Include="STRUCTURE">	
-					</Filter>			
+					<Filter
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />		
 				</DamageScalarDetails>  					
 			</DamageNugget>
 			<!--
@@ -10656,10 +10625,9 @@ DAMAGE TYPES
 					</Filter>			
 				</DamageScalarDetails>  
 				<DamageScalarDetails Scalar= "125%" >
-					<Filter 
-						  Rule="NONE"
-						  Include="STRUCTURE">	
-					</Filter>			
+					<Filter
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />		
 				</DamageScalarDetails>  					
 			</DamageNugget>
 			<!--
@@ -10893,7 +10861,7 @@ DAMAGE TYPES
 				DeathType="NORMAL">
 				<SpecialObjectFilter
 					Rule="ALL"
-					Exclude="STRUCTURE HUSK">
+					Exclude="STRUCTURE FS_BASE_DEFENSE HUSK">
 				</SpecialObjectFilter>
 			</DamageNugget>
 		</Nuggets>
@@ -11933,8 +11901,8 @@ DAMAGE TYPES
 		FireVeteranFX="FX_NODSpitfireFireHeroic"
 		NoVictimNeeded="false" >
 		<FiringDuration
-			MinSeconds="2.57s"
-			MaxSeconds="2.57s" />
+			MinSeconds="2.56s"
+			MaxSeconds="2.56s" />
 		<Nuggets>
 			<DamageNugget
 				Damage="520.0"
@@ -12097,32 +12065,6 @@ DAMAGE TYPES
 		</Nuggets>
 	</WeaponTemplate>
 	
-	<!--
-	<WeaponTemplate
-		id="NODBeamCannonLaserDebuff"
-		Name="NODBeamCannonLaserDebuff"
-		AttackRange="650"
-		WeaponSpeed="999999"
-		PreAttackFX="FX_NOD_BeamCannon_BeamWeaponPowerUpSwell"
-		FiringLoopSound="Multisound:NOD_ScorpionTank_BeamWeaponLoopMS"
-		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE"		
-		ClipSize="0">
-		<Nuggets>				
-			<ActivateLaserNugget
-				Lifetime="0.25s"
-				HitGroundFX="FX_NODSpitfireHit" >
-			</ActivateLaserNugget>			
-			<DamageNugget 
-				Damage="1000.0" 
-				Radius="0.0" 
-				DelayTimeSeconds="0.0s" 
-				DamageType="GUN" 
-				DamageFXType="NOD_MACHINEGUN"		
-				DeathType="NORMAL" />							
-		</Nuggets>
-	</WeaponTemplate>	
-	-->
-	
 	<WeaponTemplate
 		id="NODScorpionBuggyGatling"
 		Name="NODScorpionBuggyGatling" 
@@ -12142,10 +12084,10 @@ DAMAGE TYPES
 			MaxSeconds="0.1s" />
 		<ClipReloadTime
 			MinSeconds="0.3s"
-			MaxSeconds="0.4s" /> 
+			MaxSeconds="0.3s" /> 
 		<Nuggets>
 			<DamageNugget 
-				Damage="32.0" 
+				Damage="30.0" 
 				Radius="0.0" 
 				DelayTimeSeconds="0.0s" 
 				DamageType="GUN" 
@@ -12594,7 +12536,7 @@ DAMAGE TYPES
 		AttackRange="450"
 		AcceptableAimDelta="180d"
 		WeaponSpeed="325"
-		FireSound="0x844D7B9F:0xC3ED2AE1"
+		FireSound="AudioEvent:NOD_RocketBunkerHub_RocketLaunch"
 		FireFX="FX_NODMilitantMissileFire"
 		ClipSize="3"
 		ForbiddenFiringObjectStatus="WEAPON_UPGRADED_01"
@@ -12651,7 +12593,7 @@ DAMAGE TYPES
 		WeaponSpeed="325"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="180d"
-		FireSound="NOD_RocketBunkerHub_RocketLaunch"
+		FireSound="AudioEvent:NOD_RocketBunkerHub_RocketLaunch"
 		FireFX="FX_TibCoreMissileFire"
 		ClipSize="3"
 		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
@@ -13023,8 +12965,8 @@ DAMAGE TYPES
 			MinSeconds="3.0s"
 			MaxSeconds="3.0s" />
 		<ClipReloadTime
-			MinSeconds="4.5s"
-			MaxSeconds="4.5s" />
+			MinSeconds="4.0s"
+			MaxSeconds="4.0s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="NODVertigoBombProjectile"
@@ -13502,7 +13444,7 @@ DAMAGE TYPES
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS SELF">
 		<Nuggets>
 			<ParalyzeNugget
-				Radius="60.0"
+				Radius="75.0"
 				DurationSeconds="5s"
 				ParalyzeType="EMP"
 				ParalyzeFX="FX_NODBuggyEmpHit">
@@ -13515,7 +13457,7 @@ DAMAGE TYPES
 			
 			<!-- Affects Adaptive Units + Avatars -->
 			<AttributeModifierNugget
-				Radius="48.0"
+				Radius="60.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Enlightened"
 				PartitionFilterTestType="CIRCLE" >
 				<SpecialObjectFilter
@@ -13572,7 +13514,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienAnnihilatorEMPCannon"
 		Name="AlienAnnihilatorEMPCannon"
-		AttackRange="125.0"
+		AttackRange="135.0"
 		WeaponSpeed="500.0"
 		MinTargetPitch="-15d"
 		MaxTargetPitch="15d"
@@ -14167,13 +14109,8 @@ DAMAGE TYPES
 					Exclude="VALID_TARGET_FOR_C4" />
 				<DamageScalarDetails Scalar= "500%">
 					<Filter
-						Rule="NONE"
-						Include="VEHICLE" />
-				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "500%">
-					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="VEHICLE STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>
 				<DamageScalarDetails Scalar= "50%" >
 					<Filter
@@ -14227,13 +14164,8 @@ DAMAGE TYPES
 				DeathType="NORMAL" >
 				<DamageScalarDetails Scalar= "500%">
 					<Filter
-						Rule="NONE"
-						Include="VEHICLE" />
-				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "500%">
-					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="VEHICLE STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>		
 				<DamageScalarDetails Scalar= "50%" >
 					<Filter
@@ -14344,13 +14276,8 @@ DAMAGE TYPES
 					Exclude="VALID_TARGET_FOR_C4" />
 				<DamageScalarDetails Scalar= "500%">
 					<Filter
-						Rule="NONE"
-						Include="VEHICLE" />
-				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "500%">
-					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="VEHICLE STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>		
 				<DamageScalarDetails Scalar= "50%" >
 					<Filter
@@ -14366,7 +14293,7 @@ DAMAGE TYPES
 				DurationSeconds="5.0s">
 				<SpecialObjectFilter
 					Rule="ALL"
-					Exclude="STRUCTURE VALID_TARGET_FOR_C4" />
+					Exclude="STRUCTURE FS_BASE_DEFENSE VALID_TARGET_FOR_C4" />
 			</SuppressionNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -14402,16 +14329,11 @@ DAMAGE TYPES
 				Radius="0.0"
 				DamageType="SNIPER"
 				DamageFXType="NOD_LASER"
-				DeathType="NORMAL">
+				DeathType="NORMAL">			
 				<DamageScalarDetails Scalar= "500%">
 					<Filter
-						Rule="NONE"
-						Include="VEHICLE" />
-				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "500%">
-					<Filter
-						Rule="NONE"
-						Include="STRUCTURE" />
+						Rule="ANY"
+						Include="VEHICLE STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>	
 				<DamageScalarDetails Scalar= "50%" >
 					<Filter
@@ -14914,13 +14836,7 @@ DAMAGE TYPES
 					  Include="VEHICLE">	
 				</Filter>
 				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
-			</DamageScalarDetails>  	
-			<DamageScalarDetails Scalar= "100%" >
-				<Filter 
-					  Rule="ANY"
-					  Include="METAUNIT MADE_OF_METAL">	
-				</Filter>						
-			</DamageScalarDetails>					
+			</DamageScalarDetails>  					
 		</DamageNugget>
 
 		<AttributeModifierNugget
@@ -14956,13 +14872,7 @@ DAMAGE TYPES
 						  Include="VEHICLE">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
-				</DamageScalarDetails>		
-				<DamageScalarDetails Scalar= "100%" >
-					<Filter 
-						  Rule="ANY"
-						  Include="METAUNIT MADE_OF_METAL">	
-					</Filter>
-				</DamageScalarDetails>					
+				</DamageScalarDetails>						
 			</DamageNugget>
 							
 			<AttributeModifierNugget
@@ -15738,31 +15648,9 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					Relationship="SAME_PLAYER"
-					Include="STRUCTURE"
+					Include="STRUCTURE FS_BASE_DEFENSE"
 					Exclude="UNATTACKABLE"/>
 			</ParalyzeNugget>
-			<!--
-			<ParalyzeNugget
-				RemoveParalyzeType="USER_PARALYZE"
-				Radius="50000"
-				DurationSeconds="5s">
-				<SpecialObjectFilter
-					Rule="ANY"
-					Relationship="SAME_PLAYER"
-					Include="VEHICLE"
-					Exclude="UNATTACKABLE"/>
-			</ParalyzeNugget>				
-			<AttributeModifierNugget
-				PartitionFilterTestType="SPHERE"
-				AttributeModifierName="AttributeModifier_CountermeasuresStasisInhibitor"
-				Radius="50000" >
-				<SpecialObjectFilter
-					Rule="ANY" 
-					Relationship="SAME_PLAYER"					
-					Include="VEHICLE" >				
-				</SpecialObjectFilter>
-			</AttributeModifierNugget>		
-			-->
 		</Nuggets>
 	</WeaponTemplate>	
 	

@@ -102,7 +102,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="SHIELDBODY_ENABLED" />					
 		<LocomotorSet
-			Speed="60"
+			Speed="55"
 			Condition="NORMAL"
 			Locomotor="AlienAnnihilatorTripodLocomotor" />
 		<SkirmishAIInformation
@@ -1742,7 +1742,7 @@
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="300" />
+				DefectionFrameCount="225" />
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotHardpoint

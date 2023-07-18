@@ -15,7 +15,7 @@
 		id="Unit_Elite"
 		Category="LEVEL" >
 		<Modifier Type="DAMAGE_MULT" Value="125%"/>
-		<Modifier Type="HEALTH_MULT" Value="150%"/>
+		<Modifier Type="HEALTH_MULT" Value="150%"/>	
 	</AttributeModifier>
 	
 	<AttributeModifier
@@ -64,7 +64,7 @@
 	<AttributeModifier
 		id="Modifier_NODDozerBlades1"
 		Category="NONE">
-		<Modifier Type="ARMOR" Value="80%"/>
+		<Modifier Type="ARMOR" Value="80.0%"/>
 		<!-- 100% means add 1, 200% means add 2 (this is done in code). -->
 		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>
 	</AttributeModifier>
@@ -260,13 +260,15 @@
 		id="AttributeModifier_TibChargeNoAttack"
 		Category="NONE"
 		ObjectStatusToSet="WEAPON_UPGRADED_03"		
-		Duration="2.33s">
+		ModelConditionsSet="USER_3"
+		Duration="2.25s">
 	</AttributeModifier>	
 	
 	<AttributeModifier
 		id="AttributeModifier_TibChargeNoAttack1"
 		Category="NONE"
 		ObjectStatusToSet="WEAPON_UPGRADED_03"		
+		ModelConditionsSet="USER_3"
 		Duration="1.4s">
 	</AttributeModifier>		
 	
@@ -377,7 +379,7 @@
 	<AttributeModifier
 		id="AttributeModifier_TravelerEngines"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="125%"/>
+		<Modifier Type="SPEED" Value="120%"/>
 	</AttributeModifier>
 	<AttributeModifier
 		id="AttributeModifier_TravelerEnginesLargeShips"
@@ -519,6 +521,14 @@
 		<Modifier Type="CRUSHER_LEVEL" Value="0%"/> <!--
 		<Modifier Type="CRUSHABLE_LEVEL" Value="100%"/> -->
 	</AttributeModifier>		
+
+	<AttributeModifier
+		id="AttributeModifier_GarrisonFix"
+		Duration="1s">
+		<Modifier
+			Type="CRUSHABLE_LEVEL"
+			Value="400%" />
+	</AttributeModifier>
 	
 	<AttributeModifier
 		id="Modifier_IonStorm"

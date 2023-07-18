@@ -144,7 +144,7 @@
 	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="VoiceRageGenerator" -->
 	<SpecialPowerTemplate
 		id="NodRageGenerator"
-		ReloadTime="60s"
+		ReloadTime="40s"
 		TargetType="NONE"
 		PreventConditions="TEMPORARILY_DEFECTED"		
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x76D9C092">
@@ -230,6 +230,21 @@
 			Rule="ANY"
 			Include="STRUCTURE" />
 	</SpecialPowerTemplate>		
+	
+	<SpecialPowerTemplate
+		id="SpecialPowerCallSupportHunterKillerTeam"
+		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
+		ForbiddenObjectRange="130"
+		ReloadTime="200s"
+		RadiusCursorRadius="130"
+		TargetType="LOCATION"
+		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+		Money="-3500"
+		InitiateAtLocationSound="AudioEvent:GDI_Ox_VoiceReinforcements">
+		<ForbiddenObjectFilter
+			Rule="ANY"
+			Include="STRUCTURE" />
+	</SpecialPowerTemplate>	
 
 	<!-- VoiceAttackEMPGrenades -->
 	<SpecialPowerTemplate
@@ -596,7 +611,7 @@
 	<SpecialPowerTemplate
       id="SpecialPowerCallSupportZOCOMAirborne"
       Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-      ReloadTime="50s"
+      ReloadTime="45s"
       ForbiddenObjectRange="110"
       RadiusCursorRadius="110"
       TargetType="LOCATION"
@@ -611,7 +626,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerCallSupportGDIAirborne"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-		ReloadTime="50s"
+		ReloadTime="45s"
 		ForbiddenObjectRange="110"
 		RadiusCursorRadius="110"
 		TargetType="LOCATION"
@@ -626,7 +641,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerCallSupportBloodhound"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-		ReloadTime="160s"
+		ReloadTime="150s"
 		ForbiddenObjectRange="140"
 		RadiusCursorRadius="140"
 		TargetType="LOCATION"
@@ -644,7 +659,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerCallSupportZOCOMBloodhound"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-		ReloadTime="160s"
+		ReloadTime="150s"
 		ForbiddenObjectRange="140"
 		RadiusCursorRadius="140"
 		TargetType="LOCATION"
@@ -662,7 +677,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerCallSupportSTBloodhound"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-		ReloadTime="160s"
+		ReloadTime="150s"
 		ForbiddenObjectRange="140"
 		RadiusCursorRadius="140"
 		TargetType="LOCATION"
@@ -789,7 +804,7 @@
 		id="SpecialPower_AlienShockPods"
 		TargetType="LOCATION"
 		InitiateAtLocationSound="AudioEvent:ALI_BuzzerSwarm"
-		ReloadTime="90s"
+		ReloadTime="60s"
 		Flags="IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS NOT_CLIFF_CELL SHARED_SYNC"
 		Money="-2500"
 		RadiusCursorRadius="60"
@@ -875,7 +890,7 @@
 		TargetType="LOCATION"
 		InitiateAtLocationSound="AudioEvent:ALI_StasisShield_Start"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		RadiusCursorRadius="120"
+		RadiusCursorRadius="150"
 		Money="-2000">
 		<!--		<GameDependency>
 			<RequiredObject>AlienStatisChamber</RequiredObject>
@@ -1098,7 +1113,7 @@
 		TargetType="LOCATION"
 		RadiusCursorRadius="55"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		MaxCastRange="9999999"
+		MaxCastRange="9999997"
 		Flags="NEEDS_OBJECT_FILTER LIMIT_DISTANCE IGNORE_SELF_IN_NEEDED_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0xCA84DAC5"
 		WaypointModeTerminal="false"
@@ -1150,12 +1165,9 @@
 		<ObjectFilter
 			Rule="ANY"
 			Relationship="ENEMIES NEUTRAL"
+			RejectStatusBitFlags="IMMOBILE"		
 			Include="VEHICLE INFANTRY"
 			Exclude="AIRCRAFT METAUNIT STRUCTURE HUSK">
-			<!--
-			<IncludeThing>GDIBattleBase</IncludeThing>
-			<IncludeThing>SteelTalonsBattleBase</IncludeThing>
-			<IncludeThing>ZOCOMBattleBase</IncludeThing> -->
 			<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
 			<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
 			<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
@@ -1178,7 +1190,7 @@
 			Relationship="ENEMIES NEUTRAL"
 			RejectStatusBitFlags="IMMOBILE"			
 			Include="VEHICLE INFANTRY"
-			Exclude="AIRCRAFT METAUNIT STRUCTURE HUSK">
+			Exclude="AIRCRAFT METAUNIT STRUCTURE HUSK HEALED_BY_TIBERIUM">
 			<ExcludeThing>SubwayNode</ExcludeThing>
 			<ExcludeThing>AlienMastermind</ExcludeThing>
 			<ExcludeThing>GDICommando</ExcludeThing>
@@ -1192,23 +1204,8 @@
 			<ExcludeThing>BlackHandCommando</ExcludeThing>
 			<ExcludeThing>MarkedOfKaneCommando</ExcludeThing>
 			<ExcludeThing>ZOCOMCommando</ExcludeThing>
-
-			<IncludeThing>AlienMillipedeHead</IncludeThing> 	
-
-			<!-- For Weak MindControl -->			
-			<!--
-			<ExcludeThing>AlienGunwalker</ExcludeThing>			
-			<ExcludeThing>Traveler59Gunwalker</ExcludeThing>			
-			<ExcludeThing>Reaper17Shardwalker</ExcludeThing> -->			
-			<ExcludeThing>AlienStalker</ExcludeThing>			
-			<ExcludeThing>Traveler59Stalker</ExcludeThing>			
-			<ExcludeThing>Reaper17Stalker</ExcludeThing>				
-			<ExcludeThing>AlienStalkerSquad</ExcludeThing>			
-			<ExcludeThing>Traveler59StalkerSquad</ExcludeThing>			
-			<ExcludeThing>Reaper17StalkerSquad</ExcludeThing>	
-			<ExcludeThing>GDIBattleBase</ExcludeThing>
-			<ExcludeThing>SteelTalonsBattleBase</ExcludeThing>
-			<ExcludeThing>ZOCOMBattleBase</ExcludeThing>				
+			
+			<ExcludeThing>AlienMillipedeHead</ExcludeThing> 
 		</ObjectFilter>
 	</SpecialPowerTemplate>
 	
@@ -1223,23 +1220,12 @@
 		PreventConditions="AIRBORNE_TARGET IGNORE_AI_COMMAND">
 		<ObjectFilter
 			Rule="ANY"		
+			Include="HEALED_BY_TIBERIUM"
 			Relationship="ENEMIES NEUTRAL">
-			<!--
-			<IncludeThing>AlienGunwalker</IncludeThing>			
-			<IncludeThing>Traveler59Gunwalker</IncludeThing>			
-			<IncludeThing>Reaper17Shardwalker</IncludeThing>	-->		
-			<IncludeThing>AlienStalker</IncludeThing>			
-			<IncludeThing>Traveler59Stalker</IncludeThing>			
-			<IncludeThing>Reaper17Stalker</IncludeThing>				
-			<IncludeThing>AlienStalkerSquad</IncludeThing>			
-			<IncludeThing>Traveler59StalkerSquad</IncludeThing>			
-			<IncludeThing>Reaper17StalkerSquad</IncludeThing>	
-			<!--
-			<IncludeThing>GDIBattleBase</IncludeThing>
-			<IncludeThing>SteelTalonsBattleBase</IncludeThing>
-			<IncludeThing>ZOCOMBattleBase</IncludeThing>	-->						
+			<IncludeThing>AlienMillipedeHead</IncludeThing> 				
 		</ObjectFilter>
 	</SpecialPowerTemplate>	
+	
 
 	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateManipulateObject" -->
 	<SpecialPowerTemplate
@@ -1404,13 +1390,8 @@
 			<ExcludeThing>Traveler59BlinkMastermind</ExcludeThing>
 			<ExcludeThing>Traveler59Cultist</ExcludeThing>
 			<ExcludeThing>Traveler59CultistSquad</ExcludeThing>
-			<ExcludeThing>ABTower</ExcludeThing>					
-			<!--
-			<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
-			<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
-			<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
-			<ExcludeThing>AlienMillipedeBody</ExcludeThing>
-			-->			
+			<ExcludeThing>ABTower</ExcludeThing>	
+						
 			<!-- removed base defence references, added FS_BASE_DEFENSE to exclude instead -->
 			<IncludeThing>GDIBattleBase</IncludeThing>
 			<IncludeThing>SteelTalonsBattleBase</IncludeThing>
@@ -1448,12 +1429,7 @@
 			<ExcludeThing>Traveler59Cultist</ExcludeThing>
 			<ExcludeThing>Traveler59CultistSquad</ExcludeThing>
 			<ExcludeThing>ABTower</ExcludeThing>					
-			<!--
-			<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
-			<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
-			<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
-			<ExcludeThing>AlienMillipedeBody</ExcludeThing>
-			-->			
+
 			<!-- removed base defence references, added FS_BASE_DEFENSE to exclude instead -->
 			<IncludeThing>GDIBattleBase</IncludeThing>
 			<IncludeThing>SteelTalonsBattleBase</IncludeThing>
@@ -1491,12 +1467,7 @@
 			<ExcludeThing>Traveler59Cultist</ExcludeThing>
 			<ExcludeThing>Traveler59CultistSquad</ExcludeThing>
 			<ExcludeThing>ABTower</ExcludeThing>					
-			<!--
-			<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
-			<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
-			<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
-			<ExcludeThing>AlienMillipedeBody</ExcludeThing>
-			-->			
+
 			<!-- removed base defence references, added FS_BASE_DEFENSE to exclude instead -->
 			<IncludeThing>GDIBattleBase</IncludeThing>
 			<IncludeThing>SteelTalonsBattleBase</IncludeThing>

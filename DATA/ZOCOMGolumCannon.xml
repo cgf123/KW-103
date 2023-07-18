@@ -746,7 +746,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<SlowDeath
 				id="73542D4A"
 				SinkRate="4"
@@ -840,33 +840,6 @@
 				CanDetectWhileGarrisoned="False"
 				CanDetectWhileContained="False"
 				UseMetaAOI="False" />		
-			<!--
-			<StealthDetectorUpdate
-				id="70ED959D"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				DetectionRate="0.4s"
-				DetectionRange="400"
-				PingSound=""
-				LoudPingSound=""
-				IRBeaconParticleSys=""
-				IRParticleSys=""
-				IRBrightParticleSys=""
-				IRGridParticleSys=""
-				IRParticleSysBone=""
-				ExtraRequiredKindOf=""
-				ExtraForbiddenKindOf=""
-				RequiredUpgrade=""
-				InitiallyDisabled="True"
-				CanDetectWhileGarrisoned="False"
-				CanDetectWhileContained="False"
-				UseMetaAOI="False" >
-				<TriggeredBy>Upgrade_ZoneRaiderScannerPack</TriggeredBy>
-			</StealthDetectorUpdate>
-			-->
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotTurret

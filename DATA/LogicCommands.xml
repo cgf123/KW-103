@@ -773,8 +773,8 @@
 	
 	<LogicCommandSet
 	id="Traveler59BlinkMastermindCommandSet">
-		<Cmd>Command_Traveler59ProdigySelectObjectsForTeleport</Cmd>
-		<Cmd>Command_Traveler59ProdigyTeleportObjects</Cmd>
+		<Cmd>Command_AlienMastermindSelectObjectsForTeleport</Cmd>
+		<Cmd>Command_AlienMastermindTeleportObjects</Cmd>
 		<Cmd>Command_UseTraveler59BlinkPack</Cmd>
 		<Cmd>Command_AlienProdigyManipulatorDevice</Cmd>
 		<Cmd>Command_AlienBlinkMastermindAOEMindControl</Cmd>

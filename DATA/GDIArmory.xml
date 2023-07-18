@@ -490,7 +490,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<ModelConditionUpgrade
 				id="931C692F"
 				RequiresAllTriggers="False"

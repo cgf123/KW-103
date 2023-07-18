@@ -530,7 +530,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<FXListBehavior
 				id="C74C39D8">
 				<DieMuxData
@@ -1356,7 +1356,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<FXListBehavior
 				id="C74C39D8">
 				<DieMuxData

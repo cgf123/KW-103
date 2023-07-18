@@ -205,7 +205,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="0x3473AFD2"
-				DefectionFrameCount="100" />
+				DefectionFrameCount="75" />
 			<ProductionUpdate
 				id="0x5FD28433"
 				NumDoorAnimations="1"
