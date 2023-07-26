@@ -1853,14 +1853,38 @@
 					<Model Name="FXInvisBone" />
 					<ShadowInfo
 						Type="ADDITIVE_DECAL"
-						SizeX="400"
-						SizeY="400"
+						SizeX="300"
+						SizeY="300"
 						OverrideLODVisibility="true"
 						MaxHeight="200"
 						UseHouseColor="true"
 						Texture="Decal_LeadershipBuff" 
 						LocalPlayerOnly="true"
 					/>
+				</ModelConditionState>
+			</ScriptedModelDraw>	
+
+			<ScriptedModelDraw
+				id="0x88A89919"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				AttachToBoneInAnotherModule="ROOTTransform"
+				OkToChangeModelColor="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT" />
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_46">
+					<Model
+						Name="W3DContainer:FXINVISBONE" />
+					<ShadowInfo
+						Type="ADDITIVE_DECAL"
+						Texture="AUDronShipDecalIdle"
+						SizeX="100"
+						SizeY="75"
+						MaxHeight="200"
+						OverrideLODVisibility="True"
+						UseHouseColor="True" />
 				</ModelConditionState>
 			</ScriptedModelDraw>			
 
@@ -4846,7 +4870,7 @@
 				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
 			</ModelConditionUpgrade>					
 			
-			<!-- Split Aura -->
+			<!-- Flame Aura -->
 			<AttributeModifierAuraUpdate
 				id="ModuleTag_AttributeModifier_FlamerBuff" 
 				InitiallyActive="false"
@@ -4860,7 +4884,7 @@
 					Relationship="ALLIES"
 					Alignment="NONE"
 					Include="VEHICLE"
-					Exclude=""
+					Exclude="AIRCRAFT"
 					StatusBitFlags=""
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
@@ -4869,28 +4893,6 @@
 				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
 			</AttributeModifierAuraUpdate>					
 
-			<AttributeModifierAuraUpdate
-				id="ModuleTag_AttributeModifier_FlamerBuffFX" 
-				InitiallyActive="false"
-				AttributeModifierName="AttributeModifier_BlackHandLeadership"
-				Range="150"
-				RefreshDelay="1.0s"
-				AllowSelf="true"
-				AffectContainedOnly="false">
-				<ObjectFilter
-					Rule="NONE"
-					Relationship="ALLIES"
-					Alignment="NONE"
-					Include="VEHICLE"
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" >				
-				</ObjectFilter>
-				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
-			</AttributeModifierAuraUpdate>				
-			
 			<ModelConditionUpgrade
 				id="081018FB"
 				RequiresAllTriggers="False"
@@ -7046,7 +7048,31 @@
 						LocalPlayerOnly="true"
 					/>
 				</ModelConditionState>
-			</ScriptedModelDraw>				
+			</ScriptedModelDraw>		
+
+			<ScriptedModelDraw
+				id="0x88A89919"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				AttachToBoneInAnotherModule="ROOTTransform"
+				OkToChangeModelColor="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT" />
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_46">
+					<Model
+						Name="W3DContainer:FXINVISBONE" />
+					<ShadowInfo
+						Type="ADDITIVE_DECAL"
+						Texture="AUDronShipDecalIdle"
+						SizeX="100"
+						SizeY="75"
+						MaxHeight="200"
+						OverrideLODVisibility="True"
+						UseHouseColor="True" />
+				</ModelConditionState>
+			</ScriptedModelDraw>					
 
 			<!--   -->
 						
@@ -10030,12 +10056,12 @@
 				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
 			</ModelConditionUpgrade>					
 			
-			<!-- Split Aura -->
+			<!-- Flame Aura -->
 			<AttributeModifierAuraUpdate
 				id="ModuleTag_AttributeModifier_FlamerBuff" 
 				InitiallyActive="false"
 				AttributeModifierName="AttributeModifier_AvatarFlamerBuff"
-				Range="200"
+				Range="150"
 				RefreshDelay="1.0s"
 				AllowSelf="true"
 				AffectContainedOnly="false">
@@ -10044,7 +10070,7 @@
 					Relationship="ALLIES"
 					Alignment="NONE"
 					Include="VEHICLE"
-					Exclude=""
+					Exclude="AIRCRAFT"
 					StatusBitFlags=""
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
@@ -10052,30 +10078,7 @@
 				</ObjectFilter>
 				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
 			</AttributeModifierAuraUpdate>			
-
-			<AttributeModifierAuraUpdate
-				id="ModuleTag_AttributeModifier_FlamerBuffFX" 
-				InitiallyActive="false"
-				AttributeModifierName="AttributeModifier_BlackHandLeadership"
-				Range="200"
-				RefreshDelay="1.0s"
-				AllowSelf="true"
-				AffectContainedOnly="false">
-				<ObjectFilter
-					Rule="NONE"
-					Relationship="ALLIES"
-					Alignment="NONE"
-					Include="VEHICLE"
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" >				
-				</ObjectFilter>
-				<TriggeredBy>Upgrade_AvatarFlamer</TriggeredBy>
-			</AttributeModifierAuraUpdate>					
 			
-
 			<ModelConditionUpgrade
 				id="081018FB"
 				RequiresAllTriggers="False"

@@ -349,6 +349,10 @@
 	<Include type="all" source="NODTechCenter.xml" />					
 	<Include type="all" source="MOKTechCenter.xml" />		
 
+	<Include type="all" source="NODWarfac.xml" />	
+	<Include type="all" source="BHWarfac.xml" />		
+	<Include type="all" source="MOKWarfac.xml" />	
+
 	<Include type="all" source="MOKDisruptionTower.xml" />		
 
 	<Include type="all" source="NODBeamTarget.xml" />			
@@ -605,6 +609,7 @@
 	<Include type="all" source="AlienLightningSpike.xml" />			
 
 	<Include type="all" source="AlienBuzzers.xml" />			
+	<Include type="all" source="AlienBuzzers_Slaved.xml" />			
 
 	<Include type="all" source="AlienBuzzerHive.xml" />			
 	<Include type="all" source="R17BuzzerHive.xml" />			

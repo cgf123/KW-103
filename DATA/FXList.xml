@@ -3,7 +3,7 @@
 	<Tags />
 	<Includes>
 	</Includes>
-	
+
 	<!-- Scrin aura buff -->
 	<FXList id="FX_ScrinBuff">
 		<NuggetList>

@@ -905,7 +905,7 @@
 		TargetType="LOCATION"
 		InitiateAtLocationSound="AudioEvent:ALI_TemporalWormhole_Start"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		RadiusCursorRadius="150"
+		RadiusCursorRadius="175"
 		Money="-1200">
 	</SpecialPowerTemplate>	
 	

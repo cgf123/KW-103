@@ -1367,6 +1367,25 @@
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_Reaper17MinorForcefieldGenerator</TriggeredBy>
 			</AudioLoopUpgrade>
+			
+
+			<!--
+			<GrantUpgradeCreate
+				id="ModuleTag_GrantDefault" 
+				UpgradeToGrant="Upgrade_ObjectDefault"  />					
+			<StatusBitsUpgrade
+				id="A7D958E9"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="DOES_CONTAIN_TIBERIUM"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_ObjectDefault</TriggeredBy>
+			</StatusBitsUpgrade>	
+			-->
 		</Behaviors>
 		<AI>
 			<AIUpdate

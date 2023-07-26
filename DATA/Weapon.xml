@@ -1359,7 +1359,7 @@ DAMAGE TYPES
 						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>  					
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -1448,7 +1448,7 @@ DAMAGE TYPES
 						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>  					
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -1537,7 +1537,7 @@ DAMAGE TYPES
 						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>  					
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -1571,7 +1571,7 @@ DAMAGE TYPES
 						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>  					
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -2201,7 +2201,7 @@ DAMAGE TYPES
  		>
 		<Nuggets>
 			<DamageNugget
-				Damage="360.0"
+				Damage="375.0"
 				DamageTaperOff="100"
 				Radius="35.0"
 				DamageType="GRENADE"
@@ -3066,6 +3066,27 @@ DAMAGE TYPES
 				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
+	
+	<!-- This warhead is needed to give garrison-clearing a dmg delay; but for some reason purifying flame units dont have it -->
+	<WeaponTemplate
+		id="NODFlameTankFlamerWarhead"
+		Name="NODFlameTankFlamerWarhead"
+		HitStoredTarget="true"
+		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		<Nuggets>
+			<DamageContainedNugget
+				MaxUnitsToDamage="100"
+				WindowBlastFX="FX_ClearGarrison"
+				Damage="999999"
+				DelayTimeSeconds="0.5s"
+				DamageType="FLAME"
+				DeathType="BURNED">
+				<DamageObjectFilter
+					Rule="NONE"
+					Include="INFANTRY" />
+			</DamageContainedNugget>
+		</Nuggets>
+	</WeaponTemplate>		
 
 	<WeaponTemplate
 		id="NODFlameTankFlamer_Raged"
@@ -3111,10 +3132,10 @@ DAMAGE TYPES
 
 	<!-- This warhead is needed to give garrison-clearing a dmg delay; but for some reason purifying flame units dont have it -->
 	<WeaponTemplate
-		id="NODFlameTankFlamerWarhead"
-		Name="NODFlameTankFlamerWarhead"
+		id="NODFlameTankFlamerWarhead_Raged"
+		Name="NODFlameTankFlamerWarhead_Raged"
 		HitStoredTarget="true"
-		RadiusDamageAffects="ENEMIES NEUTRALS" >
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS" >
 		<Nuggets>
 			<DamageContainedNugget
 				MaxUnitsToDamage="100"
@@ -3128,7 +3149,7 @@ DAMAGE TYPES
 					Include="INFANTRY" />
 			</DamageContainedNugget>
 		</Nuggets>
-	</WeaponTemplate>	
+	</WeaponTemplate>		
 	
 	<WeaponTemplate
 			id="NODBlackHandFlameTankUpgradedFlamer"
@@ -3896,7 +3917,7 @@ DAMAGE TYPES
 					  DeathType="DETONATED"
 					  CylinderAOE="true"
 					  VictimShroudRevealer="ArtilleryShroudRevealer">
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -3956,7 +3977,7 @@ DAMAGE TYPES
 				  DeathType="NORMAL"
 				  CylinderAOE="true"
 				  VictimShroudRevealer="ArtilleryShroudRevealer">
-			<DamageScalarDetails Scalar= "125%" >
+			<DamageScalarDetails Scalar= "115%" >
 				<Filter 
 					  Rule="NONE"
 					  Include="VEHICLE">	
@@ -4260,7 +4281,7 @@ DAMAGE TYPES
 				DelayTimeSeconds="0.5s"
 				DamageType="FLAME"
 				DeathType="BURNED" >
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -5260,7 +5281,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="0"/>
 			<DamageNugget
-				Damage="125.0"
+				Damage="120.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.8s"
 				DamageType="CANNON"
@@ -6799,7 +6820,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>			
 
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -8073,7 +8094,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>					
 
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -8166,7 +8187,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>					
 
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -8253,7 +8274,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 				
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -8598,7 +8619,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "43.75%" >
+				<DamageScalarDetails Scalar= "40%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -9768,7 +9789,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODMilitantMinigun"
 		Name="NODMilitantMinigun" 
-		AttackRange="250.0" 
+		AttackRange="260.0" 
 		WeaponSpeed="999999.0"
 		FireSoundPerClip="AudioEvent:NOD_RifleMilitant_GunFire_v2"
 		FireFX="FX_NODRifleManFire"
@@ -9805,7 +9826,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODMilitantSquadRangeFinder"
 		Name="NODMilitantSquadRangeFinder"
-		AttackRange="180" 			  
+		AttackRange="190" 			  
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -10444,7 +10465,7 @@ DAMAGE TYPES
 					</Filter>			
 				</DamageScalarDetails>  
 				
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -10499,7 +10520,7 @@ DAMAGE TYPES
 					</Filter>			
 				</DamageScalarDetails>  				
 
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -12997,7 +13018,7 @@ DAMAGE TYPES
 				Radius="40.0"
 				DamageType="CANNON"
 				DeathType="NORMAL">
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13113,7 +13134,7 @@ DAMAGE TYPES
 				DamageType="GRENADE"
 				DeathType="NORMAL" >
 
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13156,7 +13177,7 @@ DAMAGE TYPES
 				DamageType="GRENADE"
 				DeathType="NORMAL" >
 
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13668,7 +13689,7 @@ DAMAGE TYPES
 				DamageType="GRENADE"
 				DamageFXType="GDI_SHOCKWAVE"
 				DeathType="NORMAL" >
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13812,7 +13833,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT" />
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13860,7 +13881,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT" />
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13910,7 +13931,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT" />
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13958,7 +13979,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT" />
 				</DamageScalarDetails>			
 
-				<DamageScalarDetails Scalar= "125%" >
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	

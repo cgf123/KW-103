@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="AlienAnnihilatorTripod"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE CAN_SHOOT_OVER_WALLS TIBERIUM_BASED VALID_TARGET_FOR_C4 CAN_BE_FAVORITE_UNIT MADE_OF_METAL"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE CAN_SHOOT_OVER_WALLS VALID_TARGET_FOR_C4 CAN_BE_FAVORITE_UNIT MADE_OF_METAL"
 		Description="Desc:AlienAnnihilatorTripod"
 		TypeDescription="Type:AlienAnnihilatorTripod"
 		RadarPriority="UNIT"
@@ -2091,6 +2091,19 @@
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_AlienReactorForcefieldGenerator</TriggeredBy>
 			</AudioLoopUpgrade>
+						
+			<StatusBitsUpgrade
+				id="A7D958E9"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="DOES_CONTAIN_TIBERIUM"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_AlienReactorForcefieldGenerator</TriggeredBy>
+			</StatusBitsUpgrade>			
 		</Behaviors>
 		<AI>
 			<AIUpdate

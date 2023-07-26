@@ -30,14 +30,6 @@
 		File="Fx\FXBlueLaser.dds" />
 
 	<!-- PACKED IMAGES -->
-	<Texture id="Portrait_NBPort" File="NBPort\Portrait_NBPort.tga" OutputFormat="A8R8G8B8" GenerateMipMaps="false" AllowAutomaticResize="false"/>
-	<PackedTextureImage id="Portrait_NBPort" Texture="Portrait_NBPort" Rotated="false">
-		<Dimensions x="128" y="128"/>
-		<Coords x="0" y="0"/>
-		<TextureDimensions x="128" y="128"/>
-	</PackedTextureImage>
-		
-
 	<Texture
 		id="PackedImages_039A"
 		OutputFormat="A8R8G8B8"

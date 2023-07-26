@@ -312,9 +312,10 @@
     <AttributeModifier
 		id="AttributeModifier_AvatarFlamerBuff"
 		Category="NONE"
-		Duration="1.5s" >
+		ModelConditionsSet="USER_46"
+		Duration="2s" >
 		<Modifier Type="RATE_OF_FIRE" Value="110%"/>
-	</AttributeModifier>	
+	</AttributeModifier>		
 
     <AttributeModifier
 		id="AttributeModifier_MARVSniperBuff"

@@ -547,6 +547,30 @@
 						ExtraMesh="False" />
 				</ModelConditionState>
 			</SpotlightDraw>
+			
+			<ScriptedModelDraw
+				id="0x88A89919"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				AttachToBoneInAnotherModule="ROOTTransform"
+				OkToChangeModelColor="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT" />
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_46">
+					<Model
+						Name="W3DContainer:FXINVISBONE" />
+					<ShadowInfo
+						Type="ADDITIVE_DECAL"
+						Texture="AUDronShipDecalIdle"
+						SizeX="100"
+						SizeY="75"
+						MaxHeight="200"
+						OverrideLODVisibility="True"
+						UseHouseColor="True" />
+				</ModelConditionState>
+			</ScriptedModelDraw>					
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate

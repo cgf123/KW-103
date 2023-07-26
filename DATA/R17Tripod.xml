@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="Reaper17AnnihilatorTripod"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE CAN_SHOOT_OVER_WALLS TIBERIUM_BASED VALID_TARGET_FOR_C4 CAN_BE_FAVORITE_UNIT MADE_OF_METAL"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT VEHICLE CAN_SHOOT_OVER_WALLS VALID_TARGET_FOR_C4 CAN_BE_FAVORITE_UNIT MADE_OF_METAL"
 		Description="Desc:Reaper17AnnihilatorTripod"
 		TypeDescription="Type:Reaper17AnnihilatorTripod"
 		RadarPriority="UNIT"
@@ -2595,6 +2595,19 @@
 				AttributeModifier="AttributeModifier_TibChargeNoAttack1">
 				<TriggeredBy>Upgrade_NoAttack</TriggeredBy>
 			</AttributeModifierUpgrade>			
+			
+			<StatusBitsUpgrade
+				id="A7D958E9"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="DOES_CONTAIN_TIBERIUM"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_Reaper17ReactorForcefieldGenerator</TriggeredBy>
+			</StatusBitsUpgrade>			
 		</Behaviors>
 		<AI>
 			<AIUpdate

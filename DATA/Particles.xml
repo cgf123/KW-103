@@ -497,4 +497,80 @@
 		</Update>
 	</FXParticleSystemTemplate>
 	
+	<!-- Aura ground glow effect FXBloomAdd
+	<FXParticleSystemTemplate
+		id="BlackHandKanesWillLeadershipGlow"
+		Priority="ALWAYS_RENDER"
+		Type="GPU_PARTICLE"
+		ParticleTexture="AUDronShipDecalIdle"
+		SystemLifetime="60"
+		IsOneShot="True">
+		<Lifetime
+			Low="60"
+			High="60" />
+		<Size
+			Low="12"
+			High="18" />
+		<StartSizeRate
+			Type="CONSTANT" />
+		<BurstDelay
+			Low="133"
+			High="133" />
+		<BurstCount
+			Low="1"
+			High="1" />
+		<InitialDelay
+			Type="CONSTANT" />
+		<Colors>
+			<Color
+				RelativeAge="65%"
+				Frame="2">
+				<Color
+					r="0.5725"
+					b="0.3725" />
+			</Color>
+			<Color
+				RelativeAge="100%"
+				Frame="3"></Color>
+		</Colors>
+		<Physics>
+			<Default
+				Swirly="True"
+				ParticlesAttachToBone="True">
+				<VelocityDamping
+					Low="1"
+					High="1" />
+			</Default>
+		</Physics>
+		<Draw></Draw>
+		<Volume>
+			<Cylinder>
+				<Offset
+					z="5" />
+			</Cylinder>
+		</Volume>
+		<Velocity></Velocity>
+		<Update>
+			<Default
+				Rotation="ROTATE_Z">
+				<SizeRateDamping
+					Low="0.99"
+					High="0.99" />
+				<AngleZ
+					Low="-3"
+					High="3" />
+				<AngleXY
+					Low="2"
+					High="2" />
+				<AngularRateXY
+					Low="2"
+					High="2" />
+				<AngularDampingXY
+					Low="1"
+					High="1" />
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>
+	 -->
+	 
 </AssetDeclaration>
