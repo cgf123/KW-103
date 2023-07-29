@@ -12,11 +12,19 @@
 
 KW XMLs:
 1) Support power use triggers Chem Plant's OCLSP, which triggers OCL_TibVeinDetonationTrigger.
-2) OCL_TibVeinDetonationTrigger spawns the trigger object, which after 3.2s fires VeinDetonationCreationWeapon and after 4s TibVeinDetonationWeapon.
-3) TibVeinDetonation weapon deals some damage in whole area, has no damage delay.
+2) OCL_TibVeinDetonationTrigger spawns NODVeinDetonationTrigger, which after 3.2s fires VeinDetonationCreationWeapon and after 4s TibVeinDetonation.
+3) TibVeinDetonation deals some damage in whole area, has no damage delay.
 4) VeinDetonationCreationWeapon deals some tiny damage and triggers OCL_TibVeinDetonation.
 5) OCL_TibVeinDetonation spawns the TibVeinDetonation object, which spawns VeinDetonationChunks in set positions using FloodUpdate. Expires in 2s (60frames).
 4) The Chunks constantly fire VeinDetonationRadiusWeapon and expire in 2s (60frame) lifetime. The weapon has no damage delay.
+
+1.03:
+1) Support power use triggers Chem Plant's OCLSP, which triggers OCL_TibVeinDetonationTrigger.
+2) OCL_TibVeinDetonationTrigger spawns NODVeinDetonationTrigger, which fires VeinDetonationCreationWeapon and VeinDetonationMarkerWeapon once, and fires TibVeinDetonation every frame for 2.6s (80frames). 
+3) TibVeinDetonation deals damage to units in whole area, has no damage delay.
+4) VeinDetonationCreationWeapon triggers OCL_TibVeinDetonation. VeinDetonationMarkerWeapon immediately deals slight damage in area.
+5) OCL_TibVeinDetonation spawns the TibVeinDetonation object, which spawns VeinDetonationChunks in set positions using FloodUpdate. Expires in 2s (60frames).
+6) The Chunks constantly fire VeinDetonationRadiusWeapon, which kills ONLY TIB, and expire in 2s (60frame) lifetime. The weapon has no damage delay.
 
 -->
 
@@ -360,7 +368,7 @@ KW XMLs:
 		>
 		<Nuggets>
 			<DamageNugget
-				Damage="60.0"
+				Damage="50.0"
 				DelayTimeSeconds="0.0s"
 				DamageTaperOff="-1"
 				Radius="250"
@@ -370,12 +378,18 @@ KW XMLs:
 					Rule="ALL"
 					Exclude="TIBERIUM">
 				</SpecialObjectFilter>
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter
 						Rule="NONE"
 						Include="TIBERIUM_BASED">								
 					</Filter>
 				</DamageScalarDetails>		
+				<DamageScalarDetails Scalar= "115%" >
+					<Filter 
+						  Rule="ANY"
+						  Include="HARVESTER">	
+					</Filter>			
+				</DamageScalarDetails>  				
 				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="ANY"
@@ -450,16 +464,10 @@ KW XMLs:
       </ScriptedModelDraw>
     </Draws>
     <Behaviors>
-      <DeletionUpdate
-        id="ModuleTag_03"
-		    MinFrames = "80"
-		    MaxFrames = "80"/>
-	  <!--
-		<LifetimeUpdate
-			id="ModuleTag_Lifetime"
-			MinLifetime="3.5s"
-			MaxLifetime="3.5s" />	  
-	-->
+	<DeletionUpdate
+	id="ModuleTag_03"
+		MinFrames = "80"
+		MaxFrames = "80"/>
       <FireWeaponUpdate
         id="ModuleTag_WeaponFiring">
         <FireWeaponNugget

@@ -4142,7 +4142,7 @@ DAMAGE TYPES
 			
 			<!-- Vs other stuff -->
 			<DamageNugget
-				Damage="500.0"
+				Damage="550.0"
 				Radius="150.0"
 				DamageTaperOff="0.0"
 				DamageType="GRENADE"
@@ -4180,13 +4180,13 @@ DAMAGE TYPES
 						Include="TIBERIUM">
 					</Filter>
 				</DamageScalarDetails>								
-				<DamageScalarDetails Scalar= "2666%">
+				<DamageScalarDetails Scalar= "2500%">
 					<Filter
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
 					</Filter>
 				</DamageScalarDetails>									
-				<DamageScalarDetails Scalar= "2000%">
+				<DamageScalarDetails Scalar= "1500%">
 					<Filter
 						Rule="ANY"
 						Include="HARVESTER">			
@@ -4230,12 +4230,25 @@ DAMAGE TYPES
 						Include="TIBERIUM">
 					</Filter>
 				</DamageScalarDetails>
-				<DamageScalarDetails Scalar= "150%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter
-						Rule="ANY"
-						Include="TIBERIUM_BASED">													
+						Rule="NONE"
+						Include="TIBERIUM_BASED">								
 					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>		
+				<DamageScalarDetails Scalar= "115%" >
+					<Filter 
+						  Rule="ANY"
+						  Include="HARVESTER">	
+					</Filter>			
+				</DamageScalarDetails>  				
+				<DamageScalarDetails Scalar= "115%" >
+					<Filter 
+						  Rule="ANY"
+						  Include="VEHICLE"
+						  StatusBitFlags="DOES_CONTAIN_TIBERIUM">	
+					</Filter>			
+				</DamageScalarDetails>  						
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -7927,7 +7940,7 @@ DAMAGE TYPES
 					Exclude="INFANTRY HORDE"
 					Relationship="ENEMIES NEUTRAL"
 				/>
-				<DamageScalarDetails Scalar="120%">
+				<DamageScalarDetails Scalar="125%">
 					<Filter
 						Rule="ANY"
 						Include="STRUCTURE FS_BASE_DEFENSE" />
@@ -10500,7 +10513,7 @@ DAMAGE TYPES
 			MaxSeconds="0s"/>
 		<Nuggets>
 			<DamageNugget
-				Damage="20.0"
+				Damage="19.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"

@@ -23,26 +23,37 @@
     <ArmorSet
 			Armor="NoArmor" />
     <Draws>
-      <ScriptedModelDraw
-				id="ModuleTag_Draw"
-				OkToChangeModelColor="true">
-        <ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT">
-          <Model
-						Name="" />
-        </ModelConditionState>
-      </ScriptedModelDraw>
+		<ScriptedModelDraw
+			id="ModuleTag_Draw"
+			OkToChangeModelColor="true">
+			<ModelConditionState
+				ParseCondStateType="PARSE_DEFAULT">
+				<Model
+					Name="FXMjolnirWarningLaser" />	
+				<Texture
+					Original="FXIoncannon_red"
+					New="FXIoncannon_green" />					
+			</ModelConditionState>
+			<AnimationState
+				ParseCondStateType="PARSE_DEFAULT"
+				ConditionsYes="IDLE">
+				<Animation
+					AnimNickName="IDL"
+					AnimationName="FXMjolnirWarningLaser"
+					AnimationMode="ONCE" />
+			</AnimationState>				
+		</ScriptedModelDraw>
     </Draws>
     <Behaviors>
 		<LifetimeUpdate
 			id="ModuleTag_Lifetime"
-			MinLifetime="3.5s"
-			MaxLifetime="3.5s" />	   
+			MinLifetime="2.5s"
+			MaxLifetime="2.5s" />	   
 	  <FireWeaponUpdate
         id="ModuleTag_BigDamageBurst">
         <FireWeaponNugget
           WeaponName = "NODCatalystMissileLauncher"
-          FireDelay = "1s"
+          FireDelay = "2.0s"
           OneShot = "true"/>
       </FireWeaponUpdate>
     </Behaviors>

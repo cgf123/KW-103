@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<Texture
+		id="FXIonCannon_green"
+		File="Fx\FXIonCannon_green.dds" />
+	<Texture
 		id="AU_Initiator"
 		File="T59Devourer\AU_Devourer.dds" />
 	<Texture
