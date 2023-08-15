@@ -66,7 +66,7 @@ DAMAGE TYPES
 			Percent="22" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="12" />
+			Percent="13" />
 		<Armor
 			Damage="FLAME"
 			Percent="17" />				
@@ -91,7 +91,7 @@ DAMAGE TYPES
 			Percent="50" />
 		<Armor
 			Damage="ROCKET"
-			Percent="45" />
+			Percent="47" />
 		<Armor
 			Damage="BLAST"
 			Percent="22" />				
@@ -731,7 +731,7 @@ DAMAGE TYPES
 	
 	<ArmorTemplate
 		id="BHDiscipleArmor"
-		Default="75" >
+		Default="100" >
 		<Armor
 			Damage="CANNON"
 			Percent="8" />
@@ -752,15 +752,12 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="SNIPER"
-			Percent="125"/>	
-		<Armor
-			Damage="MINE"
-			Percent="100"/>					
+			Percent="150"/>				
 	</ArmorTemplate>
 
 	<ArmorTemplate
 		id="NodBlackhandArmor"
-		Default="75" >
+		Default="100" >
 		<Armor
 			Damage="CANNON"
 			Percent="8" />
@@ -781,10 +778,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="SNIPER"
-			Percent="125"/>	
-		<Armor
-			Damage="MINE"
-			Percent="100"/>				
+			Percent="150"/>				
 	</ArmorTemplate>
 
 	<ArmorTemplate
@@ -1122,10 +1116,10 @@ DAMAGE TYPES
 			Percent="20" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="90" />
+			Percent="80" />
 		<Armor
 			Damage="FLAME"
-			Percent="135" />					
+			Percent="120" />					
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -1148,10 +1142,10 @@ DAMAGE TYPES
 			Percent="11" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="90" />		
+			Percent="80" />		
 		<Armor
 			Damage="FLAME"
-			Percent="135" />					
+			Percent="120" />					
 		<Armor
 			Damage="GUN"
 			Percent="100" />		
@@ -1203,10 +1197,10 @@ DAMAGE TYPES
 			Percent="11" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="90" />
+			Percent="80" />
 		<Armor
 			Damage="FLAME"
-			Percent="135" />				
+			Percent="120" />				
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -1273,7 +1267,7 @@ DAMAGE TYPES
 	<ArmorTemplate
 		id="GDIPitbullArmor"
 		SideDamageScalar="100"
-		RearDamageScalar="150">
+		RearDamageScalar="135">
 		<Armor
 			Damage="CANNON"
 			Percent="100" />
@@ -1681,13 +1675,13 @@ DAMAGE TYPES
 		RearDamageScalar="150">
 		<Armor
 			Damage="CANNON"
-			Percent="110" />
+			Percent="120" />
 		<Armor
 			Damage="ROCKET"
 			Percent="55" />
 		<Armor
 			Damage="BLAST"
-			Percent="44" />			
+			Percent="45" />			
 		<Armor
 			Damage="GRENADE"
 			Percent="30" />
@@ -1738,7 +1732,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="ROCKET"
-			Percent="90" />
+			Percent="95" />
 		<Armor
 			Damage="BLAST"
 			Percent="40" />			
@@ -1829,10 +1823,10 @@ DAMAGE TYPES
 			Percent="40" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="30" />
+			Percent="25" />
 		<Armor
 			Damage="FLAME"
-			Percent="30" />					
+			Percent="25" />					
 		<Armor
 			Damage="GUN"
 			Percent="35" />
@@ -1857,10 +1851,10 @@ DAMAGE TYPES
 			Percent="40" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="30" />
+			Percent="25" />
 		<Armor
 			Damage="FLAME"
-			Percent="30" />					
+			Percent="25" />					
 		<Armor
 			Damage="GUN"
 			Percent="35" />
@@ -2192,10 +2186,10 @@ DAMAGE TYPES
 			Percent="36%" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="30%" />
+			Percent="33%" />
 		<Armor
 			Damage="FLAME"
-			Percent="40%" />				
+			Percent="44%" />				
 		<Armor
 			Damage="GUN"
 			Percent="25%" />	
@@ -2223,10 +2217,10 @@ DAMAGE TYPES
 			Percent="36%" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="30%" />
+			Percent="33%" />
 		<Armor
 			Damage="FLAME"
-			Percent="40%" />					
+			Percent="44%" />					
 		<Armor
 			Damage="GUN"
 			Percent="25%" />	
@@ -2282,7 +2276,7 @@ DAMAGE TYPES
 			Percent="40" />			
 		<Armor
 			Damage="GRENADE"
-			Percent="25" />
+			Percent="26" />
 		<Armor
 			Damage="FLAME"
 			Percent="35%" />				
@@ -2310,7 +2304,7 @@ DAMAGE TYPES
 			Percent="40" />			
 		<Armor
 			Damage="GRENADE"
-			Percent="25" />
+			Percent="26" />
 		<Armor
 			Damage="FLAME"
 			Percent="35%" />					
@@ -2351,7 +2345,7 @@ DAMAGE TYPES
 		id="AlienAnnihilatorTripodArmor"
 		Default="100"
 		SideDamageScalar="100"
-		RearDamageScalar="100">
+		RearDamageScalar="120">
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -2366,7 +2360,7 @@ DAMAGE TYPES
 			Percent="40" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="25" />
+			Percent="26" />
 		<Armor
 			Damage="FLAME"
 			Percent="35%" />				
@@ -2397,7 +2391,7 @@ DAMAGE TYPES
 			Percent="20" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="12" />
+			Percent="13" />
 		<Armor
 			Damage="FLAME"
 			Percent="17" />				
@@ -2413,7 +2407,7 @@ DAMAGE TYPES
 		id="Reaper17AnnihilatorTripodArmor"
 		Default="100"
 		SideDamageScalar="100"
-		RearDamageScalar="100">
+		RearDamageScalar="120">
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -2428,7 +2422,7 @@ DAMAGE TYPES
 			Percent="40" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="25" />
+			Percent="26" />
 		<Armor
 			Damage="FLAME"
 			Percent="35%" />				
@@ -2459,7 +2453,7 @@ DAMAGE TYPES
 			Percent="20" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="12" />
+			Percent="13" />
 		<Armor
 			Damage="FLAME"
 			Percent="17" />				

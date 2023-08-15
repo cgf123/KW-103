@@ -368,7 +368,7 @@ KW XMLs:
 		>
 		<Nuggets>
 			<DamageNugget
-				Damage="50.0"
+				Damage="55.0"
 				DelayTimeSeconds="0.0s"
 				DamageTaperOff="-1"
 				Radius="250"
@@ -383,27 +383,20 @@ KW XMLs:
 						Rule="NONE"
 						Include="TIBERIUM_BASED">								
 					</Filter>
-				</DamageScalarDetails>		
-				<DamageScalarDetails Scalar= "115%" >
-					<Filter 
-						  Rule="ANY"
-						  Include="HARVESTER">	
-					</Filter>			
-				</DamageScalarDetails>  				
+				</DamageScalarDetails>						
 				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
 						  Rule="ANY"
 						  Include="VEHICLE"
 						  StatusBitFlags="DOES_CONTAIN_TIBERIUM">	
 					</Filter>			
-				</DamageScalarDetails>  				
-				<DamageScalarDetails Scalar= "125%" >
+				</DamageScalarDetails>  		
+				<DamageScalarDetails Scalar= "115%" >
 					<Filter 
-						  Rule="NONE"
-						  Include="VEHICLE">	
-					</Filter>
-					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
-				</DamageScalarDetails>  					
+						  Rule="ANY"
+						  Include="HARVESTER">	
+					</Filter>			
+				</DamageScalarDetails>  				
 			</DamageNugget> 		
 			<ReportWeaponFiredStatNugget/>
 		</Nuggets>
@@ -436,7 +429,7 @@ KW XMLs:
 		id="AttributeModifier_TibVeinSlow"
 		Category="NONE"
 		Duration="3s">
-		<Modifier Type="SPEED" Value="90%" />
+		<Modifier Type="SPEED" Value="85%" />
 	</AttributeModifier>	
 
   

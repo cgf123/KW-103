@@ -200,7 +200,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="MARVRocketWeapon"
 		Name="MARVRocketWeapon"
-		AttackRange="345.0"
+		AttackRange="330.0"
 		WeaponSpeed="325"
 		MinWeaponSpeed="300"
 		MaxWeaponSpeed="310"
@@ -216,8 +216,8 @@ DAMAGE TYPES
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
 		<ClipReloadTime
-			MinSeconds="2.7s"
-			MaxSeconds="2.9s" />
+			MinSeconds="2.5s"
+			MaxSeconds="2.7s" />
 
 		<Nuggets>
 			<ProjectileNugget
@@ -506,7 +506,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="MARVZoneTrooperWeapon"
 		  Name="MARVZoneTrooperWeapon"
-		  AttackRange="345.0"
+		  AttackRange="330.0"
 		  MinTargetPitch="-360d"
 		  MaxTargetPitch="360d"
 		  WeaponSpeed="1250"
@@ -527,8 +527,8 @@ DAMAGE TYPES
 			MinSeconds="0.25s"
 			MaxSeconds="0.25s" />
 		<ClipReloadTime
-			MinSeconds="2.2s"
-			MaxSeconds="2.4s" />
+			MinSeconds="2.1s"
+			MaxSeconds="2.3s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="0.5s"
@@ -811,7 +811,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="MARVZoneRaiderWeapon"
 		Name="MARVZoneRaiderWeapon"
-		AttackRange="345.0"
+		AttackRange="330.0"
 		WeaponSpeed="600"
 		ScatterRadius="0"
 		MinWeaponSpeed="200"
@@ -832,8 +832,8 @@ DAMAGE TYPES
 			MinSeconds="0.2s"
 			MaxSeconds="0.3s" />
 		<ClipReloadTime
-			MinSeconds="1.4s"
-			MaxSeconds="1.6s" />
+			MinSeconds="1.3s"
+			MaxSeconds="1.5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="ZoneRaiderSonicRifleProjectile"
@@ -1047,7 +1047,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="MARVGrenadeSoldierWeapon"
 		Name="MARVGrenadeSoldierWeapon"
-		AttackRange="345.0"
+		AttackRange="330.0"
 		WeaponSpeed="270"
 		MinWeaponSpeed="400"
 		MaxWeaponSpeed="500"
@@ -1066,8 +1066,8 @@ DAMAGE TYPES
 			MinSeconds="0.2s"
 			MaxSeconds="0.3s" />
 		<ClipReloadTime
-			MinSeconds="2.4s"
-			MaxSeconds="2.6s" />
+			MinSeconds="2.2s"
+			MaxSeconds="2.4s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="MARVGrenadeSoldierWeaponProjectile"
@@ -1109,13 +1109,7 @@ DAMAGE TYPES
 				Radius="35.0"
 				DamageType="GRENADE"
 				DamageFXType="GDI_GRENADE"
-				DeathType="EXPLODED" >
-				<DamageScalarDetails Scalar= "100%">
-					<Filter
-						Rule="NONE"
-						Include="VEHICLE">
-					</Filter>
-				</DamageScalarDetails>					
+				DeathType="EXPLODED" >				
 			</DamageNugget>				
 		</Nuggets>
 		<HitStoredObjectFilter
@@ -1359,7 +1353,7 @@ DAMAGE TYPES
 						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>  					
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -1448,7 +1442,7 @@ DAMAGE TYPES
 						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>  					
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -1537,7 +1531,7 @@ DAMAGE TYPES
 						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>  					
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -1571,7 +1565,7 @@ DAMAGE TYPES
 						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>  					
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -1911,7 +1905,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIMammothTankGun"
 		Name="GDIMammothTankGun"
-		AttackRange="345.0"
+		AttackRange="330.0"
 		MinTargetPitch="-15d"
 		MaxTargetPitch="15d"
 		FireSound="Multisound:GDI_MammothTank_CannonFireMS"
@@ -1977,7 +1971,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="MammothTankRailCannon"
 		Name="MammothTankRailCannon"
-		AttackRange="345.0"
+		AttackRange="330.0"
 		MinTargetPitch="-15d"
 		MaxTargetPitch="15d"
 		WeaponSpeed="1250"
@@ -2022,7 +2016,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIMammothTankRocketPods"
 		Name="GDIMammothTankRocketPods"
-		AttackRange="345.0" 
+		AttackRange="330.0" 
 		WeaponSpeed="300" 
 		MinWeaponSpeed="440" 
 		MaxWeaponSpeed="450" 
@@ -2064,18 +2058,18 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
 		<Nuggets>
 			<DamageNugget
-				Damage="300.0"
+				Damage="375.0"
 				Radius="15.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
 				DamageFXType="GDI_MISSILE"
 				DeathType="EXPLODED" >				
-				<DamageScalarDetails Scalar= "100%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="NONE" 
 						Include="INFANTRY" />
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "100%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="NONE" 
 						Include="AIRCRAFT" />
@@ -2151,7 +2145,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIPitbullMortar"
 		Name="GDIPitbullMortar"
-		AttackRange="300.0"
+		AttackRange="275.0"
 		WeaponSpeed="250"
 		FireFX = "FX_GDI_PitbullMortarFireAudio"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS NOT_SIMILAR"	
@@ -2201,12 +2195,12 @@ DAMAGE TYPES
  		>
 		<Nuggets>
 			<DamageNugget
-				Damage="375.0"
+				Damage="360.0"
 				DamageTaperOff="100"
 				Radius="35.0"
 				DamageType="GRENADE"
 				DeathType="EXPLODED" >
-				<DamageScalarDetails Scalar= "60%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" >
@@ -2215,7 +2209,7 @@ DAMAGE TYPES
 			</DamageNugget>
 			<SuppressionNugget
 				Radius="35.0"
-				Suppression="100"
+				Suppression="50"
 				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>	
@@ -3917,7 +3911,7 @@ DAMAGE TYPES
 					  DeathType="DETONATED"
 					  CylinderAOE="true"
 					  VictimShroudRevealer="ArtilleryShroudRevealer">
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -3943,15 +3937,23 @@ DAMAGE TYPES
 		>
 		<Nuggets>
 			<DamageNugget
-					  Damage="500.0"
-					  Radius="75.0"
-					  DamageTaperOff="15"
-					  DelayTimeSeconds="0.0s"
-					  DamageType="CANNON"
-					  DamageFXType="GDI_RIFLE"
-					  DeathType="DETONATED"
-					  CylinderAOE="true"
-					  VictimShroudRevealer="ArtilleryShroudRevealer"/>
+				  Damage="500.0"
+				  Radius="75.0"
+				  DamageTaperOff="15"
+				  DelayTimeSeconds="0.0s"
+				  DamageType="CANNON"
+				  DamageFXType="GDI_RIFLE"
+				  DeathType="DETONATED"
+				  CylinderAOE="true"
+				  VictimShroudRevealer="ArtilleryShroudRevealer" >
+				<DamageScalarDetails Scalar= "120%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="VEHICLE">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  					  
+			</DamageNugget>
 			<SuppressionNugget
 				Radius="75.0"
 				Suppression="200"
@@ -3969,21 +3971,14 @@ DAMAGE TYPES
 	  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS">
 	<Nuggets>
 		<DamageNugget
-				  Damage="800.0"
-				  Radius="40.0"
-				  DelayTimeSeconds="0.0s"
-				  DamageType="CANNON"
-				  DamageFXType="GDI_RIFLE"
-				  DeathType="NORMAL"
-				  CylinderAOE="true"
-				  VictimShroudRevealer="ArtilleryShroudRevealer">
-			<DamageScalarDetails Scalar= "115%" >
-				<Filter 
-					  Rule="NONE"
-					  Include="VEHICLE">	
-				</Filter>
-				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
-			</DamageScalarDetails>  					  
+			  Damage="800.0"
+			  Radius="40.0"
+			  DelayTimeSeconds="0.0s"
+			  DamageType="CANNON"
+			  DamageFXType="GDI_RIFLE"
+			  DeathType="NORMAL"
+			  CylinderAOE="true"
+			  VictimShroudRevealer="ArtilleryShroudRevealer">					  
 		</DamageNugget>
 		<SuppressionNugget
 			Radius="40.0"
@@ -4048,7 +4043,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 				
 				<!-- Bonus vs Scrin -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
@@ -4090,7 +4085,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 				
 				<!-- Bonus vs Scrin -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
@@ -4132,7 +4127,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 				
 				<!-- Bonus vs Scrin -->
-				<DamageScalarDetails Scalar= "133%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
@@ -4185,12 +4180,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
 					</Filter>
-				</DamageScalarDetails>									
-				<DamageScalarDetails Scalar= "1500%">
-					<Filter
-						Rule="ANY"
-						Include="HARVESTER">			
-					</Filter>
 				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "1500%" >
 					<Filter 
@@ -4198,7 +4187,13 @@ DAMAGE TYPES
 						  Include="VEHICLE"
 						  StatusBitFlags="DOES_CONTAIN_TIBERIUM">	
 					</Filter>			
-				</DamageScalarDetails>  				
+				</DamageScalarDetails>  								
+				<DamageScalarDetails Scalar= "1500%">
+					<Filter
+						Rule="ANY"
+						Include="HARVESTER">			
+					</Filter>
+				</DamageScalarDetails>					
 
 			</DamageNugget>
 			
@@ -4229,26 +4224,7 @@ DAMAGE TYPES
 						Rule="NONE"
 						Include="TIBERIUM">
 					</Filter>
-				</DamageScalarDetails>
-				<DamageScalarDetails Scalar= "125%">
-					<Filter
-						Rule="NONE"
-						Include="TIBERIUM_BASED">								
-					</Filter>
-				</DamageScalarDetails>		
-				<DamageScalarDetails Scalar= "115%" >
-					<Filter 
-						  Rule="ANY"
-						  Include="HARVESTER">	
-					</Filter>			
-				</DamageScalarDetails>  				
-				<DamageScalarDetails Scalar= "115%" >
-					<Filter 
-						  Rule="ANY"
-						  Include="VEHICLE"
-						  StatusBitFlags="DOES_CONTAIN_TIBERIUM">	
-					</Filter>			
-				</DamageScalarDetails>  						
+				</DamageScalarDetails>							
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -4292,9 +4268,9 @@ DAMAGE TYPES
 				DamageTaperOff="5"
 				Radius="200"
 				DelayTimeSeconds="0.5s"
-				DamageType="FLAME"
+				DamageType="GRENADE"
 				DeathType="BURNED" >
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -4943,7 +4919,7 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>					
+				</DamageScalarDetails>			
 
 				<DamageScalarDetails Scalar= "75%">
 					<Filter
@@ -4959,13 +4935,6 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>
 				
-				<!-- Scalar vs heavy vehicles -->
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="ANY"			
-						Include="MADE_OF_METAL">          						
-					</Filter>
-				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="NONE">
@@ -5027,7 +4996,7 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>				
+				</DamageScalarDetails>			
 
 				<DamageScalarDetails Scalar= "75%">
 					<Filter
@@ -5042,14 +5011,7 @@ DAMAGE TYPES
 							Include="ARCHER">				
 					</Filter>
 				</DamageScalarDetails>	
-
-				<!-- Scalar vs heavy vehicles -->
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="ANY"			
-						Include="MADE_OF_METAL">          						
-					</Filter>
-				</DamageScalarDetails>			
+		
 				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="NONE">
@@ -5294,7 +5256,7 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="0"/>
 			<DamageNugget
-				Damage="120.0"
+				Damage="125.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.8s"
 				DamageType="CANNON"
@@ -6833,7 +6795,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>			
 
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -8072,7 +8034,7 @@ DAMAGE TYPES
 		/>
 		<Nuggets>
 			<DamageNugget
-				Damage="120.0"
+				Damage="112.5"
 				Radius="0.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_CANNON"
@@ -8100,14 +8062,14 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
 					</Filter>
 				</DamageScalarDetails>					
 
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -8165,7 +8127,7 @@ DAMAGE TYPES
 		<Nuggets>
 
 			<DamageNugget
-				Damage="120.0"
+				Damage="112.5"
 				Radius="5.0"
 				DamageType="ROCKET"
 				DeathType="NORMAL"
@@ -8193,14 +8155,14 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
 					</Filter>
 				</DamageScalarDetails>					
 
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -8252,7 +8214,7 @@ DAMAGE TYPES
 		<Nuggets>
 
 			<DamageNugget
-				Damage="144.0"
+				Damage="135.0"
 				Radius="5.0"
 				DamageType="ROCKET"
 				DeathType="NORMAL"
@@ -8280,14 +8242,14 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
 					</Filter>
 				</DamageScalarDetails>		
 				
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -8632,7 +8594,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "40%" >
+				<DamageScalarDetails Scalar= "37%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -9449,7 +9411,7 @@ DAMAGE TYPES
 				AttributeModifierName="AttributeModifier_TibGoo">
 				<SpecialObjectFilter
 					Rule="NONE"
-					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"					
+					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS AIRBORNE_TARGET"					
 					Include="VEHICLE"
 					Exclude="CAN_HEAL_ALLIES">
 				</SpecialObjectFilter>
@@ -9462,7 +9424,7 @@ DAMAGE TYPES
 				AttributeModifierName="AttributeModifier_TibGooInf">
 				<SpecialObjectFilter
 					Rule="ANY"
-					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"					
+					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS AIRBORNE_TARGET"					
 					Include="INFANTRY"
 					Exclude="HEALED_BY_TIBERIUM">
 				</SpecialObjectFilter>
@@ -9555,7 +9517,7 @@ DAMAGE TYPES
 				AttributeModifierName="AttributeModifier_TibGoo">
 				<SpecialObjectFilter
 					Rule="NONE"
-					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"					
+					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS AIRBORNE_TARGET"					
 					Include="VEHICLE"
 					Exclude="CAN_HEAL_ALLIES">
 				</SpecialObjectFilter>
@@ -9568,7 +9530,7 @@ DAMAGE TYPES
 				AttributeModifierName="AttributeModifier_TibGooInf">
 				<SpecialObjectFilter
 					Rule="ANY"
-					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"					
+					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS AIRBORNE_TARGET"					
 					Include="INFANTRY"
 					Exclude="HEALED_BY_TIBERIUM">
 				</SpecialObjectFilter>
@@ -9660,7 +9622,7 @@ DAMAGE TYPES
 				AttributeModifierName="AttributeModifier_TibGoo">
 				<SpecialObjectFilter
 					Rule="NONE"
-					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"					
+					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS AIRBORNE_TARGET"					
 					Include="VEHICLE"
 					Exclude="CAN_HEAL_ALLIES">
 				</SpecialObjectFilter>
@@ -9673,7 +9635,7 @@ DAMAGE TYPES
 				AttributeModifierName="AttributeModifier_TibGooInf">
 				<SpecialObjectFilter
 					Rule="ANY"
-					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"					
+					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS AIRBORNE_TARGET"					
 					Include="INFANTRY"
 					Exclude="HEALED_BY_TIBERIUM">
 				</SpecialObjectFilter>
@@ -10119,6 +10081,7 @@ DAMAGE TYPES
 				DamageFXType="NOD_HALLUCINE"
 				DeathType="EXPLODED" >
 			</DamageNugget>	
+			
 			<!-- Friendly-Fire vs Vehicles -->
 			<AttributeModifierNugget
 				PartitionFilterTestType="SPHERE"
@@ -10126,7 +10089,8 @@ DAMAGE TYPES
 				Radius="550" >
 				<SpecialObjectFilter
 					Rule="ANY"
-					Include="VEHICLE AIRCRAFT"
+					Include="VEHICLE"
+					Exclude="AIRCRAFT"					
 					RejectStatusBitFlags="AIRBORNE_TARGET" />
 			</AttributeModifierNugget>			
 			<!-- Slow vs Vehicles -->
@@ -10136,20 +10100,11 @@ DAMAGE TYPES
 				Radius="550" >
 				<SpecialObjectFilter
 					Rule="ANY"
-					Include="VEHICLE AIRCRAFT"
+					Include="VEHICLE"
+					Exclude="AIRCRAFT"
 					RejectStatusBitFlags="AIRBORNE_TARGET" />
 			</AttributeModifierNugget>		
-			<!-- Slow vs Warships
-			<AttributeModifierNugget
-				PartitionFilterTestType="SPHERE"
-				AttributeModifierName="AttributeModifier_RageSlow"
-				Radius="550" >
-				<SpecialObjectFilter
-					Rule="NONE"
-					Include="TIBERIUM_BASED AIRCRAFT" />
-			</AttributeModifierNugget>				
-			-->
-
+			
 			<!-- Friendly-Fire vs Infantry -->
 			<AttributeModifierNugget
 				PartitionFilterTestType="SPHERE"
@@ -10178,7 +10133,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIMARVCannon"
 		Name="GDIMARVCannon"
-		AttackRange="345.0"
+		AttackRange="330.0"
 		MinTargetPitch="-15d"
 		MaxTargetPitch="15d"
 		FireSound="Multisound:GDI_Marv_CannonFireMS"
@@ -10197,8 +10152,8 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="1.4s"
-				MaxSeconds="1.4s" />
+				MinSeconds="1.2s"
+				MaxSeconds="1.2s" />
 		<ClipReloadTime
 				MinSeconds="2.2s"
 				MaxSeconds="2.5s" />
@@ -10478,7 +10433,7 @@ DAMAGE TYPES
 					</Filter>			
 				</DamageScalarDetails>  
 				
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -10513,7 +10468,7 @@ DAMAGE TYPES
 			MaxSeconds="0s"/>
 		<Nuggets>
 			<DamageNugget
-				Damage="19.0"
+				Damage="20.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -10533,7 +10488,7 @@ DAMAGE TYPES
 					</Filter>			
 				</DamageScalarDetails>  				
 
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -11025,7 +10980,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="MARVRifleWeapon"
 			Name="MARVRifleWeapon"
-			AttackRange="345.0"
+			AttackRange="330.0"
 			WeaponSpeed="999999.0"
 			FireFX="FX_GDIHammerheadChaingunAP"
 			FireVeteranFX="FX_GDIHammerheadChaingunAPHeroic"
@@ -12999,8 +12954,8 @@ DAMAGE TYPES
 			MinSeconds="3.0s"
 			MaxSeconds="3.0s" />
 		<ClipReloadTime
-			MinSeconds="4.0s"
-			MaxSeconds="4.0s" />
+			MinSeconds="4.5s"
+			MaxSeconds="4.5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="NODVertigoBombProjectile"
@@ -13031,7 +12986,7 @@ DAMAGE TYPES
 				Radius="40.0"
 				DamageType="CANNON"
 				DeathType="NORMAL">
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13147,7 +13102,7 @@ DAMAGE TYPES
 				DamageType="GRENADE"
 				DeathType="NORMAL" >
 
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13190,7 +13145,7 @@ DAMAGE TYPES
 				DamageType="GRENADE"
 				DeathType="NORMAL" >
 
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13361,12 +13316,8 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude=""
-					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">						
-					<!--
-					<ExcludeThing>NODAvatar</ExcludeThing>
-					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
-					-->					
+					Exclude="CAN_HEAL_ALLIES"
+					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">										
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>					
 		</Nuggets>
@@ -13420,7 +13371,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude=""
+					Exclude="CAN_HEAL_ALLIES"
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">						
 					<!--
 					<ExcludeThing>NODAvatar</ExcludeThing>
@@ -13497,7 +13448,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude=""					
+					Exclude="CAN_HEAL_ALLIES"					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">
 					<!--
 					<ExcludeThing>NODAvatar</ExcludeThing>
@@ -13534,7 +13485,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude=""					
+					Exclude="CAN_HEAL_ALLIES"					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">
 					<!--
 					<ExcludeThing>NODAvatar</ExcludeThing>
@@ -13548,7 +13499,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienAnnihilatorEMPCannon"
 		Name="AlienAnnihilatorEMPCannon"
-		AttackRange="135.0"
+		AttackRange="125.0"
 		WeaponSpeed="500.0"
 		MinTargetPitch="-15d"
 		MaxTargetPitch="15d"
@@ -13594,7 +13545,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			
-			<!-- Affects Adaptive Units -->
+			<!-- Affects Adaptive Units but NOT Avatars -->
 			<AttributeModifierNugget
 				Radius="8.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Generic"
@@ -13602,7 +13553,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude=""					
+					Exclude="CAN_HEAL_ALLIES"					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">
 					<ExcludeThing>NODAvatar</ExcludeThing>
 					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>							
@@ -13677,7 +13628,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude=""					
+					Exclude="CAN_HEAL_ALLIES"					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">
 					<!--
 					<ExcludeThing>NODAvatar</ExcludeThing>
@@ -13702,7 +13653,7 @@ DAMAGE TYPES
 				DamageType="GRENADE"
 				DamageFXType="GDI_SHOCKWAVE"
 				DeathType="NORMAL" >
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13734,7 +13685,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude=""					
+					Exclude="CAN_HEAL_ALLIES"					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">
 					<!--
 					<ExcludeThing>NODAvatar</ExcludeThing>
@@ -13797,7 +13748,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="VEHICLE"
-					Exclude=""
+					Exclude="CAN_HEAL_ALLIES"
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS">		
 					<!--
 					<ExcludeThing>NODAvatar</ExcludeThing>
@@ -13846,7 +13797,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT" />
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13894,7 +13845,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT" />
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13944,7 +13895,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT" />
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -13992,7 +13943,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT" />
 				</DamageScalarDetails>			
 
-				<DamageScalarDetails Scalar= "115%" >
+				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -14779,7 +14730,7 @@ DAMAGE TYPES
 	  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 	<Nuggets>
 		<DamageNugget 
-			  Damage="375.0" 
+			  Damage="400.0" 
 			  DamageType="CRUSH" >    
 		</DamageNugget>
 	</Nuggets>
@@ -14793,17 +14744,29 @@ DAMAGE TYPES
 	  RadiusDamageAffects="ENEMIES NEUTRALS"
 	  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 	<Nuggets>
-	<AttributeModifierNugget
-		Radius="5.0"
-		AttributeModifierName="AttributeModifier_CrushSlow"
-		PartitionFilterTestType="CIRCLE" 
-		RequiredObjectStatus="SWITCHED_WEAPONS">
-		<SpecialObjectFilter
-			Rule="ANY"
-			Include="VEHICLE"
-			Exclude="METAUNIT MADE_OF_METAL">
-		</SpecialObjectFilter>
-	</AttributeModifierNugget>		
+		<DamageNugget 
+			  Damage="15.0" 
+			  DamageType="MINE">        			  
+			<DamageScalarDetails Scalar= "10%" >
+				<Filter 
+					  Rule="NONE"
+					  Include="VEHICLE">	
+				</Filter>
+				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+			</DamageScalarDetails>  					
+		</DamageNugget>		
+	
+		<AttributeModifierNugget
+			Radius="5.0"
+			AttributeModifierName="AttributeModifier_CrushSlow"
+			PartitionFilterTestType="CIRCLE" 
+			RequiredObjectStatus="SWITCHED_WEAPONS">
+			<SpecialObjectFilter
+				Rule="ANY"
+				Include="VEHICLE"
+				Exclude="METAUNIT MADE_OF_METAL">
+			</SpecialObjectFilter>
+		</AttributeModifierNugget>		
 	</Nuggets>
   </WeaponTemplate>		
 
@@ -14815,17 +14778,29 @@ DAMAGE TYPES
 	  RadiusDamageAffects="ENEMIES NEUTRALS"
 	  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 	<Nuggets>
-	<AttributeModifierNugget
-		Radius="5.0"
-		AttributeModifierName="AttributeModifier_CrushSlow2"
-		PartitionFilterTestType="CIRCLE" 
-		RequiredObjectStatus="SWITCHED_WEAPONS">
-		<SpecialObjectFilter
-			Rule="ANY"
-			Include="VEHICLE"
-			Exclude="METAUNIT MADE_OF_METAL">				
-		</SpecialObjectFilter>
-	</AttributeModifierNugget>		
+		<DamageNugget 
+			  Damage="8.0" 
+			  DamageType="MINE">        			  
+			<DamageScalarDetails Scalar= "10%" >
+				<Filter 
+					  Rule="NONE"
+					  Include="VEHICLE">	
+				</Filter>
+				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+			</DamageScalarDetails>  					
+		</DamageNugget>		
+	
+		<AttributeModifierNugget
+			Radius="5.0"
+			AttributeModifierName="AttributeModifier_CrushSlow2"
+			PartitionFilterTestType="CIRCLE" 
+			RequiredObjectStatus="SWITCHED_WEAPONS">
+			<SpecialObjectFilter
+				Rule="ANY"
+				Include="VEHICLE"
+				Exclude="METAUNIT MADE_OF_METAL">				
+			</SpecialObjectFilter>
+		</AttributeModifierNugget>		
 	</Nuggets>
   </WeaponTemplate>		  
 	
@@ -14837,16 +14812,28 @@ DAMAGE TYPES
 	  RadiusDamageAffects="ENEMIES NEUTRALS"
 	  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 	<Nuggets>
-	<AttributeModifierNugget
-		Radius="5.0"
-		AttributeModifierName="AttributeModifier_CrushSlow"
-		PartitionFilterTestType="CIRCLE">
-		<SpecialObjectFilter
-			Rule="ANY"
-			Include="VEHICLE"
-			Exclude="METAUNIT MADE_OF_METAL">
-		</SpecialObjectFilter>
-	</AttributeModifierNugget>		
+		<DamageNugget 
+			  Damage="15.0" 
+			  DamageType="MINE">        			  
+			<DamageScalarDetails Scalar= "10%" >
+				<Filter 
+					  Rule="NONE"
+					  Include="VEHICLE">	
+				</Filter>
+				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+			</DamageScalarDetails>  					
+		</DamageNugget>	
+	
+		<AttributeModifierNugget
+			Radius="5.0"
+			AttributeModifierName="AttributeModifier_CrushSlow"
+			PartitionFilterTestType="CIRCLE">
+			<SpecialObjectFilter
+				Rule="ANY"
+				Include="VEHICLE"
+				Exclude="METAUNIT MADE_OF_METAL">
+			</SpecialObjectFilter>
+		</AttributeModifierNugget>		
 	</Nuggets>
   </WeaponTemplate>			
 	
@@ -14864,7 +14851,7 @@ DAMAGE TYPES
 			  Damage="400.0" 
 			  DamageType="MINE" 
 			  DamageFXType="NOD_FLAMETHROWER">        			  
-			<DamageScalarDetails Scalar= "200%" >
+			<DamageScalarDetails Scalar= "10%" >
 				<Filter 
 					  Rule="NONE"
 					  Include="VEHICLE">	
@@ -14900,7 +14887,7 @@ DAMAGE TYPES
 				  Damage="300.0" 
 				  DamageType="MINE" 
 				  DamageFXType="NOD_FLAMETHROWER">  
-				<DamageScalarDetails Scalar= "200%" >
+				<DamageScalarDetails Scalar= "10%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -14936,7 +14923,7 @@ DAMAGE TYPES
 				  Damage="325.0"
 				  DamageType="MINE"
 				  DamageFXType="ALIEN_GRENADE">							  
-				<DamageScalarDetails Scalar= "100%" >
+				<DamageScalarDetails Scalar= "10%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -14957,10 +14944,10 @@ DAMAGE TYPES
 		  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 		<Nuggets>
 			<DamageNugget 
-				  Damage="0.0" 
+				  Damage="5.0" 
 				  DamageType="MINE" 
 				  DamageFXType="ALIEN_TIBSHARD">			  
-				<DamageScalarDetails Scalar= "100%" >
+				<DamageScalarDetails Scalar= "10%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="VEHICLE">	
@@ -15088,19 +15075,13 @@ DAMAGE TYPES
 		  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 		<Nuggets>
 			<DamageNugget 		
-				  Damage="2000.0" 
+				  Damage="1500.0" 
 				  Radius="30.0"						  
 				  DamageType="MINE">	
-				<DamageScalarDetails Scalar= "150%" >
-					<Filter 
-						  Rule="NONE">	
-						  <IncludeThing>SteelTalonsTitan</IncludeThing>
-					</Filter>
-				</DamageScalarDetails>						  
 				<DamageScalarDetails Scalar= "0%" >
 					<Filter 
 						  Rule="ALL"
-						  Exclude="METAUNIT MADE_OF_METAL">	
+						  Exclude="METAUNIT">	
 					</Filter>
 				</DamageScalarDetails>						  			  
 			</DamageNugget>
@@ -15162,7 +15143,7 @@ DAMAGE TYPES
 		  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 		<Nuggets>
 			<DamageNugget 		
-				  Damage="0.0" 
+				  Damage="500.0" 
 				  Radius="30.0"						  
 				  DamageType="MINE">		  		
 				<DamageScalarDetails Scalar= "0%" >
@@ -15279,25 +15260,14 @@ DAMAGE TYPES
 		RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
 		AttackRange="10000">
 		<Nuggets>
-			<!-- Slow vs ground targets -->
 			<AttributeModifierNugget
 				PartitionFilterTestType="SPHERE"
 				AttributeModifierName="AttributeModifier_IonCannonSlow"
 				Radius="250" >
 				<SpecialObjectFilter
 					Rule="ANY"
-					Include="VEHICLE AIRCRAFT INFANTRY"
-					RejectStatusBitFlags="AIRBORNE_TARGET" />
+					Include="VEHICLE AIRCRAFT INFANTRY" />
 			</AttributeModifierNugget>		
-			<!-- Slow vs Warships -->
-			<AttributeModifierNugget
-				PartitionFilterTestType="SPHERE"
-				AttributeModifierName="AttributeModifier_IonCannonSlow"
-				Radius="250" >
-				<SpecialObjectFilter
-					Rule="NONE"
-					Include="TIBERIUM_BASED AIRCRAFT" />
-			</AttributeModifierNugget>				
 		</Nuggets>
 	</WeaponTemplate>
 

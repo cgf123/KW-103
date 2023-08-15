@@ -586,7 +586,7 @@
 	<!-- VoiceAttackEMP -->
 	<SpecialPowerTemplate
 		id="ImprovedEMPBlastGetInRange"
-		RadiusCursorRadius="60"
+		RadiusCursorRadius="75"
 		ReloadTime="30s"
 		TargetType="LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0xD6AB46C3" />
@@ -1068,7 +1068,7 @@
 		id="SpecialPowerMastermindTeleportObjectSelect"
 		ReloadTime="0s"
 		TargetType="LOCATION"
-		RadiusCursorRadius="55"
+		RadiusCursorRadius="50"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		MaxCastRange="9999997"
 		Flags="NEEDS_OBJECT_FILTER LIMIT_DISTANCE IGNORE_SELF_IN_NEEDED_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
@@ -1111,7 +1111,7 @@
 		id="SpecialPowerProdigyTeleportObjectSelect"
 		ReloadTime="0s"
 		TargetType="LOCATION"
-		RadiusCursorRadius="55"
+		RadiusCursorRadius="50"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		MaxCastRange="9999997"
 		Flags="NEEDS_OBJECT_FILTER LIMIT_DISTANCE IGNORE_SELF_IN_NEEDED_OBJECT_FILTER TARGET_NEEDS_OBJECT_STATUS"
@@ -1504,7 +1504,7 @@
 		RadiusCursorRadius="200"
 		TargetType="LOCATION"
 		InitiateAtLocationSound="Multisound:GDI_SupersonicAirStrike_FlyByMS"
-		Money="-2000"
+		Money="-1800"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"  >
 	</SpecialPowerTemplate>	
 	

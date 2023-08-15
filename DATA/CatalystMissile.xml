@@ -23,6 +23,7 @@
     <ArmorSet
 			Armor="NoArmor" />
     <Draws>
+		<!--
 		<ScriptedModelDraw
 			id="ModuleTag_Draw"
 			OkToChangeModelColor="true">
@@ -43,6 +44,7 @@
 					AnimationMode="ONCE" />
 			</AnimationState>				
 		</ScriptedModelDraw>
+		-->
     </Draws>
     <Behaviors>
 		<LifetimeUpdate

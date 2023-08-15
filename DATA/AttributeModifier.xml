@@ -57,16 +57,16 @@
 		id="Modifier_NODDozerBlades"
 		Category="NONE">
 		<Modifier Type="ARMOR" Value="80.0%"/>
-		<!-- 100% means add 1, 200% means add 2 (this is done in code). -->
-		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>
+		<!-- 100% means add 1, 200% means add 2 (this is done in code).
+		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>  -->
 	</AttributeModifier>
 
 	<AttributeModifier
 		id="Modifier_NODDozerBlades1"
 		Category="NONE">
 		<Modifier Type="ARMOR" Value="80.0%"/>
-		<!-- 100% means add 1, 200% means add 2 (this is done in code). -->
-		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>
+		<!-- 100% means add 1, 200% means add 2 (this is done in code). 
+		<Modifier Type="CRUSHER_LEVEL" Value="100%"/> -->
 	</AttributeModifier>
 	
 	<AttributeModifier
@@ -519,8 +519,8 @@
 		<Modifier Type="SPEED" Value="0%"/>
 		<Modifier Type="HEALTH_MULT" Value="300%" />
 		<Modifier Type="RESIST_EMP" Value="100%"/>
-		<Modifier Type="CRUSHER_LEVEL" Value="0%"/> <!--
-		<Modifier Type="CRUSHABLE_LEVEL" Value="100%"/> -->
+		<Modifier Type="CRUSHER_LEVEL" Value="0%"/>
+		<Modifier Type="CRUSHABLE_LEVEL" Value="100%"/>
 	</AttributeModifier>		
 
 	<AttributeModifier

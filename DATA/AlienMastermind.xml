@@ -1363,7 +1363,7 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="True"
 				FaceTarget="False"
-				Radius="60" />
+				Radius="55" />
 			<SpecialPower
 				id="3A88C6D8"
 				SpecialPowerTemplate="SpecialPowerMastermindTeleportObject"

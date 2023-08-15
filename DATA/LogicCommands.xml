@@ -809,24 +809,30 @@
 	<!-- Added new mortar enable/disable buttons -->
 	<LogicCommandSet
 		id="GDIPitbullCommandSet"> 
+		<!--
 		<Cmd>Command_SelectLoadout_03</Cmd>
 		<Cmd>Command_SelectLoadout_04</Cmd>
+		-->
 		<Cmd>Command_GDICallForTransportVehicle</Cmd>		
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
 
 	<LogicCommandSet
 		id="SteelTalonsPitbullCommandSet">
+		<!--
 		<Cmd>Command_SelectLoadout_03</Cmd>
 		<Cmd>Command_SelectLoadout_04</Cmd> 
+		-->
 		<Cmd>Command_SteelTalonsCallForTransportVehicle</Cmd>		
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
 
 	<LogicCommandSet
 		id="ZOCOMPitbullCommandSet">
+		<!--
 		<Cmd>Command_SelectLoadout_03</Cmd>
 		<Cmd>Command_SelectLoadout_04</Cmd>	
+		-->
 		<Cmd>Command_ZOCOMCallForTransportVehicle</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>	
