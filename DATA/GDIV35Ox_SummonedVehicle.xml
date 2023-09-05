@@ -1127,7 +1127,7 @@
 		<Body>
 			<ActiveBody
 				id="E128C6A2"
-				MaxHealth="2250"
+				MaxHealth="2400"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

@@ -1351,7 +1351,7 @@
 			
 		TakeOffAndLandingSpeed="6.0"
 		TakeOffAndLandingSlowDownDelta="35.0"
-		TakeOffAndLandingSlowDownTime="0.75s"
+		TakeOffAndLandingSlowDownTime="1.5s"
 
 		RudderCorrectionDegree="0.169"
 		RudderCorrectionRate="0.027"

@@ -2058,18 +2058,18 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
 		<Nuggets>
 			<DamageNugget
-				Damage="375.0"
+				Damage="400.0"
 				Radius="15.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
 				DamageFXType="GDI_MISSILE"
 				DeathType="EXPLODED" >				
-				<DamageScalarDetails Scalar= "80%">
+				<DamageScalarDetails Scalar= "75%">
 					<Filter 
 						Rule="NONE" 
 						Include="INFANTRY" />
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "80%">
+				<DamageScalarDetails Scalar= "75%">
 					<Filter 
 						Rule="NONE" 
 						Include="AIRCRAFT" />
@@ -4264,11 +4264,11 @@ DAMAGE TYPES
 		>
 		<Nuggets>
 			<DamageNugget
-				Damage="3000"
+				Damage="2500"
 				DamageTaperOff="5"
 				Radius="200"
 				DelayTimeSeconds="0.5s"
-				DamageType="GRENADE"
+				DamageType="FLAME"
 				DeathType="BURNED" >
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
@@ -5150,12 +5150,6 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
 				</DamageScalarDetails>		
 				
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
@@ -5596,18 +5590,12 @@ DAMAGE TYPES
 						Rule="NONE"
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
-				<!-- Scalars vs transport vehicles -->
+				<!-- Scalars vs light transports -->
 				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>				
 				<DamageScalarDetails Scalar= "50%">
@@ -5659,12 +5647,6 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
 				</DamageScalarDetails>						
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
@@ -5715,12 +5697,6 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
 				</DamageScalarDetails>							
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
@@ -5770,12 +5746,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>						
 				<DamageScalarDetails Scalar= "50%">
@@ -5831,12 +5801,6 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
 				</DamageScalarDetails>				
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
@@ -5883,12 +5847,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>						
 				<DamageScalarDetails Scalar= "50%">
@@ -5937,12 +5895,6 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
 				</DamageScalarDetails>							
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
@@ -5989,12 +5941,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>						
 				<DamageScalarDetails Scalar= "50%">
@@ -6045,12 +5991,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>					
 				<!-- Nerf vs inf -->
@@ -6105,13 +6045,7 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>					
 				<!-- Nerf vs inf -->
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
@@ -6163,12 +6097,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>						
 				<!-- Nerf vs inf -->
@@ -6222,12 +6150,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>						
 				<!-- Nerf vs inf -->
@@ -6283,12 +6205,6 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
 				</DamageScalarDetails>				
 				<!-- Nerf vs inf -->
 				<DamageScalarDetails Scalar= "50%">
@@ -6341,12 +6257,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>						
 				<!-- Nerf vs inf -->
@@ -6401,12 +6311,6 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
 				</DamageScalarDetails>						
 				<!-- Nerf vs inf -->
 				<DamageScalarDetails Scalar= "50%">
@@ -6459,12 +6363,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>						
 				<!-- Nerf vs inf -->
@@ -6562,13 +6460,7 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "45%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>					
-				
+
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
 						Rule="ANY"
@@ -6636,13 +6528,7 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "45%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>					
 				
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
@@ -6788,13 +6674,7 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>			
-
+				
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
@@ -6871,12 +6751,6 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
 				</DamageScalarDetails>					
 			</DamageNugget>
 		</Nuggets>
@@ -6923,12 +6797,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
 				
@@ -6979,19 +6847,13 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_PLASMADISK">
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "100%">
+				<DamageScalarDetails Scalar= "110%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>		
 
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
 				<DamageScalarDetails Scalar= "125%">
@@ -7069,12 +6931,6 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "45%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>			
 				
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
@@ -7152,13 +7008,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT TRANSPORT"
 						Exclude="WEAPON_SALVAGER">
 					</Filter>
-				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "220%">
-					<Filter
-						Rule="NONE"
-						Include="AIRCRAFT TRANSPORT WEAPON_SALVAGER">
-					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>									
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
@@ -7173,13 +7023,7 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "120%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>		
 				
 				<!-- Scalar vs Cultists -->								
 				<DamageScalarDetails Scalar= "150%">
@@ -7249,13 +7093,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT TRANSPORT"
 						Exclude="WEAPON_SALVAGER">
 					</Filter>
-				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "220%">
-					<Filter
-						Rule="NONE"
-						Include="AIRCRAFT TRANSPORT WEAPON_SALVAGER">
-					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>									
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
@@ -7270,13 +7108,7 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "120%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>					
+				</DamageScalarDetails>				
 				
 				<!-- Scalar vs Disints -->
 				<DamageScalarDetails Scalar= "100%">
@@ -7339,13 +7171,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT TRANSPORT"
 						Exclude="WEAPON_SALVAGER">
 					</Filter>
-				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "220%">
-					<Filter
-						Rule="NONE"
-						Include="AIRCRAFT TRANSPORT WEAPON_SALVAGER">
-					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>										
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
@@ -7360,13 +7186,7 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "120%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>											
+				</DamageScalarDetails>									
 
 				<!-- Scalar vs Cultists -->		
 				<DamageScalarDetails Scalar= "150%">
@@ -7459,12 +7279,6 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>		
 						
 				<DamageScalarDetails Scalar= "90%">
 					<Filter 
@@ -7558,13 +7372,7 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>		
-			
+
 				<DamageScalarDetails Scalar= "90%">
 					<Filter 
 						Rule="ANY"			
@@ -7639,13 +7447,7 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>							
+				</DamageScalarDetails>						
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -7702,12 +7504,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>					
 			</DamageNugget>
@@ -7786,12 +7582,6 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
 				
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
@@ -7824,12 +7614,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
 				
@@ -8053,12 +7837,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
 
@@ -9760,7 +9538,22 @@ DAMAGE TYPES
 	</WeaponTemplate>		
 	
 	
-
+	
+	<WeaponTemplate
+		id="NODMilitantSquadRangeFinder"
+		Name="NODMilitantSquadRangeFinder"
+		AttackRange="190" 			  
+		LeechRangeWeapon="true"
+		AcceptableAimDelta="45d"
+		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
+		CanFireWhileMoving="true"
+		FinishAttackOnceStarted="false"
+		>
+		<FiringDuration
+			MinSeconds="1.0s"
+			MaxSeconds="1.0s" />
+	</WeaponTemplate>	
+	
 	<WeaponTemplate
 		id="NODMilitantMinigun"
 		Name="NODMilitantMinigun" 
@@ -9795,25 +9588,7 @@ DAMAGE TYPES
 				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
-	
 
-	
-	<WeaponTemplate
-		id="NODMilitantSquadRangeFinder"
-		Name="NODMilitantSquadRangeFinder"
-		AttackRange="190" 			  
-		LeechRangeWeapon="true"
-		AcceptableAimDelta="45d"
-		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
-		CanFireWhileMoving="true"
-		FinishAttackOnceStarted="false"
-		>
-		<FiringDuration
-			MinSeconds="1.0s"
-			MaxSeconds="1.0s" />
-
-	</WeaponTemplate>	
-	
 	
 	<!-- NOD METAUNIT WEAPONS -->
 	<WeaponTemplate
@@ -14944,7 +14719,7 @@ DAMAGE TYPES
 		  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 		<Nuggets>
 			<DamageNugget 
-				  Damage="5.0" 
+				  Damage="10.0" 
 				  DamageType="MINE" 
 				  DamageFXType="ALIEN_TIBSHARD">			  
 				<DamageScalarDetails Scalar= "10%" >

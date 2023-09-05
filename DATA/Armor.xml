@@ -91,7 +91,7 @@ DAMAGE TYPES
 			Percent="50" />
 		<Armor
 			Damage="ROCKET"
-			Percent="47" />
+			Percent="45" />
 		<Armor
 			Damage="BLAST"
 			Percent="22" />				
@@ -1067,10 +1067,10 @@ DAMAGE TYPES
 			Percent="56" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="80" />
+			Percent="90" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />					
+			Percent="135" />					
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -1116,10 +1116,10 @@ DAMAGE TYPES
 			Percent="20" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="80" />
+			Percent="90" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />					
+			Percent="135" />					
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -1142,10 +1142,10 @@ DAMAGE TYPES
 			Percent="11" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="80" />		
+			Percent="90" />		
 		<Armor
 			Damage="FLAME"
-			Percent="120" />					
+			Percent="135" />					
 		<Armor
 			Damage="GUN"
 			Percent="100" />		
@@ -1197,10 +1197,10 @@ DAMAGE TYPES
 			Percent="11" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="80" />
+			Percent="90" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="135" />				
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -1690,7 +1690,7 @@ DAMAGE TYPES
 			Percent="30" />				
 		<Armor
 			Damage="GUN"
-			Percent="30" />
+			Percent="33" />
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -1732,7 +1732,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="ROCKET"
-			Percent="95" />
+			Percent="90" />
 		<Armor
 			Damage="BLAST"
 			Percent="40" />			
@@ -1829,7 +1829,7 @@ DAMAGE TYPES
 			Percent="25" />					
 		<Armor
 			Damage="GUN"
-			Percent="35" />
+			Percent="25" />
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -1857,7 +1857,7 @@ DAMAGE TYPES
 			Percent="25" />					
 		<Armor
 			Damage="GUN"
-			Percent="35" />
+			Percent="25" />
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -4564,7 +4564,7 @@ DAMAGE TYPES
 			Percent="175" />			
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4589,7 +4589,7 @@ DAMAGE TYPES
 			Percent="175" />			
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4620,7 +4620,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4648,7 +4648,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4676,7 +4676,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4704,7 +4704,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4731,7 +4731,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4758,7 +4758,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4785,7 +4785,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4812,7 +4812,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4839,7 +4839,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4867,7 +4867,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4895,7 +4895,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4922,7 +4922,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4950,7 +4950,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -4978,7 +4978,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -5005,7 +5005,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -5032,7 +5032,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />
@@ -5059,7 +5059,7 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="125" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />

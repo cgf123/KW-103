@@ -456,14 +456,14 @@
 		id="AttributeModifier_CrushSlow"
 		Duration="1.5s"		
 		Category="NONE">
-		<Modifier Type="SPEED" Value="40%"/>
+		<Modifier Type="SPEED" Value="35%"/>
 	</AttributeModifier>	
 	
 	<AttributeModifier
 		id="AttributeModifier_CrushSlow2"
 		Duration="1.5s"		
 		Category="NONE">
-		<Modifier Type="SPEED" Value="75%"/>
+		<Modifier Type="SPEED" Value="70%"/>
 	</AttributeModifier>	
 	
 	<AttributeModifier
