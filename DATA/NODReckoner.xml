@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="NODBunkerTruck"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT CAVALRY WEAPON_SALVAGER"
+		KindOf="SELECTABLE CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT CAVALRY WEAPON_SALVAGER"
 		Description="Desc:NODBunkerTruck_103"
 		TypeDescription="Type:NODBunkerTruck"
 		RadarPriority="UNIT"
@@ -19,7 +19,7 @@
 		EditorName="NODBunkerTruck"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="9"
+		BuildTime="8"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -68,7 +68,7 @@
 		ReinvisibilityDelay="7s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_NODDozerBlades"
 		CaptureTime="0s"
-		BuildCost="900"
+		BuildCost="800"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -852,7 +852,7 @@
 						Template="NODBunkerTruckFakeWeapon"
 						Upgrade=""
 						ObjectStatus=""
-						IsPlayerUpgradePermanent="False" />
+						IsPlayerUpgradePermanent="False" />				
 					<TurretSettings
 						TurretTurnRate="99999"
 						TurretPitchRate="99999"
@@ -867,7 +867,21 @@
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"
 						AllowsPitch="True"
-						RecenterWhenOutOfTurnRange="True" />
+						RecenterWhenOutOfTurnRange="True" >
+						<TurretAITargetChooserData
+							IdleScanDelay="0.1s"
+							ReacquireDelay="0.5s"
+							StartupDelay="0s"
+							SympathyRange="25"
+							CheckVisionRange="False"
+							CanPickDynamicTargets="True"
+							RotateToTargetWhenAiming="True"
+							CanAutoAcquireNonAutoAcquirable="False"
+							TargetingCompareList="DefaultTurretTargetingCompareList"
+							ActiveWhenPerformingSpecialAbility="True"
+							CanAcquireDynamicIfAssignedOutOfRange="True"
+							CanPickTargetsOutOfTurretAngle="True" />
+					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
 
@@ -966,7 +980,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				StatusToSet="CAN_ATTACK"
+				StatusToSet=""
 				StatusToClear=""
 				ApplyToContained="True">
 				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>

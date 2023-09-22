@@ -1538,7 +1538,7 @@
 	<ExperienceLevelTemplate
 			id="BlackHandConfessorSquadExperienceLevel_1"
 			RequiredExperience="1"
-			ExperienceAward="1"
+			ExperienceAward="65"
 			Rank="1">
 			<LevelUpTintColor
 				r="1.0"
@@ -1559,8 +1559,8 @@
 		<ExperienceLevelTemplate
 			id="BlackHandConfessorSquadExperienceLevel_2"
 			Prerequisite="BlackHandConfessorSquadExperienceLevel_1"
-			RequiredExperience="900"
-			ExperienceAward="65"
+			RequiredExperience="1200"
+			ExperienceAward="85"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="2">
 			<LevelUpTintColor
@@ -1586,8 +1586,8 @@
 		<ExperienceLevelTemplate
 			id="BlackHandConfessorSquadExperienceLevel_3"
 			Prerequisite="BlackHandConfessorSquadExperienceLevel_2"
-			RequiredExperience="1800"
-			ExperienceAward="80"
+			RequiredExperience="2400"
+			ExperienceAward="104"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="3">
 			<LevelUpTintColor
@@ -1613,8 +1613,8 @@
 		<ExperienceLevelTemplate
 			id="BlackHandBlackConfessorSquadExperienceLevel_4"
 			Prerequisite="BlackHandConfessorSquadExperienceLevel_3"
-			RequiredExperience="2700"
-			ExperienceAward="100"
+			RequiredExperience="3600"
+			ExperienceAward="130"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="4">
 			<LevelUpTintColor
@@ -1852,7 +1852,7 @@
 	<ExperienceLevelTemplate
 		id="NODBlackhandSquadExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="150"
+		ExperienceAward="115"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -1873,8 +1873,8 @@
 	<ExperienceLevelTemplate
 		id="NODBlackhandSquadExperienceLevel_2"
 		Prerequisite="NODBlackhandSquadExperienceLevel_1"
-		RequiredExperience="2700"
-		ExperienceAward="195"
+		RequiredExperience="2100"
+		ExperienceAward="150"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -1900,8 +1900,8 @@
 	<ExperienceLevelTemplate
 		id="NODBlackhandSquadExperienceLevel_3"
 		Prerequisite="NODBlackhandSquadExperienceLevel_2"
-		RequiredExperience="5400"
-		ExperienceAward="240"
+		RequiredExperience="4200"
+		ExperienceAward="185"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
@@ -1927,8 +1927,8 @@
 	<ExperienceLevelTemplate
 		id="NODBlackhandSquadExperienceLevel_4"
 		Prerequisite="NODBlackhandSquadExperienceLevel_3"
-		RequiredExperience="8100"
-		ExperienceAward="300"
+		RequiredExperience="6300"
+		ExperienceAward="230"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
 		<LevelUpTintColor
@@ -1954,16 +1954,16 @@
 	
 	<!-- -->
 	<ExperienceLevelTemplate
-		id="BlackHandBlackHandSquadExperienceLevel_1"
+		id="BlackHandBlackhandSquadExperienceLevel_1"
 		RequiredExperience="0"
-		ExperienceAward="150"
+		ExperienceAward="115"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
 			g="1.0"
 			b="1.0" />
-		<Target>BlackHandBlackHandSquad</Target>
-		<Target>BlackHandBlackHand</Target>
+		<Target>BlackHandBlackhandSquad</Target>
+		<Target>BlackHandBlackhand</Target>
 		<Decal
 			Texture="decal_N_level1"
 			Texture2="decal_Nod_CO" 
@@ -1975,10 +1975,10 @@
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>
 	<ExperienceLevelTemplate
-		id="BlackHandBlackHandSquadExperienceLevel_2"
-		Prerequisite="BlackHandBlackHandSquadExperienceLevel_1"
+		id="BlackHandBlackhandSquadExperienceLevel_2"
+		Prerequisite="BlackHandBlackhandSquadExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="195"
+		ExperienceAward="150"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -1988,8 +1988,8 @@
 		<Upgrade>Upgrade_Veterancy_VETERAN</Upgrade>
 		<LevelUpFxList
 			FxList="FX_NODLevelUp_01" />
-		<Target>BlackHandBlackHandSquad</Target>
-		<Target>BlackHandBlackHand</Target>
+		<Target>BlackHandBlackhandSquad</Target>
+		<Target>BlackHandBlackhand</Target>
 		<AttributeModifier>Unit_Veteran</AttributeModifier>
 		<Decal
 			Texture="decal_N_level1"
@@ -2002,10 +2002,10 @@
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>
 	<ExperienceLevelTemplate
-		id="BlackHandBlackHandSquadExperienceLevel_3"
-		Prerequisite="BlackHandBlackHandSquadExperienceLevel_2"
-		RequiredExperience="5400"
-		ExperienceAward="240"
+		id="BlackHandBlackhandSquadExperienceLevel_3"
+		Prerequisite="BlackHandBlackhandSquadExperienceLevel_2"
+		RequiredExperience="4200"
+		ExperienceAward="185"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
@@ -2015,8 +2015,8 @@
 		<Upgrade>Upgrade_Veterancy_ELITE</Upgrade>
 		<LevelUpFxList
 			FxList="FX_NODLevelUp_02" />
-		<Target>BlackHandBlackHandSquad</Target>
-		<Target>BlackHandBlackHand</Target>
+		<Target>BlackHandBlackhandSquad</Target>
+		<Target>BlackHandBlackhand</Target>
 		<AttributeModifier>Unit_Elite</AttributeModifier>
 		<Decal
 			Texture="decal_N_level1"
@@ -2029,10 +2029,10 @@
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>
 	<ExperienceLevelTemplate
-		id="BlackHandBlackHandSquadExperienceLevel_4"
-		Prerequisite="BlackHandBlackHandSquadExperienceLevel_3"
-		RequiredExperience="8100"
-		ExperienceAward="300"
+		id="BlackHandBlackhandSquadExperienceLevel_4"
+		Prerequisite="BlackHandBlackhandSquadExperienceLevel_3"
+		RequiredExperience="6300"
+		ExperienceAward="230"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
 		<LevelUpTintColor
@@ -2042,8 +2042,8 @@
 		<Upgrade>Upgrade_Veterancy_HEROIC</Upgrade>
 		<LevelUpFxList
 			FxList="FX_NODLevelUp_03" />
-		<Target>BlackHandBlackHandSquad</Target>
-		<Target>BlackHandBlackHand</Target>
+		<Target>BlackHandBlackhandSquad</Target>
+		<Target>BlackHandBlackhand</Target>
 		<AttributeModifier>Unit_Heroic</AttributeModifier>
 		<Decal
 			Texture="decal_N_level1"
@@ -2054,7 +2054,8 @@
 			MinRadius="50"
 			MaxRadius="200"
 			MaxSelectedUnits="40"/>
-	</ExperienceLevelTemplate>	
+	</ExperienceLevelTemplate>		
+
 	
 	<!-- -->
 	<ExperienceLevelTemplate
@@ -2856,7 +2857,7 @@
 	<ExperienceLevelTemplate
 		id="NODBunkerTruckExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="900"
+		ExperienceAward="800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -2962,7 +2963,7 @@
 	<ExperienceLevelTemplate
 		id="MarkedOfKaneBunkerTruckExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="900"
+		ExperienceAward="800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -3068,7 +3069,7 @@
 	<ExperienceLevelTemplate
 		id="BlackHandBunkerTruckExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="900"
+		ExperienceAward="800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"

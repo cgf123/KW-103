@@ -536,8 +536,7 @@
 					AnimState="USER_1"
 					Frames="0"
 					Trigger="0" />
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>		
 			</AttributeModifierUpgrade>
 			<StatusBitsUpgrade
 				id="63DD108D"
@@ -549,8 +548,7 @@
 				StatusToSet="HAS_TIBERIUM_UPGRADE"
 				StatusToClear=""
 				ApplyToContained="False">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>			
 			</StatusBitsUpgrade>
 			<CreateAndEnterObjectSpecialPower
 				id="6D44A823"
@@ -912,7 +910,7 @@
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon="FanaticIcon"
 		ReinvisibilityDelay="4s"
-		WorldMapArmoryUpgradesAllowed="Upgrade_TiberiumInfusion"
+		WorldMapArmoryUpgradesAllowed=""
 		CaptureTime="0s"
 		BuildCost="500"
 		RefundValue="0"
@@ -1232,34 +1230,6 @@
 				SetBonusModelConditionOnSpeedBonus="False"
 				SecondaryQueue="False"
 				IgnorePreReqs="False" />
-			<AttributeModifierUpgrade
-				id="3129F082"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				AttributeModifier="AttributeModifier_TiberiumInfusion">
-				<CustomAnimAndDuration
-					AnimState="USER_1"
-					Frames="0"
-					Trigger="0" />
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
-			</AttributeModifierUpgrade>
-			<StatusBitsUpgrade
-				id="63DD108D"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				StatusToSet="HAS_TIBERIUM_UPGRADE"
-				StatusToClear=""
-				ApplyToContained="False">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
-			</StatusBitsUpgrade>
 			<CreateAndEnterObjectSpecialPower
 				id="6D44A823"
 				SpecialPowerTemplate="SpecialPowerCallForTransportNOD"
@@ -1858,7 +1828,7 @@
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon="FanaticIcon"
 		ReinvisibilityDelay="4s"
-		WorldMapArmoryUpgradesAllowed="Upgrade_TiberiumInfusion"
+		WorldMapArmoryUpgradesAllowed="Upgrade_MOKTiberiumInfusion"
 		CaptureTime="0s"
 		BuildCost="600"
 		RefundValue="0"
@@ -2328,7 +2298,6 @@
 					AnimState="USER_1"
 					Frames="0"
 					Trigger="0" />
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
 				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
 			</AttributeModifierUpgrade>
 			<StatusBitsUpgrade
@@ -2341,7 +2310,6 @@
 				StatusToSet="HAS_TIBERIUM_UPGRADE"
 				StatusToClear=""
 				ApplyToContained="False">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
 				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
 			</StatusBitsUpgrade>
 			<CreateAndEnterObjectSpecialPower

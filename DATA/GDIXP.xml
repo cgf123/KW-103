@@ -577,6 +577,580 @@
 	
 	
 	<ExperienceLevelTemplate
+		id="SteelTalonsGrenadeSoldierExperienceLevel_1"
+		Rank="1"
+		RequiredExperience="1"
+		ExperienceAward="150"
+		ExperienceAwardOwnGuysDie="0"
+		ModelConditionState=""
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Target>SteelTalonsGrenadeSoldier</Target>
+		<Target>SteelTalonsGrenadeSoldierSquad</Target>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="SteelTalonsGrenadeSoldierExperienceLevel_2"
+		Rank="2"
+		RequiredExperience="1800"
+		ExperienceAward="195"
+		ExperienceAwardOwnGuysDie="0"
+		Prerequisite="SteelTalonsGrenadeSoldierExperienceLevel_1"
+		ModelConditionState="SPECIAL_CHEERING"
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Upgrade>Upgrade_Veterancy_VETERAN</Upgrade>
+		<LevelUpFxList
+			FxList="FX_GDILevelUp_01"
+			BoneName="" />
+		<Target>SteelTalonsGrenadeSoldier</Target>
+		<Target>SteelTalonsGrenadeSoldierSquad</Target>
+		<AttributeModifier>Unit_Veteran</AttributeModifier>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="SteelTalonsGrenadeSoldierExperienceLevel_3"
+		Rank="3"
+		RequiredExperience="3600"
+		ExperienceAward="240"
+		ExperienceAwardOwnGuysDie="0"
+		Prerequisite="SteelTalonsGrenadeSoldierExperienceLevel_2"
+		ModelConditionState="SPECIAL_CHEERING"
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Upgrade>Upgrade_Veterancy_ELITE</Upgrade>
+		<LevelUpFxList
+			FxList="FX_GDILevelUp_02"
+			BoneName="" />
+		<Target>SteelTalonsGrenadeSoldier</Target>
+		<Target>SteelTalonsGrenadeSoldierSquad</Target>		
+		<AttributeModifier>Unit_Elite</AttributeModifier>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="SteelTalonsGrenadeSoldierExperienceLevel_4"
+		Rank="4"
+		RequiredExperience="5400"
+		ExperienceAward="300"
+		ExperienceAwardOwnGuysDie="0"
+		Prerequisite="SteelTalonsGrenadeSoldierExperienceLevel_3"
+		ModelConditionState="SPECIAL_CHEERING"
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Upgrade>Upgrade_Veterancy_HEROIC</Upgrade>
+		<LevelUpFxList
+			FxList="FX_GDILevelUp_03"
+			BoneName="" />
+		<Target>SteelTalonsGrenadeSoldier</Target>
+		<Target>SteelTalonsGrenadeSoldierSquad</Target>		
+		<AttributeModifier>Unit_Heroic</AttributeModifier>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>		
+	
+	<ExperienceLevelTemplate
+		id="ZOCOMGrenadeSoldierExperienceLevel_1"
+		Rank="1"
+		RequiredExperience="1"
+		ExperienceAward="150"
+		ExperienceAwardOwnGuysDie="0"
+		ModelConditionState=""
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Target>ZOCOMGrenadeSoldier</Target>
+		<Target>ZOCOMGrenadeSoldierSquad</Target>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="ZOCOMGrenadeSoldierExperienceLevel_2"
+		Rank="2"
+		RequiredExperience="1800"
+		ExperienceAward="195"
+		ExperienceAwardOwnGuysDie="0"
+		Prerequisite="ZOCOMGrenadeSoldierExperienceLevel_1"
+		ModelConditionState="SPECIAL_CHEERING"
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Upgrade>Upgrade_Veterancy_VETERAN</Upgrade>
+		<LevelUpFxList
+			FxList="FX_GDILevelUp_01"
+			BoneName="" />
+		<Target>ZOCOMGrenadeSoldier</Target>
+		<Target>ZOCOMGrenadeSoldierSquad</Target>
+		<AttributeModifier>Unit_Veteran</AttributeModifier>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="ZOCOMGrenadeSoldierExperienceLevel_3"
+		Rank="3"
+		RequiredExperience="3600"
+		ExperienceAward="240"
+		ExperienceAwardOwnGuysDie="0"
+		Prerequisite="ZOCOMGrenadeSoldierExperienceLevel_2"
+		ModelConditionState="SPECIAL_CHEERING"
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Upgrade>Upgrade_Veterancy_ELITE</Upgrade>
+		<LevelUpFxList
+			FxList="FX_GDILevelUp_02"
+			BoneName="" />
+		<Target>ZOCOMGrenadeSoldier</Target>
+		<Target>ZOCOMGrenadeSoldierSquad</Target>		
+		<AttributeModifier>Unit_Elite</AttributeModifier>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="ZOCOMGrenadeSoldierExperienceLevel_4"
+		Rank="4"
+		RequiredExperience="5400"
+		ExperienceAward="300"
+		ExperienceAwardOwnGuysDie="0"
+		Prerequisite="ZOCOMGrenadeSoldierExperienceLevel_3"
+		ModelConditionState="SPECIAL_CHEERING"
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Upgrade>Upgrade_Veterancy_HEROIC</Upgrade>
+		<LevelUpFxList
+			FxList="FX_GDILevelUp_03"
+			BoneName="" />
+		<Target>ZOCOMGrenadeSoldier</Target>
+		<Target>ZOCOMGrenadeSoldierSquad</Target>		
+		<AttributeModifier>Unit_Heroic</AttributeModifier>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>		
+
+	<ExperienceLevelTemplate
+		id="GDIGrenadeSoldierExperienceLevel_1"
+		Rank="1"
+		RequiredExperience="1"
+		ExperienceAward="150"
+		ExperienceAwardOwnGuysDie="0"
+		ModelConditionState=""
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Target>GDIGrenadeSoldier</Target>
+		<Target>GDIGrenadeSoldierSquad</Target>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="GDIGrenadeSoldierExperienceLevel_2"
+		Rank="2"
+		RequiredExperience="1800"
+		ExperienceAward="195"
+		ExperienceAwardOwnGuysDie="0"
+		Prerequisite="GDIGrenadeSoldierExperienceLevel_1"
+		ModelConditionState="SPECIAL_CHEERING"
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Upgrade>Upgrade_Veterancy_VETERAN</Upgrade>
+		<LevelUpFxList
+			FxList="FX_GDILevelUp_01"
+			BoneName="" />
+		<Target>GDIGrenadeSoldier</Target>
+		<Target>GDIGrenadeSoldierSquad</Target>
+		<AttributeModifier>Unit_Veteran</AttributeModifier>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="GDIGrenadeSoldierExperienceLevel_3"
+		Rank="3"
+		RequiredExperience="3600"
+		ExperienceAward="240"
+		ExperienceAwardOwnGuysDie="0"
+		Prerequisite="GDIGrenadeSoldierExperienceLevel_2"
+		ModelConditionState="SPECIAL_CHEERING"
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Upgrade>Upgrade_Veterancy_ELITE</Upgrade>
+		<LevelUpFxList
+			FxList="FX_GDILevelUp_02"
+			BoneName="" />
+		<Target>GDIGrenadeSoldier</Target>
+		<Target>GDIGrenadeSoldierSquad</Target>		
+		<AttributeModifier>Unit_Elite</AttributeModifier>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="GDIGrenadeSoldierExperienceLevel_4"
+		Rank="4"
+		RequiredExperience="5400"
+		ExperienceAward="300"
+		ExperienceAwardOwnGuysDie="0"
+		Prerequisite="GDIGrenadeSoldierExperienceLevel_3"
+		ModelConditionState="SPECIAL_CHEERING"
+		LevelUpTintPreColorTime="0s"
+		LevelUpTintPostColorTime="0s"
+		LevelUpTintSustainColorTime="0s"
+		LevelUpTintFrequency="0"
+		LevelUpTintAmplitude="0"
+		InformUpdateModule="False"
+		SinglePlayerOnly="False"
+		MultiPlayerOnly="False"
+		ShowLevelUpTint="False">
+		<LevelUpTintColor
+			r="1"
+			g="1"
+			b="1"
+			a="0" />
+		<Upgrade>Upgrade_Veterancy_HEROIC</Upgrade>
+		<LevelUpFxList
+			FxList="FX_GDILevelUp_03"
+			BoneName="" />
+		<Target>GDIGrenadeSoldier</Target>
+		<Target>GDIGrenadeSoldierSquad</Target>		
+		<AttributeModifier>Unit_Heroic</AttributeModifier>
+		<Decal
+			Texture="decal_G_level1"
+			Texture2="decal_GDI_S_CO"
+			Style="MERGE_DECAL"
+			OpacityMin="79.99999%"
+			OpacityMax="100%"
+			OpacityThrobTime="1000"
+			RotationsPerMinute="0"
+			MaxRadius="200"
+			MinRadius="75"
+			MaxSelectedUnits="40"
+			SpiralAcceleration="0"
+			OnlyVisibleToOwningPlayer="False">
+			<Color
+				B="0"
+				G="0"
+				R="0"
+				A="0" />
+		</Decal>
+	</ExperienceLevelTemplate>			
+	
+	
+	<ExperienceLevelTemplate
 		id="GDIZoneTrooperSquadExperienceLevel_1"
 		RequiredExperience="1"
 		ExperienceAward="325"
@@ -1681,7 +2255,7 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsAAScoutExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="900"
+		ExperienceAward="800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -1702,8 +2276,8 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsAAScoutExperienceLevel_2"
 		Prerequisite="SteelTalonsAAScoutExperienceLevel_1"
-		RequiredExperience="2700"
-		ExperienceAward="1170"
+		RequiredExperience="2400"
+		ExperienceAward="1040"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -1729,8 +2303,8 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsAAScoutExperienceLevel_3"
 		Prerequisite="SteelTalonsAAScoutExperienceLevel_2"
-		RequiredExperience="5400"
-		ExperienceAward="1440"
+		RequiredExperience="4800"
+		ExperienceAward="1280"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
@@ -1756,8 +2330,8 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsAAScoutExperienceLevel_4"
 		Prerequisite="SteelTalonsAAScoutExperienceLevel_3"
-		RequiredExperience="8100"
-		ExperienceAward="1800"
+		RequiredExperience="7200"
+		ExperienceAward="1600"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
 		<LevelUpTintColor
@@ -1785,7 +2359,7 @@
 	<ExperienceLevelTemplate
 		id="GDIAAScoutExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="900"
+		ExperienceAward="800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -1806,8 +2380,8 @@
 	<ExperienceLevelTemplate
 		id="GDIAAScoutExperienceLevel_2"
 		Prerequisite="GDIAAScoutExperienceLevel_1"
-		RequiredExperience="2700"
-		ExperienceAward="1170"
+		RequiredExperience="2400"
+		ExperienceAward="1040"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -1833,8 +2407,8 @@
 	<ExperienceLevelTemplate
 		id="GDIAAScoutExperienceLevel_3"
 		Prerequisite="GDIAAScoutExperienceLevel_2"
-		RequiredExperience="5400"
-		ExperienceAward="1440"
+		RequiredExperience="4800"
+		ExperienceAward="1280"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
@@ -1860,8 +2434,8 @@
 	<ExperienceLevelTemplate
 		id="GDIAAScoutExperienceLevel_4"
 		Prerequisite="GDIAAScoutExperienceLevel_3"
-		RequiredExperience="8100"
-		ExperienceAward="1800"
+		RequiredExperience="7200"
+		ExperienceAward="1600"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
 		<LevelUpTintColor
@@ -1885,10 +2459,11 @@
 			MaxSelectedUnits="40"/>
 	</ExperienceLevelTemplate>
 
+
 	<ExperienceLevelTemplate
 		id="ZOCOMAAScoutExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="900"
+		ExperienceAward="800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -1909,8 +2484,8 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMAAScoutExperienceLevel_2"
 		Prerequisite="ZOCOMAAScoutExperienceLevel_1"
-		RequiredExperience="2700"
-		ExperienceAward="1170"
+		RequiredExperience="2400"
+		ExperienceAward="1040"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -1936,8 +2511,8 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMAAScoutExperienceLevel_3"
 		Prerequisite="ZOCOMAAScoutExperienceLevel_2"
-		RequiredExperience="5400"
-		ExperienceAward="1440"
+		RequiredExperience="4800"
+		ExperienceAward="1280"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
@@ -1963,8 +2538,8 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMAAScoutExperienceLevel_4"
 		Prerequisite="ZOCOMAAScoutExperienceLevel_3"
-		RequiredExperience="8100"
-		ExperienceAward="1800"
+		RequiredExperience="7200"
+		ExperienceAward="1600"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
 		<LevelUpTintColor

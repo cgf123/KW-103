@@ -22,7 +22,7 @@
 		EditorName="BlackHandBlackHandSquad"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="9"
+		BuildTime="7"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -72,7 +72,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_BlackHandSecretShrinePurifyingFlame"
 		CaptureTime="0s"
-		BuildCost="900"
+		BuildCost="700"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -102,7 +102,7 @@
 			DamageFX=""
 			Conditions="" />
 		<LocomotorSet
-			Speed="55"
+			Speed="50"
 			Condition="NORMAL"
 			Locomotor="NormalRangedSquadLocomotor" />
 		<SkirmishAIInformation

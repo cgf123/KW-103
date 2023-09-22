@@ -1608,8 +1608,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				AttributeModifier="AttributeModifier_TiberiumInfusion">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>			
 			</AttributeModifierUpgrade>
 			<SuppressionUpdate
 				id="3AE0061F"
@@ -1633,8 +1632,7 @@
 				ArmorSetFlag="PLAYER_UPGRADE"
 				KillArmorUpgrade="False"
 				IgnoreArmorUpgrade="False">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>						
 			</ArmorUpgrade>
 			<LargeGroupAudioUpdate
 				id="00F75CF5"
@@ -1686,8 +1684,7 @@
 				WaypointModeTerminal="True"
 				SoundToPlay="AudioEvent:NOD_TiberiumUpgrade"
 				KillAfterMS="0">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>					
 			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>

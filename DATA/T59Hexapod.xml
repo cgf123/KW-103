@@ -2622,7 +2622,7 @@
 				Texture1_FrameRate="30"
 				Texture2_NumFrames="1"
 				Texture2_FrameRate="30"
-				LaserWidth="12"
+				LaserWidth="15"
 				WeaponSlotID="-1"
 				LaserStateID="0"
 				UseDistortionShader="False">
@@ -2656,7 +2656,7 @@
 				Texture1_FrameRate="30"
 				Texture2_NumFrames="1"
 				Texture2_FrameRate="30"
-				LaserWidth="12"
+				LaserWidth="15"
 				WeaponSlotID="-1"
 				LaserStateID="0"
 				UseDistortionShader="True">

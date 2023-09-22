@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="MarkedOfKaneBunkerTruck"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT CAVALRY WEAPON_SALVAGER"
+		KindOf="SELECTABLE CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT CAVALRY WEAPON_SALVAGER"
 		Description="Desc:NODBunkerTruck_103"
 		TypeDescription="Type:MarkedOfKaneBunkerTruck"
 		RadarPriority="UNIT"
@@ -19,7 +19,7 @@
 		EditorName="NODBunkerTruck"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="9"
+		BuildTime="8"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -68,7 +68,7 @@
 		ReinvisibilityDelay="7s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_NODDozerBlades"
 		CaptureTime="0s"
-		BuildCost="900"
+		BuildCost="800"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -967,7 +967,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				StatusToSet="CAN_ATTACK"
+				StatusToSet=""
 				StatusToClear=""
 				ApplyToContained="True">
 				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>

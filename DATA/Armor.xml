@@ -276,75 +276,72 @@ DAMAGE TYPES
 		id="GDIMissileSoldierArmor" >
 		<Armor
 			Damage="CANNON"
-			Percent="25" />
+			Percent="16" />
 		<Armor
 			Damage="ROCKET"
-			Percent="25" />
+			Percent="16" />
 		<Armor
 			Damage="BLAST"
-			Percent="56" />				
+			Percent="26" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="120" />
+			Percent="80" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />					
+			Percent="80" />					
 		<Armor
 			Damage="GUN"
-			Percent="150" />
-		<Armor
-			Damage="SNIPER"
-			Percent="150"/>
+			Percent="100" />
 	</ArmorTemplate>	
 	<ArmorTemplate
 		id="GDIMissileSoldierArmorComposite" 
 		Default="50">
 		<Armor
 			Damage="CANNON"
-			Percent="12" />
+			Percent="8" />
 		<Armor
 			Damage="ROCKET"
-			Percent="12" />
+			Percent="8" />
 		<Armor
 			Damage="BLAST"
-			Percent="28" />				
+			Percent="13" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="60" />
+			Percent="40" />
 		<Armor
 			Damage="FLAME"
-			Percent="60" />					
+			Percent="40" />					
 		<Armor
 			Damage="GUN"
-			Percent="75" />
+			Percent="50" />
 		<Armor
 			Damage="SNIPER"
-			Percent="100" />				
+			Percent="67" />				
 	</ArmorTemplate>
 	<ArmorTemplate
 		id="ZOCOMMissileSoldierFieldSuits"
 		Default="50">
 		<Armor
 			Damage="CANNON"
-			Percent="12" />
+			Percent="8" />
 		<Armor
 			Damage="ROCKET"
-			Percent="12" />
+			Percent="8" />
 		<Armor
 			Damage="BLAST"
-			Percent="28" />				
+			Percent="13" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="60" />
+			Percent="40" />
 		<Armor
 			Damage="FLAME"
-			Percent="60" />					
+			Percent="40" />					
 		<Armor
 			Damage="GUN"
-			Percent="75" />
+			Percent="50" />
 		<Armor
 			Damage="SNIPER"
-			Percent="100" />
+			Percent="67" />		
 		<Armor
 			Damage="TIBERIUM"
 			Percent="0" />					
@@ -355,10 +352,10 @@ DAMAGE TYPES
 		Default="75" >
 		<Armor
 			Damage="CANNON"
-			Percent="25" />
+			Percent="20" />
 		<Armor
 			Damage="ROCKET"
-			Percent="25" />
+			Percent="20" />
 		<Armor
 			Damage="BLAST"
 			Percent="56" />				
@@ -380,10 +377,10 @@ DAMAGE TYPES
 		Default="50" >
 		<Armor
 			Damage="CANNON"
-			Percent="16" />
+			Percent="13" />
 		<Armor
 			Damage="ROCKET"
-			Percent="16" />
+			Percent="13" />
 		<Armor
 			Damage="BLAST"
 			Percent="37" />				
@@ -405,10 +402,10 @@ DAMAGE TYPES
 		Default="50" >
 		<Armor
 			Damage="CANNON"
-			Percent="16" />
+			Percent="13" />
 		<Armor
 			Damage="ROCKET"
-			Percent="16" />
+			Percent="13" />
 		<Armor
 			Damage="BLAST"
 			Percent="37" />				
@@ -475,7 +472,7 @@ DAMAGE TYPES
 			Percent="75" />					
 		<Armor
 			Damage="GUN"
-			Percent="80" />
+			Percent="75" />
 		<Armor
 			Damage="SNIPER"
 			Percent="65"/>
@@ -622,25 +619,22 @@ DAMAGE TYPES
 		id="NODRocketMilitantArmor">
 		<Armor
 			Damage="CANNON"
-			Percent="25" />
+			Percent="16" />
 		<Armor
 			Damage="ROCKET"
-			Percent="25" />
+			Percent="16" />
 		<Armor
 			Damage="BLAST"
-			Percent="56" />				
+			Percent="26" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="120" />
+			Percent="80" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />					
+			Percent="80" />					
 		<Armor
 			Damage="GUN"
-			Percent="150" />
-		<Armor
-			Damage="SNIPER"
-			Percent="150"/>	
+			Percent="100" />
 	</ArmorTemplate>
 
 	<!-- Tibinf Rocketmen armor -->	
@@ -648,25 +642,22 @@ DAMAGE TYPES
 		id="NODRocketMilitantArmor_TiberiumInfused">
 		<Armor
 			Damage="CANNON"
-			Percent="25" />
+			Percent="16" />
 		<Armor
 			Damage="ROCKET"
-			Percent="25" />
+			Percent="16" />
 		<Armor
 			Damage="BLAST"
-			Percent="56" />				
+			Percent="26" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="120" />
+			Percent="80" />
 		<Armor
 			Damage="FLAME"
-			Percent="120" />					
+			Percent="80" />					
 		<Armor
 			Damage="GUN"
-			Percent="150" />
-		<Armor
-			Damage="SNIPER"
-			Percent="150"/>						
+			Percent="100" />				
 		<Armor
 			Damage="TIBERIUM"
 			Percent="0" />			
@@ -731,10 +722,10 @@ DAMAGE TYPES
 	
 	<ArmorTemplate
 		id="BHDiscipleArmor"
-		Default="100" >
+		Default="75" >
 		<Armor
 			Damage="CANNON"
-			Percent="8" />
+			Percent="9" />
 		<Armor
 			Damage="ROCKET"
 			Percent="18" />
@@ -752,15 +743,15 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="SNIPER"
-			Percent="150"/>				
+			Percent="125"/>				
 	</ArmorTemplate>
 
 	<ArmorTemplate
 		id="NodBlackhandArmor"
-		Default="100" >
+		Default="75" >
 		<Armor
 			Damage="CANNON"
-			Percent="8" />
+			Percent="9" />
 		<Armor
 			Damage="ROCKET"
 			Percent="18" />
@@ -772,13 +763,39 @@ DAMAGE TYPES
 			Percent="75" />
 		<Armor
 			Damage="FLAME"
-			Percent="75" />					
+			Percent="50" />					
 		<Armor
 			Damage="GUN"
 			Percent="100" />
 		<Armor
 			Damage="SNIPER"
-			Percent="150"/>				
+			Percent="125"/>				
+	</ArmorTemplate>
+
+	<ArmorTemplate
+		id="NodBlackhandArmorUpgraded"
+		Default="75" >
+		<Armor
+			Damage="CANNON"
+			Percent="9" />
+		<Armor
+			Damage="ROCKET"
+			Percent="18" />
+		<Armor
+			Damage="BLAST"
+			Percent="13" />				
+		<Armor
+			Damage="GRENADE"
+			Percent="75" />
+		<Armor
+			Damage="FLAME"
+			Percent="50" />					
+		<Armor
+			Damage="GUN"
+			Percent="100" />
+		<Armor
+			Damage="SNIPER"
+			Percent="125"/>				
 	</ArmorTemplate>
 
 	<ArmorTemplate
@@ -786,7 +803,7 @@ DAMAGE TYPES
 		Default="75" >
 		<Armor
 			Damage="CANNON"
-			Percent="8" />
+			Percent="9" />
 		<Armor
 			Damage="ROCKET"
 			Percent="18" />
@@ -798,7 +815,7 @@ DAMAGE TYPES
 			Percent="75" />
 		<Armor
 			Damage="FLAME"
-			Percent="40" />					
+			Percent="50" />					
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -821,10 +838,10 @@ DAMAGE TYPES
 			Percent="13" />			
 		<Armor
 			Damage="GRENADE"
-			Percent="75" />
+			Percent="50" />
 		<Armor
 			Damage="FLAME"
-			Percent="40" />					
+			Percent="50" />				
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -890,10 +907,10 @@ DAMAGE TYPES
 		Default="100">
 		<Armor
 			Damage="CANNON"
-			Percent="12" />
+			Percent="10" />
 		<Armor
 			Damage="ROCKET"
-			Percent="30" />
+			Percent="25" />
 		<Armor
 			Damage="BLAST"
 			Percent="27" />				
@@ -1090,10 +1107,10 @@ DAMAGE TYPES
 			Percent="27" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="60" />
+			Percent="67" />
 		<Armor
 			Damage="FLAME"
-			Percent="90" />					
+			Percent="100" />					
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -1306,13 +1323,13 @@ DAMAGE TYPES
 			Percent="40" />			
 		<Armor
 			Damage="GRENADE"
-			Percent="30" />
+			Percent="25" />
 		<Armor
 			Damage="FLAME"
-			Percent="30" />				
+			Percent="25" />				
 		<Armor
 			Damage="GUN"
-			Percent="35" />
+			Percent="33" />
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -1333,13 +1350,13 @@ DAMAGE TYPES
 			Percent="40" />			
 		<Armor
 			Damage="GRENADE"
-			Percent="30" />
+			Percent="25" />
 		<Armor
 			Damage="FLAME"
-			Percent="30" />				
+			Percent="25" />				
 		<Armor
 			Damage="GUN"
-			Percent="35" />
+			Percent="33" />
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -2020,22 +2037,22 @@ DAMAGE TYPES
 			Percent="1" />
 		<Armor
 			Damage="CANNON"
-			Percent="86" />
+			Percent="115" />
 		<Armor
 			Damage="ROCKET"
-			Percent="56" />
+			Percent="75" />
 		<Armor
 			Damage="BLAST"
-			Percent="34" />				
+			Percent="46" />				
 		<Armor
 			Damage="GRENADE"
-			Percent="24" />
+			Percent="33" />
 		<Armor
 			Damage="FLAME"
-			Percent="33" />				
+			Percent="44" />				
 		<Armor
 			Damage="GUN"
-			Percent="28" />
+			Percent="37" />
 		<Armor
 			Damage="LASER"
 			Percent="1" />				
@@ -2079,25 +2096,25 @@ DAMAGE TYPES
 		RearDamageScalar="100">	
 		<Armor
 			Damage="SNIPER"
-			Percent="1" />		
+			Percent="1" />
 		<Armor
 			Damage="CANNON"
-			Percent="75" />
+			Percent="100" />
 		<Armor
 			Damage="BLAST"
-			Percent="30" />				
+			Percent="40" />				
 		<Armor
 			Damage="ROCKET"
-			Percent="56" />
+			Percent="75" />
 		<Armor
 			Damage="GRENADE"
-			Percent="22" />
+			Percent="30" />
 		<Armor
 			Damage="FLAME"
-			Percent="30" />				
+			Percent="40%" />				
 		<Armor
 			Damage="GUN"
-			Percent="18" />
+			Percent="25" />
 		<Armor
 			Damage="LASER"
 			Percent="1" />				
@@ -2141,25 +2158,25 @@ DAMAGE TYPES
 		RearDamageScalar="100">	
 		<Armor
 			Damage="SNIPER"
-			Percent="1" />		
+			Percent="1" />
 		<Armor
 			Damage="CANNON"
-			Percent="75" />
+			Percent="100" />
 		<Armor
 			Damage="BLAST"
-			Percent="30" />					
+			Percent="40" />				
 		<Armor
 			Damage="ROCKET"
-			Percent="56" />		
+			Percent="75" />
 		<Armor
 			Damage="GRENADE"
-			Percent="22" />
+			Percent="30" />
 		<Armor
 			Damage="FLAME"
-			Percent="30" />				
+			Percent="40" />				
 		<Armor
 			Damage="GUN"
-			Percent="18" />
+			Percent="25" />
 		<Armor
 			Damage="LASER"
 			Percent="1" />				
@@ -2345,7 +2362,7 @@ DAMAGE TYPES
 		id="AlienAnnihilatorTripodArmor"
 		Default="100"
 		SideDamageScalar="100"
-		RearDamageScalar="120">
+		RearDamageScalar="100">
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />
@@ -2407,7 +2424,7 @@ DAMAGE TYPES
 		id="Reaper17AnnihilatorTripodArmor"
 		Default="100"
 		SideDamageScalar="100"
-		RearDamageScalar="120">
+		RearDamageScalar="100">
 		<Armor
 			Damage="SNIPER"
 			Percent="1" />

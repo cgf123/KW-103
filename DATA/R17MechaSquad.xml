@@ -1139,7 +1139,7 @@
 			EvaEventBuildCancelled="BuildCancelled"
 			EvaEventPromotedOwner="UnitPromoted" />
 		<VisionInfo
-			VisionRange="350"
+			VisionRange="375"
 			ShroudClearingRange="400"
 			VisionSide="100%"
 			VisionRear="100%"

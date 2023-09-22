@@ -97,6 +97,75 @@
 					KindOf="TIBERIUM"
 					UseLocalPlayerFilter="false" />
 			</RadarScanMapSpecialAbilityUpdate>
+			
+			<StealthDetectorUpdate
+				id="70ED959C"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				DetectionRate="0.4s"
+				DetectionRange="40000"
+				PingSound=""
+				LoudPingSound=""
+				IRBeaconParticleSys=""
+				IRParticleSys=""
+				IRBrightParticleSys=""
+				IRGridParticleSys=""
+				ExtraRequiredKindOf="HARVESTER"
+				ExtraForbiddenKindOf=""
+				RequiredUpgrade=""
+				InitiallyDisabled="False"
+				CanDetectWhileGarrisoned="False"
+				CanDetectWhileContained="False"
+				UseMetaAOI="False" />			
+
+			<StealthDetectorUpdate
+				id="70ED959D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				DetectionRate="0.4s"
+				DetectionRange="40000"
+				PingSound=""
+				LoudPingSound=""
+				IRBeaconParticleSys=""
+				IRParticleSys=""
+				IRBrightParticleSys=""
+				IRGridParticleSys=""
+				ExtraRequiredKindOf="FS_MONEY_STORAGE"
+				ExtraForbiddenKindOf=""
+				RequiredUpgrade=""
+				InitiallyDisabled="False"
+				CanDetectWhileGarrisoned="False"
+				CanDetectWhileContained="False"
+				UseMetaAOI="False" />		
+
+			<StealthDetectorUpdate
+				id="70ED959E"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				DetectionRate="0.4s"
+				DetectionRange="40000"
+				PingSound=""
+				LoudPingSound=""
+				IRBeaconParticleSys=""
+				IRParticleSys=""
+				IRBrightParticleSys=""
+				IRGridParticleSys=""
+				ExtraRequiredKindOf="TIBERIUM_BASED"
+				ExtraForbiddenKindOf=""
+				RequiredUpgrade=""
+				InitiallyDisabled="False"
+				CanDetectWhileGarrisoned="False"
+				CanDetectWhileContained="False"
+				UseMetaAOI="False" />					
 						
 			<Physics
 				id="ModuleTag_Physics" />

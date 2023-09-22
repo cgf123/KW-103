@@ -2101,7 +2101,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="312"
+				MaxHealth="240"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -4356,7 +4356,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="312"
+				MaxHealth="240"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -4575,7 +4575,7 @@
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
-		WorldMapArmoryUpgradesAllowed="Upgrade_EmpGrenades"
+		WorldMapArmoryUpgradesAllowed=""
 		CaptureTime="0s"
 		BuildCost="200"
 		RefundValue="0"
@@ -6164,7 +6164,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="312"
+				MaxHealth="240"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

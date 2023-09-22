@@ -66,7 +66,7 @@
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
-		WorldMapArmoryUpgradesAllowed="Upgrade_TiberiumInfusion"
+		WorldMapArmoryUpgradesAllowed="Upgrade_MOKTiberiumInfusion"
 		CaptureTime="0s"
 		BuildCost="120"
 		RefundValue="0"
@@ -1587,8 +1587,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				AttributeModifier="AttributeModifier_TiberiumInfusion">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>			
+				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>	
 			</AttributeModifierUpgrade>
 			<SuppressionUpdate
 				id="3AE0061F"
@@ -1612,8 +1611,7 @@
 				ArmorSetFlag="PLAYER_UPGRADE"
 				KillArmorUpgrade="False"
 				IgnoreArmorUpgrade="False">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
+				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>		
 			</ArmorUpgrade>
 			<LargeGroupAudioUpdate
 				id="00F75CF5"
@@ -1631,8 +1629,7 @@
 				WaypointModeTerminal="True"
 				SoundToPlay="AudioEvent:NOD_TiberiumUpgrade"
 				KillAfterMS="0">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
+				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>			
 			</AudioLoopUpgrade>
 			<AudioLoopUpgrade
 				id="AABB462D"
@@ -3409,8 +3406,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				AttributeModifier="AttributeModifier_TiberiumInfusion">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>		
 			</AttributeModifierUpgrade>
 			<SuppressionUpdate
 				id="3AE0061F"
@@ -3434,8 +3430,7 @@
 				ArmorSetFlag="PLAYER_UPGRADE"
 				KillArmorUpgrade="False"
 				IgnoreArmorUpgrade="False">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>			
 			</ArmorUpgrade>
 			<LargeGroupAudioUpdate
 				id="00F75CF5"
@@ -3453,8 +3448,7 @@
 				WaypointModeTerminal="True"
 				SoundToPlay="AudioEvent:NOD_TiberiumUpgrade"
 				KillAfterMS="0">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>		
 			</AudioLoopUpgrade>
 			<AudioLoopUpgrade
 				id="AABB462D"
@@ -5222,17 +5216,6 @@
 					DeathTypes="DETONATED"
 					DeathTypesForbidden="" />
 			</SlowDeath>
-			<AttributeModifierUpgrade
-				id="3129F082"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				AttributeModifier="AttributeModifier_TiberiumInfusion">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>					
-			</AttributeModifierUpgrade>
 			<SuppressionUpdate
 				id="3AE0061F"
 				UpdateDelay="1s"
@@ -5245,19 +5228,6 @@
 				id="53580964"
 				AttributeModifierInCover="Modifier_Cover"
 				CoverScanRange="10" />
-			<ArmorUpgrade
-				id="11A0FF32"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="True"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				ArmorSetFlag="PLAYER_UPGRADE"
-				KillArmorUpgrade="False"
-				IgnoreArmorUpgrade="False">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>				
-			</ArmorUpgrade>
 			<LargeGroupAudioUpdate
 				id="00F75CF5"
 				FramesBetweenUpdatesMin="3"
@@ -5265,18 +5235,6 @@
 				UnitWeight="1">
 				<Key>-1613679793</Key>
 			</LargeGroupAudioUpdate>
-			<AudioLoopUpgrade
-				id="829D13C1"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				SoundToPlay="AudioEvent:NOD_TiberiumUpgrade"
-				KillAfterMS="0">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>					
-			</AudioLoopUpgrade>
 			<AudioLoopUpgrade
 				id="AABB462D"
 				RequiresAllTriggers="False"

@@ -493,7 +493,7 @@
 		MinTurnSpeed="0%"
 		TurnPivotOffset="-0.1"
 		BehaviorZ="NO_MOTIVE_FORCE"
-		Appearance="TREADS"
+		Appearance="FOUR_WHEELS"
 
 		AccelPitchLimit="10d"
 		BounceKick="0d"
@@ -1007,13 +1007,13 @@
 		id="AlienAnnihilatorTripodLocomotor"
 		Name="AlienAnnihilatorTripodLocomotor"
 		Surfaces="GROUND RUBBLE CRUSHABLE_OBSTACLE" 
-		TurnTimeSeconds="2.5s" 
-		TurnTimeDamagedSeconds="2.5s" 
+		TurnTimeSeconds="1.75s" 
+		TurnTimeDamagedSeconds="1.75s" 
 		MaxSpeedDamaged="75%"
 		AccelerationSeconds="1.0s"
 		BrakingSeconds="0.01s"
 		SlowTurnRadius="0.0" 
-		FastTurnRadius="20.0" 
+		FastTurnRadius="15.0" 
 		BehaviorZ="NO_MOTIVE_FORCE"	
 		Appearance="TREADS" 
 		
@@ -1027,17 +1027,18 @@
 		ReorientIfTurnTooSharp="true"
 		/>
 		
+	<!--
 	<LocomotorTemplate
 		id="AlienAnnihilatorTripodUpgradedLocomotor"
 		Name="AlienAnnihilatorTripodUpgradedLocomotor"
 		Surfaces="GROUND RUBBLE CRUSHABLE_OBSTACLE" 
-		TurnTimeSeconds="2.25s" 
-		TurnTimeDamagedSeconds="2.25s" 
+		TurnTimeSeconds="1.75s" 
+		TurnTimeDamagedSeconds="1.75s" 
 		MaxSpeedDamaged="75%"
 		AccelerationSeconds="1.0s"
 		BrakingSeconds="0.01s"
 		SlowTurnRadius="0.0" 
-		FastTurnRadius="20.0" 
+		FastTurnRadius="15.0" 
 		BehaviorZ="NO_MOTIVE_FORCE"	
 		Appearance="TREADS" 
 		
@@ -1050,6 +1051,7 @@
 		ClampOrientationToPathTangent="false"
 		ReorientIfTurnTooSharp="true"
 		/>		
+	-->
 
 	<LocomotorTemplate
 		id="NODAvatarLocomotor"
@@ -1273,7 +1275,7 @@
 			
 		TakeOffAndLandingSpeed="6.0"
 		TakeOffAndLandingSlowDownDelta="35.0"
-		TakeOffAndLandingSlowDownTime="1.5s"
+		TakeOffAndLandingSlowDownTime="1.25s"
 
 		RudderCorrectionDegree="0.169"
 		RudderCorrectionRate="0.027"
@@ -1311,7 +1313,7 @@
 			
 		TakeOffAndLandingSpeed="6.0"
 		TakeOffAndLandingSlowDownDelta="35.0"
-		TakeOffAndLandingSlowDownTime="1.5s"
+		TakeOffAndLandingSlowDownTime="1.25s"
 
 		RudderCorrectionDegree="0.169"
 		RudderCorrectionRate="0.027"
@@ -1351,7 +1353,7 @@
 			
 		TakeOffAndLandingSpeed="6.0"
 		TakeOffAndLandingSlowDownDelta="35.0"
-		TakeOffAndLandingSlowDownTime="1.5s"
+		TakeOffAndLandingSlowDownTime="1.25s"
 
 		RudderCorrectionDegree="0.169"
 		RudderCorrectionRate="0.027"

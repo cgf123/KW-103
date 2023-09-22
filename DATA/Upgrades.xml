@@ -470,7 +470,7 @@
 		Description="UpgradeDesc:NODConfessor" 
 		Type="PLAYER"
 		BuildCost="1000"
-		BuildTime="30.0s"
+		BuildTime="20.0s"
 		ResearchSound="AudioEvent:NOD_Confessor_Upgrade"
 		IconImage="Button_UpgradeConfessor"
 	/>	
@@ -486,8 +486,8 @@
 		TypeDescription="UpgradeType:NODTiberiumInfusion"
 		Description="UpgradeDesc:NODTiberiumInfusion"
 		Type="PLAYER"
-		BuildCost="500"
-		BuildTime="15s"
+		BuildCost="1000"
+		BuildTime="20s"
 		ResearchSound="AudioEvent:NOD_TiberiumUpgrade"
 		IconImage="Button_UpgradeTiberiumInfusion"
 	/>	

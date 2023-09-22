@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	
+<!-- /////////////////////////////////////////////////////////////////////////////////// NOD BLACKHAND ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 	<GameObject
-		id="BlackHandBlackDisciple"
+		id="NODBlackHand"
 		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS INFANTRY PRELOAD ATTACK_NEEDS_LINE_OF_SIGHT PATH_THROUGH_INFANTRY"
 		ReviveText=""
 		RecruitText=""
-		Description="Desc:BlackHandBlackHand"
-		TypeDescription="Type:BlackHandBlackHand"
+		Description="Desc:NodBlackHand"
+		TypeDescription="Type:NodBlackHand"
 		Hotkey=""
 		RadarPriority="UNIT"
 		BuildCompletion="APPEARS_AT_RALLY_POINT"
@@ -18,8 +20,8 @@
 		BuildFadeInOnCreateTimeSeconds="0s"
 		FactoryExitWidth="0"
 		FactoryExtraBibWidth="0"
-		Side="BlackHand"
-		EditorName="BlackHandBlackDisciple"
+		Side="NOD"
+		EditorName="NODBlackHand"
 		EditorSorting="UNIT"
 		BountyValue="0"
 		BuildTime="1.5"
@@ -70,9 +72,8 @@
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
-		WorldMapArmoryUpgradesAllowed="Upgrade_BlackHandSecretShrinePurifyingFlame"
 		CaptureTime="0s"
-		BuildCost="50"
+		BuildCost="150"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -92,7 +93,11 @@
 		BuildInProximityToSamePlayerStucture="True">
 		<DisplayName>Name:NODBlackHand</DisplayName>
 		<ArmorSet
-			Armor="BHDiscipleArmor"
+			Armor="NODBlackhandArmorUpgraded"
+			DamageFX="InfantryDamageFX"
+			Conditions="PLAYER_UPGRADE" />		
+		<ArmorSet
+			Armor="NODBlackhandArmor"
 			DamageFX="InfantryDamageFX"
 			Conditions="" />
 		<LocomotorSet
@@ -685,8 +690,8 @@
 						AnimNickName=""
 						Distance="0"
 						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
+						AnimationSpeedFactorMin="1.0"
+						AnimationSpeedFactorMax="1.0"
 						WeaponTimingOrdering="PRIMARY_WEAPON"
 						WeaponTimingSlotID="1"
 						AnimationPriority="1"
@@ -935,8 +940,8 @@
 						AnimNickName=""
 						Distance="0"
 						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
+						AnimationSpeedFactorMin="1.0"
+						AnimationSpeedFactorMax="1.0"
 						WeaponTimingOrdering="PRIMARY_WEAPON"
 						WeaponTimingSlotID="1"
 						AnimationPriority="1"
@@ -1135,8 +1140,8 @@
 						AnimNickName=""
 						Distance="0"
 						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
+						AnimationSpeedFactorMin="1.0"
+						AnimationSpeedFactorMax="1.0"
 						WeaponTimingOrdering="PRIMARY_WEAPON"
 						WeaponTimingSlotID="1"
 						AnimationPriority="1"
@@ -1195,8 +1200,8 @@
 						AnimNickName=""
 						Distance="0"
 						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
+						AnimationSpeedFactorMin="1.0"
+						AnimationSpeedFactorMax="1.0"
 						WeaponTimingOrdering="PRIMARY_WEAPON"
 						WeaponTimingSlotID="1"
 						AnimationPriority="1"
@@ -1811,8 +1816,7 @@
 				SuppressionDuration="5s"
 				AttributeModifierSuppressed="Modifier_Test_Suppression"
 				AttributeModifierForceMove="Modifier_Test_Suppression_ForceMove"
-				IgnoreSuppressionObjectStatus="" />
-				-->
+				IgnoreSuppressionObjectStatus="" /> -->
 			<FindCoverBehavior
 				id="53580964"
 				AttributeModifierInCover="Modifier_Cover"
@@ -1835,6 +1839,7 @@
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_BlackHandSecretShrinePurifyingFlame</TriggeredBy>
 			</AudioLoopUpgrade>
+
 			<WeaponSetUpdate>
 				<WeaponSlotHardpoint
 					ID="1"
@@ -1843,56 +1848,59 @@
 					AllowInterleavedFiring="False">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="BlckDiscipleFlamethrower"
+						Template="NodBlackhandFlamethrower"
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="BlckDiscipleUpgradedFlamethrower"
-						Upgrade=""
-						ObjectStatus="WEAPON_UPGRADED_01"
-						IsPlayerUpgradePermanent="False" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="BlckDiscipleFlamethrower_Raged"
-						Upgrade="Upgrade_Raged"
-						ObjectStatus=""
-						IsPlayerUpgradePermanent="False" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="BlckDiscipleUpgradedFlamethrower_Raged"
+						Template="NodBlackhandFlamethrower_Raged"
 						Upgrade="Upgrade_Raged"
 						ObjectStatus="WEAPON_UPGRADED_01"
-						IsPlayerUpgradePermanent="False" />						
+						IsPlayerUpgradePermanent="False" />				
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
-			<StatusBitsUpgrade
-				id="85B2DF85"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				StatusToSet="WEAPON_UPGRADED_01"
-				StatusToClear=""
-				ApplyToContained="False">
-				<TriggeredBy>Upgrade_BlackHandSecretShrinePurifyingFlame</TriggeredBy>
-			</StatusBitsUpgrade>
-			<ModelConditionUpgrade
-				id="9739B1BE"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				AddConditionFlags="USER_6"
-				RemoveConditionFlags=""
-				AddTempConditionFlag="TOPPLED"
-				TempConditionTime="0s">
-				<TriggeredBy>Upgrade_BlackHandSecretShrinePurifyingFlame</TriggeredBy>
-			</ModelConditionUpgrade>
 			
+
+			<AudioLoopUpgrade
+				id="829D13C1"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				SoundToPlay="AudioEvent:NOD_TiberiumUpgrade"
+				KillAfterMS="0">
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>					
+			</AudioLoopUpgrade>			
+			
+			<ArmorUpgrade
+				id="11A0FF32"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="True"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				ArmorSetFlag="PLAYER_UPGRADE"
+				KillArmorUpgrade="False"
+				IgnoreArmorUpgrade="False">
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>					
+			</ArmorUpgrade>			
+			
+			<AttributeModifierUpgrade
+				id="3129F083"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="AttributeModifier_TiberiumInfusion">
+				<CustomAnimAndDuration
+					AnimState="USER_1"
+					Frames="0"
+					Trigger="0" />
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>				
+			</AttributeModifierUpgrade>			
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -2066,7 +2074,7 @@
 			MinCrushVelocityPercent="1%"
 			CrushDecelerationPercent="0%"
 			CrushWeapon=""
-			CrushRevengeWeapon="BHDiscipleCrushWeapon"
+			CrushRevengeWeapon="BHCrushWeapon"
 			CrusherLevel="0"
 			CrushableLevel="0"
 			MountedCrusherLevel="255"
@@ -2075,6 +2083,7 @@
 			UseCrushAttack="True"
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
-		<DisplayUpgrade>Upgrade_BlackHandSecretShrinePurifyingFlame</DisplayUpgrade>
-	</GameObject>
+		<DisplayUpgrade>Upgrade_TiberiumInfusion</DisplayUpgrade>
+	</GameObject>	
+	
 </AssetDeclaration>

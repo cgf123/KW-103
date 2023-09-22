@@ -447,7 +447,9 @@
 	<Include type="all" source="MOKCommando.xml" />			
 	<Include type="all" source="BHCommando.xml" />			
 	
-	<Include type="all" source="Blackhands.xml" />	
+	<Include type="all" source="NODBlackhand.xml" />	
+	<Include type="all" source="BHBlackhand.xml" />	
+
 	<Include type="all" source="NODBlackHandSquad.xml" />	
 	<Include type="all" source="BHBlackHandSquad.xml" />
 

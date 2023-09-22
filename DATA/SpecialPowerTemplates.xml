@@ -224,7 +224,7 @@
 		RadiusCursorRadius="130"
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		Money="-2500"
+		Money="-2200"
 		InitiateAtLocationSound="AudioEvent:GDI_Ox_VoiceReinforcements">
 		<ForbiddenObjectFilter
 			Rule="ANY"
@@ -239,7 +239,7 @@
 		RadiusCursorRadius="130"
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		Money="-3500"
+		Money="-3300"
 		InitiateAtLocationSound="AudioEvent:GDI_Ox_VoiceReinforcements">
 		<ForbiddenObjectFilter
 			Rule="ANY"
@@ -250,7 +250,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPower_FireEMPGrenades"
 		ReloadTime="30s"
-		RadiusCursorRadius="50"
+		RadiusCursorRadius="40"
 		TargetType="LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x95DA9A99" >
 		<GameDependency>
@@ -260,7 +260,7 @@
 	<!-- VoiceAttackEMP -->
 	<SpecialPowerTemplate
 		id="EMPGrenadesGetInRange"
-		RadiusCursorRadius="50"
+		RadiusCursorRadius="40"
 		ReloadTime="30s"
 		TargetType="LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0xD6AB46C3" >

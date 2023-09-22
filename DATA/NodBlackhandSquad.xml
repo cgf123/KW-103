@@ -22,7 +22,7 @@
 		EditorName="NODBlackHandSquad"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="9"
+		BuildTime="7"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -71,7 +71,7 @@
 		UnitTypeIcon="FlameThrowerIcon"
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
-		BuildCost="900"
+		BuildCost="700"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -101,7 +101,7 @@
 			DamageFX=""
 			Conditions="" />
 		<LocomotorSet
-			Speed="55"
+			Speed="50"
 			Condition="NORMAL"
 			Locomotor="NormalRangedSquadLocomotor" />
 		<SkirmishAIInformation
@@ -190,6 +190,23 @@
 						Name="W3DMesh:FXBLACKHAND_FP"
 						ExtraMesh="False" />
 				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_1"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name=""
+						ExtraMesh="False" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="NODTibInfusion"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>				
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					Name=""
@@ -761,6 +778,22 @@
 				MaxFrequency="0"
 				RandomizeTargetLocation="False" />						
 				
+			<AttributeModifierUpgrade
+				id="3129F083"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AttributeModifier="AttributeModifier_TiberiumInfusion">
+				<CustomAnimAndDuration
+					AnimState="USER_1"
+					Frames="0"
+					Trigger="0" />
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
+				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
+			</AttributeModifierUpgrade>				
+				
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate
@@ -869,5 +902,6 @@
 			UseCrushAttack="False"
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
+		<DisplayUpgrade>Upgrade_TiberiumInfusion</DisplayUpgrade>			
 	</GameObject>
 </AssetDeclaration>

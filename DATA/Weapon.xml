@@ -216,8 +216,8 @@ DAMAGE TYPES
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
 		<ClipReloadTime
-			MinSeconds="2.5s"
-			MaxSeconds="2.7s" />
+			MinSeconds="2.3s"
+			MaxSeconds="2.5s" />
 
 		<Nuggets>
 			<ProjectileNugget
@@ -411,7 +411,7 @@ DAMAGE TYPES
 				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL" >
 				<!-- Weaker vs some anti-inf units -->
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter Rule="NONE"
 							Include="CAVALRY">          					
 					</Filter>
@@ -477,7 +477,7 @@ DAMAGE TYPES
 				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL" >
 				<!-- Weaker vs some anti-inf units -->
-		        <DamageScalarDetails Scalar= "75%">
+		        <DamageScalarDetails Scalar= "80%">
 					<Filter Rule="NONE"
 							Include="CAVALRY">          
 					</Filter>
@@ -540,7 +540,7 @@ DAMAGE TYPES
 				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL" >
 				<!-- Weaker vs some anti-inf units -->
-		        <DamageScalarDetails Scalar= "75%">
+		        <DamageScalarDetails Scalar= "80%">
 					<Filter Rule="NONE"
 							Include="CAVALRY">          
 					</Filter>
@@ -698,7 +698,7 @@ DAMAGE TYPES
                   <Filter Rule="ALL" Relationship="ALLIES" Exclude="HUSK" /> 
                 </DamageScalarDetails>				
 				<!-- Weaker vs some anti-inf units -->
-		        <DamageScalarDetails Scalar= "75%">
+		        <DamageScalarDetails Scalar= "80%">
 					<Filter Rule="NONE"
 							Include="CAVALRY">          
 					</Filter>
@@ -869,7 +869,7 @@ DAMAGE TYPES
                   <Filter Rule="ALL" Relationship="ALLIES" Exclude="HUSK" /> 
                 </DamageScalarDetails>				
 				<!-- Weaker vs some anti-inf units -->
-		        <DamageScalarDetails Scalar= "75%">
+		        <DamageScalarDetails Scalar= "80%">
 					<Filter Rule="NONE"
 							Include="CAVALRY">          
 					</Filter>
@@ -927,7 +927,7 @@ DAMAGE TYPES
 		id="GDIGrenadeSoldierGrenade"
 		Name="GDIGrenadeSoldierGrenade"
 		AttackRange="300"
-		WeaponSpeed="240"
+		WeaponSpeed="250"
 		FireSound="AudioEvent:GDI_Grenadier_GrenadeThrow"
 		AcceptableAimDelta="20d"
 		PreAttackType="PER_SHOT"
@@ -939,8 +939,8 @@ DAMAGE TYPES
 		  MinSeconds="0.3s"
 		  MaxSeconds="0.3s" />
 		<FiringDuration
-			MinSeconds="0.8s"
-			MaxSeconds="0.8s" />
+			MinSeconds="0.9s"
+			MaxSeconds="1.0s" />
 		<ClipReloadTime
 			MinSeconds="0.1s"
 			MaxSeconds="0.4s" />
@@ -966,7 +966,7 @@ DAMAGE TYPES
 		id="GDIGrenadeSoldierGrenade_Garrison"
 		Name="GDIGrenadeSoldierGrenade_Garrison"
 		AttackRange="300"
-		WeaponSpeed="240"
+		WeaponSpeed="250"
 		FireSound="AudioEvent:GDI_Grenadier_GrenadeThrow"
 		AcceptableAimDelta="360d"
 		PreAttackType="PER_SHOT"
@@ -974,12 +974,9 @@ DAMAGE TYPES
 		AutoReloadsClip="AUTO"
 		CanFireWhileMoving="true"
 		>
-		<PreAttackDelay
-		  MinSeconds="0.3s"
-		  MaxSeconds="0.3s" />
 		<FiringDuration
-			MinSeconds="0.8s"
-			MaxSeconds="0.8s" />
+			MinSeconds="1.2s"
+			MaxSeconds="1.3s" />
 		<ClipReloadTime
 			MinSeconds="0.1s"
 			MaxSeconds="0.4s" />
@@ -1059,15 +1056,12 @@ DAMAGE TYPES
 		AutoReloadsClip="AUTO"
 		CanFireWhileMoving="true"
 		>
-		<PreAttackDelay
-		  MinSeconds="0.3s"
-		  MaxSeconds="0.3s" />
 		<FiringDuration
 			MinSeconds="0.2s"
 			MaxSeconds="0.3s" />
 		<ClipReloadTime
 			MinSeconds="2.2s"
-			MaxSeconds="2.4s" />
+			MaxSeconds="2.3s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="MARVGrenadeSoldierWeaponProjectile"
@@ -1105,7 +1099,7 @@ DAMAGE TYPES
 					Include="INFANTRY" />
 			</DamageContainedNugget>
 			<DamageNugget
-				Damage="150.0"
+				Damage="120.0"
 				Radius="35.0"
 				DamageType="GRENADE"
 				DamageFXType="GDI_GRENADE"
@@ -2354,7 +2348,7 @@ DAMAGE TYPES
 						Include="STRUCTURE FS_BASE_DEFENSE">
 					</Filter>
 				</DamageScalarDetails>				   
-				<DamageScalarDetails Scalar= "200%" >
+				<DamageScalarDetails Scalar= "220%" >
 					<Filter
 						Rule="NONE"
 						Relationship="ENEMIES"
@@ -2408,7 +2402,7 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>				   
-				<DamageScalarDetails Scalar= "200%" >
+				<DamageScalarDetails Scalar= "220%" >
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY">
@@ -2480,7 +2474,7 @@ DAMAGE TYPES
 						Include="STRUCTURE FS_BASE_DEFENSE">
 					</Filter>
 				</DamageScalarDetails>						
-				<DamageScalarDetails Scalar= "200%" >
+				<DamageScalarDetails Scalar= "220%" >
 					<Filter
 						Rule="NONE"
 						Relationship="ENEMIES"
@@ -2534,7 +2528,7 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>				   
-				<DamageScalarDetails Scalar= "200%" >
+				<DamageScalarDetails Scalar= "220%" >
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY">
@@ -2632,7 +2626,7 @@ DAMAGE TYPES
 						Include="STRUCTURE FS_BASE_DEFENSE">
 					</Filter>
 				</DamageScalarDetails>				   
-				<DamageScalarDetails Scalar= "200%" >
+				<DamageScalarDetails Scalar= "220%" >
 					<Filter
 						Rule="NONE"
 						Relationship="ENEMIES"
@@ -2681,7 +2675,7 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>				   
-				<DamageScalarDetails Scalar= "200%" >
+				<DamageScalarDetails Scalar= "220%" >
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY">
@@ -2720,7 +2714,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="144.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -2770,7 +2764,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="144.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -2816,7 +2810,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="192.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -2866,7 +2860,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="192.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -2915,7 +2909,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="144.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED">
@@ -2963,7 +2957,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="144.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED">
@@ -3037,7 +3031,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="144.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED">
@@ -3104,7 +3098,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="144.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED">			
@@ -3167,7 +3161,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="192.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED">					
@@ -3222,7 +3216,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="192.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED">						
@@ -3283,10 +3277,10 @@ DAMAGE TYPES
 		  CanFireWhileMoving="true">
 		<PreAttackDelay
 			MinSeconds="0s"
-			MaxSeconds="1s" />
+			MaxSeconds="0s" />
 		<FiringDuration
-			MinSeconds="0.1s"
-			MaxSeconds="0.1s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
 			MinSeconds="1.0s"
 			MaxSeconds="1.0s" />
@@ -3296,9 +3290,9 @@ DAMAGE TYPES
 				StreamId="0"/>
 					
 			<DamageNugget
-				Damage="50"
-				Radius="30.0"
-				DelayTimeSeconds="0.5s"
+				Damage="33.0"
+				Radius="36.0"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3315,9 +3309,9 @@ DAMAGE TYPES
                 </DamageScalarDetails>				
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="50"
+				Damage="33.0"
 				Radius="20.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3357,10 +3351,10 @@ DAMAGE TYPES
 		  CanFireWhileMoving="true">
 		<PreAttackDelay
 			MinSeconds="0s"
-			MaxSeconds="1s" />
+			MaxSeconds="0s" />
 		<FiringDuration
-			MinSeconds="0.1s"
-			MaxSeconds="0.1s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
 			MinSeconds="1.0s"
 			MaxSeconds="1.0s" />
@@ -3369,9 +3363,9 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="50"
-				Radius="30.0"
-				DelayTimeSeconds="0.5s"
+				Damage="33"
+				Radius="36.0"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3381,9 +3375,9 @@ DAMAGE TYPES
 				</SpecialObjectFilter>						
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="50"
+				Damage="33"
 				Radius="20.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3415,10 +3409,10 @@ DAMAGE TYPES
 		  CanFireWhileMoving="true">
 		<PreAttackDelay
 			MinSeconds="0s"
-			MaxSeconds="1s" />
+			MaxSeconds="0s" />
 		<FiringDuration
-			MinSeconds="0.1s"
-			MaxSeconds="0.1s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
 			MinSeconds="1.0s"
 			MaxSeconds="1.0s" />
@@ -3428,9 +3422,9 @@ DAMAGE TYPES
 				StreamId="0"/>
 
 			<DamageNugget
-				Damage="66"
-				Radius="30.0"
-				DelayTimeSeconds="0.5s"
+				Damage="44"
+				Radius="36.0"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3447,9 +3441,9 @@ DAMAGE TYPES
                 </DamageScalarDetails>				
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="66"
+				Damage="44"
 				Radius="20.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3497,10 +3491,10 @@ DAMAGE TYPES
 		  CanFireWhileMoving="true">
 		<PreAttackDelay
 			MinSeconds="0s"
-			MaxSeconds="1s" />
+			MaxSeconds="0s" />
 		<FiringDuration
-			MinSeconds="0.1s"
-			MaxSeconds="0.1s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
 			MinSeconds="1.0s"
 			MaxSeconds="1.0s" />
@@ -3509,9 +3503,9 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="66"
-				Radius="30.0"
-				DelayTimeSeconds="0.5s"
+				Damage="44"
+				Radius="36.0"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3521,9 +3515,9 @@ DAMAGE TYPES
 				</SpecialObjectFilter>						
 			</DamageNugget> 				
 			<DamageNugget
-				Damage="66"
+				Damage="44"
 				Radius="20.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3565,10 +3559,10 @@ DAMAGE TYPES
 		  CanFireWhileMoving="true">
 		<PreAttackDelay
 			MinSeconds="0s"
-			MaxSeconds="1s" />
+			MaxSeconds="0s" />
 		<FiringDuration
-			MinSeconds="0.1s"
-			MaxSeconds="0.1s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
 			MinSeconds="1.0s"
 			MaxSeconds="1.0s" />
@@ -3577,9 +3571,9 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="40"
-				Radius="15.0"
-				DelayTimeSeconds="0.5s"
+				Damage="33"
+				Radius="18.0"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3595,9 +3589,9 @@ DAMAGE TYPES
                 </DamageScalarDetails>						
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="40"
+				Damage="33"
 				Radius="10.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3636,10 +3630,10 @@ DAMAGE TYPES
 		  CanFireWhileMoving="true">
 		<PreAttackDelay
 			MinSeconds="0s"
-			MaxSeconds="1s" />
+			MaxSeconds="0s" />
 		<FiringDuration
-			MinSeconds="0.1s"
-			MaxSeconds="0.1s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
 			MinSeconds="1.0s"
 			MaxSeconds="1.0s" />
@@ -3648,9 +3642,9 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="40"
-				Radius="15.0"
-				DelayTimeSeconds="0.5s"
+				Damage="33"
+				Radius="18.0"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3660,9 +3654,9 @@ DAMAGE TYPES
 				</SpecialObjectFilter>							
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="40"
+				Damage="33"
 				Radius="10.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3694,10 +3688,10 @@ DAMAGE TYPES
 		  CanFireWhileMoving="true">
 		<PreAttackDelay
 			MinSeconds="0s"
-			MaxSeconds="1s" />
+			MaxSeconds="0s" />
 		<FiringDuration
-			MinSeconds="0.1s"
-			MaxSeconds="0.1s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
 			MinSeconds="1.0s"
 			MaxSeconds="1.0s" />
@@ -3706,9 +3700,9 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="53"
-				Radius="15.0"
-				DelayTimeSeconds="0.5s"
+				Damage="44"
+				Radius="18.0"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3724,9 +3718,9 @@ DAMAGE TYPES
                 </DamageScalarDetails>						
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="53"
+				Damage="44"
 				Radius="10.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3773,10 +3767,10 @@ DAMAGE TYPES
 		  CanFireWhileMoving="true">
 		<PreAttackDelay
 			MinSeconds="0s"
-			MaxSeconds="1s" />
+			MaxSeconds="0s" />
 		<FiringDuration
-			MinSeconds="0.1s"
-			MaxSeconds="0.1s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.5s" />
 		<ClipReloadTime
 			MinSeconds="1.0s"
 			MaxSeconds="1.0s" />
@@ -3785,9 +3779,9 @@ DAMAGE TYPES
 				Lifetime="0.75s"
 				StreamId="0"/>
 			<DamageNugget
-				Damage="53"
-				Radius="15.0"
-				DelayTimeSeconds="0.5s"
+				Damage="44"
+				Radius="18.0"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3797,9 +3791,9 @@ DAMAGE TYPES
 				</SpecialObjectFilter>							
 			</DamageNugget> 					
 			<DamageNugget
-				Damage="53"
+				Damage="44"
 				Radius="10.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" >
@@ -3880,7 +3874,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="144.0"
 				Radius="40.0"
-				DelayTimeSeconds="0.5s"
+				DelayTimeSeconds="0.25s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" />
@@ -4053,7 +4047,7 @@ DAMAGE TYPES
 		
 			<!-- Vs Refs/Silos only: Middle radius -->
 			<DamageNugget
-				Damage="6500.0"
+				Damage="6000.0"
 				Radius="100.0"
 				DamageTaperOff="0.0"
 				DamageType="UNRESISTABLE"
@@ -4137,7 +4131,7 @@ DAMAGE TYPES
 			
 			<!-- Vs other stuff -->
 			<DamageNugget
-				Damage="550.0"
+				Damage="600.0"
 				Radius="150.0"
 				DamageTaperOff="0.0"
 				DamageType="GRENADE"
@@ -4485,7 +4479,7 @@ DAMAGE TYPES
 			MaxSeconds="0.4s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="4.0"
+				Damage="5.0"
 				Radius="0.0"
 				DamageType="GUN"
 				DamageFXType="NOD_MACHINEGUN"
@@ -4513,7 +4507,7 @@ DAMAGE TYPES
 		ClipSize="1" >
 		<FiringDuration
 			MinSeconds="1.2s"
-			MaxSeconds="1.5s" />
+			MaxSeconds="1.3s" />
 		<ClipReloadTime
 			MinSeconds="0.3s"
 			MaxSeconds="0.4s" />
@@ -4523,7 +4517,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_ChargedParticleBeamHitG" />
 			<DamageNugget
-					Damage="50.0"
+					Damage="40.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="GUN"
@@ -4553,7 +4547,7 @@ DAMAGE TYPES
 			>
 		<FiringDuration
 			MinSeconds="1.2s"
-			MaxSeconds="1.5s" />
+			MaxSeconds="1.3s" />
 		<ClipReloadTime
 			MinSeconds="0.3s"
 			MaxSeconds="0.4s" />
@@ -5091,13 +5085,7 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "100%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>			
+				</DamageScalarDetails>		
 				
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
 				<DamageScalarDetails Scalar= "125%">
@@ -5322,7 +5310,7 @@ DAMAGE TYPES
 				Radius="5.0"				
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARD" >			
-				<DamageScalarDetails Scalar= "30%">
+				<DamageScalarDetails Scalar= "40%">
 					<Filter
 						Rule="ANY"
 						Include="VEHICLE" />
@@ -6451,27 +6439,22 @@ DAMAGE TYPES
 				Damage="80.0"
 				Radius="8.0"				
 				DamageType="GUN"
-				DamageFXType="ALIEN_TIBSHARD" >		
+				DamageFXType="ALIEN_TIBSHARD" >						
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "40%">
+				<DamageScalarDetails Scalar= "55%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
+				</DamageScalarDetails>					
 
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
 						Rule="ANY"
 						Exclude="CIVILIAN_BUILDING"
-						Include="STRUCTURE FS_BASE_DEFENSE" />
-				</DamageScalarDetails>								
-				<DamageScalarDetails Scalar= "100%">
-					<Filter
-						Rule="NONE"
-						Include="CIVILIAN_BUILDING" />
-				</DamageScalarDetails>					
+						Include="VEHICLE STRUCTURE FS_BASE_DEFENSE" />
+				</DamageScalarDetails>											
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -6522,25 +6505,20 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARDBLUE" >
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "40%">
+				<DamageScalarDetails Scalar= "55%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>					
-				
+				</DamageScalarDetails>	
+
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
 						Rule="ANY"
 						Exclude="CIVILIAN_BUILDING"
-						Include="STRUCTURE FS_BASE_DEFENSE" />
-				</DamageScalarDetails>								
-				<DamageScalarDetails Scalar= "100%">
-					<Filter
-						Rule="NONE"
-						Include="CIVILIAN_BUILDING" />
-				</DamageScalarDetails>					
+						Include="VEHICLE STRUCTURE FS_BASE_DEFENSE" />
+				</DamageScalarDetails>				
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -6924,25 +6902,20 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARD" >		
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "40%">
+				<DamageScalarDetails Scalar= "55%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				
+
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
 						Rule="ANY"
 						Exclude="CIVILIAN_BUILDING"
-						Include="STRUCTURE FS_BASE_DEFENSE" />
-				</DamageScalarDetails>								
-				<DamageScalarDetails Scalar= "100%">
-					<Filter
-						Rule="NONE"
-						Include="CIVILIAN_BUILDING" />
-				</DamageScalarDetails>						
+						Include="VEHICLE STRUCTURE FS_BASE_DEFENSE" />
+				</DamageScalarDetails>					
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -7008,14 +6981,14 @@ DAMAGE TYPES
 						Include="AIRCRAFT TRANSPORT"
 						Exclude="WEAPON_SALVAGER">
 					</Filter>
-				</DamageScalarDetails>									
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" >
 					</Filter>
-				</DamageScalarDetails>			
-				
+				</DamageScalarDetails>	
+					
 				<!-- Scalars vs transport vehicles -->
 				<DamageScalarDetails Scalar= "135%">
 					<Filter 
@@ -7024,6 +6997,13 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>		
+				<DamageScalarDetails Scalar= "110%">
+					<Filter
+						Rule="NONE"
+						Include="TRANSPORT WEAPON_SALVAGER"
+						Exclude="">
+					</Filter>
+				</DamageScalarDetails>			
 				
 				<!-- Scalar vs Cultists -->								
 				<DamageScalarDetails Scalar= "150%">
@@ -7093,7 +7073,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT TRANSPORT"
 						Exclude="WEAPON_SALVAGER">
 					</Filter>
-				</DamageScalarDetails>									
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
@@ -7108,7 +7088,14 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>				
+				</DamageScalarDetails>		
+				<DamageScalarDetails Scalar= "110%">
+					<Filter
+						Rule="NONE"
+						Include="TRANSPORT WEAPON_SALVAGER"
+						Exclude="">
+					</Filter>
+				</DamageScalarDetails>					
 				
 				<!-- Scalar vs Disints -->
 				<DamageScalarDetails Scalar= "100%">
@@ -7171,7 +7158,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT TRANSPORT"
 						Exclude="WEAPON_SALVAGER">
 					</Filter>
-				</DamageScalarDetails>										
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
@@ -7186,7 +7173,14 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>									
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter
+						Rule="NONE"
+						Include="TRANSPORT WEAPON_SALVAGER"
+						Exclude="">
+					</Filter>
+				</DamageScalarDetails>					
 
 				<!-- Scalar vs Cultists -->		
 				<DamageScalarDetails Scalar= "150%">
@@ -7263,7 +7257,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT TRANSPORT"
 						Exclude="WEAPON_SALVAGER">
 					</Filter>
-				</DamageScalarDetails>					
+				</DamageScalarDetails>						
 				<DamageScalarDetails Scalar= "220%">
 					<Filter
 						Rule="ANY"
@@ -7272,15 +7266,22 @@ DAMAGE TYPES
 				</DamageScalarDetails>	
 			
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "135%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter
+						Rule="NONE"
+						Include="TRANSPORT WEAPON_SALVAGER"
+						Exclude="">
+					</Filter>
+				</DamageScalarDetails>					
 						
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "95%">
 					<Filter 
 						Rule="ANY"			
 						Include="HARVESTER">          						
@@ -7356,7 +7357,7 @@ DAMAGE TYPES
 						Include="AIRCRAFT TRANSPORT"
 						Exclude="WEAPON_SALVAGER">
 					</Filter>
-				</DamageScalarDetails>					
+				</DamageScalarDetails>						
 				<DamageScalarDetails Scalar= "220%">
 					<Filter
 						Rule="ANY"
@@ -7365,15 +7366,22 @@ DAMAGE TYPES
 				</DamageScalarDetails>	
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "135%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter
+						Rule="NONE"
+						Include="TRANSPORT WEAPON_SALVAGER"
+						Exclude="">
+					</Filter>
+				</DamageScalarDetails>						
 
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "95%">
 					<Filter 
 						Rule="ANY"			
 						Include="HARVESTER">          						
@@ -9459,7 +9467,7 @@ DAMAGE TYPES
 					DamageFXType="NOD_PARTICLEBM"
 					DeathType="NORMAL" >
 				<!-- Weaker vs some anti-inf units -->
-		        <DamageScalarDetails Scalar= "75%">
+		        <DamageScalarDetails Scalar= "80%">
 					<Filter Rule="NONE"
 							Include="CAVALRY">          
 					</Filter>
@@ -9517,7 +9525,7 @@ DAMAGE TYPES
 					DamageFXType="NOD_PARTICLEBM"
 					DeathType="NORMAL" >
 				<!-- Weaker vs some anti-inf units -->
-		        <DamageScalarDetails Scalar= "75%">
+		        <DamageScalarDetails Scalar= "80%">
 					<Filter Rule="NONE"
 							Include="CAVALRY">          
 					</Filter>
@@ -10504,18 +10512,13 @@ DAMAGE TYPES
 	WeaponSpeed="999999.0"
 	RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 	AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"	
-	ClipSize="1"
-		>
-		<PreAttackDelay
-			MinSeconds="999999s"
-			MaxSeconds="999999s" />
+	CanFireWhileMoving="true"
+	ClipSize="1">
+		<FiringDuration
+			MinSeconds="0.01s"
+			MaxSeconds="0.01s" />
 		<Nuggets>
-			<DamageNugget
-				Damage="1.0"
-				Radius="1.0"
-				DelayTimeSeconds="0.0s"
-				DamageType="GUN"
-				DeathType="NORMAL" />
+			<ContainedObjectAttackNugget/>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -10528,23 +10531,12 @@ DAMAGE TYPES
 		RadiusDamageAffects="ENEMIES NEUTRALS"
 		ClipSize="1"
 		CanFireWhileMoving="true"
-		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
-			>
-		<PreAttackDelay
-			MinSeconds="999999s"
-			MaxSeconds="999999s" />
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
+		<FiringDuration
+			MinSeconds="0.01s"
+			MaxSeconds="0.01s" />
 		<Nuggets>
-			<DamageNugget
-				Damage="1.0"
-				Radius="0.0"
-				DelayTimeSeconds="0.0s"
-				DamageType="GUN"
-				DeathType="NORMAL" >
-				<SpecialObjectFilter
-					Rule="ANY"
-					Relationship="ENEMIES NEUTRAL" >
-				</SpecialObjectFilter>				
-			</DamageNugget>				
+			<ContainedObjectAttackNugget/>
 		</Nuggets>
 	</WeaponTemplate>	
 	
@@ -10799,12 +10791,13 @@ DAMAGE TYPES
 		Name="GDIAABattery"
 		AttackRange="450.0"
 		WeaponSpeed="999999.0"
-		FireSoundPerClip="AudioEvent:GDI_Battery_GunFire_v5"
+		FireSound="AudioEvent:GDI_Battery_GunFire_v5"
 		FiringLoopSound="AudioEvent:GDI_Battery_GunMotorLoop"
 		FiringLoopSoundContinuesDuringReload="true"
 		FireFX="FX_GDIBatteryFire"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		ClipSize="24"
+		ReAcquireDetailType="PER_CLIP"		
 		AutoReloadsClip="AUTO"
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
 		DisableScatterForTargetsOnWall="true"
@@ -10840,12 +10833,13 @@ DAMAGE TYPES
 		Name="GDIAABatteryTungstenAAShells"
 		AttackRange="450.0"
 		WeaponSpeed="999999.0"
-		FireSoundPerClip="AudioEvent:GDI_Battery_GunFire_v5"
+		FireSound="AudioEvent:GDI_Battery_GunFire_v5"
 		FiringLoopSound="AudioEvent:GDI_Battery_GunMotorLoop"
 		FiringLoopSoundContinuesDuringReload="true"
 		FireFX="FX_GDIBatteryFireTungsten"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		ClipSize="24"
+		ReAcquireDetailType="PER_CLIP"		
 		AutoReloadsClip="AUTO"
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
 		DisableScatterForTargetsOnWall="true"
@@ -10882,13 +10876,14 @@ DAMAGE TYPES
 		Name="GDIAAScoutGun"
 		AttackRange="350.0"
 		WeaponSpeed="999999.0"
-		FireSoundPerClip="AudioEvent:GDI_Slingshot_GunFire_v2"
+		FireSound="AudioEvent:GDI_Slingshot_GunFire_v2"
 		FiringLoopSound="AudioEvent:GDI_Slingshot_GunLoop"
 		FiringLoopSoundContinuesDuringReload="true"
 		FireFX="FX_GDIBatteryFire"
 		FireVeteranFX="FX_GDIBatteryFireHeroic"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
-		ClipSize="18"
+		ClipSize="20"
+		ReAcquireDetailType="PER_CLIP"		
 		AutoReloadsClip="AUTO"
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
 		DisableScatterForTargetsOnWall="true"
@@ -10900,7 +10895,7 @@ DAMAGE TYPES
 			MaxSeconds="1.0s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="67.0"
+				Damage="60.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -10924,12 +10919,13 @@ DAMAGE TYPES
 		Name="GDIAAScoutTungstenAAShells"
 		AttackRange="350.0"
 		WeaponSpeed="999999.0"
-		FireSoundPerClip="AudioEvent:GDI_Battery_GunFire_v5"
+		FireSound="AudioEvent:GDI_Battery_GunFire_v5"
 		FiringLoopSound="AudioEvent:GDI_Battery_GunMotorLoop"
 		FiringLoopSoundContinuesDuringReload="true"
 		FireFX="FX_GDIBatteryFireTungsten"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
-		ClipSize="18"
+		ClipSize="20"
+		ReAcquireDetailType="PER_CLIP"		
 		AutoReloadsClip="AUTO"
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
 		DisableScatterForTargetsOnWall="true"
@@ -10941,7 +10937,7 @@ DAMAGE TYPES
 			MaxSeconds="1.0s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="89.0"
+				Damage="80.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -12768,7 +12764,7 @@ DAMAGE TYPES
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					 
-			 </DamageNugget>
+			 </DamageNugget>		 
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -13384,8 +13380,8 @@ DAMAGE TYPES
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS SELF" >
 		<Nuggets>
 			<ParalyzeNugget
-				Radius="45.0"
-				DurationSeconds="7.5s"
+				Radius="40.0"
+				DurationSeconds="5s"
 				ParalyzeType="EMP"
 				ParalyzeFX="FX_NODBuggyEmpHit">
 				<SpecialObjectFilter
@@ -13397,7 +13393,7 @@ DAMAGE TYPES
 			
 			<!-- Affects Adaptive Units + Avatars -->
 			<AttributeModifierNugget
-				Radius="36.0"
+				Radius="32.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Grenadier"
 				PartitionFilterTestType="CIRCLE" >
 				<SpecialObjectFilter
@@ -14247,7 +14243,7 @@ DAMAGE TYPES
 					DamageFXType="NOD_PARTICLEBM"
 					DeathType="NORMAL" >
 				<!-- Weaker vs some anti-inf units -->
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter Rule="NONE"
 							Include="CAVALRY">          
 					</Filter>
@@ -14305,7 +14301,7 @@ DAMAGE TYPES
 					DamageFXType="NOD_PARTICLEBM"
 					DeathType="NORMAL" >
 				<!-- Weaker vs some anti-inf units -->
-		        <DamageScalarDetails Scalar= "75%">
+		        <DamageScalarDetails Scalar= "80%">
 					<Filter Rule="NONE"
 							Include="CAVALRY">          
 					</Filter>
@@ -14505,7 +14501,7 @@ DAMAGE TYPES
 	  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 	<Nuggets>
 		<DamageNugget 
-			  Damage="400.0" 
+			  Damage="375.0" 
 			  DamageType="CRUSH" >    
 		</DamageNugget>
 	</Nuggets>
@@ -14623,7 +14619,7 @@ DAMAGE TYPES
 	  AntiMask="ANTI_GROUND ANTI_STRUCTURE">
 	<Nuggets>
 		<DamageNugget 
-			  Damage="400.0" 
+			  Damage="300.0" 
 			  DamageType="MINE" 
 			  DamageFXType="NOD_FLAMETHROWER">        			  
 			<DamageScalarDetails Scalar= "10%" >
