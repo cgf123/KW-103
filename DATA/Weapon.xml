@@ -323,13 +323,6 @@ DAMAGE TYPES
 						Rule="NONE"
 						Include="AIRCRAFT" >			 
 				    </Filter>
-				</DamageScalarDetails>			
-				<DamageScalarDetails Scalar= "75%">
-					<Filter
-						Rule="NONE">			 
-						<IncludeThing>NODFlameTank</IncludeThing>
-						<IncludeThing>BlackHandFlameTank</IncludeThing>
-				    </Filter>
 				</DamageScalarDetails>						
 			</DamageNugget>
 			<SuppressionNugget
@@ -1350,7 +1343,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					
@@ -1439,7 +1432,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					
@@ -1528,7 +1521,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					
@@ -1562,7 +1555,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					
@@ -3908,7 +3901,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  						  
@@ -3943,7 +3936,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					  
@@ -4169,7 +4162,7 @@ DAMAGE TYPES
 						Include="TIBERIUM">
 					</Filter>
 				</DamageScalarDetails>								
-				<DamageScalarDetails Scalar= "2500%">
+				<DamageScalarDetails Scalar= "3000%">
 					<Filter
 						Rule="ANY"
 						Include="TIBERIUM_BASED">													
@@ -4267,7 +4260,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					
@@ -4906,14 +4899,7 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>			
+				</DamageScalarDetails>		
 
 				<DamageScalarDetails Scalar= "75%">
 					<Filter
@@ -4983,12 +4969,6 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>			
 
@@ -6656,7 +6636,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  				
@@ -7858,7 +7838,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  				
@@ -7934,12 +7914,6 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
 
 				<DamageScalarDetails Scalar= "80%">
 					<Filter 
@@ -7951,7 +7925,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					
@@ -8021,12 +7995,6 @@ DAMAGE TYPES
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>	
 
 				<DamageScalarDetails Scalar= "80%">
 					<Filter 
@@ -8038,7 +8006,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  				
@@ -8383,7 +8351,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "37%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  						
@@ -8552,13 +8520,6 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
 				</DamageScalarDetails>					
 			</DamageNugget>
 		</Nuggets>
@@ -8619,14 +8580,7 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>					
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -8692,14 +8646,7 @@ DAMAGE TYPES
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>	
-				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "110%">
-					<Filter 
-						Rule="ANY"
-						Include="WEAPON_SALVAGER">          						
-					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>					
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -10219,7 +10166,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  						
@@ -10274,7 +10221,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  						
@@ -10891,8 +10838,8 @@ DAMAGE TYPES
 		RotatingTurret="true"
 		>
 		<ClipReloadTime
-			MinSeconds="1.0s"
-			MaxSeconds="1.0s" />
+			MinSeconds="1.1s"
+			MaxSeconds="1.1s" />
 		<Nuggets>
 			<DamageNugget
 				Damage="60.0"
@@ -10933,8 +10880,8 @@ DAMAGE TYPES
 		RotatingTurret="true"
 		>
 		<ClipReloadTime
-			MinSeconds="1.0s"
-			MaxSeconds="1.0s" />
+			MinSeconds="1.1s"
+			MaxSeconds="1.1s" />
 		<Nuggets>
 			<DamageNugget
 				Damage="80.0"
@@ -11482,7 +11429,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="TitanCannon"
 		  Name="TitanCannon"
-		  AttackRange="355.0"
+		  AttackRange="350.0"
 		  MinTargetPitch="-15d"
 		  MaxTargetPitch="15d"
 		  WeaponSpeed="1000"
@@ -11548,7 +11495,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="TitanCannonRailgun"
 		  Name="TitanCannonRailgun"
-		  AttackRange="355.0"
+		  AttackRange="350.0"
 		  MinTargetPitch="-15d"
 		  MaxTargetPitch="15d"
 		  WeaponSpeed="800"
@@ -12760,7 +12707,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					 
@@ -12876,7 +12823,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					
@@ -12919,7 +12866,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					
@@ -13427,7 +13374,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  					
@@ -13571,7 +13518,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  						
@@ -13619,7 +13566,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  						
@@ -13669,7 +13616,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  						
@@ -13717,7 +13664,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  						
@@ -14521,7 +14468,7 @@ DAMAGE TYPES
 			<DamageScalarDetails Scalar= "10%" >
 				<Filter 
 					  Rule="NONE"
-					  Include="VEHICLE">	
+					  Include="WEAPON_SALVAGER">	
 				</Filter>
 				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 			</DamageScalarDetails>  					
@@ -14555,7 +14502,7 @@ DAMAGE TYPES
 			<DamageScalarDetails Scalar= "10%" >
 				<Filter 
 					  Rule="NONE"
-					  Include="VEHICLE">	
+					  Include="WEAPON_SALVAGER">	
 				</Filter>
 				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 			</DamageScalarDetails>  					
@@ -14589,7 +14536,7 @@ DAMAGE TYPES
 			<DamageScalarDetails Scalar= "10%" >
 				<Filter 
 					  Rule="NONE"
-					  Include="VEHICLE">	
+					  Include="WEAPON_SALVAGER">	
 				</Filter>
 				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 			</DamageScalarDetails>  					
@@ -14625,7 +14572,7 @@ DAMAGE TYPES
 			<DamageScalarDetails Scalar= "10%" >
 				<Filter 
 					  Rule="NONE"
-					  Include="VEHICLE">	
+					  Include="WEAPON_SALVAGER">	
 				</Filter>
 				<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 			</DamageScalarDetails>  					
@@ -14661,7 +14608,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "10%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>						
@@ -14697,7 +14644,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "10%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>      
@@ -14721,7 +14668,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "10%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  							
@@ -14746,7 +14693,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "10000%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  							
@@ -14782,7 +14729,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "10000%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>  							
@@ -14818,7 +14765,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "10000%" >
 					<Filter 
 						  Rule="NONE"
-						  Include="VEHICLE">	
+						  Include="WEAPON_SALVAGER">	
 					</Filter>
 					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
 				</DamageScalarDetails>				

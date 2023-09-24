@@ -724,7 +724,7 @@
 				AttributeModifierFX=""
 				WeatherDuration="0"
 				InitiateFX=""
-				TriggerFX="FX_AlienMMTP"
+				TriggerFX="FX_AlienSPTP"
 				SetModelCondition="TOPPLED"
 				SetModelConditionTime="0s"
 				GiveLevels="0"

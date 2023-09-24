@@ -378,7 +378,7 @@ KW XMLs:
 					Rule="ALL"
 					Exclude="TIBERIUM">
 				</SpecialObjectFilter>
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "130%">
 					<Filter
 						Rule="NONE"
 						Include="TIBERIUM_BASED">								

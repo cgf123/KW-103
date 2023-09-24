@@ -497,6 +497,153 @@
 		</Update>
 	</FXParticleSystemTemplate>
 	
+	<!-- ShockPods slow ring -->
+	<FXParticleSystemTemplate IsGroundAligned="true" ParticleTexture="FXRing01" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" SortLevel="1" SystemLifetime="1" id="AlienTP01Slow">
+		<Lifetime High="90" Low="90"/>
+		<Size High="60" Low="60"/>
+		<BurstCount High="30" Low="30"/>
+		<Colors>
+			<Color Frame="2" RelativeAge="20">
+				<Color b="0.294118" g="0.121569" r="0.247059"/>
+			</Color>
+			<Color Frame="3" RelativeAge="80">
+				<Color b="0.309804" g="0.133333" r="0.286275"/>
+			</Color>
+			<Color Frame="4" RelativeAge="100">
+				<Color b="0" g="0" r="0"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default Gravity="-0.0005">
+				<VelocityDamping High="1.15" Low="1.15"/>
+			</Default>
+		</Physics>
+		<Draw>
+			<Default/>
+		</Draw>
+		<Volume>
+			<Line IsHollow="true">
+				<StartPoint x="0" y="0" z="0"/>
+				<EndPoint x="0" y="0" z="20"/>
+			</Line>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="0" Low="0"/>
+					<y High="0" Low="0"/>
+					<z High="0" Low="0"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event/>
+		<Update>
+			<Default>
+				<SizeRateDamping High="1" Low="1"/>
+				<AngleZ High="7" Low="0"/>
+				<AngularRateZ High="0.2" Low="-0.2"/>
+				<AngularDampingXY High="1" Low="1"/>
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>
+	<FXParticleSystemTemplate IsGroundAligned="true" ParticleTexture="FXLenzFlare03" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" SortLevel="1" SystemLifetime="1" id="AlienTP02Slow">
+		<Lifetime High="140" Low="140"/>
+		<Size High="60" Low="60"/>
+		<BurstCount High="2" Low="2"/>
+		<Colors>
+			<Color Frame="2" RelativeAge="40">
+				<Color b="0.568627" g="0.356863" r="0.529412"/>
+			</Color>
+			<Color Frame="3" RelativeAge="80">
+				<Color b="0.615686" g="0.376471" r="0.576471"/>
+			</Color>
+			<Color Frame="4" RelativeAge="100">
+				<Color b="0" g="0" r="0"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default>
+				<VelocityDamping High="1" Low="1"/>
+			</Default>
+		</Physics>
+		<Draw>
+			<Default/>
+		</Draw>
+		<Volume>
+			<Line IsHollow="true">
+				<StartPoint x="0" y="0" z="0"/>
+				<EndPoint x="0" y="0" z="0"/>
+			</Line>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="0" Low="0"/>
+					<y High="0" Low="0"/>
+					<z High="0" Low="0"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event/>
+		<Update>
+			<Default>
+				<SizeRate High="-0.0025" Low="-0.0025"/>
+				<SizeRateDamping High="1.08" Low="1.08"/>
+				<AngleZ High="7" Low="0"/>
+				<AngularDampingXY High="1" Low="1"/>
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>
+	<FXParticleSystemTemplate ParticleTexture="FXFireBlast04" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" SortLevel="1" SystemLifetime="1" Type="GPU_PARTICLE" id="AlienTP03Slow">
+		<Lifetime High="5" Low="5"/>
+		<Size High="150" Low="125"/>
+		<BurstCount High="8" Low="8"/>
+		<Alphas>
+			<Alpha Frame="1" High="1" Low="1" RelativeAge="0"/>
+			<Alpha Frame="2" High="0" Low="0" RelativeAge="100"/>
+		</Alphas>
+		<Colors>
+			<Color Frame="1" RelativeAge="0">
+				<Color b="1" g="0.682353" r="0.937255"/>
+			</Color>
+			<Color Frame="2" RelativeAge="90">
+				<Color b="0.776471" g="0.54902" r="0.694118"/>
+			</Color>
+			<Color Frame="3" RelativeAge="100">
+				<Color b="0" g="0" r="0"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default/>
+		</Physics>
+		<Draw>
+			<Gpu SpeedMultiplier="1"/>
+		</Draw>
+		<Volume>
+			<Cylinder>
+				<Offset x="0" y="0" z="10"/>
+			</Cylinder>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="1" Low="-1"/>
+					<y High="1" Low="-1"/>
+					<z High="1" Low="-1"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event/>
+		<Update>
+			<Default>
+				<SizeRateDamping High="1" Low="1"/>
+				<AngleZ High="7" Low="0"/>
+				<AngularDampingXY High="1" Low="1"/>
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>	
+	
+	
 	<!-- Aura ground glow effect FXBloomAdd
 	<FXParticleSystemTemplate
 		id="BlackHandKanesWillLeadershipGlow"

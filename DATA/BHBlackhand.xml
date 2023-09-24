@@ -73,7 +73,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_BlackHandSecretShrinePurifyingFlame"
 		CaptureTime="0s"
-		BuildCost="150"
+		BuildCost="115"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"

@@ -28,6 +28,25 @@
 	</FXList>			
 	
 	
+	<!-- Shockpods -->
+	<FXList id="FX_AlienSPTP">
+		<NuggetList>
+			<ParticleSystem
+				Particle = "AlienTP01Slow"
+				OrientToObject="true">			
+			</ParticleSystem>
+			<ParticleSystem
+				Particle = "AlienTP02Slow"
+				OrientToObject="true">
+			</ParticleSystem>
+			<ParticleSystem
+				Particle = "AlienTP03Slow"
+				OrientToObject="true">			
+			</ParticleSystem>
+			<Sound Value="AudioEvent:ALI_MasterMind_Teleport" />
+		</NuggetList>
+	</FXList>		
+	
 	<!-- The metallic sound of heavy infantry armor being crushed... -->
 	<AudioEvent id="Explosion_HeavyInfCrush" inheritFrom="AudioEvent:BaseSoundEffect"
 		Volume = "50"

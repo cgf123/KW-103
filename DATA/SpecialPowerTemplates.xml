@@ -804,7 +804,7 @@
 		id="SpecialPower_AlienShockPods"
 		TargetType="LOCATION"
 		InitiateAtLocationSound="AudioEvent:ALI_BuzzerSwarm"
-		ReloadTime="60s"
+		ReloadTime="45s"
 		Flags="IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS NOT_CLIFF_CELL SHARED_SYNC"
 		Money="-2500"
 		RadiusCursorRadius="60"
