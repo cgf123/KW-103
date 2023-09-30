@@ -170,13 +170,26 @@
 	<Include type="all" source="RadarScan.xml" />			
 	
 	<Include type="all" source="GDIV35Ox_Summoned.xml" />				
-	<Include type="all" source="GDIV35Ox_SummonedVehicle.xml" />	
+	<Include type="all" source="GDIV35Ox_SummonedVehicle.xml" />
+	<Include type="all" source="GDIV35Ox_CallSupportHunterKillerTeam.xml" />		
+	<Include type="all" source="GDIV35Ox_CallSupportBloodhound.xml" />	
+	<Include type="all" source="GDIV35Ox_CallSupportBloodhound_APC.xml" />		
+	<Include type="all" source="GDIV35Ox_CallSupportAirborne.xml" />	
+	<Include type="all" source="GDIV35Ox_CallSupportAirborne_Rockets.xml" />	
+	
 	<Include type="all" source="STV35Ox_Summoned.xml" />				
 	<Include type="all" source="STV35Ox_SummonedVehicle.xml" />	
 	<Include type="all" source="STV35Ox_CallSupportHunterKillerTeam.xml" />		
+	<Include type="all" source="STV35Ox_CallSupportBloodhound.xml" />	
+	<Include type="all" source="STV35Ox_CallSupportBloodhound_Wol.xml" />		
+
 	<Include type="all" source="ZOCOMV35Ox_Summoned.xml" />				
 	<Include type="all" source="ZOCOMV35Ox_SummonedVehicle.xml" />		
-	
+	<Include type="all" source="ZOCOMV35Ox_CallSupportHunterKillerTeam.xml" />		
+	<Include type="all" source="ZOCOMV35Ox_CallSupportBloodhound.xml" />	
+	<Include type="all" source="ZOCOMV35Ox_CallSupportBloodhound_APC.xml" />		
+	<Include type="all" source="ZOCOMV35Ox_CallSupportAirborne.xml" />	
+	<Include type="all" source="ZOCOMV35Ox_CallSupportAirborne_Rockets.xml" />		
 	
 	<Include type="all" source="STTitan.xml" />	
 	<Include type="all" source="STWolverine.xml" />		

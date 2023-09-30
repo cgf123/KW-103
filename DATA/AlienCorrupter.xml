@@ -350,6 +350,7 @@
 			</ScriptedModelDraw>
 			<StreamDraw
 				id="0xA1F85686"
+				Velocity="600"
 				ArcHeightFactor="0.0625"
 				UVWorldSize="100"
 				TubeRadius="1.25"
@@ -482,8 +483,8 @@
 			</StatusBitsUpgrade>
 
 			<PowerUpdate
-				UpdatePeriod="1.5s"
-				ReloadTime="1.5s"
+				UpdatePeriod="1.0s"
+				ReloadTime="1.0s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />					
 			

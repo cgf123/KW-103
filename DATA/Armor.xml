@@ -838,7 +838,7 @@ DAMAGE TYPES
 			Percent="13" />			
 		<Armor
 			Damage="GRENADE"
-			Percent="50" />
+			Percent="75" />
 		<Armor
 			Damage="FLAME"
 			Percent="50" />				
@@ -1585,7 +1585,7 @@ DAMAGE TYPES
 			Percent="150" />
 		<Armor
 			Damage="ROCKET"
-			Percent="100" />
+			Percent="120" />
 		<Armor
 			Damage="BLAST"
 			Percent="60" />			

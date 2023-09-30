@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="NODCarryallVehicle"
-		KindOf="SELECTABLE CAN_CAST_REFLECTIONS AIRCRAFT TRANSPORT PRELOAD IGNORES_SELECT_ALL SUMMONED VEHICLE WEAPON_SALVAGER"
+		KindOf="SELECTABLE CAN_CAST_REFLECTIONS AIRCRAFT TRANSPORT PRELOAD SUMMONED VEHICLE WEAPON_SALVAGER"
 		Description="Desc:NODCarryall"
 		TypeDescription="Type:NODCarryall"
 		RadarPriority="UNIT"
@@ -1046,7 +1046,7 @@
 			LocalPlayerOnly="False" />
 		<VisionInfo
 			VisionRange="180"
-			ShroudClearingRange="600"
+			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"
 			VisionBonusTestRadius="100"

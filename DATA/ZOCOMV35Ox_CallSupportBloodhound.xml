@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
-		id="NODCarryallBunkerTruck"
-		KindOf="SELECTABLE CAN_CAST_REFLECTIONS AIRCRAFT TRANSPORT PRELOAD SUMMONED VEHICLE WEAPON_SALVAGER"
-		Description="Desc:NODCarryall"
-		TypeDescription="Type:NODCarryall"
+		id="ZOCOMV35Ox_CallSupportZOCOMBloodhound"
+		KindOf="CAN_CAST_REFLECTIONS AIRCRAFT TRANSPORT NO_COLLIDE IGNORES_SELECT_ALL SUMMONED"
+		Description="Desc:GDIOx"
+		TypeDescription="Type:GDIOx"
 		RadarPriority="UNIT"
-		BuildCompletion="APPEARS_AT_RALLY_POINT"
+		BuildCompletion="INVALID"
 		FenceWidth="0"
 		FenceXOffset="0"
 		RemoveTerrainRadius="0"
@@ -15,18 +15,18 @@
 		BuildFadeInOnCreateTimeSeconds="0s"
 		FactoryExitWidth="0"
 		FactoryExtraBibWidth="0"
-		Side="NOD"
-		EditorName="NODCarryallBunkerTruck"
+		Side="ZOCOM"
+		EditorName="ZOCOMV35Ox_CallSupportZOCOMBloodhound"
 		EditorSorting="UNIT"
 		BountyValue="0"
 		BuildTime="1"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
-		CommandSet="NODCarryallCommandSet"
-		SelectPortrait="Portrait_NODCarryall"
-		ButtonImage="Portrait_NODCarryall"
-		VoicePriority="56"
+		CommandSet="GDIV35OxCommandSet"
+		SelectPortrait="Portrait_GDIOx"
+		ButtonImage="Portrait_GDIOx"
+		VoicePriority="52"
 		MinZIncreaseForVoiceMoveToHigherGround="-1"
 		CrowdResponse=""
 		CampnessValue="0"
@@ -61,13 +61,13 @@
 		ProductionQueueType="AIRCRAFT"
 		BuildPlacementTypeFlag="INVALID"
 		BuildOnRequiredObjectKindOf=""
-		UnitCategory="AIRCRAFT"
+		UnitCategory="NONE"
 		WeaponCategory="NONE"
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
 		ReinvisibilityDelay="7s"
 		CaptureTime="0s"
-		BuildCost="200"
+		BuildCost="10"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -85,31 +85,30 @@
 		CanPathThroughGates="True"
 		ShouldClearShotsOnIdle="False"
 		BuildInProximityToSamePlayerStucture="True">
-		<EquivalentTo>NODCarryallVehicle</EquivalentTo>				
-		<DisplayName>Name:NODCarryall</DisplayName>
+		<DisplayName>Name:GDIOx</DisplayName>
 		<ArmorSet
-			Armor="NODCarryallArmor"
+			Armor="GDIOxArmor"
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="150"
+			Speed="160"
 			Condition="NORMAL"
-			Locomotor="NODCarryallLocomotor" />
+			Locomotor="GDIDropshipLocomotor" />
 		<LocomotorSet
-			Speed="10"
+			Speed="160"
 			Condition="TAXIING"
 			Locomotor="BasicHelicopterTaxiLocomotor" />
 		<Draws>
 			<ScriptedModelDraw
-				id="50DF2C46"
-				RecoilDamping="0.4"
-				MaxRecoilDistance="3"
+				id="90B2BBF6"
 				InitialRecoilSpeed="2"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
 				RecoilSettleSpeed="0.065"
 				MinLODRequired="LOW"
 				ProjectileBoneFeedbackEnabledSlots=""
 				TrackMarks=""
-				ExtraPublicBone="BONEGARRISON01"
+				ExtraPublicBone="BONEGARRISON"
 				DependencySharedModelFlags=""
 				HighDetailLODThreshold="0"
 				LowDetailLODThreshold="0"
@@ -149,18 +148,22 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NUCARRYALL_SKN"
+						Name="GUDROPSHIP_SKN"
 						ExtraMesh="False" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FORMATION_PREVIEW"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
-					<Model
-						Name="NUCARRYALL_FP"
-						ExtraMesh="False" />
+					<ParticleSysBone
+						BoneName="FX_Lfan"
+						FXParticleSystemTemplate="orcaexhaust"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Rfan"
+						FXParticleSystemTemplate="orcaexhaust"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
@@ -169,11 +172,25 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NUCARRYALL_SKN"
+						Name="GUDROPSHIP_SKN"
 						ExtraMesh="False" />
 					<ParticleSysBone
-						BoneName="Bone_Engine_LF"
+						BoneName="FX_Lfan"
 						FXParticleSystemTemplate="orcaexhaust"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Rfan"
+						FXParticleSystemTemplate="orcaexhaust"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="FX_Rfan"
+						FXParticleSystemTemplate="oxdamagesmoke"
 						PersistID="0"
 						FollowBone="True"
 						OnlyIfOnWater="False"
@@ -186,35 +203,35 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NUCARRYALL_SKN"
+						Name="GUDROPSHIP_SKN"
 						ExtraMesh="False" />
 					<Texture
-						Original="NUCarryAll"
-						New="NUCarryAll_D" />
+						Original="GuDropShip"
+						New="GuDropShipD" />
 					<ParticleSysBone
-						BoneName="Bone_Engine_LF"
+						BoneName="FX_Lfan"
 						FXParticleSystemTemplate="orcaexhaust"
 						PersistID="0"
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
 					<ParticleSysBone
-						BoneName="Bone_Engine_RR"
+						BoneName="FX_Rfan"
 						FXParticleSystemTemplate="orcaexhaust"
 						PersistID="0"
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
 					<ParticleSysBone
-						BoneName="Bone_Engine_RR"
-						FXParticleSystemTemplate="orcadamagefire"
+						BoneName="FX_Rfan"
+						FXParticleSystemTemplate="oxdamagefire"
 						PersistID="0"
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
 					<ParticleSysBone
-						BoneName="Bone_Engine_RR"
-						FXParticleSystemTemplate="orcadamagesmoke"
+						BoneName="FX_Rfan"
+						FXParticleSystemTemplate="oxdamagesmoke"
 						PersistID="0"
 						FollowBone="True"
 						OnlyIfOnWater="False"
@@ -227,52 +244,30 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="NUCARRYALL_SKN"
+						Name="GUDROPSHIPR_SKN"
 						ExtraMesh="False" />
-					<Texture
-						Original="NUCarryAll"
-						New="NUCarryAll_D" />
-					<ParticleSysBone
-						BoneName="Bone_Engine_LF"
-						FXParticleSystemTemplate="orcaexhaust"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
-					<ParticleSysBone
-						BoneName="Bone_Engine_RR"
-						FXParticleSystemTemplate="orcaexhaust"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
-					<ParticleSysBone
-						BoneName="Bone_Engine_RR"
-						FXParticleSystemTemplate="orcadamagefire"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
-					<ParticleSysBone
-						BoneName="Bone_Engine_RR"
-						FXParticleSystemTemplate="orcadamagesmoke"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="FORMATION_PREVIEW"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="GUDROPSHIP_FP"
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"
-					Flags="MAINTAIN_FRAME_ACROSS_STATES"
+					Flags="RANDOMSTART"
 					EnteringStateFX=""
 					FrameForPristineBonePositions="0"
 					ShareAnimation="False"
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="NUCARRYALL_IDLA"
+						AnimationName="GUDROPSHIP_IDLA"
 						AnimationMode="LOOP"
-						AnimNickName="HVRA"
 						Distance="0"
 						AnimationBlendTime="5"
 						AnimationSpeedFactorMin="1"
@@ -285,23 +280,44 @@
 						AnimationMustCompleteBlend="False"
 						UseWeaponTiming="False"
 						FadingIn="False" />
-					<Script>
-						CurDrawableHideSubObject("Hangar")
-					</Script>
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="FORMATION_PREVIEW"
+					ConditionsYes="MOVING TURN_LEFT_HIGH_SPEED"
 					EnteringStateFX=""
 					FrameForPristineBonePositions="0"
 					ShareAnimation="False"
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName=""
-						AnimationMode="LOOP"
+						AnimationName="GUDROPSHIP_HSTL"
+						AnimationMode="ONCE"
 						Distance="0"
-						AnimationBlendTime="5"
+						AnimationBlendTime="15"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="MOVING TURN_RIGHT_HIGH_SPEED"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
+					<Animation
+						AnimationName="GUDROPSHIP_HSTR"
+						AnimationMode="ONCE"
+						Distance="0"
+						AnimationBlendTime="15"
 						AnimationSpeedFactorMin="1"
 						AnimationSpeedFactorMax="1"
 						WeaponTimingOrdering="PRIMARY_WEAPON"
@@ -316,18 +332,16 @@
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING TURN_LEFT"
-					Flags="MAINTAIN_FRAME_ACROSS_STATES"
 					EnteringStateFX=""
 					FrameForPristineBonePositions="0"
 					ShareAnimation="False"
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="NUCARRYALL_TRNL"
-						AnimationMode="LOOP"
-						AnimNickName="HVRA"
+						AnimationName="GUDROPSHIP_TRNL"
+						AnimationMode="ONCE"
 						Distance="0"
-						AnimationBlendTime="5"
+						AnimationBlendTime="15"
 						AnimationSpeedFactorMin="1"
 						AnimationSpeedFactorMax="1"
 						WeaponTimingOrdering="PRIMARY_WEAPON"
@@ -338,25 +352,20 @@
 						AnimationMustCompleteBlend="False"
 						UseWeaponTiming="False"
 						FadingIn="False" />
-					<Script>
-						CurDrawableHideSubObject("Hangar")
-					</Script>
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING TURN_RIGHT"
-					Flags="MAINTAIN_FRAME_ACROSS_STATES"
 					EnteringStateFX=""
 					FrameForPristineBonePositions="0"
 					ShareAnimation="False"
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="NUCARRYALL_TRNR"
-						AnimationMode="LOOP"
-						AnimNickName="HVRA"
+						AnimationName="GUDROPSHIP_TRNR"
+						AnimationMode="ONCE"
 						Distance="0"
-						AnimationBlendTime="5"
+						AnimationBlendTime="15"
 						AnimationSpeedFactorMin="1"
 						AnimationSpeedFactorMax="1"
 						WeaponTimingOrdering="PRIMARY_WEAPON"
@@ -367,23 +376,90 @@
 						AnimationMustCompleteBlend="False"
 						UseWeaponTiming="False"
 						FadingIn="False" />
-					<Script>
-						CurDrawableHideSubObject("Hangar")
-					</Script>
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="ACCELERATE"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
+					<Animation
+						AnimationName="GUDROPSHIP_ACCL"
+						AnimationMode="ONCE"
+						Distance="0"
+						AnimationBlendTime="15"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DECELERATE"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
+					<Animation
+						AnimationName="GUDROPSHIP_DECL"
+						AnimationMode="ONCE"
+						Distance="0"
+						AnimationBlendTime="15"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="MOVING"
-					Flags="MAINTAIN_FRAME_ACROSS_STATES"
 					EnteringStateFX=""
 					FrameForPristineBonePositions="0"
 					ShareAnimation="False"
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="NUCARRYALL_FLYA"
+						AnimationName="GUDROPSHIP_FLYA"
 						AnimationMode="LOOP"
-						AnimNickName="HVRA"
+						Distance="0"
+						AnimationBlendTime="15"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DOOR_1_OPENING"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
+					<Animation
+						AnimationName="GUDROPSHIP_OPNA"
+						AnimationMode="ONCE"
 						Distance="0"
 						AnimationBlendTime="5"
 						AnimationSpeedFactorMin="1"
@@ -396,22 +472,104 @@
 						AnimationMustCompleteBlend="False"
 						UseWeaponTiming="False"
 						FadingIn="False" />
-					<Script>
-						CurDrawableHideSubObject("Hangar")
-					</Script>
 				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DOOR_1_CLOSING"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
+					<Animation
+						AnimationName="GUDROPSHIP_CLSA"
+						AnimationMode="ONCE"
+						Distance="0"
+						AnimationBlendTime="5"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
+				</AnimationState>
+			</ScriptedModelDraw>
+			<ScriptedModelDraw
+				id="17E1CA94"
+				InitialRecoilSpeed="2"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				RecoilSettleSpeed="0.065"
+				MinLODRequired="LOW"
+				ProjectileBoneFeedbackEnabledSlots=""
+				TrackMarks=""
+				ExtraPublicBone="FX_Lfan FX_Rfan"
+				DependencySharedModelFlags=""
+				HighDetailLODThreshold="0"
+				LowDetailLODThreshold="0"
+				WadingParticleSys=""
+				AlphaCameraFadeOuterRadius="0"
+				AlphaCameraFadeInnerRadius="0"
+				AlphaCameraAtInnerRadius="100%"
+				StaticSortLevelWhileFading="-1"
+				BirthFadeTime="0"
+				OkToChangeModelColor="True"
+				AnimationsRequirePower="True"
+				UseYAxisForTurretRotation="False"
+				TrackMarksOnlyWhenCorneringQuickly="False"
+				UseProducerTexture="False"
+				NoRotate="False"
+				UseFiringArcRotation="False"
+				Selectable="True"
+				RandomTextureFixedRandomIndex="False"
+				ParticlesAttachedToAnimatedBones="False"
+				ParticleBonesCheckDrawable="False"
+				ShadowForceDisable="False"
+				SwitchModelLODMode="False"
+				StaticModelLODMode="False"
+				ShowShadowWhileContained="False"
+				UseStandardModelNames="False"
+				UseDefaultAnimation="False"
+				BirthFadeAdditive="False"
+				ZWriteDisableOverride="False"
+				MultiPlayerOnly="False"
+				AffectedByStealth="True"
+				InvertStealthOpacity="False"
+				HighDetailOnly="False"
+				SetAnimsToLastFrameOnConstructionComplete="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT"
+					Skeleton=""
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name=""
+						ExtraMesh="False" />
+					<ParticleSysBone
+						BoneName="ROOTTRANSFORM"
+						FXParticleSystemTemplate=""
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+				</ModelConditionState>
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate
-				id="513BC476" />
+				id="788FFB50" />
 			<SquishCollide
-				id="8CCB269A"
+				id="1B48BDA6"
 				CrushAnimTime="1s"
 				CrushKillDelay="0.5s"
 				UseDirectionCheck="True" />
 			<FireWeaponWhenDead
-				id="DDED328F"
+				id="E84F2471"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
 				Permanent="False"
@@ -433,7 +591,7 @@
 					DeathTypesForbidden="" />
 			</FireWeaponWhenDead>
 			<AutoHealBehavior
-				id="C07BF5C0"
+				id="C663B515"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
 				Permanent="False"
@@ -458,7 +616,7 @@
 				<TriggeredBy>Upgrade_Veterancy_HEROIC</TriggeredBy>
 			</AutoHealBehavior>
 			<AttributeModifierUpgrade
-				id="AA36A1AA"
+				id="CE6A16D5"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
 				Permanent="False"
@@ -468,7 +626,7 @@
 				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterSpeed</TriggeredBy>
 			</AttributeModifierUpgrade>
 			<AttributeModifierUpgrade
-				id="81C6F752"
+				id="F03B3999"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
 				Permanent="False"
@@ -478,7 +636,7 @@
 				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterDamage</TriggeredBy>
 			</AttributeModifierUpgrade>
 			<AttributeModifierUpgrade
-				id="E35F7EC4"
+				id="4A4E0C88"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
 				Permanent="False"
@@ -488,10 +646,10 @@
 				<TriggeredBy>Upgrade_MultifunctionUpgradeCenterArmor</TriggeredBy>
 			</AttributeModifierUpgrade>
 			<StancesBehavior
-				id="54CA416E"
+				id="41CCDAEF"
 				StanceTemplate="Generic" />
 			<LevelUpUpgrade
-				id="A92BDFEA"
+				id="3D5ED271"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
 				Permanent="False"
@@ -503,7 +661,7 @@
 				<TriggeredBy>Upgrade_ProductionVeterancy_VETERAN</TriggeredBy>
 			</LevelUpUpgrade>
 			<LevelUpUpgrade
-				id="5C3F216A"
+				id="418DD456"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
 				Permanent="False"
@@ -515,7 +673,7 @@
 				<TriggeredBy>Upgrade_ProductionVeterancy_ELITE</TriggeredBy>
 			</LevelUpUpgrade>
 			<LevelUpUpgrade
-				id="379F3CE2"
+				id="E1726612"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
 				Permanent="False"
@@ -527,7 +685,7 @@
 				<TriggeredBy>Upgrade_ProductionVeterancy_HEROIC</TriggeredBy>
 			</LevelUpUpgrade>
 			<InvisibilityUpdate
-				id="3BD7F2F5"
+				id="F80B6FD9"
 				Options=""
 				UpdatePeriod="0.5s"
 				BroadcastRange="0"
@@ -548,7 +706,7 @@
 				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
 			</InvisibilityUpdate>
 			<StealthUpgrade
-				id="F2B9DFBE"
+				id="4273058C"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
 				Permanent="False"
@@ -557,10 +715,10 @@
 				<TriggeredBy>Upgrade_CloakingFieldInvisibility</TriggeredBy>
 			</StealthUpgrade>
 			<TemporarilyDefectUpdate
-				id="3473AFD2"
-				DefectionFrameCount="225" />
+				id="01009D1F"
+				DefectionFrameCount="300" />
 			<WeaponSetUpdate
-				id="720F4A50">
+				id="E3D95180">
 				<WeaponSlotHardpoint
 					ID="1"
 					InterleavedStyle="INTERLEAVE_FIRST_AVAILABLE"
@@ -574,8 +732,47 @@
 						IsPlayerUpgradePermanent="False" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
+			<ModelConditionUpgrade
+				id="1E7962BB"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="True"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AddConditionFlags="USER_1"
+				RemoveConditionFlags=""
+				AddTempConditionFlag="TOPPLED"
+				TempConditionTime="0s">
+				<TriggeredBy>Upgrade_GDIFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="BE39A3A5"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="True"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AddConditionFlags="USER_1"
+				RemoveConditionFlags=""
+				AddTempConditionFlag="TOPPLED"
+				TempConditionTime="0s">
+				<TriggeredBy>Upgrade_SteelTalonsFaction</TriggeredBy>
+			</ModelConditionUpgrade>
+			<ModelConditionUpgrade
+				id="AE1C99EB"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="True"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				AddConditionFlags="USER_1"
+				RemoveConditionFlags=""
+				AddTempConditionFlag="TOPPLED"
+				TempConditionTime="0s">
+				<TriggeredBy>Upgrade_ZOCOMFaction</TriggeredBy>
+			</ModelConditionUpgrade>
 			<Physics
-				id="6D41764B"
+				id="2B7165F3"
 				MaxXRotationVelocity="360"
 				MaxYRotationVelocity="360"
 				MaxZRotationVelocity="360"
@@ -604,7 +801,7 @@
 				OrientToFlightPath="False"
 				IgnoreTerrainHeight="False" />
 			<ProductionUpdate
-				id="749674DE"
+				id="E17127F2"
 				MaxQueueEntries="1"
 				NumDoorAnimations="0"
 				DoorOpeningTime="0s"
@@ -624,8 +821,29 @@
 				SetBonusModelConditionOnSpeedBonus="False"
 				SecondaryQueue="False"
 				IgnorePreReqs="False" />
+			<FlammableUpdate
+				id="4F4D3CEC"
+				BurnedDelay="0s"
+				AflameDuration="5s"
+				AflameDamageAmount="3"
+				AflameDamageDelay="0.5s"
+				BurningSoundName=""
+				FlameDamageLimit="20"
+				FlameDamageExpiration="10s"
+				RunToWaterDepth="0"
+				RunToWaterSearchRadius="200"
+				RunToWaterSearchIncrement="60"
+				DamageType="FORCE"
+				SetBurnedStatus="True"
+				SwapModelWhenAflame="False"
+				SwapModelWhenQuenched="False"
+				SwapTextureWhenAflame="False"
+				SwapTextureWhenQuenched="False"
+				BurnContained="False"
+				RunToWater="False"
+				PanicLocomotorWhileAflame="False" />
 			<MoveToPositionAndEvacuateSpecialPower
-				id="DBDCABC7"
+				id="DCF3501A"
 				SpecialPowerTemplate="SpecialPowerMoveToPositionAndEvacuate"
 				AntiCategory=""
 				AntiFX=""
@@ -690,13 +908,13 @@
 					RejectModelCondition="" />
 			</MoveToPositionAndEvacuateSpecialPower>
 			<SlowDeath
-				id="73542D4A"
+				id="1673247C"
 				SinkRate="0.5"
 				ProbabilityModifier="10"
 				ModifierBonusPerOverkillPercent="0%"
 				SinkDelay="0s"
 				SinkDelayVariance="0s"
-				DestructionDelay="0.01s"
+				DestructionDelay="0s"
 				DestructionDelayVariance="0s"
 				DecayBeginTime="0s"
 				FlingForce="0"
@@ -712,11 +930,11 @@
 				Fade="False">
 				<FX
 					Type="INITIAL">
-					<FX>FX_NOD_Carryall_VoiceDie</FX>
+					<FX>FX_GDI_Ox_VoiceDie</FX>
 				</FX>
 				<OCL
 					Type="INITIAL">
-					<OCL>OCL_NODCarryAllInitialDebris</OCL>
+					<OCL>OCL_GDIDropShipDebris</OCL>
 				</OCL>
 				<DieMuxData
 					ExemptStatus=""
@@ -727,34 +945,8 @@
 					DeathTypes="ALL"
 					DeathTypesForbidden="TOPPLED" />
 			</SlowDeath>
-			
-			<!--
-			<FireWeaponWhenDead
-				id="DDED328E"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				DelayTime="0s"
-				DeathWeapon="BunkerTruckFallWeapon"
-				FocusFireKindOfFlag=""
-				InitiallyActive="True"
-				ActiveDuringConstruction="False"
-				ContinueToBezierDestination="False">
-				<DieMuxData
-					ExemptStatus="UNSELECTABLE"
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="0.9999999d"
-					MaxKillerAngle="-0.9999999d"
-					DeathTypes="ALL"
-					DeathTypesForbidden="" />				
-			</FireWeaponWhenDead>
-			-->
-			
 			<FXListBehavior
-				id="C74C39D8">
+				id="57E81491">
 				<DieMuxData
 					ExemptStatus=""
 					RequiredStatus=""
@@ -773,10 +965,10 @@
 					ForceUseDoFXObj="False" />
 			</FXListBehavior>
 			<HordeTransportContain
-				id="9DC593B0"
+				id="EF5A376E"
 				ContainMax="1"
-				EnterSound="AudioEvent:VehicleEnter"
-				ExitSound="AudioEvent:VehicleExit"
+				EnterSound="VehicleEnter"
+				ExitSound="VehicleExit"
 				DamagePercentToUnits="0%"
 				PassengersTestCollisionHeight="-1000"
 				NumberOfExitPaths="1"
@@ -784,7 +976,7 @@
 				ObjectStatusOfContained="UNSELECTABLE"
 				ModifierRequiredTime="100"
 				KillIfEmptyTime="0s"
-				ModelConditionsWhenNotEmpty="CARRYING"
+				ModelConditionsWhenNotEmpty=""
 				PassengersInTurret="False"
 				AllowOwnPlayerInsideOverride="True"
 				AllowAlliesInside="False"
@@ -822,22 +1014,18 @@
 				FadePassengerOnEnter="False"
 				FadePassengerOnExit="False"
 				FadeReverse="False"
-				ExtendedExitContainerChecks="True"
+				ExtendedExitContainerChecks="False"
 				FlyOffMapOnEmpty="True">
 				<PassengerFilter
-					Rule="NONE"
+					Rule="ANY"
 					Relationship=""
 					Alignment="NONE"
-					Include=""
+					Include="VEHICLE"
 					Exclude=""
 					StatusBitFlags=""
-					RejectStatusBitFlags="IMMOBILE"
+					RejectStatusBitFlags=""
 					AcceptModelCondition=""
-					RejectModelCondition="">	
-					<IncludeThing>NODBunkerTruck</IncludeThing>
-					<IncludeThing>MarkedOfKaneBunkerTruck</IncludeThing>					
-					<IncludeThing>BlackHandBunkerTruck</IncludeThing>					
-				</PassengerFilter>
+					RejectModelCondition="" />
 				<DieMuxData
 					ExemptStatus=""
 					RequiredStatus=""
@@ -847,7 +1035,7 @@
 					DeathTypes="ALL"
 					DeathTypesForbidden="" />
 				<PassengerData
-					BonePrefix="BONEGARRISON01">
+					BonePrefix="BONEGARRISON">
 					<Filter
 						Rule="NONE"
 						Relationship=""
@@ -859,51 +1047,18 @@
 						AcceptModelCondition=""
 						RejectModelCondition="" />
 				</PassengerData>
+				<InitialPayload
+					Name="ZOCOMPitbull_Veteran"
+					Count="1" />
 			</HordeTransportContain>
-			
-			<StatusBitsUpgrade
-				id="ModuleTag_UpgradeWeapon"
-				StatusToClear="UNSELECTABLE">
-				<TriggeredBy>Upgrade_Transporting</TriggeredBy>
-			</StatusBitsUpgrade>				
-			
-			<!-- Empty transport scout exploit fix -->
-			<GrantUpgradeCreate
-				id="ModuleTag_GrantDefault" 
-				UpgradeToGrant="Upgrade_ObjectDefault"  />			
-		
-			<AttributeModifierUpgrade
-				id="AA36A1AB"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				AttributeModifier="AttributeModifier_TransportEmpty">
-				<TriggeredBy>Upgrade_ObjectDefault</TriggeredBy>
-			</AttributeModifierUpgrade>		
-
-			<RemoveUpgradeUpgrade
-				id="3734843D"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				SuppressEvaEventForRemoval="False"
-				RemoveFromAllPlayerObjects="False">
-				<TriggeredBy>Upgrade_Transporting</TriggeredBy>
-				<UpgradeToRemove>Upgrade_ObjectDefault</UpgradeToRemove>
-			</RemoveUpgradeUpgrade>					
-			
 		</Behaviors>
 		<AI>
 			<TransportHelicopterAIUpdate
-				id="12FA48BA"
+				id="C25548AC"
 				AutoAcquireEnemiesWhenIdle=""
 				StopChaseDistance="500"
 				HoldGroundCloseRangeDistance="0"
-				AILuaEventsList="GDIV35Ox_SummonedFunctions_103"					
+				AILuaEventsList="GDIV35Ox_SummonedForVehicleFunctions"
 				MinCowerTime="0s"
 				MaxCowerTime="0s"
 				RampageTime="0s"
@@ -933,7 +1088,7 @@
 				CanPathThroughUnitsWhileHarvesting="True"
 				FlyOffMap="REVERSE_DIRECTION"
 				DelayAFterLoadingOrUnloading="0s"
-				FlyOffMapOnUnload="True" >
+				FlyOffMapOnUnload="True">
 				<UnitAITargetChooserData
 					IdleScanDelay="0.8s"
 					ReacquireDelay="5s"
@@ -943,13 +1098,13 @@
 					CanPickDynamicTargets="True"
 					RotateToTargetWhenAiming="True"
 					CanAutoAcquireNonAutoAcquirable="False"
-					TargetingCompareList="DefaultTargetingCompareList" />				
+					TargetingCompareList="DefaultTargetingCompareList" />
 			</TransportHelicopterAIUpdate>
 		</AI>
 		<Body>
 			<ActiveBody
-				id="B313F576"
-				MaxHealth="3000"
+				id="8018425E"
+				MaxHealth="2500"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -971,8 +1126,19 @@
 				BurningDeathBehavior="False" />
 		</Body>
 		<ClientBehaviors>
+			<AnimationSoundClientBehavior
+				id="59D403AD">
+				<Sound
+					Sound="AudioEvent:V35DropShipCloseDoors"
+					Animation="GUDROPSHIP_CLSA"
+					Frame="1" />
+				<Sound
+					Sound="AudioEvent:V35DropShipOpenDoors"
+					Animation="GUDROPSHIP_OPNA"
+					Frame="1" />
+			</AnimationSoundClientBehavior>
 			<ModelConditionAudioLoopClientBehavior
-				id="25CD74CF">
+				id="13120B33">
 				<ModelConditionSound
 					Sound="AudioEvent:V35DropShipLand"
 					RequiredFlags="LANDING"
@@ -987,46 +1153,55 @@
 			IsSmall="False">
 			<Shape
 				Type="BOX"
-				ContactPointGeneration="VEHICLE"
-				MajorRadius="35"
-				MinorRadius="20"
-				Height="10"
+				ContactPointGeneration="NONE"
+				MajorRadius="37"
+				MinorRadius="3"
+				Height="25"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True" />
+			<Shape
+				Type="BOX"
+				ContactPointGeneration="NONE"
+				MajorRadius="8"
+				MinorRadius="30"
+				Height="25"
 				FrontAngle="0d"
 				Active="True"
 				UsedForHealthBox="True">
 				<Offset
-					x="10"
+					x="-7"
 					y="0"
-					z="10" />
+					z="0" />
 			</Shape>
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry
-				Sound="AudioEvent:NOD_Carryall_VoiceCreate"
+				Sound="GDI_Ox_VoiceCreate"
 				AudioType="voiceCreated" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_Carryall_VoiceMove"
+				Sound="GDI_Ox_VoiceMove"
 				AudioType="voiceMove" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_Carryall_VoiceRetreat"
+				Sound="GDI_Ox_VoiceRetreat"
 				AudioType="voiceRetreatToCastle" />
 			<AudioEntry
-				Sound="Multisound:NOD_Carryall_VoiceSelectMS"
+				Sound="GDI_Ox_VoiceSelectMS"
 				AudioType="voiceSelect" />
 			<NamedEntry
-				Sound="AudioEvent:NOD_Carryall_VoiceMove"
-				Name="InitiateMoveToPositionAndEvacuate" />
+				Sound="GDI_Ox_VoiceDropoff"
+				Name="D451C3CA" />
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry
-				Sound="AudioEvent:NOD_CarryAll_MoveStart"
-				AudioType="soundMoveStart" />
+				Sound="AudioEvent:V35DropShipMoveLoop"
+				AudioType="soundMoveLoop" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_CarryAll_IdleLoop"
+				Sound="AudioEvent:V35DropShipIdleLoop"
 				AudioType="soundAmbient" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_CarryAll_MoveLoop"
-				AudioType="soundMoveLoop" />
+				Sound="AudioEvent:V35DropShipMoveStart"
+				AudioType="soundMoveStart" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
@@ -1034,7 +1209,7 @@
 			EvaEventDamagedFromShroudedSourceOwner="UnitUnderAttackFromShroudedUnit"
 			EvaEventDamagedByFireOwner="GenericUnitBeingBurned"
 			EvaEventSecondDamageFarFromFirstScanRange="600"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000"
 			EvaEventAmbushed="UnitAmbushed"
 			EvaEnemyObjectSightedEvent="GenericEnemyUnitSighted"
 			EvaEventDetectedEnemy="EnemyStealthUnitDiscovered"
@@ -1063,7 +1238,7 @@
 			IsRotatingWithObject="True"
 			LocalPlayerOnly="False" />
 		<VisionInfo
-			VisionRange="250"
+			VisionRange="180"
 			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"

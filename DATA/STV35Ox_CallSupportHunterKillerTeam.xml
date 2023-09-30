@@ -1096,7 +1096,7 @@
 		<Body>
 			<ActiveBody
 				id="E128C6A2"
-				MaxHealth="2400"
+				MaxHealth="2500"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1232,7 +1232,7 @@
 			LocalPlayerOnly="False" />
 		<VisionInfo
 			VisionRange="180"
-			ShroudClearingRange="600"
+			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"
 			VisionBonusTestRadius="100"

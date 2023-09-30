@@ -65,7 +65,7 @@
 		WeaponCategory="GUN"
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon="CommandoIcon"
-		ReinvisibilityDelay="3s"
+		ReinvisibilityDelay="2s"
 		CaptureTime="0s"
 		BuildCost="2000"
 		RefundValue="0"

@@ -22,7 +22,7 @@
 		EditorName="BlackHandStealthTank"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="12"
+		BuildTime="10"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -72,7 +72,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_NODTechCenterTibCoreMissiles"
 		CaptureTime="0s"
-		BuildCost="1200"
+		BuildCost="1000"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -104,7 +104,7 @@
 		<LocomotorSet
 			Speed="110"
 			Condition="NORMAL"
-			Locomotor="NODRaiderTankLocomotor" />
+			Locomotor="BlackHandStealthTankLocomotor" />
 		<SkirmishAIInformation
 			BaseBuildingLocation="FRONT"
 			ConquerMetricsOverrideDamageType="MISSILE"
@@ -1224,7 +1224,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="400"
+				DetectionRange="200"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""

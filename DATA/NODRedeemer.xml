@@ -2254,7 +2254,7 @@
 			</LaserDraw>
 			<StreamDraw
 				id="A2C70402"
-				Velocity="200"
+				Velocity="600"
 				ArcHeightFactor="0.0625"
 				UVWorldSize="100"
 				NumTubeSides="8"
@@ -2287,7 +2287,7 @@
 			</StreamDraw>
 			<StreamDraw
 				id="2D73A8AE"
-				Velocity="200"
+				Velocity="600"
 				ArcHeightFactor="0.0625"
 				UVWorldSize="100"
 				NumTubeSides="8"

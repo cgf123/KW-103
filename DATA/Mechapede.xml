@@ -481,7 +481,7 @@
 			</TankDraw>
 			<StreamDraw
 				id="A1F85686"
-				Velocity="200"
+				Velocity="600"
 				ArcHeightFactor="0.0625"
 				UVWorldSize="100"
 				NumTubeSides="8"

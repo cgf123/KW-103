@@ -1489,11 +1489,11 @@
 			</ScriptedModelDraw>
 			<StreamDraw
 				id="A1F85686"
-				Velocity="200"
+				Velocity="600"
 				ArcHeightFactor="0.0625"
 				UVWorldSize="100"
 				NumTubeSides="8"
-				TubeRadius="0.5"
+				TubeRadius="1.0"
 				HitFx="FX_NOD_BlackHandFlameWeaponHit"
 				WeaponSlotID="-1"
 				StreamStateID="0"
@@ -1524,11 +1524,11 @@
 			</StreamDraw>
 			<StreamDraw
 				id="2C110658"
-				Velocity="200"
+				Velocity="600"
 				ArcHeightFactor="0.0625"
 				UVWorldSize="100"
 				NumTubeSides="8"
-				TubeRadius="0.5"
+				TubeRadius="1.0"
 				HitFx="FX_NOD_BlackHandFlameWeaponHit"
 				WeaponSlotID="-1"
 				StreamStateID="0"

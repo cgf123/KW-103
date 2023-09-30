@@ -736,7 +736,7 @@
 	<ExperienceLevelTemplate
 			id="BlackHandStealthTankExperienceLevel_1"
 			RequiredExperience="1"
-			ExperienceAward="1200"
+			ExperienceAward="1000"
 			Rank="1">
 			<LevelUpTintColor
 				r="1.0"
@@ -756,8 +756,8 @@
 		<ExperienceLevelTemplate
 			id="BlackHandStealthTankExperienceLevel_2"
 			Prerequisite="BlackHandStealthTankExperienceLevel_1"
-			RequiredExperience="3600"
-			ExperienceAward="1560"
+			RequiredExperience="3000"
+			ExperienceAward="1300"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="2">
 			<LevelUpTintColor
@@ -782,8 +782,8 @@
 		<ExperienceLevelTemplate
 			id="BlackHandStealthTankExperienceLevel_3"
 			Prerequisite="BlackHandStealthTankExperienceLevel_2"
-			RequiredExperience="7200"
-			ExperienceAward="1920"
+			RequiredExperience="6000"
+			ExperienceAward="1600"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="3">
 			<LevelUpTintColor
@@ -808,8 +808,8 @@
 		<ExperienceLevelTemplate
 			id="BlackHandStealthTankExperienceLevel_4"
 			Prerequisite="BlackHandStealthTankExperienceLevel_3"
-			RequiredExperience="10800"
-			ExperienceAward="2400"
+			RequiredExperience="9000"
+			ExperienceAward="2000"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="4">
 			<LevelUpTintColor

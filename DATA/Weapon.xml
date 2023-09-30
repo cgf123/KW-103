@@ -3268,9 +3268,6 @@ DAMAGE TYPES
 		  AcceptableAimDelta="10d"
 		  ReAcquireDetailType="PER_CLIP"
 		  CanFireWhileMoving="true">
-		<PreAttackDelay
-			MinSeconds="0s"
-			MaxSeconds="0s" />
 		<FiringDuration
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
@@ -3325,7 +3322,7 @@ DAMAGE TYPES
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
 			<SuppressionNugget
-				Radius="30.0"
+				Radius="36.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3342,9 +3339,6 @@ DAMAGE TYPES
 		  AcceptableAimDelta="10d"
 		  ReAcquireDetailType="PER_CLIP"
 		  CanFireWhileMoving="true">
-		<PreAttackDelay
-			MinSeconds="0s"
-			MaxSeconds="0s" />
 		<FiringDuration
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
@@ -3383,7 +3377,7 @@ DAMAGE TYPES
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
 			<SuppressionNugget
-				Radius="30.0"
+				Radius="36.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3400,9 +3394,6 @@ DAMAGE TYPES
 		  AcceptableAimDelta="10d"
 		  ReAcquireDetailType="PER_CLIP"		  
 		  CanFireWhileMoving="true">
-		<PreAttackDelay
-			MinSeconds="0s"
-			MaxSeconds="0s" />
 		<FiringDuration
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
@@ -3465,7 +3456,7 @@ DAMAGE TYPES
 					Include="INFANTRY" />
 			</DamageContainedNugget>
 			<SuppressionNugget
-				Radius="30.0"
+				Radius="36.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3482,9 +3473,6 @@ DAMAGE TYPES
 		  AcceptableAimDelta="10d"
 		  ReAcquireDetailType="PER_CLIP"		  
 		  CanFireWhileMoving="true">
-		<PreAttackDelay
-			MinSeconds="0s"
-			MaxSeconds="0s" />
 		<FiringDuration
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
@@ -3531,7 +3519,7 @@ DAMAGE TYPES
 					Include="INFANTRY" />
 			</DamageContainedNugget>
 			<SuppressionNugget
-				Radius="30.0"
+				Radius="36.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3550,9 +3538,6 @@ DAMAGE TYPES
 		  AcceptableAimDelta="10d"
 		  ReAcquireDetailType="PER_CLIP"
 		  CanFireWhileMoving="true">
-		<PreAttackDelay
-			MinSeconds="0s"
-			MaxSeconds="0s" />
 		<FiringDuration
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
@@ -3604,7 +3589,7 @@ DAMAGE TYPES
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
 			<SuppressionNugget
-				Radius="15.0"
+				Radius="18.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3621,9 +3606,6 @@ DAMAGE TYPES
 		  AcceptableAimDelta="10d"
 		  ReAcquireDetailType="PER_CLIP"
 		  CanFireWhileMoving="true">
-		<PreAttackDelay
-			MinSeconds="0s"
-			MaxSeconds="0s" />
 		<FiringDuration
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
@@ -3662,7 +3644,7 @@ DAMAGE TYPES
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
 			<SuppressionNugget
-				Radius="15.0"
+				Radius="18.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3679,9 +3661,6 @@ DAMAGE TYPES
 		  AcceptableAimDelta="10d"
 		  ReAcquireDetailType="PER_CLIP"		  
 		  CanFireWhileMoving="true">
-		<PreAttackDelay
-			MinSeconds="0s"
-			MaxSeconds="0s" />
 		<FiringDuration
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
@@ -3741,7 +3720,7 @@ DAMAGE TYPES
 					Include="INFANTRY" />
 			</DamageContainedNugget>			
 			<SuppressionNugget
-				Radius="15.0"
+				Radius="18.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3758,9 +3737,6 @@ DAMAGE TYPES
 		  AcceptableAimDelta="10d"
 		  ReAcquireDetailType="PER_CLIP"		  
 		  CanFireWhileMoving="true">
-		<PreAttackDelay
-			MinSeconds="0s"
-			MaxSeconds="0s" />
 		<FiringDuration
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
@@ -3807,7 +3783,7 @@ DAMAGE TYPES
 					Include="INFANTRY" />
 			</DamageContainedNugget>			
 			<SuppressionNugget
-				Radius="15.0"
+				Radius="18.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -5172,12 +5148,21 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="0"/>
 			<DamageNugget
-				Damage="125.0"
+				Damage="135.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.4s"
 				DamageType="CANNON"
 				DamageFXType="ALIEN_BUZZER"
 				DeathType="NORMAL">
+				<!-- Scalars vs transport vehicles -->
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="ANY"
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>					
+				
 				<DamageScalarDetails Scalar= "25%">
 					<Filter
 						Rule="NONE"
@@ -5218,12 +5203,21 @@ DAMAGE TYPES
 				Lifetime="0.5s"
 				LaserId="0"/>
 			<DamageNugget
-				Damage="125.0"
+				Damage="135.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.8s"
 				DamageType="CANNON"
 				DamageFXType="ALIEN_BUZZER"
 				DeathType="NORMAL">
+				<!-- Scalars vs transport vehicles -->
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="ANY"
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>	
+				
 				<DamageScalarDetails Scalar= "25%">
 					<Filter
 						Rule="NONE"
@@ -5257,7 +5251,7 @@ DAMAGE TYPES
 		ReAcquireDetailType="PER_CLIP"		
 		ClipSize="3">	
 		<PreAttackDelay
-			MinSeconds="0.3s"
+			MinSeconds="0.2s"
 			MaxSeconds="0.3s" />
 		<FiringDuration
 			MinSeconds="0.2s"
@@ -5289,7 +5283,16 @@ DAMAGE TYPES
 				Damage="90.0"
 				Radius="5.0"				
 				DamageType="GUN"
-				DamageFXType="ALIEN_TIBSHARD" >			
+				DamageFXType="ALIEN_TIBSHARD" >		
+				<!-- Scalars vs transport vehicles -->
+				<DamageScalarDetails Scalar= "50%">
+					<Filter 
+						Rule="ANY"
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>	
+				
 				<DamageScalarDetails Scalar= "40%">
 					<Filter
 						Rule="ANY"
@@ -5353,6 +5356,12 @@ DAMAGE TYPES
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_PLASMADISK">
+				<DamageScalarDetails Scalar= "900%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TRANSPORT"
+						Exclude="WEAPON_SALVAGER" />
+				</DamageScalarDetails>				
 				<DamageScalarDetails Scalar= "800%">
 					<Filter
 						Rule="NONE"
@@ -5428,7 +5437,15 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					Exclude="INFANTRY HORDE"
-					Relationship="ENEMIES NEUTRAL" />			
+					Relationship="ENEMIES NEUTRAL" />		
+				<DamageScalarDetails Scalar= "110%">
+					<Filter
+						Rule="NONE"
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">
+					</Filter>
+				</DamageScalarDetails>
+					
 				<DamageScalarDetails Scalar= "150%">
 					<Filter
 						Rule="ANY"
@@ -5935,8 +5952,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="5d"		
 		>
 		<FiringDuration
-			MinSeconds="2.2s"
-			MaxSeconds="2.3s" />
+			MinSeconds="2.25s"
+			MaxSeconds="2.25s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -5988,15 +6005,15 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.4s"
-			MaxSeconds="1.4s" />
+			MinSeconds="1.55s"
+			MaxSeconds="1.55s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
 				LaserId="4"
 				HitGroundFX="FX_AlienTibLaserGroundHit"/>
 			<DamageNugget
-				Damage="640.0"
+				Damage="720.0"
 				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
@@ -6041,15 +6058,15 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.4s"
-			MaxSeconds="1.4s" />
+			MinSeconds="1.55s"
+			MaxSeconds="1.55s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
 				LaserId="5"
 				HitGroundFX="FX_AlienTibLaserGroundHit"/>
 			<DamageNugget
-				Damage="640.0"
+				Damage="720.0"
 				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
@@ -6094,15 +6111,15 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.4s"
-			MaxSeconds="1.4s" />
+			MinSeconds="1.55s"
+			MaxSeconds="1.55s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
 				LaserId="6"
 				HitGroundFX="FX_AlienTibLaserGroundHit"/>
 			<DamageNugget
-				Damage="640.0"
+				Damage="720.0"
 				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
@@ -6148,8 +6165,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="5d"		
 		>
 		<FiringDuration
-			MinSeconds="2.2s"
-			MaxSeconds="2.3s" />
+			MinSeconds="2.1s"
+			MaxSeconds="2.1s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -6201,14 +6218,14 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.4s"
-			MaxSeconds="1.4s" />
+			MinSeconds="1.44s"
+			MaxSeconds="1.44s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
 				LaserId="4"/>
 			<DamageNugget
-				Damage="640.0"
+				Damage="720.0"
 				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
@@ -6254,14 +6271,14 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.4s"
-			MaxSeconds="1.4s" />
+			MinSeconds="1.44s"
+			MaxSeconds="1.44s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
 				LaserId="5"/>
 			<DamageNugget
-				Damage="640.0"
+				Damage="720.0"
 				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
@@ -6307,14 +6324,14 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.4s"
-			MaxSeconds="1.4s" />
+			MinSeconds="1.44s"
+			MaxSeconds="1.44s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
 				LaserId="6"/>
 			<DamageNugget
-				Damage="640.0"
+				Damage="720.0"
 				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
@@ -6390,8 +6407,8 @@ DAMAGE TYPES
 			MaxSeconds="1.8s" />
 			-->
 		<PreAttackDelay
-			MinSeconds="0.3s"
-			MaxSeconds="0.4s" />
+			MinSeconds="0.2s"
+			MaxSeconds="0.3s" />
 		<FiringDuration
 			MinSeconds="0.2s"
 			MaxSeconds="0.2s" />
@@ -6421,7 +6438,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARD" >						
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "55%">
+				<DamageScalarDetails Scalar= "62.5%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6454,8 +6471,8 @@ DAMAGE TYPES
 		ReAcquireDetailType="PER_CLIP"
 		ClipSize="3">
 		<PreAttackDelay
-			MinSeconds="0.3s"
-			MaxSeconds="0.4s" />
+			MinSeconds="0.2s"
+			MaxSeconds="0.3s" />
 		<FiringDuration
 			MinSeconds="0.2s"
 			MaxSeconds="0.2s" />
@@ -6485,7 +6502,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARDBLUE" >
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "55%">
+				<DamageScalarDetails Scalar= "62.5%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6851,14 +6868,14 @@ DAMAGE TYPES
 			ReAcquireDetailType="PER_CLIP"
 			ClipSize="3">
 		<PreAttackDelay
-			MinSeconds="0.3s"
-			MaxSeconds="0.4s" />
+			MinSeconds="0.2s"
+			MaxSeconds="0.3s" />
 		<FiringDuration
 			MinSeconds="0.2s"
 			MaxSeconds="0.2s" />
 		<ClipReloadTime
-			MinSeconds="1.7s"
-			MaxSeconds="1.9s" />				
+			MinSeconds="1.6s"
+			MaxSeconds="1.8s" />				
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="AlienTibShardProjectile"
@@ -6882,7 +6899,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARD" >		
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "55%">
+				<DamageScalarDetails Scalar= "62.5%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7075,15 +7092,7 @@ DAMAGE TYPES
 						Include="TRANSPORT WEAPON_SALVAGER"
 						Exclude="">
 					</Filter>
-				</DamageScalarDetails>					
-				
-				<!-- Scalar vs Disints -->
-				<DamageScalarDetails Scalar= "100%">
-					<Filter Rule="NONE">          
-						<IncludeThing>Traveler59RazorDrones</IncludeThing>					
-						<IncludeThing>AlienRazorDrones</IncludeThing>					
-					</Filter>
-				</DamageScalarDetails>						
+				</DamageScalarDetails>								
 				
 				<!-- Scalar vs Cultists -->							
 				<DamageScalarDetails Scalar= "150%">
@@ -7674,6 +7683,14 @@ DAMAGE TYPES
 					Exclude="INFANTRY HORDE"
 					Relationship="ENEMIES NEUTRAL"
 				/>
+				<DamageScalarDetails Scalar= "125%">
+					<Filter
+						Rule="NONE"
+						Include="TRANSPORT"
+						Exclude="WEAPON_SALVAGER">
+					</Filter>
+				</DamageScalarDetails>					
+				
 				<DamageScalarDetails Scalar="125%">
 					<Filter
 						Rule="ANY"
@@ -8241,7 +8258,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>		
 				
 				<!-- Very Heavy Armor -->
-				<DamageScalarDetails Scalar= "100%">
+				<DamageScalarDetails Scalar= "105%">
 					<Filter 
 						Rule="NONE">			
 						<IncludeThing>AlienAnnihilatorTripod</IncludeThing>
@@ -8292,14 +8309,14 @@ DAMAGE TYPES
 						<ExcludeThing>GDIPredator</ExcludeThing>
 						<ExcludeThing>ZOCOMPredator</ExcludeThing>
 						<ExcludeThing>SteelTalonsTitan</ExcludeThing> 
-						<ExcludeThing>GDIAAScout</ExcludeThing>
-						<ExcludeThing>ZOCOMAAScout</ExcludeThing>		
-						<ExcludeThing>SteelTalonsAAScout</ExcludeThing>		
 						<ExcludeThing>GDISonicTank</ExcludeThing>
 						<ExcludeThing>ZOCOMImprovedSonicTank</ExcludeThing>								
 						-->
 						
 						<!-- Semi-Heavy Armor -->
+						<ExcludeThing>GDIAAScout</ExcludeThing>
+						<ExcludeThing>ZOCOMAAScout</ExcludeThing>		
+						<ExcludeThing>SteelTalonsAAScout</ExcludeThing>								
 						<ExcludeThing>NODRaiderTank</ExcludeThing>
 						<ExcludeThing>MarkedOfKaneRaiderTank</ExcludeThing>	
 						<ExcludeThing>BlackhandRaiderTank</ExcludeThing>	
@@ -8360,6 +8377,9 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "35%">
 					<Filter 
 						Rule="NONE">
+						<IncludeThing>GDIAAScout</IncludeThing>
+						<IncludeThing>ZOCOMAAScout</IncludeThing>		
+						<IncludeThing>SteelTalonsAAScout</IncludeThing>								
 						<IncludeThing>GDIAPC</IncludeThing>
 						<IncludeThing>GDIAPC_Veteran</IncludeThing>
 						<IncludeThing>ZOCOMAPC</IncludeThing>
@@ -8373,7 +8393,7 @@ DAMAGE TYPES
 						<IncludeThing>BlackhandRaiderTank</IncludeThing>	
 						<IncludeThing>NODBeamCannon</IncludeThing>	
 						<IncludeThing>MarkedOfKaneBeamCannon</IncludeThing>	
-						<IncludeThing>BlackhandBeamCannon</IncludeThing>	
+						<IncludeThing>BlackhandBeamCannon</IncludeThing>							
 						<!--
 						<IncludeThing>AlienGunWalker</IncludeThing>
 						<IncludeThing>Traveler59GunWalker</IncludeThing>
@@ -9780,7 +9800,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>
 			</DamageNugget>
 			<SuppressionNugget
-				Radius="10.0"
+				Radius="15.0"
 				Suppression="75"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -12405,7 +12425,7 @@ DAMAGE TYPES
  		>
 		<Nuggets>
 			<DamageNugget
-				Damage="210.0"
+				Damage="212.0"
 				Radius="10.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
@@ -12426,7 +12446,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 			</DamageNugget>		
 			<SuppressionNugget
-				Radius="15.0"
+				Radius="10.0"
 				Suppression="50"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -12482,7 +12502,7 @@ DAMAGE TYPES
 				AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY">
 		<Nuggets>
 			<DamageNugget
-				Damage="262.5"
+				Damage="265.0"
 				Radius="10.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
@@ -12502,7 +12522,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 			</DamageNugget>		
 			<SuppressionNugget
-				Radius="15.0"
+				Radius="10.0"
 				Suppression="50"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -12513,7 +12533,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="BlackHandTankTankRocket"
 		Name="BlackHandTankTankRocket"
-		AttackRange="325.0"
+		AttackRange="330.0"
 		WeaponSpeed="300"
 		MinWeaponSpeed="300"
 		MaxWeaponSpeed="310"
@@ -12561,7 +12581,7 @@ DAMAGE TYPES
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"	>
 		<Nuggets>
 			<DamageNugget
-				Damage="320.0"
+				Damage="272.0"
 				Radius="10.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
@@ -12574,10 +12594,6 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>
 			</DamageNugget>
-			<SuppressionNugget
-				Radius="10.0"
-				Suppression="75"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -12585,7 +12601,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="BlackHandTankTankRocketTibCore"
 		Name="BlackHandTankTankRocketTibCore"
-		AttackRange="325.0"
+		AttackRange="330.0"
 		WeaponSpeed="300"
 		MinWeaponSpeed="300"
 		MaxWeaponSpeed="310"
@@ -12632,7 +12648,7 @@ DAMAGE TYPES
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"	>
 		<Nuggets>
 			<DamageNugget
-				Damage="400.0"
+				Damage="340.0"
 				Radius="10.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
@@ -12644,10 +12660,6 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>
 			</DamageNugget>
-			<SuppressionNugget
-				Radius="10.0"
-				Suppression="75"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>	
 

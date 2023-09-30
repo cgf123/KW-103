@@ -169,8 +169,8 @@
 		TypeDescription="UpgradeType:BlackHandPurifyingFlame"
 		Description="UpgradeDesc:BlackHandPurifyingFlame"
 		Type="PLAYER"
-		BuildTime="90.0s"
-		BuildCost="2500"
+		BuildTime="60.0s"
+		BuildCost="2000"
 		ResearchSound="Multisound:NOD_PurifyingFlame_UpgradeMS"
 		IconImage="Button_Upgrade_PurifyingFlame">
 	</UpgradeTemplate>		
@@ -557,7 +557,7 @@
 		Description="UpgradeDesc:Reaper17ConversionReserves"
 		Type="PLAYER"
 		BuildTime="15.0s"
-		BuildCost="500"
+		BuildCost="1000"
 		ResearchSound="AudioEvent:ALI_ConversionReserves_Upgrade"
 		IconImage="Button_Upgrade_ConversionReserves"
 	/>	
