@@ -411,8 +411,11 @@
 
 	<Include type="all" source="NodTurrets/NODLaserCannonHub.xml" />
 	<Include type="all" source="NodTurrets/BHLaserCannonHub.xml" />
-	<Include type="all" source="NodTurrets/MOKLaserCannonHub.xml" />		
+	<Include type="all" source="NodTurrets/MOKLaserCannonHub.xml" />	
+	
 	<Include type="all" source="NodTurrets/NODLaserCannonSpawn.xml" />
+	<Include type="all" source="NodTurrets/BHLaserCannonSpawn.xml" />
+	<Include type="all" source="NodTurrets/MOKLaserCannonSpawn.xml" />	
 
 	<Include type="all" source="NODEMPBlastProjectile1.xml" />				
 	

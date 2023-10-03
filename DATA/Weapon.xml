@@ -2336,7 +2336,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>							
 				<DamageScalarDetails Scalar= "233%" >
 					<Filter
-						Rule="NONE"
+						Rule="ANY"
 						Relationship="ENEMIES"
 						Include="STRUCTURE FS_BASE_DEFENSE">
 					</Filter>
@@ -2566,7 +2566,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="SteelTalonsImprovedShattererOverloadBeam"
 		Name="SteelTalonsImprovedShattererOverloadBeam"
-		AttackRange="375.0"
+		AttackRange="400.0"
 		MinimumAttackRange="0"
 		WeaponSpeed="510.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
@@ -13808,7 +13808,7 @@ DAMAGE TYPES
 		<!-- ;;;;; CanFireWhileMoving is TEMP !!!!!!!!!!!!!!!!! -->
 		<FiringDuration
 			MinSeconds="0.2s"
-			MaxSeconds="0.3s" />
+			MaxSeconds="0.2s" />
 		<ClipReloadTime
 			MinSeconds="0.25s"
 			MaxSeconds="0.25s" />
@@ -13866,7 +13866,7 @@ DAMAGE TYPES
 		NoVictimNeeded="true">
 		<FiringDuration
 			MinSeconds="0.2s"
-			MaxSeconds="0.3s" />
+			MaxSeconds="0.2s" />
 		<ClipReloadTime
 			MinSeconds="0.25s"
 			MaxSeconds="0.25s" />

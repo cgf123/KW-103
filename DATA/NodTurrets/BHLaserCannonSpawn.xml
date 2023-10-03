@@ -1,10 +1,10 @@
-]<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
-		id="GDIAABattery"
-		KindOf="SELECTABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS STRUCTURE FS_BASE_DEFENSE POWERED CAN_SEE_THROUGH_STRUCTURE COVER AUTO_ACQUIRABLE_BY_AI AA_STRUCT"
-		Description="Desc:GDIAABattery"
-		TypeDescription="Type:GDIAABattery"
+		id="BlackHandLaserCannonSpawn"
+		KindOf="VALID_TARGET_FOR_C4 HAS_HEALTH_BAR IGNORES_SELECT_ALL SELECTABLE TARGETABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS CANT_TOGGLE_POWER ATTACK_NEEDS_LINE_OF_SIGHT FS_BASE_DEFENSE HUGE_VEHICLE POWERED CAN_SEE_THROUGH_STRUCTURE KEEP_CLASSIFIED_WHEN_DEAD NOT_SELLABLE COVER AUTO_ACQUIRABLE_BY_AI"
+		Description="Desc:NODLaserCannon"
+		TypeDescription="Type:NODLaserCannon"
 		RadarPriority="STRUCTURE"
 		BuildCompletion="INVALID"
 		FenceWidth="0"
@@ -15,17 +15,17 @@
 		BuildFadeInOnCreateTimeSeconds="0s"
 		FactoryExitWidth="0"
 		FactoryExtraBibWidth="0"
-		Side="GDI"
-		EditorName="GDIAABattery"
+		Side="NOD"
+		EditorName="BlackHandLaserCannonSpawn"
 		EditorSorting="STRUCTURE"
 		BountyValue="0"
-		BuildTime="8"
+		BuildTime="4"
 		BuildFadeInOnCreateTime="0"
-		EnergyProduction="-5"
+		EnergyProduction="0"
 		EnergyBonus="0"
 		CommandSet="GDIWatchTowerCommandSet"
-		SelectPortrait="Portrait_GDIAABattery"
-		ButtonImage="Portrait_GDIAABattery"
+		SelectPortrait="Portrait_NODLaserTurret"
+		ButtonImage="Portrait_NODLaserTurret"
 		VoicePriority="0"
 		MinZIncreaseForVoiceMoveToHigherGround="-1"
 		CrowdResponse=""
@@ -62,12 +62,12 @@
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		BuildOnRequiredObjectKindOf=""
 		UnitCategory="STRUCTURE"
-		WeaponCategory="MISSILE"
+		WeaponCategory="CANNON"
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
-		BuildCost="800"
+		BuildCost="400"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -85,33 +85,27 @@
 		CanPathThroughGates="True"
 		ShouldClearShotsOnIdle="False"
 		BuildInProximityToSamePlayerStucture="True">
-		<DisplayName>Name:GDIAABattery</DisplayName>
-		<GameDependency
-			RequiredModelConditionsAny=""
-			ForbiddenModelConditions=""
-			RequiredObjectStatusAny="">
-			<RequiredObject>GDICommandPost</RequiredObject>
-		</GameDependency>
+		<DisplayName>Name:NODLaserCannon</DisplayName>
 		<ArmorSet
-			Armor="GDIWatchTowerArmor"
+			Armor="NODBaseDefenceArmor"
 			DamageFX="FactionStructureDamageFX"
 			Conditions="" />
 		<SkirmishAIInformation
-			BaseBuildingLocation="CENTER"
+			BaseBuildingLocation="SPREAD"
 			ConquerMetricsOverrideDamageType="UNDEFINED"
 			ConquerMetricsOverrideAntiMask="ANTI_GROUND"
 			UnitBuilderStandardCombatUnit="False" />
 		<Draws>
 			<ScriptedModelDraw
 				id="50DF2C46"
-				RecoilDamping="0.02"
-				MaxRecoilDistance="0.1"
-				InitialRecoilSpeed="10"
-				RecoilSettleSpeed="3"
+				RecoilDamping="0.4"
+				MaxRecoilDistance="3"
+				InitialRecoilSpeed="2"
+				RecoilSettleSpeed="0.065"
 				MinLODRequired="LOW"
 				ProjectileBoneFeedbackEnabledSlots=""
 				TrackMarks=""
-				ExtraPublicBone="FX_Weapon_01"
+				ExtraPublicBone="FX_Weapon01 FX_Weapon02"
 				DependencySharedModelFlags=""
 				HighDetailLODThreshold="0"
 				LowDetailLODThreshold="0"
@@ -151,24 +145,16 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBAABAT_SKN"
+						Name="NBLSRCANN_SKN"
 						ExtraMesh="False" />
 					<WeaponFireFXBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="FX_Weapon_" />
-					<WeaponRecoilBone
-						WeaponSlotID="1"
-						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="FX_Weapon_" />
-					<WeaponMuzzleFlash
-						WeaponSlotID="1"
-						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="FX_Weapon_" />
+						BoneName="FX_Weapon" />
 					<WeaponLaunchBone
 						WeaponSlotID="1"
 						WeaponSlotType="PRIMARY_WEAPON"
-						BoneName="FX_Weapon_" />
+						BoneName="FX_Weapon" />
 					<Turret
 						TurretNameKey="Turret"
 						TurretArtAngle="0d"
@@ -178,12 +164,12 @@
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING"
+					ConditionsYes="REPAIRING_DISABLED"
 					PortraitImage=""
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBAABAT_ASN"
+						Name="NBLSRCANN_D3SN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -193,7 +179,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBAABAT_D3SN"
+						Name="NBLSRCANN_D3SN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -203,7 +189,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBAABAT_D2SN"
+						Name="NBLSRCANN_D2SN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -213,32 +199,22 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBAABAT_SKN"
+						Name="NBLSRCANN_SKN"
 						ExtraMesh="False" />
 					<Texture
-						Original="GBAABat"
-						New="GBAABat_D" />
-					<Texture
-						Original="GBUG_Tungsten"
-						New="GBUG_Tungsten_D" />
+						Original="NBLsrCann"
+						New="NBLsrCannD" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False" />
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING"
+					Flags="RESTART_ANIM_WHEN_COMPLETE"
 					EnteringStateFX=""
 					FrameForPristineBonePositions="0"
 					ShareAnimation="False"
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="GBAABAT_AAN"
+						AnimationName="NBLSRCANN_IDLA"
 						AnimationMode="ONCE"
 						Distance="0"
 						AnimationBlendTime="5"
@@ -252,27 +228,80 @@
 						AnimationMustCompleteBlend="False"
 						UseWeaponTiming="False"
 						FadingIn="False" />
-					<ParticleSysBone
-						BoneName="NONE"
-						FXParticleSystemTemplate="Con_Small"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="BUILD_PLACEMENT_CURSOR"
+					ConditionsYes="USER_1"
 					EnteringStateFX=""
 					FrameForPristineBonePositions="0"
 					ShareAnimation="False"
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
-					<Script>
-						CurDrawableHideSubObject("UG_TUNGSTENBASE")
-						CurDrawableHideSubObject("UG_TUNGSTENAMMO")
-						CurDrawableHideSubObject("UG_TUNGSTENGUN")
-					</Script>
+					<Animation
+						AnimationName="NBLSRCANN_BLD"
+						AnimationMode="ONCE"
+						Distance="0"
+						AnimationBlendTime="0"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
+					<Animation
+						AnimationName="NBLSRCANN_BLD"
+						AnimationMode="ONCE"
+						Distance="0"
+						AnimationBlendTime="0"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REPAIRING_DISABLED"
+					StateName="STATE_Rubble"
+					Flags="START_FRAME_LAST"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
+					<Animation
+						AnimationName="NBLSRCANN_D3AN"
+						AnimationMode="ONCE"
+						Distance="0"
+						AnimationBlendTime="0"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -285,8 +314,8 @@
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="GBAABAT_D3AN"
-						AnimationMode="MANUAL"
+						AnimationName="NBLSRCANN_D3AN"
+						AnimationMode="ONCE"
 						Distance="0"
 						AnimationBlendTime="5"
 						AnimationSpeedFactorMin="1"
@@ -305,13 +334,6 @@
 						CurDrawableSetTransitionAnimState("TRANS_IntoRubble")
 						end
 					</Script>
-					<ParticleSysBone
-						BoneName="NONE"
-						FXParticleSystemTemplate="Des_Small"
-						PersistID="0"
-						FollowBone="False"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -324,7 +346,7 @@
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="GBAABAT_D2AN"
+						AnimationName="NBLSRCANN_D2AN"
 						AnimationMode="MANUAL"
 						Distance="0"
 						AnimationBlendTime="5"
@@ -354,7 +376,7 @@
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="GBAABAT_D2AN"
+						AnimationName="NBLSRCANN_D2AN"
 						AnimationMode="ONCE"
 						Distance="0"
 						AnimationBlendTime="0"
@@ -378,7 +400,7 @@
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="GBAABAT_D3AN"
+						AnimationName="NBLSRCANN_D3AN"
 						AnimationMode="ONCE"
 						Distance="0"
 						AnimationBlendTime="0"
@@ -394,138 +416,40 @@
 						FadingIn="False" />
 				</AnimationState>
 			</ScriptedModelDraw>
-			<SpotlightDraw
-				id="F591F97E"
-				RecoilDamping="0.4"
-				MaxRecoilDistance="3"
-				InitialRecoilSpeed="2"
-				RecoilSettleSpeed="0.065"
-				MinLODRequired="LOW"
-				ProjectileBoneFeedbackEnabledSlots=""
-				TrackMarks=""
-				AttachToBoneInAnotherModule="bone_stealthdetector"
-				DependencySharedModelFlags=""
-				HighDetailLODThreshold="0"
-				LowDetailLODThreshold="0"
-				WadingParticleSys=""
-				AlphaCameraFadeOuterRadius="0"
-				AlphaCameraFadeInnerRadius="0"
-				AlphaCameraAtInnerRadius="100%"
-				StaticSortLevelWhileFading="-1"
-				BirthFadeTime="0"
-				OkToChangeModelColor="False"
-				AnimationsRequirePower="True"
-				UseYAxisForTurretRotation="False"
-				TrackMarksOnlyWhenCorneringQuickly="False"
-				UseProducerTexture="False"
-				NoRotate="False"
-				UseFiringArcRotation="False"
-				Selectable="True"
-				RandomTextureFixedRandomIndex="False"
-				ParticlesAttachedToAnimatedBones="False"
-				ParticleBonesCheckDrawable="False"
-				ShadowForceDisable="False"
-				SwitchModelLODMode="False"
-				StaticModelLODMode="False"
-				ShowShadowWhileContained="False"
-				UseStandardModelNames="False"
-				UseDefaultAnimation="False"
-				BirthFadeAdditive="False"
-				ZWriteDisableOverride="False"
-				MultiPlayerOnly="False"
-				AffectedByStealth="True"
-				InvertStealthOpacity="False"
-				HighDetailOnly="False"
-				SetAnimsToLastFrameOnConstructionComplete="True"
-				RefreshTime="2s"
-				SweepTime="1s"
-				AlwaysOn="False">
-				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
-					<Model
-						Name="FXSPOTLIGHT"
-						ExtraMesh="False" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="BUILD_PLACEMENT_CURSOR"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
-					<Model
-						Name=""
-						ExtraMesh="False" />
-				</ModelConditionState>
-			</SpotlightDraw>
-			<TracerModelDraw
-				id="54201A36"
-				MinLength="35"
-				MaxLength="50"
-				Width="5"
-				MinSpeed="60"
-				MaxSpeed="80"
-				SweepSpeed="1"
-				SpreadAngle="2"
-				MinTracersPerFrame="1"
-				MaxTracersPerFrame="1"
-				FrameLifeTime="10"
-				WeaponSlotType="PRIMARY_WEAPON"
-				WeaponSlotID="1"
-				Texture="FXTracerGDI"
-				TracerHitFx="FX_BulletHitLargeGDI"
-				TracerEmitFx=""
-				TextureIndex="0"
-				UseAdditiveBlending="True">
-				<HeadColor
-					r="1"
-					g="1"
-					b="1"
-					a="1" />
-				<TailColor
-					r="0"
-					g="0"
-					b="0"
-					a="0" />
-				<ObjectStatusValidation
-					ForbiddenStatus="WEAPON_UPGRADED_01"
-					RequiredStatus="" />
-			</TracerModelDraw>
-			<TracerModelDraw
-				id="18437C4C"
-				MinLength="35"
-				MaxLength="50"
-				Width="5"
-				MinSpeed="60"
-				MaxSpeed="80"
-				SweepSpeed="1"
-				SpreadAngle="2"
-				MinTracersPerFrame="1"
-				MaxTracersPerFrame="1"
-				FrameLifeTime="10"
-				WeaponSlotType="PRIMARY_WEAPON"
-				WeaponSlotID="1"
-				Texture="FXTracerTungsten"
-				TracerHitFx="FX_MidAirFlakExplosion"
-				TracerEmitFx=""
-				TextureIndex="0"
-				UseAdditiveBlending="True">
-				<HeadColor
-					r="1"
-					g="1"
-					b="1"
-					a="1" />
-				<TailColor
-					r="0"
-					g="0"
-					b="0"
-					a="0" />
-				<ObjectStatusValidation
-					ForbiddenStatus=""
-					RequiredStatus="WEAPON_UPGRADED_01" />
-			</TracerModelDraw>
+			<LaserDraw
+				id="9FE06199"
+				Texture1_UTile="1"
+				Texture1_VTile="0.5"
+				Texture2_UTile="1"
+				Texture2_VTile="0.03"
+				Texture1_UScrollRate="0"
+				Texture1_VScrollRate="0.2"
+				Texture2_UScrollRate="0"
+				Texture2_VScrollRate="1"
+				Texture1_NumFrames="1"
+				Texture1_FrameRate="30"
+				Texture2_NumFrames="1"
+				Texture2_FrameRate="30"
+				LaserWidth="20"
+				WeaponSlotID="-1"
+				LaserStateID="0"
+				UseDistortionShader="False">
+				<FXShader
+					ShaderName="Laser.fx"
+					TechniqueName=""
+					TechniqueIndex="0">
+					<Constants>
+						<Texture
+							Name="Texture1">
+							<Value>FXObeliskLaser</Value>
+						</Texture>
+						<Texture
+							Name="Texture2">
+							<Value>FXLaserOverlay</Value>
+						</Texture>
+					</Constants>
+				</FXShader>
+			</LaserDraw>
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate
@@ -554,7 +478,7 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
-				DefectionFrameCount="75" />
+				DefectionFrameCount="100" />
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotTurret
@@ -564,26 +488,26 @@
 					AllowInterleavedFiring="False">
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="GDIAABattery"
+						Template="NODLaserCannonWeapon"
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
 					<Weapon
 						Ordering="PRIMARY_WEAPON"
-						Template="GDIAABatteryTungstenAAShells"
+						Template="NODLaserCannonCapacitorsWeapon"
 						Upgrade=""
 						ObjectStatus="WEAPON_UPGRADED_01"
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="200"
+						TurretTurnRate="360"
 						TurretPitchRate="100"
-						MinimumPitch="0d"
-						PitchHeight="75%"
+						MinimumPitch="-60d"
+						PitchHeight="90%"
 						ControlledWeaponSlots=""
 						MinIdleScanTime="1s"
 						MaxIdleScanTime="5s"
 						MinIdleScanAngle="0"
-						MaxIdleScanAngle="90"
+						MaxIdleScanAngle="180"
 						MaxDeflectionClockwise="180d"
 						MaxDeflectionAntiClockwise="180d"
 						NaturalTurretAngle="0d"
@@ -591,7 +515,7 @@
 						RecenterWhenOutOfTurnRange="True">
 						<TurretAITargetChooserData
 							IdleScanDelay="0.8s"
-							ReacquireDelay="30s"
+							ReacquireDelay="5s"
 							StartupDelay="0s"
 							SympathyRange="25"
 							CheckVisionRange="False"
@@ -605,67 +529,9 @@
 					</TurretSettings>
 				</WeaponSlotTurret>
 			</WeaponSetUpdate>
-			<SlowDeath
-				id="73542D4A"
-				SinkRate="2.4"
-				ProbabilityModifier="10"
-				ModifierBonusPerOverkillPercent="0%"
-				SinkDelay="5s"
-				SinkDelayVariance="0s"
-				DestructionDelay="10s"
-				DestructionDelayVariance="0s"
-				DecayBeginTime="0s"
-				FlingForce="0"
-				FlingForceVariance="0"
-				FlingPitch="0d"
-				FlingPitchVariance="0d"
-				DeathFlags=""
-				FadeTime="0s"
-				FadeDelay="0s"
-				DeathTypes=""
-				DeathObjectStatusBits=""
-				ShadowWhenDead="False"
-				Fade="False">
-				<Sound
-					Type="INITIAL"
-					List="HumanFaction_SmallBuilding_DieMS" />
-				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="0.9999999d"
-					MaxKillerAngle="-0.9999999d"
-					DeathTypes="ALL"
-					DeathTypesForbidden="" />
-			</SlowDeath>
-			<StatusBitsUpgrade
-				id="85B2DF85"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				StatusToSet="WEAPON_UPGRADED_01"
-				StatusToClear=""
-				ApplyToContained="False">
-				<TriggeredBy>Upgrade_GDITungstenAAShells</TriggeredBy>
-			</StatusBitsUpgrade>
-			<SubObjectsUpgrade
-				id="58E78612"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				ShowSubObjects="UG_TUNGSTENBASE UG_TUNGSTENAMMO UG_TUNGSTENGUN UGTAmNewSkin UGTungNewSkin"
-				FadeTimeInSeconds="0.5"
-				WaitBeforeFadeInSeconds="0"
-				RecolorHouse="False"
-				SkipFadeOnCreate="False"
-				HideSubObjectsOnRemove="False"
-				UnHideSubObjectsOnRemove="False">
-				<TriggeredBy>Upgrade_GDITungstenAAShells</TriggeredBy>
-			</SubObjectsUpgrade>
+			<LaserState
+				id="14BDCE42"
+				LaserId="0" />
 			<FXListBehavior
 				id="C74C39D8">
 				<DieMuxData
@@ -678,7 +544,7 @@
 					DeathTypesForbidden="" />
 				<Event
 					Index="onDeath"
-					FX="FX_TEMPLarge"
+					FX="FX_NOD_DefensiveTurret_Explode"
 					MinThreshold="0"
 					MaxThreshold="0"
 					Direction="Default"
@@ -709,36 +575,101 @@
 					OrientToObject="True"
 					ForceUseDoFXObj="False" />
 			</FXListBehavior>
+			<SlavedUpdate
+				id="4AAAACCD"
+				LeashRange="600"
+				GuardMaxRange="0"
+				GuardWanderRange="0"
+				AttackRange="0"
+				AttackWanderRange="0"
+				ScoutRange="0"
+				ScoutWanderRange="0"
+				DistToTargetToGrantRangeBonus="0"
+				RepairRange="0"
+				RepairMinAltitude="0"
+				RepairMaxAltitude="0"
+				RepairWhenHealthBelowPercentage="0"
+				RepairRatePerSecond="0"
+				MinReadyFrames="0"
+				MaxReadyFrames="0"
+				MinWeldFrames="0"
+				MaxWeldFrames="0"
+				WeldingSysId=""
+				DieOnMastersDeathDamageType="UNRESISTABLE"
+				DieOnMastersDeathType="SUICIDED"
+				FadeOutRange="0"
+				FadeTime="0"
+				StayOnSameLayerAsMaster="False"
+				DieOnMastersDeath="True"
+				MarkUnselectable="False"
+				UseSlaverAsControlForEvaObjectSightedEvents="False" />
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-			<StealthDetectorUpdate
-				id="70ED959C"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				DetectionRate="0.4s"
-				DetectionRange="100"
-				PingSound=""
-				LoudPingSound=""
-				IRBeaconParticleSys=""
-				IRParticleSys=""
-				IRBrightParticleSys=""
-				IRGridParticleSys=""
-				ExtraRequiredKindOf=""
-				ExtraForbiddenKindOf=""
-				RequiredUpgrade=""
-				InitiallyDisabled="False"
-				CanDetectWhileGarrisoned="False"
-				CanDetectWhileContained="False"
-				UseMetaAOI="False" />
+			<SlowDeath
+				id="73542D4A"
+				SinkRate="4"
+				ProbabilityModifier="10"
+				ModifierBonusPerOverkillPercent="0%"
+				SinkDelay="3s"
+				SinkDelayVariance="0s"
+				DestructionDelay="8s"
+				DestructionDelayVariance="0s"
+				DecayBeginTime="0s"
+				FlingForce="0"
+				FlingForceVariance="0"
+				FlingPitch="0d"
+				FlingPitchVariance="0d"
+				DeathFlags=""
+				FadeTime="0s"
+				FadeDelay="0s"
+				DeathTypes=""
+				DeathObjectStatusBits=""
+				ShadowWhenDead="False"
+				Fade="False">
+				<DieMuxData
+					ExemptStatus=""
+					RequiredStatus=""
+					DamageAmountRequired="-1"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
+					DeathTypes="SUICIDED"
+					DeathTypesForbidden="" />
+			</SlowDeath>
+			<KeepObjectDie
+				id="6D046D3D"
+				CollapsingTime="0s"
+				StayOnRadar="False">
+				<DieMuxData
+					ExemptStatus=""
+					RequiredStatus=""
+					DamageAmountRequired="-1"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
+					DeathTypes="ALL"
+					DeathTypesForbidden="SUICIDED" />
+			</KeepObjectDie>
+			<InitiateRepairDie
+				id="62B841CE"
+				DelayTime="20s"
+				MasterDeadDieFX="FX_TEMPLarge"
+				Options="REPAIR_INSTANT"
+				InstantRepairModelCondition="USER_1"
+				InstantRepairAnimDuration="1.5s">
+				<Die
+					ExemptStatus=""
+					RequiredStatus=""
+					DamageAmountRequired="-1"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
+					DeathTypes="ALL"
+					DeathTypesForbidden="SUICIDED" />
+			</InitiateRepairDie>
 			<RepairUpdate
 				id="41FDEB2A"
 				RepopThreshold="0.2"
 				HealAmountPerSecond="90"
-				Toggleable="True"
-				RepairableWhenDead="False">
+				Toggleable="False"
+				RepairableWhenDead="True">
 				<PercentOfBuildCostToRebuildInfo
 					Pristine="50%"
 					Damaged="50%"
@@ -748,58 +679,16 @@
 					SelfRepairFromDamageLoop=""
 					SelfRepairFromRubbleLoop="" />
 			</RepairUpdate>
-			<CreateObjectDie
-				id="4BF392A4"
-				CreationList="OCL_GenericGDIBuildingSuicide">
-				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="0.9999999d"
-					MaxKillerAngle="-0.9999999d"
-					DeathTypes="SUICIDED"
-					DeathTypesForbidden="" />
-			</CreateObjectDie>
-			<EngineerContain
-				id="E2BE8599"
-				ReplaceWith=""
-				NameOfVoiceToUseForFriendlyEnter="9D165EA1"
-				NameOfVoiceToUseForHostileEnter="124DB476"
-				FXForRepair="FX_Building_Repaired"
-				FXForCapture="FX_Building_Captured"
-				FXForCaptureAndReplace="FX_Building_Captured"
-				EvaEventForRepair="BuildingRepaired">
-				<CanEnterFilter
-					Rule="NONE"
-					Relationship="ALLIES"
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="">
-					<IncludeThing>GDIEngineer</IncludeThing>
-					<IncludeThing>NODSaboteur</IncludeThing>
-					<IncludeThing>AlienAssimilator</IncludeThing>
-					<IncludeThing>SteelTalonsCombatEngineer</IncludeThing>
-					<IncludeThing>ZOCOMEngineer</IncludeThing>
-					<IncludeThing>BlackHandSaboteur</IncludeThing>
-					<IncludeThing>MarkedOfKaneSaboteur</IncludeThing>
-					<IncludeThing>Traveler59Assimilator</IncludeThing>
-				</CanEnterFilter>
-			</EngineerContain>
 			<StancesBehavior
 				id="54CA416E"
-				StanceTemplate="Generic" />					
+				StanceTemplate="Generic" />				
 		</Behaviors>
 		<AI>
 			<AIUpdate
-				id="12FA48BA"
+				id="6F9507AA"
 				AutoAcquireEnemiesWhenIdle="YES"
 				StopChaseDistance="500"
 				HoldGroundCloseRangeDistance="0"
-				AILuaEventsList="GDIAABatteryFunctions"
 				MinCowerTime="0s"
 				MaxCowerTime="0s"
 				RampageTime="0s"
@@ -829,7 +718,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="3600"
+				MaxHealth="2000"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -852,77 +741,24 @@
 		</Body>
 		<ClientBehaviors>
 			<ModelConditionAudioLoopClientBehavior
-				id="4744DC08">
+				id="DFC3D831">
 				<ModelConditionSound
-					Sound="AudioEvent:GDI_Battery_EnemyDetectedBeepAndTurretStart"
-					RequiredFlags="ATTACKING"
-					ExcludedFlags="DYING" />
+					Sound="NOD_GenericTurret_Regenerate"
+					RequiredFlags="USER_1"
+					ExcludedFlags="" />
 			</ModelConditionAudioLoopClientBehavior>
 		</ClientBehaviors>
 		<Geometry
 			IsSmall="False">
 			<Shape
 				Type="CYLINDER"
-				ContactPointGeneration="NONE"
-				MajorRadius="15.134"
-				MinorRadius="15.134"
-				Height="23.5609"
+				ContactPointGeneration="INFANTRY"
+				MajorRadius="9"
+				MinorRadius="1"
+				Height="23"
 				FrontAngle="0d"
 				Active="True"
-				UsedForHealthBox="True">
-				<Offset
-					x="-0.159802"
-					y="-0.146642"
-					z="0" />
-			</Shape>
-			<ContactPoint>
-				<Pos
-					x="-11.1461"
-					y="-11.0199"
-					z="0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="10.0951"
-					y="-11.0199"
-					z="21.0019" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="10.0951"
-					y="10.2213"
-					z="0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-11.1461"
-					y="10.2213"
-					z="21.0019" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-11.1461"
-					y="-11.0199"
-					z="21.0019" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="10.0951"
-					y="-11.0199"
-					z="0" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="10.0951"
-					y="10.2213"
-					z="21.0019" />
-			</ContactPoint>
-			<ContactPoint>
-				<Pos
-					x="-11.1461"
-					y="10.2213"
-					z="0" />
-			</ContactPoint>
+				UsedForHealthBox="True" />
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry
@@ -932,12 +768,21 @@
 				EvaEvent="EnemyBuildingCaptured"
 				AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="AudioEvent:GDI_BatterySelect"
+				Sound="AudioEvent:NOD_LaserTurret"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry
 				Sound="AudioEvent:GDI_BuildingPlaced"
+				AudioType="soundUnderConstruction" />
+			<AudioEntry
+				Sound="AudioEvent:NOD_GenericTurret_MoveStart"
+				AudioType="soundTurretMoveLoop" />
+			<AudioEntry
+				Sound="AudioEvent:NOD_GenericTurret_Deploy"
+				AudioType="soundPrepositioned" />
+			<AudioEntry
+				Sound="AudioEvent:Nod_BuildingPlacedForTurrets"
 				AudioType="soundUnderConstruction" />
 			<AudioEntry
 				Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS"
@@ -982,7 +827,7 @@
 			IsRotatingWithObject="True"
 			LocalPlayerOnly="False" />
 		<VisionInfo
-			VisionRange="500"
+			VisionRange="450"
 			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"
@@ -991,6 +836,5 @@
 			VisionBonusPercentPerFoot="0%"
 			MaxVisionBonusPercent="50%"
 			MinVisionBonusPercent="-50%" />
-		<DisplayUpgrade>Upgrade_GDITungstenAAShells</DisplayUpgrade>
 	</GameObject>
 </AssetDeclaration>
