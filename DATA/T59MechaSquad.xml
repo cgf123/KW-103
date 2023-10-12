@@ -1084,11 +1084,13 @@
 				GoIdleInStartPreparation="True"
 				FaceTarget="True" />
 
+			<!--
 			<PowerUpdate
 				UpdatePeriod="1.5s"
 				ReloadTime="1.5s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />						
+			-->					
 				
 		</Behaviors>
 		<AI>

@@ -1030,11 +1030,13 @@
 				<TriggeredBy>Upgrade_MechapedeRazorWeapon</TriggeredBy>
 			</SubObjectsUpgrade>
 
+			<!--
 			<PowerUpdate
-				UpdatePeriod="1s"
-				ReloadTime="1s"
+				UpdatePeriod="1.5s"
+				ReloadTime="1.5s"
 				Duration="10s"
-				Type="BACKUP_GENERATOR" />					
+				Type="BACKUP_GENERATOR" />						
+			-->			
 			
 		</Behaviors>
 		<AI>
@@ -2057,11 +2059,13 @@
 				<SpawnTemplate>AmbStream_MechaCreate</SpawnTemplate>
 			</SpawnBehavior>		
 			
+			<!--
 			<PowerUpdate
-				UpdatePeriod="1s"
-				ReloadTime="1s"
+				UpdatePeriod="1.5s"
+				ReloadTime="1.5s"
 				Duration="10s"
-				Type="BACKUP_GENERATOR" />					
+				Type="BACKUP_GENERATOR" />						
+			-->			
 			
 		</Behaviors>
 		<AI>

@@ -1604,9 +1604,9 @@
 		id="SpecialPower_PowerSignatureScan"
 		Flags="IS_PLAYER_POWER WATER_OK SHARED_SYNC"
 		TargetType="NONE"
-		InitiateSound="NOD_PowerSignatureScan"
+		InitiateSound="AudioEvent:NOD_PowerSignatureScan"
 		ReloadTime="60s"
-		Money="-300" />	
+		Money="-200" />	
 	
 	<SpecialPowerTemplate
 		id="SpecialPowerPulseScan"
@@ -1618,12 +1618,12 @@
 <!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="VoiceDisruptionPod" -->
 	<SpecialPowerTemplate
 		id="SpecialPowerDisruptionPod_Dispatch"
-		ReloadTime="20s"
+		ReloadTime="10s"
 		TargetType="OBJECT_OR_LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x38185818"
 		WaypointModeTerminal="false"
 		Flags="FOGGED_SHROUDED_CELLS_OK"
-		Money="-200">
+		Money="-300">
 		<GameDependency>
 			<NeededUpgrade>Upgrade_VertigoDisruptionPod</NeededUpgrade>
 		</GameDependency>
@@ -1632,16 +1632,16 @@
 		id="SpecialPowerDisruptionPod_UnTargeted"
 		TargetType="LOCATION"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x38185818"
-		ReloadTime="20s"
-		Money="-200">
+		ReloadTime="10s"
+		Money="-300">
 	</SpecialPowerTemplate>
 	<SpecialPowerTemplate
 		id="SpecialPowerDisruptionPod_Targeted"
 		TargetType="OBJECT"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x38185818"
 		Flags="NO_FORBIDDEN_OBJECTS"
-		ReloadTime="20s"
-		Money="-200">
+		ReloadTime="10s"
+		Money="-300">
 		<ForbiddenObjectFilter
 			Rule="ANY"
 			Include="INFANTRY HORDE AIRCRAFT" />

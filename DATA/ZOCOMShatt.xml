@@ -62,7 +62,7 @@
 		BuildPlacementTypeFlag="INVALID"
 		BuildOnRequiredObjectKindOf=""
 		UnitCategory="VEHICLE"
-		WeaponCategory="GRENADE"
+		WeaponCategory="BLAST"
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
 		ReinvisibilityDelay="7s"

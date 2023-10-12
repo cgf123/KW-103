@@ -850,11 +850,13 @@
 				<RequiresUpgrade>Upgrade_CloakingFieldInvisibility</RequiresUpgrade>
 			</InvisibilityUpdate>			
 			
+			<!--
 			<PowerUpdate
 				UpdatePeriod="1.5s"
 				ReloadTime="1.5s"
 				Duration="10s"
-				Type="BACKUP_GENERATOR" />					
+				Type="BACKUP_GENERATOR" />			
+			-->
 			
 		</Behaviors>
 		<AI>

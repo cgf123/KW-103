@@ -482,11 +482,13 @@
 				<TriggeredBy>Upgrade_Reaper17Faction</TriggeredBy>
 			</StatusBitsUpgrade>
 			
+			<!--
 			<PowerUpdate
 				UpdatePeriod="1.0s"
 				ReloadTime="1.0s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />					
+			-->
 			
 		</Behaviors>
 		<AI>

@@ -1640,6 +1640,7 @@
 				AttributeModifier="AttributeModifier_BunkerTruckDeployed">
 				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>
 			</AttributeModifierUpgrade>	
+			<!-- This applies ONLY for manual deploy -->
 			<MaxHealthUpgrade
 				id="15346648"
 				RequiresAllTriggers="False"
@@ -1647,7 +1648,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				AddMaxHealth="1500"
+				AddMaxHealth="2000"
 				ChangeType="ADD_CURRENT_HEALTH_TOO">
 				<TriggeredBy>Upgrade_DeployNODBunkerTruck</TriggeredBy>
 			</MaxHealthUpgrade>
@@ -1686,6 +1687,7 @@
 			</AIUpdate>
 		</AI>
 		<Body>
+			<!-- SecondChanceHeal applies ONLY to auto deploy -->
 			<ActiveBody
 				id="B313F576"
 				MaxHealth="2240"
@@ -1704,7 +1706,7 @@
 				CheerRadius="200"
 				BurningDeathFX=""
 				SecondChanceUpgrade="Upgrade_DeployNODBunkerTruck"
-				SecondChanceHeal="3000"
+				SecondChanceHeal="2000"
 				UseDefaultDamageSettings="True"
 				RemoveUpgradesOnDeath="False"
 				BurningDeathBehavior="False" />

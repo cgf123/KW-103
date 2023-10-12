@@ -482,11 +482,13 @@
 				<TriggeredBy>Upgrade_AlienFaction</TriggeredBy>
 			</StatusBitsUpgrade>
 
+			<!--
 			<PowerUpdate
 				UpdatePeriod="1.0s"
 				ReloadTime="1.0s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />					
+			-->
 			
 		</Behaviors>
 		<AI>

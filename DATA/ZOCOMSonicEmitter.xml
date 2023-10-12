@@ -62,7 +62,7 @@
 		BuildPlacementTypeFlag="OTHER_STRUCTURE"
 		BuildOnRequiredObjectKindOf=""
 		UnitCategory="STRUCTURE"
-		WeaponCategory="GRENADE"
+		WeaponCategory="BLAST"
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"

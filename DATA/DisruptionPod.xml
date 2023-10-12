@@ -828,4 +828,55 @@
 	</GameObject>	
 	
 	
+	<WeaponTemplate
+		id="NODVertigoDisruptionPodWeapon"
+		Name="NODVertigoDisruptionPodWeapon"
+		AttackRange="300.0"
+		WeaponSpeed="200"
+		MinWeaponSpeed="300"
+		MaxWeaponSpeed="310"
+		FireFX="FX_NODVertigoDisruptionPodFire"
+		AcceptableAimDelta="360d"
+		ClipSize="0"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true"
+		AntiMask="ANTI_GROUND"
+ 		>
+		<FiringDuration
+				MinSeconds="0.01s"
+				MaxSeconds="0.01s" />		
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="NODVertigoDisruptionPodProjectile"
+				WarheadTemplate="NODVertigoDisruptionPodWarhead" />
+		</Nuggets>
+	</WeaponTemplate>
+	
+	<WeaponTemplate
+		id="NODVertigoDisruptionStickyPodWeapon"
+		Name="NODVertigoDisruptionStickyPodWeapon"
+		AttackRange="300.0"
+		WeaponSpeed="200"
+		MinWeaponSpeed="300"
+		MaxWeaponSpeed="310"
+		FireFX="FX_NOD_Vertigo_StickyDisruptionPodFire"
+		AcceptableAimDelta="360d"
+		ClipSize="0"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true"
+		AntiMask="ANTI_GROUND"
+ 		>
+		<FiringDuration
+				MinSeconds="0.01s"
+				MaxSeconds="0.01s" />		
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="NODVertigoDisruptionPodProjectile"
+				WarheadTemplate="NODVertigoDisruptionStickyPodWarhead"
+			>
+			</ProjectileNugget>
+		</Nuggets>
+	</WeaponTemplate>	
+	
+	
 </AssetDeclaration>

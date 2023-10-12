@@ -12684,8 +12684,8 @@ DAMAGE TYPES
 			MinSeconds="3.0s"
 			MaxSeconds="3.0s" />
 		<ClipReloadTime
-			MinSeconds="4.5s"
-			MaxSeconds="4.5s" />
+			MinSeconds="5s"
+			MaxSeconds="5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="NODVertigoBombProjectile"
@@ -13034,7 +13034,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT CAN_HEAL_ALLIES">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 
@@ -13089,7 +13089,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT CAN_HEAL_ALLIES">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			
@@ -13166,7 +13166,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT CAN_HEAL_ALLIES">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			
@@ -13203,7 +13203,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT CAN_HEAL_ALLIES">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 		
@@ -13271,7 +13271,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT CAN_HEAL_ALLIES">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			
@@ -13346,7 +13346,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT CAN_HEAL_ALLIES">										
 				</SpecialObjectFilter>				
 			</ParalyzeNugget>
 			
@@ -13401,7 +13401,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT CAN_HEAL_ALLIES">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			<WeaponOCLNugget
@@ -13466,7 +13466,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="ALL"
 					RejectStatusBitFlags="OUT_OF_PHASE IN_STASIS"
-					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT">										
+					Exclude="UNATTACKABLE INFANTRY TIBERIUM TIBERIUM_FIELD CIVILIAN_BUILDING AIRCRAFT CAN_HEAL_ALLIES">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
 			
@@ -13808,7 +13808,7 @@ DAMAGE TYPES
 		<!-- ;;;;; CanFireWhileMoving is TEMP !!!!!!!!!!!!!!!!! -->
 		<FiringDuration
 			MinSeconds="0.2s"
-			MaxSeconds="0.2s" />
+			MaxSeconds="0.3s" />
 		<ClipReloadTime
 			MinSeconds="0.25s"
 			MaxSeconds="0.25s" />
@@ -13866,7 +13866,7 @@ DAMAGE TYPES
 		NoVictimNeeded="true">
 		<FiringDuration
 			MinSeconds="0.2s"
-			MaxSeconds="0.2s" />
+			MaxSeconds="0.3s" />
 		<ClipReloadTime
 			MinSeconds="0.25s"
 			MaxSeconds="0.25s" />
@@ -15462,7 +15462,7 @@ DAMAGE TYPES
 		/>
 		<Nuggets>
 			<DamageNugget
-				Damage="5.0"
+				Damage="2.5"
 				Radius="20.0"
 				UnderAttackOverrideEvaEvent="DamagedByTiberium"
 				DamageType="TIBERIUM"
@@ -15545,7 +15545,7 @@ DAMAGE TYPES
 		/>
 		<Nuggets>
 			<DamageNugget
-				Damage="10.0"
+				Damage="5.0"
 				Radius="20.0"
 				UnderAttackOverrideEvaEvent="DamagedByTiberium"
 				DamageType="TIBERIUM"
@@ -15644,6 +15644,11 @@ DAMAGE TYPES
 					<ExcludeThing>TiberiumCrystal</ExcludeThing>
 					<ExcludeThing>TiberiumCrystalBlue</ExcludeThing>
 				</SpecialObjectFilter>
+				<DamageScalarDetails
+					Scalar= "75%">
+					<Filter
+						Include="INFANTRY" />
+				</DamageScalarDetails>				
 				<DamageScalarDetails
 					Scalar= "50%">
 					<Filter
