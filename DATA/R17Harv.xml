@@ -1022,11 +1022,13 @@
 			<ShieldBodyUpdate
 				id="477C6A8E" />
 				
+			<!--
 			<PowerUpdate
 				UpdatePeriod="1.5s"
 				ReloadTime="1.5s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />						
+			-->
 		</Behaviors>
 		<AI>
 			<SupplyTruckAIUpdate

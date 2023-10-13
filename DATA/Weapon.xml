@@ -920,7 +920,7 @@ DAMAGE TYPES
 		id="GDIGrenadeSoldierGrenade"
 		Name="GDIGrenadeSoldierGrenade"
 		AttackRange="300"
-		WeaponSpeed="250"
+		WeaponSpeed="270"
 		FireSound="AudioEvent:GDI_Grenadier_GrenadeThrow"
 		AcceptableAimDelta="20d"
 		PreAttackType="PER_SHOT"
@@ -959,7 +959,7 @@ DAMAGE TYPES
 		id="GDIGrenadeSoldierGrenade_Garrison"
 		Name="GDIGrenadeSoldierGrenade_Garrison"
 		AttackRange="300"
-		WeaponSpeed="250"
+		WeaponSpeed="270"
 		FireSound="AudioEvent:GDI_Grenadier_GrenadeThrow"
 		AcceptableAimDelta="360d"
 		PreAttackType="PER_SHOT"
@@ -1011,20 +1011,28 @@ DAMAGE TYPES
 			</DamageContainedNugget>
 			<DamageNugget
 				Damage="60.0"
-				Radius="45.0"
-				DamageTaperOff="-1"				
+				Radius="48.0"			
 				DamageType="GRENADE"
 				DamageFXType="GDI_GRENADE"
-				DeathType="EXPLODED" >
-				<DamageScalarDetails Scalar= "100%" >
-					<Filter
-						Rule="NONE"
-						Include="VEHICLE">
-					</Filter>
-				</DamageScalarDetails>						
+				DeathType="EXPLODED" >	
+				<SpecialObjectFilter 
+					Rule="NONE"
+					Include="INFANTRY">
+				</SpecialObjectFilter>					
 			</DamageNugget>
+			<DamageNugget
+				Damage="60.0"
+				Radius="36.0"			
+				DamageType="GRENADE"
+				DamageFXType="GDI_GRENADE"
+				DeathType="EXPLODED" >	
+				<SpecialObjectFilter 
+					Rule="ALL"
+					Exclude="INFANTRY">
+				</SpecialObjectFilter>					
+			</DamageNugget>			
 			<SuppressionNugget
-				Radius="45.0"
+				Radius="48.0"
 				Suppression="20"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -1060,10 +1068,6 @@ DAMAGE TYPES
 				ProjectileTemplate="MARVGrenadeSoldierWeaponProjectile"
 				WarheadTemplate="MARVGrenadeSoldierWeaponWarhead">
 			</ProjectileNugget>
-			<SuppressionNugget
-				Radius="35.0"
-				Suppression="20"
-				DurationSeconds="7.5s" />
 		</Nuggets>
 		<ScatterRadiusVsType
 			Radius="25.0">
@@ -1093,11 +1097,15 @@ DAMAGE TYPES
 			</DamageContainedNugget>
 			<DamageNugget
 				Damage="120.0"
-				Radius="35.0"
+				Radius="36.0"
 				DamageType="GRENADE"
 				DamageFXType="GDI_GRENADE"
 				DeathType="EXPLODED" >				
-			</DamageNugget>				
+			</DamageNugget>			
+			<SuppressionNugget
+				Radius="36.0"
+				Suppression="50"
+				DurationSeconds="5.0s" />			
 		</Nuggets>
 		<HitStoredObjectFilter
 			Rule="ANY"
@@ -3281,7 +3289,7 @@ DAMAGE TYPES
 					
 			<DamageNugget
 				Damage="33.0"
-				Radius="36.0"
+				Radius="40.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3322,7 +3330,7 @@ DAMAGE TYPES
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
 			<SuppressionNugget
-				Radius="36.0"
+				Radius="40.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3351,7 +3359,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 			<DamageNugget
 				Damage="33"
-				Radius="36.0"
+				Radius="40.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3377,7 +3385,7 @@ DAMAGE TYPES
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
 			<SuppressionNugget
-				Radius="36.0"
+				Radius="40.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3407,7 +3415,7 @@ DAMAGE TYPES
 
 			<DamageNugget
 				Damage="44"
-				Radius="36.0"
+				Radius="40.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3456,7 +3464,7 @@ DAMAGE TYPES
 					Include="INFANTRY" />
 			</DamageContainedNugget>
 			<SuppressionNugget
-				Radius="36.0"
+				Radius="40.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3485,7 +3493,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 			<DamageNugget
 				Damage="44"
-				Radius="36.0"
+				Radius="40.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3519,7 +3527,7 @@ DAMAGE TYPES
 					Include="INFANTRY" />
 			</DamageContainedNugget>
 			<SuppressionNugget
-				Radius="36.0"
+				Radius="40.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3550,7 +3558,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 			<DamageNugget
 				Damage="33"
-				Radius="18.0"
+				Radius="16.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3568,7 +3576,7 @@ DAMAGE TYPES
 			</DamageNugget> 					
 			<DamageNugget
 				Damage="33"
-				Radius="10.0"
+				Radius="8.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3589,7 +3597,7 @@ DAMAGE TYPES
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
 			<SuppressionNugget
-				Radius="18.0"
+				Radius="16.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3618,7 +3626,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 			<DamageNugget
 				Damage="33"
-				Radius="18.0"
+				Radius="16.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3630,7 +3638,7 @@ DAMAGE TYPES
 			</DamageNugget> 					
 			<DamageNugget
 				Damage="33"
-				Radius="10.0"
+				Radius="8.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3644,7 +3652,7 @@ DAMAGE TYPES
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
 			<SuppressionNugget
-				Radius="18.0"
+				Radius="16.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3673,7 +3681,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 			<DamageNugget
 				Damage="44"
-				Radius="18.0"
+				Radius="16.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3691,7 +3699,7 @@ DAMAGE TYPES
 			</DamageNugget> 					
 			<DamageNugget
 				Damage="44"
-				Radius="10.0"
+				Radius="8.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3720,7 +3728,7 @@ DAMAGE TYPES
 					Include="INFANTRY" />
 			</DamageContainedNugget>			
 			<SuppressionNugget
-				Radius="18.0"
+				Radius="16.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -3749,7 +3757,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 			<DamageNugget
 				Damage="44"
-				Radius="18.0"
+				Radius="16.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3761,7 +3769,7 @@ DAMAGE TYPES
 			</DamageNugget> 					
 			<DamageNugget
 				Damage="44"
-				Radius="10.0"
+				Radius="8.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3783,7 +3791,7 @@ DAMAGE TYPES
 					Include="INFANTRY" />
 			</DamageContainedNugget>			
 			<SuppressionNugget
-				Radius="18.0"
+				Radius="16.0"
 				Suppression="25"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -5400,7 +5408,7 @@ DAMAGE TYPES
 			<!-- Damage to all enemy infantry, with spawning if dead 40 default-->
 			<DamageNugget
 				Damage="18.0"
-				Radius="15.0"
+				Radius="20.0"
 				DamageFXType="ALIEN_TIOXIN"
 				DamageType="GRENADE">
 				<SpecialObjectFilter
@@ -5420,7 +5428,7 @@ DAMAGE TYPES
 			<!-- regular damage to corrupted infantry -->
 			<DamageNugget
 				Damage="18.0"
-				Radius="15.0"
+				Radius="20.0"
 				DamageFXType="ALIEN_TIOXIN"
 				DamageType="GRENADE">
 				<SpecialObjectFilter Rule="NONE">
@@ -5431,7 +5439,7 @@ DAMAGE TYPES
 			<!-- Damage to all enemy non-infantry -->
 			<DamageNugget
 				Damage="15.0"
-				Radius="10.0"
+				Radius="20.0"
 				DamageFXType="ALIEN_TIOXIN"
 				DamageType="GRENADE">
 				<SpecialObjectFilter
@@ -5457,7 +5465,7 @@ DAMAGE TYPES
 			<!-- IF YOU ADD A UNIT HERE, ADD IT TO THE CORRUPTER WEAPON AS WELL -->
 			<DamageNugget
 				Damage="6.0"
-				Radius="10.0"
+				Radius="12.0"
 				DamageType="HEALING">
 				<SpecialObjectFilter Rule="NONE" Relationship="ALLIES">
 					<IncludeThing>AlienAnnihilatorTripod</IncludeThing>
@@ -7716,7 +7724,7 @@ DAMAGE TYPES
 			<!-- IF YOU ADD A UNIT HERE, ADD IT TO THE MECHAPEDE CORRUPTER WEAPON TOO -->
 			<DamageNugget
 				Damage="25.0"
-				Radius="25.0"
+				Radius="24.0"
 				DamageType="HEALING">
 				<SpecialObjectFilter Rule="NONE" Relationship="ALLIES">
 					<IncludeThing>AlienAnnihilatorTripod</IncludeThing>
@@ -10763,7 +10771,7 @@ DAMAGE TYPES
 		FiringLoopSoundContinuesDuringReload="true"
 		FireFX="FX_GDIBatteryFire"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
-		ClipSize="24"
+		ClipSize="12"
 		ReAcquireDetailType="PER_CLIP"		
 		AutoReloadsClip="AUTO"
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -10776,7 +10784,7 @@ DAMAGE TYPES
 			MaxSeconds="1.0s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="50.0"
+				Damage="90.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -10805,7 +10813,7 @@ DAMAGE TYPES
 		FiringLoopSoundContinuesDuringReload="true"
 		FireFX="FX_GDIBatteryFireTungsten"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
-		ClipSize="24"
+		ClipSize="12"
 		ReAcquireDetailType="PER_CLIP"		
 		AutoReloadsClip="AUTO"
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -10818,7 +10826,7 @@ DAMAGE TYPES
 			MaxSeconds="1.0s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="67.0"
+				Damage="120.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -10849,7 +10857,7 @@ DAMAGE TYPES
 		FireFX="FX_GDIBatteryFire"
 		FireVeteranFX="FX_GDIBatteryFireHeroic"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
-		ClipSize="20"
+		ClipSize="10"
 		ReAcquireDetailType="PER_CLIP"		
 		AutoReloadsClip="AUTO"
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -10862,7 +10870,7 @@ DAMAGE TYPES
 			MaxSeconds="1.1s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="60.0"
+				Damage="108.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -10891,7 +10899,7 @@ DAMAGE TYPES
 		FiringLoopSoundContinuesDuringReload="true"
 		FireFX="FX_GDIBatteryFireTungsten"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
-		ClipSize="20"
+		ClipSize="10"
 		ReAcquireDetailType="PER_CLIP"		
 		AutoReloadsClip="AUTO"
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -10904,7 +10912,7 @@ DAMAGE TYPES
 			MaxSeconds="1.1s" />
 		<Nuggets>
 			<DamageNugget
-				Damage="80.0"
+				Damage="144.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -12668,7 +12676,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODVertigoBomb"
 		Name="NODVertigoBomb"
-		AttackRange="150.0"
+		AttackRange="140.0"
 		WeaponSpeed="200"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="20d"

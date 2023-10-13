@@ -627,7 +627,7 @@
 		TypeDescription="UpgradeType:GDITungstenAAShells"
 		Description="UpgradeDesc:GDITungstenAAShells"
 		Type="PLAYER"
-		BuildTime="45.0s"
+		BuildTime="30.0s"
 		BuildCost="1000"
 		ResearchSound="AudioEvent:GDI_Slingshot_TungstenShellUpgrade"
 		IconImage="Button_Upgrade_TungstenShells">

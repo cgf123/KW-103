@@ -641,7 +641,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerCallSupportBloodhound"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-		ReloadTime="150s"
+		ReloadTime="135s"
 		ForbiddenObjectRange="140"
 		RadiusCursorRadius="140"
 		TargetType="LOCATION"
@@ -659,7 +659,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerCallSupportZOCOMBloodhound"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-		ReloadTime="150s"
+		ReloadTime="135s"
 		ForbiddenObjectRange="140"
 		RadiusCursorRadius="140"
 		TargetType="LOCATION"
@@ -677,7 +677,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerCallSupportSTBloodhound"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
-		ReloadTime="150s"
+		ReloadTime="135s"
 		ForbiddenObjectRange="140"
 		RadiusCursorRadius="140"
 		TargetType="LOCATION"

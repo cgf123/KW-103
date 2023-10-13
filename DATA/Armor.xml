@@ -1559,10 +1559,10 @@ DAMAGE TYPES
 			Percent="60" />			
 		<Armor
 			Damage="GRENADE"
-			Percent="35" />
+			Percent="25" />
 		<Armor
 			Damage="FLAME"
-			Percent="35" />				
+			Percent="25" />				
 		<Armor
 			Damage="GUN"
 			Percent="25" />
@@ -1587,10 +1587,10 @@ DAMAGE TYPES
 			Percent="60" />			
 		<Armor
 			Damage="GRENADE"
-			Percent="35" />
+			Percent="30" />
 		<Armor
 			Damage="FLAME"
-			Percent="35" />				
+			Percent="30" />				
 		<Armor
 			Damage="GUN"
 			Percent="30" />

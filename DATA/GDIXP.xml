@@ -452,7 +452,7 @@
 	<ExperienceLevelTemplate
 		id="GDIRigExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="2000"
+		ExperienceAward="1900"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -473,7 +473,7 @@
 	<ExperienceLevelTemplate
 		id="GDIBattleBaseExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="2000"
+		ExperienceAward="1900"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -494,7 +494,7 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMRigExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="2000"
+		ExperienceAward="1900"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -515,7 +515,7 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMBattleBaseExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="2000"
+		ExperienceAward="1900"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -536,7 +536,7 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsRigExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="2000"
+		ExperienceAward="1900"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -557,7 +557,7 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsBattleBaseExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="2000"
+		ExperienceAward="1900"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
