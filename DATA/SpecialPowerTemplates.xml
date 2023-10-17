@@ -220,11 +220,11 @@
 		id="SpecialPowerCallSupportSTHunterKillerTeam"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
 		ForbiddenObjectRange="130"
-		ReloadTime="160s"
+		ReloadTime="150s"
 		RadiusCursorRadius="130"
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		Money="-2200"
+		Money="-2000"
 		InitiateAtLocationSound="AudioEvent:GDI_Ox_VoiceReinforcements">
 		<ForbiddenObjectFilter
 			Rule="ANY"
@@ -235,16 +235,31 @@
 		id="SpecialPowerCallSupportHunterKillerTeam"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
 		ForbiddenObjectRange="130"
-		ReloadTime="200s"
+		ReloadTime="180s"
 		RadiusCursorRadius="130"
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
-		Money="-3300"
+		Money="-3000"
 		InitiateAtLocationSound="AudioEvent:GDI_Ox_VoiceReinforcements">
 		<ForbiddenObjectFilter
 			Rule="ANY"
 			Include="STRUCTURE" />
 	</SpecialPowerTemplate>	
+
+	<SpecialPowerTemplate
+	 id="SpecialPowerCallSupportZOCOMHunterKillerTeam"
+	 Flags="NOT_CLIFF_CELL IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS SHARED_SYNC"
+	 ForbiddenObjectRange="130"
+	 ReloadTime="180s"
+	 RadiusCursorRadius="130"
+	 TargetType="LOCATION"
+	 EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+	 Money="-3000"
+	 InitiateAtLocationSound="AudioEvent:GDI_Ox_VoiceReinforcements">
+		<ForbiddenObjectFilter
+			Rule="ANY"
+			Include="STRUCTURE" />
+	</SpecialPowerTemplate>
 
 	<!-- VoiceAttackEMPGrenades -->
 	<SpecialPowerTemplate

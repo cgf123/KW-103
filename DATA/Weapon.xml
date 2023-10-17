@@ -1144,8 +1144,8 @@ DAMAGE TYPES
 			MinSeconds="0.2s"
 			MaxSeconds="0.2s" />
 		<FiringDuration
-			MinSeconds="0.8s"
-			MaxSeconds="0.9s" />
+			MinSeconds="0.9s"
+			MaxSeconds="1.0s" />
 		<ClipReloadTime
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
@@ -1209,8 +1209,8 @@ DAMAGE TYPES
 			MinSeconds="0.2s"
 			MaxSeconds="0.3s" />
 		<ClipReloadTime
-			MinSeconds="0.4s"
-			MaxSeconds="0.4s" />
+			MinSeconds="0.5s"
+			MaxSeconds="0.6s" />
 		<Nuggets>
 			<DamageNugget
 				Damage="400.0"
@@ -2059,12 +2059,12 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="GDI_MISSILE"
 				DeathType="EXPLODED" >				
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="NONE" 
 						Include="INFANTRY" />
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "80%">
 					<Filter 
 						Rule="NONE" 
 						Include="AIRCRAFT" />
@@ -6045,6 +6045,13 @@ DAMAGE TYPES
 						Rule="NONE"
 						Include="INFANTRY" />
 				</DamageScalarDetails>			
+				
+				<!-- Nerf vs Scrin stuff -->
+				<DamageScalarDetails Scalar= "90%">
+					<Filter
+						Rule="NONE"
+						Include="TIBERIUM_BASED" />		
+				</DamageScalarDetails>
 			</DamageNugget>
 			<SpendStolenTiberiumNugget
 				AmountToSpend="10"
@@ -6097,7 +6104,14 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" />
-				</DamageScalarDetails>					
+				</DamageScalarDetails>		
+
+				<!-- Nerf vs Scrin stuff -->
+				<DamageScalarDetails Scalar= "90%">
+					<Filter
+						Rule="NONE"
+						Include="TIBERIUM_BASED" />		
+				</DamageScalarDetails>
 			</DamageNugget>
 			<SpendStolenTiberiumNugget
 				AmountToSpend="10"
@@ -6150,7 +6164,14 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" />
-				</DamageScalarDetails>				
+				</DamageScalarDetails>	
+
+				<!-- Nerf vs Scrin stuff -->
+				<DamageScalarDetails Scalar= "90%">
+					<Filter
+						Rule="NONE"
+						Include="TIBERIUM_BASED" />		
+				</DamageScalarDetails>
 			</DamageNugget>
 			<SpendStolenTiberiumNugget
 				AmountToSpend="10"
@@ -6257,7 +6278,14 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" />
-				</DamageScalarDetails>						
+				</DamageScalarDetails>	
+
+				<!-- Nerf vs Scrin stuff -->
+				<DamageScalarDetails Scalar= "90%">
+					<Filter
+						Rule="NONE"
+						Include="TIBERIUM_BASED" />
+				</DamageScalarDetails>					
 			</DamageNugget>
 			<SpendStolenTiberiumNugget
 				AmountToSpend="5"
@@ -6310,7 +6338,14 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" />
-				</DamageScalarDetails>				
+				</DamageScalarDetails>			
+
+				<!-- Nerf vs Scrin stuff -->
+				<DamageScalarDetails Scalar= "90%">
+					<Filter
+						Rule="NONE"
+						Include="TIBERIUM_BASED" />		
+				</DamageScalarDetails>
 			</DamageNugget>
 			<SpendStolenTiberiumNugget
 				AmountToSpend="5"
@@ -6363,7 +6398,14 @@ DAMAGE TYPES
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" />
-				</DamageScalarDetails>				
+				</DamageScalarDetails>	
+
+				<!-- Nerf vs Scrin stuff -->
+				<DamageScalarDetails Scalar= "90%">
+					<Filter
+						Rule="NONE"
+						Include="TIBERIUM_BASED" />		
+				</DamageScalarDetails>
 			</DamageNugget>
 			<SpendStolenTiberiumNugget
 				AmountToSpend="5"
@@ -7831,7 +7873,7 @@ DAMAGE TYPES
 		/>
 		<Nuggets>
 			<DamageNugget
-				Damage="112.5"
+				Damage="100.0"
 				Radius="0.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_CANNON"
@@ -7853,7 +7895,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "80%">
+				<DamageScalarDetails Scalar= "75%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -7918,7 +7960,7 @@ DAMAGE TYPES
 		<Nuggets>
 
 			<DamageNugget
-				Damage="112.5"
+				Damage="100.0"
 				Radius="5.0"
 				DamageType="ROCKET"
 				DeathType="NORMAL"
@@ -7940,7 +7982,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "80%">
+				<DamageScalarDetails Scalar= "75%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -7999,7 +8041,7 @@ DAMAGE TYPES
 		<Nuggets>
 
 			<DamageNugget
-				Damage="135.0"
+				Damage="120.0"
 				Radius="5.0"
 				DamageType="ROCKET"
 				DeathType="NORMAL"
@@ -8021,7 +8063,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "80%">
+				<DamageScalarDetails Scalar= "75%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -8578,7 +8620,7 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DeathType="BURNED"
 				DamageFXType="ALIEN_ION">
-				<DamageScalarDetails Scalar= "20%">
+				<DamageScalarDetails Scalar= "37.5%">
 					<Filter Rule="NONE" Include="MADE_OF_WOOD">
 						<IncludeThing>AlienStormrider</IncludeThing>
 						<IncludeThing>AlienDevastatorWarship</IncludeThing>
@@ -12676,7 +12718,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODVertigoBomb"
 		Name="NODVertigoBomb"
-		AttackRange="140.0"
+		AttackRange="135.0"
 		WeaponSpeed="200"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="20d"
