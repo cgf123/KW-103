@@ -843,7 +843,7 @@
 	
 	<SpecialPowerTemplate
 		id="SpecialPower_AlienSeedTiberium"
-		ReloadTime="100s"
+		ReloadTime="90s"
 		TargetType="LOCATION"
 		InitiateAtLocationSound="Multisound:ALI_IchorSeed_BeamMS"
 		Flags="LIMIT_DISTANCE IS_PLAYER_POWER SHARED_SYNC NOT_ON_BRIDGE NOT_BENEATH_BRIDGE NOT_CLIFF_CELL NO_FORBIDDEN_OBJECTS"

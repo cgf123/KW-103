@@ -774,7 +774,13 @@
 						Template="AlienMechapedeProtonCannon"
 						Upgrade=""
 						ObjectStatus="WEAPON_UPGRADED_03"
-						IsPlayerUpgradePermanent="False" />							
+						IsPlayerUpgradePermanent="False" />		
+					<Weapon
+						Ordering="SECONDARY_WEAPON"
+						Template="AlienMechapedeProtonCannonGround"
+						Upgrade=""
+						ObjectStatus="WEAPON_UPGRADED_03"
+						IsPlayerUpgradePermanent="False" />								
 						
 					<Weapon
 						Ordering="PRIMARY_WEAPON"

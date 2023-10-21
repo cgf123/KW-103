@@ -492,6 +492,20 @@
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="CorrputerTibSuckR"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="CorrupterTibSuck02R"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />	
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -949,6 +963,20 @@
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="CorrputerTibSuckR"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="CorrupterTibSuck02R"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />	
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -1157,6 +1185,20 @@
 						FollowBone="True"
 						OnlyIfOnWater="False"
 						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="CorrputerTibSuckR"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="CorrupterTibSuck02R"
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />						
 				</AnimationState>
 			</ScriptedModelDraw>
 			<LaserDraw
@@ -2440,7 +2482,7 @@
 				id="CDD761D4"
 				GrabPassengerHealGain="0%"
 				SpecialPowerTemplate="SpecialPower_ConversionBeam"
-				StartAbilityRange="200"
+				StartAbilityRange="225"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
 				PersistentPrepTime="10000s"
@@ -2480,7 +2522,7 @@
 				DisabledTypesToContinueSoundsFor="HELD"
 				StartRechargeOnExit="True"
 				GoIdleInStartPreparation="True"
-				FaceTarget="True"
+				FaceTarget="False"
 				TiberiumStolenPerUpdate="10"
 				DelayBetweenThefts="0.3s"
 				TiberiumCapacity="100"
@@ -2596,6 +2638,7 @@
 				<TriggeredBy>Upgrade_NoAttack</TriggeredBy>
 			</AttributeModifierUpgrade>			
 			
+			<!--
 			<StatusBitsUpgrade
 				id="A7D958E9"
 				RequiresAllTriggers="False"
@@ -2607,7 +2650,8 @@
 				StatusToClear=""
 				ApplyToContained="False">
 				<TriggeredBy>Upgrade_Reaper17ReactorForcefieldGenerator</TriggeredBy>
-			</StatusBitsUpgrade>			
+			</StatusBitsUpgrade>	
+			-->
 		</Behaviors>
 		<AI>
 			<AIUpdate
