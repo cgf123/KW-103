@@ -1344,8 +1344,8 @@ DAMAGE TYPES
 				DeathType="EXPLODED" >
 				<DamageScalarDetails Scalar= "90%" >
 					<Filter 
-						  Rule="NONE"
-						  Include="HARVESTER">	
+						  Rule="ANY"
+						  Include="HARVESTER MADE_OF_DIRT">	
 					</Filter>
 				</DamageScalarDetails>  					
 				<DamageScalarDetails Scalar= "120%" >
@@ -1433,8 +1433,8 @@ DAMAGE TYPES
 				</DamageScalarDetails>	
 				<DamageScalarDetails Scalar= "90%" >
 					<Filter 
-						  Rule="NONE"
-						  Include="HARVESTER">	
+						  Rule="ANY"
+						  Include="HARVESTER MADE_OF_DIRT">	
 					</Filter>
 				</DamageScalarDetails>  					
 				<DamageScalarDetails Scalar= "120%" >
@@ -1522,10 +1522,10 @@ DAMAGE TYPES
 				</DamageScalarDetails>	
 				<DamageScalarDetails Scalar= "90%" >
 					<Filter 
-						  Rule="NONE"
-						  Include="HARVESTER">	
+						  Rule="ANY"
+						  Include="HARVESTER MADE_OF_DIRT">	
 					</Filter>
-				</DamageScalarDetails>  					
+				</DamageScalarDetails>   					
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
 						  Rule="NONE"
