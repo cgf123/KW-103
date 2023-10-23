@@ -155,6 +155,184 @@
 	</FXParticleSystemTemplate>
 -->		
 
+	<!-- Shadow Beacon -->
+	<FXParticleSystemTemplate EmitterSound="GDI_OrcaAirstrike_TargetBeep" IsGroundAligned="true" ParticleTexture="FXLenzFlare02" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" id="Shocker">
+		<Lifetime High="3" Low="3"/>
+		<Size High="30" Low="30"/>
+		<BurstDelay High="30" Low="30"/>
+		<BurstCount High="2" Low="2"/>
+		<InitialDelay High="90" Low="90"/>		
+		<Colors UseHouseColor="true">
+			<Color Frame="1" RelativeAge="0">
+				<Color b="0.713726" g="0.713726" r="0.713726"/>
+			</Color>
+			<Color Frame="2" RelativeAge="100">
+				<Color b="0" g="0" r="0"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default>
+				<VelocityDamping High="1" Low="1"/>
+			</Default>
+		</Physics>
+		<Draw>
+			<Default/>
+		</Draw>
+		<Volume>
+			<Cylinder>
+				<Offset x="0" y="0" z="4"/>
+			</Cylinder>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="0" Low="0"/>
+					<y High="0" Low="0"/>
+					<z High="0" Low="0"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event/>
+		<Update>
+			<Default>
+				<SizeRateDamping High="1" Low="1"/>
+				<AngularDampingXY High="1" Low="1"/>
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>
+	<FXParticleSystemTemplate IsGroundAligned="true" ParticleTexture="FXLenzFlare02" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" id="Shocker2">
+		<Lifetime High="3" Low="3"/>
+		<Size High="30" Low="30"/>
+		<BurstDelay High="30" Low="30"/>
+		<BurstCount High="2" Low="2"/>
+		<InitialDelay High="98" Low="98"/>
+		<Colors UseHouseColor="true">
+			<Color Frame="1" RelativeAge="0">
+				<Color b="0.74902" g="0.74902" r="0.74902"/>
+			</Color>
+			<Color Frame="2" RelativeAge="100">
+				<Color b="0" g="0" r="0"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default>
+				<VelocityDamping High="1" Low="1"/>
+			</Default>
+		</Physics>
+		<Draw>
+			<Default/>
+		</Draw>
+		<Volume>
+			<Cylinder>
+				<Offset x="0" y="0" z="4"/>
+			</Cylinder>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="0" Low="0"/>
+					<y High="0" Low="0"/>
+					<z High="0" Low="0"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event/>
+		<Update>
+			<Default>
+				<SizeRateDamping High="1" Low="1"/>
+				<AngularDampingXY High="1" Low="1"/>
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>
+	<FXParticleSystemTemplate ParticleTexture="FXLenzFlare02" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" Type="GPU_PARTICLE" id="Shocker3">
+		<Lifetime High="3" Low="3"/>
+		<Size High="40" Low="40"/>
+		<BurstDelay High="30" Low="30"/>
+		<BurstCount High="2" Low="2"/>
+		<InitialDelay High="90" Low="90"/>		
+		<Colors UseHouseColor="true">
+			<Color Frame="1" RelativeAge="0">
+				<Color b="0.713726" g="0.713726" r="0.713726"/>
+			</Color>
+			<Color Frame="2" RelativeAge="100">
+				<Color b="0" g="0" r="0"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default>
+				<VelocityDamping High="1" Low="1"/>
+			</Default>
+		</Physics>
+		<Draw>
+			<Gpu SpeedMultiplier="1"/>
+		</Draw>
+		<Volume>
+			<Cylinder>
+				<Offset x="0" y="0" z="4"/>
+			</Cylinder>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="0" Low="0"/>
+					<y High="0" Low="0"/>
+					<z High="0" Low="0"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event/>
+		<Update>
+			<Default>
+				<SizeRateDamping High="1" Low="1"/>
+				<AngularDampingXY High="1" Low="1"/>
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>
+	<FXParticleSystemTemplate IsGroundAligned="true" ParticleTexture="FXLenzFlare02" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" Type="GPU_PARTICLE" id="Shocker4">
+		<Lifetime High="3" Low="3"/>
+		<Size High="40" Low="40"/>
+		<BurstDelay High="30" Low="30"/>
+		<BurstCount High="2" Low="2"/>
+		<InitialDelay High="98" Low="98"/>
+		<Colors UseHouseColor="true">
+			<Color Frame="1" RelativeAge="0">
+				<Color b="0.74902" g="0.74902" r="0.74902"/>
+			</Color>
+			<Color Frame="2" RelativeAge="100">
+				<Color b="0" g="0" r="0"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default>
+				<VelocityDamping High="1" Low="1"/>
+			</Default>
+		</Physics>
+		<Draw>
+			<Gpu SpeedMultiplier="1"/>
+		</Draw>
+		<Volume>
+			<Cylinder>
+				<Offset x="0" y="0" z="4"/>
+			</Cylinder>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="0" Low="0"/>
+					<y High="0" Low="0"/>
+					<z High="0" Low="0"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event/>
+		<Update>
+			<Default>
+				<SizeRateDamping High="1" Low="1"/>
+				<AngularDampingXY High="1" Low="1"/>
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>	
+
 	<!-- R17 Tripod Rear Tib suck -->
 	<FXParticleSystemTemplate ParticleTexture="FXTib" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" Shader="ALPHA" SortLevel="1" id="CorrputerTibSuckR">
 		<Lifetime High="15" Low="15"/>

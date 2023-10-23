@@ -669,8 +669,8 @@
 						ObjectStatus="WEAPON_UPGRADED_01"
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="200"
-						TurretPitchRate="200"
+						TurretTurnRate="330"
+						TurretPitchRate="330"
 						MinimumPitch="0d"
 						PitchHeight="50%"
 						ControlledWeaponSlots=""

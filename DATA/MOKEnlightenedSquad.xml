@@ -707,6 +707,7 @@
 						LeaderIndex="0" />
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
+				<RankThatStopsAdvance>1</RankThatStopsAdvance>					
 			</HordeContain>
 			<AttributeModifierUpgrade
 				id="A4D28635"

@@ -471,6 +471,8 @@
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
 				<RankToReleaseWhenAttacking>2</RankToReleaseWhenAttacking>
+				<RankThatStopsAdvance>1</RankThatStopsAdvance>				
+				<RankThatStopsAdvance>2</RankThatStopsAdvance>								
 			</HordeContain>
 			<ProductionUpdate
 				id="749674DE"

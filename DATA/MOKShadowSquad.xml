@@ -1215,6 +1215,7 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</SpecialPower>
+			<!--
 			<SpecialAbilityUpdate
 				id="2C7921CC"
 				GrabPassengerHealGain="0%"
@@ -1260,6 +1261,64 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="True"
 				FaceTarget="True" />
+				-->
+			<WeaponFireSpecialAbilityUpdate
+				id="EBC0EFDB"
+				GrabPassengerHealGain="0%"
+				SpecialPowerTemplate="ShadowSquadBeaconGetInRange"
+				StartAbilityRange="100"
+				AbilityAbortRange="1E+07"
+				PreparationTime="0s"
+				PersistentPrepTime="0s"
+				PersistentCount="-1"
+				PackTime="0s"
+				UnpackTime="0s"
+				PreTriggerUnstealthTime="0s"
+				Options=""
+				PackUnpackVariationFactor="0"
+				ParalyzeDurationWhenCompleted="0s"
+				ParalyzeDurationWhenAborted="0s"
+				SpecialObject=""
+				SpecialObjectAttachToBone=""
+				MaxSpecialObjects="1"
+				EffectDuration="0s"
+				EffectValue="1"
+				EffectRange="0"
+				FleeRangeAfterCompletion="0"
+				DisableFXParticleSystem=""
+				PackSound=""
+				UnpackSound=""
+				PrepSoundLoop=""
+				TriggerSound=""
+				ActiveLoopSound=""
+				AwardXPForTriggering="0"
+				SkillPointsForTriggering="-1"
+				UnpackingVariation="0"
+				FreezeAfterTriggerDuration="0s"
+				RequiredConditions=""
+				RejectedConditions=""
+				SetObjectStatusOnTrigger=""
+				ClearObjectStatusOnExit=""
+				ContactPointOverride=""
+				TriggerAttributeModifier=""
+				AttributeModifierDuration="0s"
+				ChainedButton=""
+				RequireAndSpendTiberiumOnCaster="0"
+				DisabledTypesToProcess="HELD"
+				DisabledTypesToContinueSoundsFor="HELD"
+				StartRechargeOnExit="False"
+				GoIdleInStartPreparation="True"
+				FaceTarget="True"
+				SpecialWeapon="NODShadowSquadBeaconWeapon"
+				WhichSpecialWeapon="0"
+				BusyForDuration="0s"
+				WeaponSlotID="1"
+				WeaponSlotType="PRIMARY_WEAPON"
+				SkipContinue="False"
+				NeedLivingTargets="False"
+				PlayWeaponPreFireFX="False"
+				OffsetTargetLocationFromObject="False"
+				DestealthClosestObjectMatchingFilter="False" />		
 			<HordeDispatchSpecialPower
 				id="903F0FB7"
 				SpecialPowerTemplate="SpecialPowerDeployBeacon"
@@ -1454,6 +1513,8 @@
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
 				<RankToReleaseWhenAttacking>2</RankToReleaseWhenAttacking>
+				<RankThatStopsAdvance>1</RankThatStopsAdvance>				
+				<RankThatStopsAdvance>2</RankThatStopsAdvance>								
 				<OnDeathBehavior
 					RequiredStatus="PARACHUTING">
 					<OCL>OCL_RedemptionSpawn</OCL>

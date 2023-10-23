@@ -525,6 +525,17 @@
 		<Cmd>Command_RedShadowStrikeTeam</Cmd>
 	</LogicCommandSet>	
 	
+	<!-- Shadow Beacon button swap -->
+	<LogicCommandSet
+		id="NODShadowSquadCommandSet">
+		<Cmd>Command_NodShadow_GliderLiftOff</Cmd>
+		<Cmd>Command_NodShadow_GliderLand</Cmd>
+		<Cmd>Command_NodShadow_PlaceExplosiveCharges</Cmd>
+		<Cmd>Command_NODShadowSquadBeaconGetInRange</Cmd> <!--
+		<Cmd>Command_NODShadowSquadDeployBeacon</Cmd> -->
+		<Cmd>Command_AttackMove</Cmd>
+	</LogicCommandSet>	
+	
 	<!-- T59 Devourer -->
 	<LogicCommandSet
 	id="Traveler59DevourerTankCommandSet">

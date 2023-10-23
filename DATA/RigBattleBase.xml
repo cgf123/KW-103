@@ -1009,8 +1009,8 @@
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="180"
-						TurretPitchRate="40"
+						TurretTurnRate="400"
+						TurretPitchRate="400"
 						MinimumPitch="0d"
 						PitchHeight="50%"
 						ControlledWeaponSlots=""
@@ -2729,8 +2729,8 @@
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="180"
-						TurretPitchRate="40"
+						TurretTurnRate="400"
+						TurretPitchRate="400"
 						MinimumPitch="0d"
 						PitchHeight="50%"
 						ControlledWeaponSlots=""
@@ -4422,8 +4422,8 @@
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="180"
-						TurretPitchRate="40"
+						TurretTurnRate="400"
+						TurretPitchRate="400"
 						MinimumPitch="0d"
 						PitchHeight="50%"
 						ControlledWeaponSlots=""

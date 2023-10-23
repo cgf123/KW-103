@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="NODShadowSquadBeacon"
-		KindOf="TARGETABLE IMMOBILE NO_COLLIDE CAN_ATTACK STEALTH_GARRISON SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAPTURE IGNORES_SELECT_ALL RESIST_EMP VEHICLE INFILTRATOR SKIRMISH_AI_DONT_GARRISON SNIPER CAN_BE_FAVORITE_UNIT"
+		KindOf="TARGETABLE IMMOBILE NO_COLLIDE STEALTH_GARRISON IGNORES_SELECT_ALL RESIST_EMP VEHICLE"
 		Description="Desc:NODShadowSquadBeacon"
 		TypeDescription="Type:NODShadowSquadBeacon"
 		RadarPriority="INVALID"
@@ -19,7 +19,7 @@
 		EditorName="NODShadowSquadBeacon"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="8"
+		BuildTime="1"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -63,11 +63,10 @@
 		BuildOnRequiredObjectKindOf=""
 		UnitCategory="INFANTRY"
 		WeaponCategory="GUN"
-		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
-		ReinvisibilityDelay="7s"
+		ReinvisibilityDelay="0.01s"
 		CaptureTime="0s"
-		BuildCost="800"
+		BuildCost="1"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -94,10 +93,6 @@
 			Speed="80"
 			Condition="NORMAL"
 			Locomotor="NormalRangedSquadLocomotor" />
-		<LocomotorSet
-			Speed="100"
-			Condition="NORMAL_UPGRADED"
-			Locomotor="FlyingShadowSquadLocomotor" />
 		<SkirmishAIInformation
 			BaseBuildingLocation="FRONT"
 			ConquerMetricsOverrideDamageType="UNDEFINED"
@@ -188,36 +183,6 @@
 		<Behaviors>
 			<AttributeModifierPoolUpdate
 				id="513BC476" />
-			<SquishCollide
-				id="8CCB269A"
-				CrushAnimTime="1s"
-				CrushKillDelay="0.5s"
-				UseDirectionCheck="True" />
-			<FireWeaponWhenDead
-				id="DDED328F"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				DelayTime="0s"
-				DeathWeapon="CatalystInfantryDeathWeapon"
-				FocusFireKindOfFlag=""
-				InitiallyActive="True"
-				ActiveDuringConstruction="False"
-				ContinueToBezierDestination="False">
-				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="0.9999999d"
-					MaxKillerAngle="-0.9999999d"
-					DeathTypes="CATALYST"
-					DeathTypesForbidden="" />
-			</FireWeaponWhenDead>
-			<StealthDetectorUpdate
-				id="ModuleTag_StealthDetect"
-				DetectionRange="0" />
 			<Physics
 				id="6D41764B"
 				MaxXRotationVelocity="360"
@@ -266,64 +231,24 @@
 					DeathTypes="ALL"
 					DeathTypesForbidden="" />
 			</DestroyDie>
-			<FXListBehavior
-				id="C74C39D8">
-				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="0.9999999d"
-					MaxKillerAngle="-0.9999999d"
-					DeathTypes="ALL"
-					DeathTypesForbidden="" />
-				<Event
-					Index="onDeath"
-					FX="FX_Nod_ShadowBeaconExplosion"
-					MinThreshold="0"
-					MaxThreshold="0"
-					Direction="Default"
-					OrientToObject="True"
-					ForceUseDoFXObj="False" />
-			</FXListBehavior>
-			<ProductionUpdate
-				id="749674DE"
-				MaxQueueEntries="99"
-				NumDoorAnimations="0"
-				DoorOpeningTime="0s"
-				DoorOpeningTimeMetaUnit="0s"
-				DoorWaitOpenTime="0s"
-				DoorCloseTime="0s"
-				ConstructionCompleteDuration="0"
-				DisabledTypesToProcess=""
-				UnitInvulnerableTime="0"
-				SpecialPrepModelconditionTime="0"
-				BonusForType=""
-				SpeedBonusAudioLoop=""
-				Type="INVALID"
-				ProductionTimeDelayScalar="0s"
-				GiveNoXP="True"
-				VeteranUnitsFromVeteranFactory="False"
-				SetBonusModelConditionOnSpeedBonus="False"
-				SecondaryQueue="False"
-				IgnorePreReqs="False" />
 			<InvisibilityUpdate
 				id="03CF4422"
 				Options="STARTS_ACTIVE"
-				UpdatePeriod="0.2s"
+				UpdatePeriod="0.1s"
 				BroadcastRange="0"
 				OpacityMin="30%"
 				OpacityMax="100%">
 				<InvisibilityNugget
-					ForbiddenConditions="PREATTACK_A FIRING_A FIRING_OR_PREATTACK_A RELOADING_A PREATTACK_B FIRING_B FIRING_OR_PREATTACK_B RELOADING_B PREATTACK_C FIRING_C FIRING_OR_PREATTACK_C RELOADING_C USING_WEAPON_A USING_WEAPON_B USING_WEAPON_C"
+					ForbiddenConditions=""
 					ForbiddenConditionExceptions=""
 					ForbiddenWeaponSets=""
-					ForbiddenStatus="IS_FIRING_WEAPON USING_ABILITY IS_AIMING_WEAPON SPECIAL_ABILITY_PACKING_UNPACKING_OR_USING"
+					ForbiddenStatus=""
 					CamouflageLevel="0"
 					InvisibilityType="STEALTH"
 					Options=""
-					EnteringStealthFX="FX_NODStealthTransitionOn"
-					LeavingStealthFX="FX_NODStealthTransitionOff"
-					HintDetectableStates="IS_ATTACKING"
+					EnteringStealthFX=""
+					LeavingStealthFX=""
+					HintDetectableStates=""
 					NoStealthForAttackWindow="0s" />
 			</InvisibilityUpdate>
 		</Behaviors>
@@ -417,8 +342,8 @@
 			EvaEventBuildCancelled="EmptyEva"
 			EvaEventPromotedOwner="EmptyEva" />
 		<VisionInfo
-			VisionRange="350"
-			ShroudClearingRange="400"
+			VisionRange="600"
+			ShroudClearingRange="600"
 			VisionSide="100%"
 			VisionRear="100%"
 			VisionBonusTestRadius="200"
@@ -426,20 +351,5 @@
 			VisionBonusPercentPerFoot="1%"
 			MaxVisionBonusPercent="300%"
 			MinVisionBonusPercent="-50%" />
-		<CrusherInfo
-			CrushKnockback="0"
-			CrushZFactor="1"
-			MinCrushVelocityPercent="1%"
-			CrushDecelerationPercent="0%"
-			CrushWeapon=""
-			CrushRevengeWeapon=""
-			CrusherLevel="0"
-			CrushableLevel="0"
-			MountedCrusherLevel="255"
-			MountedCrushableLevel="255"
-			CrushEqualLevelProps="False"
-			UseCrushAttack="False"
-			CrushOnlyWhileCharging="False"
-			CrushAllies="False" />
 	</GameObject>
 </AssetDeclaration>

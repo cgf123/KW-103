@@ -1252,7 +1252,7 @@ DAMAGE TYPES
 		id="GDIOrcaRocketWeapon"
 		Name="GDIOrcaRocketWeapon"
 		AttackRange="250.0"
-		WeaponSpeed="500"
+		WeaponSpeed="625"
 		MinWeaponSpeed="510"
 		MaxWeaponSpeed="500"
 		FireFX="FX_GDIOrcaMissleFire"
@@ -1269,8 +1269,8 @@ DAMAGE TYPES
 				MinSeconds="1.33s"
 				MaxSeconds="1.33s" />
 		<ClipReloadTime
-				MinSeconds="5s"
-				MaxSeconds="5s" />
+				MinSeconds="6s"
+				MaxSeconds="6s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="GDIOrcaMissileProjectile"
@@ -1292,7 +1292,7 @@ DAMAGE TYPES
 		id="GDIOrcaHardpointsUpgradedRocketWeapon"
 		Name="GDIOrcaHardpointsUpgradedRocketWeapon"
 		AttackRange="250.0"
-		WeaponSpeed="500"
+		WeaponSpeed="625"
 		MinWeaponSpeed="510"
 		MaxWeaponSpeed="500"
 		FireFX="FX_GDIOrcaMissleFire"
@@ -1309,8 +1309,8 @@ DAMAGE TYPES
 				MinSeconds="1.0s"
 				MaxSeconds="1.0s" />
 		<ClipReloadTime
-				MinSeconds="5s"
-				MaxSeconds="5s" />
+				MinSeconds="6s"
+				MaxSeconds="6s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="GDIOrcaMissileProjectile"
@@ -1367,7 +1367,7 @@ DAMAGE TYPES
 		id="OrcaEchoCannon"
 		Name="OrcaEchoCannon"
 		AttackRange="250.0"
-		WeaponSpeed="600.0"
+		WeaponSpeed="750.0"
 		MinWeaponSpeed="600"
 		MaxWeaponSpeed="610"
 		PreAttackType="PER_SHOT"
@@ -1389,8 +1389,8 @@ DAMAGE TYPES
 				MinSeconds="1.25s"
 				MaxSeconds="1.25s" />
 		<ClipReloadTime
-				MinSeconds="5s"
-				MaxSeconds="5s" />
+				MinSeconds="6s"
+				MaxSeconds="6s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="GDIOrcaECHOProjectile"
@@ -1456,7 +1456,7 @@ DAMAGE TYPES
 		id="OrcaHardpointsUpgradedEchoCannon"
 		Name="OrcaHardpointsUpgradedEchoCannon"
 		AttackRange="250.0"
-		WeaponSpeed="600.0"
+		WeaponSpeed="750.0"
 		MinWeaponSpeed="600"
 		MaxWeaponSpeed="610"
 		PreAttackType="PER_SHOT"
@@ -1478,8 +1478,8 @@ DAMAGE TYPES
 				MinSeconds="0.9375s"
 				MaxSeconds="0.9375s" />
 		<ClipReloadTime
-				MinSeconds="5s"
-				MaxSeconds="5s" />
+				MinSeconds="6s"
+				MaxSeconds="6s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="GDIOrcaECHOUpgradedProjectile"
@@ -7331,14 +7331,14 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="AlienSeekerTankPlasmaDiskLauncher"
 		  Name="AlienSeekerTankPlasmaDiskLauncher"
-		  AttackRange="275.0"
+		  AttackRange="280.0"
 		  WeaponSpeed="400.0"
 		  FireSound="AudioEvent:ALI_SeekerTank_DiskWeaponFire"
 		  FireFX="FX_AlienPlasmaDiskFire"
 		  FireVeteranFX="FX_AlienPlasmaDiskFireHeroic"
 		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		  AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
-		  ClipSize="3"
+		  ClipSize="3"	  
 		  CanFireWhileMoving="true"
 		  ReAcquireDetailType="PER_SHOT">
 
@@ -7427,11 +7427,12 @@ DAMAGE TYPES
 			</DamageNugget>		
 		</Nuggets>
 	</WeaponTemplate>	
+	
 
 	<WeaponTemplate
 		  id="AlienSeekerTankShardLauncherWeapon"
 		  Name="AlienSeekerTankShardLauncherWeapon"
-		  AttackRange="275.0"
+		  AttackRange="280.0"
 		  WeaponSpeed="400.0"
 		  FireSound="AudioEvent:ALI_SeekerTank_ShardWeaponFire"
 		  FireFX="FX_AlienTibShardFire"
@@ -11671,13 +11672,45 @@ DAMAGE TYPES
 				Damage="1800.0"
 				Radius="40.0"
 				DamageType="GRENADE"
-				DeathType="EXPLODED" >
+				DeathType="EXPLODED" >			
 				<DamageScalarDetails Scalar= "25%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
 				</DamageScalarDetails>				
 			</DamageNugget>
+		</Nuggets>
+	</WeaponTemplate>	
+	
+	<WeaponTemplate
+		id="NODShadowSquadBeaconWeapon"
+		Name="NODShadowSquadBeaconWeapon"
+		AttackRange="200"
+		WeaponSpeed="200"
+		MinWeaponSpeed="200"
+		MaxWeaponSpeed="210"
+		ClipSize="0"
+		AutoReloadsClip="AUTO"
+		CanFireWhileMoving="true"
+		AntiMask="ANTI_GROUND"
+ 		>
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="NODShadowSquadBeaconProjectile"
+				WarheadTemplate="NODShadowSquadBeaconWarhead" />	
+		</Nuggets>
+	</WeaponTemplate>
+	<WeaponTemplate
+		id="NODShadowSquadBeaconWarhead"
+		Name="NODShadowSquadBeaconWarhead">
+		<Nuggets>
+			<DamageNugget
+				Damage="1.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.0s"
+				DamageType="GRENADE"
+				DeathType="NORMAL" />
+			<WeaponOCLNugget WeaponOCL="OCL_NODShadowSquadBeacon" />
 		</Nuggets>
 	</WeaponTemplate>	
 	
@@ -12908,7 +12941,7 @@ DAMAGE TYPES
 		AttackRange="135.0"
 		WeaponSpeed="200"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
-		AcceptableAimDelta="20d"
+		AcceptableAimDelta="45d"
 		CanFireWhileMoving="true"
 		ClipSize="1"
 		FireSound="AudioEvent:NOD_VertigoDropBomb"

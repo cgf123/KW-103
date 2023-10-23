@@ -478,6 +478,7 @@
 						LeaderIndex="0" />
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
+				<RankThatStopsAdvance>1</RankThatStopsAdvance>						
 			</HordeContain>
 			<ProductionUpdate
 				id="749674DE"
@@ -1907,6 +1908,7 @@
 						LeaderIndex="0" />
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
+				<RankThatStopsAdvance>1</RankThatStopsAdvance>						
 			</HordeContain>
 			
 			<LaserState
@@ -2922,6 +2924,7 @@
 						LeaderIndex="0" />
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
+				<RankThatStopsAdvance>1</RankThatStopsAdvance>						
 			</HordeContain>
 			<AttributeModifierUpgrade
 				id="A921E313"

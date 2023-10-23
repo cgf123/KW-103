@@ -704,6 +704,7 @@
 						LeaderIndex="0" />
 				</RankInfo>
 				<RankToReleaseWhenAttacking>1</RankToReleaseWhenAttacking>
+				<RankThatStopsAdvance>1</RankThatStopsAdvance>						
 			</HordeContain>
 			<CreateAndEnterObjectSpecialPower
 				id="6D44A823"

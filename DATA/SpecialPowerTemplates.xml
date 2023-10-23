@@ -425,6 +425,37 @@
 
 	</SpecialPowerTemplate>		
 	
+	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateDeployBeacon" -->	
+	<SpecialPowerTemplate
+		id="ShadowSquadBeaconGetInRange"
+		ReloadTime="30s"
+		TargetType="LOCATION"
+		Flags="PATHABLE_ONLY NOT_CLIFF_CELL"
+		ForbiddenObjectRange="15"
+		InitiateAtLocationSound="AudioEvent:GDI_Orca_VoiceAirstrikeInbound"		
+		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0xE8E42058">
+		<ForbiddenObjectFilter
+		  Rule="ANY"
+		  Include="STRUCTURE CRUSHABLE_OBSTACLE"
+		/>
+
+	</SpecialPowerTemplate>	
+	
+	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateDeployBeacon" -->
+	<SpecialPowerTemplate
+		id="SpecialPowerDeployBeacon"
+		TargetType="LOCATION"
+		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
+		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0xE8E42058"
+		WaypointModeTerminal="false"
+		ReloadTime="30s"
+    ForbiddenObjectRange="15"
+    Flags="PATHABLE_ONLY NOT_CLIFF_CELL NO_FORBIDDEN_OBJECTS">
+		<ForbiddenObjectFilter
+			Rule="ANY"
+			Include="STRUCTURE CRUSHABLE_OBSTACLE" />
+	</SpecialPowerTemplate>	
+	
 	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiatePlaceSatchelCharge_NOD" -->
 	<SpecialPowerTemplate
 		id="SpecialPower_PlaceSatchelCharge_NOD"
@@ -767,7 +798,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPowerRedShadowStrikeTeam"
 		Flags="NOT_CLIFF_CELL IS_PLAYER_POWER SHARED_SYNC"
-		ReloadTime="180s"
+		ReloadTime="150s"
 		RadiusCursorRadius="30"
 		TargetType="LOCATION"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"

@@ -476,7 +476,9 @@
 	<Include type="all" source="OperationsCenters.xml" />	
 
 	<Include type="all" source="DisruptionPod.xml" />	
+	
 	<Include type="all" source="ShadowBeacon.xml" />
+	<Include type="all" source="NODShadowBeaconProj.xml" />	
 	
 	<Include type="all" source="NODHarv.xml" />	
 	<Include type="all" source="BHHarv.xml" />		
