@@ -8198,7 +8198,7 @@ DAMAGE TYPES
 		<Nuggets>
 
 			<DamageNugget
-				Damage="120.0"
+				Damage="125.0"
 				Radius="5.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_TIBSHARDBLUE"
@@ -8240,7 +8240,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>  				
 			</DamageNugget>			
 			<DamageNugget
-				Damage="135.0"
+				Damage="140.0"
 				Radius="5.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_TIBSHARDBLUE"

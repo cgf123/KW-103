@@ -62,7 +62,7 @@
 		BuildPlacementTypeFlag="INVALID"
 		BuildOnRequiredObjectKindOf=""
 		UnitCategory="VEHICLE"
-		WeaponCategory="ROCKET"
+		WeaponCategory="MISSILE"
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"

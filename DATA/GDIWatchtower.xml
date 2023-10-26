@@ -868,7 +868,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				DetectionRate="0.4s"
-				DetectionRange="100"
+				DetectionRange="200"
 				PingSound=""
 				LoudPingSound=""
 				IRBeaconParticleSys=""
