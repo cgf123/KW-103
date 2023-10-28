@@ -21,7 +21,7 @@
 		BountyValue="0"
 		BuildTime="8"
 		BuildFadeInOnCreateTime="0"
-		EnergyProduction="-8"
+		EnergyProduction="-9"
 		EnergyBonus="0"
 		CommandSet="AlienPhotonCannonCommandSet"
 		SelectPortrait="Portrait_AlienPhotonCannon"
@@ -742,7 +742,7 @@
 		<Body>
 			<ActiveBody
 				id="C026F3D9"
-				MaxHealth="3800"
+				MaxHealth="3700"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

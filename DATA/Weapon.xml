@@ -1266,8 +1266,8 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="1.33s"
-				MaxSeconds="1.33s" />
+				MinSeconds="1.5s"
+				MaxSeconds="1.5s" />
 		<ClipReloadTime
 				MinSeconds="6s"
 				MaxSeconds="6s" />
@@ -1306,8 +1306,8 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="1.0s"
-				MaxSeconds="1.0s" />
+				MinSeconds="1.125s"
+				MaxSeconds="1.125s" />
 		<ClipReloadTime
 				MinSeconds="6s"
 				MaxSeconds="6s" />
@@ -1345,7 +1345,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "90%" >
 					<Filter 
 						  Rule="ANY"
-						  Include="HARVESTER MADE_OF_DIRT">	
+						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>  					
 				<DamageScalarDetails Scalar= "120%" >
@@ -1386,8 +1386,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="1.25s"
-				MaxSeconds="1.25s" />
+				MinSeconds="1.33s"
+				MaxSeconds="1.33s" />
 		<ClipReloadTime
 				MinSeconds="6s"
 				MaxSeconds="6s" />
@@ -1434,7 +1434,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "90%" >
 					<Filter 
 						  Rule="ANY"
-						  Include="HARVESTER MADE_OF_DIRT">	
+						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>  					
 				<DamageScalarDetails Scalar= "120%" >
@@ -1475,8 +1475,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="0.9375s"
-				MaxSeconds="0.9375s" />
+				MinSeconds="1.0s"
+				MaxSeconds="1.0s" />
 		<ClipReloadTime
 				MinSeconds="6s"
 				MaxSeconds="6s" />
@@ -1515,7 +1515,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar="0%">
                   <Filter Rule="ALL" Relationship="ALLIES" Exclude="HUSK" /> 
                 </DamageScalarDetails>						
-				<DamageScalarDetails Scalar= "50%">
+				<DamageScalarDetails Scalar= "40%">
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" />
@@ -1523,7 +1523,7 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "90%" >
 					<Filter 
 						  Rule="ANY"
-						  Include="HARVESTER MADE_OF_DIRT">	
+						  Include="HARVESTER">	
 					</Filter>
 				</DamageScalarDetails>   					
 				<DamageScalarDetails Scalar= "120%" >
@@ -2417,7 +2417,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIShattererShockWaveCannon"
 		Name="GDIShattererShockWaveCannon"
-		AttackRange="375.0"
+		AttackRange="385.0"
 		MinimumAttackRange="0"
 		WeaponSpeed="510.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
@@ -2543,7 +2543,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="SteelShattererShockWaveCannon"
 		Name="SteelShattererShockWaveCannon"
-		AttackRange="375.0"
+		AttackRange="385.0"
 		MinimumAttackRange="0"
 		WeaponSpeed="510.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
@@ -5381,6 +5381,11 @@ DAMAGE TYPES
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_PLASMADISK">
+				<DamageScalarDetails Scalar= "400%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED" />
+				</DamageScalarDetails>				
 				<DamageScalarDetails Scalar= "900%">
 					<Filter
 						Rule="NONE"
@@ -7124,13 +7129,13 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
-						Rule="NONE"
+						Rule="ANY"
 						Include="AIRCRAFT" >
 					</Filter>
 				</DamageScalarDetails>	
 					
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "135%">
+				<DamageScalarDetails Scalar= "137.5%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7216,13 +7221,13 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
-						Rule="NONE"
+						Rule="ANY"
 						Include="AIRCRAFT" >
 					</Filter>
 				</DamageScalarDetails>		
 					
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "135%">
+				<DamageScalarDetails Scalar= "137.5%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7293,13 +7298,13 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
-						Rule="NONE"
+						Rule="ANY"
 						Include="AIRCRAFT" >
 					</Filter>
 				</DamageScalarDetails>					
 
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "135%">
+				<DamageScalarDetails Scalar= "137.5%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7398,7 +7403,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>	
 			
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "135%">
+				<DamageScalarDetails Scalar= "137.5%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7499,7 +7504,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>	
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "135%">
+				<DamageScalarDetails Scalar= "137.5%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7533,7 +7538,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienPlasmaMissileBatteryWeapon"
 		Name="AlienPlasmaMissileBatteryWeapon"
-		AttackRange="450.0"
+		AttackRange="460.0"
 		WeaponSpeed="400"
 		FireSoundPerClip="AudioEvent:ALI_PlasmaMissileBattery_WeaponFire"
 		FireFX="FX_AlienPlasmaDiskFire"
@@ -7558,11 +7563,6 @@ DAMAGE TYPES
 					VeterancyLevel="HEROIC"
 					ProjectileTemplate="AlienPlasmaDisk_Veteran"/>
 			</ProjectileNugget>
-			<SuppressionNugget
-				Radius="50.0"
-				Suppression="50"
-				DurationSeconds="2s"
-			/>
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -7596,7 +7596,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienPlasmaMissileBatteryShardLauncherWeapon"
 		Name="AlienPlasmaMissileBatteryShardLauncherWeapon"
-		AttackRange="450.0"
+		AttackRange="460.0"
 		WeaponSpeed="400"
 		FireSound="AudioEvent:ALI_PlasmaMissileBattery_ShardWeaponFire"
 		FireFX="FX_AlienTibShardFire"
@@ -7619,11 +7619,6 @@ DAMAGE TYPES
 				ProjectileTemplate="AlienTibShardProjectile">
 
 			</ProjectileNugget>
-			<SuppressionNugget
-				Radius="50.0"
-				Suppression="50"
-				DurationSeconds="2s"
-			/>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -8009,7 +8004,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>  				
 			</DamageNugget>			
 			<DamageNugget
-				Damage="112.5"
+				Damage="120.0"
 				Radius="0.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_CANNON"
@@ -8127,7 +8122,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>  				
 			</DamageNugget>			
 			<DamageNugget
-				Damage="112.5"
+				Damage="120.0"
 				Radius="5.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_TIBSHARD"
@@ -8240,7 +8235,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>  				
 			</DamageNugget>			
 			<DamageNugget
-				Damage="140.0"
+				Damage="150.0"
 				Radius="5.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_TIBSHARDBLUE"
@@ -12550,10 +12545,6 @@ DAMAGE TYPES
 			<ProjectileNugget
 				WarheadTemplate="NODRocketBunkerSpawnWeaponWarhead"
 				ProjectileTemplate="NODRocketBunkerSpawnWeaponProjectile" />
-			<SuppressionNugget
-				Radius="50"
-				Suppression="50"
-				DurationSeconds="2s" />
 			<AttributeModifierNugget
 				PartitionFilterTestType="SPHERE"
 				AttributeModifierOwnerName="Modifier_RocketBunkerWeaponFiring" />
@@ -12606,10 +12597,6 @@ DAMAGE TYPES
 			<ProjectileNugget
 				  WarheadTemplate="NODRocketBunkerSpawnTibCoreWeaponWarhead"
 				  ProjectileTemplate="NODRocketBunkerSpawnTibCoreProjectile" />
-			<SuppressionNugget
-				  Radius="50.0"
-				  Suppression="50"
-				  DurationSeconds="2s" />
 			<AttributeModifierNugget
 				  PartitionFilterTestType="SPHERE"
 				  AttributeModifierOwnerName="Modifier_RocketBunkerWeaponFiring" />
