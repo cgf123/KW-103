@@ -4894,13 +4894,20 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "137.5%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
-				</DamageScalarDetails>		
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="NONE"
+						Include="TRANSPORT WEAPON_SALVAGER"
+						Exclude="">          						
+					</Filter>
+				</DamageScalarDetails>						
 
 				<DamageScalarDetails Scalar= "75%">
 					<Filter
@@ -4965,11 +4972,18 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "137.5%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
+					</Filter>
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="NONE"
+						Include="TRANSPORT WEAPON_SALVAGER"
+						Exclude="">          						
 					</Filter>
 				</DamageScalarDetails>			
 
@@ -5386,7 +5400,7 @@ DAMAGE TYPES
 						Rule="NONE"
 						Include="AIRCRAFT TIBERIUM_BASED" />
 				</DamageScalarDetails>				
-				<DamageScalarDetails Scalar= "900%">
+				<DamageScalarDetails Scalar= "880%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT TRANSPORT"
@@ -7353,8 +7367,8 @@ DAMAGE TYPES
 		/>
 
 		<ClipReloadTime
-			MinSeconds="2.75s"
-			MaxSeconds="2.75s"
+			MinSeconds="1.8s"
+			MaxSeconds="1.8s"
 		/>
 
 		<Nuggets>
@@ -7376,7 +7390,7 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY" >
 		<Nuggets>
 			<DamageNugget
-				Damage="170.0"
+				Damage="125.0"
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_PLASMADISK">	
@@ -7454,8 +7468,8 @@ DAMAGE TYPES
 		/>
 
 		<ClipReloadTime
-			MinSeconds="1.8s"
-			MaxSeconds="1.8s"
+			MinSeconds="1.2s"
+			MaxSeconds="1.2s"
 		/>
 
 		<Nuggets>
@@ -7477,7 +7491,7 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY" >
 		<Nuggets>
 			<DamageNugget
-				Damage="170.0"
+				Damage="125.0"
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_TIBSHARD" >
@@ -8598,7 +8612,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>		
 
-				<DamageScalarDetails Scalar= "37%" >
+				<DamageScalarDetails Scalar= "42%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="WEAPON_SALVAGER">	
@@ -8761,6 +8775,23 @@ DAMAGE TYPES
 				DelayTimeSeconds="0s"
 				DamageType="CANNON"
 				DamageFXType="NOD_MACHINEGUN" >
+				<DamageScalarDetails Scalar= "37.5%">
+					<Filter Rule="NONE" Include="MADE_OF_WOOD">
+						<IncludeThing>AlienStormrider</IncludeThing>
+						<IncludeThing>AlienDevastatorWarship</IncludeThing>
+						<IncludeThing>AlienMothership</IncludeThing>
+						<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>AlienMCV</IncludeThing>
+						<IncludeThing>Traveler59Stormrider</IncludeThing>
+						<IncludeThing>Traveler59DevastatorWarship</IncludeThing>
+						<IncludeThing>Traveler59Mothership</IncludeThing>
+						<IncludeThing>Traveler59PlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>Traveler59MCV</IncludeThing>
+						<IncludeThing>Reaper17Stormrider</IncludeThing>
+						<IncludeThing>Reaper17Mothership</IncludeThing>
+						<IncludeThing>Reaper17MCV</IncludeThing>
+					</Filter>
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar="200%">
 					<Filter
 						Rule="NONE"
@@ -8792,7 +8823,7 @@ DAMAGE TYPES
 		AutoReloadsClip="AUTO"
 		CanFireWhileMoving="true"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_INFANTRY ANTI_AIRBORNE_VEHICLE ANTI_PROJECTILE ANTI_MINE">
-		<FiringDuration
+		<ClipReloadTime
 			MinSeconds="1.25s"
 			MaxSeconds="1.95s"
 		/>
@@ -8802,7 +8833,7 @@ DAMAGE TYPES
 				Radius="5.0"
 				DamageType="CANNON"
 				DeathType="BURNED"
-				DamageFXType="ALIEN_ION">
+				DamageFXType="ALIEN_ION">			
 				<DamageScalarDetails Scalar= "37.5%">
 					<Filter Rule="NONE" Include="MADE_OF_WOOD">
 						<IncludeThing>AlienStormrider</IncludeThing>
@@ -8867,7 +8898,7 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DeathType="BURNED"
 				DamageFXType="ALIEN_ION">
-				<DamageScalarDetails Scalar= "80%">
+				<DamageScalarDetails Scalar= "75%">
 					<Filter
 						Rule="NONE"
 						Include="MADE_OF_WOOD">
@@ -13711,14 +13742,7 @@ DAMAGE TYPES
 				Radius="50.0"
 				DamageType="GRENADE"
 				DamageFXType="GDI_SHOCKWAVE"
-				DeathType="NORMAL" >
-				<DamageScalarDetails Scalar= "120%" >
-					<Filter 
-						  Rule="NONE"
-						  Include="WEAPON_SALVAGER">	
-					</Filter>
-					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
-				</DamageScalarDetails>  					
+				DeathType="NORMAL" >					
 			</DamageNugget>
 			
 			<ParalyzeNugget

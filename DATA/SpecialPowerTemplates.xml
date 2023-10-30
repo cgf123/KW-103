@@ -869,7 +869,7 @@
 		ReloadTime="90s"
 		Flags="IS_PLAYER_POWER WATER_OK SHARED_SYNC"
 		RadiusCursorRadius="25"
-		Money="-1500">
+		Money="-1200">
 	</SpecialPowerTemplate>		
 	
 	<SpecialPowerTemplate
