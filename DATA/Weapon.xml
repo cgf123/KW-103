@@ -4218,6 +4218,27 @@ DAMAGE TYPES
 	</WeaponTemplate>
 
 	<WeaponTemplate
+		id="MagneticMineWeapon"
+		Name="MagneticMineWeapon"
+		RadiusDamageAffects="SELF ENEMIES NEUTRALS">
+		<Nuggets>
+			<DOTNugget
+				ForbiddenTargetModelCondition="AFFECTED_BY_EMP"
+				Damage="16"
+				Radius="10"
+				DamageType="MINE"
+				DeathType="EXPLODED"
+				DamageFXType="NOD_MINE"
+				DamageInterval="1"
+				DamageDuration="10000">
+				<SpecialObjectFilter
+					Rule="ANY"
+					Include="VEHICLE" />
+			</DOTNugget>
+		</Nuggets>
+	</WeaponTemplate>
+
+	<WeaponTemplate
 		id="NODAirDispenserBomb"
 		Name="NODAirDispenserBomb"
 		AttackRange="1000.0"
