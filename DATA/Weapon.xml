@@ -216,8 +216,8 @@ DAMAGE TYPES
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
 		<ClipReloadTime
-			MinSeconds="2.3s"
-			MaxSeconds="2.5s" />
+			MinSeconds="2.2s"
+			MaxSeconds="2.3s" />
 
 		<Nuggets>
 			<ProjectileNugget
@@ -338,7 +338,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneTrooperSquadRangefinder"
 		Name="ZoneTrooperSquadRangefinder"
-		AttackRange="250"
+		AttackRange="255"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -353,7 +353,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneTrooperSquadRangefinder_Upgraded"
 		Name="ZoneTrooperSquadRangefinder_Upgraded"
-		AttackRange="310"
+		AttackRange="315"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -368,7 +368,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneTrooperMachineGun"
 		Name="ZoneTrooperMachineGun"
-		AttackRange="300.0"
+		AttackRange="305.0"
 		WeaponSpeed="999999.0"
 		PreAttackType="PER_SHOT"
 		ClipSize="1"
@@ -398,7 +398,7 @@ DAMAGE TYPES
 				HitGroundFX="FX_RailGunHit"/>
 			<DamageNugget
 				Damage="225.0"
-				Radius="1.0"
+				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="CANNON"
 				DamageFXType="GDI_RAILGUN"
@@ -434,7 +434,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneTrooperMachineGun_Upgraded"
 		Name="ZoneTrooperMachineGun_Upgraded"
-		AttackRange="360.0"
+		AttackRange="365.0"
 		WeaponSpeed="999999.0"
 		PreAttackType="PER_SHOT"
 		ClipSize="1"
@@ -464,7 +464,7 @@ DAMAGE TYPES
 				HitGroundFX="FX_RailGunHit"/>
 			<DamageNugget
 				Damage="225.0"
-				Radius="1.0"
+				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="CANNON"
 				DamageFXType="GDI_RAILGUN"
@@ -520,7 +520,7 @@ DAMAGE TYPES
 			MinSeconds="0.25s"
 			MaxSeconds="0.25s" />
 		<ClipReloadTime
-			MinSeconds="2.1s"
+			MinSeconds="2.0s"
 			MaxSeconds="2.3s" />
 		<Nuggets>
 			<ActivateLaserNugget
@@ -528,7 +528,7 @@ DAMAGE TYPES
 				LaserId="0"/>
 			<DamageNugget
 				Damage="900.0"
-				Radius="1.0"
+				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL" >
@@ -558,7 +558,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSquadRangefinder"
 		Name="ZoneRaiderSquadRangefinder"
-		AttackRange="250"
+		AttackRange="260"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -573,7 +573,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSquadRangefinder_Upgraded"
 		Name="ZoneRaiderSquadRangefinder_Upgraded"
-		AttackRange="310"
+		AttackRange="320"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -589,7 +589,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSonicRifle"
 		Name="ZoneRaiderSonicRifle"
-		AttackRange="300.0"
+		AttackRange="310.0"
 		WeaponSpeed="600.0"
 		PreAttackType="PER_SHOT"
 		ClipSize="1"
@@ -632,7 +632,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSonicRifle_Upgraded"
 		Name="ZoneRaiderSonicRifle_Upgraded"
-		AttackRange="360.0"
+		AttackRange="370.0"
 		WeaponSpeed="600.0"
 		PreAttackType="PER_SHOT"
 		ClipSize="1"
@@ -698,13 +698,13 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 				  			  
 				<!-- Weaker vs inf -->				
-				<DamageScalarDetails Scalar= "40%">
+				<DamageScalarDetails Scalar= "50%">
 					<Filter Rule="NONE" 
 						Include="INFANTRY" 
 						Exclude="ARCHER">          
 					</Filter>
 				</DamageScalarDetails>
-				<DamageScalarDetails Scalar= "50%">
+				<DamageScalarDetails Scalar= "62.5%">
 					<Filter Rule="NONE" 
 						Include="ARCHER">          
 					</Filter>
@@ -825,8 +825,8 @@ DAMAGE TYPES
 			MinSeconds="0.2s"
 			MaxSeconds="0.3s" />
 		<ClipReloadTime
-			MinSeconds="1.3s"
-			MaxSeconds="1.5s" />
+			MinSeconds="1.2s"
+			MaxSeconds="1.4s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="ZoneRaiderSonicRifleProjectile"
@@ -869,13 +869,13 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 				  			  
 				<!-- Weaker vs inf -->				
-				<DamageScalarDetails Scalar= "40%">
+				<DamageScalarDetails Scalar= "50%">
 					<Filter Rule="NONE" 
 						Include="INFANTRY" 
 						Exclude="ARCHER">          
 					</Filter>
 				</DamageScalarDetails>
-				<DamageScalarDetails Scalar= "50%">
+				<DamageScalarDetails Scalar= "62.5%">
 					<Filter Rule="NONE" 
 						Include="ARCHER">          
 					</Filter>
@@ -1367,7 +1367,7 @@ DAMAGE TYPES
 		id="OrcaEchoCannon"
 		Name="OrcaEchoCannon"
 		AttackRange="250.0"
-		WeaponSpeed="750.0"
+		WeaponSpeed="800.0"
 		MinWeaponSpeed="600"
 		MaxWeaponSpeed="610"
 		PreAttackType="PER_SHOT"
@@ -1386,8 +1386,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="1.33s"
-				MaxSeconds="1.33s" />
+				MinSeconds="1.2s"
+				MaxSeconds="1.2s" />
 		<ClipReloadTime
 				MinSeconds="6s"
 				MaxSeconds="6s" />
@@ -1456,7 +1456,7 @@ DAMAGE TYPES
 		id="OrcaHardpointsUpgradedEchoCannon"
 		Name="OrcaHardpointsUpgradedEchoCannon"
 		AttackRange="250.0"
-		WeaponSpeed="750.0"
+		WeaponSpeed="800.0"
 		MinWeaponSpeed="600"
 		MaxWeaponSpeed="610"
 		PreAttackType="PER_SHOT"
@@ -1475,8 +1475,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="1.0s"
-				MaxSeconds="1.0s" />
+				MinSeconds="0.9s"
+				MaxSeconds="0.9s" />
 		<ClipReloadTime
 				MinSeconds="6s"
 				MaxSeconds="6s" />
@@ -1772,7 +1772,7 @@ DAMAGE TYPES
 				HitGroundFX="FX_RailGunHit"/>
 			<DamageNugget
 				Damage="700.0"
-				Radius="1.0"
+				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL" >
@@ -1883,7 +1883,7 @@ DAMAGE TYPES
 				HitGroundFX="FX_RailGunHit"/>
 			<DamageNugget
 				Damage="572.0"
-				Radius="1.0"
+				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL" >
@@ -1996,7 +1996,7 @@ DAMAGE TYPES
 				HitGroundFX="FX_RailGunHit"/>
 			<DamageNugget
 				Damage="900.0"
-				Radius="1.0"
+				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL" />
@@ -6886,7 +6886,7 @@ DAMAGE TYPES
 		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS">
 		<Nuggets>
 			<DamageNugget
-				Damage="500.0"
+				Damage="540.0"
 				Radius="20"
 				DamageType="CANNON"
 				DamageFXType="ALIEN_PLASMADISK"
@@ -10187,8 +10187,8 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="1.2s"
-				MaxSeconds="1.2s" />
+				MinSeconds="1.5s"
+				MaxSeconds="1.5s" />
 		<ClipReloadTime
 				MinSeconds="2.2s"
 				MaxSeconds="2.5s" />
@@ -10216,14 +10216,14 @@ DAMAGE TYPES
 		>
 		<Nuggets>
 			<DamageNugget
-				Damage="1200.0"
+				Damage="1600.0"
 				Radius="30.0"
 				DamageTaperOff="10.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="CANNON"
 				DamageFXType="GDI_CANNON"
 				DeathType="NORMAL">
-				<DamageScalarDetails Scalar= "40%">
+				<DamageScalarDetails Scalar= "25%">
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY"
@@ -11860,7 +11860,7 @@ DAMAGE TYPES
 				HitGroundFX="FX_RailGunHit"/>
 			<DamageNugget
 				Damage="625.0"
-				Radius="1.0"
+				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="GDI_RAILGUN"
 				DeathType="NORMAL" >				
