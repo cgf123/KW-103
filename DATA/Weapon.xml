@@ -8023,7 +8023,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -8058,7 +8058,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -8141,7 +8141,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -8176,7 +8176,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -8254,7 +8254,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -8289,7 +8289,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>	
 
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter 
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
@@ -8526,7 +8526,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>		
 				
 				<!-- Very Heavy Armor -->
-				<DamageScalarDetails Scalar= "105%">
+				<DamageScalarDetails Scalar= "110%">
 					<Filter 
 						Rule="NONE">			
 						<IncludeThing>AlienAnnihilatorTripod</IncludeThing>
@@ -8536,7 +8536,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 				
 				<!-- Very Heavy Armor -->
-				<DamageScalarDetails Scalar= "90%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="NONE">			
 						<IncludeThing>NODAvatar</IncludeThing>
@@ -8785,32 +8785,21 @@ DAMAGE TYPES
 			MinSeconds="0.5s"
 			MaxSeconds="0.5s" />
 		<ClipReloadTime
-			MinSeconds="1.0s"
-			MaxSeconds="1.5s" />
+			MinSeconds="1.2s"
+			MaxSeconds="1.3s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				HitGroundFX="FX_AlienTibLaserGroundHit"/>
 			<DamageNugget
 				Damage="290.0"
-				Radius="0.0"
+				Radius="5.0"
 				DelayTimeSeconds="0s"
 				DamageType="CANNON"
-				DamageFXType="NOD_MACHINEGUN" >
-				<DamageScalarDetails Scalar= "37.5%">
-					<Filter Rule="NONE" Include="MADE_OF_WOOD">
-						<IncludeThing>AlienStormrider</IncludeThing>
-						<IncludeThing>AlienDevastatorWarship</IncludeThing>
-						<IncludeThing>AlienMothership</IncludeThing>
-						<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
-						<IncludeThing>AlienMCV</IncludeThing>
-						<IncludeThing>Traveler59Stormrider</IncludeThing>
-						<IncludeThing>Traveler59DevastatorWarship</IncludeThing>
-						<IncludeThing>Traveler59Mothership</IncludeThing>
-						<IncludeThing>Traveler59PlanetaryAssaultCarrier</IncludeThing>
-						<IncludeThing>Traveler59MCV</IncludeThing>
-						<IncludeThing>Reaper17Stormrider</IncludeThing>
-						<IncludeThing>Reaper17Mothership</IncludeThing>
-						<IncludeThing>Reaper17MCV</IncludeThing>
+				DamageFXType="ALIEN_ION" >
+				<DamageScalarDetails Scalar= "40%">
+					<Filter 
+						Rule="ANY" 
+						Include="MADE_OF_WOOD">
 					</Filter>
 				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar="200%">
@@ -8844,7 +8833,7 @@ DAMAGE TYPES
 		AutoReloadsClip="AUTO"
 		CanFireWhileMoving="true"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_INFANTRY ANTI_AIRBORNE_VEHICLE ANTI_PROJECTILE ANTI_MINE">
-		<ClipReloadTime
+		<FiringDuration
 			MinSeconds="1.25s"
 			MaxSeconds="1.95s"
 		/>
@@ -8855,21 +8844,10 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DeathType="BURNED"
 				DamageFXType="ALIEN_ION">			
-				<DamageScalarDetails Scalar= "37.5%">
-					<Filter Rule="NONE" Include="MADE_OF_WOOD">
-						<IncludeThing>AlienStormrider</IncludeThing>
-						<IncludeThing>AlienDevastatorWarship</IncludeThing>
-						<IncludeThing>AlienMothership</IncludeThing>
-						<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
-						<IncludeThing>AlienMCV</IncludeThing>
-						<IncludeThing>Traveler59Stormrider</IncludeThing>
-						<IncludeThing>Traveler59DevastatorWarship</IncludeThing>
-						<IncludeThing>Traveler59Mothership</IncludeThing>
-						<IncludeThing>Traveler59PlanetaryAssaultCarrier</IncludeThing>
-						<IncludeThing>Traveler59MCV</IncludeThing>
-						<IncludeThing>Reaper17Stormrider</IncludeThing>
-						<IncludeThing>Reaper17Mothership</IncludeThing>
-						<IncludeThing>Reaper17MCV</IncludeThing>
+				<DamageScalarDetails Scalar= "40%">
+					<Filter 
+						Rule="ANY" 
+						Include="MADE_OF_WOOD">
 					</Filter>
 				</DamageScalarDetails>		
 				
@@ -8919,23 +8897,10 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DeathType="BURNED"
 				DamageFXType="ALIEN_ION">
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter
-						Rule="NONE"
+						Rule="ANY"
 						Include="MADE_OF_WOOD">
-						<IncludeThing>AlienStormrider</IncludeThing>
-						<IncludeThing>AlienDevastatorWarship</IncludeThing>
-						<IncludeThing>AlienMothership</IncludeThing>
-						<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
-						<IncludeThing>AlienMCV</IncludeThing>
-						<IncludeThing>Traveler59Stormrider</IncludeThing>
-						<IncludeThing>Traveler59DevastatorWarship</IncludeThing>
-						<IncludeThing>Traveler59Mothership</IncludeThing>
-						<IncludeThing>Traveler59PlanetaryAssaultCarrier</IncludeThing>
-						<IncludeThing>Traveler59MCV</IncludeThing>
-						<IncludeThing>Reaper17Stormrider</IncludeThing>
-						<IncludeThing>Reaper17Mothership</IncludeThing>
-						<IncludeThing>Reaper17MCV</IncludeThing>
 					</Filter>
 				</DamageScalarDetails>
 				
@@ -13921,7 +13886,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="NOD_MACHINEGUN"
 				DeathType="NORMAL" >	
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
@@ -13969,7 +13934,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="NOD_LASER"
 				DeathType="LASERED" >	
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
@@ -14019,7 +13984,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="NOD_PARTICLEBM"
 				DeathType="LASERED" >	
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />
@@ -14067,7 +14032,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="NOD_PARTICLEBM"
 				DeathType="LASERED" >
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" />

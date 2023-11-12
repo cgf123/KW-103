@@ -502,7 +502,7 @@
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
 					<TurretSettings
-						TurretTurnRate="200"
+						TurretTurnRate="360"
 						TurretPitchRate="100"
 						MinimumPitch="-20d"
 						PitchHeight="35%"
@@ -651,7 +651,7 @@
 		<Body>
 			<ActiveBody
 				id="3E81637F"
-				MaxHealth="2500"
+				MaxHealth="2400"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

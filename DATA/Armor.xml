@@ -2261,10 +2261,10 @@ DAMAGE TYPES
 			Percent="40" />					
 		<Armor
 			Damage="GRENADE"
-			Percent="30" />
+			Percent="26" />
 		<Armor
 			Damage="FLAME"
-			Percent="40%" />				
+			Percent="35%" />				
 		<Armor
 			Damage="GUN"
 			Percent="25" />
@@ -2488,7 +2488,6 @@ DAMAGE TYPES
 			Percent="1" />			
 	</ArmorTemplate>	
 
-	<!-- NOTE: 3800hp -->
 	<ArmorTemplate
 		id="AlienStormriderArmor"
 		Default="100" >
@@ -2503,10 +2502,10 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="GRENADE"
-			Percent="135" />	
+			Percent="133" />	
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="133" />				
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -2522,10 +2521,10 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="GRENADE"
-			Percent="135" />		
+			Percent="133" />		
 		<Armor
 			Damage="FLAME"
-			Percent="120" />						
+			Percent="133" />						
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -2550,10 +2549,10 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="GRENADE"
-			Percent="135" />	
+			Percent="133" />	
 		<Armor
 			Damage="FLAME"
-			Percent="120" />			
+			Percent="133" />			
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -2581,7 +2580,7 @@ DAMAGE TYPES
 			Percent="67" />	
 		<Armor
 			Damage="FLAME"
-			Percent="60" />					
+			Percent="67" />					
 		<Armor
 			Damage="GUN"
 			Percent="50" />
@@ -2603,10 +2602,10 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="GRENADE"
-			Percent="135" />	
+			Percent="133" />	
 		<Armor
 			Damage="FLAME"
-			Percent="120" />				
+			Percent="133" />				
 		<Armor
 			Damage="GUN"
 			Percent="100" />
@@ -2634,7 +2633,7 @@ DAMAGE TYPES
 			Percent="67" />	
 		<Armor
 			Damage="FLAME"
-			Percent="60" />		
+			Percent="67" />		
 		<Armor
 			Damage="GUN"
 			Percent="50" />
@@ -2656,10 +2655,10 @@ DAMAGE TYPES
 			Percent="100" />
 		<Armor
 			Damage="GRENADE"
-			Percent="135" />	
+			Percent="133" />	
 		<Armor
 			Damage="FLAME"
-			Percent="120" />					
+			Percent="133" />					
 		<Armor
 			Damage="GUN"
 			Percent="100" />
