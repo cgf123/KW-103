@@ -4890,7 +4890,7 @@ DAMAGE TYPES
 		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		  ReAcquireDetailType="PRE_FIRE"
 		  ClipSize="1"
-		  AcceptableAimDelta="10d"
+		  AcceptableAimDelta="15d"
 		  CanFireWhileMoving="true">
 		<FiringDuration
 			MinSeconds="0.75s"
@@ -4968,7 +4968,7 @@ DAMAGE TYPES
 		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		  ReAcquireDetailType="PRE_FIRE"
 		  ClipSize="1"
-		  AcceptableAimDelta="10d"
+		  AcceptableAimDelta="15d"
 		  CanFireWhileMoving="true">
 		<FiringDuration
 			MinSeconds="0.75s"
@@ -5039,13 +5039,12 @@ DAMAGE TYPES
 	<WeaponTemplate
 	id="ShockTrooperRangefinder"
 	Name="ShockTrooperRangefinder"
-	AttackRange="250"
+	AttackRange="240"
 	LeechRangeWeapon="true"
 	AcceptableAimDelta="45d"
 	AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
 	CanFireWhileMoving="true"
-	FinishAttackOnceStarted="false"
- 		>
+	FinishAttackOnceStarted="false">
 		<FiringDuration
 				MinSeconds="1s"
 				MaxSeconds="1s" />
@@ -5055,12 +5054,12 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienShockTrooperPlasmaDisk"
 		Name="AlienShockTrooperPlasmaDisk"
-		AttackRange="310.0"
+		AttackRange="300.0"
 		WeaponSpeed="400.0"
 		FireSound="AudioEvent:ALI_ShockTrooper_PlasmaDiskFire"
 		FireFX="FX_AlienPlasmaDiskFire"
-		AcceptableAimDelta="20d"
-		CanFireWhileMoving="false"		
+		AcceptableAimDelta="45d"
+		CanFireWhileMoving="true"		
 		FireVeteranFX="FX_AlienPlasmaDiskFireHeroic"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -5122,17 +5121,17 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="AlienShockTrooperProtonCannon"
 		Name="AlienShockTrooperProtonCannon"
-		AttackRange="310.0"
+		AttackRange="300.0"
 		WeaponSpeed="400.0"
 		FireSound="Multisound:ALI_ShockTrooper_ProtonCannonFireMS"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
-		CanFireWhileMoving="false"
-		AcceptableAimDelta="20d"
+		CanFireWhileMoving="true"
+		AcceptableAimDelta="45d"
 		ClipSize="1">	
 		<PreAttackDelay
 			MinSeconds="0.1s"
-			MaxSeconds="0.1s" />			
+			MaxSeconds="0.1s" />	
 		<FiringDuration
 			MinSeconds="1.15s"
 			MaxSeconds="1.15s" />
