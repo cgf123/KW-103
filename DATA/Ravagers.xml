@@ -1065,7 +1065,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="120"
+				MaxHealth="150"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -2311,7 +2311,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="120"
+				MaxHealth="150"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -3710,7 +3710,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="120"
+				MaxHealth="150"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

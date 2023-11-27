@@ -2735,10 +2735,6 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="INFANTRY" />
 			</DamageContainedNugget>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="100"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -2781,10 +2777,6 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="INFANTRY" />
 			</DamageContainedNugget>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="100"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -2831,10 +2823,6 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="INFANTRY" />
 			</DamageContainedNugget>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="100"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>	
 	
@@ -2877,10 +2865,6 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="INFANTRY" />
 			</DamageContainedNugget>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="100"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>		
 	
@@ -2927,10 +2911,6 @@ DAMAGE TYPES
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="100"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -2966,10 +2946,6 @@ DAMAGE TYPES
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="100"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -3049,10 +3025,6 @@ DAMAGE TYPES
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="100"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -3112,10 +3084,6 @@ DAMAGE TYPES
 			<ProjectileNugget
 				WarheadTemplate="NODFlameTankFlamerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="100"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -3188,10 +3156,6 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="INFANTRY" />
 			</DamageContainedNugget>	
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="100"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>		
 
@@ -3239,10 +3203,6 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="INFANTRY" />
 			</DamageContainedNugget>	
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="100"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>			
 	
@@ -3258,7 +3218,7 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
 		CanFireWhileMoving="true"
 		FinishAttackOnceStarted="false"
-		ReAcquireDetailType="PER_CLIP"
+		ReAcquireDetailType="PER_CLIP"		
  		>
 		<FiringDuration
 			MinSeconds="1.0s"
@@ -3271,6 +3231,7 @@ DAMAGE TYPES
 		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
+		  AntiMask="ANTI_GROUND ANTI_STRUCTURE"		  
 		  ClipSize="20"
 		  FireSound="AudioEvent:NOD_BlackHand_FlameWeaponStart"
 		  AcceptableAimDelta="10d"
@@ -3329,10 +3290,6 @@ DAMAGE TYPES
 			<ProjectileNugget
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="25"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 		
@@ -3342,6 +3299,7 @@ DAMAGE TYPES
 		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
+		  AntiMask="ANTI_GROUND ANTI_STRUCTURE"			  
 		  ClipSize="20"
 		  FireSound="AudioEvent:NOD_BlackHand_FlameWeaponStart"
 		  AcceptableAimDelta="10d"
@@ -3384,10 +3342,6 @@ DAMAGE TYPES
 			<ProjectileNugget
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="25"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>			
 		
@@ -3397,6 +3351,7 @@ DAMAGE TYPES
 		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
+		  AntiMask="ANTI_GROUND ANTI_STRUCTURE"			  
 		  ClipSize="20"
 		  FireSound="AudioEvent:NOD_BlackHand_FlameWeaponStart"
 		  AcceptableAimDelta="10d"
@@ -3463,10 +3418,6 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="INFANTRY" />
 			</DamageContainedNugget>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="25"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -3476,6 +3427,7 @@ DAMAGE TYPES
 		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
+		  AntiMask="ANTI_GROUND ANTI_STRUCTURE"			  
 		  ClipSize="20"
 		  FireSound="AudioEvent:NOD_BlackHand_FlameWeaponStart"
 		  AcceptableAimDelta="10d"
@@ -3526,10 +3478,6 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="INFANTRY" />
 			</DamageContainedNugget>
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="25"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>			
 
@@ -3541,6 +3489,7 @@ DAMAGE TYPES
 		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
+		  AntiMask="ANTI_GROUND ANTI_STRUCTURE"			  
 		  ClipSize="20"
 		  FireSound="AudioEvent:NOD_BlackHand_FlameWeaponStart"
 		  AcceptableAimDelta="10d"
@@ -3596,10 +3545,6 @@ DAMAGE TYPES
 			<ProjectileNugget
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
-			<SuppressionNugget
-				Radius="16.0"
-				Suppression="25"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -3609,6 +3554,7 @@ DAMAGE TYPES
 		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
+		  AntiMask="ANTI_GROUND ANTI_STRUCTURE"			  
 		  ClipSize="20"
 		  FireSound="AudioEvent:NOD_BlackHand_FlameWeaponStart"
 		  AcceptableAimDelta="10d"
@@ -3651,10 +3597,6 @@ DAMAGE TYPES
 			<ProjectileNugget
 				WarheadTemplate="NODBlackHandFlamethrowerWarhead"
 				ProjectileTemplate="NODBlackHandFlamerProjectile"/>
-			<SuppressionNugget
-				Radius="16.0"
-				Suppression="25"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>	
 	
@@ -3664,6 +3606,7 @@ DAMAGE TYPES
 		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS ALLIES"
+		  AntiMask="ANTI_GROUND ANTI_STRUCTURE"	
 		  ClipSize="20"
 		  FireSound="AudioEvent:NOD_BlackHand_FlameWeaponStart"
 		  AcceptableAimDelta="10d"
@@ -3727,10 +3670,6 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="INFANTRY" />
 			</DamageContainedNugget>			
-			<SuppressionNugget
-				Radius="16.0"
-				Suppression="25"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -3740,6 +3679,7 @@ DAMAGE TYPES
 		  AttackRange="240.0"
 		  WeaponSpeed="999999.0"
 		  RadiusDamageAffects="ENEMIES NEUTRALS"
+		  AntiMask="ANTI_GROUND ANTI_STRUCTURE"			  
 		  ClipSize="20"
 		  FireSound="AudioEvent:NOD_BlackHand_FlameWeaponStart"
 		  AcceptableAimDelta="10d"
@@ -3790,10 +3730,6 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="INFANTRY" />
 			</DamageContainedNugget>			
-			<SuppressionNugget
-				Radius="16.0"
-				Suppression="25"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -3801,7 +3737,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODBlackHandFlamethrowerWarhead"
 		Name="NODBlackHandFlamethrowerWarhead"
-		HitStoredTarget="true"
+		HitStoredTarget="true"		
 		RadiusDamageAffects="ENEMIES NEUTRALS" >
 		<Nuggets>
 			<DamageContainedNugget
@@ -3855,10 +3791,6 @@ DAMAGE TYPES
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
 				DeathType="BURNED" />
-			<SuppressionNugget
-				Radius="40.0"
-				Suppression="200"
-				DurationSeconds="5s" />
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -9438,7 +9370,7 @@ DAMAGE TYPES
 	<WeaponTemplate 
 		id="NODWarmechTibWeaponRight"
 		Name="NODWarmechTibWeaponRight"
-		AttackRange="250.0"
+		AttackRange="275.0"
 		WeaponSpeed="999999.0"
 		FiringLoopSound="Multisound:NOD_Redeemer_TiberiumTrooperWeaponMS"
 		FiringLoopSoundContinuesDuringReload="false"
@@ -9543,7 +9475,7 @@ DAMAGE TYPES
 	<WeaponTemplate 
 		id="NODWarmechTibWeaponLeft"
 		Name="NODWarmechTibWeaponLeft"
-		AttackRange="250.0"
+		AttackRange="275.0"
 		WeaponSpeed="999999.0"
 		FiringLoopSound="Multisound:NOD_Redeemer_TiberiumTrooperWeaponMS"
 		FiringLoopSoundContinuesDuringReload="false"

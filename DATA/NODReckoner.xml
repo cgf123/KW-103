@@ -102,7 +102,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="PLAYER_UPGRADE" />
 		<LocomotorSet
-			Speed="105"
+			Speed="100"
 			Condition="NORMAL"
 			Locomotor="NODReckonerLocomotor" />
 		<LocomotorSet
@@ -1690,7 +1690,7 @@
 			<!-- SecondChanceHeal applies ONLY to auto deploy -->
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2240"
+				MaxHealth="2400"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
