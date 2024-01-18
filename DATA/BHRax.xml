@@ -260,7 +260,7 @@
 			</ModelConditionUpgrade>
 			<ArmorUpgrade
 				id="0xF3CB043F"
-				Permanent="True"
+				Permanent="False"
 				ArmorSetFlag="PLAYER_UPGRADE">
 				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
 			</ArmorUpgrade>

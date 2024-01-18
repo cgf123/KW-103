@@ -1159,6 +1159,8 @@
 			<TemporarilyDefectUpdate
 				id="3473AFD2"
 				DefectionFrameCount="225" />
+			
+			<!--
 			<WeaponSetUpdate
 				id="720F4A50">
 				<WeaponSlotHardpoint
@@ -1174,80 +1176,8 @@
 						IsPlayerUpgradePermanent="False" />
 				</WeaponSlotHardpoint>
 			</WeaponSetUpdate>
-
-			<!-- Added dispatch for vs weak and strong capture -->
-			<SpecialPowerDispatchSpecialPower
-				id="AE2D95A8"
-				SpecialPowerTemplate="SpecialPower_CultistMindControlGetInRange"
-				AntiCategory=""
-				AntiFX=""
-				AttributeModifier=""
-				AttributeModifierRange="0"
-				AttributeModifierFX=""
-				WeatherDuration="0"
-				InitiateFX=""
-				TriggerFX=""
-				SetModelCondition="TOPPLED"
-				SetModelConditionTime="0s"
-				GiveLevels="0"
-				ChangeWeather="NORMAL"
-				OnTriggerRechargeSpecialPower=""
-				BurnDecayModifier="0"
-				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="True"
-				StartsPaused="False"
-				ReEnableAntiCategory="False"
-				AttributeModifierAffectsSelf="False"
-				AttributeModifierWeatherBased="False"
-				TargetEnemy="False"
-				TargetAllSides="False"
-				DisableDuringAnimDuration="False"
-				IdleWhenStartingPower="False"
-				AffectGood="False"
-				AffectEvil="False"
-				AffectAllies="True"
-				AvailableAtStart="True"
-				AdjustVictim="False"
-				UseDistanceFromCommandCenter="False"
-				ChildModuleHandlesFX="False"
-				RequireAllPowersToFunction="False">
-				<AttributeModifierAffects
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterMP
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterStrategic
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_CultistMindControl" />
-				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_CultistMindControl_Weak" />				
-			</SpecialPowerDispatchSpecialPower>			
+			-->
 			
-			<!--
 			<SpecialPower
 				id="3A60150D"
 				SpecialPowerTemplate="SpecialPower_CultistMindControl"
@@ -1313,10 +1243,11 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</SpecialPower>
+
 			<ActivateModuleSpecialPower
 				id="E5550C5E"
 				GrabPassengerHealGain="0%"
-				SpecialPowerTemplate="SpecialPower_CultistMindControl"
+				SpecialPowerTemplate="SpecialPower_CultistMindControlGetInRange"
 				StartAbilityRange="250"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
@@ -1364,127 +1295,7 @@
 					ModuleId="B465A870"
 					TriggerType="TARGET_OBJECT"
 					TriggerAtTargetPosition="True" />
-			</ActivateModuleSpecialPower>
-			
-			
-			<SpecialPower
-				id="3A60150E"
-				SpecialPowerTemplate="SpecialPower_CultistMindControl_Weak"
-				AntiCategory=""
-				AntiFX=""
-				AttributeModifier=""
-				AttributeModifierRange="0"
-				AttributeModifierFX=""
-				WeatherDuration="0"
-				InitiateFX=""
-				TriggerFX=""
-				SetModelCondition="TOPPLED"
-				SetModelConditionTime="0s"
-				GiveLevels="0"
-				ChangeWeather="NORMAL"
-				OnTriggerRechargeSpecialPower=""
-				BurnDecayModifier="0"
-				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="True"
-				StartsPaused="False"
-				ReEnableAntiCategory="False"
-				AttributeModifierAffectsSelf="False"
-				AttributeModifierWeatherBased="False"
-				TargetEnemy="False"
-				TargetAllSides="False"
-				DisableDuringAnimDuration="False"
-				IdleWhenStartingPower="False"
-				AffectGood="False"
-				AffectEvil="False"
-				AffectAllies="True"
-				AvailableAtStart="True"
-				AdjustVictim="False"
-				UseDistanceFromCommandCenter="False"
-				ChildModuleHandlesFX="False">
-				<AttributeModifierAffects
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterMP
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterStrategic
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-			</SpecialPower>
-			<ActivateModuleSpecialPower
-				id="E5550C5F"
-				GrabPassengerHealGain="0%"
-				SpecialPowerTemplate="SpecialPower_CultistMindControl_Weak"
-				StartAbilityRange="200"
-				AbilityAbortRange="1E+07"
-				PreparationTime="0s"
-				PersistentPrepTime="0s"
-				PersistentCount="-1"
-				PackTime="0s"
-				UnpackTime="0s"
-				PreTriggerUnstealthTime="0s"
-				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE"
-				PackUnpackVariationFactor="0"
-				ParalyzeDurationWhenCompleted="0s"
-				ParalyzeDurationWhenAborted="0s"
-				SpecialObject=""
-				SpecialObjectAttachToBone=""
-				MaxSpecialObjects="1"
-				EffectDuration="0s"
-				EffectValue="1"
-				EffectRange="0"
-				FleeRangeAfterCompletion="0"
-				DisableFXParticleSystem=""
-				PackSound=""
-				UnpackSound=""
-				PrepSoundLoop=""
-				TriggerSound=""
-				ActiveLoopSound=""
-				AwardXPForTriggering="0"
-				SkillPointsForTriggering="-1"
-				UnpackingVariation="0"
-				FreezeAfterTriggerDuration="0s"
-				RequiredConditions=""
-				RejectedConditions=""
-				SetObjectStatusOnTrigger=""
-				ClearObjectStatusOnExit=""
-				ContactPointOverride=""
-				TriggerAttributeModifier=""
-				AttributeModifierDuration="0s"
-				ChainedButton=""
-				RequireAndSpendTiberiumOnCaster="0"
-				DisabledTypesToProcess="HELD"
-				DisabledTypesToContinueSoundsFor="HELD"
-				StartRechargeOnExit="False"
-				GoIdleInStartPreparation="True"
-				FaceTarget="True">
-				<SpecialPowerModules
-					ModuleId="B465A870"
-					TriggerType="TARGET_OBJECT"
-					TriggerAtTargetPosition="True" />
-			</ActivateModuleSpecialPower>
-			
+			</ActivateModuleSpecialPower>			
 			
 			<TemporaryOwnerSpecialPower
 				id="B465A870"

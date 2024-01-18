@@ -866,10 +866,10 @@
 	<SpecialPowerTemplate
 		id="SpecialPower_LightningSpike"
 		TargetType="LOCATION"
-		ReloadTime="90s"
+		ReloadTime="120s"
 		Flags="IS_PLAYER_POWER WATER_OK SHARED_SYNC"
 		RadiusCursorRadius="25"
-		Money="-1200">
+		Money="-1500">
 	</SpecialPowerTemplate>		
 	
 	<SpecialPowerTemplate
@@ -1197,7 +1197,7 @@
 
 
 		
-	<!-- !! USED AS DISPATCHER !! -->
+	<!-- !! UNUSED !! -->
 	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateManipulateObject" -->
 	<SpecialPowerTemplate
 		id="SpecialPower_CultistMindControlGetInRange"
@@ -1206,7 +1206,8 @@
 		DisallowedTargetObjectStatus="UNATTACKABLE"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x1D616110"
 		WaypointModeTerminal="false"
-		Flags="NEEDS_OBJECT_FILTER"
+		Flags="NEEDS_OBJECT_FILTER NO_FORBIDDEN_MODEL_STATES"
+		DisallowedTargetModelStates="DYING"
 		PreventConditions="AIRBORNE_TARGET IGNORE_AI_COMMAND">
 		<ObjectFilter
 			Rule="ANY"
@@ -1214,13 +1215,30 @@
 			RejectStatusBitFlags="IMMOBILE"		
 			Include="VEHICLE INFANTRY"
 			Exclude="AIRCRAFT METAUNIT STRUCTURE HUSK">
+			<ExcludeThing>SubwayNode</ExcludeThing>
+			<ExcludeThing>AlienMastermind</ExcludeThing>
+			<ExcludeThing>GDICommando</ExcludeThing>
+			<ExcludeThing>NODCommando</ExcludeThing>
+			<ExcludeThing>Viceroid</ExcludeThing>
+			<ExcludeThing>AlienWormHole</ExcludeThing>
+			<ExcludeThing>AlienMothership</ExcludeThing>
+			<ExcludeThing>Traveler59BlinkMastermind</ExcludeThing>
+			<ExcludeThing>Traveler59Cultist</ExcludeThing>
+			<ExcludeThing>Traveler59CultistSquad</ExcludeThing>
+			<ExcludeThing>BlackHandCommando</ExcludeThing>
+			<ExcludeThing>MarkedOfKaneCommando</ExcludeThing>
+			<ExcludeThing>ZOCOMCommando</ExcludeThing>			
+			
 			<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
 			<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
 			<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
-			<ExcludeThing>AlienMillipedeBody</ExcludeThing>				
+			<ExcludeThing>AlienMillipedeBody</ExcludeThing>	
+
+			<IncludeThing>AlienMillipedeHead</IncludeThing> 				
 		</ObjectFilter>
 	</SpecialPowerTemplate>			
 	
+	<!-- !! USED AS DISPATCHER !! -->	
 	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateManipulateObject" -->
 	<SpecialPowerTemplate
 		id="SpecialPower_CultistMindControl"
@@ -1229,7 +1247,85 @@
 		DisallowedTargetObjectStatus="UNATTACKABLE"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x1D616110"
 		WaypointModeTerminal="false"
-		Flags="NEEDS_OBJECT_FILTER"
+		Flags="NEEDS_OBJECT_FILTER NO_FORBIDDEN_MODEL_STATES"
+		DisallowedTargetModelStates="DYING"
+		PreventConditions="AIRBORNE_TARGET IGNORE_AI_COMMAND">
+		<ObjectFilter
+			Rule="ANY"
+			Relationship="ENEMIES NEUTRAL"
+			RejectStatusBitFlags="IMMOBILE"		
+			Include="VEHICLE INFANTRY"
+			Exclude="AIRCRAFT METAUNIT STRUCTURE HUSK">
+			<ExcludeThing>SubwayNode</ExcludeThing>
+			<ExcludeThing>AlienMastermind</ExcludeThing>
+			<ExcludeThing>GDICommando</ExcludeThing>
+			<ExcludeThing>NODCommando</ExcludeThing>
+			<ExcludeThing>Viceroid</ExcludeThing>
+			<ExcludeThing>AlienWormHole</ExcludeThing>
+			<ExcludeThing>AlienMothership</ExcludeThing>
+			<ExcludeThing>Traveler59BlinkMastermind</ExcludeThing>
+			<ExcludeThing>Traveler59Cultist</ExcludeThing>
+			<ExcludeThing>Traveler59CultistSquad</ExcludeThing>
+			<ExcludeThing>BlackHandCommando</ExcludeThing>
+			<ExcludeThing>MarkedOfKaneCommando</ExcludeThing>
+			<ExcludeThing>ZOCOMCommando</ExcludeThing>			
+			
+			<ExcludeThing>AlienCustomizableVehicle</ExcludeThing>
+			<ExcludeThing>Reaper17CustomizableVehicle</ExcludeThing>
+			<ExcludeThing>Traveler59CustomizableVehicle</ExcludeThing>	
+			<ExcludeThing>AlienMillipedeBody</ExcludeThing>	
+
+			<IncludeThing>AlienMillipedeHead</IncludeThing> 		
+
+			<IncludeThing>AlienAnnihilatorTripod</IncludeThing>
+			<IncludeThing>AlienAssimilator</IncludeThing>
+			<IncludeThing>AlienBuzzers</IncludeThing>
+			<IncludeThing>AlienCorrupter</IncludeThing>
+			<IncludeThing>AlienDevourerTank</IncludeThing>
+			<IncludeThing>AlienExplorer</IncludeThing>
+			<IncludeThing>AlienGunWalker</IncludeThing>
+			<IncludeThing>AlienHarvester</IncludeThing>
+			<IncludeThing>AlienMCV</IncludeThing>
+			<IncludeThing>AlienRazorDrones</IncludeThing>
+			<IncludeThing>AlienRazorDroneSquad</IncludeThing>
+			<IncludeThing>AlienSeekerTank</IncludeThing>
+			<IncludeThing>AlienShockTrooper</IncludeThing>
+			<IncludeThing>AlienShockTrooperSquad</IncludeThing>
+			<IncludeThing>AlienStalker</IncludeThing>
+			<IncludeThing>AlienStalkerSquad</IncludeThing>
+			<IncludeThing>AlienStormrider</IncludeThing>
+			<IncludeThing>Reaper17AnnihilatorTripod</IncludeThing>
+			<IncludeThing>Reaper17Harvester</IncludeThing>
+			<IncludeThing>Reaper17ShardWalker</IncludeThing>
+			<IncludeThing>Reaper17SeekerTank</IncludeThing>
+			<IncludeThing>Reaper17DevourerTank</IncludeThing>
+			<IncludeThing>Reaper17ShockTrooper</IncludeThing>
+			<IncludeThing>Reaper17ShockTrooperSquad</IncludeThing>
+			<IncludeThing>Reaper17Stalker</IncludeThing>
+			<IncludeThing>Reaper17StalkerSquad</IncludeThing>
+			<IncludeThing>Reaper17Corrupter</IncludeThing>
+			<IncludeThing>Traveler59SeekerTank</IncludeThing>
+			<IncludeThing>Traveler59AnnihilatorTripod</IncludeThing>
+			<IncludeThing>Traveler59Harvester</IncludeThing>
+			<IncludeThing>Traveler59GunWalker</IncludeThing>
+			<IncludeThing>Traveler59Corrupter</IncludeThing>
+			<IncludeThing>Traveler59RazorDrone</IncludeThing>
+			<IncludeThing>Traveler59RazorDroneSquad</IncludeThing>
+			<IncludeThing>Traveler59ShockTrooper</IncludeThing>
+			<IncludeThing>Traveler59ShockTrooperSquad</IncludeThing>				
+		</ObjectFilter>
+	</SpecialPowerTemplate>		
+	
+	<!-- NameOfVoiceNameToUseAsInitiateIntendToDoVoice="InitiateManipulateObject" -->
+	<SpecialPowerTemplate
+		id="SpecialPower_CultistMindControl_Main"
+		TargetType="OBJECT"
+		ReloadTime="15s"
+		DisallowedTargetObjectStatus="UNATTACKABLE"
+		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x1D616110"
+		WaypointModeTerminal="false"
+		Flags="NEEDS_OBJECT_FILTER NO_FORBIDDEN_MODEL_STATES"
+		DisallowedTargetModelStates="DYING"
 		PreventConditions="AIRBORNE_TARGET IGNORE_AI_COMMAND">
 		<ObjectFilter
 			Rule="ANY"
@@ -1252,8 +1348,48 @@
 			<ExcludeThing>ZOCOMCommando</ExcludeThing>
 			
 			<ExcludeThing>AlienMillipedeHead</ExcludeThing> 
+			
+			<ExcludeThing>AlienAnnihilatorTripod</ExcludeThing>
+			<ExcludeThing>AlienAssimilator</ExcludeThing>
+			<ExcludeThing>AlienBuzzers</ExcludeThing>
+			<ExcludeThing>AlienCorrupter</ExcludeThing>
+			<ExcludeThing>AlienDevourerTank</ExcludeThing>
+			<ExcludeThing>AlienExplorer</ExcludeThing>
+			<ExcludeThing>AlienGunWalker</ExcludeThing>
+			<ExcludeThing>AlienHarvester</ExcludeThing>
+			<ExcludeThing>AlienMCV</ExcludeThing>
+			<ExcludeThing>AlienRazorDrones</ExcludeThing>
+			<ExcludeThing>AlienRazorDroneSquad</ExcludeThing>
+			<ExcludeThing>AlienSeekerTank</ExcludeThing>
+			<ExcludeThing>AlienShockTrooper</ExcludeThing>
+			<ExcludeThing>AlienShockTrooperSquad</ExcludeThing>
+			<ExcludeThing>AlienStalker</ExcludeThing>
+			<ExcludeThing>AlienStalkerSquad</ExcludeThing>
+			<ExcludeThing>AlienStormrider</ExcludeThing>
+			<ExcludeThing>Reaper17AnnihilatorTripod</ExcludeThing>
+			<ExcludeThing>Reaper17Harvester</ExcludeThing>
+			<ExcludeThing>Reaper17ShardWalker</ExcludeThing>
+			<ExcludeThing>Reaper17SeekerTank</ExcludeThing>
+			<ExcludeThing>Reaper17DevourerTank</ExcludeThing>
+			<ExcludeThing>Reaper17ShockTrooper</ExcludeThing>
+			<ExcludeThing>Reaper17ShockTrooperSquad</ExcludeThing>
+			<ExcludeThing>Reaper17Stalker</ExcludeThing>
+			<ExcludeThing>Reaper17StalkerSquad</ExcludeThing>
+			<ExcludeThing>Reaper17Corrupter</ExcludeThing>
+			<ExcludeThing>Traveler59SeekerTank</ExcludeThing>
+			<ExcludeThing>Traveler59AnnihilatorTripod</ExcludeThing>
+			<ExcludeThing>Traveler59Harvester</ExcludeThing>
+			<ExcludeThing>Traveler59BlinkMastermind</ExcludeThing>
+			<ExcludeThing>Traveler59Cultist</ExcludeThing>
+			<ExcludeThing>Traveler59CultistSquad</ExcludeThing>
+			<ExcludeThing>Traveler59GunWalker</ExcludeThing>
+			<ExcludeThing>Traveler59Corrupter</ExcludeThing>
+			<ExcludeThing>Traveler59RazorDrone</ExcludeThing>
+			<ExcludeThing>Traveler59RazorDroneSquad</ExcludeThing>
+			<ExcludeThing>Traveler59ShockTrooper</ExcludeThing>
+			<ExcludeThing>Traveler59ShockTrooperSquad</ExcludeThing>		
 		</ObjectFilter>
-	</SpecialPowerTemplate>
+	</SpecialPowerTemplate>	
 	
 	<SpecialPowerTemplate
 		id="SpecialPower_CultistMindControl_Weak"
@@ -1262,13 +1398,51 @@
 		DisallowedTargetObjectStatus="UNATTACKABLE"
 		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x1D616110"
 		WaypointModeTerminal="false"
-		Flags="NEEDS_OBJECT_FILTER"
+		Flags="NEEDS_OBJECT_FILTER NO_FORBIDDEN_MODEL_STATES"
+		DisallowedTargetModelStates="DYING"
 		PreventConditions="AIRBORNE_TARGET IGNORE_AI_COMMAND">
 		<ObjectFilter
 			Rule="ANY"		
 			Include="HEALED_BY_TIBERIUM"
 			Relationship="ENEMIES NEUTRAL">
-			<IncludeThing>AlienMillipedeHead</IncludeThing> 				
+			<IncludeThing>AlienMillipedeHead</IncludeThing> 		
+
+			<IncludeThing>AlienAnnihilatorTripod</IncludeThing>
+			<IncludeThing>AlienAssimilator</IncludeThing>
+			<IncludeThing>AlienBuzzers</IncludeThing>
+			<IncludeThing>AlienCorrupter</IncludeThing>
+			<IncludeThing>AlienDevourerTank</IncludeThing>
+			<IncludeThing>AlienExplorer</IncludeThing>
+			<IncludeThing>AlienGunWalker</IncludeThing>
+			<IncludeThing>AlienHarvester</IncludeThing>
+			<IncludeThing>AlienMCV</IncludeThing>
+			<IncludeThing>AlienRazorDrones</IncludeThing>
+			<IncludeThing>AlienRazorDroneSquad</IncludeThing>
+			<IncludeThing>AlienSeekerTank</IncludeThing>
+			<IncludeThing>AlienShockTrooper</IncludeThing>
+			<IncludeThing>AlienShockTrooperSquad</IncludeThing>
+			<IncludeThing>AlienStalker</IncludeThing>
+			<IncludeThing>AlienStalkerSquad</IncludeThing>
+			<IncludeThing>AlienStormrider</IncludeThing>
+			<IncludeThing>Reaper17AnnihilatorTripod</IncludeThing>
+			<IncludeThing>Reaper17Harvester</IncludeThing>
+			<IncludeThing>Reaper17ShardWalker</IncludeThing>
+			<IncludeThing>Reaper17SeekerTank</IncludeThing>
+			<IncludeThing>Reaper17DevourerTank</IncludeThing>
+			<IncludeThing>Reaper17ShockTrooper</IncludeThing>
+			<IncludeThing>Reaper17ShockTrooperSquad</IncludeThing>
+			<IncludeThing>Reaper17Stalker</IncludeThing>
+			<IncludeThing>Reaper17StalkerSquad</IncludeThing>
+			<IncludeThing>Reaper17Corrupter</IncludeThing>
+			<IncludeThing>Traveler59SeekerTank</IncludeThing>
+			<IncludeThing>Traveler59AnnihilatorTripod</IncludeThing>
+			<IncludeThing>Traveler59Harvester</IncludeThing>
+			<IncludeThing>Traveler59GunWalker</IncludeThing>
+			<IncludeThing>Traveler59Corrupter</IncludeThing>
+			<IncludeThing>Traveler59RazorDrone</IncludeThing>
+			<IncludeThing>Traveler59RazorDroneSquad</IncludeThing>
+			<IncludeThing>Traveler59ShockTrooper</IncludeThing>
+			<IncludeThing>Traveler59ShockTrooperSquad</IncludeThing>			
 		</ObjectFilter>
 	</SpecialPowerTemplate>	
 	
@@ -1323,21 +1497,6 @@
 			<IncludeThing>ZOCOMBattleBase</IncludeThing>				
 		</ObjectFilter>
 	</SpecialPowerTemplate>
-	
-	<SpecialPowerTemplate
-		id="SpecialPower_ManipulateObject_StructureHeavy"
-		TargetType="OBJECT"
-		ReloadTime="15s"
-		DisallowedTargetObjectStatus="UNATTACKABLE"
-		NameOfVoiceNameToUseAsInitiateIntendToDoVoice="0x1D616110"
-		WaypointModeTerminal="false"
-		Flags="NEEDS_OBJECT_FILTER">
-		<ObjectFilter
-			Rule="ANY"
-			Relationship="ENEMIES NEUTRAL"
-			Include="CONSTRUCTION_YARD">			
-		</ObjectFilter>
-	</SpecialPowerTemplate>		
 
 	<SpecialPowerTemplate
 		id="SpecialPower_ManipulateObject_Structure"
@@ -1704,7 +1863,7 @@
 		<ObjectFilter
 			Relationship="SAME_PLAYER"
 			Rule="ANY"
-			RejectModelCondition="REALLYDAMAGED">
+			RejectModelCondition="REALLYDAMAGED DAMAGED">
 			<IncludeThing>MG_NOD_WarmechFacility</IncludeThing>
 			<IncludeThing>NODConstructionYard</IncludeThing>
 			<IncludeThing>NODCrane</IncludeThing>
@@ -1756,7 +1915,7 @@
 		<ObjectFilter
 			Relationship="SAME_PLAYER"
 			Rule="ANY"
-			RejectModelCondition="REALLYDAMAGED">
+			RejectModelCondition="REALLYDAMAGED DAMAGED">
 			<IncludeThing>GDIAirTower</IncludeThing>
 			<IncludeThing>GDIArmory</IncludeThing>
 			<IncludeThing>GDIBarracks</IncludeThing>

@@ -830,131 +830,12 @@
 					RejectStatusBitFlags=""
 					AcceptModelCondition=""
 					RejectModelCondition="" />
-					<!--
-				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_ManipulateObject_StructureHeavy" />	-->
 				<SpecialPower
 					SpecialPowerTemplate="SpecialPower_ManipulateObject_Structure" />
 				<SpecialPower
 					SpecialPowerTemplate="SpecialPower_ManipulateObject_Others" />				
 			</SpecialPowerDispatchSpecialPower>				
 			
-			<SpecialPower
-				id="3A60140D"
-				SpecialPowerTemplate="SpecialPower_ManipulateObject_StructureHeavy"
-				AntiCategory=""
-				AntiFX=""
-				AttributeModifier=""
-				AttributeModifierRange="0"
-				AttributeModifierFX=""
-				WeatherDuration="0"
-				InitiateFX=""
-				TriggerFX=""
-				SetModelCondition="TOPPLED"
-				SetModelConditionTime="0s"
-				GiveLevels="0"
-				ChangeWeather="NORMAL"
-				OnTriggerRechargeSpecialPower=""
-				BurnDecayModifier="0"
-				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="True"
-				StartsPaused="False"
-				ReEnableAntiCategory="False"
-				AttributeModifierAffectsSelf="False"
-				AttributeModifierWeatherBased="False"
-				TargetEnemy="False"
-				TargetAllSides="False"
-				DisableDuringAnimDuration="False"
-				IdleWhenStartingPower="False"
-				AffectGood="False"
-				AffectEvil="False"
-				AffectAllies="True"
-				AvailableAtStart="False"
-				AdjustVictim="False"
-				UseDistanceFromCommandCenter="False"
-				ChildModuleHandlesFX="False">
-				<AttributeModifierAffects
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterMP
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterStrategic
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-			</SpecialPower>
-			<ActivateModuleSpecialPower
-				id="E5550C3E"
-				GrabPassengerHealGain="0%"
-				SpecialPowerTemplate="SpecialPower_ManipulateObject_StructureHeavy"
-				StartAbilityRange="250"
-				AbilityAbortRange="1E+07"
-				PreparationTime="3.0s"
-				PersistentPrepTime="0s"
-				PersistentCount="-1"
-				PackTime="0s"
-				UnpackTime="0s"
-				PreTriggerUnstealthTime="0s"
-				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE SHOW_PREPARATION_PROGRESS"
-				PackUnpackVariationFactor="0"
-				ParalyzeDurationWhenCompleted="0s"
-				ParalyzeDurationWhenAborted="0s"
-				SpecialObject=""
-				MaxSpecialObjects="1"
-				EffectDuration="0s"
-				EffectValue="1"
-				EffectRange="0"
-				FleeRangeAfterCompletion="0"
-				DisableFXParticleSystem=""
-				PackSound=""
-				UnpackSound=""
-				PrepSoundLoop=""
-				TriggerSound=""
-				ActiveLoopSound=""
-				AwardXPForTriggering="0"
-				SkillPointsForTriggering="-1"
-				UnpackingVariation="0"
-				FreezeAfterTriggerDuration="0s"
-				RequiredConditions=""
-				RejectedConditions=""
-				SetObjectStatusOnTrigger=""
-				ClearObjectStatusOnExit=""
-				TriggerAttributeModifier=""
-				AttributeModifierDuration="0s"
-				ChainedButton=""
-				RequireAndSpendTiberiumOnCaster="0"
-				DisabledTypesToProcess="HELD"
-				DisabledTypesToContinueSoundsFor="HELD"
-				StartRechargeOnExit="False"
-				GoIdleInStartPreparation="True"
-				FaceTarget="True">
-				<SpecialPowerModules
-					ModuleId="B465A870"
-					TriggerType="TARGET_OBJECT"
-					TriggerAtTargetPosition="True" />
-			</ActivateModuleSpecialPower>
-
 			<SpecialPower
 				id="3A60150D"
 				SpecialPowerTemplate="SpecialPower_ManipulateObject_Structure"
@@ -1327,7 +1208,7 @@
 				PreparationTime="0s"
 				PersistentPrepTime="0s"
 				PersistentCount="-1"
-				PackTime="0.25s"
+				PackTime="0s"
 				UnpackTime="0s"
 				PreTriggerUnstealthTime="0s"
 				Options=""

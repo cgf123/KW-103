@@ -442,14 +442,8 @@
 		id="AttributeModifier_InfContained"
 		Duration="3s"		
 		Category="NONE">	
-		<Modifier Type="RATE_OF_FIRE" Value="80%"/>
-	</AttributeModifier>		
-	
-	<AttributeModifier
-		id="AttributeModifier_InfContainedRev"
-		Duration="3s"		
-		Category="NONE">	
-		<Modifier Type="RATE_OF_FIRE" Value="125%"/>
+		<Modifier Type="RATE_OF_FIRE" Value="85%"/>
+		<Modifier Type="RANGE" Value="90%"/>
 	</AttributeModifier>		
 	
 	<AttributeModifier

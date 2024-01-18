@@ -326,7 +326,7 @@
 			<!-- Added dispatch for vs weak and strong capture -->
 			<SpecialPowerDispatchSpecialPower
 				id="AE2D95A8"
-				SpecialPowerTemplate="SpecialPower_CultistMindControlGetInRange"
+				SpecialPowerTemplate="SpecialPower_CultistMindControl"
 				AntiCategory=""
 				AntiFX=""
 				AttributeModifier=""
@@ -390,9 +390,9 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_CultistMindControl" />
+					SpecialPowerTemplate="SpecialPower_CultistMindControl_Weak" />					
 				<SpecialPower
-					SpecialPowerTemplate="SpecialPower_CultistMindControl_Weak" />
+					SpecialPowerTemplate="SpecialPower_CultistMindControl_Main" />
 				<!--
 				<SpecialPower
 					SpecialPowerTemplate="SpecialPower_CultistMindControl_Structure" />	-->				
@@ -401,7 +401,7 @@
 			<!-- Default range -->
 			<SpecialPower
 				id="3A60150D"
-				SpecialPowerTemplate="SpecialPower_CultistMindControl"
+				SpecialPowerTemplate="SpecialPower_CultistMindControl_Main"
 				AntiCategory=""
 				AntiFX=""
 				AttributeModifier=""
@@ -467,7 +467,7 @@
 			<ActivateModuleSpecialPower
 				id="E5550C5E"
 				GrabPassengerHealGain="0%"
-				SpecialPowerTemplate="SpecialPower_CultistMindControl"
+				SpecialPowerTemplate="SpecialPower_CultistMindControl_Main"
 				StartAbilityRange="250"
 				AbilityAbortRange="1E+07"
 				PreparationTime="0s"
@@ -587,9 +587,9 @@
 				id="E5550C5F"
 				GrabPassengerHealGain="0%"
 				SpecialPowerTemplate="SpecialPower_CultistMindControl_Weak"
-				StartAbilityRange="125"
-				AbilityAbortRange="1E+07"
-				PreparationTime="0s"
+				StartAbilityRange="250"
+				AbilityAbortRange="750"
+				PreparationTime="3s"
 				PersistentPrepTime="0s"
 				PersistentCount="-1"
 				PackTime="0s"

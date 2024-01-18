@@ -1081,7 +1081,7 @@
 		<Body>
 			<ShieldBody
 				id="B313F576"
-				MaxHealth="1200"
+				MaxHealth="1100"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1203,7 +1203,7 @@
 			IsRotatingWithObject="True"
 			LocalPlayerOnly="False" />
 		<VisionInfo
-			VisionRange="375"
+			VisionRange="400"
 			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"
@@ -2229,7 +2229,7 @@
 			IsRotatingWithObject="True"
 			LocalPlayerOnly="False" />
 		<VisionInfo
-			VisionRange="375"
+			VisionRange="400"
 			ShroudClearingRange="500"
 			VisionSide="100%"
 			VisionRear="100%"

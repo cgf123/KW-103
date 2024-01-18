@@ -2415,7 +2415,7 @@
 				id="D7169F09"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
-				Permanent="True"
+				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				ArmorSetFlag="PLAYER_UPGRADE"

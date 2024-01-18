@@ -743,16 +743,16 @@
 	
 	<!-- ###################################### -->
 	
-  <!-- OBSOLETE -->
-  <!-- This LogicCommand is not linked to a button, so can be used by AI only -->
+  <!-- This LogicCommand is the one linked to the button -->
   <LogicCommand
 		Type="SPECIAL_POWER"
 		Options="NEED_TARGET_ENEMY_OBJECT"
 		id="Command_UseCultistMindControl">
-    <SpecialPower>SpecialPower_CultistMindControlGetInRange</SpecialPower>
-  </LogicCommand>	
-	
-  <!-- This LogicCommand is the one linked to the button -->
+    <SpecialPower>SpecialPower_CultistMindControl</SpecialPower>
+  </LogicCommand>	  
+
+  <!-- OBSOLETE -->
+  <!-- This LogicCommand is not linked to a button, so can be used by AI only -->	
   <LogicCommand
   Options="NEED_TARGET_ENEMY_OBJECT"
     Type="SPECIAL_POWER"
@@ -763,7 +763,7 @@
 	<LogicCommandSet
   		id="Traveler59CultistSquadCommandSet">
 		<Cmd>Command_AttackMove</Cmd>
-		<Cmd>Command_CultistMindControlGetInRange</Cmd>
+		<Cmd>Command_UseCultistMindControl</Cmd>
 	</LogicCommandSet>
 	
   <LogicCommand

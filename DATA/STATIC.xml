@@ -111,12 +111,15 @@
 	<Include type="all" source="STRef.xml" />	
 	<Include type="all" source="ZOCOMRef.xml" />		
 	
+	<Include type="all" source="GDIRax.xml" />	
+	<Include type="all" source="STRax.xml" />	
+	<Include type="all" source="ZOCOMRax.xml" />			
+	
 	<Include type="all" source="GDIEpicWF.xml" />	
 	<Include type="all" source="STEpicWF.xml" />	
 	<Include type="all" source="ZOCOMEpicWF.xml" />			
 	
 	<Include type="all" source="GDICommandPost.xml" />			
-
 	<Include type="all" source="ZOCOMCommandPost.xml" />				
 	
 	<Include type="all" source="STCommandPost.xml" />			

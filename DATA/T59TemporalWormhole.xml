@@ -118,7 +118,7 @@
 			<AttributeModifierNugget
 				Radius="125.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetObjectStatus="IN_STASIS OUT_OF_PHASE"
 				AttributeModifierName="AttributeModifier_TemporalWormhole">
 				<SpecialObjectFilter
 					Rule="ALL">
@@ -130,7 +130,7 @@
 			<AttributeModifierNugget
 				Radius="125.0"
 				PartitionFilterTestType="CIRCLE"
-				ForbiddenTargetObjectStatus="IN_STASIS"
+				ForbiddenTargetObjectStatus="IN_STASIS OUT_OF_PHASE"
 				AttributeModifierName="AttributeModifier_TemporalWormhole1">
 				<SpecialObjectFilter
 					Rule="NONE">

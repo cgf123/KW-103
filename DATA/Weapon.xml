@@ -182,6 +182,10 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="GDI_MISSILE"
 				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienInvaderFighter</ExcludeThing>
+				</SpecialObjectFilter>					
 				<DamageScalarDetails Scalar= "80%">
 					<Filter
 						Rule="NONE"
@@ -192,7 +196,12 @@ DAMAGE TYPES
 				Radius="10.0"
 				Suppression="20"
 				DurationSeconds="5s"
-			/>			
+			>
+				<SpecialObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienInvaderFighter</ExcludeThing>
+				</SpecialObjectFilter>	
+			</SuppressionNugget>
 		</Nuggets>
 	</WeaponTemplate>	
 	
@@ -318,6 +327,10 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="NOD_MISSILE"
 				DeathType="EXPLODED">
+				<SpecialObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienInvaderFighter</ExcludeThing>
+				</SpecialObjectFilter>				
 				<DamageScalarDetails Scalar= "80%">
 					<Filter
 						Rule="NONE"
@@ -328,8 +341,12 @@ DAMAGE TYPES
 			<SuppressionNugget
 				Radius="10.0"
 				Suppression="20"
-				DurationSeconds="5s"
-			/>			
+				DurationSeconds="5s">			
+				<SpecialObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienInvaderFighter</ExcludeThing>
+				</SpecialObjectFilter>	
+			</SuppressionNugget>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -1252,9 +1269,9 @@ DAMAGE TYPES
 		id="GDIOrcaRocketWeapon"
 		Name="GDIOrcaRocketWeapon"
 		AttackRange="250.0"
-		WeaponSpeed="625"
-		MinWeaponSpeed="510"
-		MaxWeaponSpeed="500"
+		WeaponSpeed="750"
+		MinWeaponSpeed="810"
+		MaxWeaponSpeed="800"
 		FireFX="FX_GDIOrcaMissleFire"
 		FireVeteranFX="FX_GDIOrcaMissleFire"
 		AcceptableAimDelta="20d"
@@ -1266,11 +1283,11 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="1.5s"
-				MaxSeconds="1.5s" />
+				MinSeconds="1.44s"
+				MaxSeconds="1.44s" />
 		<ClipReloadTime
-				MinSeconds="6s"
-				MaxSeconds="6s" />
+				MinSeconds="5s"
+				MaxSeconds="5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="GDIOrcaMissileProjectile"
@@ -1292,9 +1309,9 @@ DAMAGE TYPES
 		id="GDIOrcaHardpointsUpgradedRocketWeapon"
 		Name="GDIOrcaHardpointsUpgradedRocketWeapon"
 		AttackRange="250.0"
-		WeaponSpeed="625"
-		MinWeaponSpeed="510"
-		MaxWeaponSpeed="500"
+		WeaponSpeed="750"
+		MinWeaponSpeed="810"
+		MaxWeaponSpeed="800"
 		FireFX="FX_GDIOrcaMissleFire"
 		FireVeteranFX="FX_GDIOrcaMissleFire"
 		AcceptableAimDelta="20d"
@@ -1306,11 +1323,11 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="1.125s"
-				MaxSeconds="1.125s" />
+				MinSeconds="1.08s"
+				MaxSeconds="1.08s" />
 		<ClipReloadTime
-				MinSeconds="6s"
-				MaxSeconds="6s" />
+				MinSeconds="5s"
+				MaxSeconds="5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="GDIOrcaMissileProjectile"
@@ -1367,9 +1384,9 @@ DAMAGE TYPES
 		id="OrcaEchoCannon"
 		Name="OrcaEchoCannon"
 		AttackRange="250.0"
-		WeaponSpeed="800.0"
-		MinWeaponSpeed="600"
-		MaxWeaponSpeed="610"
+		WeaponSpeed="900.0"
+		MinWeaponSpeed="1000"
+		MaxWeaponSpeed="1010"
 		PreAttackType="PER_SHOT"
 		ClipSize="6"
         ScatterRadius="0"		
@@ -1386,11 +1403,11 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="1.2s"
-				MaxSeconds="1.2s" />
+				MinSeconds="1.33s"
+				MaxSeconds="1.33s" />
 		<ClipReloadTime
-				MinSeconds="6s"
-				MaxSeconds="6s" />
+				MinSeconds="5s"
+				MaxSeconds="5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="GDIOrcaECHOProjectile"
@@ -1456,9 +1473,9 @@ DAMAGE TYPES
 		id="OrcaHardpointsUpgradedEchoCannon"
 		Name="OrcaHardpointsUpgradedEchoCannon"
 		AttackRange="250.0"
-		WeaponSpeed="800.0"
-		MinWeaponSpeed="600"
-		MaxWeaponSpeed="610"
+		WeaponSpeed="900.0"
+		MinWeaponSpeed="1000"
+		MaxWeaponSpeed="1010"
 		PreAttackType="PER_SHOT"
 		ClipSize="9"
         ScatterRadius="0"		
@@ -1475,11 +1492,11 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="0.9s"
-				MaxSeconds="0.9s" />
+				MinSeconds="1.0s"
+				MaxSeconds="1.0s" />
 		<ClipReloadTime
-				MinSeconds="6s"
-				MaxSeconds="6s" />
+				MinSeconds="5s"
+				MaxSeconds="5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="GDIOrcaECHOUpgradedProjectile"
@@ -2326,7 +2343,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="2400.0"
 				Radius="0"
-				DamageType="CANNON"	>				
+				DamageType="BLAST"	>				
 				<!-- Remove friendly fire unfortunately because projectilenugget somehow causes wave to damage allies -->
 				<DamageScalarDetails Scalar= "0%" >
 					<Filter
@@ -2369,7 +2386,7 @@ DAMAGE TYPES
              <DamageNugget 
 				Damage="2400.0" 
 				Radius="20"
-				DamageType="CANNON" >
+				DamageType="BLAST" >
                <SpecialObjectFilter
 					Rule="ANY"
 					Exclude="STRUCTURE FS_BASE_DEFENSE"
@@ -2385,7 +2402,7 @@ DAMAGE TYPES
              <DamageNugget 
 				Damage="2400.0" 
 				Radius="20"
-				DamageType="CANNON" >
+				DamageType="BLAST" >
                <SpecialObjectFilter
 					Rule="ANY"
 					Relationship="ALLIES NEUTRAL"
@@ -2452,7 +2469,7 @@ DAMAGE TYPES
 			<DamageNugget
 				Damage="1000.0"
 				Radius="0"
-				DamageType="CANNON"	>				
+				DamageType="BLAST"	>				
 				<!-- Remove friendly fire unfortunately because projectilenugget somehow causes wave to damage allies -->
 				<DamageScalarDetails Scalar= "0%" >
 					<Filter
@@ -2495,7 +2512,7 @@ DAMAGE TYPES
              <DamageNugget 
 				Damage="1000.0" 
 				Radius="20"
-				DamageType="CANNON" >
+				DamageType="BLAST" >
                <SpecialObjectFilter
 					Rule="ANY"
 					Exclude="STRUCTURE FS_BASE_DEFENSE"
@@ -2511,7 +2528,7 @@ DAMAGE TYPES
              <DamageNugget 
 				Damage="1000.0" 
 				Radius="20"
-				DamageType="CANNON" >
+				DamageType="BLAST" >
                <SpecialObjectFilter
 					Rule="ANY"
 					Relationship="ALLIES NEUTRAL"
@@ -2605,7 +2622,7 @@ DAMAGE TYPES
 				Damage="1500.0"
 				Radius="25"
 				DelayTimeSeconds="0.0s"
-				DamageType="CANNON"
+				DamageType="BLAST"
 				DeathType="NORMAL" >
                <SpecialObjectFilter
 					Rule="ALL"
@@ -2640,7 +2657,7 @@ DAMAGE TYPES
 				Damage="2500.0" 
 				Radius="25"
 				DelayTimeSeconds="0.0s"
-				DamageType="CANNON"
+				DamageType="BLAST"
 				DeathType="NORMAL" >
                <SpecialObjectFilter
 					Rule="ANY"
@@ -2658,7 +2675,7 @@ DAMAGE TYPES
 				Damage="2500.0"
 				Radius="25"
 				DelayTimeSeconds="0.0s"
-				DamageType="CANNON"
+				DamageType="BLAST"
 				DeathType="NORMAL" >
                <SpecialObjectFilter
 					Rule="ALL"
@@ -4205,7 +4222,7 @@ DAMAGE TYPES
 		>
 		<Nuggets>
 			<DamageNugget
-				Damage="2500"
+				Damage="2750"
 				DamageTaperOff="5"
 				Radius="200"
 				DelayTimeSeconds="0.5s"
@@ -4847,14 +4864,14 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "137.5%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="NONE"
 						Include="TRANSPORT WEAPON_SALVAGER"
@@ -4925,14 +4942,14 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "137.5%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
 						Exclude="WEAPON_SALVAGER">          						
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter 
 						Rule="NONE"
 						Include="TRANSPORT WEAPON_SALVAGER"
@@ -5025,6 +5042,11 @@ DAMAGE TYPES
 				Radius="5.0"					
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_PLASMADISK">
+				<SpecialObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienInvaderFighter</ExcludeThing>
+				</SpecialObjectFilter>					
+				
 				<!-- Scalars vs transport vehicles -->
 				<DamageScalarDetails Scalar= "110%">
 					<Filter 
@@ -5078,6 +5100,11 @@ DAMAGE TYPES
 				DelayTimeSeconds="0.5s"
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_CANNON" >
+				<SpecialObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienInvaderFighter</ExcludeThing>
+				</SpecialObjectFilter>					
+				
 				<!-- Scalars vs transport vehicles -->
 				<DamageScalarDetails Scalar= "110%">
 					<Filter 
@@ -5303,7 +5330,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		  id="AlienMechapedeProtonCannon"
 		  Name="AlienMechapedeProtonCannon"
-		  AttackRange="375.0"
+		  AttackRange="400.0"
 		  WeaponSpeed="400.0"  
 		  FireSound="AudioEvent:ALI_SeekerTank_DiskWeaponFire"
 		  FireFX="FX_AlienMechapedePlasmaDiskFire"
@@ -6550,7 +6577,11 @@ DAMAGE TYPES
 				Damage="80.0"
 				Radius="8.0"				
 				DamageType="GUN"
-				DamageFXType="ALIEN_TIBSHARD" >						
+				DamageFXType="ALIEN_TIBSHARD" >
+				<SpecialObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienInvaderFighter</ExcludeThing>
+				</SpecialObjectFilter>					
 				<!-- Scalars vs transport vehicles -->
 				<DamageScalarDetails Scalar= "62.5%">
 					<Filter 
@@ -6615,6 +6646,10 @@ DAMAGE TYPES
 				Radius="8.0"				
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARDBLUE" >
+				<SpecialObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienInvaderFighter</ExcludeThing>
+				</SpecialObjectFilter>					
 				<!-- Scalars vs transport vehicles -->
 				<DamageScalarDetails Scalar= "62.5%">
 					<Filter 
@@ -6709,8 +6744,14 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="ANY"
-						Include="FS_MONEY_STORAGE"/>
-				</DamageScalarDetails>			
+						Include="FS_MONEY_STORAGE" />
+				</DamageScalarDetails>	
+				<DamageScalarDetails Scalar= "120%">
+					<Filter
+						Rule="ANY"
+						Include="HARVESTER"  
+						Exclude="HEALED_BY_TIBERIUM" />
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "50%">
 					<Filter
 						Rule="ANY"
@@ -7115,14 +7156,6 @@ DAMAGE TYPES
 						Exclude="">
 					</Filter>
 				</DamageScalarDetails>			
-				
-				<!-- Scalar vs Cultists -->								
-				<DamageScalarDetails Scalar= "150%">
-					<Filter Rule="NONE">          
-						<IncludeThing>Traveler59Cultist</IncludeThing>					
-					</Filter>
-				</DamageScalarDetails>										
-			
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -7207,14 +7240,6 @@ DAMAGE TYPES
 						Exclude="">
 					</Filter>
 				</DamageScalarDetails>								
-				
-				<!-- Scalar vs Cultists -->							
-				<DamageScalarDetails Scalar= "150%">
-					<Filter Rule="NONE">          
-						<IncludeThing>Traveler59Cultist</IncludeThing>					
-					</Filter>
-				</DamageScalarDetails>									
-				
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -7283,15 +7308,7 @@ DAMAGE TYPES
 						Include="TRANSPORT WEAPON_SALVAGER"
 						Exclude="">
 					</Filter>
-				</DamageScalarDetails>					
-
-				<!-- Scalar vs Cultists -->		
-				<DamageScalarDetails Scalar= "150%">
-					<Filter Rule="NONE">          
-						<IncludeThing>Traveler59Cultist</IncludeThing>					
-					</Filter>
-				</DamageScalarDetails>					
-				
+				</DamageScalarDetails>												
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -7319,8 +7336,8 @@ DAMAGE TYPES
 		/>
 
 		<ClipReloadTime
-			MinSeconds="1.8s"
-			MaxSeconds="1.8s"
+			MinSeconds="1.95s"
+			MaxSeconds="1.95s"
 		/>
 
 		<Nuggets>
@@ -7354,14 +7371,14 @@ DAMAGE TYPES
 				</DamageScalarDetails>		
 
 				<!-- Scalars vs Air Transports -->
-				<DamageScalarDetails Scalar= "280%">
+				<DamageScalarDetails Scalar= "300%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT TRANSPORT"
 						Exclude="WEAPON_SALVAGER">
 					</Filter>
 				</DamageScalarDetails>						
-				<DamageScalarDetails Scalar= "225%">
+				<DamageScalarDetails Scalar= "240%">
 					<Filter
 						Rule="ANY"
 						Include="AIRCRAFT" >
@@ -7384,7 +7401,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>					
 						
-				<DamageScalarDetails Scalar= "95%">
+				<DamageScalarDetails Scalar= "90%">
 					<Filter 
 						Rule="ANY"			
 						Include="HARVESTER">          						
@@ -7420,8 +7437,8 @@ DAMAGE TYPES
 		/>
 
 		<ClipReloadTime
-			MinSeconds="1.2s"
-			MaxSeconds="1.2s"
+			MinSeconds="1.35s"
+			MaxSeconds="1.35s"
 		/>
 
 		<Nuggets>
@@ -7455,14 +7472,14 @@ DAMAGE TYPES
 				</DamageScalarDetails>					
 
 				<!-- Scalars vs Air Transports -->
-				<DamageScalarDetails Scalar= "280%">
+				<DamageScalarDetails Scalar= "300%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT TRANSPORT"
 						Exclude="WEAPON_SALVAGER">
 					</Filter>
 				</DamageScalarDetails>						
-				<DamageScalarDetails Scalar= "225%">
+				<DamageScalarDetails Scalar= "240%">
 					<Filter
 						Rule="ANY"
 						Include="AIRCRAFT" >
@@ -7485,7 +7502,7 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>						
 
-				<DamageScalarDetails Scalar= "95%">
+				<DamageScalarDetails Scalar= "90%">
 					<Filter 
 						Rule="ANY"			
 						Include="HARVESTER">          						
@@ -8367,7 +8384,7 @@ DAMAGE TYPES
 			MaxSeconds="0.01s" />
 		<Nuggets>
 			<SpecialPowerNugget
-				SpecialPowerTemplate="SpecialPower_CultistMindControlGetInRange"/>
+				SpecialPowerTemplate="SpecialPower_CultistMindControl"/>
 		</Nuggets>
 	</WeaponTemplate>	
 
@@ -8383,7 +8400,7 @@ DAMAGE TYPES
 			MaxSeconds="0.01s" />
 		<Nuggets>
 			<SpecialPowerNugget
-				SpecialPowerTemplate="SpecialPower_CultistMindControlGetInRange"/>
+				SpecialPowerTemplate="SpecialPower_CultistMindControl"/>
 		</Nuggets>
 	</WeaponTemplate>
 
@@ -9698,7 +9715,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODMilitantSquadRangeFinder"
 		Name="NODMilitantSquadRangeFinder"
-		AttackRange="190" 			  
+		AttackRange="195" 			  
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -9713,7 +9730,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="NODMilitantMinigun"
 		Name="NODMilitantMinigun" 
-		AttackRange="260.0" 
+		AttackRange="265.0" 
 		WeaponSpeed="999999.0"
 		FireSoundPerClip="AudioEvent:NOD_RifleMilitant_GunFire_v2"
 		FireFX="FX_NODRifleManFire"
@@ -10399,7 +10416,7 @@ DAMAGE TYPES
 			MaxSeconds="0s"/>
 		<Nuggets>
 			<DamageNugget
-				Damage="20.0"
+				Damage="19.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
@@ -10808,7 +10825,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIRifleSquadGunRangefinder"
 		Name="GDIRifleSquadGunRangefinder"
-		AttackRange="225" 		
+		AttackRange="230" 		
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -10824,7 +10841,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIRifleSoldierRifle"
 		Name="GDIRifleSoldierRifle"
-		AttackRange="275.0"
+		AttackRange="280.0"
 		WeaponSpeed="999999.0"
 		FireSoundPerClip="AudioEvent:GDI_RifleSoldier_gunFire_v5"
 		FireFX="FX_GDIRifleManFire"
@@ -10856,7 +10873,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="GDIRifleSoldierRifleAPAmmo"
 		Name="GDIRifleSoldierRifleAPAmmo"
-		AttackRange="275.0"
+		AttackRange="280.0"
 		WeaponSpeed="999999.0"
 		FireSoundPerClip="AudioEvent:GDI_RifleSoldier_gunFire_v5"
 		FireFX="FX_GDIRifleManFire"
@@ -12373,7 +12390,13 @@ DAMAGE TYPES
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="NOD_MISSILE"
-				DeathType="EXPLODED">				
+				DeathType="EXPLODED">	
+				<DamageScalarDetails Scalar= "216%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED">    
+					</Filter>
+				</DamageScalarDetails>				
 				<DamageScalarDetails Scalar= "180%">
 					<Filter
 						Rule="NONE"
@@ -12448,7 +12471,13 @@ DAMAGE TYPES
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="NOD_TIBCOREMISSILE"
-				DeathType="EXPLODED">								
+				DeathType="EXPLODED">	
+				<DamageScalarDetails Scalar= "216%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED">    
+					</Filter>
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "180%">
 					<Filter
 						Rule="NONE"
@@ -12475,7 +12504,7 @@ DAMAGE TYPES
 		Name="NODRocketBunkerSpawnWeapon"
 		AttackRange="450"
 		AcceptableAimDelta="180d"
-		WeaponSpeed="325"
+		WeaponSpeed="350"
 		FireSound="AudioEvent:NOD_RocketBunkerHub_RocketLaunch"
 		FireFX="FX_NODMilitantMissileFire"
 		ClipSize="3"
@@ -12518,6 +12547,12 @@ DAMAGE TYPES
 				  DamageType="ROCKET"
 				  DamageFXType="NOD_MISSILE"
 				  DeathType="EXPLODED" >
+				<DamageScalarDetails Scalar= "120%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED">    
+					</Filter>
+				</DamageScalarDetails>					  
 			</DamageNugget>					  
 		</Nuggets>
 	</WeaponTemplate>
@@ -12526,7 +12561,7 @@ DAMAGE TYPES
 		id="NODRocketBunkerSpawnTibCoreWeapon"
 		Name="NODRocketBunkerSpawnTibCoreWeapon"
 		AttackRange="450.0"
-		WeaponSpeed="325"
+		WeaponSpeed="350"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="180d"
 		FireSound="AudioEvent:NOD_RocketBunkerHub_RocketLaunch"
@@ -12570,7 +12605,13 @@ DAMAGE TYPES
 				  DelayTimeSeconds="0s"
 				  DamageType="ROCKET"
 				  DamageFXType="NOD_TIBCOREMISSILE"
-				  DeathType="EXPLODED" >				  
+				  DeathType="EXPLODED" >	
+				<DamageScalarDetails Scalar= "120%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED">    
+					</Filter>
+				</DamageScalarDetails>					  
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>	
@@ -12636,6 +12677,12 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="NOD_MISSILE"
 				DeathType="EXPLODED">
+				<DamageScalarDetails Scalar= "270%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED">    
+					</Filter>
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "225%">
 					<Filter
 						Rule="NONE"
@@ -12711,7 +12758,13 @@ DAMAGE TYPES
 				Radius="10.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
-				DamageFXType="NOD_TIBCOREMISSILE" >					
+				DamageFXType="NOD_TIBCOREMISSILE" >		
+				<DamageScalarDetails Scalar= "270%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED" >  	
+					</Filter>
+				</DamageScalarDetails>						
 				<DamageScalarDetails Scalar= "225%">
 					<Filter
 						Rule="NONE"
@@ -12786,12 +12839,18 @@ DAMAGE TYPES
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"	>
 		<Nuggets>
 			<DamageNugget
-				Damage="272.0"
+				Damage="248.0"
 				Radius="10.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
 				DamageFXType="NOD_MISSILE"
 				DeathType="EXPLODED">
+				<DamageScalarDetails Scalar= "270%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED" >  	
+					</Filter>
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "225%">
 					<Filter
 						Rule="NONE"
@@ -12853,11 +12912,17 @@ DAMAGE TYPES
 		AntiMask="ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"	>
 		<Nuggets>
 			<DamageNugget
-				Damage="340.0"
+				Damage="310.0"
 				Radius="10.0"
 				DamageTaperOff="0"
 				DamageType="ROCKET"
 				DamageFXType="NOD_TIBCOREMISSILE" >
+				<DamageScalarDetails Scalar= "270%">
+					<Filter
+						Rule="NONE"
+						Include="AIRCRAFT TIBERIUM_BASED" >  	
+					</Filter>
+				</DamageScalarDetails>					
 				<DamageScalarDetails Scalar= "225%">
 					<Filter
 						Rule="NONE"
@@ -12889,8 +12954,8 @@ DAMAGE TYPES
 			MinSeconds="3.0s"
 			MaxSeconds="3.0s" />
 		<ClipReloadTime
-			MinSeconds="5s"
-			MaxSeconds="5s" />
+			MinSeconds="4.5s"
+			MaxSeconds="4.5s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="NODVertigoBombProjectile"
@@ -12958,8 +13023,8 @@ DAMAGE TYPES
 			MinSeconds="0.4s"
 			MaxSeconds="0.4s" />
 		<ClipReloadTime
-			MinSeconds="8s"
-			MaxSeconds="8s" />
+			MinSeconds="10s"
+			MaxSeconds="10s" />
 		<Nuggets>
 			<ProjectileNugget
 				WarheadTemplate="FireHawkBombWarhead"
@@ -12996,8 +13061,8 @@ DAMAGE TYPES
 			MinSeconds="0.4s"
 			MaxSeconds="0.4s" />
 		<ClipReloadTime
-			MinSeconds="8s"
-			MaxSeconds="8s" />
+			MinSeconds="10s"
+			MaxSeconds="10s" />
 		<Nuggets>
 			<ProjectileNugget
 				WarheadTemplate="FireHawkBombUpgradedWarhead"
@@ -13099,9 +13164,9 @@ DAMAGE TYPES
 		id="GDIFirehawkMissileMainLoad"
 		Name="GDIFirehawkMissileMainLoad"
 		AttackRange="400.0"
-		WeaponSpeed="1250"
-		MinWeaponSpeed="2000"
-		MaxWeaponSpeed="2000"		
+		WeaponSpeed="1000"
+		MinWeaponSpeed="1500"
+		MaxWeaponSpeed="1510"		
 		AcceptableAimDelta="45d"
 		PreAttackType="PER_SHOT"
 		ClipSize="4"
@@ -13118,8 +13183,8 @@ DAMAGE TYPES
 			MinSeconds="0.3s"
 			MaxSeconds="0.5s" />
 		<ClipReloadTime
-			MinSeconds="8s"
-			MaxSeconds="8s" />
+			MinSeconds="10s"
+			MaxSeconds="10s" />
 		<Nuggets>
 			<ProjectileNugget
 				WarheadTemplate="GDIFirehawkMissileWarhead"
@@ -13135,9 +13200,9 @@ DAMAGE TYPES
 		id="GDIFirehawkHardpointsUpgradeMissileMainLoad"
 		Name="GDIFirehawkHardpointsUpgradeMissileMainLoad"
 		AttackRange="400.0"
-		WeaponSpeed="1250"
-		MinWeaponSpeed="2000"
-		MaxWeaponSpeed="2000"			
+		WeaponSpeed="1000"
+		MinWeaponSpeed="1500"
+		MaxWeaponSpeed="1510"			
 		AcceptableAimDelta="45d"
 		PreAttackType="PER_SHOT"
 		ClipSize="6"
@@ -13154,8 +13219,8 @@ DAMAGE TYPES
 			MinSeconds="0.2s"
 			MaxSeconds="0.4s" />
 		<ClipReloadTime
-			MinSeconds="8s"
-			MaxSeconds="8s" />
+			MinSeconds="10s"
+			MaxSeconds="10s" />
 		<Nuggets>
 			<ProjectileNugget
 				WarheadTemplate="GDIFirehawkMissileWarhead"

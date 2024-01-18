@@ -331,14 +331,14 @@
 
 	<!-- Cultist -->
 	<UnitAbilityButtonTemplate
-		id="ButtonCultistMindControl"
-		LogicCommand="Command_CultistMindControlGetInRange">
+		id="ButtonCultistUseMindControl"
+		LogicCommand="Command_UseCultistMindControl">
 		<Data>
 			<TargetedSpecialPower
 				StateData="ButtonStateCultistMindControl"
 		ValidTargetCursor="Bombard" />
 		</Data>
-	</UnitAbilityButtonTemplate>	
+	</UnitAbilityButtonTemplate>		
 	
 	<ButtonSingleStateData
 		id="ButtonStateUpgradeTravelerEngines" >

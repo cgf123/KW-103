@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
-		id="NODHandOfNOD"
-		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE FS_FACTORY AUTO_RALLYPOINT NOT_AUTOACQUIRABLE COVER FS_BARRACKS AUTO_ACQUIRABLE_BY_AI"
-		Description="Desc:NODHandofNOD"
-		TypeDescription="Type:NODHandofNod"
+		id="GDIBarracks"
+		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT FS_FACTORY AUTO_RALLYPOINT NEED_BASE_FOUNDATION NOT_AUTOACQUIRABLE LIVING_WORLD_BUILDING_MIRROR COVER FS_BARRACKS AUTO_ACQUIRABLE_BY_AI"
+		Description="DESC:GDIBarracks"
+		TypeDescription="Type:GDIBarracks"
 		RadarPriority="STRUCTURE"
-		PlacementViewAngle="315d"
-		Side="NOD"
-		EditorName="NODHandOfNOD"
+		BuildCompletion="PLACED_BY_PLAYER"
+		PlacementViewAngle="225d"
+		Side="GDI"
+		EditorName="GDIBarracks"
 		EditorSorting="STRUCTURE"
 		BuildTime="5"
 		EnergyProduction="-5"
-		CommandSet="NODHandOfNODCommandSet"
-		SelectPortrait="Portrait_NODHandofNod"
-		ButtonImage="Portrait_NODHandofNod"
+		CommandSet="GDIBarracksCommandSet"
+		SelectPortrait="Portrait_GDIBarracks"
+		ButtonImage="Portrait_GDIBarracks"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
 		UnitCategory="STRUCTURE"
-		BuildCost="500"
-		TransportSlotCount="1">
-		<DisplayName>Name:NODHandofNod</DisplayName>
+		BuildCost="500">
+		<DisplayName>Name:GDIBarracks</DisplayName>
 		<GameDependency>
-			<RequiredObject>NODPowerPlant</RequiredObject>
+			<RequiredObject>GDIPowerPlant</RequiredObject>
 		</GameDependency>
 		<ArmorSet
-			Armor="NODHandOfNODArmor"
+			Armor="GDIBarracksArmor"
 			DamageFX="FactionStructureDamageFX" />
 		<ArmorSet
-			Armor="NODHandOfNODLaserFencingArmor"
+			Armor="GDIBarracksSonicRepulsionFieldArmor"
 			DamageFX="NormalDamageFX"
 			Conditions="PLAYER_UPGRADE" />
 		<SkirmishAIInformation />
@@ -39,75 +39,75 @@
 				id="0x50DF2C46"
 				MaxRecoilDistance="3"
 				RecoilDamping="0.4"
-				OkToChangeModelColor="True">
+				OkToChangeModelColor="True"
+				StaticModelLODMode="True"
+				UseStandardModelNames="True">
 				<ModelConditionState
 					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="W3DContainer:NBHAND" />
+						Name="W3DContainer:GBBARRACKS_SKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="STRUCTURE_UNPACKING">
 					<Model
-						Name="W3DContainer:NBHAND_ASN" />
+						Name="W3DContainer:GBBARRACKS_ASKN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
+					ConditionsYes="RUBBLE">
 					<Model
-						Name="W3DContainer:NBHANDD2_SN" />
-					<ParticleSysBone
-						BoneName="FXBone01"
-						FXParticleSystemTemplate="GDIWTDamagedSmoke"
-						FollowBone="True" />
+						Name="W3DContainer:GBBARRACKS_D3SN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED">
 					<Model
-						Name="W3DContainer:NBHANDD2_SN" />
-					<ParticleSysBone
-						BoneName="FXBone02"
-						FXParticleSystemTemplate="GDIWTDamagedSmoke"
-						FollowBone="True" />
-					<ParticleSysBone
-						BoneName="FXBone01"
-						FXParticleSystemTemplate="GDIWTDamagedFire"
-						FollowBone="True" />
-					<ParticleSysBone
-						BoneName="FXBone01"
-						FXParticleSystemTemplate="GDIWTDamagedSmoke"
-						FollowBone="True" />
-					<ParticleSysBone
-						BoneName="FXBone01"
-						FXParticleSystemTemplate="GDIWTDamagedDist"
-						FollowBone="True" />
+						Name="W3DContainer:GBBARRACKS_D2SN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING">
+					ConditionsYes="DAMAGED">
 					<Model
-						Name="W3DContainer:NBHANDD3_SN" />
+						Name="W3DContainer:GBBARRACKS_SKN" />
+					<Texture
+						Original="GBBarrack"
+						New="GBBarrackD" />
 				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Animation
+						AnimationName="GBBARRACKS_IDLA"
+						AnimationMode="LOOP" />
+				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="STRUCTURE_UNPACKING">
 					<Animation
-						AnimationName="NBHAND_AAN"
+						AnimationName="GBBARRACKS_AAN"
 						AnimationMode="ONCE" />
 					<ParticleSysBone
 						BoneName="NONE"
-						FXParticleSystemTemplate="Con_Large"
+						FXParticleSystemTemplate="Con_Medium"
 						FollowBone="True" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED"
-					StateName="STATE_Damaged"
-					Flags="START_FRAME_FIRST">
+					ConditionsYes="RUBBLE"
+					StateName="STATE_Rubble"
+					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="NBHANDD2_AN"
+						AnimationName="GBBARRACKS_D3AN"
 						AnimationMode="MANUAL" />
+					<Script>
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_Rubble" and Prev ~= "TRANS_IntoRubble" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoRubble")
+						end
+					</Script>
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="Des_Medium" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -115,35 +115,95 @@
 					StateName="STATE_ReallyDamaged"
 					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="NBHANDD2_AN"
+						AnimationName="GBBARRACKS_D2AN"
 						AnimationMode="MANUAL" />
 					<Script>
-					Prev = CurDrawablePrevAnimationState();
-					if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_DamagedToReallyDamaged" then
-						CurDrawableSetTransitionAnimState("TRANS_DamagedToReallyDamaged")
-					end
-				</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING">
-					<Animation
-						AnimationName="NBHANDD3_AN"
-						AnimationMode="ONCE" />
-					<ParticleSysBone
-						BoneName="NONE"
-						FXParticleSystemTemplate="Des_Medium" />
+						Prev = CurDrawablePrevAnimationState();
+						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" then
+						CurDrawableSetTransitionAnimState("TRANS_IntoReallyDamaged")
+						end
+					</Script>
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_DamagedToReallyDamaged">
+					StateName="TRANS_IntoReallyDamaged">
 					<Animation
-						AnimationName="NBHANDD2_AN"
+						AnimationName="GBBARRACKS_D2AN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_TRANSITION"
+					StateName="TRANS_IntoRubble">
+					<Animation
+						AnimationName="GBBARRACKS_D3AN"
+						AnimationMode="ONCE"
+						AnimationBlendTime="0" />
+				</AnimationState>
+			</ScriptedModelDraw>
+			<ScriptedModelDraw
+				id="0xFEC9E345"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				OkToChangeModelColor="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="W3DContainer:GBBARRDOOR_SKN" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="W3DContainer:NBEMPTY_ABLD" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING">
+					<Model
+						Name="W3DContainer:NBEMPTY_ABLD" />
+				</ModelConditionState>
+				<AnimationState
+					ParseCondStateType="PARSE_DEFAULT"
+					Flags="START_FRAME_FIRST">
+					<Animation
+						AnimationName="GBBARRDOOR_OPN"
+						AnimationMode="MANUAL" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Animation
+						AnimationName="NBEMPTY_ABLD"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DOOR_1_WAITING_OPEN"
+					Flags="START_FRAME_FIRST">
+					<Animation
+						AnimationName="GBBARRDOOR_CLS"
+						AnimationMode="MANUAL" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DOOR_1_OPENING"
+					StateName="STATE_Open">
+					<Animation
+						AnimationName="GBBARRDOOR_OPN"
+						AnimationMode="ONCE" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DOOR_1_CLOSING"
+					StateName="STATE_Closed">
+					<Animation
+						AnimationName="GBBARRDOOR_CLS"
 						AnimationMode="ONCE" />
 				</AnimationState>
 			</ScriptedModelDraw>
 			<ScriptedModelDraw
-				id="0xFE02FE24"
+				id="0xCD182A15"
 				MaxRecoilDistance="3"
 				RecoilDamping="0.4"
 				OkToChangeModelColor="True"
@@ -172,7 +232,7 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="USER_6">
 					<Model
-						Name="W3DContainer:NBHAND_LF" />
+						Name="W3DContainer:GBBARRACKSSRF_SKN" />
 				</ModelConditionState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
@@ -205,13 +265,21 @@
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
 				id="0x3473AFD2"
-				DefectionFrameCount="75" />
+				DefectionFrameCount="100" />
+			<ModelConditionUpgrade
+				id="0x931C692F"
+				AddConditionFlags="USER_6">
+				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
+			</ModelConditionUpgrade>
+			<BuildingBehavior
+				id="0x2118A085"
+				NightWindowObject="LIGHT_01" />
 			<ProductionUpdate
 				id="0x5FD28433"
 				NumDoorAnimations="1"
-				DoorOpeningTime="0.1s"
-				DoorWaitOpenTime="0.1s"
-				DoorCloseTime="0.1s"
+				DoorOpeningTime="0.66s"
+				DoorWaitOpenTime="1s"
+				DoorCloseTime="0.66s"
 				Type="INFANTRY"
 				GiveNoXP="True" />
 			<QueueProductionExitUpdate
@@ -219,19 +287,16 @@
 				PlacementViewAngle="45d"
 				ExitDelay="1">
 				<UnitCreatePoint
-					x="30.0"
-					y="0.0" />			
+					y="25" />
 				<NaturalRallyPoint
-					x="68" />
+					x="90"
+					y="25" />
 			</QueueProductionExitUpdate>
 			<SlowDeath
 				id="0x73542D4A"
 				SinkRate="4"
 				SinkDelay="3s"
 				DestructionDelay="8s">
-				<Weapon>
-					<Weapon>NODHandOfNodDeathWeapon</Weapon>
-				</Weapon>
 				<Sound
 					List="HumanFaction_MediumBuilding_DieMS" />
 				<DieMuxData
@@ -243,31 +308,26 @@
 					DeathTypes="ALL" />
 				<Event
 					Index="onTransitionToDamaged"
-					FX="FX_BuildDamaged_Large" />
+					FX="FX_BuildDamaged_Medium" />
 				<Event
 					Index="onTransitionToReallyDamaged"
-					FX="FX_BuildDamaged_Large" />
+					FX="FX_BuildDamaged_Medium" />
 				<Event
 					Index="onTransitionToRubble"
-					FX="FX_BuildRubble_Large" />
+					FX="FX_BuildRubble_Medium" />
 			</FXListBehavior>
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-			<ModelConditionUpgrade
-				id="0xC2732A48"
-				AddConditionFlags="USER_6">
-				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
-			</ModelConditionUpgrade>
 			<ArmorUpgrade
-				id="0xF3CB043F"
-				Permanent="False"
+				id="0xD7169F09"
+				Permanent="True"
 				ArmorSetFlag="PLAYER_UPGRADE">
-				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
+				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
 			</ArmorUpgrade>
 			<StatusBitsUpgrade
-				id="0xC9F59DA1"
+				id="0xBA874D9A"
 				StatusToSet="RIDER1">
-				<TriggeredBy>Upgrade_LaserFencing</TriggeredBy>
+				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
 			</StatusBitsUpgrade>
 			<RepairUpdate
 				id="0x41FDEB2A"></RepairUpdate>
@@ -293,15 +353,15 @@
 			</EngineerContain>
 			<CreateObjectDie
 				id="0x34FD1923"
-				CreationList="OCL_GenericNODBuildingDestruction"
-				UpgradeForbidden="">
+				CreationList="OCL_GenericGDIBuildingDestruction"
+				UpgradeForbidden="  ">
 				<DieMuxData
 					DeathTypes="ALL"
 					DeathTypesForbidden="SUICIDED DETONATED" />
 			</CreateObjectDie>
 			<CreateObjectDie
 				id="0x4BF392A4"
-				CreationList="OCL_GenericNODBuildingSuicide">
+				CreationList="OCL_GenericGDIBuildingSuicide">
 				<DieMuxData
 					DeathTypes="SUICIDED" />
 			</CreateObjectDie>
@@ -311,97 +371,166 @@
 		</Behaviors>
 		<AI>
 			<AIUpdate
-				id="0x12FA48BA"
-				AutoAcquireEnemiesWhenIdle="NO"
-				AILuaEventsList="BuildingPowerFunctions" />
+				id="0xA10ED94E"
+				AutoAcquireEnemiesWhenIdle="NO" />
 		</AI>
 		<Body>
 			<ActiveBody
 				id="0xB313F576"
-				MaxHealth="2500">
+				MaxHealth="3000">
 				<DamageTrigger
 					HealthLevelBelowPercent="66"
-					RemoveUpgrade="Upgrade_LaserFencing" />
+					RemoveUpgrade="Upgrade_SonicRepulsionField" />
 			</ActiveBody>
 		</Body>
+		<ClientBehaviors>
+			<AnimationSoundClientBehavior
+				id="0x7A2074AA">
+				<Sound
+					Sound="AudioEvent:GDI_Barracks_doorOpen"
+					Animation="GBBARRDOOR_OPN"
+					Frame="1" />
+				<Sound
+					Sound="AudioEvent:GDI_Barracks_doorClose"
+					Animation="GBBARRDOOR_CLS"
+					Frame="1" />
+			</AnimationSoundClientBehavior>
+		</ClientBehaviors>
 		<Geometry>
 			<Shape
 				Type="BOX"
-				MajorRadius="50"
-				MinorRadius="25"
-				Height="8">
+				MajorRadius="14.0229"
+				MinorRadius="17.3374"
+				Height="7.6489">
 				<Offset
-					x="-2" />
+					x="-33.5405"
+					y="24.9809" />
 			</Shape>
 			<Shape
 				Type="BOX"
-				MajorRadius="40"
-				MinorRadius="20"
-				Height="12">
+				MajorRadius="7.2919"
+				MinorRadius="9.3622"
+				Height="19.2751">
 				<Offset
-					x="-10"
-					z="8" />
+					x="-33.5405"
+					y="24.9809" />
 			</Shape>
 			<Shape
-				Type="CYLINDER"
-				MajorRadius="8"
-				Height="40">
+				Type="BOX"
+				MajorRadius="26.0409"
+				MinorRadius="39.7707"
+				Height="3">
 				<Offset
-					x="-36"
-					y="2.5" />
+					x="8.4086"
+					y="4.5786" />
 			</Shape>
 			<Shape
-				Type="CYLINDER"
-				MajorRadius="14"
-				Height="20">
+				Type="BOX"
+				MajorRadius="26.0409"
+				MinorRadius="15.1129"
+				Height="11.64">
 				<Offset
-					x="-36"
-					y="2.5"
-					z="40" />
+					x="8.4086"
+					y="24.9945" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="26.0409"
+				MinorRadius="10.8813"
+				Height="17.9256">
+				<Offset
+					x="8.4086"
+					y="24.9945" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="26.0409"
+				MinorRadius="15.1129"
+				Height="11.64">
+				<Offset
+					x="8.4086"
+					y="-16.6119" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="26.0409"
+				MinorRadius="10.8813"
+				Height="17.9256">
+				<Offset
+					x="8.4086"
+					y="-16.6119" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="32.2907"
+				MinorRadius="5.8759"
+				Height="3.5851">
+				<Offset
+					x="4.3138"
+					y="-36.3315"
+					z="23.3332" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="1.5625"
+				MinorRadius="4.7877"
+				Height="25.0958">
+				<Offset
+					x="33.6345"
+					y="-36.3315" />
+			</Shape>
+			<Shape
+				Type="BOX"
+				MajorRadius="1.5625"
+				MinorRadius="4.7877"
+				Height="25.0958">
+				<Offset
+					x="-24.3959"
+					y="-36.3315" />
 			</Shape>
 			<ContactPoint>
 				<Pos
-					x="32"
-					y="-17" />
+					x="-14.7758"
+					y="-24.9922" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="27"
-					y="17"
-					z="20" />
+					x="29.2522"
+					y="-24.9922"
+					z="17.6454" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="-45"
-					y="18"
-					z="30" />
+					x="29.2522"
+					y="39.9894" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="-45"
-					y="-23" />
+					x="-14.7758"
+					y="39.9894"
+					z="17.6454" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="40"
-					y="-20"
-					z="20" />
+					x="-14.7758"
+					y="-24.9922"
+					z="17.6454" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="32"
-					y="-17" />
+					x="29.2522"
+					y="-24.9922" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="27"
-					y="17"
-					z="20" />
+					x="29.2522"
+					y="39.9894"
+					z="17.6454" />
 			</ContactPoint>
 			<ContactPoint>
 				<Pos
-					x="-45"
-					y="-23" />
+					x="-14.7758"
+					y="39.9894" />
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
@@ -412,7 +541,7 @@
 				EvaEvent="EnemyBuildingCaptured"
 				AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="AudioEvent:NOD_HandOfNODSelect"
+				Sound="AudioEvent:GDI_BarracksSelect"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
@@ -444,7 +573,7 @@
 		<ShadowInfo
 			Type="VOLUME" />
 		<VisionInfo
-			VisionRange="100"
+			VisionRange="160"
 			ShroudClearingRange="400" />
 		<ProjectedBuildabilityInfo
 			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
