@@ -1484,7 +1484,7 @@
 		<CrusherInfo
 			CrushKnockback="0"
 			CrushZFactor="1"
-			MinCrushVelocityPercent="100%"
+			MinCrushVelocityPercent="1%"
 			CrushDecelerationPercent="0%"
 			CrushWeapon="SmallCrusherWeapon"
 			CrushRevengeWeapon=""

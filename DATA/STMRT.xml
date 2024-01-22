@@ -95,7 +95,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="77"
+			Speed="75"
 			Condition="NORMAL"
 			Locomotor="GDIAPCLocomotor" />
 		<SkirmishAIInformation
