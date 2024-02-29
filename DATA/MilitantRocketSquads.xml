@@ -526,6 +526,19 @@
 				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
 				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
 			</AttributeModifierUpgrade>
+			<StatusBitsUpgrade
+				id="63DD108D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="HAS_TIBERIUM_UPGRADE"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
+				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
+			</StatusBitsUpgrade>			
 			<AimWeapon
 				id="06370EA6"
 				AimLowThreshold="0"
@@ -1262,6 +1275,19 @@
 				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
 				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
 			</AttributeModifierUpgrade>
+			<StatusBitsUpgrade
+				id="63DD108D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="HAS_TIBERIUM_UPGRADE"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
+				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
+			</StatusBitsUpgrade>			
 			<AimWeapon
 				id="06370EA6"
 				AimLowThreshold="0"
@@ -2116,6 +2142,19 @@
 				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
 				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
 			</AttributeModifierUpgrade>
+			<StatusBitsUpgrade
+				id="63DD108D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="HAS_TIBERIUM_UPGRADE"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
+				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
+			</StatusBitsUpgrade>			
 			<AimWeapon
 				id="06370EA6"
 				AimLowThreshold="0"

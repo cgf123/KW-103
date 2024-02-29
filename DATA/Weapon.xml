@@ -7949,7 +7949,7 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
 					</Filter>
-				</DamageScalarDetails>					
+				</DamageScalarDetails>		
 
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
@@ -7982,9 +7982,9 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "60%">
 					<Filter 
 						Rule="ANY"
-						Include="MADE_OF_WOOD">          						
+						Include="MADE_OF_WOOD">       						
 					</Filter>
-				</DamageScalarDetails>								
+				</DamageScalarDetails>				
 			</DamageNugget>				
 		</Nuggets>
 		<ScatterRadiusVsType
@@ -8065,9 +8065,9 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "60%">
 					<Filter 
 						Rule="ANY"
-						Include="MADE_OF_WOOD">          						
+						Include="MADE_OF_WOOD">     						
 					</Filter>
-				</DamageScalarDetails>					
+				</DamageScalarDetails>	
 
 				<DamageScalarDetails Scalar= "120%" >
 					<Filter 
@@ -8100,9 +8100,9 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "60%">
 					<Filter 
 						Rule="ANY"
-						Include="MADE_OF_WOOD">          						
+						Include="MADE_OF_WOOD">    						
 					</Filter>
-				</DamageScalarDetails>								
+				</DamageScalarDetails>			
 			</DamageNugget>			
 			
 		</Nuggets>
@@ -8215,7 +8215,15 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="MADE_OF_WOOD">          						
 					</Filter>
-				</DamageScalarDetails>								
+				</DamageScalarDetails>			
+
+				<DamageScalarDetails Scalar= "120%" >
+					<Filter 
+						  Rule="NONE"
+						  Include="WEAPON_SALVAGER">	
+					</Filter>
+					<RequiredUpgrade>Upgrade_NODDozerBlades</RequiredUpgrade>					
+				</DamageScalarDetails>  				
 			</DamageNugget>			
 		</Nuggets>
 	</WeaponTemplate>		
@@ -8717,7 +8725,7 @@ DAMAGE TYPES
 				DelayTimeSeconds="0s"
 				DamageType="CANNON"
 				DamageFXType="ALIEN_ION" >
-				<DamageScalarDetails Scalar= "40%">
+				<DamageScalarDetails Scalar= "50%">
 					<Filter 
 						Rule="ANY" 
 						Include="MADE_OF_WOOD">
@@ -8765,7 +8773,7 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DeathType="BURNED"
 				DamageFXType="ALIEN_ION">			
-				<DamageScalarDetails Scalar= "40%">
+				<DamageScalarDetails Scalar= "50%">
 					<Filter 
 						Rule="ANY" 
 						Include="MADE_OF_WOOD">
@@ -8777,6 +8785,7 @@ DAMAGE TYPES
 						Rule="NONE"
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
+								
 				<!-- Scalars vs transport vehicles -->
 				<DamageScalarDetails Scalar= "125%">
 					<Filter 
@@ -8818,7 +8827,7 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DeathType="BURNED"
 				DamageFXType="ALIEN_ION">
-				<DamageScalarDetails Scalar= "60%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter
 						Rule="ANY"
 						Include="MADE_OF_WOOD">
@@ -9286,7 +9295,7 @@ DAMAGE TYPES
 			<!-- Damage to all infantry, with spawning if dead 40 default-->
 			<DamageNugget
 				Damage="37.5"
-				Radius="32.0"
+				Radius="36.0"
 				DamageType="GRENADE">
 				<SpecialObjectFilter
 					Rule="NONE"
@@ -9297,7 +9306,7 @@ DAMAGE TYPES
 			<!-- regular damage to corrupted infantry -->
 			<DamageNugget
 				Damage="37.5"
-				Radius="32.0"
+				Radius="36.0"
 				DamageType="GRENADE">
 				<SpecialObjectFilter Rule="NONE">
 					<IncludeThing>CorruptedInfantry</IncludeThing>
@@ -9307,7 +9316,7 @@ DAMAGE TYPES
 			<!-- Damage to all non-infantry -->
 			<DamageNugget
 				Damage="25.0"
-				Radius="20.0"
+				Radius="22.5"
 				DamageType="GRENADE">
 				<SpecialObjectFilter
 					Rule="ALL"
@@ -9330,7 +9339,7 @@ DAMAGE TYPES
 
 			<!-- VEHICLE SLOW -->
 			<AttributeModifierNugget
-				Radius="20.0"
+				Radius="22.5"
 				PartitionFilterTestType="CIRCLE"
 				AttributeModifierName="AttributeModifier_TibGoo">
 				<SpecialObjectFilter
@@ -9343,8 +9352,9 @@ DAMAGE TYPES
 			
 			<!-- INF SLOW -->
 			<AttributeModifierNugget
-				Radius="20.0"
+				Radius="22.5"
 				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="HAS_TIBERIUM_UPGRADE"
 				AttributeModifierName="AttributeModifier_TibGooInf">
 				<SpecialObjectFilter
 					Rule="ANY"
@@ -9451,6 +9461,7 @@ DAMAGE TYPES
 			<AttributeModifierNugget
 				Radius="25.0"
 				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="HAS_TIBERIUM_UPGRADE"				
 				AttributeModifierName="AttributeModifier_TibGooInf">
 				<SpecialObjectFilter
 					Rule="ANY"
@@ -9556,6 +9567,7 @@ DAMAGE TYPES
 			<AttributeModifierNugget
 				Radius="25.0"
 				PartitionFilterTestType="CIRCLE"
+				ForbiddenTargetObjectStatus="HAS_TIBERIUM_UPGRADE"				
 				AttributeModifierName="AttributeModifier_TibGooInf">
 				<SpecialObjectFilter
 					Rule="ANY"
@@ -14866,7 +14878,7 @@ DAMAGE TYPES
 	
 		<AttributeModifierNugget
 			Radius="5.0"
-			AttributeModifierName="AttributeModifier_CrushSlow2"
+			AttributeModifierName="AttributeModifier_CrushSlowLight"
 			PartitionFilterTestType="CIRCLE" 
 			RequiredObjectStatus="SWITCHED_WEAPONS">
 			<SpecialObjectFilter
@@ -14936,7 +14948,7 @@ DAMAGE TYPES
 
 		<AttributeModifierNugget
 			Radius="5.0"
-			AttributeModifierName="AttributeModifier_CrushSlow2"
+			AttributeModifierName="AttributeModifier_CrushSlowLight"
 			PartitionFilterTestType="CIRCLE">
 			<SpecialObjectFilter
 				Rule="ANY"
@@ -14972,7 +14984,7 @@ DAMAGE TYPES
 							
 			<AttributeModifierNugget
 				Radius="5.0"
-				AttributeModifierName="AttributeModifier_CrushSlow2"
+				AttributeModifierName="AttributeModifier_CrushSlowLight"
 				PartitionFilterTestType="CIRCLE">
 				<SpecialObjectFilter
 					Rule="ANY"
@@ -15046,7 +15058,7 @@ DAMAGE TYPES
 				  Damage="40.0" 
 				  DamageType="MINE" 
 				  DamageFXType="NOD_PARTICLEBM">	  
-				<DamageScalarDetails Scalar= "10000%" >
+				<DamageScalarDetails Scalar= "500%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="WEAPON_SALVAGER">	
@@ -15082,7 +15094,7 @@ DAMAGE TYPES
 				  Damage="40.0" 
 				  DamageType="MINE" 
 				  DamageFXType="ALIEN_PLASMADISK">		
-				<DamageScalarDetails Scalar= "10000%" >
+				<DamageScalarDetails Scalar= "500%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="WEAPON_SALVAGER">	
@@ -15093,7 +15105,7 @@ DAMAGE TYPES
 
 			<AttributeModifierNugget
 				Radius="5.0"
-				AttributeModifierName="AttributeModifier_CrushSlow"
+				AttributeModifierName="AttributeModifier_CrushSlowHeavy"
 				PartitionFilterTestType="CIRCLE">
 				<SpecialObjectFilter
 					Rule="ANY"
@@ -15118,7 +15130,7 @@ DAMAGE TYPES
 				  Damage="60.0" 
 				  DamageType="MINE" 
 				  DamageFXType="GDI_RAILGUN">	  
-				<DamageScalarDetails Scalar= "10000%" >
+				<DamageScalarDetails Scalar= "500%" >
 					<Filter 
 						  Rule="NONE"
 						  Include="WEAPON_SALVAGER">	
@@ -15129,7 +15141,7 @@ DAMAGE TYPES
 			
 			<AttributeModifierNugget
 				Radius="5.0"
-				AttributeModifierName="AttributeModifier_CrushSlowHeavy"
+				AttributeModifierName="AttributeModifier_CrushSlowVeryHeavy"
 				PartitionFilterTestType="CIRCLE">
 				<SpecialObjectFilter
 					Rule="ANY"

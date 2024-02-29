@@ -1610,6 +1610,19 @@
 				AttributeModifier="AttributeModifier_TiberiumInfusion">
 				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>			
 			</AttributeModifierUpgrade>
+			<StatusBitsUpgrade
+				id="63DD108D"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="HAS_TIBERIUM_UPGRADE"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
+				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
+			</StatusBitsUpgrade>			
 			<SuppressionUpdate
 				id="3AE0061F"
 				UpdateDelay="1s"

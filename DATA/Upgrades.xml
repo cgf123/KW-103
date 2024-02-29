@@ -521,7 +521,7 @@
 		Description="UpgradeDesc:ALIENShardLaunchers"
 		Type="PLAYER"
 		BuildTime="60.0s"
-		BuildCost="2500"
+		BuildCost="2000"
 		ResearchSound="AudioEvent:ALI_Stalker_ShardLauncherUpgrade"
 		IconImage="Button_Upgrade_ShardLaunchers">
 	</UpgradeTemplate>	

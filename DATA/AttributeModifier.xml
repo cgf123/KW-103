@@ -57,16 +57,16 @@
 		id="Modifier_NODDozerBlades"
 		Category="NONE">
 		<Modifier Type="ARMOR" Value="80.0%"/>
-		<!-- 100% means add 1, 200% means add 2 (this is done in code).
-		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>  -->
+		<!-- 100% means add 1, 200% means add 2 (this is done in code). -->
+		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>
 	</AttributeModifier>
 
 	<AttributeModifier
 		id="Modifier_NODDozerBlades1"
 		Category="NONE">
 		<Modifier Type="ARMOR" Value="80.0%"/>
-		<!-- 100% means add 1, 200% means add 2 (this is done in code). 
-		<Modifier Type="CRUSHER_LEVEL" Value="100%"/> -->
+		<!-- 100% means add 1, 200% means add 2 (this is done in code). -->
+		<Modifier Type="CRUSHER_LEVEL" Value="100%"/>
 	</AttributeModifier>
 	
 	<AttributeModifier
@@ -243,13 +243,6 @@
 		<Modifier Type="RATE_OF_FIRE" Value="75%"/>
 	</AttributeModifier>		
 
-	<AttributeModifier
-		id="AttributeModifier_ZTCrush"
-		Category="NONE"
-		Duration="2.0s" >
-		<Modifier Type="SPEED" Value="50%"/>
-	</AttributeModifier>		
-	
 	<AttributeModifier
 		id="AttributeModifier_FirehawkGroundVision"
 		Category="NONE">
@@ -447,32 +440,32 @@
 	</AttributeModifier>		
 	
 	<AttributeModifier
+		id="AttributeModifier_CrushSlowLight"
+		Duration="2s"		
+		Category="NONE">
+		<Modifier Type="SPEED" Value="70%"/>
+	</AttributeModifier>		
+	
+	<AttributeModifier
 		id="AttributeModifier_CrushSlow"
-		Duration="1.5s"		
+		Duration="2s"		
 		Category="NONE">
 		<Modifier Type="SPEED" Value="35%"/>
 	</AttributeModifier>	
 	
 	<AttributeModifier
-		id="AttributeModifier_CrushSlow2"
-		Duration="1.5s"		
+		id="AttributeModifier_CrushSlowHeavy"
+		Duration="2s"		
 		Category="NONE">
-		<Modifier Type="SPEED" Value="70%"/>
+		<Modifier Type="SPEED" Value="20%"/>
 	</AttributeModifier>	
 	
 	<AttributeModifier
-		id="AttributeModifier_CrushSlowHeavy"
-		Duration="1.5s"		
-		Category="NONE">
-		<Modifier Type="SPEED" Value="25%"/>
-	</AttributeModifier>
-
-	<AttributeModifier
-		id="AttributeModifier_SmallCrusher"
-		Duration="10s"		
+		id="AttributeModifier_CrushSlowVeryHeavy"
+		Duration="2s"		
 		Category="NONE">
 		<Modifier Type="SPEED" Value="10%"/>
-	</AttributeModifier>		
+	</AttributeModifier>	
 
 	<AttributeModifier
 		id="AttributeModifier_EMPSlow_Generic"
