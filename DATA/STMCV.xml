@@ -842,6 +842,7 @@
 				id="12FA48BA"
 				AutoAcquireEnemiesWhenIdle="NO"
 				StopChaseDistance="500"
+				AILuaEventsList="BaseScriptFunctions"
 				HoldGroundCloseRangeDistance="0"
 				MinCowerTime="0s"
 				MaxCowerTime="0s"

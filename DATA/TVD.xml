@@ -328,6 +328,7 @@ KW XMLs:
     id="VeinDetonationMarkerWeapon"
     Name="VeindDetionationMarkerWeapon"
     RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+	AntiMask="ANTI_GROUND ANTI_STRUCTURE"
     AttackRange="50000.0"
     >
     <Nuggets>
@@ -338,16 +339,9 @@ KW XMLs:
 				Radius="250"
 				DamageType="CANNON"
 				DeathType="DETONATED" >
-				<SpecialObjectFilter
-					RejectStatusBitFlags="AIRBORNE_TARGET"
-					Rule="ALL">
-					<ExcludeThing>GDIHammerhead</ExcludeThing>
-					<ExcludeThing>ZOCOMHammerhead</ExcludeThing>
-					<ExcludeThing>SteelTalonsHammerhead</ExcludeThing>
-				</SpecialObjectFilter>
 			</DamageNugget> 
 			<AttributeModifierNugget
-				PartitionFilterTestType="SPHERE"
+				PartitionFilterTestType="CIRCLE"
 				AttributeModifierName="AttributeModifier_TibVeinSlow"
 				Radius="250" >
 				<SpecialObjectFilter
@@ -364,6 +358,7 @@ KW XMLs:
 		Name="TibVeinDetonation"
 		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
 		RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
 		AttackRange="50000.0"
 		>
 		<Nuggets>
@@ -407,6 +402,7 @@ KW XMLs:
 		id="VeinDetonationRadiusWeapon"
 		Name="VeinDetonationRadiusWeapon"
 		RadiusDamageAffects="SELF ALLIES ENEMIES NEUTRALS"
+		AntiMask="ANTI_GROUND ANTI_STRUCTURE"
 		AttackRange="50000.0">
 		<Nuggets>
 			<DamageNugget

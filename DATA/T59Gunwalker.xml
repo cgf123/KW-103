@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="Traveler59GunWalker"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE MADE_OF_DIRT"
 		Description="Desc:Traveler59GunWalker"
 		TypeDescription="Type:Traveler59GunWalker"
 		RadarPriority="UNIT"
@@ -1308,6 +1308,7 @@
 			<AIUpdate
 				id="12FA48BA"
 				AutoAcquireEnemiesWhenIdle="YES"
+				AILuaEventsList="BaseScriptFunctions"
 				StopChaseDistance="500"
 				HoldGroundCloseRangeDistance="0"
 				MinCowerTime="0s"

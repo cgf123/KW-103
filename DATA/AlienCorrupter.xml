@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="AlienCorrupter"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAVALRY TIBERIUM_BASED ANTI_GARRISON CAN_BE_FAVORITE_UNIT CAN_HEAL_ALLIES"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAVALRY TIBERIUM_BASED ANTI_GARRISON CAN_BE_FAVORITE_UNIT CAN_HEAL_ALLIES MADE_OF_DIRT"
 		Description="Desc:AlienCorrupter"
 		TypeDescription="Type:AlienCorrupter"
 		RadarPriority="UNIT"
@@ -494,6 +494,7 @@
 		<AI>
 			<AIUpdate
 				id="0x12FA48BA"
+				AILuaEventsList="BaseScriptFunctions"
 				AutoAcquireEnemiesWhenIdle="YES">
 				<UnitAITargetChooserData
 					TargetingCompareList="DefaultTargetingCompareList" />

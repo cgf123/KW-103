@@ -1258,7 +1258,7 @@ DAMAGE TYPES
 		id="GDIOrcaRocketWeapon"
 		Name="GDIOrcaRocketWeapon"
 		AttackRange="250.0"
-		WeaponSpeed="750"
+		WeaponSpeed="800"
 		MinWeaponSpeed="810"
 		MaxWeaponSpeed="800"
 		FireFX="FX_GDIOrcaMissleFire"
@@ -1298,7 +1298,7 @@ DAMAGE TYPES
 		id="GDIOrcaHardpointsUpgradedRocketWeapon"
 		Name="GDIOrcaHardpointsUpgradedRocketWeapon"
 		AttackRange="250.0"
-		WeaponSpeed="750"
+		WeaponSpeed="800"
 		MinWeaponSpeed="810"
 		MaxWeaponSpeed="800"
 		FireFX="FX_GDIOrcaMissleFire"
@@ -5171,7 +5171,14 @@ DAMAGE TYPES
 					<Filter
 						Rule="ANY"
 						Include="STRUCTURE FS_BASE_DEFENSE" />
-				</DamageScalarDetails>				
+				</DamageScalarDetails>	
+				
+				<DamageScalarDetails Scalar="80%">
+					<Filter
+						Rule="ANY"
+						Include="MADE_OF_DIRT">
+					</Filter>
+				</DamageScalarDetails>						
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>
@@ -5227,6 +5234,13 @@ DAMAGE TYPES
 						Rule="ANY"
 						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>	
+				
+				<DamageScalarDetails Scalar="80%">
+					<Filter
+						Rule="ANY"
+						Include="MADE_OF_DIRT">
+					</Filter>
+				</DamageScalarDetails>						
 			</DamageNugget>
 		</Nuggets>
 	</WeaponTemplate>  
@@ -11891,7 +11905,7 @@ DAMAGE TYPES
 			MinSeconds="0.1s"
 			MaxSeconds="0.1s" />
 		<Nuggets>	
-			<SpecialPowerNugget SpecialPowerTemplate="NODBeamCannonLaserSpecialPower" />
+			<SpecialPowerNugget SpecialPowerTemplate="NODBeamCannonLaserSpecialPowerDispatch" />
 		</Nuggets>
 	</WeaponTemplate>
 	
@@ -13660,7 +13674,7 @@ DAMAGE TYPES
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS SELF" >
 		<Nuggets>
 			<ParalyzeNugget
-				Radius="40.0"
+				Radius="50.0"
 				DurationSeconds="5s"
 				ParalyzeType="EMP"
 				ParalyzeFX="FX_NODBuggyEmpHit">
@@ -13672,7 +13686,7 @@ DAMAGE TYPES
 			</ParalyzeNugget>
 			
 			<ParalyzeNugget
-				Radius="40.0"
+				Radius="50.0"
 				DurationSeconds="2.5s"
 				ParalyzeType="EMP"
 				ParalyzeFX="FX_NODBuggyEmpHit">
@@ -13685,7 +13699,7 @@ DAMAGE TYPES
 						
 			<!-- Affects Adaptive Units + Avatars -->
 			<AttributeModifierNugget
-				Radius="32.0"
+				Radius="40.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Grenadier"
 				PartitionFilterTestType="CIRCLE" >
 				<SpecialObjectFilter
@@ -14547,7 +14561,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_ChargedParticleBeamHitG" />
 			<DamageNugget
-					Damage="267.0"
+					Damage="288.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="CANNON"
@@ -14605,7 +14619,7 @@ DAMAGE TYPES
 				LaserId="1"
 				HitGroundFX="FX_ChargedParticleBeamHit" />
 			<DamageNugget
-					Damage="333.0"
+					Damage="360.0"
 					Radius="0.0"
 					DelayTimeSeconds="0.0s"
 					DamageType="CANNON"

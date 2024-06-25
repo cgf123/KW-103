@@ -47,11 +47,6 @@
 	<Include type="all" source="ART:NODRef\NBREFINERY_ASN_CTR1.w3x" />		
 	<Include type="all" source="ART:NODRef\NBREFINERY_ASK1.w3x" />		
 
-	<!--
-	<Include type="all" source="Art\NBPort\NBPort_AN.w3x" /> 	
-	<Include type="all" source="Art\NBPort\NBPort_D2_NEW.w3x" />	
-	-->
-
 	<Include type="all" source="ART:AlienRef\ABTIBERTOWBLD_SKN1.w3x" />		
 	<Include type="all" source="ART:AlienRef\ABTIBERTOWBLD_SKL1.w3x" />		
 

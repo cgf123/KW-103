@@ -792,7 +792,7 @@
 				PersistentPrepTime="0.1s"
 				PersistentCount="1"
 				PackTime="0.1s"
-				UnpackTime="0.3s"
+				UnpackTime="0.1s"
 				PreTriggerUnstealthTime="0s"
 				Options="CHECK_SPECIALPOWER_REQUIREMENTS_DURING_UPDATE CHECK_PREVENT_CONDITIONS"
 				PackUnpackVariationFactor="0"
@@ -831,7 +831,7 @@
 				FaceTarget="True"
 				SpecialWeapon="GDIGrenadeSoldierEMPGrenade1"
 				WhichSpecialWeapon="1"
-				BusyForDuration="0.4s"
+				BusyForDuration="0.2s"
 				WeaponSlotID="1"
 				WeaponSlotType="PRIMARY_WEAPON"
 				SkipContinue="False"
@@ -874,7 +874,7 @@
 				AdjustVictim="False"
 				UseDistanceFromCommandCenter="False"
 				ChildModuleHandlesFX="False"
-				MaxMembersToDispatchTo="2">
+				MaxMembersToDispatchTo="1">
 				<AttributeModifierAffects
 					Rule="UNPARSED"
 					Relationship=""

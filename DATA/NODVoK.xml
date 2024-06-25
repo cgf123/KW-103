@@ -70,7 +70,7 @@
 		BuildCost="1000"
 		RefundValue="0"
 		ThreatValue="0"
-		MaxSimultaneousOfType="2"
+		MaxSimultaneousOfType="3"
 		TransportSlotCount="1"
 		IsTrainable="True"
 		IsForbidden="False"

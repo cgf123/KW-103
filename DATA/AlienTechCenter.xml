@@ -96,10 +96,12 @@
 			Armor="AlienReactorArmor"
 			DamageFX="FactionStructureDamageFX"
 			Conditions="" />
+		<!--
 		<ArmorSet
 			Armor="AlienReactorArmorShieldBodyEnabled"
 			DamageFX="FactionStructureDamageFX"
-			Conditions="SHIELDBODY_ENABLED" />					
+			Conditions="SHIELDBODY_ENABLED" />		
+		-->
 		<SkirmishAIInformation
 			BaseBuildingLocation="SPREAD"
 			ConquerMetricsOverrideDamageType="UNDEFINED"
