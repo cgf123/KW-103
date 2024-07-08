@@ -222,7 +222,7 @@
 		Description="UpgradeDesc:TravelerEngines"
 		Type="PLAYER"
 		BuildCost="1500"
-		BuildTime="45s"
+		BuildTime="60s"
 		ResearchSound="AudioEvent:ALI_TravelerEngines_Upgrade"
 		IconImage="Button_Upgrade_TravelerEngines"
 	/>	
@@ -257,8 +257,8 @@
 		TypeDescription="UpgradeType:ALIENForcefieldGenerators"
 		Description="UpgradeDesc:ALIENForcefieldGenerators"
 		Type="PLAYER"
-		BuildTime="60.0s"
-		BuildCost="2500"
+		BuildTime="75.0s"
+		BuildCost="2000"
 		ResearchSound="AudioEvent:ALI_ForcefieldGenerator_Upgrade"
 		IconImage="Button_UpgradeForcefieldGenerator"
 	/>	
@@ -274,7 +274,7 @@
 		TypeDescription="UpgradeType:Reaper17ForcefieldGenerators"
 		Description="UpgradeDesc:Reaper17ForcefieldGenerators"
 		Type="PLAYER"
-		BuildTime="45.0s"
+		BuildTime="60.0s"
 		BuildCost="1000"
 		ResearchSound="AudioEvent:ALI_ForcefieldGenerator_Upgrade"
 		IconImage="Button_UpgradeForcefieldGenerator"

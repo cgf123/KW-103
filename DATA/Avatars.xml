@@ -2385,11 +2385,13 @@
 				id="3473AFD2"
 				DefectionFrameCount="225" />
 
+			<!--
 			<PowerUpdate
 				UpdatePeriod="0.25s"
 				ReloadTime="30s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />				
+			-->
 				
 			<WeaponSetUpdate
 				id="720F4A50">
@@ -7571,11 +7573,13 @@
 				id="3473AFD2"
 				DefectionFrameCount="225" />
 				
+			<!--
 			<PowerUpdate
 				UpdatePeriod="0.25s"
 				ReloadTime="30s"
 				Duration="10s"
 				Type="BACKUP_GENERATOR" />								
+			-->
 				
 			<WeaponSetUpdate
 				id="720F4A50">

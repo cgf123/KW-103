@@ -22,7 +22,7 @@
 		EditorName="GDIBattleBase"
 		EditorSorting="STRUCTURE"
 		BountyValue="0"
-		BuildTime="19"
+		BuildTime="18"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -72,7 +72,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_GDIArmoryRailgunTech"		
 		CaptureTime="0s"
-		BuildCost="1900"
+		BuildCost="1800"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1072,7 +1072,6 @@
 					DeathTypes="ALL"
 					DeathTypesForbidden="" />
 			</SlowDeath>
-			<!-- Battlebase/Guardian Railguns now ST-Exclusive? -->
 			<StatusBitsUpgrade
 				id="85B2DF85"
 				RequiresAllTriggers="False"
@@ -1742,7 +1741,7 @@
 		EditorName="SteelTalonsBattleBase"
 		EditorSorting="STRUCTURE"
 		BountyValue="0"
-		BuildTime="19"
+		BuildTime="18"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -1792,7 +1791,7 @@
 		ReinvisibilityDelay="4s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_GDIArmoryRailgunTech"				
 		CaptureTime="0s"
-		BuildCost="1900"
+		BuildCost="1800"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -3187,6 +3186,15 @@
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_Pack</TriggeredBy>
 			</AudioLoopUpgrade>
+
+			<!-- ARMOR UPGRADE -->
+			<AttributeModifierUpgrade
+				id="Upgrade_AdaptiveArmorBuff"
+				AttributeModifier="AttributeModifier_AdaptiveArmorBuff"
+				Permanent="true">
+				<TriggeredBy>Upgrade_AdaptiveArmor</TriggeredBy>
+			</AttributeModifierUpgrade>					
+			
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -3436,7 +3444,7 @@
 		EditorName="ZOCOMBattleBase"
 		EditorSorting="STRUCTURE"
 		BountyValue="0"
-		BuildTime="19"
+		BuildTime="18"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -3485,7 +3493,7 @@
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"
 		CaptureTime="0s"
-		BuildCost="1900"
+		BuildCost="1800"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -5161,7 +5169,7 @@
 		EditorName="GDIRig"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="19"
+		BuildTime="18"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -5211,7 +5219,7 @@
 		ReinvisibilityDelay="7s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_GDIArmoryRailgunTech"				
 		CaptureTime="0s"
-		BuildCost="1900"
+		BuildCost="1800"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -6252,7 +6260,7 @@
 		EditorName="ZOCOMRig"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="19"
+		BuildTime="18"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -6301,7 +6309,7 @@
 		UnitTypeIcon=""
 		ReinvisibilityDelay="7s"
 		CaptureTime="0s"
-		BuildCost="1900"
+		BuildCost="1800"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -7341,7 +7349,7 @@
 		EditorName="SteelTalonsRig"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="19"
+		BuildTime="18"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -7391,7 +7399,7 @@
 		ReinvisibilityDelay="7s"
 		WorldMapArmoryUpgradesAllowed="Upgrade_GDIArmoryRailgunTech"				
 		CaptureTime="0s"
-		BuildCost="1900"
+		BuildCost="1800"
 		RefuntValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"

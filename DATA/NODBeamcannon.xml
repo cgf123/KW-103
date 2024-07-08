@@ -1158,7 +1158,7 @@
 			<!-- NEW DEBUFF ABILITY -->
 			<SpecialPower
 				id="9300F148"
-				SpecialPowerTemplate="NODBeamCannonLaserSpecialPower1"
+				SpecialPowerTemplate="NODBeamCannonLaserDebuffSpecialPower"
 				AntiCategory=""
 				AntiFX=""
 				AttributeModifier=""

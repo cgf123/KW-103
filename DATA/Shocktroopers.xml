@@ -92,7 +92,7 @@
 			DamageFX="InfantryAlienDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="105"
+			Speed="110"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<Draws>
@@ -1537,7 +1537,7 @@
 			DamageFX="InfantryAlienDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="105"
+			Speed="110"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<Draws>
@@ -2991,7 +2991,7 @@
 			DamageFX="InfantryAlienDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="105"
+			Speed="110"
 			Condition="NORMAL"
 			Locomotor="HumanLocomotor" />
 		<Draws>

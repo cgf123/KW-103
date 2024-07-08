@@ -95,8 +95,9 @@
 			RequiredModelConditionsAny=""
 			ForbiddenModelConditions=""
 			RequiredObjectStatusAny="">
-			<RequiredObject>Traveler59StatisChamber</RequiredObject>
-			<RequiredObject>Traveler59ControlCenter</RequiredObject>			
+			<!--
+			<RequiredObject>Traveler59StatisChamber</RequiredObject> -->
+			<RequiredObject>Traveler59Reactor</RequiredObject>			
 		</GameDependency>
 		<ArmorSet
 			Armor="NoArmor"
@@ -589,7 +590,7 @@
 				SpecialPowerTemplate="SpecialPower_CultistMindControl_Weak"
 				StartAbilityRange="250"
 				AbilityAbortRange="750"
-				PreparationTime="3s"
+				PreparationTime="2.5s"
 				PersistentPrepTime="0s"
 				PersistentCount="-1"
 				PackTime="0s"

@@ -995,7 +995,8 @@
 				AttributeModifier="AttributeModifier_AdaptiveArmorBuff"
 				Permanent="true">
 				<TriggeredBy>Upgrade_AdaptiveArmor</TriggeredBy>
-			</AttributeModifierUpgrade>			
+			</AttributeModifierUpgrade>		
+			
 			<StancesBehavior
 				id="54CA416E"
 				StanceTemplate="Generic" />					

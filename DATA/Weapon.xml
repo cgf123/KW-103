@@ -1017,7 +1017,7 @@ DAMAGE TYPES
 			</DamageContainedNugget>
 			<DamageNugget
 				Damage="60.0"
-				Radius="48.0"			
+				Radius="50.0"			
 				DamageType="GRENADE"
 				DamageFXType="GDI_GRENADE"
 				DeathType="EXPLODED" >	
@@ -1028,7 +1028,7 @@ DAMAGE TYPES
 			</DamageNugget>
 			<DamageNugget
 				Damage="60.0"
-				Radius="36.0"			
+				Radius="30.0"			
 				DamageType="GRENADE"
 				DamageFXType="GDI_GRENADE"
 				DeathType="EXPLODED" >	
@@ -1038,7 +1038,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>					
 			</DamageNugget>			
 			<SuppressionNugget
-				Radius="48.0"
+				Radius="50.0"
 				Suppression="20"
 				DurationSeconds="5s" />
 		</Nuggets>
@@ -1103,13 +1103,13 @@ DAMAGE TYPES
 			</DamageContainedNugget>
 			<DamageNugget
 				Damage="120.0"
-				Radius="36.0"
+				Radius="37.5"
 				DamageType="GRENADE"
 				DamageFXType="GDI_GRENADE"
 				DeathType="EXPLODED" >				
 			</DamageNugget>			
 			<SuppressionNugget
-				Radius="36.0"
+				Radius="37.5"
 				Suppression="50"
 				DurationSeconds="5.0s" />			
 		</Nuggets>
@@ -1312,8 +1312,8 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="1.08s"
-				MaxSeconds="1.08s" />
+				MinSeconds="1.0s"
+				MaxSeconds="1.0s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -1481,8 +1481,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="20d"
 		>
 		<FiringDuration
-				MinSeconds="1.0s"
-				MaxSeconds="1.0s" />
+				MinSeconds="0.93s"
+				MaxSeconds="0.93s" />
 		<ClipReloadTime
 				MinSeconds="5s"
 				MaxSeconds="5s" />
@@ -2152,7 +2152,6 @@ DAMAGE TYPES
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS NOT_SIMILAR"	
 		ClipSize="0"
 		AcceptableAimDelta="180d"
-		ScatterRadius="35"
 		RequiredFiringObjectStatus="WEAPON_UPGRADED_02"
  		>
 		<FiringDuration
@@ -2439,8 +2438,8 @@ DAMAGE TYPES
 			MinSeconds="2.0s"
 			MaxSeconds="2.0s" />
 		<ClipReloadTime
-			MinSeconds="1.1s"
-			MaxSeconds="1.3s" />
+			MinSeconds="1.3s"
+			MaxSeconds="1.5s" />
 		<Nuggets>
 			<ActivateLinearDamageNugget Lifetime="2.0s" />
 			<!-- For killing husks/friendly targets -->
@@ -2565,8 +2564,8 @@ DAMAGE TYPES
 			MinSeconds="2.0s"
 			MaxSeconds="2.0s" />
 		<ClipReloadTime
-			MinSeconds="1.1s"
-			MaxSeconds="1.3s" />
+			MinSeconds="1.3s"
+			MaxSeconds="1.5s" />
 		<Nuggets>
 			<ActivateLinearDamageNugget Lifetime="2.0s" />
 			<!-- For killing husks/friendly targets -->
@@ -6274,8 +6273,8 @@ DAMAGE TYPES
 		AcceptableAimDelta="5d"		
 		>
 		<FiringDuration
-			MinSeconds="2.1s"
-			MaxSeconds="2.1s" />
+			MinSeconds="2.05s"
+			MaxSeconds="2.05s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -6327,8 +6326,8 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.44s"
-			MaxSeconds="1.44s" />
+			MinSeconds="1.4s"
+			MaxSeconds="1.4s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -6389,8 +6388,8 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.44s"
-			MaxSeconds="1.44s" />
+			MinSeconds="1.4s"
+			MaxSeconds="1.4s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -6451,8 +6450,8 @@ DAMAGE TYPES
 		CanFireWhileMoving="true"
 		>
 		<FiringDuration
-			MinSeconds="1.44s"
-			MaxSeconds="1.44s" />
+			MinSeconds="1.4s"
+			MaxSeconds="1.4s" />
 		<Nuggets>
 			<ActivateLaserNugget
 				Lifetime="1s"
@@ -8328,7 +8327,8 @@ DAMAGE TYPES
 					Include="METAUNIT">
 				</SpecialObjectFilter>
 			</ParalyzeNugget>
-			<!-- Affects Adaptive Units + Avatars -->
+			
+			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
 				Radius="50.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_AOEMC"
@@ -8336,11 +8336,7 @@ DAMAGE TYPES
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="MADE_OF_METAL"
-					RejectStatusBitFlags="AIRBORNE_TARGET OUT_OF_PHASE IN_STASIS">		
-					<!--
-					<ExcludeThing>NODAvatar</ExcludeThing>
-					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>			
-					-->					
+					RejectStatusBitFlags="AIRBORNE_TARGET OUT_OF_PHASE IN_STASIS">			
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>					
 		</Nuggets>
@@ -8841,7 +8837,7 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DeathType="BURNED"
 				DamageFXType="ALIEN_ION">
-				<DamageScalarDetails Scalar= "67%">
+				<DamageScalarDetails Scalar= "60%">
 					<Filter
 						Rule="ANY"
 						Include="MADE_OF_WOOD">
@@ -10105,8 +10101,8 @@ DAMAGE TYPES
 		AntiMask="ANTI_GROUND"
  		>
 		<FiringDuration
-				MinSeconds="1.5s"
-				MaxSeconds="1.5s" />
+				MinSeconds="1.3s"
+				MaxSeconds="1.3s" />
 		<ClipReloadTime
 				MinSeconds="2.2s"
 				MaxSeconds="2.5s" />
@@ -10481,31 +10477,47 @@ DAMAGE TYPES
 		/>
 		<Nuggets>
 			<DamageNugget
-				Damage="27.0"
+				Damage="28.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"
 				DamageFXType="GDI_MACHINEGUN"
 				DeathType="NORMAL">
-				<DamageScalarDetails Scalar= "75%">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="INFANTRY"
+				/>				
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />		
+				</DamageScalarDetails>  					
+			</DamageNugget>		
+			<DamageNugget
+				Damage="21.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.0s"
+				DamageType="GUN"
+				DamageFXType="GDI_MACHINEGUN"
+				DeathType="NORMAL">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="INFANTRY"
+				/>																		
+				<DamageScalarDetails Scalar= "100%">
 					<Filter
 						Rule="NONE"
 						RejectStatusBitFlags="SWITCHED_WEAPONS"
 						Include="INFANTRY" >
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "60%" >
+				<DamageScalarDetails Scalar= "80%" >
 					<Filter 
 						  Rule="NONE"
 						  StatusBitFlags="SWITCHED_WEAPONS"
 						  Include="INFANTRY">	
 					</Filter>			
-				</DamageScalarDetails>  	
-				<DamageScalarDetails Scalar= "125%" >
-					<Filter
-						Rule="ANY"
-						Include="STRUCTURE FS_BASE_DEFENSE" />		
-				</DamageScalarDetails>  					
+				</DamageScalarDetails>  				
 			</DamageNugget>
 			<!--
 			<SuppressionNugget
@@ -10545,13 +10557,34 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="GDI_MACHINEGUN"
 				DeathType="NORMAL">
-				<DamageScalarDetails Scalar= "100%">
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="INFANTRY"
+				/>				
+				<DamageScalarDetails Scalar= "125%" >
+					<Filter
+						Rule="ANY"
+						Include="STRUCTURE FS_BASE_DEFENSE" />		
+				</DamageScalarDetails>  					
+			</DamageNugget>		
+			<DamageNugget
+				Damage="27.0"
+				Radius="0.0"
+				DelayTimeSeconds="0.0s"
+				DamageType="GUN"
+				DamageFXType="GDI_MACHINEGUN"
+				DeathType="NORMAL">
+				<SpecialObjectFilter
+					Rule="NONE"
+					Include="INFANTRY"
+				/>					
+				<DamageScalarDetails Scalar= "150%">
 					<Filter
 						Rule="NONE"
 						Include="NONCOM" >
 					</Filter>
 				</DamageScalarDetails>														
-				<DamageScalarDetails Scalar= "75%">
+				<DamageScalarDetails Scalar= "100%">
 					<Filter
 						Rule="NONE"
 						RejectStatusBitFlags="SWITCHED_WEAPONS"
@@ -10559,18 +10592,13 @@ DAMAGE TYPES
 						Include="INFANTRY" >
 					</Filter>
 				</DamageScalarDetails>	
-				<DamageScalarDetails Scalar= "60%" >
+				<DamageScalarDetails Scalar= "80%" >
 					<Filter 
 						  Rule="NONE"
 						  StatusBitFlags="SWITCHED_WEAPONS"
 						  Include="INFANTRY">	
 					</Filter>			
-				</DamageScalarDetails>  
-				<DamageScalarDetails Scalar= "125%" >
-					<Filter
-						Rule="ANY"
-						Include="STRUCTURE FS_BASE_DEFENSE" />		
-				</DamageScalarDetails>  					
+				</DamageScalarDetails>  				
 			</DamageNugget>
 			<!--
 			<SuppressionNugget
@@ -11328,7 +11356,7 @@ DAMAGE TYPES
 		Name="NodMobileArtilleryCannon"
 		AttackRange="650.0"
 		MinimumAttackRange="175.0"
-		WeaponSpeed="300"
+		WeaponSpeed="350"
 		ClipSize="1"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		CanFireWhileMoving="false"
@@ -11397,7 +11425,7 @@ DAMAGE TYPES
 				  </Filter>
                 </DamageScalarDetails>
 
-				<DamageScalarDetails Scalar="50%">
+				<DamageScalarDetails Scalar="40%">
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" >
@@ -11413,7 +11441,7 @@ DAMAGE TYPES
 		Name="NodMobileArtilleryCannonCloned"
 		AttackRange="650.0"
 		MinimumAttackRange="175.0"
-		WeaponSpeed="300"
+		WeaponSpeed="350"
 		ClipSize="1"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		CanFireWhileMoving="false"
@@ -11481,7 +11509,7 @@ DAMAGE TYPES
 				  </Filter>
                 </DamageScalarDetails>
 				
-				<DamageScalarDetails Scalar="50%">
+				<DamageScalarDetails Scalar="40%">
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" >
@@ -11496,7 +11524,7 @@ DAMAGE TYPES
 			id="NodMobileArtilleryBombardCannon"
 			Name="NodMobileArtilleryBombardCannon"
 			AttackRange="50000.0"
-			WeaponSpeed="300"
+			WeaponSpeed="350"
 			MinimumAttackRange="175.0"
 			AcceptableAimDelta="20d"
 			MaxTargetPitch="60d"
@@ -11566,7 +11594,7 @@ DAMAGE TYPES
 				  </Filter>
                 </DamageScalarDetails>
 
-				<DamageScalarDetails Scalar="50%">
+				<DamageScalarDetails Scalar="40%">
 					<Filter
 						Rule="NONE"
 						Include="INFANTRY" >
@@ -11909,20 +11937,6 @@ DAMAGE TYPES
 		</Nuggets>
 	</WeaponTemplate>
 	
-	<WeaponTemplate
-		id="NODBeamCannonLaser1"
-		Name="NODBeamCannonLaser1"
-		AttackRange="600.0"
-		WeaponSpeed="999999.0"
-		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
-		AntiMask="ANTI_GROUND ANTI_AIRBORNE_VEHICLE"
-		ForbiddenFiringObjectStatus="WEAPON_UPGRADED_01"
-		ClipSize="1">
-		<Nuggets>	
-			<SpecialPowerNugget SpecialPowerTemplate="NODBeamCannonLaserSpecialPower1" />
-		</Nuggets>
-	</WeaponTemplate>	
-	
 	<!-- 		FireSound="" Multisound:NOD_BeamCannon_ChargeObeliskLoopMS NOD_ScorpionTank_BeamWeaponLoopMS	-->
 	<WeaponTemplate
 		id="NODBeamCannonLaserDebuff"
@@ -11959,7 +11973,7 @@ DAMAGE TYPES
 			</ActivateLaserNugget>		
 			
 			<DamageNugget 
-				Damage="45.0" 
+				Damage="60.0" 
 				Radius="0.0" 
 				DelayTimeSeconds="0.0s" 
 				DamageType="LASER" 
@@ -11978,7 +11992,7 @@ DAMAGE TYPES
 			</DamageNugget>
 			
 			<DamageNugget 
-				Damage="45.0" 
+				Damage="60.0" 
 				Radius="0.0" 
 				DelayTimeSeconds="0.0s" 
 				DamageType="LASER" 
@@ -12000,18 +12014,28 @@ DAMAGE TYPES
 				AttributeModifierName="AttributeModifier_BeamDebuff">
 				<SpecialObjectFilter
 					Rule="ALL"
-					Exclude="TIBERIUM_BASED"
+					Exclude="TIBERIUM_BASED METAUNIT INFANTRY"
 					RejectStatusBitFlags="AIRBORNE_TARGET">
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>
+			
 			<AttributeModifierNugget
 				PartitionFilterTestType="CIRCLE"
-				AttributeModifierName="AttributeModifier_BeamDebuffHeavy">
+				AttributeModifierName="AttributeModifier_BeamDebuff">
 				<SpecialObjectFilter
 					Rule="NONE"
 					Include="TIBERIUM_BASED" >
 				</SpecialObjectFilter>					
-			</AttributeModifierNugget>							
+			</AttributeModifierNugget>	
+
+			<AttributeModifierNugget
+				PartitionFilterTestType="CIRCLE"
+				AttributeModifierName="AttributeModifier_BeamDebuffHeavy">
+				<SpecialObjectFilter
+					Rule="ANY"
+					Include="METAUNIT INFANTRY" >
+				</SpecialObjectFilter>					
+			</AttributeModifierNugget>						
 			
 			<TintObjectsNugget
 				Radius="10"
@@ -12307,7 +12331,7 @@ DAMAGE TYPES
 		WeaponSpeed="999999.0"
 		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
 		AcceptableAimDelta="180d"
-		FireSound="AudioEvent:NOD_LaserCannon_WeaponFire"
+		FireSound="AudioEvent:NOD_LaserCannonUpgraded_WeaponFire"
 		FireFX="FX_NODSpitfireFire"
 		ReAcquireDetailType="POST_FIRE"
 		ClipSize="2"
@@ -13324,8 +13348,8 @@ DAMAGE TYPES
 					Exclude="VEHICLE">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>			
-
-			<!-- Affects Adaptive Units + Avatars -->
+			
+			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
 				Radius="40.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Awakened"
@@ -13391,8 +13415,8 @@ DAMAGE TYPES
 					Exclude="VEHICLE">										
 				</SpecialObjectFilter>
 			</ParalyzeNugget>			
-			
-			<!-- Affects Adaptive Units + Avatars -->
+
+			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
 				Radius="40.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Awakened"
@@ -13401,11 +13425,7 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="VEHICLE"
 					Exclude="CAN_HEAL_ALLIES"
-					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">						
-					<!--
-					<ExcludeThing>NODAvatar</ExcludeThing>
-					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
-					-->				
+					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">									
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>					
 		</Nuggets>
@@ -13479,9 +13499,9 @@ DAMAGE TYPES
 					StatusBitFlags="COMBINED_PARENT"
 					Include="VEHICLE">										
 				</SpecialObjectFilter>
-			</ParalyzeNugget>			
-			
-			<!-- Affects Adaptive Units + Avatars -->
+			</ParalyzeNugget>		
+
+			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
 				Radius="60.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Enlightened"
@@ -13490,11 +13510,7 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="VEHICLE"
 					Exclude="CAN_HEAL_ALLIES"					
-					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">
-					<!--
-					<ExcludeThing>NODAvatar</ExcludeThing>
-					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
-					-->						
+					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">				
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>						
 			
@@ -13528,7 +13544,7 @@ DAMAGE TYPES
 					StatusBitFlags="COMBINED_PARENT"
 					Include="VEHICLE">										
 				</SpecialObjectFilter>
-			</ParalyzeNugget>				
+			</ParalyzeNugget>								
 		
 			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
@@ -13539,11 +13555,7 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="VEHICLE"
 					Exclude="CAN_HEAL_ALLIES"					
-					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">
-					<!--
-					<ExcludeThing>NODAvatar</ExcludeThing>
-					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
-					-->
+					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">	
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>			
 		</Nuggets>
@@ -13608,9 +13620,9 @@ DAMAGE TYPES
 					StatusBitFlags="COMBINED_PARENT"
 					Include="VEHICLE">										
 				</SpecialObjectFilter>
-			</ParalyzeNugget>				
+			</ParalyzeNugget>					
 			
-			<!-- Affects Adaptive Units but NOT Avatars -->
+			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
 				Radius="8.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Generic"
@@ -13620,8 +13632,6 @@ DAMAGE TYPES
 					Include="VEHICLE"
 					Exclude="CAN_HEAL_ALLIES"					
 					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">
-					<ExcludeThing>NODAvatar</ExcludeThing>
-					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>							
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>	
 		</Nuggets>
@@ -13696,8 +13706,8 @@ DAMAGE TYPES
 					Include="VEHICLE">										
 				</SpecialObjectFilter>				
 			</ParalyzeNugget>
-						
-			<!-- Affects Adaptive Units + Avatars -->
+			
+			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
 				Radius="40.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Grenadier"
@@ -13706,11 +13716,7 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="VEHICLE"
 					Exclude="CAN_HEAL_ALLIES"					
-					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">
-					<!--
-					<ExcludeThing>NODAvatar</ExcludeThing>
-					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>			
-					-->
+					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">		
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>				
 		</Nuggets>
@@ -13746,21 +13752,21 @@ DAMAGE TYPES
 			</ParalyzeNugget>
 
 			<ParalyzeNugget
-				Radius="40.0"
+				Radius="50.0"
 				DurationSeconds="5s"
 				ParalyzeType="EMP"
 				ParalyzeFX="FX_NODBuggyEmpHit">
 				<SpecialObjectFilter
 					Rule="ANY"
 					StatusBitFlags="COMBINED_PARENT"
-					Include="VEHICLE">										
+					Include="VEHICLE">								
 				</SpecialObjectFilter>				
-			</ParalyzeNugget>			
+			</ParalyzeNugget>						
 			
 			<WeaponOCLNugget
 				WeaponOCL="OCL_GDIShockwaveArtilleryFX" />
 				
-			<!-- Affects Adaptive Units + Avatars -->
+			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
 				Radius="40.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Generic"
@@ -13769,11 +13775,7 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="VEHICLE"
 					Exclude="CAN_HEAL_ALLIES"					
-					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">
-					<!--
-					<ExcludeThing>NODAvatar</ExcludeThing>
-					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>		
-					-->
+					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">	
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>						
 				
@@ -13825,18 +13827,18 @@ DAMAGE TYPES
 			</ParalyzeNugget>
 
 			<ParalyzeNugget
-				Radius="40.0"
+				Radius="125.0"
 				DurationSeconds="5s"
 				ParalyzeType="EMP"
-				ParalyzeFX="FX_NODBuggyEmpHit">
+				ParalyzeFX="">
 				<SpecialObjectFilter
 					Rule="ANY"
 					StatusBitFlags="COMBINED_PARENT"
 					Include="VEHICLE">										
 				</SpecialObjectFilter>				
-			</ParalyzeNugget>
+			</ParalyzeNugget>				
 			
-			<!-- Affects Adaptive Units + Avatars -->
+			<!-- Affects Adaptive Units -->
 			<AttributeModifierNugget
 				Radius="100.0"
 				AttributeModifierName="AttributeModifier_EMPSlow_Generic"
@@ -13845,11 +13847,7 @@ DAMAGE TYPES
 					Rule="NONE"
 					Include="VEHICLE"
 					Exclude="CAN_HEAL_ALLIES"
-					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">		
-					<!--
-					<ExcludeThing>NODAvatar</ExcludeThing>
-					<ExcludeThing>MarkedOfKaneAvatar</ExcludeThing>			
-					-->					
+					RejectStatusBitFlags="AIRBORNE_TARGET SHIELDBODY_ENABLED OUT_OF_PHASE IN_STASIS COMBINED_PARENT">				
 				</SpecialObjectFilter>
 			</AttributeModifierNugget>	
 		</Nuggets>

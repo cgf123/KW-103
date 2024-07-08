@@ -180,14 +180,14 @@
 		id="AttributeModifier_BeamDebuff"
 		Category="NONE"
 		Duration="0.5s" >
-		<Modifier Type="ARMOR" Value="145%" />		
+		<Modifier Type="ARMOR" Value="140%" />		
 	</AttributeModifier>		
 
 	<AttributeModifier
 		id="AttributeModifier_BeamDebuffHeavy"
 		Category="NONE"
 		Duration="0.5s" >
-		<Modifier Type="ARMOR" Value="145%" />				
+		<Modifier Type="ARMOR" Value="120%" />				
 	</AttributeModifier>			
 	
 	
@@ -378,7 +378,7 @@
 	<AttributeModifier
 		id="AttributeModifier_TravelerEnginesLargeShips"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="130%"/>
+		<Modifier Type="SPEED" Value="135%"/>
 	</AttributeModifier>	
 	
 	<AttributeModifier
@@ -420,7 +420,7 @@
 	<AttributeModifier
 		id="AttributeModifier_AdaptiveArmorBuff"
 		Category="NONE">		
-		<Modifier Type="ARMOR" Value="100%"/>
+		<Modifier Type="ARMOR" Value="90%"/>
 	</AttributeModifier>		
 	
 	<AttributeModifier

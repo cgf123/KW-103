@@ -2,6 +2,30 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Tags />
 
+	<AudioEvent id="NOD_LaserCannonUpgraded_WeaponFire"	
+		MinVolume="0"
+		Priority="NORMAL"
+		MinRange="200"
+		MaxRange="800"
+		PlayPercent="100"
+		ReverbEffectLevel="100"
+		ZoomedInOffscreenVolumePercent = "50"
+		ZoomedInOffscreenMinVolumePercent = "100" 
+		ZoomedInOffscreenOcclusionPercent = "20" 	
+	
+		Volume = "55"
+		VolumeShift = "-15"
+		Limit = "3"
+		Control = "INTERRUPT"
+		Type = "WORLD SHROUDED EVERYONE"
+		SubmixSlider = "SOUNDFX" >
+		<PitchShift Low = "-40" High = "0" />
+		<Sound>NULaser_weapFirea</Sound> <Sound>NULaser_weapFireb</Sound> <Sound>NULaser_weapFirec</Sound> <Sound>NULaser_weapFired</Sound> 
+		<Sound>NULaser_weapFiree</Sound> <Sound>NULaser_weapFiref</Sound> <Sound>NULaser_weapFireg</Sound> <Sound>NULaser_weapFireh</Sound> 
+		<Sound>NULaser_weapFirei</Sound> <Sound>NULaser_weapFirej</Sound>
+	</AudioEvent>
+
+
 	<!-- Compared the originals, these Mecha sounds have high MinVolume, and are PLAYER VOICE rather than WORLD SHROUDED EVERYONE -->
 	<AudioEvent
 		id="ALI_Mechapede_BodySpawned2_new"

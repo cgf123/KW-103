@@ -383,7 +383,7 @@
 		<Body>
 			<ActiveBody
 				id="0xB313F576"
-				MaxHealth="3000" />
+				MaxHealth="3150" />
 		</Body>
 		<Geometry>
 			<Shape

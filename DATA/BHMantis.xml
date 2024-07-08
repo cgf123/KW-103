@@ -102,7 +102,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="110"
+			Speed="115"
 			Condition="NORMAL"
 			Locomotor="BlackHandStealthTankLocomotor" />
 		<SkirmishAIInformation

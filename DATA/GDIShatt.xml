@@ -19,7 +19,7 @@
 		EditorName="GDISonicTank"
 		EditorSorting="UNIT"
 		BountyValue="0"
-		BuildTime="15"
+		BuildTime="13"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
 		EnergyBonus="0"
@@ -67,7 +67,7 @@
 		UnitTypeIcon=""
 		ReinvisibilityDelay="7s"
 		CaptureTime="0s"
-		BuildCost="1500"
+		BuildCost="1300"
 		RefundValue="0"
 		ThreatValue="0"
 		MaxSimultaneousOfType="0"
@@ -1281,7 +1281,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="3600"
+				MaxHealth="3000"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

@@ -21,7 +21,7 @@
 		BountyValue="0"
 		BuildTime="12"
 		BuildFadeInOnCreateTime="0"
-		EnergyProduction="-5"
+		EnergyProduction="0"
 		EnergyBonus="0"
 		CommandSet="AlienSporePodCommandSet"
 		SelectPortrait="Portrait_GrowthStimulator"

@@ -299,8 +299,8 @@
 		<Cmd>Command_ConstructTraveler59RazorDroneSquad</Cmd>
 		<Cmd>Command_ConstructTraveler59Assimilator</Cmd>
 		<Cmd>Command_ConstructTraveler59ShockTrooperSquad</Cmd>
-		<Cmd>Command_ConstructTraveler59CultistSquad</Cmd>
 		<Cmd>Command_ConstructTraveler59StalkerSquad</Cmd>
+		<Cmd>Command_ConstructTraveler59CultistSquad</Cmd>
 		<Cmd>Command_ConstructTraveler59BlinkMastermind</Cmd>
 		<Cmd>Command_UpgradeRazorDronesUpgrade</Cmd>		
 	</LogicCommandSet>

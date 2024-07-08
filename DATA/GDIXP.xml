@@ -452,7 +452,7 @@
 	<ExperienceLevelTemplate
 		id="GDIRigExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="1900"
+		ExperienceAward="1800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -473,7 +473,7 @@
 	<ExperienceLevelTemplate
 		id="GDIBattleBaseExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="1900"
+		ExperienceAward="1800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -494,7 +494,7 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMRigExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="1900"
+		ExperienceAward="1800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -515,7 +515,7 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMBattleBaseExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="1900"
+		ExperienceAward="1800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -536,7 +536,7 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsRigExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="1900"
+		ExperienceAward="1800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -557,7 +557,7 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsBattleBaseExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="1900"
+		ExperienceAward="1800"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -1371,14 +1371,13 @@
 	<ExperienceLevelTemplate
 			id="GDISonicTankExperienceLevel_1"
 			RequiredExperience="1"
-			ExperienceAward="1500"
+			ExperienceAward="1300"
 			Rank="1">
 			<LevelUpTintColor
 				r="1.0"
 				g="1.0"
 				b="1.0" />
 			<Target>GDISonicTank</Target>
-			<Target>ZOCOMSonicTank</Target>
 			<Decal
 				Texture="decal_G_level1"
 				Texture2="decal_GDI_S_CO" 
@@ -1392,8 +1391,8 @@
 		<ExperienceLevelTemplate
 			id="GDISonicTankExperienceLevel_2"
 			Prerequisite="GDISonicTankExperienceLevel_1"
-			RequiredExperience="4500"
-			ExperienceAward="1950"
+			RequiredExperience="3900"
+			ExperienceAward="1690"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="2">
 			<LevelUpTintColor
@@ -1404,7 +1403,6 @@
 			<LevelUpFxList
 				FxList="FX_GDILevelUp_01" />
 			<Target>GDISonicTank</Target>
-			<Target>ZOCOMSonicTank</Target>
 			<AttributeModifier>Unit_Veteran</AttributeModifier>
 			<Decal
 				Texture="decal_G_level1"
@@ -1419,8 +1417,8 @@
 		<ExperienceLevelTemplate
 			id="GDISonicTankExperienceLevel_3"
 			Prerequisite="GDISonicTankExperienceLevel_2"
-			RequiredExperience="9000"
-			ExperienceAward="2400"
+			RequiredExperience="7800"
+			ExperienceAward="2080"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="3">
 			<LevelUpTintColor
@@ -1431,7 +1429,6 @@
 			<LevelUpFxList
 				FxList="FX_GDILevelUp_02" />
 			<Target>GDISonicTank</Target>
-			<Target>ZOCOMSonicTank</Target>
 			<AttributeModifier>Unit_Elite</AttributeModifier>
 			<Decal
 				Texture="decal_G_level1"
@@ -1446,8 +1443,8 @@
 		<ExperienceLevelTemplate
 			id="GDISonicTankExperienceLevel_4"
 			Prerequisite="GDISonicTankExperienceLevel_3"
-			RequiredExperience="13500"
-			ExperienceAward="3000"
+			RequiredExperience="11700"
+			ExperienceAward="2600"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="4">
 			<LevelUpTintColor
@@ -1458,7 +1455,6 @@
 			<LevelUpFxList
 				FxList="FX_GDILevelUp_03" />
 			<Target>GDISonicTank</Target>
-			<Target>ZOCOMSonicTank</Target>
 			<AttributeModifier>Unit_Heroic</AttributeModifier>
 			<Decal
 				Texture="decal_G_level1"
@@ -1474,7 +1470,7 @@
 	<ExperienceLevelTemplate
 			id="ZOCOMImprovedSonicTankExperienceLevel_1"
 			RequiredExperience="1"
-			ExperienceAward="1500"
+			ExperienceAward="1300"
 			Rank="1">
 			<LevelUpTintColor
 				r="1.0"
@@ -1495,8 +1491,8 @@
 		<ExperienceLevelTemplate
 			id="ZOCOMImprovedSonicTankExperienceLevel_2"
 			Prerequisite="ZOCOMImprovedSonicTankExperienceLevel_1"
-			RequiredExperience="4500"
-			ExperienceAward="1950"
+			RequiredExperience="3900"
+			ExperienceAward="1690"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="2">
 			<LevelUpTintColor
@@ -1522,8 +1518,8 @@
 		<ExperienceLevelTemplate
 			id="ZOCOMImprovedSonicTankExperienceLevel_3"
 			Prerequisite="ZOCOMImprovedSonicTankExperienceLevel_2"
-			RequiredExperience="9000"
-			ExperienceAward="2400"
+			RequiredExperience="7800"
+			ExperienceAward="2080"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="3">
 			<LevelUpTintColor
@@ -1549,8 +1545,8 @@
 		<ExperienceLevelTemplate
 			id="ZOCOMImprovedSonicTankExperienceLevel_4"
 			Prerequisite="ZOCOMImprovedSonicTankExperienceLevel_3"
-			RequiredExperience="13500"
-			ExperienceAward="3000"
+			RequiredExperience="11700"
+			ExperienceAward="2600"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="4">
 			<LevelUpTintColor

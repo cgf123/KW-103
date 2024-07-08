@@ -535,6 +535,10 @@
 	<Include type="all" source="T59StasisChamber.xml" />		
 	<Include type="all" source="R17StasisChamber.xml" />	
 
+	<Include type="all" source="AlienPowerPlant.xml" />		
+	<Include type="all" source="T59PowerPlant.xml" />		
+	<Include type="all" source="R17PowerPlant.xml" />		
+
 	<Include type="all" source="AlienTiberiumFieldSeeded.xml" />					
 
 	<Include type="all" source="AlienRef.xml" />	
