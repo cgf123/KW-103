@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="AlienSporePod"
-		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE NOT_AUTOACQUIRABLE FS_CASH_PRODUCER POWERED IGNORE_FOR_VICTORY COVER TIBERIUM_BASED AUTO_ACQUIRABLE_BY_AI"
+		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE NOT_AUTOACQUIRABLE FS_CASH_PRODUCER IGNORE_FOR_VICTORY COVER TIBERIUM_BASED AUTO_ACQUIRABLE_BY_AI"
 		Description="Desc:ALIENSporePod"
 		TypeDescription="Type:AlienSporePod"
 		RadarPriority="STRUCTURE"
@@ -21,7 +21,7 @@
 		BountyValue="0"
 		BuildTime="12"
 		BuildFadeInOnCreateTime="0"
-		EnergyProduction="0"
+		EnergyProduction="-5"
 		EnergyBonus="0"
 		CommandSet="AlienSporePodCommandSet"
 		SelectPortrait="Portrait_ALIENGrowthAccelerator"

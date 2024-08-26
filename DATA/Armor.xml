@@ -1120,13 +1120,13 @@ DAMAGE TYPES
 		Default="75" >
 		<Armor
 			Damage="CANNON"
-			Percent="10" />
+			Percent="8" />
 		<Armor
 			Damage="ROCKET"
 			Percent="20" />
 		<Armor
 			Damage="BLAST"
-			Percent="10" />				
+			Percent="8" />				
 		<Armor
 			Damage="GRENADE"
 			Percent="80" />

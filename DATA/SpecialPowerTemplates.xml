@@ -920,7 +920,7 @@
 		Flags="NEEDS_OBJECT_FILTER IS_PLAYER_POWER WATER_OK TARGET_NEEDS_OBJECT_STATUS SHARED_SYNC"
 		EvaEventToPlayWhenSelectingTarget="SelectSpecialPowerTarget"
 		RadiusCursorRadius="150"
-		DisallowedTargetObjectStatus="AIRBORNE_TARGET IN_STASIS"
+		DisallowedTargetObjectStatus="IN_STASIS"
 		Money="-1500">
 		<ObjectFilter
 			Relationship="ALLIES"

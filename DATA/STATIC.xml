@@ -390,6 +390,8 @@
 	
 	<Include type="all" source="Fanatics.xml" />			
 	<Include type="all" source="FanaticSquads.xml" />		
+	
+	<Include type="all" source="BHDeathAura.xml" />			
 
 	<Include type="all" source="NODObelisk.xml" />			
 	<Include type="all" source="BHObelisk.xml" />			

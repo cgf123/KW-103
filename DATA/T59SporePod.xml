@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="Traveler59SporePod"
-		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE NOT_AUTOACQUIRABLE FS_CASH_PRODUCER POWERED IGNORE_FOR_VICTORY COVER TIBERIUM_BASED AUTO_ACQUIRABLE_BY_AI"
+		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE NOT_AUTOACQUIRABLE FS_CASH_PRODUCER IGNORE_FOR_VICTORY COVER TIBERIUM_BASED AUTO_ACQUIRABLE_BY_AI"
 		Description="Desc:Traveler59SporePod"
 		TypeDescription="Type:Traveler59SporePod"
 		RadarPriority="STRUCTURE"
@@ -22,7 +22,7 @@
 		BuildTime="12"
 		BuildFadeInOnCreateTime="0"
 		EnergyProduction="0"
-		EnergyBonus="0"
+		EnergyBonus="-5"
 		CommandSet="Traveler59SporePodCommandSet"
 		SelectPortrait="Portrait_ALIENGrowthAccelerator"
 		ButtonImage="Portrait_ALIENGrowthAccelerator"

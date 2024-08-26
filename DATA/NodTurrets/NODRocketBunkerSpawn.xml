@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="NODRocketBunkerSpawn"
-		KindOf="VALID_TARGET_FOR_C4 HAS_HEALTH_BAR IGNORES_SELECT_ALL SELECTABLE TARGETABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS CANT_TOGGLE_POWER FS_BASE_DEFENSE HUGE_VEHICLE POWERED CAN_SEE_THROUGH_STRUCTURE KEEP_CLASSIFIED_WHEN_DEAD NOT_SELLABLE COVER AUTO_ACQUIRABLE_BY_AI"
+		KindOf="VALID_TARGET_FOR_C4 HAS_HEALTH_BAR IGNORES_SELECT_ALL SELECTABLE TARGETABLE IMMOBILE CAN_ATTACK CAN_CAST_REFLECTIONS CANT_TOGGLE_POWER FS_BASE_DEFENSE HUGE_VEHICLE POWERED CAN_SEE_THROUGH_STRUCTURE KEEP_CLASSIFIED_WHEN_DEAD NOT_SELLABLE COVER AUTO_ACQUIRABLE_BY_AI MADE_OF_WOOD"
 		Description="Desc:NODRocketBunker"
 		TypeDescription="Type:NODRocketBunker"
 		RadarPriority="STRUCTURE"
@@ -153,6 +153,8 @@
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCMBLD_AAN"
 						AnimationMode="ONCE"
+						AnimationSpeedFactorMin="2.0"
+						AnimationSpeedFactorMax="2.0"						
 						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
@@ -209,6 +211,8 @@
 					<Animation
 						AnimationName="NBRDEFENSE_UGTCMBLD_AAN"
 						AnimationMode="ONCE"
+						AnimationSpeedFactorMin="2.0"
+						AnimationSpeedFactorMax="2.0"
 						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
@@ -388,7 +392,7 @@
 					DeathTypesForbidden="SUICIDED" />
 			</InitiateRepairDie>
 			<StructureUnpackUpdate
-				UnpackTime="3.3s" />
+				UnpackTime="1.5s" />
 			<RepairUpdate
 				id="0x23C74182"
 				Toggleable="False"
@@ -425,7 +429,11 @@
 				Type="CYLINDER"
 				ContactPointGeneration="INFANTRY"
 				MajorRadius="20"
-				Height="30" />
+				MinorRadius="1"
+				Height="30"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True" />
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry
@@ -478,7 +486,6 @@
 		<VisionInfo
 			VisionRange="500"
 			ShroudClearingRange="500" />
-		<DisplayUpgrade>Upgrade_NODQuadTurrets</DisplayUpgrade>
 		<DisplayUpgrade>Upgrade_NODTechCenterTibCoreMissiles</DisplayUpgrade>
 	</GameObject>
 </AssetDeclaration>

@@ -264,16 +264,30 @@
 		<Cmd>Command_ConstructSteelTalonsZoneTrooperSquad</Cmd>
 	</LogicCommandSet>
 		
-	<!-- T59 Att. Shields !!!! -->
 	<LogicCommandSet
 		id="Traveler59ControlCenterCommandSet">
 		<Cmd>Command_TiberiumVibrationScan</Cmd>
 		<Cmd>Command_SpecialPowerSwarm</Cmd>
-		<Cmd>Command_LightningSpike</Cmd><!--		
-		<Cmd>Command_PurchaseUpgradeMinorForcefieldGenerator</Cmd> -->
+		<Cmd>Command_LightningSpike</Cmd>
 	</LogicCommandSet>
 	
+	<!-- R17 T2 Blue Shards -->
+	<LogicCommandSet
+		id="Reaper17ControlCenterCommandSet">
+		<Cmd>Command_Reaper17TiberiumVibrationScan</Cmd>
+		<Cmd>Command_SpecialPowerSwarm</Cmd>
+		<Cmd>Command_LightningSpike</Cmd>
+		<Cmd>Command_PurchaseUpgradeReaper17MinorForcefieldGenerator</Cmd>
+	</LogicCommandSet>	
 
+	<LogicCommandSet
+		id="Reaper17ReactorCommandSet">
+		<Cmd>Command_PurchaseUpgradeReaper17ForcefieldGenerator</Cmd>
+		<Cmd>Command_PurchaseUpgradeAlienShardLaunchers</Cmd>
+		<Cmd>Command_PurchaseUpgradeBlueShardWeapon</Cmd>	
+		<Cmd>Command_PurchaseUpgradeConversionReserves</Cmd>
+		<Cmd>Command_SpecialPowerPhaseField</Cmd>
+	</LogicCommandSet>
 	
 	<!-- DISINT UPGRADE -->
 	  <LogicCommand

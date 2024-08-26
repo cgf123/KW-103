@@ -70,7 +70,7 @@
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon="FlameThrowerIcon"
 		ReinvisibilityDelay="4s"
-		WorldMapArmoryUpgradesAllowed="Upgrade_BlackHandSecretShrinePurifyingFlame"
+		WorldMapArmoryUpgradesAllowed="Upgrade_BlackHandSecretShrinePurifyingFlame Upgrade_BlackHandBlackDisciplesUpgrade"
 		CaptureTime="0s"
 		BuildCost="700"
 		RefuntValue="0"
@@ -735,6 +735,51 @@
 				DoFlash="False">
 				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
 			</LevelUpUpgrade> -->
+
+			<!-- Split Aura -->
+			<AttributeModifierAuraUpdate
+				id="7FFDED06" 
+				InitiallyActive="false"
+				AttributeModifierName="Confessor_Militant_AttributeModifier"
+				RefreshDelay="1.0s"
+				Range="150"
+				AllowSelf="false"
+				AffectContainedOnly="false">
+				<ObjectFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="INFANTRY"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" >			
+				</ObjectFilter>
+				<TriggeredBy>Upgrade_BlackHandBlackDisciplesUpgrade</TriggeredBy>				
+			</AttributeModifierAuraUpdate>			
+
+			<AttributeModifierAuraUpdate
+				id="7FFDED07" 
+				InitiallyActive="false"
+				AttributeModifierName="AttributeModifier_BlackHandLeadership"
+				RefreshDelay="1.0s"
+				Range="150"
+				AllowSelf="false"
+				AffectContainedOnly="false">
+				<ObjectFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include="INFANTRY"
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition=""
+					RejectModelCondition="" >			
+				</ObjectFilter>
+				<TriggeredBy>Upgrade_BlackHandBlackDisciplesUpgrade</TriggeredBy>
+			</AttributeModifierAuraUpdate>				
 			
 			<!-- AI use transports! -->
 			<AISpecialPowerUpdate
@@ -883,5 +928,6 @@
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
 		<DisplayUpgrade>Upgrade_BlackHandSecretShrinePurifyingFlame</DisplayUpgrade>
+		<DisplayUpgrade>Upgrade_BlackHandBlackDisciplesUpgrade</DisplayUpgrade>					
 	</GameObject>
 </AssetDeclaration>

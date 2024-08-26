@@ -432,6 +432,64 @@
 		</Update>
 	</FXParticleSystemTemplate>
 
+	<!-- BH Fanatic Death Aura / BlackHandDeathAuraGlow -->
+	<FXParticleSystemTemplate IsGroundAligned="true" ParticleTexture="FXNODRedemptionDecal" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" Shader="ALPHA" SortLevel="1" SystemLifetime="300" id="BlackHandDeathAuraGlow">
+		<Lifetime High="50" Low="50"/>
+		<Size High="60" Low="50"/>
+		<BurstDelay High="10" Low="10"/>
+		<BurstCount High="5" Low="5"/>
+		<Alphas>
+			<Alpha Frame="2" High="0.3" Low="0.2" RelativeAge="25"/>
+			<Alpha Frame="3" High="0.2" Low="0.1" RelativeAge="75"/>
+			<Alpha Frame="4" High="0" Low="0" RelativeAge="100"/>
+		</Alphas>
+		<Colors>
+			<Color Frame="1" RelativeAge="0">
+				<Color b="0.105882" g="0.147059" r="0.352941"/>
+			</Color>
+			<Color Frame="2" RelativeAge="30">
+				<Color b="0.107843" g="0.129412" r="0.92549"/>
+			</Color>
+			<Color Frame="3" RelativeAge="100">
+				<Color b="0.168627" g="0.168627" r="0.768627"/>
+			</Color>
+		</Colors>
+		<Physics>
+			<Default Gravity="0.001">
+				<VelocityDamping High="1" Low="1"/>
+				<DriftVelocity x="0.01" y="0.01" z="0.01"/>
+			</Default>
+		</Physics>
+		<Draw>
+			<Default/>
+		</Draw>
+		<Volume>
+			<Cylinder Radius="180">
+				<Offset x="0" y="0" z="3"/>
+			</Cylinder>
+		</Volume>
+		<Velocity>
+			<Ortho>
+				<Position>
+					<x High="0.0011" Low="-0.0011"/>
+					<y High="0.0011" Low="-0.0011"/>
+					<z High="0" Low="0"/>
+				</Position>
+			</Ortho>
+		</Velocity>
+		<Event/>
+		<Update>
+			<Default>
+				<SizeRate High="0.6" Low="0.3"/>
+				<SizeRateDamping High="0.97" Low="0.95"/>
+				<AngleZ High="15" Low="-15"/>
+				<AngleXY High="100" Low="100"/>
+				<AngularDampingXY High="1" Low="1"/>
+			</Default>
+		</Update>
+	</FXParticleSystemTemplate>
+
+	
 	<!-- RGA Spark White -->
 	<FXParticleSystemTemplate ParticleTexture="FXBlast04" PerParticleAttachedSystem="" Priority="ALWAYS_RENDER" SortLevel="1" SystemLifetime="750" Type="GPU_PARTICLE" id="AvatarExplodeBlueSpark2">
 		<Lifetime High="5" Low="4"/>

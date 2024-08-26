@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="BlackHandRocketBunker"
-		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE FS_BASE_DEFENSE POWERED COVER AUTO_ACQUIRABLE_BY_AI AA_STRUCT"
+		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE FS_BASE_DEFENSE POWERED COVER AUTO_ACQUIRABLE_BY_AI AA_STRUCT MADE_OF_WOOD"
 		Description="Desc:BlackHandRocketBunker"
 		TypeDescription="Type:BlackHandRocketBunker"
 		RadarPriority="STRUCTURE"
@@ -1087,7 +1087,7 @@
 				CanDetectWhileContained="False"
 				UseMetaAOI="False" />
 			<StructureUnpackUpdate
-				UnpackTime="3.3s" />
+				UnpackTime="1.5s" />
 			<GatherSlavesUpdate
 				id="EC3DA8E9"
 				SlaveTemplate="NODRocketBunkerSpawn"
@@ -1378,7 +1378,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="3500"
+				MaxHealth="3400"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"
@@ -1403,13 +1403,55 @@
 			IsSmall="False">
 			<Shape
 				Type="CYLINDER"
-				ContactPointGeneration="NONE"
-				MajorRadius="25"
+				ContactPointGeneration="STRUCTURE"
+				MajorRadius="13"
 				MinorRadius="1"
 				Height="30"
 				FrontAngle="0d"
 				Active="True"
 				UsedForHealthBox="True" />
+			<Shape
+				Type="CYLINDER"
+				ContactPointGeneration="STRUCTURE"
+				MajorRadius="5"
+				MinorRadius="1"
+				Height="10"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
+				<Offset
+					x="17"
+					y="0"
+					z="0" />
+			</Shape>
+			<Shape
+				Type="CYLINDER"
+				ContactPointGeneration="STRUCTURE"
+				MajorRadius="5"
+				MinorRadius="1"
+				Height="10"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
+				<Offset
+					x="-8.5"
+					y="14.5"
+					z="0" />
+			</Shape>
+			<Shape
+				Type="CYLINDER"
+				ContactPointGeneration="STRUCTURE"
+				MajorRadius="5"
+				MinorRadius="1"
+				Height="10"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
+				<Offset
+					x="-8.5"
+					y="-14.5"
+					z="0" />
+			</Shape>
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry

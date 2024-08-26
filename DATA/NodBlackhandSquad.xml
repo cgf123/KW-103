@@ -70,6 +70,7 @@
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon="FlameThrowerIcon"
 		ReinvisibilityDelay="4s"
+		WorldMapArmoryUpgradesAllowed="Upgrade_TiberiumInfusion"		
 		CaptureTime="0s"
 		BuildCost="700"
 		RefuntValue="0"
@@ -790,8 +791,7 @@
 					AnimState="USER_1"
 					Frames="0"
 					Trigger="0" />
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>					
 			</AttributeModifierUpgrade>		
 			<StatusBitsUpgrade
 				id="63DD108D"
@@ -803,8 +803,7 @@
 				StatusToSet="HAS_TIBERIUM_UPGRADE"
 				StatusToClear=""
 				ApplyToContained="False">
-				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>
-				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
+				<TriggeredBy>Upgrade_TiberiumInfusion</TriggeredBy>					
 			</StatusBitsUpgrade>			
 				
 		</Behaviors>

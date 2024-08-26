@@ -378,7 +378,7 @@
 	<AttributeModifier
 		id="AttributeModifier_TravelerEnginesLargeShips"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="135%"/>
+		<Modifier Type="SPEED" Value="130%"/>
 	</AttributeModifier>	
 	
 	<AttributeModifier

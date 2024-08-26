@@ -61,7 +61,7 @@
 		BuildPlacementTypeFlag="INVALID"
 		BuildOnRequiredObjectKindOf=""
 		UnitCategory="STRUCTURE"
-		WeaponCategory="LIGHTNING"
+		WeaponCategory="CANNON"
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""
 		ReinvisibilityDelay="4s"

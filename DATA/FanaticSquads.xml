@@ -910,7 +910,7 @@
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon="FanaticIcon"
 		ReinvisibilityDelay="4s"
-		WorldMapArmoryUpgradesAllowed=""
+		WorldMapArmoryUpgradesAllowed="Upgrade_BlackHandBlackDisciplesUpgrade"
 		CaptureTime="0s"
 		BuildCost="500"
 		RefundValue="0"
@@ -1551,8 +1551,12 @@
 				<OnDeathBehavior
 					RequiredStatus="PARACHUTING">
 					<OCL>OCL_RedemptionSpawn</OCL>
-				</OnDeathBehavior>				
-			</HordeContain>
+				</OnDeathBehavior>			
+				<OnDeathBehavior
+					RequiredStatus="SWITCHED_WEAPONS">
+					<OCL>OCL_BlackHandDeathAuraSpawn</OCL>
+				</OnDeathBehavior>					
+			</HordeContain>			
 			<LevelUpUpgrade
 				id="D0BB7535"
 				RequiresAllTriggers="False"
@@ -1564,95 +1568,19 @@
 				LevelCap="4"
 				DoFlash="False">
 				<TriggeredBy>Upgrade_BlackHandFaction</TriggeredBy>
-			</LevelUpUpgrade>
-
-			<!-- Split Aura -->
-			<PassiveAreaEffectBehavior
-				id="7FFDED05"
-				EffectRadius="150"
-				MaxBeneficiaries="0"
-				HealingPercentPerSecond="0%"
-				HealingPointsPerSecond="0"
-				SurveyDelayFrames="30"
-				UpgradeRequired=""
-				AntiCategoryMask=""
-				AntiFX=""
-				HealFX=""
-				NonStackable="True"
-				AffectAttached="False"
-				AffectWoundedOnly="False"
-				AffectUnderAttack="False">
-				<Modifier>AttributeModifier_CM11RadioTowerBuff</Modifier>
-				<AllowFilter
-					Rule="NONE"
-					Relationship="ALLIES"
-					Alignment="NONE"
-					Include="INFANTRY"
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="">				
-				</AllowFilter>
-			</PassiveAreaEffectBehavior>					
-			
-			<PassiveAreaEffectBehavior
-				id="7FFDED06"
-				EffectRadius="150"
-				MaxBeneficiaries="0"
-				HealingPercentPerSecond="0%"
-				HealingPointsPerSecond="0"
-				SurveyDelayFrames="30"
-				UpgradeRequired=""
-				AntiCategoryMask=""
-				AntiFX=""
-				HealFX=""
-				NonStackable="True"
-				AffectAttached="False"
-				AffectWoundedOnly="False"
-				AffectUnderAttack="False">
-				<Modifier>Confessor_Militant_AttributeModifier</Modifier>
-				<AllowFilter
-					Rule="NONE"
-					Relationship="ALLIES"
-					Alignment="NONE"
-					Include="INFANTRY"
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="">				
-				</AllowFilter>
-			</PassiveAreaEffectBehavior>
-
-			<PassiveAreaEffectBehavior
-				id="7FFDED07"
-				EffectRadius="150"
-				MaxBeneficiaries="0"
-				HealingPercentPerSecond="0%"
-				HealingPointsPerSecond="0"
-				SurveyDelayFrames="30"
-				UpgradeRequired=""
-				AntiCategoryMask=""
-				AntiFX=""
-				HealFX=""
-				NonStackable="True"
-				AffectAttached="False"
-				AffectWoundedOnly="False"
-				AffectUnderAttack="False">
-				<Modifier>AttributeModifier_BlackHandLeadership</Modifier>
-				<AllowFilter
-					Rule="NONE"
-					Relationship="ALLIES"
-					Alignment="NONE"
-					Include="INFANTRY"
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="">				
-				</AllowFilter>
-			</PassiveAreaEffectBehavior>				
+			</LevelUpUpgrade>	
+			<StatusBitsUpgrade
+				id="63DD108F"
+				RequiresAllTriggers="False"
+				RequiresAllConflictingTriggers="False"
+				Permanent="False"
+				WaypointMode="False"
+				WaypointModeTerminal="True"
+				StatusToSet="SWITCHED_WEAPONS"
+				StatusToClear=""
+				ApplyToContained="False">
+				<TriggeredBy>Upgrade_BlackHandBlackDisciplesUpgrade</TriggeredBy>						
+			</StatusBitsUpgrade>				
 			
 		</Behaviors>
 		<AI>
@@ -1758,6 +1686,7 @@
 			UseCrushAttack="False"
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
+		<DisplayUpgrade>Upgrade_BlackHandBlackDisciplesUpgrade</DisplayUpgrade>			
 	</GameObject>
 
 
@@ -2284,7 +2213,7 @@
 				<OnDeathBehavior
 					RequiredStatus="PARACHUTING">
 					<OCL>OCL_RedemptionSpawn</OCL>
-				</OnDeathBehavior>
+				</OnDeathBehavior>			
 			</HordeContain>
 			<AttributeModifierUpgrade
 				id="3129F082"
@@ -2311,7 +2240,7 @@
 				StatusToClear=""
 				ApplyToContained="False">
 				<TriggeredBy>Upgrade_MOKTiberiumInfusion</TriggeredBy>						
-			</StatusBitsUpgrade>
+			</StatusBitsUpgrade>		
 			<CreateAndEnterObjectSpecialPower
 				id="6D44A823"
 				SpecialPowerTemplate="SpecialPowerCallForTransportNOD"
