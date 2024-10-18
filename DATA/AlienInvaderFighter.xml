@@ -59,7 +59,7 @@
 		ProductionQueueType="AIRCRAFT"
 		BuildPlacementTypeFlag="INVALID"
 		BuildOnRequiredObjectKindOf=""
-		UnitCategory="INFANTRY"
+		UnitCategory="NONE"
 		WeaponCategory="CANNON"
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon=""

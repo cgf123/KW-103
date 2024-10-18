@@ -12471,13 +12471,13 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="NOD_MISSILE"
 				DeathType="EXPLODED">	
-				<DamageScalarDetails Scalar= "216%">
+				<DamageScalarDetails Scalar= "222%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT TIBERIUM_BASED">    
 					</Filter>
 				</DamageScalarDetails>				
-				<DamageScalarDetails Scalar= "180%">
+				<DamageScalarDetails Scalar= "185%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" >    
@@ -12547,18 +12547,18 @@ DAMAGE TYPES
  		>
 		<Nuggets>
 			<DamageNugget
-				Damage="435.0"
+				Damage="430.0"
 				Radius="10.0"
 				DamageType="ROCKET"
 				DamageFXType="NOD_TIBCOREMISSILE"
 				DeathType="EXPLODED">	
-				<DamageScalarDetails Scalar= "216%">
+				<DamageScalarDetails Scalar= "222%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT TIBERIUM_BASED">    
 					</Filter>
 				</DamageScalarDetails>					
-				<DamageScalarDetails Scalar= "180%">
+				<DamageScalarDetails Scalar= "185%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT" >   						

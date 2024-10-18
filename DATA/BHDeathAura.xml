@@ -61,8 +61,8 @@
 				id="ModuleTag_Physics" />
 			<LifetimeUpdate
 				id="ModuleTag_LifeTime"
-				MinLifetime="10.0s"
-				MaxLifetime="10.0s" />
+				MinLifetime="15.0s"
+				MaxLifetime="15.0s" />
 			<DestroyDie
 				id="ModuleTag_DestroyDie">
 				<DieMuxData

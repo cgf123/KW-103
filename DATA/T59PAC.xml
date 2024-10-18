@@ -1656,7 +1656,7 @@
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				SpawnNumberData="8"
-				SpawnReplaceDelayData="8s"
+				SpawnReplaceDelayData="9s"
 				InitialBurst="8"
 				DamageTypesToPropagateToSlaves="ALL"
 				FadeInTime="1s"
