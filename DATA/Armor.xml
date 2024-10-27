@@ -1550,10 +1550,10 @@ DAMAGE TYPES
 		RearDamageScalar="150">
 		<Armor
 			Damage="CANNON"
-			Percent="150" />
+			Percent="145" />
 		<Armor
 			Damage="ROCKET"
-			Percent="90" />
+			Percent="85" />
 		<Armor
 			Damage="BLAST"
 			Percent="100" />			
