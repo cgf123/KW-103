@@ -1681,7 +1681,7 @@
 				PreparationTime="0s"
 				PersistentPrepTime="0s"
 				PersistentCount="-1"
-				PackTime="0.25s"
+				PackTime="0.0s"
 				UnpackTime="0.25s"
 				PreTriggerUnstealthTime="0s"
 				Options=""

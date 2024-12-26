@@ -3512,7 +3512,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 			<DamageNugget
 				Damage="33"
-				Radius="16.0"
+				Radius="12.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3530,7 +3530,7 @@ DAMAGE TYPES
 			</DamageNugget> 					
 			<DamageNugget
 				Damage="33"
-				Radius="8.0"
+				Radius="6.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3577,7 +3577,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 			<DamageNugget
 				Damage="33"
-				Radius="16.0"
+				Radius="12.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3589,7 +3589,7 @@ DAMAGE TYPES
 			</DamageNugget> 					
 			<DamageNugget
 				Damage="33"
-				Radius="8.0"
+				Radius="6.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3629,7 +3629,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 			<DamageNugget
 				Damage="44"
-				Radius="16.0"
+				Radius="12.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3647,7 +3647,7 @@ DAMAGE TYPES
 			</DamageNugget> 					
 			<DamageNugget
 				Damage="44"
-				Radius="8.0"
+				Radius="6.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3702,7 +3702,7 @@ DAMAGE TYPES
 				StreamId="0"/>
 			<DamageNugget
 				Damage="44"
-				Radius="16.0"
+				Radius="12.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -3714,7 +3714,7 @@ DAMAGE TYPES
 			</DamageNugget> 					
 			<DamageNugget
 				Damage="44"
-				Radius="8.0"
+				Radius="6.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="FLAME"
 				DamageFXType="NOD_FLAMETHROWER"
@@ -5032,7 +5032,7 @@ DAMAGE TYPES
 				DamageFXType="ALIEN_PLASMADISK">
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5086,7 +5086,7 @@ DAMAGE TYPES
 				DamageFXType="ALIEN_CANNON" >
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5373,7 +5373,7 @@ DAMAGE TYPES
 						Rule="NONE"
 						Include="AIRCRAFT TIBERIUM_BASED" />
 				</DamageScalarDetails>				
-				<DamageScalarDetails Scalar= "880%">
+				<DamageScalarDetails Scalar= "1000%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT TRANSPORT"
@@ -6963,7 +6963,7 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_PLASMADISK">
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "125%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -11214,8 +11214,8 @@ DAMAGE TYPES
 		MinTargetPitch="-15d"
 		MaxTargetPitch="15d"
 		WeaponSpeed="500"
-		ScatterRadius="50"
-		ScatterLength="50"
+		ScatterRadius="40"
+		ScatterLength="40"
 		FireFX="FX_GDI_JuggernaughtArtilleryFire"
 		FireVeteranFX="FX_GDI_JuggernaughtArtilleryFireHeroic"
 		WeaponRecoil="0d"
@@ -11231,9 +11231,12 @@ DAMAGE TYPES
 		CheckStatusFlagsInRangeChecks="false"
 		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
  		>
+		<PreAttackDelay
+			MinSeconds="0.25s"
+			MaxSeconds="0.25s" />			
 		<ClipReloadTime
-			MinSeconds="3s"
-			MaxSeconds="3s" />
+			MinSeconds="2.75s"
+			MaxSeconds="2.75s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="FXArtilleryShell"
@@ -11258,6 +11261,27 @@ DAMAGE TYPES
 	</WeaponTemplate>	
 	
 	<WeaponTemplate
+		id="BehemothAuraWeapon"
+		Name="BehemothAuraWeapon"
+		RadiusDamageAffects="ALLIES SELF"		
+		CanFireWhileMoving="true"
+		CanFireWhileCharging="true">
+		<Nuggets>
+			<AttributeModifierNugget
+				Radius="150.0"
+				RequiredObjectStatus="WEAPON_UPGRADED_02"
+				PartitionFilterTestType="CIRCLE"
+				AttributeModifierName="AttributeModifier_BehemothBuff">
+				<SpecialObjectFilter
+					Rule="ANY"
+					Relationship="ALLIES">
+					<IncludeThing>SteelTalonsBehemoth</IncludeThing>
+				</SpecialObjectFilter>					
+			</AttributeModifierNugget>
+		</Nuggets>
+	</WeaponTemplate>	
+	
+	<WeaponTemplate
 		id="SteelTalonsBehemothArtillery"
 		Name="SteelTalonsBehemothArtillery"
 		AttackRange="600.0"
@@ -11265,8 +11289,8 @@ DAMAGE TYPES
 		MinTargetPitch="-15d"
 		MaxTargetPitch="15d"
 		WeaponSpeed="500"
-		ScatterRadius="50"
-		ScatterLength="50"
+		ScatterRadius="40"
+		ScatterLength="40"
 		FireFX="FX_GDI_BehemothArtilleryFire"
 		FireVeteranFX="FX_GDI_BehemothArtilleryFireHeroic"
 		WeaponRecoil="0d"
@@ -11282,13 +11306,16 @@ DAMAGE TYPES
 		CheckStatusFlagsInRangeChecks="false"
 		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
  		>
+		<PreAttackDelay
+			MinSeconds="0.25s"
+			MaxSeconds="0.25s" />			
 		<ClipReloadTime
-			MinSeconds="3s"
-			MaxSeconds="3s" />
+			MinSeconds="2.75s"
+			MaxSeconds="2.75s" />
 		<Nuggets>
 			<ProjectileNugget
 				ProjectileTemplate="FXArtilleryShell"
-				WarheadTemplate="JuggernaughtArtilleryWarhead">
+				WarheadTemplate="BehemothArtilleryWarhead">
 				<VeterancyProjectiles
 					VeterancyLevel="HEROIC"
 					ProjectileTemplate="FXArtilleryShell_Veteran"/>
@@ -11307,6 +11334,133 @@ DAMAGE TYPES
 				Include="VEHICLE" />
 		</ScatterRadiusVsType>
 	</WeaponTemplate>
+	
+	<WeaponTemplate
+		  id="BehemothArtilleryWarhead"
+		  Name="BehemothArtilleryWarhead"
+		  ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS">
+		<Nuggets>
+			<DamageNugget
+			  Damage="1000.0"
+			  Radius="25.0"
+			  DamageTaperOff="0"
+			  DelayTimeSeconds="0.0s"
+			  DamageType="CANNON"
+			  DamageFXType="GDI_LASER"
+			  DeathType="NORMAL" >
+				<DamageScalarDetails Scalar="90%">
+					<Filter
+						Rule="NONE"
+						Include="METAUNIT" >
+					</Filter>
+				</DamageScalarDetails>	
+			</DamageNugget>		
+			<SuppressionNugget
+				Radius="25.0"
+				Suppression="100"
+				DurationSeconds="5s" />					  
+		</Nuggets>
+	</WeaponTemplate>	
+	
+	<WeaponTemplate
+		id="SteelTalonsBehemothArtilleryUpgraded"
+		Name="SteelTalonsBehemothArtilleryUpgraded"
+		AttackRange="600.0"
+		MinimumAttackRange="125.0"
+		MinTargetPitch="-15d"
+		MaxTargetPitch="15d"
+		WeaponSpeed="500"
+		ScatterRadius="40"
+		ScatterLength="40"
+		FireFX="FX_GDI_BehemothArtilleryFire"
+		FireVeteranFX="FX_GDI_BehemothArtilleryFireHeroic"
+		WeaponRecoil="0d"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		CanFireWhileMoving="false"
+		CanFireWhileCharging="false"
+		ClipSize="3"
+		ReAcquireDetailType="PER_SHOT"
+		PreAttackType="PER_CLIP"
+		Flags="ORTHOGONAL_SCATTER"
+		ShotsPerBarrel="1"
+		RequiredFiringObjectStatus="DEPLOYED"
+		CheckStatusFlagsInRangeChecks="false"
+		ProjectileCollidesWith="ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+ 		>
+		<PreAttackDelay
+			MinSeconds="0.25s"
+			MaxSeconds="0.25s" />			
+		<ClipReloadTime
+			MinSeconds="2.55s"
+			MaxSeconds="2.55s" />		
+		<Nuggets>
+			<ProjectileNugget
+				ProjectileTemplate="FXArtilleryShell"
+				WarheadTemplate="BehemothArtilleryUpgradedWarhead">
+				<VeterancyProjectiles
+					VeterancyLevel="HEROIC"
+					ProjectileTemplate="FXArtilleryShell_Veteran"/>
+			</ProjectileNugget>
+		</Nuggets>
+		<ScatterRadiusVsType
+			Radius="50.0">
+			<Filter
+				Rule="NONE"
+				Include="INFANTRY" />
+		</ScatterRadiusVsType>
+		<ScatterRadiusVsType
+			Radius="25.0">
+			<Filter
+				Rule="NONE"
+				Include="VEHICLE" />
+		</ScatterRadiusVsType>
+	</WeaponTemplate>
+	
+	<WeaponTemplate
+		  id="BehemothArtilleryUpgradedWarhead"
+		  Name="BehemothArtilleryUpgradedWarhead"
+		  ProjectileCollidesWith  = "ALLIES ENEMIES NEUTRAL STRUCTURES WALLS"
+		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS">
+		<Nuggets>
+			<DamageNugget
+			  Damage="1000.0"
+			  Radius="25.0"
+			  DamageTaperOff="0"
+			  DelayTimeSeconds="0.0s"
+			  DamageType="CANNON"
+			  DamageFXType="GDI_LASER"
+			  DeathType="NORMAL" >
+				<SpecialObjectFilter
+					Rule="ALL"
+					Exclude="STRUCTURE FS_BASE_DEFENSE">
+				</SpecialObjectFilter>			  
+				<DamageScalarDetails Scalar="90%">
+					<Filter
+						Rule="NONE"
+						Include="METAUNIT" >
+					</Filter>
+				</DamageScalarDetails>					
+			</DamageNugget>		
+			<DamageNugget
+			  Damage="1200.0"
+			  Radius="25.0"
+			  DamageTaperOff="-1"
+			  DelayTimeSeconds="0.0s"
+			  DamageType="CANNON"
+			  DamageFXType="GDI_LASER"
+			  DeathType="NORMAL" >
+				<SpecialObjectFilter
+					Rule="ANY"
+					Include="STRUCTURE FS_BASE_DEFENSE">
+				</SpecialObjectFilter>
+			</DamageNugget>					
+			<SuppressionNugget
+				Radius="25.0"
+				Suppression="100"
+				DurationSeconds="5s" />					  
+		</Nuggets>
+	</WeaponTemplate>		
 	
 	<WeaponTemplate
 		id="GDIJuggernaughtArtilleryBombard"

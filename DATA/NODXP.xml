@@ -1537,7 +1537,7 @@
 	<ExperienceLevelTemplate
 			id="NODConfessorExperienceLevel_1"
 			RequiredExperience="1"
-			ExperienceAward="40"
+			ExperienceAward="39"
 			Rank="1">
 			<LevelUpTintColor
 				r="1.0"
@@ -1558,7 +1558,7 @@
 			id="NODConfessorExperienceLevel_2"
 			Prerequisite="NODConfessorExperienceLevel_1"
 			RequiredExperience="1"
-			ExperienceAward="52"
+			ExperienceAward="51"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="2">
 			<LevelUpTintColor
@@ -1584,7 +1584,7 @@
 			id="NODConfessorExperienceLevel_3"
 			Prerequisite="NODConfessorExperienceLevel_2"
 			RequiredExperience="1"
-			ExperienceAward="64"
+			ExperienceAward="62"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="3">
 			<LevelUpTintColor
@@ -1610,7 +1610,7 @@
 			id="NODConfessorExperienceLevel_4"
 			Prerequisite="NODConfessorExperienceLevel_3"
 			RequiredExperience="1"
-			ExperienceAward="80"
+			ExperienceAward="78"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="4">
 			<LevelUpTintColor
@@ -1637,7 +1637,7 @@
 	<ExperienceLevelTemplate
 			id="BlackHandBlackDiscipleExperienceLevel_1"
 			RequiredExperience="1"
-			ExperienceAward="86"
+			ExperienceAward="69"
 			Rank="1">
 			<LevelUpTintColor
 				r="1.0"
@@ -1658,7 +1658,7 @@
 			id="BlackHandBlackDiscipleExperienceLevel_2"
 			Prerequisite="BlackHandBlackDiscipleExperienceLevel_1"
 			RequiredExperience="1"
-			ExperienceAward="112"
+			ExperienceAward="90"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="2">
 			<LevelUpTintColor
@@ -1684,7 +1684,7 @@
 			id="BlackHandBlackDiscipleExperienceLevel_3"
 			Prerequisite="BlackHandBlackDiscipleExperienceLevel_2"
 			RequiredExperience="1"
-			ExperienceAward="138"
+			ExperienceAward="110"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="3">
 			<LevelUpTintColor
@@ -1710,7 +1710,7 @@
 			id="BlackHandBlackDiscipleExperienceLevel_4"
 			Prerequisite="BlackHandBlackDiscipleExperienceLevel_3"
 			RequiredExperience="1"
-			ExperienceAward="172"
+			ExperienceAward="138"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="4">
 			<LevelUpTintColor

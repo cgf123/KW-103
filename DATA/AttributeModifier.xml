@@ -308,7 +308,25 @@
 		ModelConditionsSet="USER_46"
 		Duration="2s" >
 		<Modifier Type="RATE_OF_FIRE" Value="110%"/>
-	</AttributeModifier>		
+	</AttributeModifier>	
+
+
+	<!-- Activates weapon which fires BehemothBuff ModifierNugget -->
+    <AttributeModifier
+		id="AttributeModifier_BehemothBuffEmitter"
+		Category="NONE"
+		ObjectStatusToSet="WEAPON_UPGRADED_02"	
+		Duration="3s" >	
+	</AttributeModifier>	
+
+	<!-- Sets Behemoth to use upgraded weapon -->
+    <AttributeModifier
+		id="AttributeModifier_BehemothBuff"
+		Category="NONE"
+		ModelConditionsSet="USER_47"		
+		ObjectStatusToSet="WEAPON_UPGRADED_01"	
+		Duration="3s" >	
+	</AttributeModifier>				
 
     <AttributeModifier
 		id="AttributeModifier_MARVSniperBuff"

@@ -1426,6 +1426,31 @@
 						FadingIn="False" />
 				</AnimationState>
 			</ScriptedModelDraw>
+
+			<ScriptedModelDraw
+				id="0x88A89919"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				AttachToBoneInAnotherModule="ROOTTransform"
+				OkToChangeModelColor="True">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT" />
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_47">
+					<Model
+						Name="W3DContainer:FXINVISBONE" />
+					<ShadowInfo
+						Type="ADDITIVE_DECAL"
+						Texture="AUDronShipDecalIdle"
+						SizeX="100"
+						SizeY="75"
+						MaxHeight="200"
+						OverrideLODVisibility="True"
+						UseHouseColor="True" />
+				</ModelConditionState>
+			</ScriptedModelDraw>				
+			
 		</Draws>
 		<Behaviors>
 			<AttributeModifierPoolUpdate
@@ -1596,6 +1621,12 @@
 						Upgrade=""
 						ObjectStatus=""
 						IsPlayerUpgradePermanent="False" />
+					<Weapon
+						Ordering="PRIMARY_WEAPON"
+						Template="SteelTalonsBehemothArtilleryUpgraded"
+						Upgrade=""
+						ObjectStatus="WEAPON_UPGRADED_01"
+						IsPlayerUpgradePermanent="False" />						
 					<TurretSettings
 						TurretTurnRate="50"
 						TurretPitchRate="20"
@@ -1662,7 +1693,7 @@
 				IgnorePreReqs="False" />
 			<HordeTransportContain
 				id="9DC593B0"
-				ContainMax="2"
+				ContainMax="1"
 				EnterSound="AudioEvent:VehicleEnter"
 				ExitSound="AudioEvent:VehicleExit"
 				DamagePercentToUnits="0%"
@@ -1684,7 +1715,7 @@
 				KillPassengersOnDeath="True"
 				HasObjectStatusOfContainedEntry="True"
 				Enabled="True"
-				Slots="2"
+				Slots="1"
 				ExitBone=""
 				ExitPitchRate="0"
 				HealthRegenPercentPerSec="0"
@@ -1744,7 +1775,24 @@
 						RejectStatusBitFlags=""
 						AcceptModelCondition=""
 						RejectModelCondition="" />
-				</PassengerData>
+				</PassengerData>			
+				<!--
+				<MemberTemplateStatusInfo
+					ThingTemplate="SteelTalonsRifleSoldierSquad"
+					ObjectStatus="WEAPON_UPGRADED_01" />	
+				<MemberTemplateStatusInfo
+					ThingTemplate="SteelTalonsCombatEngineer"
+					ObjectStatus="WEAPON_UPGRADED_01" />	
+				<MemberTemplateStatusInfo
+					ThingTemplate="SteelTalonsMissileSoldierSquad"
+					ObjectStatus="WEAPON_UPGRADED_01" />						
+				<MemberTemplateStatusInfo
+					ThingTemplate="SteelTalonsGrenadeSoldierSquad"
+					ObjectStatus="WEAPON_UPGRADED_01" />
+				<MemberTemplateStatusInfo
+					ThingTemplate="SteelTalonsZoneTrooperSquad"
+					ObjectStatus="WEAPON_UPGRADED_01" />		
+				-->
 				<MemberTemplateStatusInfo
 					ThingTemplate="GDISniperSquad"
 					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />
@@ -1756,8 +1804,64 @@
 					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />
 				<MemberTemplateStatusInfo
 					ThingTemplate="ZOCOMSniperSquad_Veteran"
-					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />					
+					ObjectStatus="CAN_SPOT_FOR_BOMBARD" />	
+
 			</HordeTransportContain>
+			
+			<!--
+				1. Checker aura applies 'Emitter' modifier to LOADED Behemoth
+				2. Emitter modifier sets WEAPON_UPGRADED_02 status
+				3. BehemothAuraWeapon activates with WEAPON_UPGRADED_02 and fires aura nugget
+			-->
+
+			<!-- Doesn't work, using modifier aura instead 
+			<FireWeaponUpdate
+				id="ModuleTag_FireWeaponUpdate"
+				ActiveWhenDisabled=""
+				HeroModeTrigger="False"
+				ChargingModeTrigger="False"
+				AliveOnly="False">
+				<FireWeaponNugget
+					WeaponName="BehemothAuraCheckerWeapon"
+					FireDelay="1s"
+					FireInterval="0.5s"
+					OneShot="False" />				
+			</FireWeaponUpdate>
+			-->
+			
+			<AttributeModifierAuraUpdate
+				id="ModuleTag_AttributeModifier_Checker" 
+				InitiallyActive="true"
+				AttributeModifierName="AttributeModifier_BehemothBuffEmitter"
+				RefreshDelay="0.5s"
+				AllowSelf="true"
+				AffectContainedOnly="false">
+				<ObjectFilter
+					Rule="NONE"
+					Relationship="ALLIES"
+					Alignment="NONE"
+					Include=""
+					Exclude=""
+					StatusBitFlags=""
+					RejectStatusBitFlags=""
+					AcceptModelCondition="LOADED"
+					RejectModelCondition="" >
+					<IncludeThing>SteelTalonsBehemoth</IncludeThing>
+				</ObjectFilter>
+			</AttributeModifierAuraUpdate>			
+			
+			<FireWeaponUpdate
+				id="ModuleTag_BuffAuraUpdate"
+				ActiveWhenDisabled=""
+				HeroModeTrigger="False"
+				ChargingModeTrigger="False"
+				AliveOnly="False">			
+				<FireWeaponNugget
+					WeaponName="BehemothAuraWeapon"
+					FireDelay="1s"
+					FireInterval="0.5s"
+					OneShot="False" />
+			</FireWeaponUpdate>
 
 			<!--
 			<AttributeModifierAuraUpdate
@@ -1817,7 +1921,7 @@
 					<IncludeThing>ZOCOMZoneRaiderSquad_Veteran</IncludeThing>			
 				</ObjectFilter>
 			</AttributeModifierAuraUpdate>		
-			-->
+			-->		
 			
 			<MoveToPositionAndEvacuateSpecialPower
 				id="DBDCABC7"
@@ -2265,5 +2369,6 @@
 			UseCrushAttack="True"
 			CrushOnlyWhileCharging="False"
 			CrushAllies="False" />
-	</GameObject>
+	</GameObject>	
+	
 </AssetDeclaration>

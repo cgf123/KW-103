@@ -91,7 +91,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="150"
+			Speed="145"
 			Condition="NORMAL"
 			Locomotor="NODCarryallLocomotor" />
 		<LocomotorSet
@@ -931,7 +931,7 @@
 		<Body>
 			<ActiveBody
 				id="B313F576"
-				MaxHealth="2700"
+				MaxHealth="3000"
 				MaxHealthDamaged="0"
 				MaxHealthReallyDamaged="0"
 				InitialHealth="-1"

@@ -1574,8 +1574,8 @@ DAMAGE TYPES
 	<!-- For Slings -->
 	<ArmorTemplate
 		id="GDIAATankArmor"
-		SideDamageScalar="110"
-		RearDamageScalar="150">
+		SideDamageScalar="100"
+		RearDamageScalar="125">
 		<Armor
 			Damage="CANNON"
 			Percent="150" />
