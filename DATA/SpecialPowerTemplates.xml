@@ -89,6 +89,9 @@
 		Flags="NO_FORBIDDEN_OBJECTS">
 		<ForbiddenObjectFilter
 			Rule="ALL">
+			<ExcludeThing>AlienMCV</ExcludeThing>
+			<ExcludeThing>Reaper17MCV</ExcludeThing>
+			<ExcludeThing>Traveler59MCV</ExcludeThing>
 			<ExcludeThing>AlienMothership</ExcludeThing>
 			<ExcludeThing>AlienPlanetaryAssaultCarrier</ExcludeThing>
 			<ExcludeThing>Traveler59PlanetaryAssaultCarrier</ExcludeThing>
@@ -1714,7 +1717,7 @@
 	<SpecialPowerTemplate
 		id="SpecialPower_SupersonicAirAttack"
 		Flags="IS_PLAYER_POWER WATER_OK IGNORE_MAP_EXTENTS SHARED_SYNC"
-		ReloadTime="300s"
+		ReloadTime="270s"
 		RadiusCursorRadius="200"
 		TargetType="LOCATION"
 		InitiateAtLocationSound="Multisound:GDI_SupersonicAirStrike_FlyByMS"

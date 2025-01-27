@@ -279,7 +279,7 @@
 			Value="100%" />
 		<Modifier
 			Type="VISION"
-			Value="100%" />
+			Value="110%" />
 		<Modifier
 			Type="SHROUD_CLEARING"
 			Value="120%" />
@@ -391,7 +391,7 @@
 	<AttributeModifier
 		id="AttributeModifier_TravelerEngines"
 		Category="NONE">		
-		<Modifier Type="SPEED" Value="125%"/>
+		<Modifier Type="SPEED" Value="130%"/>
 	</AttributeModifier>
 	<AttributeModifier
 		id="AttributeModifier_TravelerEnginesLargeShips"

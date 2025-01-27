@@ -1144,7 +1144,7 @@
 				StartRechargeOnExit="False"
 				GoIdleInStartPreparation="True"
 				FaceTarget="True"
-				DamagePerSecond="165"
+				DamagePerSecond="125"
 				TargetAttributeModifierAdd=""
 				SweepFX=""
 				ReflectorExtendDistance="0"

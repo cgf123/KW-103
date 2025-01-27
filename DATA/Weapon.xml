@@ -417,7 +417,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>											
 
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter Rule="NONE"
 							Include="ARCHER">
 					</Filter>
@@ -483,7 +483,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>											
 				
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter Rule="NONE"
 							Include="ARCHER">							
 					</Filter>
@@ -546,7 +546,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>						
 
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter Rule="NONE"
 							Include="ARCHER">							
 					</Filter>
@@ -564,7 +564,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSquadRangefinder"
 		Name="ZoneRaiderSquadRangefinder"
-		AttackRange="260"
+		AttackRange="265"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -579,7 +579,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSquadRangefinder_Upgraded"
 		Name="ZoneRaiderSquadRangefinder_Upgraded"
-		AttackRange="320"
+		AttackRange="325"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -595,7 +595,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSonicRifle"
 		Name="ZoneRaiderSonicRifle"
-		AttackRange="310.0"
+		AttackRange="315.0"
 		WeaponSpeed="600.0"
 		PreAttackType="PER_SHOT"
 		ClipSize="1"
@@ -638,7 +638,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSonicRifle_Upgraded"
 		Name="ZoneRaiderSonicRifle_Upgraded"
-		AttackRange="370.0"
+		AttackRange="375.0"
 		WeaponSpeed="600.0"
 		PreAttackType="PER_SHOT"
 		ClipSize="1"
@@ -710,7 +710,7 @@ DAMAGE TYPES
 						Exclude="ARCHER">          
 					</Filter>
 				</DamageScalarDetails>
-				<DamageScalarDetails Scalar= "62.5%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter Rule="NONE" 
 						Include="ARCHER">          
 					</Filter>
@@ -881,7 +881,7 @@ DAMAGE TYPES
 						Exclude="ARCHER">          
 					</Filter>
 				</DamageScalarDetails>
-				<DamageScalarDetails Scalar= "62.5%">
+				<DamageScalarDetails Scalar= "67%">
 					<Filter Rule="NONE" 
 						Include="ARCHER">          
 					</Filter>
@@ -4852,7 +4852,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -4930,7 +4930,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5032,7 +5032,7 @@ DAMAGE TYPES
 				DamageFXType="ALIEN_PLASMADISK">
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5041,7 +5041,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>		
 				
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter Rule="NONE"
 							Include="ARCHER">				
 					</Filter>
@@ -5086,7 +5086,7 @@ DAMAGE TYPES
 				DamageFXType="ALIEN_CANNON" >
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5095,7 +5095,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>		
 				
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter Rule="NONE"
 							Include="ARCHER">						
 					</Filter>
@@ -5153,7 +5153,7 @@ DAMAGE TYPES
 				DamageFXType="ALIEN_BUZZER"
 				DeathType="NORMAL">
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5215,7 +5215,7 @@ DAMAGE TYPES
 				DamageFXType="ALIEN_BUZZER"
 				DeathType="NORMAL">
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5297,7 +5297,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARD" >		
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "50%">
+				<DamageScalarDetails Scalar= "48%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5519,7 +5519,7 @@ DAMAGE TYPES
 					Rule="ALL"
 					Exclude="INFANTRY HORDE"
 					Relationship="ENEMIES NEUTRAL" />		
-				<DamageScalarDetails Scalar= "110%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="TRANSPORT"
@@ -5657,7 +5657,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs light transports -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5707,7 +5707,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5757,7 +5757,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5807,7 +5807,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5861,7 +5861,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5908,7 +5908,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -5955,7 +5955,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6002,7 +6002,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6046,13 +6046,27 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL">
+
+				<!-- Bonus vs Mammoths -->
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="NONE">          						
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>				
+						<IncludeThing>ZOCOMMammoth</IncludeThing>	
+						<IncludeThing>GDIMARV</IncludeThing>
+						<IncludeThing>SteelTalonsMARV</IncludeThing>				
+						<IncludeThing>ZOCOMMARV</IncludeThing>	
+					</Filter>
+				</DamageScalarDetails>					
+				
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6099,13 +6113,27 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
+				
+				<!-- Bonus vs Mammoths -->
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="NONE">          						
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>				
+						<IncludeThing>ZOCOMMammoth</IncludeThing>	
+						<IncludeThing>GDIMARV</IncludeThing>
+						<IncludeThing>SteelTalonsMARV</IncludeThing>				
+						<IncludeThing>ZOCOMMARV</IncludeThing>	
+					</Filter>
+				</DamageScalarDetails>	
+				
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
 						Include="CIVILIAN_BUILDING"	/>
-				</DamageScalarDetails>	
+				</DamageScalarDetails>					
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6161,13 +6189,27 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
+				
+				<!-- Bonus vs Mammoths -->
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="NONE">          						
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>				
+						<IncludeThing>ZOCOMMammoth</IncludeThing>	
+						<IncludeThing>GDIMARV</IncludeThing>
+						<IncludeThing>SteelTalonsMARV</IncludeThing>				
+						<IncludeThing>ZOCOMMARV</IncludeThing>	
+					</Filter>
+				</DamageScalarDetails>					
+				
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>			
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6223,13 +6265,27 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
+
+				<!-- Bonus vs Mammoths -->
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="NONE">          						
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>				
+						<IncludeThing>ZOCOMMammoth</IncludeThing>	
+						<IncludeThing>GDIMARV</IncludeThing>
+						<IncludeThing>SteelTalonsMARV</IncludeThing>				
+						<IncludeThing>ZOCOMMARV</IncludeThing>	
+					</Filter>
+				</DamageScalarDetails>					
+				
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6286,13 +6342,26 @@ DAMAGE TYPES
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
 				
+				<!-- Bonus vs Mammoths -->
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="NONE">          						
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>				
+						<IncludeThing>ZOCOMMammoth</IncludeThing>	
+						<IncludeThing>GDIMARV</IncludeThing>
+						<IncludeThing>SteelTalonsMARV</IncludeThing>				
+						<IncludeThing>ZOCOMMARV</IncludeThing>	
+					</Filter>
+				</DamageScalarDetails>				
+			
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6338,6 +6407,19 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
+				
+				<!-- Bonus vs Mammoths -->
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="NONE">          						
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>				
+						<IncludeThing>ZOCOMMammoth</IncludeThing>	
+						<IncludeThing>GDIMARV</IncludeThing>
+						<IncludeThing>SteelTalonsMARV</IncludeThing>				
+						<IncludeThing>ZOCOMMARV</IncludeThing>	
+					</Filter>
+				</DamageScalarDetails>					
 					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
@@ -6345,7 +6427,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6400,6 +6482,19 @@ DAMAGE TYPES
 				DamageType="CANNON"
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
+				
+				<!-- Bonus vs Mammoths -->
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="NONE">          						
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>				
+						<IncludeThing>ZOCOMMammoth</IncludeThing>	
+						<IncludeThing>GDIMARV</IncludeThing>
+						<IncludeThing>SteelTalonsMARV</IncludeThing>				
+						<IncludeThing>ZOCOMMARV</IncludeThing>	
+					</Filter>
+				</DamageScalarDetails>					
 					
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
@@ -6407,7 +6502,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>	
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6463,13 +6558,26 @@ DAMAGE TYPES
 				DamageFXType="NOD_LASER"
 				DeathType="NORMAL" >
 				
+				<!-- Bonus vs Mammoths -->
+				<DamageScalarDetails Scalar= "110%">
+					<Filter 
+						Rule="NONE">          						
+						<IncludeThing>GDIMammoth</IncludeThing>
+						<IncludeThing>SteelTalonsMammoth</IncludeThing>				
+						<IncludeThing>ZOCOMMammoth</IncludeThing>	
+						<IncludeThing>GDIMARV</IncludeThing>
+						<IncludeThing>SteelTalonsMARV</IncludeThing>				
+						<IncludeThing>ZOCOMMARV</IncludeThing>	
+					</Filter>
+				</DamageScalarDetails>					
+				
 				<DamageScalarDetails Scalar= "200%">
 					<Filter
 						Rule="NONE"
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6573,7 +6681,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARD" >
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "62.5%">
+				<DamageScalarDetails Scalar= "60%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6637,7 +6745,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARDBLUE" >
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "62.5%">
+				<DamageScalarDetails Scalar= "60%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6783,7 +6891,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6861,7 +6969,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6908,7 +7016,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6963,7 +7071,7 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_PLASMADISK">
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -6972,7 +7080,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>	
 
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter Rule="NONE"
 							Include="ARCHER">						
 					</Filter>
@@ -7040,7 +7148,7 @@ DAMAGE TYPES
 				DamageType="GUN"
 				DamageFXType="ALIEN_TIBSHARD" >		
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "62.5%">
+				<DamageScalarDetails Scalar= "60%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7117,7 +7225,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>	
 					
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "137.5%">
+				<DamageScalarDetails Scalar= "136%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7145,7 +7253,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>						
 				
 				<!-- Scalars vs Air Transports -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT TRANSPORT"
@@ -7211,7 +7319,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>	
 					
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "137.5%">
+				<DamageScalarDetails Scalar= "136%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7239,7 +7347,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>						
 				
 				<!-- Scalars vs Air Transports -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT TRANSPORT"
@@ -7290,7 +7398,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>			
 
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "137.5%">
+				<DamageScalarDetails Scalar= "136%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7318,7 +7426,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>		
 												
 				<!-- Scalars vs Air Transports -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="TRANSPORT"
@@ -7392,7 +7500,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>		
 			
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "137.5%">
+				<DamageScalarDetails Scalar= "136%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7431,7 +7539,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>		
 
 				<!-- Scalars vs Air Transports -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="TRANSPORT"
@@ -7503,7 +7611,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>		
 			
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "137.5%">
+				<DamageScalarDetails Scalar= "136%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7542,7 +7650,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>		
 
 				<!-- Scalars vs Air Transports -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="TRANSPORT"
@@ -7602,7 +7710,7 @@ DAMAGE TYPES
 				DamageFXType="ALIEN_PLASMADISK"
 				DeathType="NORMAL">
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7655,7 +7763,7 @@ DAMAGE TYPES
 				DamageType="ROCKET"
 				DamageFXType="ALIEN_TIBSHARD" >
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7731,7 +7839,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7765,7 +7873,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -7842,7 +7950,7 @@ DAMAGE TYPES
 					Exclude="INFANTRY HORDE"
 					Relationship="ENEMIES NEUTRAL"
 				/>
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE"
 						Include="TRANSPORT"
@@ -7850,12 +7958,13 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>					
 				
+				<!-- Bonus vs structures -->
 				<DamageScalarDetails Scalar="125%">
 					<Filter
 						Rule="ANY"
 						Include="STRUCTURE FS_BASE_DEFENSE" />
 				</DamageScalarDetails>				
-			</DamageNugget>
+			</DamageNugget>	
 			
 			<!-- Damage to allied husks -->
 			<DamageNugget
@@ -8000,7 +8109,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>
 								
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8035,7 +8144,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8118,7 +8227,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>
 								
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8153,7 +8262,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8231,7 +8340,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>
 								
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8266,7 +8375,7 @@ DAMAGE TYPES
 				</SpecialObjectFilter>
 				
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8466,6 +8575,9 @@ DAMAGE TYPES
 		
 
 	<!-- AcceptableAimDelta has a huge impact on DPS - care -->
+	<!-- This weapon does very specific % to specific unit types, subject to balance considerations.
+		Overall it deals significantly lower % to light/small units compared to heavy/large units.
+	-->
 	<WeaponTemplate
 		id="AlienInvaderFighterCannon"
 		Name="AlienInvaderFighterCannon" 
@@ -8489,39 +8601,31 @@ DAMAGE TYPES
 				DelayTimeSeconds="0.0s" 
 				DamageType="CANNON" 
 				DamageFXType="GDI_MACHINEGUN"		
-				DeathType="NORMAL" > 	
-				
-				<!-- Very Epic Armor? -->
-				<DamageScalarDetails Scalar= "135%">
-					<Filter 
-						Rule="NONE">
-						<IncludeThing>GDIMARV</IncludeThing>
-						<IncludeThing>SteelTalonsMARV</IncludeThing>				
-						<IncludeThing>ZOCOMMARV</IncludeThing>							
-					</Filter>
-				</DamageScalarDetails>						
+				DeathType="NORMAL" > 					
 
-				<!-- Epic Armor -->
+				<!-- Mammoth Armor -->
 				<DamageScalarDetails Scalar= "120%">
 					<Filter 
-						Rule="NONE"
-						Include="METAUNIT">
+						Rule="NONE">
 						<IncludeThing>GDIMammoth</IncludeThing>
 						<IncludeThing>SteelTalonsMammoth</IncludeThing>				
 						<IncludeThing>ZOCOMMammoth</IncludeThing>	
-						<ExcludeThing>GDIMARV</ExcludeThing>
-						<ExcludeThing>SteelTalonsMARV</ExcludeThing>				
-						<ExcludeThing>ZOCOMMARV</ExcludeThing>							
+						<IncludeThing>GDIMARV</IncludeThing>
+						<IncludeThing>SteelTalonsMARV</IncludeThing>				
+						<IncludeThing>ZOCOMMARV</IncludeThing>								
 					</Filter>
 				</DamageScalarDetails>		
 				
-				<!-- Very Heavy Armor -->
+				<!-- Ultra Heavy Armor -->
 				<DamageScalarDetails Scalar= "110%">
 					<Filter 
 						Rule="NONE">			
 						<IncludeThing>AlienAnnihilatorTripod</IncludeThing>
 						<IncludeThing>Traveler59AnnihilatorTripod</IncludeThing>
-						<IncludeThing>Reaper17AnnihilatorTripod</IncludeThing>
+						<IncludeThing>Reaper17AnnihilatorTripod</IncludeThing>	
+						<IncludeThing>AlienEradicatorHexapod</IncludeThing>
+						<IncludeThing>Traveler59EradicatorHexapod</IncludeThing>
+						<IncludeThing>Reaper17EradicatorHexapod</IncludeThing>							
 					</Filter>
 				</DamageScalarDetails>					
 				
@@ -8532,6 +8636,9 @@ DAMAGE TYPES
 						<IncludeThing>NODAvatar</IncludeThing>
 						<IncludeThing>MarkedOfKaneAvatar</IncludeThing>
 						<IncludeThing>BlackHandCustomWarmech</IncludeThing>
+						<IncludeThing>NODMetaUnit</IncludeThing>
+						<IncludeThing>MarkedOfKaneMetaUnit</IncludeThing>
+						<IncludeThing>BlackHandMetaUnit</IncludeThing>						
 					</Filter>
 				</DamageScalarDetails>				
 				
@@ -8544,12 +8651,25 @@ DAMAGE TYPES
 					</Filter>
 				</DamageScalarDetails>					
 
+				<!-- Warship Armor -->
+				<DamageScalarDetails Scalar= "60%">
+					<Filter 
+						Rule="NONE">
+						<IncludeThing>AlienMothership</IncludeThing>							
+						<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
+						<IncludeThing>AlienDevastatorWarship</IncludeThing>												
+						<IncludeThing>Traveler59PlanetaryAssaultCarrier</IncludeThing>						
+						<IncludeThing>Traveler59DevastatorWarship</IncludeThing>						
+					</Filter>
+				</DamageScalarDetails>	
+
 				<!-- DEFAULT/Heavy Armor -->
 				<DamageScalarDetails Scalar= "45%">
 					<Filter 
 						Rule="ANY"
 						Include="VEHICLE"
-						Exclude="AIRCRAFT METAUNIT">
+						Exclude="AIRCRAFT METAUNIT">					
+
 						<!-- Very Heavy Armor -->
 						<ExcludeThing>GDIMammoth</ExcludeThing>
 						<ExcludeThing>SteelTalonsMammoth</ExcludeThing>				
@@ -8613,12 +8733,12 @@ DAMAGE TYPES
 						<ExcludeThing>BlackHandScorpionBuggy</ExcludeThing>
 						<ExcludeThing>MarkedOfKaneScorpionBuggy</ExcludeThing>								
 						<ExcludeThing>BlackhandStealthTank</ExcludeThing>		
+						<ExcludeThing>NODStealthTank</ExcludeThing>
 						<ExcludeThing>MarkedOfKaneAttackBike</ExcludeThing>
 						<ExcludeThing>MarkedOfKaneStealthTank</ExcludeThing>			
 						
 						<!-- Very Light Armor -->							
 						<ExcludeThing>NODAttackBike</ExcludeThing>
-						<ExcludeThing>NODStealthTank</ExcludeThing>
 						<ExcludeThing>BlackhandAttackBike</ExcludeThing>							
 					</Filter>
 				</DamageScalarDetails>		
@@ -8634,10 +8754,7 @@ DAMAGE TYPES
 				<!-- Semi-Heavy Armor -->
 				<DamageScalarDetails Scalar= "35%">
 					<Filter 
-						Rule="NONE">
-						<IncludeThing>GDIAAScout</IncludeThing>
-						<IncludeThing>ZOCOMAAScout</IncludeThing>		
-						<IncludeThing>SteelTalonsAAScout</IncludeThing>								
+						Rule="NONE">						
 						<IncludeThing>GDIAPC</IncludeThing>
 						<IncludeThing>GDIAPC_Veteran</IncludeThing>
 						<IncludeThing>ZOCOMAPC</IncludeThing>
@@ -8652,21 +8769,19 @@ DAMAGE TYPES
 						<IncludeThing>NODBeamCannon</IncludeThing>	
 						<IncludeThing>MarkedOfKaneBeamCannon</IncludeThing>	
 						<IncludeThing>BlackhandBeamCannon</IncludeThing>							
-						<!--
-						<IncludeThing>AlienGunWalker</IncludeThing>
-						<IncludeThing>Traveler59GunWalker</IncludeThing>
-						<IncludeThing>Reaper17ShardWalker</IncludeThing>							
-						-->
 						<IncludeThing>AlienSeekerTank</IncludeThing>
 						<IncludeThing>Traveler59SeekerTank</IncludeThing>
-						<IncludeThing>Reaper17SeekerTank</IncludeThing>																
+						<IncludeThing>Reaper17SeekerTank</IncludeThing>	
+						<IncludeThing>AlienStormrider</IncludeThing>
+						<IncludeThing>Reaper17Stormrider</IncludeThing>
+						<IncludeThing>TravelerStormrider</IncludeThing>																					
 					</Filter>
 				</DamageScalarDetails>					
 								
 				<!-- Med Armor -->
 				<DamageScalarDetails Scalar= "25%">
 					<Filter 
-						Rule="NONE">
+						Rule="NONE">					
 						<IncludeThing>GDIFirehawk</IncludeThing>
 						<IncludeThing>ZOCOMFirehawk</IncludeThing>
 						<IncludeThing>SteelTalonsFirehawk</IncludeThing>
@@ -8674,11 +8789,14 @@ DAMAGE TYPES
 						<IncludeThing>ZOCOMHammerhead</IncludeThing>
 						<IncludeThing>SteelTalonsHammerhead</IncludeThing>						
 						<IncludeThing>NODVertigo</IncludeThing>	
-						<IncludeThing>MarkedOfKaneVertigo</IncludeThing>												
+						<IncludeThing>MarkedOfKaneVertigo</IncludeThing>		
+						<IncludeThing>GDIAAScout</IncludeThing>
+						<IncludeThing>ZOCOMAAScout</IncludeThing>		
+						<IncludeThing>SteelTalonsAAScout</IncludeThing>								
 					</Filter>
 				</DamageScalarDetails>	
 								
-				<!-- Most Aircraft considered Med -->
+				<!-- Most Aircraft considered Light -->
 				<DamageScalarDetails Scalar= "20%">
 					<Filter 
 						Rule="NONE"
@@ -8688,20 +8806,17 @@ DAMAGE TYPES
 						<ExcludeThing>SteelTalonsFirehawk</ExcludeThing>
 						<ExcludeThing>GDIHammerhead</ExcludeThing>
 						<ExcludeThing>ZOCOMHammerhead</ExcludeThing>
-						<ExcludeThing>SteelTalonsHammerhead</ExcludeThing>							
-						<ExcludeThing>GDIOrca</ExcludeThing>
-						<ExcludeThing>ZOCOMOrca</ExcludeThing>
-						<ExcludeThing>SteelTalonsOrca</ExcludeThing>		
-						<ExcludeThing>NODVenom</ExcludeThing>
-						<ExcludeThing>MarkedOfKaneVenom</ExcludeThing>	
-						<ExcludeThing>BlackhandVenom</ExcludeThing>		
+						<ExcludeThing>SteelTalonsHammerhead</ExcludeThing>								
 						<ExcludeThing>NODVertigo</ExcludeThing>	
-						<ExcludeThing>MarkedOfKaneVertigo</ExcludeThing>							
-						<ExcludeThing>AlienInvaderFighter</ExcludeThing>						
+						<ExcludeThing>MarkedOfKaneVertigo</ExcludeThing>	
+						<ExcludeThing>AlienStormrider</ExcludeThing>
+						<ExcludeThing>Reaper17Stormrider</ExcludeThing>
+						<ExcludeThing>TravelerStormrider</ExcludeThing>	
+						<ExcludeThing>AlienMothership</ExcludeThing>							
 						<ExcludeThing>AlienPlanetaryAssaultCarrier</ExcludeThing>
 						<ExcludeThing>AlienDevastatorWarship</ExcludeThing>												
 						<ExcludeThing>Traveler59PlanetaryAssaultCarrier</ExcludeThing>						
-						<ExcludeThing>Traveler59DevastatorWarship</ExcludeThing>												
+						<ExcludeThing>Traveler59DevastatorWarship</ExcludeThing>						
 					</Filter>
 				</DamageScalarDetails>	
 				
@@ -8709,18 +8824,12 @@ DAMAGE TYPES
 				<DamageScalarDetails Scalar= "20%">
 					<Filter 
 						Rule="NONE">
-						<IncludeThing>NODVenom</IncludeThing>
-						<IncludeThing>MarkedOfKaneVenom</IncludeThing>	
-						<IncludeThing>BlackhandVenom</IncludeThing>						
 						<IncludeThing>NODStealthTank</IncludeThing>
 						<IncludeThing>MarkedOfKaneStealthTank</IncludeThing>	
 						<IncludeThing>BlackhandStealthTank</IncludeThing>	
 						<IncludeThing>NODScorpionBuggy</IncludeThing>
 						<IncludeThing>BlackHandScorpionBuggy</IncludeThing>
-						<IncludeThing>MarkedOfKaneScorpionBuggy</IncludeThing>
-						<IncludeThing>GDIOrca</IncludeThing>
-						<IncludeThing>ZOCOMOrca</IncludeThing>
-						<IncludeThing>SteelTalonsOrca</IncludeThing>							
+						<IncludeThing>MarkedOfKaneScorpionBuggy</IncludeThing>								
 						<IncludeThing>GDIPitbull</IncludeThing>
 						<IncludeThing>ZOCOMPitbull</IncludeThing>
 						<IncludeThing>SteelTalonsPitbull</IncludeThing>		
@@ -8738,8 +8847,7 @@ DAMAGE TYPES
 						Rule="NONE">
 						<IncludeThing>NODAttackBike</IncludeThing>
 						<IncludeThing>BlackhandAttackBike</IncludeThing>
-						<IncludeThing>MarkedOfKaneAttackBike</IncludeThing>					
-						<ExcludeThing>AlienInvaderFighter</ExcludeThing>						
+						<IncludeThing>MarkedOfKaneAttackBike</IncludeThing>											
 					</Filter>
 				</DamageScalarDetails>						
 	
@@ -8798,7 +8906,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8848,7 +8956,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>
 								
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -8901,7 +9009,7 @@ DAMAGE TYPES
 						Include="CIVILIAN_BUILDING" />
 				</DamageScalarDetails>
 				<!-- Scalars vs transport vehicles -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter 
 						Rule="ANY"
 						Include="TRANSPORT"
@@ -9685,7 +9793,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>																		  
 				  
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter Rule="NONE"
 							Include="ARCHER">							
 					</Filter>
@@ -9743,7 +9851,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>																			  
 				  
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter Rule="NONE"
 							Include="ARCHER">							
 					</Filter>
@@ -14290,7 +14398,7 @@ DAMAGE TYPES
 						Include="MOTHERSHIP" >
 					</Filter>
 				</DamageScalarDetails>
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "120%">
 					<Filter
 						Rule="NONE" >
 						<IncludeThing>AlienPlanetaryAssaultCarrier</IncludeThing>
@@ -14778,7 +14886,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>																			  
 				  
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter Rule="NONE"
 							Include="ARCHER">							
 					</Filter>
@@ -14836,7 +14944,7 @@ DAMAGE TYPES
 				</DamageScalarDetails>																	
 				  
 			     <!-- because we dont deserve to suck so much vs anti-tank inf -->
-				<DamageScalarDetails Scalar= "125%">
+				<DamageScalarDetails Scalar= "133%">
 					<Filter Rule="NONE"
 							Include="ARCHER">							
 					</Filter>
