@@ -344,7 +344,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneTrooperSquadRangefinder"
 		Name="ZoneTrooperSquadRangefinder"
-		AttackRange="255"
+		AttackRange="250"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -359,7 +359,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneTrooperSquadRangefinder_Upgraded"
 		Name="ZoneTrooperSquadRangefinder_Upgraded"
-		AttackRange="315"
+		AttackRange="310"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -374,7 +374,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneTrooperMachineGun"
 		Name="ZoneTrooperMachineGun"
-		AttackRange="305.0"
+		AttackRange="300.0"
 		WeaponSpeed="999999.0"
 		PreAttackType="PER_SHOT"
 		ClipSize="1"
@@ -440,7 +440,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneTrooperMachineGun_Upgraded"
 		Name="ZoneTrooperMachineGun_Upgraded"
-		AttackRange="365.0"
+		AttackRange="360.0"
 		WeaponSpeed="999999.0"
 		PreAttackType="PER_SHOT"
 		ClipSize="1"
@@ -564,7 +564,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSquadRangefinder"
 		Name="ZoneRaiderSquadRangefinder"
-		AttackRange="265"
+		AttackRange="260"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -579,7 +579,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSquadRangefinder_Upgraded"
 		Name="ZoneRaiderSquadRangefinder_Upgraded"
-		AttackRange="325"
+		AttackRange="322"
 		LeechRangeWeapon="true"
 		AcceptableAimDelta="45d"
 		AntiMask="ANTI_GROUND ANTI_STRUCTURE ANTI_AIRBORNE_VEHICLE ANTI_AIRBORNE_INFANTRY"
@@ -595,7 +595,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSonicRifle"
 		Name="ZoneRaiderSonicRifle"
-		AttackRange="315.0"
+		AttackRange="310.0"
 		WeaponSpeed="600.0"
 		PreAttackType="PER_SHOT"
 		ClipSize="1"
@@ -638,7 +638,7 @@ DAMAGE TYPES
 	<WeaponTemplate
 		id="ZoneRaiderSonicRifle_Upgraded"
 		Name="ZoneRaiderSonicRifle_Upgraded"
-		AttackRange="375.0"
+		AttackRange="372.0"
 		WeaponSpeed="600.0"
 		PreAttackType="PER_SHOT"
 		ClipSize="1"
@@ -1839,7 +1839,7 @@ DAMAGE TYPES
 		  RadiusDamageAffects="ALLIES ENEMIES NEUTRALS" >
 		<Nuggets>
 			<DamageNugget
-				  Damage="416.0"
+				  Damage="420.0"
 				  DelayTimeSeconds="0.0s"
 				  DamageType="CANNON"
 				  DamageFXType="GDI_CANNON"
@@ -1888,7 +1888,7 @@ DAMAGE TYPES
 				LaserId="0"
 				HitGroundFX="FX_RailGunHit"/>
 			<DamageNugget
-				Damage="572.0"
+				Damage="575.0"
 				Radius="0.0"
 				DamageType="CANNON"
 				DamageFXType="GDI_RAILGUN"
@@ -2141,32 +2141,10 @@ DAMAGE TYPES
 			</DOTNugget>
 		</Nuggets>
 	</WeaponTemplate>		
-		
- 
+	
 	<WeaponTemplate
 		id="GDIPitbullMortar"
 		Name="GDIPitbullMortar"
-		AttackRange="275.0"
-		WeaponSpeed="250"
-		FireFX = "FX_GDI_PitbullMortarFireAudio"
-		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS NOT_SIMILAR"	
-		ClipSize="0"
-		AcceptableAimDelta="180d"
-		RequiredFiringObjectStatus="WEAPON_UPGRADED_02"
- 		>
-		<FiringDuration
-				MinSeconds="4.0s"
-				MaxSeconds="4.0s" />
-		<Nuggets>
-			<ProjectileNugget
-				ProjectileTemplate="GDIPitBullArtilleryProjectile"
-				WarheadTemplate="GDIPitbullMortarWarhead" />
-		</Nuggets>
-	</WeaponTemplate>
-	
-	<WeaponTemplate
-		id="GDIPitbullMortar2"
-		Name="GDIPitbullMortar2"
 		AttackRange="275.0"
 		WeaponSpeed="250"
 		FireFX = "FX_GDI_PitbullMortarFireAudio"
@@ -2174,7 +2152,6 @@ DAMAGE TYPES
 		ClipSize="0"
 		AcceptableAimDelta="180d"
 		ScatterRadius="35"
-		RequiredFiringObjectStatus="RIDER4"
  		>
 		<FiringDuration
 				MinSeconds="4.0s"
@@ -5373,7 +5350,7 @@ DAMAGE TYPES
 						Rule="NONE"
 						Include="AIRCRAFT TIBERIUM_BASED" />
 				</DamageScalarDetails>				
-				<DamageScalarDetails Scalar= "1000%">
+				<DamageScalarDetails Scalar= "960%">
 					<Filter
 						Rule="NONE"
 						Include="AIRCRAFT TRANSPORT"
@@ -10576,7 +10553,7 @@ DAMAGE TYPES
 			MaxSeconds="0s"/>
 		<Nuggets>
 			<DamageNugget
-				Damage="19.0"
+				Damage="20.0"
 				Radius="0.0"
 				DelayTimeSeconds="0.0s"
 				DamageType="GUN"

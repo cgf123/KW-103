@@ -541,14 +541,8 @@
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIPitbullMortar"
 						Upgrade=""
-						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02"
+						ObjectStatus="WEAPON_UPGRADED_01"
 						IsPlayerUpgradePermanent="False" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="GDIPitbullMortar2"
-						Upgrade=""
-						ObjectStatus="WEAPON_UPGRADED_01 RIDER4"
-						IsPlayerUpgradePermanent="False" />					
 				</WeaponSlotHardpoint>
 				<WeaponSlotTurret
 					ID="1"
@@ -797,13 +791,14 @@
 			</CreateAndEnterObjectSpecialPower>
 			
 			
-			<!-- Mortar toggle enabled at start -->
+			<!-- Mortar toggle enabled at start
 			<GrantUpgradeCreate
 				id="ModuleTag_GrantUpgradeCreate" 
 				UpgradeToGrant="Upgrade_SelectLoad_04"
 			/>
+			-->
 			
-			<!-- Mortar Toggle -->
+			<!-- Mortar Toggle 
 			<RemoveUpgradeUpgrade
 				id="ModuleTag_CommandSet_RemoveFor_01">
 				<TriggeredBy>Upgrade_SelectLoad_03</TriggeredBy>
@@ -826,6 +821,7 @@
 				StatusToClear="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_SelectLoad_04</TriggeredBy>
 			</StatusBitsUpgrade>
+			-->
 			
 			<!-- Mortar upgrade status -->
 			<StatusBitsUpgrade
@@ -1610,14 +1606,8 @@
 						Ordering="PRIMARY_WEAPON"
 						Template="GDIPitbullMortar"
 						Upgrade=""
-						ObjectStatus="WEAPON_UPGRADED_01 WEAPON_UPGRADED_02"
+						ObjectStatus="WEAPON_UPGRADED_01"
 						IsPlayerUpgradePermanent="False" />
-					<Weapon
-						Ordering="PRIMARY_WEAPON"
-						Template="GDIPitbullMortar2"
-						Upgrade=""
-						ObjectStatus="WEAPON_UPGRADED_01 RIDER4"
-						IsPlayerUpgradePermanent="False" />					
 				</WeaponSlotHardpoint>
 				<WeaponSlotTurret
 					ID="1"
@@ -1866,13 +1856,14 @@
 			</CreateAndEnterObjectSpecialPower>
 			
 			
-			<!-- Mortar toggle enabled at start -->
+			<!-- Mortar toggle enabled at start
 			<GrantUpgradeCreate
 				id="ModuleTag_GrantUpgradeCreate" 
 				UpgradeToGrant="Upgrade_SelectLoad_04"
 			/>
+			-->
 			
-			<!-- Mortar Toggle -->
+			<!-- Mortar Toggle 
 			<RemoveUpgradeUpgrade
 				id="ModuleTag_CommandSet_RemoveFor_01">
 				<TriggeredBy>Upgrade_SelectLoad_03</TriggeredBy>
@@ -1895,6 +1886,7 @@
 				StatusToClear="WEAPON_UPGRADED_02">
 				<TriggeredBy>Upgrade_SelectLoad_04</TriggeredBy>
 			</StatusBitsUpgrade>
+			-->
 			
 			<!-- Mortar upgrade status -->
 			<StatusBitsUpgrade

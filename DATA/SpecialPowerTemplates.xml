@@ -862,9 +862,9 @@
 		id="SpecialPower_AlienShockPods"
 		TargetType="LOCATION"
 		InitiateAtLocationSound="AudioEvent:ALI_BuzzerSwarm"
-		ReloadTime="25s"
+		ReloadTime="20s"
 		Flags="IS_PLAYER_POWER NO_FORBIDDEN_OBJECTS NOT_CLIFF_CELL SHARED_SYNC"
-		Money="-2400"
+		Money="-2000"
 		RadiusCursorRadius="60"
 		ForbiddenObjectRange="80">
 		<ForbiddenObjectFilter
@@ -1823,7 +1823,7 @@
 		TargetType="NONE"
 		InitiateSound="AudioEvent:NOD_PowerSignatureScan"
 		ReloadTime="60s"
-		Money="-200" />	
+		Money="-500" />	
 	
 	<SpecialPowerTemplate
 		id="SpecialPowerPulseScan"

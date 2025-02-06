@@ -1,10 +1,72 @@
 <?xml version="1.0" encoding="us-ascii" ?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">	
+
+	<ExperienceLevelTemplate
+		id="GDICraneExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="2000"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>GDICrane</Target>
+		<Decal
+			Texture="decal_S_level1"
+			Texture2="Decal_Struct_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="75"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="SteelTalonsCraneExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="2000"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>SteelTalonsCrane</Target>
+		<Decal
+			Texture="decal_S_level1"
+			Texture2="Decal_Struct_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="75"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>
+	<ExperienceLevelTemplate
+		id="ZOCOMCraneExperienceLevel_1"
+		RequiredExperience="1"
+		ExperienceAward="2000"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>ZOCOMCrane</Target>
+		<Decal
+			Texture="decal_S_level1"
+			Texture2="Decal_Struct_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="75"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>	
+	
 	
 	<ExperienceLevelTemplate
 		id="ZOCOMMCVExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -25,7 +87,7 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsMCVExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -46,7 +108,7 @@
 	<ExperienceLevelTemplate
 		id="GDIMCVExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -67,7 +129,7 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMConstructionYardExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -89,7 +151,7 @@
 	<ExperienceLevelTemplate
 		id="SteelTalonsConstructionYardExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -111,7 +173,7 @@
 	<ExperienceLevelTemplate
 		id="GDIConstructionYardExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -1574,7 +1636,7 @@
 	<ExperienceLevelTemplate
 			id="GDIOrcaExperienceLevel_1"
 			RequiredExperience="1"
-			ExperienceAward="1100"
+			ExperienceAward="1000"
 			Rank="1">
 			<LevelUpTintColor
 				r="1.0"
@@ -1594,8 +1656,8 @@
 		<ExperienceLevelTemplate
 			id="GDIOrcaExperienceLevel_2"
 			Prerequisite="GDIOrcaExperienceLevel_1"
-			RequiredExperience="3300"
-			ExperienceAward="1430"
+			RequiredExperience="3000"
+			ExperienceAward="1300"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="2">
 			<LevelUpTintColor
@@ -1620,8 +1682,8 @@
 		<ExperienceLevelTemplate
 			id="GDIOrcaExperienceLevel_3"
 			Prerequisite="GDIOrcaExperienceLevel_2"
-			RequiredExperience="6600"
-			ExperienceAward="1760"
+			RequiredExperience="6000"
+			ExperienceAward="1600"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="3">
 			<LevelUpTintColor
@@ -1646,8 +1708,8 @@
 		<ExperienceLevelTemplate
 			id="GDIOrcaExperienceLevel_4"
 			Prerequisite="GDIOrcaExperienceLevel_3"
-			RequiredExperience="9900"
-			ExperienceAward="2200"
+			RequiredExperience="9000"
+			ExperienceAward="2000"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="4">
 			<LevelUpTintColor
@@ -1673,7 +1735,7 @@
 	<ExperienceLevelTemplate
 			id="SteelTalonsOrcaExperienceLevel_1"
 			RequiredExperience="1"
-			ExperienceAward="1100"
+			ExperienceAward="1000"
 			Rank="1">
 			<LevelUpTintColor
 				r="1.0"
@@ -1693,8 +1755,8 @@
 		<ExperienceLevelTemplate
 			id="SteelTalonsOrcaExperienceLevel_2"
 			Prerequisite="SteelTalonsOrcaExperienceLevel_1"
-			RequiredExperience="3300"
-			ExperienceAward="1430"
+			RequiredExperience="3000"
+			ExperienceAward="1300"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="2">
 			<LevelUpTintColor
@@ -1719,8 +1781,8 @@
 		<ExperienceLevelTemplate
 			id="SteelTalonsOrcaExperienceLevel_3"
 			Prerequisite="SteelTalonsOrcaExperienceLevel_2"
-			RequiredExperience="6600"
-			ExperienceAward="1760"
+			RequiredExperience="6000"
+			ExperienceAward="1600"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="3">
 			<LevelUpTintColor
@@ -1745,8 +1807,8 @@
 		<ExperienceLevelTemplate
 			id="SteelTalonsOrcaExperienceLevel_4"
 			Prerequisite="SteelTalonsOrcaExperienceLevel_3"
-			RequiredExperience="9900"
-			ExperienceAward="2200"
+			RequiredExperience="9000"
+			ExperienceAward="2000"
 			ModelConditionState="SPECIAL_CHEERING"
 			Rank="4">
 			<LevelUpTintColor
@@ -1772,7 +1834,7 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMOrcaExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="1200"
+		ExperienceAward="1100"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -1792,8 +1854,8 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMOrcaExperienceLevel_2"
 		Prerequisite="ZOCOMOrcaExperienceLevel_1"
-		RequiredExperience="3600"
-		ExperienceAward="1560"
+		RequiredExperience="3300"
+		ExperienceAward="1430"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="2">
 		<LevelUpTintColor
@@ -1818,8 +1880,8 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMOrcaExperienceLevel_3"
 		Prerequisite="ZOCOMOrcaExperienceLevel_2"
-		RequiredExperience="7200"
-		ExperienceAward="1920"
+		RequiredExperience="6600"
+		ExperienceAward="1760"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="3">
 		<LevelUpTintColor
@@ -1844,8 +1906,8 @@
 	<ExperienceLevelTemplate
 		id="ZOCOMOrcaExperienceLevel_4"
 		Prerequisite="ZOCOMOrcaExperienceLevel_3"
-		RequiredExperience="10800"
-		ExperienceAward="2400"
+		RequiredExperience="9900"
+		ExperienceAward="2200"
 		ModelConditionState="SPECIAL_CHEERING"
 		Rank="4">
 		<LevelUpTintColor

@@ -91,7 +91,7 @@
 			DamageFX="VehicleDamageFX"
 			Conditions="" />
 		<LocomotorSet
-			Speed="145"
+			Speed="144"
 			Condition="NORMAL"
 			Locomotor="NODCarryallLocomotor" />
 		<LocomotorSet

@@ -2,9 +2,70 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">	
 	
 	<ExperienceLevelTemplate
+		id="NODCrane_1"
+		RequiredExperience="1"
+		ExperienceAward="2000"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>NODCrane</Target>
+		<Decal
+			Texture="decal_S_level1"
+			Texture2="Decal_Struct_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="100"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>	
+	<ExperienceLevelTemplate
+		id="MarkedOfKaneCrane_1"
+		RequiredExperience="1"
+		ExperienceAward="2000"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>MarkedOfKaneCrane</Target>
+		<Decal
+			Texture="decal_S_level1"
+			Texture2="Decal_Struct_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="100"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>	
+	<ExperienceLevelTemplate
+		id="BlackHandCrane_1"
+		RequiredExperience="1"
+		ExperienceAward="2000"
+		Rank="1">
+		<LevelUpTintColor
+			r="1.0"
+			g="1.0"
+			b="1.0" />
+		<Target>BlackHandCrane</Target>
+		<Decal
+			Texture="decal_S_level1"
+			Texture2="Decal_Struct_CO" 
+			Style="MERGE_DECAL"
+			OpacityMin="80"
+			OpacityMax="100"
+			MinRadius="100"
+			MaxRadius="200"
+			MaxSelectedUnits="40"/>
+	</ExperienceLevelTemplate>		
+	
+	<ExperienceLevelTemplate
 		id="NODMCVExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -25,7 +86,7 @@
 	<ExperienceLevelTemplate
 		id="MarkedOfKaneMCVExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -46,7 +107,7 @@
 	<ExperienceLevelTemplate
 		id="BlackHandMCVExperienceLevel_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -67,7 +128,7 @@
 	<ExperienceLevelTemplate
 		id="MarkedOfKaneConstructionYard_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -88,7 +149,7 @@
 	<ExperienceLevelTemplate
 		id="BlackHandConstructionYard_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"
@@ -109,7 +170,7 @@
 	<ExperienceLevelTemplate
 		id="NODConstructionYard_1"
 		RequiredExperience="1"
-		ExperienceAward="3000"
+		ExperienceAward="3500"
 		Rank="1">
 		<LevelUpTintColor
 			r="1.0"

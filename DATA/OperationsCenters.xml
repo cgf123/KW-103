@@ -3556,7 +3556,7 @@
 				<IntersectionFlagsFilter
 					ObjectStatus=""
 					ModelCondition=""
-					KindOf="FS_POWER MCV"
+					KindOf="FS_POWER POWERED"
 					UseLocalPlayerFilter="True" />
 			</RadarScanMapSpecialAbilityUpdate>
 			<AISpecialPowerUpdate

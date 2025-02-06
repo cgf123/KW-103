@@ -93,6 +93,10 @@
 	<Include type="all" source="ZOCOMMARV.xml" />	
 	<Include type="all" source="MarvestDummy.xml" />		
 	
+	<Include type="all" source="GDICrane.xml" />	
+	<Include type="all" source="STCrane.xml" />	
+	<Include type="all" source="ZOCOMCrane.xml" />
+	
 	<Include type="all" source="GDIMCV.xml" />	
 	<Include type="all" source="STMCV.xml" />	
 	<Include type="all" source="ZOCOMMCV.xml" />
@@ -282,6 +286,10 @@
 	<!-- ========================= NOD ======================== -->
 
 	<Include type="all" source="NODXP.xml" />
+	
+	<Include type="all" source="NODCrane.xml" />	
+	<Include type="all" source="MOKCrane.xml" />	
+	<Include type="all" source="BHCrane.xml" />
 
 	<Include type="all" source="NODMCV.xml" />	
 	<Include type="all" source="BHMCV.xml" />	
@@ -496,6 +504,10 @@
 	<!-- ============================ SCRIN ================================ -->
 	
 	<Include type="all" source="AlienXP.xml" />
+	
+	<Include type="all" source="AlienFoundry.xml" />	
+	<Include type="all" source="R17Foundry.xml" />	
+	<Include type="all" source="T59Foundry.xml" />	
 	
 	<Include type="all" source="AlienMCV.xml" />	
 	<Include type="all" source="R17MCV.xml" />	
